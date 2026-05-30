@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloze Test &amp; 整序Maker — 青松 English Tools</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <style>
+    /* ============================================================
+       青松デザイントークン（親サイトと共通）
+       ============================================================ */
+    :root {
+      --color-bg:           #f8f7f4;
+      --color-surface:      #ffffff;
+      --color-surface-alt:  #f0ede8;
+      --color-border:       #e2ddd8;
+      --color-text:         #1a1714;
+      --color-text-muted:   #6b645c;
+      --color-accent:       #2d6a4f;
+      --color-accent-light: #52b788;
+      --color-accent-dim:   #d8f3dc;
+      --color-danger:       #dc2626;
+      --color-danger-dim:   #fee2e2;
+      --color-correct:      #15803d;
+      --color-correct-dim:  #dcfce7;
+      --color-shadow:       rgba(0,0,0,0.07);
+      --color-shadow-hover: rgba(0,0,0,0.13);
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP",
+                   "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --transition: 0.2s ease;
+      --max-width: 860px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-sans);
+      background: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.65;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ============================================================
+       HEADER
+       ============================================================ */
+    .site-header {
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .site-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    .logo-mark {
+      width: 34px; height: 34px;
+      background: var(--color-accent);
+      border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 1rem; flex-shrink: 0;
+    }
+    .logo-text { color: var(--color-text); }
+    .logo-sub  { color: var(--color-text-muted); font-weight: 400; font-size: 0.82rem; margin-left: 2px; }
+
+    .header-back-btn {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px 10px;
+      border-radius: var(--radius-sm);
+      transition: color var(--transition), background var(--transition);
+    }
+    .header-back-btn:hover { color: var(--color-accent); background: var(--color-accent-dim); }
+    .header-back-btn.visible { display: flex; }
+
+    /* ============================================================
+       VIEWS
+       ============================================================ */
+    .view { display: none; flex: 1; }
+    .view.active { display: flex; flex-direction: column; }
+
+    .view-inner {
+      max-width: var(--max-width);
+      width: 100%;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    /* ============================================================
+       MENU VIEW
+       ============================================================ */
+    .menu-hero {
+      margin-bottom: 40px;
+    }
+    .menu-hero h1 {
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+    .menu-hero h1 em { font-style: normal; color: var(--color-accent); }
+    .menu-hero p { color: var(--color-text-muted); font-size: 0.95rem; }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .menu-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 28px 24px;
+      cursor: pointer;
+      transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .menu-card:hover {
+      box-shadow: 0 8px 24px var(--color-shadow-hover);
+      transform: translateY(-2px);
+      border-color: var(--color-accent-light);
+    }
+    .menu-card-icon {
+      width: 52px; height: 52px;
+      background: var(--color-accent-dim);
+      border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem;
+    }
+    .menu-card h3 { font-size: 1.15rem; font-weight: 700; }
+    .menu-card p  { font-size: 0.85rem; color: var(--color-text-muted); }
+    .menu-card-arrow {
+      margin-top: auto;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      display: flex; align-items: center; gap: 4px;
+    }
+
+    /* ============================================================
+       CONFIG VIEW
+       ============================================================ */
+    .config-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 32px;
+      max-width: 520px;
+    }
+    .config-card h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+
+    .form-group { margin-bottom: 20px; }
+    .form-label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--color-text-muted);
+      margin-bottom: 8px;
+    }
+    .form-select, .form-input {
+      width: 100%;
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+      font-size: 0.95rem;
+      font-family: var(--font-sans);
+      background: var(--color-bg);
+      color: var(--color-text);
+      transition: border-color var(--transition), background var(--transition);
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b645c' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      padding-right: 36px;
+    }
+    .form-select:focus, .form-input:focus {
+      outline: none;
+      border-color: var(--color-accent-light);
+      background-color: var(--color-surface);
+    }
+    .form-group.disabled { opacity: 0.45; pointer-events: none; }
+
+    /* 穴埋め間隔スライダー */
+    .slider-box {
+      background: var(--color-surface-alt);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .slider-display {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+    }
+    .slider-display strong {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--color-accent);
+      margin: 0 6px;
+    }
+    input[type="range"] {
+      width: 100%;
+      accent-color: var(--color-accent);
+    }
+    .slider-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--color-text-muted);
+      margin-top: 4px;
+    }
+    .slider-labels .hard { color: var(--color-danger); }
+    .slider-labels .easy { color: var(--color-accent); }
+
+    /* 回答モードボタン */
+    .mode-btns { display: flex; gap: 8px; }
+    .mode-btn {
+      flex: 1;
+      padding: 9px 0;
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      background: var(--color-surface);
+      color: var(--color-text-muted);
+      font-size: 0.88rem;
+      font-weight: 600;
+      font-family: var(--font-sans);
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .mode-btn.active-tap {
+      background: var(--color-correct-dim);
+      border-color: var(--color-correct);
+      color: var(--color-correct);
+    }
+    .mode-btn.active-input {
+      background: var(--color-accent-dim);
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+    }
+
+    /* START ボタン */
+    .btn-start {
+      width: 100%;
+      margin-top: 28px;
+      padding: 13px 0;
+      border: none;
+      border-radius: var(--radius-sm);
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: var(--font-sans);
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      transition: all var(--transition);
+      background: var(--color-surface-alt);
+      color: var(--color-text-muted);
+    }
+    .btn-start:not(:disabled) {
+      background: var(--color-accent);
+      color: #fff;
+      cursor: pointer;
+    }
+    .btn-start:not(:disabled):hover {
+      background: #235840;
+    }
+    .btn-start:disabled { cursor: not-allowed; }
+
+    /* ============================================================
+       APP VIEW (Exercise)
+       ============================================================ */
+    .app-status-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+    .status-badge {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      background: var(--color-accent-dim);
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    .exercise-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    .exercise-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: var(--color-text);
+    }
+    .exercise-body {
+      font-size: 1.05rem;
+      line-height: 2;
+      margin-bottom: 16px;
+    }
+    .exercise-translation {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      border-top: 1px solid var(--color-border);
+      padding-top: 12px;
+      line-height: 1.7;
+    }
+
+    /* クローズボックス */
+    .cloze-box {
+      display: inline-block;
+      min-width: 4em;
+      border-bottom: 2px solid var(--color-accent);
+      text-align: center;
+      color: transparent;
+      cursor: pointer;
+      background: var(--color-accent-dim);
+      margin: 0 2px;
+      padding: 1px 5px;
+      border-radius: 3px;
+      user-select: none;
+      transition: background var(--transition);
+    }
+    .cloze-box:hover { background: #b7e4c7; }
+    .cloze-revealed {
+      display: inline;
+      color: var(--color-danger);
+      font-weight: 700;
+      background: none;
+      border-bottom: none;
+    }
+    .cloze-input {
+      border: 1.5px solid var(--color-border);
+      border-radius: 4px;
+      padding: 2px 6px;
+      width: 90px;
+      text-align: center;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      transition: border-color var(--transition);
+    }
+    .cloze-input:focus { outline: none; border-color: var(--color-accent-light); }
+    .cloze-correct { color: var(--color-correct); font-weight: 700; }
+    .cloze-wrong   { color: var(--color-danger); text-decoration: line-through; margin-right: 3px; }
+    .cloze-ans     { color: var(--color-danger); font-weight: 700; }
+
+    /* 整序 */
+    .order-question {
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--color-text);
+    }
+    .order-words {
+      background: var(--color-surface-alt);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+      font-size: 1rem;
+      line-height: 1.8;
+      letter-spacing: 0.02em;
+      color: var(--color-text-muted);
+      margin-bottom: 10px;
+    }
+    .order-answer-area {
+      display: none;
+      color: var(--color-danger);
+      font-weight: 700;
+      font-size: 0.95rem;
+      border-top: 1px solid var(--color-border);
+      padding-top: 10px;
+      margin-top: 10px;
+    }
+    .show-answers-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--color-surface);
+      border-top: 1px solid var(--color-border);
+      padding: 16px 24px;
+      display: flex;
+      justify-content: center;
+      z-index: 50;
+      box-shadow: 0 -4px 16px var(--color-shadow);
+    }
+    .btn-show-answers {
+      background: var(--color-danger);
+      color: #fff;
+      border: none;
+      border-radius: 999px;
+      padding: 12px 36px;
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: var(--font-sans);
+      cursor: pointer;
+      transition: background var(--transition);
+    }
+    .btn-show-answers:hover { background: #b91c1c; }
+
+    /* ============================================================
+       DATA MANAGER VIEW
+       ============================================================ */
+    .data-section { margin-bottom: 40px; }
+    .data-section h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .data-section p {
+      font-size: 0.88rem;
+      color: var(--color-text-muted);
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+    .code-hint {
+      background: var(--color-surface-alt);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: 10px 14px;
+      font-family: "SF Mono", "Fira Code", Consolas, monospace;
+      font-size: 0.78rem;
+      color: var(--color-text-muted);
+      margin-bottom: 16px;
+      overflow-x: auto;
+      white-space: pre;
+    }
+    textarea.form-textarea {
+      width: 100%;
+      min-height: 140px;
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+      font-family: "SF Mono", "Fira Code", Consolas, monospace;
+      font-size: 0.82rem;
+      background: var(--color-bg);
+      color: var(--color-text);
+      resize: vertical;
+      transition: border-color var(--transition);
+    }
+    textarea.form-textarea:focus { outline: none; border-color: var(--color-accent-light); }
+    .btn-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+    .btn-primary {
+      padding: 9px 20px;
+      background: var(--color-accent);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+      font-weight: 700;
+      font-family: var(--font-sans);
+      cursor: pointer;
+      transition: background var(--transition);
+    }
+    .btn-primary:hover { background: #235840; }
+    .btn-secondary {
+      padding: 9px 20px;
+      background: var(--color-surface);
+      color: var(--color-text-muted);
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+      font-weight: 600;
+      font-family: var(--font-sans);
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .btn-secondary:hover { border-color: var(--color-accent-light); color: var(--color-accent); }
+    .btn-danger {
+      padding: 9px 20px;
+      background: var(--color-surface);
+      color: var(--color-danger);
+      border: 1.5px solid #fca5a5;
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+      font-weight: 600;
+      font-family: var(--font-sans);
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .btn-danger:hover { background: var(--color-danger-dim); }
+    .toast {
+      position: fixed;
+      bottom: 28px; left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: var(--color-text);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s, transform 0.3s;
+      z-index: 200;
+      white-space: nowrap;
+    }
+    .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+    .data-table th {
+      text-align: left;
+      padding: 8px 10px;
+      background: var(--color-surface-alt);
+      border: 1px solid var(--color-border);
+      font-weight: 700;
+      color: var(--color-text-muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .data-table td {
+      padding: 8px 10px;
+      border: 1px solid var(--color-border);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    .data-table tr:nth-child(even) td { background: var(--color-surface-alt); }
+    .data-summary {
+      margin-bottom: 12px;
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+    }
+    .data-summary strong { color: var(--color-accent); }
+
+    /* ============================================================
+       LOADING
+       ============================================================ */
+    .loading-overlay {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(248,247,244,0.85);
+      align-items: center; justify-content: center;
+      z-index: 300;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .loading-overlay.show { display: flex; }
+    .spinner {
+      width: 40px; height: 40px;
+      border: 3px solid var(--color-border);
+      border-top-color: var(--color-accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .loading-text {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--color-accent);
+    }
+
+    /* ============================================================
+       FOOTER
+       ============================================================ */
+    .site-footer {
+      border-top: 1px solid var(--color-border);
+      background: var(--color-surface);
+      padding: 24px;
+      text-align: center;
+      color: var(--color-text-muted);
+      font-size: 0.8rem;
+    }
+    .site-footer a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 2px; }
+
+    /* ============================================================
+       アニメーション
+       ============================================================ */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in-up { animation: fadeInUp 0.25s ease both; }
+
+    /* ============================================================
+       レスポンシブ
+       ============================================================ */
+    @media (max-width: 600px) {
+      .view-inner { padding: 28px 16px 80px; }
+      .config-card { padding: 24px 18px; }
+      .menu-grid { grid-template-columns: 1fr; }
+      .header-inner { padding: 0 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================
+     HEADER
+     ============================ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../index.html" class="site-logo">
+      <div class="logo-mark" aria-hidden="true">🌿</div>
+      <div>
+        <span class="logo-text">青松 English Tools</span>
+        <span class="logo-sub"> — Cloze &amp; 整序</span>
+      </div>
+    </a>
+    <button class="header-back-btn" id="back-btn" onclick="goHome()">
+      ← メニューへ
+    </button>
+  </div>
+</header>
+
+<!-- ============================
+     VIEW: MENU
+     ============================ -->
+<div class="view active" id="view-menu">
+  <div class="view-inner">
+    <div class="menu-hero">
+      <h1>Cloze Test &amp; <em>整序 Maker</em></h1>
+      <p>穴埋め問題と語句整序問題を学習できます。<br>
+         右上の「データ管理」から問題データを登録してください。</p>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-card" onclick="showConfig('cloze')" role="button" tabindex="0">
+        <div class="menu-card-icon">📝</div>
+        <h3>Cloze Test</h3>
+        <p>本文の単語を隠して穴埋め問題を生成します。タップ・入力の2モード対応。</p>
+        <span class="menu-card-arrow">開く →</span>
+      </div>
+      <div class="menu-card" onclick="showConfig('order')" role="button" tabindex="0">
+        <div class="menu-card-icon">⇄</div>
+        <h3>並び替え Maker</h3>
+        <p>文の語句をシャッフルして整序問題を生成します。</p>
+        <span class="menu-card-arrow">開く →</span>
+      </div>
+      <div class="menu-card" onclick="showView('view-data')" role="button" tabindex="0">
+        <div class="menu-card-icon">📂</div>
+        <h3>データ管理</h3>
+        <p>問題データのインポート・確認・削除を行います。</p>
+        <span class="menu-card-arrow">開く →</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================
+     VIEW: CONFIG
+     ============================ -->
+<div class="view" id="view-config">
+  <div class="view-inner">
+    <div class="config-card fade-in-up">
+      <h2 id="config-title">設定</h2>
+
+      <div class="form-group">
+        <label class="form-label" for="select-lesson">Step 1 — Lesson を選択</label>
+        <select class="form-select" id="select-lesson" onchange="onLessonChanged()">
+          <option value="">— Lesson —</option>
+        </select>
+      </div>
+
+      <div class="form-group disabled" id="part-group">
+        <label class="form-label" for="select-part">Step 2 — Part を選択</label>
+        <select class="form-select" id="select-part">
+          <option value="">— Part —</option>
+        </select>
+      </div>
+
+      <!-- Cloze専用オプション -->
+      <div id="config-cloze-only" style="display:none;">
+        <div class="form-group">
+          <label class="form-label">穴埋めの間隔</label>
+          <div class="slider-box">
+            <div class="slider-display">
+              Every <strong id="interval-display">5</strong> words
+            </div>
+            <input type="range" id="cloze-interval" min="2" max="20" value="5"
+              oninput="document.getElementById('interval-display').textContent=this.value" />
+            <div class="slider-labels">
+              <span class="hard">Hard（密）</span>
+              <span class="easy">Easy（疎）</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">回答モード</label>
+          <div class="mode-btns">
+            <button class="mode-btn active-tap" id="btn-mode-tap" onclick="setClozeMode('tap')">👆 タップ</button>
+            <button class="mode-btn"            id="btn-mode-input" onclick="setClozeMode('input')">⌨️ 入力</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-start" id="btn-start" onclick="startGame()" disabled>START</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================
+     VIEW: APP (Exercise)
+     ============================ -->
+<div class="view" id="view-app">
+  <div class="view-inner">
+    <div class="app-status-bar">
+      <span class="status-badge" id="app-status"></span>
+    </div>
+    <div id="app-content"></div>
+  </div>
+</div>
+
+<!-- ============================
+     VIEW: DATA MANAGER
+     ============================ -->
+<div class="view" id="view-data">
+  <div class="view-inner">
+
+    <div class="data-section">
+      <h2>📥 Cloze Test データのインポート</h2>
+      <p>以下のCSV形式でデータを貼り付けてください（1行1問）。<br>
+         1列目が空でも構いません（ID）。列の区切りはタブまたはカンマです。</p>
+      <div class="code-hint">ID	Lesson	Part	Title	Order	Body	Translation
+　	1	1	Introduction	1	The quick brown fox jumps over the lazy dog.	速い茶色のキツネは怠け犬を飛び越えた。</div>
+      <textarea class="form-textarea" id="cloze-import-text" placeholder="ここにCSVデータを貼り付け…"></textarea>
+      <div class="btn-row">
+        <button class="btn-primary" onclick="importData('cloze')">インポート</button>
+        <button class="btn-secondary" onclick="loadSampleData('cloze')">サンプルを読み込む</button>
+        <button class="btn-danger"   onclick="clearData('cloze')">データ削除</button>
+      </div>
+    </div>
+
+    <div class="data-section">
+      <h2>📥 並び替えデータのインポート</h2>
+      <p>以下のCSV形式でデータを貼り付けてください。</p>
+      <div class="code-hint">ID	Lesson	Part	Title	Seq	Sentence	Translation
+　	1	1	Q1	1	She has been studying English for three years.	彼女は3年間英語を勉強し続けている。</div>
+      <textarea class="form-textarea" id="order-import-text" placeholder="ここにCSVデータを貼り付け…"></textarea>
+      <div class="btn-row">
+        <button class="btn-primary" onclick="importData('order')">インポート</button>
+        <button class="btn-secondary" onclick="loadSampleData('order')">サンプルを読み込む</button>
+        <button class="btn-danger"   onclick="clearData('order')">データ削除</button>
+      </div>
+    </div>
+
+    <div class="data-section">
+      <h2>📋 登録済みデータ一覧</h2>
+      <div id="data-preview"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================
+     FOOTER
+     ============================ -->
+<footer class="site-footer">
+  <p>© 2025 青松 English Learning Tools &nbsp;|&nbsp;
+    <a href="../index.html">← ポータルへ戻る</a>
+  </p>
+</footer>
+
+<!-- Loading overlay -->
+<div class="loading-overlay" id="loading">
+  <div class="spinner"></div>
+  <p class="loading-text">Loading...</p>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+
+<script>
+/* ============================================================
+   STATE
+   ============================================================ */
+let currentApp  = '';   // 'cloze' | 'order'
+let clozeMode   = 'tap';
+let currentData = [];   // 現在の問題データ
+
+/* ============================================================
+   STORAGE KEYS
+   ============================================================ */
+const KEY_CLOZE = 'aomatsu_cloze_data';
+const KEY_ORDER = 'aomatsu_order_data';
+
+/* ============================================================
+   SAMPLE DATA
+   ============================================================ */
+const SAMPLE_CLOZE = `\t1\t1\tThe Environment\t1\tGlobal warming is one of the most serious environmental problems in the world today. It is caused mainly by the emission of greenhouse gases such as carbon dioxide.\t地球温暖化は今日、世界で最も深刻な環境問題の一つです。それは主に二酸化炭素などの温室効果ガスの排出によって引き起こされています。
+\t1\t1\tThe Environment\t2\tRenewable energy sources such as solar power and wind energy are becoming increasingly important as we try to reduce our dependence on fossil fuels.\t太陽光や風力などの再生可能エネルギー源は、私たちが化石燃料への依存を減らそうとする中で、ますます重要になってきています。
+\t1\t2\tTechnology\t1\tArtificial intelligence is transforming many aspects of our daily lives, from how we communicate to how we work and even how we receive medical care.\t人工知能は、コミュニケーションの仕方から働き方、さらには医療の受け方まで、私たちの日常生活の多くの側面を変革しています。
+\t2\t1\tGlobal Issues\t1\tClimate change is a global challenge that requires international cooperation. Governments around the world must work together to reduce carbon emissions and protect the environment.\t気候変動は国際的な協力を必要とするグローバルな課題です。世界中の政府が協力して炭素排出量を削減し、環境を保護しなければなりません。`;
+
+const SAMPLE_ORDER = `\t1\t1\tGrammar Practice\t1\tShe has been studying English for three years.\t彼女は3年間ずっと英語を勉強している。
+\t1\t1\tGrammar Practice\t2\tIf I had known the truth, I would have acted differently.\t真実を知っていたら、違った行動をとっていただろう。
+\t1\t2\tVocabulary\t1\tThe government announced a new policy to reduce carbon emissions.\t政府は炭素排出量を削減する新しい政策を発表した。
+\t2\t1\tAdvanced Sentences\t1\tDespite the difficulties, they managed to complete the project on time.\t困難にもかかわらず、彼らはなんとかプロジェクトを期日までに完成させた。`;
+
+/* ============================================================
+   VIEW CONTROL
+   ============================================================ */
+function showView(id) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+
+  const backBtn = document.getElementById('back-btn');
+  if (id === 'view-menu') {
+    backBtn.classList.remove('visible');
+  } else {
+    backBtn.classList.add('visible');
+  }
+
+  if (id === 'view-data') refreshDataPreview();
+  window.scrollTo(0, 0);
+}
+
+function goHome() { showView('view-menu'); }
+
+/* ============================================================
+   CONFIG
+   ============================================================ */
+function showConfig(appType) {
+  currentApp = appType;
+  const data = loadStoredData(appType);
+
+  if (!data.length) {
+    showToast('⚠️ データがありません。「データ管理」から登録してください。');
+    showView('view-data');
+    return;
+  }
+
+  document.getElementById('config-title').textContent =
+    appType === 'cloze' ? '📝 Cloze Test 設定' : '⇄ 並び替え Maker 設定';
+  document.getElementById('config-cloze-only').style.display =
+    appType === 'cloze' ? 'block' : 'none';
+
+  resetConfigUI();
+
+  // Lesson リスト構築
+  const lessonSel = document.getElementById('select-lesson');
+  lessonSel.innerHTML = '<option value="">— Lesson —</option>';
+  const lessons = [...new Set(data.map(r => r.lesson))].sort((a,b) => a - b);
+  lessons.forEach(l => {
+    const o = document.createElement('option');
+    o.value = l; o.textContent = `Lesson ${l}`;
+    lessonSel.appendChild(o);
+  });
+
+  showView('view-config');
+}
+
+function resetConfigUI() {
+  document.getElementById('select-lesson').value = '';
+  document.getElementById('select-part').innerHTML = '<option value="">— Part —</option>';
+  document.getElementById('part-group').classList.add('disabled');
+  const btn = document.getElementById('btn-start');
+  btn.disabled = true;
+}
+
+function onLessonChanged() {
+  const lesson = document.getElementById('select-lesson').value;
+  const partGroup = document.getElementById('part-group');
+  const partSel   = document.getElementById('select-part');
+  const btn       = document.getElementById('btn-start');
+
+  partSel.innerHTML = '<option value="">— Part —</option>';
+  btn.disabled = true;
+
+  if (!lesson) { partGroup.classList.add('disabled'); return; }
+
+  const data = loadStoredData(currentApp);
+  const parts = [...new Set(
+    data.filter(r => String(r.lesson) === String(lesson)).map(r => r.part)
+  )].sort((a,b) => a - b);
+
+  parts.forEach(p => {
+    const o = document.createElement('option');
+    o.value = p; o.textContent = `Part ${p}`;
+    partSel.appendChild(o);
+  });
+
+  partGroup.classList.remove('disabled');
+  partSel.onchange = () => { btn.disabled = !partSel.value; };
+}
+
+function setClozeMode(mode) {
+  clozeMode = mode;
+  document.getElementById('btn-mode-tap').className   = 'mode-btn' + (mode === 'tap'   ? ' active-tap'   : '');
+  document.getElementById('btn-mode-input').className = 'mode-btn' + (mode === 'input' ? ' active-input' : '');
+}
+
+/* ============================================================
+   START
+   ============================================================ */
+function startGame() {
+  const lesson = document.getElementById('select-lesson').value;
+  const part   = document.getElementById('select-part').value;
+  if (!lesson || !part) return;
+
+  const all  = loadStoredData(currentApp);
+  currentData = all.filter(r =>
+    String(r.lesson) === String(lesson) && String(r.part) === String(part)
+  );
+
+  document.getElementById('app-status').textContent =
+    `Lesson ${lesson} — Part ${part}`;
+
+  showView('view-app');
+  const container = document.getElementById('app-content');
+  container.innerHTML = '';
+
+  if (currentApp === 'cloze') renderCloze(currentData, container);
+  else                         renderOrder(currentData, container);
+}
+
+/* ============================================================
+   CLOZE RENDERER
+   ============================================================ */
+function renderCloze(dataList, container) {
+  const interval = parseInt(document.getElementById('cloze-interval').value) || 5;
+
+  if (!dataList.length) {
+    container.innerHTML = "<p style='color:var(--color-text-muted);text-align:center;'>データが見つかりませんでした。</p>";
+    return;
+  }
+
+  dataList.forEach(item => {
+    const card = document.createElement('div');
+    card.className = 'exercise-card fade-in-up';
+
+    const heading = document.createElement('h3');
+    heading.textContent = item.title;
+    card.appendChild(heading);
+
+    const body = document.createElement('p');
+    body.className = 'exercise-body';
+
+    const words = item.body.split(/\s+/);
+    let count = 0;
+    words.forEach(word => {
+      count++;
+      const pure = word.replace(/[.,?!"';:]/g, '');
+      if (count % interval === 0 && pure.length > 0) {
+        const span = document.createElement('span');
+        span.className = 'cloze-box';
+        span.textContent = word;
+        span.onclick = function () { onClozeClick(this, word); };
+        body.appendChild(span);
+      } else {
+        body.appendChild(document.createTextNode(word));
+      }
+      body.appendChild(document.createTextNode(' '));
+    });
+
+    card.appendChild(body);
+
+    const trans = document.createElement('div');
+    trans.className = 'exercise-translation';
+    trans.textContent = item.translation;
+    card.appendChild(trans);
+
+    container.appendChild(card);
+  });
+}
+
+function onClozeClick(el, word) {
+  if (el.classList.contains('cloze-revealed')) return;
+  if (clozeMode === 'tap') {
+    el.outerHTML = `<span class="cloze-revealed">${word}</span>`;
+  } else {
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.className = 'cloze-input';
+    input.dataset.answer = word;
+    input.onkeydown = e => { if (e.key === 'Enter') checkInput(input, word); };
+    el.replaceWith(input);
+    input.focus();
+  }
+}
+
+function checkInput(input, answerFull) {
+  const userVal   = input.value.trim();
+  const cleanUser = userVal.toLowerCase().replace(/[.,?!"';:]/g, '');
+  const cleanAns  = answerFull.toLowerCase().replace(/[.,?!"';:]/g, '');
+  const frag = document.createDocumentFragment();
+  if (cleanUser === cleanAns) {
+    const s = document.createElement('span');
+    s.className = 'cloze-correct';
+    s.textContent = answerFull + ' ';
+    frag.appendChild(s);
+  } else {
+    const w = document.createElement('span');
+    w.className = 'cloze-wrong'; w.textContent = userVal;
+    const a = document.createElement('span');
+    a.className = 'cloze-ans';   a.textContent = answerFull + ' ';
+    frag.appendChild(w); frag.appendChild(a);
+  }
+  input.replaceWith(frag);
+}
+
+/* ============================================================
+   ORDER RENDERER
+   ============================================================ */
+function renderOrder(dataList, container) {
+  if (!dataList.length) {
+    container.innerHTML = "<p style='color:var(--color-text-muted);text-align:center;'>データが見つかりませんでした。</p>";
+    return;
+  }
+
+  dataList.forEach((item, i) => {
+    const card = document.createElement('div');
+    card.className = 'exercise-card fade-in-up';
+
+    const q = document.createElement('p');
+    q.className = 'order-question';
+    q.textContent = `Q${i+1}. ${item.translation}`;
+    card.appendChild(q);
+
+    const shuffled = item.sentence.split(/\s+/).sort(() => Math.random() - 0.5);
+    const wordArea = document.createElement('div');
+    wordArea.className = 'order-words';
+    wordArea.textContent = shuffled.join(' / ');
+    card.appendChild(wordArea);
+
+    const ansArea = document.createElement('div');
+    ansArea.className = 'order-answer-area js-answer';
+    ansArea.textContent = `A. ${item.sentence}`;
+    card.appendChild(ansArea);
+
+    container.appendChild(card);
+  });
+
+  // Show Answers ボタン
+  const bar = document.createElement('div');
+  bar.className = 'show-answers-bar';
+  const btn = document.createElement('button');
+  btn.className = 'btn-show-answers';
+  btn.textContent = 'Show Answers';
+  btn.onclick = () => {
+    document.querySelectorAll('.js-answer').forEach(el => el.style.display = 'block');
+    bar.remove();
+  };
+  bar.appendChild(btn);
+  container.appendChild(bar);
+
+  const spacer = document.createElement('div');
+  spacer.style.height = '80px';
+  container.appendChild(spacer);
+}
+
+/* ============================================================
+   DATA STORAGE
+   ============================================================ */
+function storageKey(type) { return type === 'cloze' ? KEY_CLOZE : KEY_ORDER; }
+
+function loadStoredData(type) {
+  try {
+    return JSON.parse(localStorage.getItem(storageKey(type)) || '[]');
+  } catch { return []; }
+}
+
+function saveStoredData(type, data) {
+  localStorage.setItem(storageKey(type), JSON.stringify(data));
+}
+
+/* ============================================================
+   DATA IMPORT / EXPORT
+   ============================================================ */
+function parseCSV(text) {
+  /* タブ区切り or カンマ区切りを自動判定 */
+  const lines = text.trim().split('\n').filter(l => l.trim());
+  if (!lines.length) return [];
+
+  const sep = lines[0].includes('\t') ? '\t' : ',';
+  const rows = lines.map(l => l.split(sep).map(c => c.trim()));
+
+  /* ヘッダー行を除外（1列目が文字列で始まる場合） */
+  const start = isNaN(Number(rows[0][1])) ? 1 : 0;
+  return rows.slice(start);
+}
+
+function importData(type) {
+  const ta = document.getElementById(`${type}-import-text`);
+  const text = ta.value.trim();
+  if (!text) { showToast('テキストが空です'); return; }
+
+  const rows = parseCSV(text);
+  let parsed;
+
+  if (type === 'cloze') {
+    parsed = rows.map(r => ({
+      id: r[0], lesson: r[1], part: r[2], title: r[3],
+      order: r[4], body: r[5], translation: r[6] || ''
+    })).filter(r => r.lesson && r.body);
+  } else {
+    parsed = rows.map(r => ({
+      id: r[0], lesson: r[1], part: r[2], title: r[3],
+      seq: Number(r[4]) || 0, sentence: r[5], translation: r[6] || ''
+    })).filter(r => r.lesson && r.sentence);
+  }
+
+  if (!parsed.length) { showToast('⚠️ 有効なデータが見つかりません'); return; }
+
+  const existing = loadStoredData(type);
+  saveStoredData(type, [...existing, ...parsed]);
+  ta.value = '';
+  showToast(`✅ ${parsed.length} 件を追加しました`);
+  refreshDataPreview();
+}
+
+function loadSampleData(type) {
+  const ta = document.getElementById(`${type}-import-text`);
+  ta.value = type === 'cloze' ? SAMPLE_CLOZE : SAMPLE_ORDER;
+  showToast('サンプルデータをセットしました。「インポート」を押して登録してください。');
+}
+
+function clearData(type) {
+  if (!confirm(`${type === 'cloze' ? 'Cloze Test' : '並び替え'} のデータをすべて削除しますか?`)) return;
+  localStorage.removeItem(storageKey(type));
+  showToast('🗑️ 削除しました');
+  refreshDataPreview();
+}
+
+/* ============================================================
+   DATA PREVIEW
+   ============================================================ */
+function refreshDataPreview() {
+  const container = document.getElementById('data-preview');
+  const cloze = loadStoredData('cloze');
+  const order = loadStoredData('order');
+
+  let html = '';
+  if (!cloze.length && !order.length) {
+    html = '<p style="color:var(--color-text-muted); font-size:0.88rem;">登録されているデータはありません。</p>';
+  } else {
+    if (cloze.length) {
+      html += `<p class="data-summary">📝 Cloze Test: <strong>${cloze.length} 件</strong></p>`;
+      html += '<div style="overflow-x:auto;"><table class="data-table"><thead><tr><th>Lesson</th><th>Part</th><th>Title</th><th>Body（先頭60文字）</th></tr></thead><tbody>';
+      cloze.slice(0, 20).forEach(r => {
+        html += `<tr><td>${esc(r.lesson)}</td><td>${esc(r.part)}</td><td>${esc(r.title)}</td><td>${esc((r.body||'').slice(0,60))}…</td></tr>`;
+      });
+      if (cloze.length > 20) html += `<tr><td colspan="4" style="color:var(--color-text-muted);text-align:center;">… 他 ${cloze.length-20} 件</td></tr>`;
+      html += '</tbody></table></div>';
+    }
+    if (order.length) {
+      html += `<p class="data-summary" style="margin-top:28px;">⇄ 並び替え: <strong>${order.length} 件</strong></p>`;
+      html += '<div style="overflow-x:auto;"><table class="data-table"><thead><tr><th>Lesson</th><th>Part</th><th>Seq</th><th>Sentence（先頭60文字）</th></tr></thead><tbody>';
+      order.slice(0, 20).forEach(r => {
+        html += `<tr><td>${esc(r.lesson)}</td><td>${esc(r.part)}</td><td>${esc(r.seq)}</td><td>${esc((r.sentence||'').slice(0,60))}…</td></tr>`;
+      });
+      if (order.length > 20) html += `<tr><td colspan="4" style="color:var(--color-text-muted);text-align:center;">… 他 ${order.length-20} 件</td></tr>`;
+      html += '</tbody></table></div>';
+    }
+  }
+  container.innerHTML = html;
+}
+
+function esc(s) {
+  return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+/* ============================================================
+   TOAST
+   ============================================================ */
+let toastTimer;
+function showToast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove('show'), 3000);
+}
+
+/* ============================================================
+   KEYBOARD: メニューカード Enter 対応
+   ============================================================ */
+document.querySelectorAll('.menu-card').forEach(card => {
+  card.addEventListener('keydown', e => { if (e.key === 'Enter') card.click(); });
+});
+</script>
+</body>
+</html>

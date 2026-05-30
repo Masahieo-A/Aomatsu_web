@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# 各アプリの独立リポジトリ（個別でGitHub管理）
+英文添削/eisaku-tensaku-app/
+
+# 開発用ファイル
+.claude/
+英文添削/mockups/

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="英語学習を支援するWebアプリ集。語彙・ライティング・リーディング・OCRなど多彩なツールをひとつのポータルで。" />
+  <title>青松 English Learning Tools</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ============================
+     HEADER
+     ============================ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo">
+      <div class="logo-mark" aria-hidden="true">🌿</div>
+      <div>
+        <span class="logo-text">青松 English Tools</span>
+        <span class="logo-sub"> — Learning Portal</span>
+      </div>
+    </a>
+  </div>
+</header>
+
+<!-- ============================
+     HERO
+     ============================ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div>
+    <h1 class="hero-title" id="hero-title">
+      英語学習を、<br /><em>もっとスマートに。</em>
+    </h1>
+    <p class="hero-desc">
+      語彙テスト・ライティング添削・OCR・リーディング支援など、<br />
+      授業や自己学習ですぐに使えるツールを一か所に集めました。
+    </p>
+  </div>
+  <div class="hero-stat" aria-label="公開ツール数">
+    <div class="num" id="app-count">0</div>
+    <div class="label">公開ツール</div>
+  </div>
+</section>
+
+<!-- ============================
+     FILTER
+     ============================ -->
+<nav class="filter-section" aria-label="カテゴリフィルタ">
+  <p class="filter-label">カテゴリで絞り込む</p>
+  <div class="filter-bar" role="group">
+    <button class="filter-btn active" data-filter="all">すべて</button>
+    <button class="filter-btn" data-filter="vocabulary">語彙</button>
+    <button class="filter-btn" data-filter="writing">ライティング</button>
+    <button class="filter-btn" data-filter="reading">リーディング</button>
+    <button class="filter-btn" data-filter="listening">リスニング</button>
+    <button class="filter-btn" data-filter="grammar">文法</button>
+    <button class="filter-btn" data-filter="ocr">OCR</button>
+    <button class="filter-btn" data-filter="utility">ユーティリティ</button>
+  </div>
+</nav>
+
+<!-- ============================
+     APP GRID
+     ============================ -->
+<main class="app-grid-section" id="main-content">
+  <div class="app-grid" id="app-grid" aria-live="polite">
+
+    <!--
+      ================================================================
+      ★ アプリカードはここに追加していく
+      ================================================================
+
+      カードの追加手順は README.md を参照してください。
+
+      カードテンプレート（コピーして使う）：
+
+      <article class="app-card" data-category="[カテゴリ]">
+        <div class="card-icon">[絵文字]</div>
+        <div class="card-body">
+          <h3 class="card-title">アプリ名</h3>
+          <p class="card-desc">アプリの説明文</p>
+          <div class="card-meta">
+            <span class="tag">[カテゴリ名]</span>
+          </div>
+        </div>
+        <a href="apps/[app-name]/index.html" class="card-link" aria-label="アプリ名を開く"></a>
+      </article>
+
+      ================================================================
+    -->
+
+    <!-- ★ 追加済みアプリ -->
+    <article class="app-card" data-category="writing">
+      <div class="card-icon">✍️</div>
+      <div class="card-body">
+        <h3 class="card-title">英作文 文法添削</h3>
+        <p class="card-desc">英作文を文法の観点からAIが評価。答えは教えず、3段階のヒントで自律的な修正学習を促します。辞書機能付き。</p>
+        <div class="card-meta">
+          <span class="tag">ライティング</span>
+        </div>
+      </div>
+      <a href="英文添削/eisaku-tensaku-app/" class="card-link" aria-label="英作文 文法添削を開く"></a>
+    </article>
+
+    <!-- Coming soon サンプル（実際のアプリが追加されたら削除してOK） -->
+    <article class="app-card coming-soon" data-category="vocabulary">
+      <div class="card-icon">📝</div>
+      <div class="card-body">
+        <h3 class="card-title">語彙レベルチェッカー</h3>
+        <p class="card-desc">テキストを貼り付けると語彙の難易度分布を可視化します。</p>
+        <div class="card-meta">
+          <span class="tag">語彙</span>
+        </div>
+      </div>
+      <span class="badge-coming">Coming Soon</span>
+    </article>
+
+    <article class="app-card coming-soon" data-category="writing">
+      <div class="card-icon">✍️</div>
+      <div class="card-body">
+        <h3 class="card-title">ライティング添削</h3>
+        <p class="card-desc">英作文をAIがフィードバック。文法・語彙・内容の観点で改善提案します。</p>
+        <div class="card-meta">
+          <span class="tag">ライティング</span>
+        </div>
+      </div>
+      <span class="badge-coming">Coming Soon</span>
+    </article>
+
+    <article class="app-card coming-soon" data-category="ocr">
+      <div class="card-icon">🔍</div>
+      <div class="card-body">
+        <h3 class="card-title">画像→テキスト（OCR）</h3>
+        <p class="card-desc">紙の教材や板書写真から英文テキストを抽出します。</p>
+        <div class="card-meta">
+          <span class="tag">OCR</span>
+        </div>
+      </div>
+      <span class="badge-coming">Coming Soon</span>
+    </article>
+
+    <article class="app-card coming-soon" data-category="reading">
+      <div class="card-icon">📖</div>
+      <div class="card-body">
+        <h3 class="card-title">リーディング支援</h3>
+        <p class="card-desc">英文の難易度を推定し、学習者レベルに合った要約・語注を生成します。</p>
+        <div class="card-meta">
+          <span class="tag">リーディング</span>
+        </div>
+      </div>
+      <span class="badge-coming">Coming Soon</span>
+    </article>
+
+    <!-- 空状態（フィルタ結果が0件のとき表示） -->
+    <div class="empty-state" id="empty-state" aria-live="polite">
+      <p style="font-size:2rem;">🔎</p>
+      <p>このカテゴリのツールはまだありません。</p>
+    </div>
+
+  </div><!-- /#app-grid -->
+</main>
+
+<!-- ============================
+     FOOTER
+     ============================ -->
+<footer class="site-footer">
+  <p>© 2025 青松 English Learning Tools &nbsp;|&nbsp;
+    <a href="README.md">README</a>
+  </p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
