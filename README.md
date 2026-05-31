@@ -175,7 +175,7 @@
       <span class="tag">[カテゴリ表示名]</span>
     </div>
   </div>
-  <a href="[デプロイURL]" class="card-link" target="_blank" rel="noopener noreferrer" aria-label="アプリ名を開く"></a>
+  <a href="[デプロイURL]" class="card-link" aria-label="アプリ名を開く"></a>
 </article>
 ```
 
