@@ -99,7 +99,7 @@ img { max-width: 100%; display: block; }
 .hero {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 60px 24px 40px;
+  padding: 24px 24px 16px;
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 32px;
