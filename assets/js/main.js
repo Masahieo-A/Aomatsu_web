@@ -23,7 +23,7 @@
       // カードの表示/非表示
       let visible = 0;
       cards.forEach(card => {
-        const match = category === 'all' || card.dataset.category === category;
+        const match = category === 'all' || card.dataset.category.split(' ').includes(category);
         card.classList.toggle('hidden', !match);
         if (match) visible++;
       });
