@@ -1,9 +1,27 @@
-# macOS
+# ───────── macOS ─────────
 .DS_Store
 **/.DS_Store
 
-# 各アプリの独立リポジトリ（個別でGitHub管理）
-apps/eisaku-tensaku-app/
+# ───────── 依存・ビルド成果物（全アプリ共通） ─────────
+**/node_modules/
+**/.next/
+**/out/
+**/build/
+**/dist/
 
-# 開発用ファイル
+# ───────── 秘密情報（絶対にコミットしない） ─────────
+**/.env
+**/.env.*
+!**/.env.example
+
+# ───────── Vercel ローカル連携 ─────────
+**/.vercel/
+
+# ───────── 開発用ツール ─────────
 .claude/
+**/.claude/
+
+# ───────── ログ・キャッシュ ─────────
+**/*.log
+**/.turbo/
+**/.eslintcache

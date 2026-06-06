@@ -1,0 +1,150 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/* ============================================================
+   ポータルと統一したグリーン系カラーパレット
+   #2d6a4f → oklch(0.42 0.09 158)
+   ============================================================ */
+:root {
+  /* 背景・サーフェス */
+  --background: oklch(0.976 0.004 87);        /* #f8f7f4 warm off-white */
+  --foreground: oklch(0.148 0.008 50);         /* #1a1714 */
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.148 0.008 50);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.148 0.008 50);
+
+  /* アクセント：ポータルの --color-accent = #2d6a4f */
+  --primary: oklch(0.415 0.09 158);
+  --primary-foreground: oklch(0.985 0 0);
+
+  --secondary: oklch(0.94 0.025 155);         /* #d8f3dc accent-dim */
+  --secondary-foreground: oklch(0.415 0.09 158);
+
+  --muted: oklch(0.944 0.008 80);             /* #f0ede8 */
+  --muted-foreground: oklch(0.50 0.012 60);   /* #6b645c */
+
+  --accent: oklch(0.94 0.025 155);
+  --accent-foreground: oklch(0.415 0.09 158);
+
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.895 0.01 75);             /* #e2ddd8 */
+  --input: oklch(0.895 0.01 75);
+  --ring: oklch(0.66 0.12 155);              /* #52b788 */
+
+  --chart-1: oklch(0.415 0.09 158);
+  --chart-2: oklch(0.66 0.12 155);
+  --chart-3: oklch(0.84 0.06 155);
+  --chart-4: oklch(0.94 0.025 155);
+  --chart-5: oklch(0.976 0.004 87);
+
+  --radius: 0.625rem;
+
+  --sidebar: oklch(1 0 0);
+  --sidebar-foreground: oklch(0.148 0.008 50);
+  --sidebar-primary: oklch(0.415 0.09 158);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.94 0.025 155);
+  --sidebar-accent-foreground: oklch(0.415 0.09 158);
+  --sidebar-border: oklch(0.895 0.01 75);
+  --sidebar-ring: oklch(0.66 0.12 155);
+
+  /* アプリ独自変数 */
+  --app-accent:       #2d6a4f;
+  --app-accent-light: #52b788;
+  --app-accent-dim:   #d8f3dc;
+  --app-hint-bg:      #fffbf0;
+  --app-hint-border:  #e8a020;
+  --app-surface-alt:  #f0ede8;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP",
+      "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  }
+}
+
+/* ============================================================
+   共通コンポーネントスタイル
+   ============================================================ */
+
+/* セクションカード */
+.section-card {
+  background: white;
+  border: 1px solid var(--app-border, #e2ddd8);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* ヒントチェーンの点線コネクター */
+.hint-chain {
+  position: relative;
+  padding-left: 28px;
+}
+.hint-chain::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 22px;
+  bottom: 8px;
+  width: 1px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #e2ddd8 0px,
+    #e2ddd8 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
