@@ -32,19 +32,17 @@ export default function RootLayout({
             gap: "0.75rem",
           }}
         >
-          <a
-            href="https://aomatsu-english-portal.vercel.app"
+          <span
             style={{
               color: "rgba(255,255,255,0.75)",
               fontSize: "0.8rem",
-              textDecoration: "none",
               display: "flex",
               alignItems: "center",
               gap: "0.3rem",
             }}
           >
             🌿 青松 English Tools
-          </a>
+          </span>
           <span style={{ color: "rgba(255,255,255,0.4)", fontSize: "0.8rem" }}>›</span>
           <span style={{ fontSize: "0.85rem", fontWeight: 600 }}>
             Cloze Test &amp; 整序メーカー
