@@ -76,7 +76,7 @@
 <header class="app-header">
   <a href="https://aomatsu-english-portal.vercel.app" class="site-logo">
     <div class="logo-mark">🌿</div>
-    青松 English Tools
+    English Hub
   </a>
   <span style="color:#e2ddd8">›</span>
   <span style="font-weight:600">アプリ名</span>
@@ -89,7 +89,7 @@ Next.js (`layout.tsx`):
   <a href="https://aomatsu-english-portal.vercel.app"
      className="flex items-center gap-2 font-bold text-[15px] text-[#1a1714] no-underline">
     <span className="flex h-7 w-7 items-center justify-center rounded-[6px] bg-[#2d6a4f] text-sm text-white">🌿</span>
-    青松 English Tools
+    English Hub
   </a>
   <span style={{color:"#e2ddd8"}}>›</span>
   <span className="text-sm font-semibold">アプリ名</span>

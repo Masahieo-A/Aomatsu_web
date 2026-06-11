@@ -9,7 +9,7 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "Cloze Test & 整序メーカー | 青松 English Tools",
+  title: "Cloze Test & 整序メーカー | English Hub",
   description: "クローズテストと整序問題を生成する英語学習ツール",
 };
 
@@ -41,7 +41,7 @@ export default function RootLayout({
               gap: "0.3rem",
             }}
           >
-            🌿 青松 English Tools
+            🌿 English Hub
           </span>
           <span style={{ color: "rgba(255,255,255,0.4)", fontSize: "0.8rem" }}>›</span>
           <span style={{ fontSize: "0.85rem", fontWeight: 600 }}>
@@ -62,7 +62,7 @@ export default function RootLayout({
             borderTop: "1px solid var(--border)",
           }}
         >
-          © 2025 青松 English Learning Tools
+          © 2025 English Hub
         </footer>
       </body>
     </html>
