@@ -5,11 +5,6 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-/** Parse body text: replace ___ with blank spans for display */
-export function parseClozeBody(body: string): string {
-  return body.replace(/___/g, "______");
-}
-
 /** Shuffle an array (Fisher-Yates) */
 export function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];

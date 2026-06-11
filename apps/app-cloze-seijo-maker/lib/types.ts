@@ -4,7 +4,7 @@ export type ClozeTest = {
   part: string;
   title?: string | null;
   display_order: number;
-  body: string; // contains ___ for blanks
+  body: string; // full sentence; blanks are generated dynamically at render time
   trans?: string | null;
 };
 

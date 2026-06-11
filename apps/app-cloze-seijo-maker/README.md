@@ -51,6 +51,33 @@ app-cloze-seijo-maker/
 
 セットアップは Supabase の SQL エディタで `supabase-schema.sql` を実行する。
 
+### 現状のデータソース（静的JSON）
+
+Supabase 配線が整うまでは `public/data/cloze.json` / `public/data/seijo.json` の
+静的ファイルを `fetch` して描画する。両ファイルは Google スプレッドシート
+（`CT_整序maker_Lesson1_3`）から書き出したデータをビルドスクリプトで生成する：
+
+```bash
+node scripts/build-data.mjs   # scripts/source-data.md → public/data/*.json
+```
+
+- 並び順は「No.」列ではなくシート上の行順（=本文の流れ）で `display_order` / `seq` を採番する。
+- **cloze の `body` は元の英文をそのまま保持する（空欄は埋め込まない）。**
+
+### クローズの空欄生成（非破壊・描画時生成）
+
+`body` を `/\s+/` で分割し、`wordCount % interval === 0` かつ記号
+（`. , ? ! "`）を除いた中身が1文字以上あるトークンを空欄にする。元データは
+書き換えないため、難易度（`interval`: やさしい7 / ふつう5 / むずかしい3）と
+解答モード（タップ表示 / 入力採点）をリアルタイムに切り替えられる。
+正誤判定は両者の記号除去＋小文字化後の厳密一致で行う。
+
+### 整序のトークン化
+
+`sentence`（=元の英文）を実行時に `split(" ")` で単語チップ化し、シャッフルして
+バンクに並べる。句読点は語に付いたまま扱う（`Dr.` / `"zoo` / `dentists."` など）ため、
+`Dr.` のような略語や引用符を含む文も崩れずに復元・採点できる。
+
 ---
 
 ## 環境変数
@@ -76,5 +103,6 @@ npm run build   # 本番ビルド確認
 
 ## ステータス
 
-🚧 整備中。ポータル（`index.html`）へのカード掲載は未実施（掲載要否はオーナー判断）。
+クローズ・整序ともに L1 / L3（各 Part 1・Part 2、計43文）のデータを投入済みで稼働可能。
+Supabase 配線は引き続き整備中。ポータル（`index.html`）へのカード掲載は未実施（掲載要否はオーナー判断）。
 台帳は [../../PROJECTS.md](../../PROJECTS.md)（APP004）を参照。

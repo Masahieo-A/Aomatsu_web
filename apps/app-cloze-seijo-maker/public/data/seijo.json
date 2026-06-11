@@ -1,1 +1,389 @@
-[]
+[
+  {
+    "id": 1,
+    "lesson": "L1",
+    "part": "Part 1",
+    "title": null,
+    "seq": 1,
+    "sentence": "Today's libraries are changing.",
+    "trans": "今日の図書館は変わってきています。"
+  },
+  {
+    "id": 2,
+    "lesson": "L1",
+    "part": "Part 1",
+    "title": null,
+    "seq": 2,
+    "sentence": "They do more than just lend books.",
+    "trans": "それらは，単に本を貸し出す以上のことをします。"
+  },
+  {
+    "id": 3,
+    "lesson": "L1",
+    "part": "Part 1",
+    "title": null,
+    "seq": 3,
+    "sentence": "At Musashino Place in Tokyo, the library has a floor for people aged 20 and under.",
+    "trans": "東京の武蔵野プレイスでは，図書館に20歳以下の人のための階があります。"
+  },
+  {
+    "id": 4,
+    "lesson": "L1",
+    "part": "Part 1",
+    "title": null,
+    "seq": 4,
+    "sentence": "They can chat or enjoy board games over food and drinks.",
+    "trans": "飲食しながらおしゃべりをしたりボードゲームを楽しんだりできます。"
+  },
+  {
+    "id": 5,
+    "lesson": "L1",
+    "part": "Part 1",
+    "title": null,
+    "seq": 5,
+    "sentence": "On the same floor, it has studios for band practice, dance, cooking, and sports as well.",
+    "trans": "同じ階に，バンド練習，ダンス，料理，スポーツ用のスタジオもあります。"
+  },
+  {
+    "id": 6,
+    "lesson": "L1",
+    "part": "Part 1",
+    "title": null,
+    "seq": 6,
+    "sentence": "The Sapporo Municipal Library and Information Center is unique.",
+    "trans": "札幌市図書・情報館は独特です。"
+  },
+  {
+    "id": 7,
+    "lesson": "L1",
+    "part": "Part 1",
+    "title": null,
+    "seq": 7,
+    "sentence": "You can read books there, but you can't borrow them because other visitors may need them.",
+    "trans": "そこでは本を読むことはできますが，他の来館者が必要とするかもしれないので，借りることはできません。"
+  },
+  {
+    "id": 8,
+    "lesson": "L1",
+    "part": "Part 1",
+    "title": null,
+    "seq": 8,
+    "sentence": "The library provides books and information specifically about work and everyday life.",
+    "trans": "その図書館は，特に仕事と日常生活に関する本や情報を提供しています。"
+  },
+  {
+    "id": 9,
+    "lesson": "L1",
+    "part": "Part 1",
+    "title": null,
+    "seq": 9,
+    "sentence": "Visitors can reserve a room and hold business meetings, referring to the latest information.",
+    "trans": "来館者は部屋を予約して，最新の情報を参照しながら仕事の会議を開くことができます。"
+  },
+  {
+    "id": 10,
+    "lesson": "L1",
+    "part": "Part 1",
+    "title": null,
+    "seq": 10,
+    "sentence": "They can also attend seminars hosted by the library to get new information on or to solve problems about business or everyday life.",
+    "trans": "また，仕事や日常生活について，新しい情報を得たり，あるいは問題を解決したりするために，図書館が主催するセミナーに参加することもできます。"
+  },
+  {
+    "id": 11,
+    "lesson": "L1",
+    "part": "Part 2",
+    "title": null,
+    "seq": 1,
+    "sentence": "The New York Public Library is a leading example of libraries that are changing.",
+    "trans": "ニューヨーク公共図書館は変化しつつある図書館の代表例です。"
+  },
+  {
+    "id": 12,
+    "lesson": "L1",
+    "part": "Part 2",
+    "title": null,
+    "seq": 2,
+    "sentence": "It aims to provide equal access to knowledge and information for any individual regardless of ethnic or economic background.",
+    "trans": "それは，民族的，経済的背景に関係なく，どんな人でも平等に知識や情報を得る機会を提供することを目指しています。"
+  },
+  {
+    "id": 13,
+    "lesson": "L1",
+    "part": "Part 2",
+    "title": null,
+    "seq": 3,
+    "sentence": "For example, it offers a free online tutoring service for students.",
+    "trans": "たとえば，学生のための無料のオンライン個人指導サービスを提供しています。"
+  },
+  {
+    "id": 14,
+    "lesson": "L1",
+    "part": "Part 2",
+    "title": null,
+    "seq": 4,
+    "sentence": "It holds job fairs and helps people write resumes or prepare for job interviews.",
+    "trans": "就職説明会を開催し，人々が履歴書を書いたり就職面接に備えて準備をしたりする手伝いをしています。"
+  },
+  {
+    "id": 15,
+    "lesson": "L1",
+    "part": "Part 2",
+    "title": null,
+    "seq": 5,
+    "sentence": "In addition, it provides volunteer opportunities for teenagers, so they can gain work skills, develop leadership skills, and make connections within their community.",
+    "trans": "その上，10代の人にボランティアの機会も提供しているので，彼らは仕事の技能を得たり，リーダーシップの能力を伸ばしたり，地域社会の中でのつながりを作ったりできます。"
+  },
+  {
+    "id": 16,
+    "lesson": "L1",
+    "part": "Part 2",
+    "title": null,
+    "seq": 6,
+    "sentence": "Libraries have been places for individuals to acquire knowledge.",
+    "trans": "図書館はずっと個人が知識を得るための場所でした。"
+  },
+  {
+    "id": 17,
+    "lesson": "L1",
+    "part": "Part 2",
+    "title": null,
+    "seq": 7,
+    "sentence": "Now, they are also places where people can get involved with others through activities, events, and learning.",
+    "trans": "今や，それらは人々が活動や行事や学習を通して他の人と関わりあう場所でもあります。"
+  },
+  {
+    "id": 18,
+    "lesson": "L1",
+    "part": "Part 2",
+    "title": null,
+    "seq": 8,
+    "sentence": "According to an American professor, while good libraries build services in addition to collections, great libraries build communities.",
+    "trans": "あるアメリカ人教授によると，良い図書館は蔵書に加えて（来訪者への）サービスを築くのに対し，すばらしい図書館は人間関係を築くということです。"
+  },
+  {
+    "id": 19,
+    "lesson": "L1",
+    "part": "Part 2",
+    "title": null,
+    "seq": 9,
+    "sentence": "What kind of library do you want in your neighborhood?",
+    "trans": "あなたは，近所にどんな種類の図書館がほしいですか。"
+  },
+  {
+    "id": 20,
+    "lesson": "L3",
+    "part": "Part 1",
+    "title": null,
+    "seq": 1,
+    "sentence": "Dr. de Sanz and Dr. Brown are \"zoo dentists.\"",
+    "trans": "ド・サンズ医師とブラウン医師は「動物園の歯科医」です。"
+  },
+  {
+    "id": 21,
+    "lesson": "L3",
+    "part": "Part 1",
+    "title": null,
+    "seq": 2,
+    "sentence": "They take care of the teeth of zoo animals in San Francisco.",
+    "trans": "彼らは，サンフランシスコにある動物園の動物の歯の世話をしています。"
+  },
+  {
+    "id": 22,
+    "lesson": "L3",
+    "part": "Part 1",
+    "title": null,
+    "seq": 3,
+    "sentence": "Many zoo animals live longer than wild ones.",
+    "trans": "多くの動物園の動物は野生動物よりも長く生きます。"
+  },
+  {
+    "id": 23,
+    "lesson": "L3",
+    "part": "Part 1",
+    "title": null,
+    "seq": 4,
+    "sentence": "Old animals tend to have more dental problems just like humans.",
+    "trans": "老齢の動物は，まさに人間と同じように，より多くの歯の問題を抱える傾向にあります。"
+  },
+  {
+    "id": 24,
+    "lesson": "L3",
+    "part": "Part 1",
+    "title": null,
+    "seq": 5,
+    "sentence": "The dentists sometimes face difficulties in checking animals' teeth.",
+    "trans": "歯科医たちは時に，動物の歯を検査するにあたって難題に直面することがあります。"
+  },
+  {
+    "id": 25,
+    "lesson": "L3",
+    "part": "Part 1",
+    "title": null,
+    "seq": 6,
+    "sentence": "One case was an old sea lion, Artie.",
+    "trans": "１つの事例は，老齢のアシカ，アーティーでした。"
+  },
+  {
+    "id": 26,
+    "lesson": "L3",
+    "part": "Part 1",
+    "title": null,
+    "seq": 7,
+    "sentence": "At the time, Artie was 30 years old, an age which is twice the normal life expectancy of wild sea lions.",
+    "trans": "そのときアーティーは30歳でしたが，それは野生のアシカの標準の寿命の２倍の年齢でした。"
+  },
+  {
+    "id": 27,
+    "lesson": "L3",
+    "part": "Part 1",
+    "title": null,
+    "seq": 8,
+    "sentence": "To see if he had any dental problems, the dentists decided to take X-rays of his mouth.",
+    "trans": "彼に歯の問題があるか確かめるために，歯科医たちは彼の口のレントゲン写真を撮ろうと決心しました。"
+  },
+  {
+    "id": 28,
+    "lesson": "L3",
+    "part": "Part 1",
+    "title": null,
+    "seq": 9,
+    "sentence": "However, it was far from easy.",
+    "trans": "しかし，それは決して簡単なことではありませんでした。"
+  },
+  {
+    "id": 29,
+    "lesson": "L3",
+    "part": "Part 1",
+    "title": null,
+    "seq": 10,
+    "sentence": "Since Artie was so excited, he couldn't stay still when the dentists tried to take an X-ray.",
+    "trans": "アーティーは興奮していたので，歯科医たちがレントゲン写真を撮ろうとしたときにじっとしていられませんでした。"
+  },
+  {
+    "id": 30,
+    "lesson": "L3",
+    "part": "Part 1",
+    "title": null,
+    "seq": 11,
+    "sentence": "They had to try many times before they could get a clear picture.",
+    "trans": "彼らは鮮明な写真が撮れるまで何度も試みなければなりませんでした。"
+  },
+  {
+    "id": 31,
+    "lesson": "L3",
+    "part": "Part 2",
+    "title": null,
+    "seq": 1,
+    "sentence": "Another difficult case was Sandy, a female black jaguar.",
+    "trans": "もう１つの困難だった事例は，メスの黒いジャガー，サンディーでした。"
+  },
+  {
+    "id": 32,
+    "lesson": "L3",
+    "part": "Part 2",
+    "title": null,
+    "seq": 2,
+    "sentence": "She had a terrible toothache.",
+    "trans": "彼女にはひどい歯痛がありました。"
+  },
+  {
+    "id": 33,
+    "lesson": "L3",
+    "part": "Part 2",
+    "title": null,
+    "seq": 3,
+    "sentence": "To look inside her mouth, the dentists had to make her go to sleep, although it was a risky procedure.",
+    "trans": "彼女の口の中を見るために，歯科医たちは彼女を眠らせなければなりませんでした。もっともそれは，危険を伴う方法でしたが。"
+  },
+  {
+    "id": 34,
+    "lesson": "L3",
+    "part": "Part 2",
+    "title": null,
+    "seq": 4,
+    "sentence": "She was 21 years old, and giving sleeping drugs to an old animal can sometimes cause serious problems.",
+    "trans": "彼女は21歳でしたが，老齢の動物に睡眠薬を与えることは，時に深刻な問題を引き起こすことがあります。"
+  },
+  {
+    "id": 35,
+    "lesson": "L3",
+    "part": "Part 2",
+    "title": null,
+    "seq": 5,
+    "sentence": "If the dose is too large, she could die.",
+    "trans": "服用量が多すぎると，彼女は死ぬ可能性もあります。"
+  },
+  {
+    "id": 36,
+    "lesson": "L3",
+    "part": "Part 2",
+    "title": null,
+    "seq": 6,
+    "sentence": "If the dose is too small, she might wake up and bite the dentists.",
+    "trans": "服用量が少なすぎると，彼女は目を覚まして歯科医を噛むかもしれません。"
+  },
+  {
+    "id": 37,
+    "lesson": "L3",
+    "part": "Part 2",
+    "title": null,
+    "seq": 7,
+    "sentence": "In fact, the treatment didn't go smoothly.",
+    "trans": "実際，処置は順調にはいきませんでした。"
+  },
+  {
+    "id": 38,
+    "lesson": "L3",
+    "part": "Part 2",
+    "title": null,
+    "seq": 8,
+    "sentence": "After the drug was administered, she suddenly stopped breathing.",
+    "trans": "睡眠薬が投与されたあと，彼女は突然呼吸が止まってしまいました。"
+  },
+  {
+    "id": 39,
+    "lesson": "L3",
+    "part": "Part 2",
+    "title": null,
+    "seq": 9,
+    "sentence": "The dentists had to provide oxygen so that she could breathe again.",
+    "trans": "歯科医たちは彼女が再び呼吸できるように，酸素を与えなくてはなりませんでした。"
+  },
+  {
+    "id": 40,
+    "lesson": "L3",
+    "part": "Part 2",
+    "title": null,
+    "seq": 10,
+    "sentence": "Later, they were able to find her dental problems and treat her teeth.",
+    "trans": "その後，彼らは歯の問題を見つけ，彼女の歯を治療することができました。"
+  },
+  {
+    "id": 41,
+    "lesson": "L3",
+    "part": "Part 2",
+    "title": null,
+    "seq": 11,
+    "sentence": "It was a tough operation, but in the end, Sandy was back to normal.",
+    "trans": "難しい手術でしたが，最終的にサンディーは普通の状態に戻りました。"
+  },
+  {
+    "id": 42,
+    "lesson": "L3",
+    "part": "Part 2",
+    "title": null,
+    "seq": 12,
+    "sentence": "Dr. de Sanz says, \"We humans keep animals in zoos for ourselves.\"",
+    "trans": "ド・サンズ医師は「私たち人間は，自分たち自身のために動物園で動物を飼育しています。」と言います。"
+  },
+  {
+    "id": 43,
+    "lesson": "L3",
+    "part": "Part 2",
+    "title": null,
+    "seq": 13,
+    "sentence": "We should be responsible for keeping them healthy all the way from the cage to the grave.",
+    "trans": "私たちは，ゆりかごから墓場までずっと動物たちを健康に保つことに責任を持つべきです。"
+  }
+]
