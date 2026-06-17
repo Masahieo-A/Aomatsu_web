@@ -6,26 +6,28 @@
 
 ## 現状の構成（重要）
 
-- 各アプリは **それぞれ独立した GitHub リポジトリ** から Vercel に個別デプロイされている。
-- このモノレポ（`Aomatsu_web`）に各アプリのソースを統合したが、**ライブのVercelデプロイは現在も個別リポジトリ側を見ている**。
-  → つまりこのリポジトリ内でアプリを再構成しても、本番デプロイには影響しない。
-- 将来、デプロイ元をモノレポに一本化する場合は、各 Vercel プロジェクトで
-  **Settings → Git → Connected Repository を `Aomatsu_web` に変更し、Root Directory に `apps/app-xxx` を指定**する（下記「モノレポ移行時の手順」参照）。
+- **モノレポ移行を順次実施中。** 以下のアプリは Vercel の Connected Repository を `Masahieo-A/Aomatsu_web` に切替済みで、`main` への push（各 Root Directory 配下の変更時）で自動デプロイされる:
+  - ポータル（Root: `/`）
+  - APP004 Cloze+整序（Root: `apps/app-cloze-seijo-maker`）
+  - APP001 英作文添削（Root: `apps/app-eisaku-tensaku`）
+  - APP005 発音チェック（Root: `apps/app-elsa-like`）
+- **APP002 整序メーカー / APP003 Cloze Maker は廃止**（APP004 に統合）。モノレポからフォルダ削除・ポータルからカード除外済み。旧GitHubリポジトリ・旧Vercelプロジェクトはオーナーが削除/アーカイブ予定。
+- 未移行アプリがある場合は、各 Vercel プロジェクトで **Settings → Git → Connected Repository を `Aomatsu_web` に変更し、Root Directory に `apps/app-xxx` を指定**する（下記「モノレポ移行時の手順」参照）。
 
 ---
 
 ## 対応表
 
-| App | Local Path | Current GitHub Repo | Future Monorepo Path | Vercel Project Name | Production URL | Env Vars |
+| App | Local Path | Connected Repo | Root Directory | Vercel Project Name | Production URL | Env Vars |
 |---|---|---|---|---|---|---|
-| ポータル | `/` | `Masahieo-A/Aomatsu_web` | `/`（ルート） | `aomatsu-english-portal` | https://aomatsu-english-portal.vercel.app | なし |
-| APP001 英作文添削 | `apps/app-eisaku-tensaku` | `Masahieo-A/eisaku-tensaku-app` | `apps/app-eisaku-tensaku` | `eisaku-tensaku-app` | https://eisaku-tensaku-app.vercel.app | `GEMINI_API_KEY` |
-| APP002 整序メーカー | `apps/app-seijo-maker` | `Masahieo-A/seijo-maker` | `apps/app-seijo-maker` | `seijo-maker` | https://seijo-maker.vercel.app | なし |
-| APP003 Cloze Maker | `apps/app-cloze-maker` | `Masahieo-A/cloze-maker` | `apps/app-cloze-maker` | `cloze-maker` | https://cloze-maker.vercel.app | なし |
-| APP004 Cloze+整序 | `apps/app-cloze-seijo-maker` | `Masahieo-A/cloze-seijo-maker` | `apps/app-cloze-seijo-maker` | `cloze-seijo-maker` | https://cloze-seijo-maker.vercel.app | Supabase（整備中） |
-| APP005 発音チェック | `apps/app-elsa-like` | `Masahieo-A/ELSA-like` | `apps/app-elsa-like` | `elsa-like` | https://elsa-like.vercel.app | なし |
+| ポータル | `/` | `Masahieo-A/Aomatsu_web` ✅ | `/`（ルート） | `aomatsu-english-portal` | https://aomatsu-english-portal.vercel.app | なし |
+| APP001 英作文添削 | `apps/app-eisaku-tensaku` | `Masahieo-A/Aomatsu_web` ✅ | `apps/app-eisaku-tensaku` | `eisaku-tensaku-app` | https://eisaku-tensaku-app.vercel.app | `GEMINI_API_KEY` |
+| APP004 Cloze+整序 | `apps/app-cloze-seijo-maker` | `Masahieo-A/Aomatsu_web` ✅ | `apps/app-cloze-seijo-maker` | `cloze-seijo-maker` | https://cloze-seijo-maker.vercel.app | Supabase（整備中） |
+| APP005 発音チェック | `apps/app-elsa-like` | `Masahieo-A/Aomatsu_web` ✅ | `apps/app-elsa-like` | `elsa-like` | https://elsa-like.vercel.app | なし |
+| ~~APP002 整序メーカー~~ | 削除済み | — | — | `seijo-maker`（削除予定） | ~~seijo-maker.vercel.app~~ | — |
+| ~~APP003 Cloze Maker~~ | 削除済み | — | — | `cloze-maker`（削除予定） | ~~cloze-maker.vercel.app~~ | — |
 
-> すべて同一 Vercel チーム（org: `team_48IzfiiYdsd5KvTIG7Mx7ELc`）に所属。
+> すべて同一 Vercel チーム（org: `team_48IzfiiYdsd5KvTIG7Mx7ELc`）に所属。✅ = モノレポ連携済み（`main` push で自動デプロイ）。
 
 ---
 

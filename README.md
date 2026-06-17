@@ -53,10 +53,9 @@
 │  └─ utils/
 └─ apps/                             ← 各アプリ（1アプリ1フォルダ）
    ├─ app-eisaku-tensaku/            ← APP001 英作文 文法添削（Next.js + Gemini）
-   ├─ app-seijo-maker/               ← APP002 整序メーカー（Next.js）
-   ├─ app-cloze-maker/               ← APP003 Cloze Test Maker（Next.js）
    ├─ app-cloze-seijo-maker/         ← APP004 Cloze + 整序（Next.js + Supabase）
    └─ app-elsa-like/                 ← APP005 発音チェック（静的HTML）
+   # APP002 整序メーカー / APP003 Cloze Maker は APP004 に統合し廃止（フォルダ削除済み）
 ```
 
 詳細な各アプリのURL・GitHub・スタックは [PROJECTS.md](PROJECTS.md) を参照。
