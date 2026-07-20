@@ -33,7 +33,7 @@
 | App | Root Directory（切替時に設定） | 現在の Connected Repo | Vercel Project Name | Production URL | Env Vars |
 |---|---|---|---|---|---|
 | APP006 育てるAI | `apps/app-sodateru-ai` | `Masahieo-A/sodateru-ai` | `sodateru-ai`（prj_O4TsGSy5WvrAUgu1MREdq7sUFAGC） | https://sodateru-ai.vercel.app | GEMINI_API_KEY / Supabase 3種 / 教員PW |
-| APP008 着眼点③ | `apps/app-viewpoint` | `Masahieo-A/viewpoint` | `viewpoint` | https://viewpoint.vercel.app 系 | なし |
+| APP008 着眼点③ | `apps/app-viewpoint` | `Masahieo-A/viewpoint` | `viewpoint`（旧個別。※viewpoint.vercel.app は無関係の他者サービスが占有） | ポータル同一デプロイの相対リンクで提供（apps/app-viewpoint/index.html）→ 旧個別プロジェクトは切替不要・廃止候補 | なし |
 | APP010 総合探究発表会 | `apps/app-sogo-tankyu-report` | `Masahieo-A/sogo-tankyu-report` | （sogo-happyo） | https://sogo-happyo.vercel.app | なし（Apps Script連携） |
 | APP012 未来の図書館 | `apps/app-mirai-library` | Git未接続（CLI直デプロイ） | `image_2.0`（prj_c92R3MT7JGHDdSR45ufDC9xNA4D6） | image_2.0 系 | NextAuth / Google OAuth / Supabase / OpenAI |
 | APP016 保護者懇談会 | `apps/app-parent-teacher-meeting` | `Masahieo-A/parent-teacher-meeting` | `parent-teacher-meeting`（prj_DTYEtHmg6Eu74DjKAPGb7eyTONJP） | parent-teacher-meeting 系 | なし |
