@@ -1,0 +1,20 @@
+{
+  "name": "zdp-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ZPD診断型 英語学習支援アプリ (ZDP) と 文法項目マスタ管理アプリ のモノレポ",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:zdp": "npm run dev --workspace apps/zdp",
+    "dev:master": "npm run dev --workspace apps/master-editor",
+    "build:zdp": "npm run build --workspace apps/zdp",
+    "build:master": "npm run build --workspace apps/master-editor",
+    "sync-prompts": "node packages/prompts/scripts/sync-from-design.mjs"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}

@@ -119,3 +119,7 @@ open index.html    # またはローカルサーバ: npx serve .
 ---
 
 © 2025–2026 青松 English Hub
+
+---
+開発者向け情報は [docs/構成.md](docs/構成.md) を参照。
+機能要件は [docs/要件定義.md](docs/要件定義.md) を参照。

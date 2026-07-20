@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>富田高校　総合探究成果報告会 - スケジュール</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ナビゲーションバー -->
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="https://aomatsu-english-portal.vercel.app" class="site-logo">
+        <span class="logo-mark">🌿</span>English Hub
+      </a>
+      <span class="nav-sep" aria-hidden="true">›</span>
+      <span class="site-nav-title">富田高校　総合探究成果報告会</span>
+      <span class="site-nav-badge">学内限定</span>
+    </div>
+  </nav>
+
+  <!-- ヒーローセクション -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow" id="eventDate">—</p>
+      <h1 class="hero-title">総合探究成果報告会</h1>
+      <p class="hero-sub">富田高校</p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-num" id="statGroups">—</span>
+          <span class="stat-label">グループ</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-num" id="statTimeslots">—</span>
+          <span class="stat-label">時間帯</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-num" id="statRooms">—</span>
+          <span class="stat-label">教室</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="main">
+
+    <!-- お知らせ（schedule.json の notice を表示） -->
+    <p class="site-notice" id="siteNotice" hidden></p>
+
+    <!-- 時間割（折りたたみ） -->
+    <details class="time-details" id="timeDetails">
+      <summary class="time-summary">本日の時間割 <span class="collapse-icon" aria-hidden="true"></span></summary>
+      <div class="time-table-card">
+        <div class="table-wrap">
+          <table class="time-table" aria-label="本日の時間割">
+            <thead>
+              <tr>
+                <th>時間</th>
+                <th>活動内容</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>8:50 ～ 9:00</td><td>教室移動、発表準備</td></tr>
+              <tr><td>9:00 ～ 9:45</td><td>第1発表</td></tr>
+              <tr><td>9:45 ～ 10:00</td><td>発表者入れ替わり・休憩</td></tr>
+              <tr><td>10:00 ～ 10:45</td><td>第2発表</td></tr>
+              <tr><td>10:45 ～ 11:00</td><td>発表者入れ替わり・休憩</td></tr>
+              <tr><td>11:00 ～ 11:45</td><td>第3発表</td></tr>
+              <tr><td>11:45 ～ 11:55</td><td>自分のクラスへ戻る</td></tr>
+              <tr><td>11:55 ～</td><td>アンケート実施、帰りのST</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </details>
+
+    <!-- 検索・フィルターエリア（常時表示） -->
+    <div class="search-area">
+      <div class="search-row">
+        <div class="search-input-wrap">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input type="search" id="scheduleSearch" class="search-input" placeholder="教室・グループ・探究テーマで検索" autocomplete="off">
+          <button type="button" id="searchClear" class="search-clear" title="クリア" aria-label="検索をクリア">×</button>
+        </div>
+      </div>
+      <div class="filter-row">
+        <div class="timeslot-pills" id="timeslotPills">
+          <!-- JS で生成 -->
+        </div>
+        <div class="filter-group">
+          <label for="filterRoom" class="filter-label">教室</label>
+          <select id="filterRoom" class="filter-select">
+            <option value="">すべて</option>
+          </select>
+        </div>
+        <p class="result-count" id="resultCount">—</p>
+      </div>
+      <p class="sort-hint">※ 表の列名をクリックで並び替え</p>
+    </div>
+
+    <!-- スケジュールテーブル -->
+    <div class="table-card">
+      <div class="table-wrap">
+        <table class="schedule-table" id="scheduleTable">
+          <thead>
+            <tr>
+              <th class="sortable" data-sort="timeslot_label" title="クリックで並び替え">時間帯 <span class="sort-icon">↕</span></th>
+              <th class="sortable" data-sort="room_name" title="クリックで並び替え">教室 <span class="sort-icon">↕</span></th>
+              <th class="sortable" data-sort="group_name" title="クリックで並び替え">グループ <span class="sort-icon">↕</span></th>
+              <th class="sortable col-theme" data-sort="theme_title" title="クリックで並び替え">探究テーマ <span class="sort-icon">↕</span></th>
+              <th class="sortable col-detail" data-sort="theme_detail" title="クリックで並び替え">テーマ詳細 <span class="sort-icon">↕</span></th>
+            </tr>
+          </thead>
+          <tbody id="scheduleBody">
+            <!-- JS で生成 -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer-text">許可なく複製・転載・転用することを固く禁じます。</p>
+  </footer>
+
+  <script src="common.js"></script>
+  <script src="schedule.js"></script>
+</body>
+</html>

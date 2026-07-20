@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* ===== English Hub デザインシステム カラーパレット ===== */
+:root {
+  --color-accent: #2d6a4f;
+  --color-accent-hover: #1f5238;
+  --color-accent-light: #52b788;
+  --color-accent-dim: #d8f3dc;
+  --color-bg: #f8f7f4;
+  --color-surface: #ffffff;
+  --color-border: #e2ddd8;
+  --color-text: #1a1714;
+  --color-text-muted: #6b645c;
+
+  /* 既存トークン（Tailwind テーマ用）をポータル基調に合わせる */
+  --background: var(--color-bg);
+  --foreground: var(--color-text);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans JP",
+    var(--font-geist-sans), sans-serif;
+  line-height: 1.6;
+}

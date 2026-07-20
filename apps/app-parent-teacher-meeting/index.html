@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>保護者懇談会 日程調整</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="appbar">
+    <div class="appbar-inner">
+      <div class="appbar-brand">
+        <a href="https://aomatsu-english-portal.vercel.app" class="portal-link">
+          <span class="portal-mark">🌿</span>English Hub
+        </a>
+        <span class="portal-sep">›</span>
+        <div class="appbar-title">
+          <span class="appbar-school" id="barSchool">名古屋市立富田高等学校</span>
+          <span class="appbar-main">保護者懇談会 日程調整</span>
+        </div>
+      </div>
+      <nav class="tabs" id="tabs">
+        <button class="tab is-active" data-view="parent">保護者入力</button>
+        <button class="tab" data-view="teacher">教員管理</button>
+        <button class="tab" data-view="edit">編集</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ===================== 保護者画面 ===================== -->
+    <section id="view-parent" class="view is-active">
+      <div class="card intro">
+        <h1 id="p-title">３年４組 保護者懇談会 日程希望調査</h1>
+        <p class="muted" id="p-lead">
+          ご出席いただける時間帯をすべてタップして○を付け、最後に「希望を送信」を押してください。
+          ○が多いほど調整がスムーズになります。
+        </p>
+        <p class="deadline" id="p-deadline"></p>
+      </div>
+
+      <div class="card">
+        <div class="form-row">
+          <label>出席番号
+            <input type="number" id="f-number" min="1" inputmode="numeric" placeholder="例) 12">
+          </label>
+          <label>生徒氏名
+            <input type="text" id="f-student" placeholder="例) 富田 太郎">
+          </label>
+          <label>保護者氏名
+            <input type="text" id="f-parent" placeholder="例) 富田 花子">
+          </label>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="grid-tools">
+          <span class="muted small">マスをタップで ○ / もう一度で解除。日付ラベルをタップでその日を一括 ○。</span>
+          <span class="chosen-count" id="p-count">選択中: 0 枠</span>
+        </div>
+        <div class="grid-scroll">
+          <table class="slot-grid" id="p-grid"></table>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-primary btn-lg" id="p-submit">希望を送信</button>
+        <button class="btn btn-ghost" id="p-load">入力済みデータを呼び出す</button>
+      </div>
+      <p class="submit-msg" id="p-msg"></p>
+    </section>
+
+    <!-- ===================== 教員画面 ===================== -->
+    <section id="view-teacher" class="view">
+
+      <div class="card">
+        <div class="section-head">
+          <h2>提出状況</h2>
+          <div class="head-actions">
+            <button class="btn btn-small btn-ghost" id="t-demo">デモデータ投入(40家庭)</button>
+            <button class="btn btn-small btn-ghost" id="t-backup">バックアップ(JSON)</button>
+            <button class="btn btn-small btn-ghost" id="t-restore-btn">復元(JSON読込)</button>
+            <input type="file" id="t-restore-file" accept="application/json,.json" hidden>
+            <button class="btn btn-small btn-danger-ghost" id="t-clear">全データ削除</button>
+          </div>
+        </div>
+        <div class="stats" id="t-stats"></div>
+        <div class="table-wrap">
+          <table class="list-table" id="t-list"></table>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-head">
+          <h2>自動割り当て</h2>
+          <div class="head-actions">
+            <button class="btn btn-primary" id="t-assign">重複なしで自動割り当て</button>
+            <button class="btn btn-ghost" id="t-export">Excel出力</button>
+          </div>
+        </div>
+        <p class="muted small">
+          1枠につき1家庭。各家庭が○を付けた枠の中だけを使い、できるだけ多くの家庭が割り当たるよう最適化します（最大マッチング）。
+        </p>
+        <div class="assign-summary" id="t-assign-summary"></div>
+        <div class="grid-scroll">
+          <table class="slot-grid result-grid" id="t-result"></table>
+        </div>
+        <div id="t-unassigned"></div>
+      </div>
+
+    </section>
+
+    <!-- ===================== 編集画面 ===================== -->
+    <section id="view-edit" class="view">
+      <div class="card">
+        <h2>基本情報</h2>
+        <div class="form-row" style="margin-top:12px;">
+          <label>学校名<input type="text" id="e-school"></label>
+          <label>クラス名<input type="text" id="e-class"></label>
+          <label>担任名<input type="text" id="e-teacher"></label>
+          <label>提出期限<input type="text" id="e-deadline"></label>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>時間枠の自動生成</h2>
+        <p class="muted small" style="margin-top:6px;">開始時間・1枠の長さ・枠数から、等間隔の時間列をまとめて作り直します。下の表の ＋／× で個別に調整もできます。</p>
+        <div class="form-row" style="margin-top:12px; align-items:flex-end;">
+          <label>最も早い開始時間<input type="time" id="e-start"></label>
+          <label>1枠の時間（分）<input type="number" id="e-minutes" min="1" step="5"></label>
+          <label>時間枠数（列）<input type="number" id="e-count" min="1"></label>
+          <div><button class="btn btn-primary" id="e-regen">この設定で時間列を再生成</button></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-head">
+          <h2>カレンダー編集</h2>
+        </div>
+        <p class="muted small">日付セルで日にちを設定します。行（日付）は左端の ＋ で追加・各行の × で削除、列（時間）は上端の ＋ で追加・各列の × で削除できます。</p>
+        <div class="grid-scroll" style="margin-top:10px;">
+          <table class="edit-grid" id="e-grid"></table>
+        </div>
+        <p class="edit-note muted small">※ 変更は即座に「保護者入力」「教員管理」画面に反映されます。提出データがある状態で枠を増減すると○の位置がずれる場合があるため、データ収集前に確定してください。</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="xlsx.full.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

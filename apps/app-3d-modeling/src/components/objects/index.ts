@@ -1,0 +1,11 @@
+export { Wall } from "./Wall";
+export { Floor } from "./Floor";
+export { Table } from "./Table";
+export { Chair } from "./Chair";
+export { Door } from "./Door";
+export { Window } from "./Window";
+export { Plant } from "./Plant";
+export { Sofa } from "./Sofa";
+export { Stairs } from "./Stairs";
+export { Elevator } from "./Elevator";
+export { GroundPlane } from "./GroundPlane";

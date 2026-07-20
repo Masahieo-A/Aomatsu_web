@@ -1,0 +1,563 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-07-04T00:00:00+09:00",
+  "total": 20,
+  "deprecated_ids": [],
+  "items": [
+    {
+      "id": "G001",
+      "name": "基本文型（SVO）",
+      "name_en": "basic clause structure (SVO)",
+      "status": "published",
+      "level": "A1",
+      "parent_id": null,
+      "prerequisites": [],
+      "criteria": "主語+動詞+目的語からなる基本的な平叙文",
+      "patterns": ["S + V + O"],
+      "positive_examples": [
+        { "sentence": "I like music.", "span": "I like music" },
+        { "sentence": "She reads books.", "span": "She reads books" },
+        { "sentence": "We play soccer.", "span": "We play soccer" }
+      ],
+      "negative_examples": [
+        { "sentence": "It is cold.", "reason": "SVCであり目的語を取らない" },
+        { "sentence": "Run!", "reason": "命令文で主語が省略されている" }
+      ],
+      "common_misconceptions": ["補語と目的語を区別できない"],
+      "probe_template": "文の主語・動詞・目的語を1つずつ指させる。",
+      "notes": "グラフの起点。",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.98, "runs": 20 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 1
+    },
+    {
+      "id": "G002",
+      "name": "be動詞（現在）",
+      "name_en": "be-verb (present)",
+      "status": "published",
+      "level": "A1",
+      "parent_id": null,
+      "prerequisites": [],
+      "criteria": "am/is/are を用いた文（SVC・存在）",
+      "patterns": ["S + be + C"],
+      "positive_examples": [
+        { "sentence": "I am a student.", "span": "am" },
+        { "sentence": "They are happy.", "span": "are" },
+        { "sentence": "This is my bag.", "span": "is" }
+      ],
+      "negative_examples": [
+        { "sentence": "I have a pen.", "reason": "一般動詞haveの文" },
+        { "sentence": "She runs fast.", "reason": "一般動詞runsの文" }
+      ],
+      "common_misconceptions": ["一般動詞とbe動詞を同じ文で二重に使う"],
+      "probe_template": "be動詞の後ろが名詞か形容詞かを問う。",
+      "notes": "",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.97, "runs": 20 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 1
+    },
+    {
+      "id": "G003",
+      "name": "一般動詞（現在形）",
+      "name_en": "general verbs (present)",
+      "status": "published",
+      "level": "A1",
+      "parent_id": null,
+      "prerequisites": ["G001"],
+      "criteria": "一般動詞の現在形。三単現の -s を含む",
+      "patterns": ["S + V(-s) + O"],
+      "positive_examples": [
+        { "sentence": "He plays tennis.", "span": "plays" },
+        { "sentence": "I want water.", "span": "want" },
+        { "sentence": "She likes cats.", "span": "likes" }
+      ],
+      "negative_examples": [
+        { "sentence": "He is playing tennis.", "reason": "現在進行形" },
+        { "sentence": "He played tennis.", "reason": "過去形" }
+      ],
+      "common_misconceptions": ["三人称単数の -s を付け忘れる"],
+      "probe_template": "主語の人称と動詞の形の対応を問う。",
+      "notes": "",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.95, "runs": 20 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 1
+    },
+    {
+      "id": "G004",
+      "name": "過去形（規則・不規則）",
+      "name_en": "past tense",
+      "status": "published",
+      "level": "A1",
+      "parent_id": null,
+      "prerequisites": ["G003"],
+      "criteria": "動詞の過去形（-ed および不規則変化）で過去の事実を述べる",
+      "patterns": ["S + V(-ed/irregular) + O"],
+      "positive_examples": [
+        { "sentence": "I visited Kyoto last year.", "span": "visited" },
+        { "sentence": "She went home early.", "span": "went" },
+        { "sentence": "We watched a movie.", "span": "watched" }
+      ],
+      "negative_examples": [
+        { "sentence": "I have visited Kyoto.", "reason": "現在完了であり過去形単独ではない" },
+        { "sentence": "She goes home early.", "reason": "現在形" }
+      ],
+      "common_misconceptions": ["不規則動詞に -ed を付ける（goed 等）"],
+      "probe_template": "文の時制を問い、過去を表す語（yesterday等）との整合を確認する。",
+      "notes": "",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.94, "runs": 18 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 1
+    },
+    {
+      "id": "G005",
+      "name": "助動詞（can / will）",
+      "name_en": "modal verbs (can/will)",
+      "status": "published",
+      "level": "A2",
+      "parent_id": null,
+      "prerequisites": ["G003"],
+      "criteria": "助動詞 + 動詞の原形で能力・未来を表す",
+      "patterns": ["S + can/will + V(原形)"],
+      "positive_examples": [
+        { "sentence": "I can swim.", "span": "can swim" },
+        { "sentence": "She will come tomorrow.", "span": "will come" },
+        { "sentence": "We can help you.", "span": "can help" }
+      ],
+      "negative_examples": [
+        { "sentence": "I am able to swim.", "reason": "助動詞ではなくbe able to" },
+        { "sentence": "She comes tomorrow.", "reason": "助動詞がない" }
+      ],
+      "common_misconceptions": ["助動詞の後ろを三単現や過去形にする（can swims 等）"],
+      "probe_template": "助動詞の後ろの動詞の形を問う。",
+      "notes": "",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.93, "runs": 15 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 1
+    },
+    {
+      "id": "G006",
+      "name": "現在進行形",
+      "name_en": "present progressive",
+      "status": "published",
+      "level": "A1",
+      "parent_id": null,
+      "prerequisites": ["G002", "G003"],
+      "criteria": "be動詞 + 現在分詞(-ing) で進行中の動作を表す",
+      "patterns": ["S + be + V-ing"],
+      "positive_examples": [
+        { "sentence": "I am studying now.", "span": "am studying" },
+        { "sentence": "They are running.", "span": "are running" },
+        { "sentence": "She is cooking dinner.", "span": "is cooking" }
+      ],
+      "negative_examples": [
+        { "sentence": "I study every day.", "reason": "現在形の習慣" },
+        { "sentence": "Running is fun.", "reason": "動名詞であり進行形ではない" }
+      ],
+      "common_misconceptions": ["be動詞を落として V-ing だけにする"],
+      "probe_template": "be動詞の有無と -ing の対応を確認する。",
+      "notes": "",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.94, "runs": 16 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 1
+    },
+    {
+      "id": "G007",
+      "name": "過去分詞の形",
+      "name_en": "past participle form",
+      "status": "published",
+      "level": "A2",
+      "parent_id": null,
+      "prerequisites": ["G004"],
+      "criteria": "動詞の過去分詞形（-ed / 不規則第三変化）そのものの認識",
+      "patterns": ["V-ed(pp)", "irregular pp (written, taken, ...)"],
+      "positive_examples": [
+        { "sentence": "The letter is written in English.", "span": "written" },
+        { "sentence": "The window was broken.", "span": "broken" },
+        { "sentence": "These cars are made in Japan.", "span": "made" }
+      ],
+      "negative_examples": [
+        { "sentence": "He wrote a letter.", "reason": "過去形であり過去分詞ではない" },
+        { "sentence": "He is writing a letter.", "reason": "現在分詞" }
+      ],
+      "common_misconceptions": ["過去形と過去分詞を混同する（take-took-taken 等）"],
+      "probe_template": "動詞の三段変化のうち第三変化を答えさせる。",
+      "notes": "受動態・完了・分詞の共通前提。",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.92, "runs": 14 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 1
+    },
+    {
+      "id": "G008",
+      "name": "受動態",
+      "name_en": "passive voice",
+      "status": "published",
+      "level": "B1",
+      "parent_id": null,
+      "prerequisites": ["G002", "G007"],
+      "criteria": "be動詞 + 過去分詞 で「〜される」を表す。動作主は by で示すことがある",
+      "patterns": ["S + be + V(pp) (+ by ...)"],
+      "positive_examples": [
+        { "sentence": "This book was written by a famous author.", "span": "was written" },
+        { "sentence": "English is spoken in many countries.", "span": "is spoken" },
+        { "sentence": "The room is cleaned every day.", "span": "is cleaned" }
+      ],
+      "negative_examples": [
+        { "sentence": "He has written a book.", "reason": "現在完了（have+pp）であり受動態ではない" },
+        { "sentence": "The falling leaves are red.", "reason": "分詞の形容詞用法" }
+      ],
+      "common_misconceptions": [
+        "be動詞を落として過去分詞だけで受動を表そうとする",
+        "現在完了(have+pp)と受動態(be+pp)を混同する"
+      ],
+      "probe_template": "be動詞+過去分詞のまとまりを指させ、能動文に書き換えさせて動作主を問う。",
+      "notes": "2026年度 教科書 Lesson 3 に頻出。",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.95, "runs": 20 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 2
+    },
+    {
+      "id": "G009",
+      "name": "現在完了",
+      "name_en": "present perfect",
+      "status": "published",
+      "level": "B1",
+      "parent_id": null,
+      "prerequisites": ["G007"],
+      "criteria": "have/has + 過去分詞 で完了・経験・継続を表す",
+      "patterns": ["S + have/has + V(pp)"],
+      "positive_examples": [
+        { "sentence": "I have finished my homework.", "span": "have finished" },
+        { "sentence": "She has visited Canada twice.", "span": "has visited" },
+        { "sentence": "We have known each other for years.", "span": "have known" }
+      ],
+      "negative_examples": [
+        { "sentence": "I finished my homework.", "reason": "過去形" },
+        { "sentence": "The book is finished.", "reason": "受動態(be+pp)" }
+      ],
+      "common_misconceptions": ["過去形と現在完了を区別せず ago と併用する"],
+      "probe_template": "have/has+過去分詞のまとまりを確認し、過去形との違いを問う。",
+      "notes": "",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.91, "runs": 12 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 1
+    },
+    {
+      "id": "G010",
+      "name": "to不定詞（名詞的用法）",
+      "name_en": "to-infinitive (nominal)",
+      "status": "published",
+      "level": "A2",
+      "parent_id": null,
+      "prerequisites": ["G003"],
+      "criteria": "to + 動詞の原形が主語・目的語・補語になる（〜すること）",
+      "patterns": ["to + V(原形) as noun"],
+      "positive_examples": [
+        { "sentence": "I want to study abroad.", "span": "to study" },
+        { "sentence": "To learn English is fun.", "span": "To learn" },
+        { "sentence": "My dream is to be a teacher.", "span": "to be" }
+      ],
+      "negative_examples": [
+        { "sentence": "I went to school.", "reason": "前置詞のto" },
+        { "sentence": "I study to pass the exam.", "reason": "副詞的用法（目的）" }
+      ],
+      "common_misconceptions": ["前置詞のtoと不定詞のtoを混同する"],
+      "probe_template": "to+動詞が「〜すること」に置き換えられるか確認する。",
+      "notes": "",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.9, "runs": 12 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 1
+    },
+    {
+      "id": "G011",
+      "name": "to不定詞（副詞的用法・目的）",
+      "name_en": "to-infinitive (adverbial, purpose)",
+      "status": "published",
+      "level": "B1",
+      "parent_id": null,
+      "prerequisites": ["G010"],
+      "criteria": "to + 動詞の原形が「〜するために」と目的を表す",
+      "patterns": ["... to + V(原形) (in order to)"],
+      "positive_examples": [
+        { "sentence": "I study hard to pass the exam.", "span": "to pass" },
+        { "sentence": "She got up early to catch the train.", "span": "to catch" },
+        { "sentence": "We went there to see the festival.", "span": "to see" }
+      ],
+      "negative_examples": [
+        { "sentence": "I want to pass the exam.", "reason": "名詞的用法（wantの目的語）" },
+        { "sentence": "I have a lot to do.", "reason": "形容詞的用法" }
+      ],
+      "common_misconceptions": ["名詞的用法と副詞的用法を区別できない"],
+      "probe_template": "to以下を「〜するために」と訳せるか確認する。",
+      "notes": "",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.9, "runs": 11 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 1
+    },
+    {
+      "id": "G012",
+      "name": "動名詞",
+      "name_en": "gerund",
+      "status": "published",
+      "level": "A2",
+      "parent_id": null,
+      "prerequisites": ["G003"],
+      "criteria": "動詞の -ing 形が名詞として主語・目的語になる",
+      "patterns": ["V-ing as noun"],
+      "positive_examples": [
+        { "sentence": "Reading books is my hobby.", "span": "Reading books" },
+        { "sentence": "I enjoy playing the guitar.", "span": "playing" },
+        { "sentence": "Thank you for helping me.", "span": "helping" }
+      ],
+      "negative_examples": [
+        { "sentence": "She is reading a book.", "reason": "現在進行形" },
+        { "sentence": "The crying baby stopped.", "reason": "現在分詞の形容詞用法" }
+      ],
+      "common_misconceptions": ["進行形の -ing と動名詞を混同する"],
+      "probe_template": "-ing 語が「〜すること」と訳せる名詞か確認する。",
+      "notes": "",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.9, "runs": 11 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 1
+    },
+    {
+      "id": "G013",
+      "name": "関係代名詞（主格）",
+      "name_en": "relative pronoun (subject)",
+      "status": "published",
+      "level": "B1",
+      "parent_id": null,
+      "prerequisites": ["G001"],
+      "criteria": "who/which/that が節内の主語となり先行詞を修飾する",
+      "patterns": ["N + who/which/that + V ..."],
+      "positive_examples": [
+        { "sentence": "The boy who lives next door is kind.", "span": "who lives next door" },
+        { "sentence": "I have a friend who speaks French.", "span": "who speaks French" },
+        { "sentence": "This is the train which goes to Kyoto.", "span": "which goes to Kyoto" }
+      ],
+      "negative_examples": [
+        { "sentence": "The book which I read was good.", "reason": "目的格の関係代名詞" },
+        { "sentence": "I know who you are.", "reason": "間接疑問文のwho" }
+      ],
+      "common_misconceptions": ["関係代名詞節内で主語を重複させる（who he lives 等）"],
+      "probe_template": "先行詞を指し、関係詞節の主語が何かを問う。",
+      "notes": "",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.92, "runs": 14 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 1
+    },
+    {
+      "id": "G014",
+      "name": "関係代名詞（目的格）と省略",
+      "name_en": "relative pronoun (object) and omission",
+      "status": "published",
+      "level": "B1",
+      "parent_id": null,
+      "prerequisites": ["G013"],
+      "criteria": "目的格の関係代名詞（whom/which/that）が省略され、先行詞の直後に主語+動詞が続く",
+      "patterns": ["N + (that) + S + V", "N + S + V ..."],
+      "positive_examples": [
+        { "sentence": "The book I bought yesterday is interesting.", "span": "I bought yesterday" },
+        { "sentence": "The person you met is my teacher.", "span": "you met" },
+        { "sentence": "This is the movie everyone likes.", "span": "everyone likes" }
+      ],
+      "negative_examples": [
+        { "sentence": "The boy who lives next door is kind.", "reason": "主格であり省略できない" },
+        { "sentence": "I think you are right.", "reason": "thatの省略だが名詞節（関係詞ではない）" }
+      ],
+      "common_misconceptions": [
+        "先行詞の直後の名詞+動詞を見て文に動詞が2つあると混乱する",
+        "省略された関係代名詞に気づかず主節の動詞を取り違える"
+      ],
+      "probe_template": "先行詞の直後に省略された関係代名詞を補わせ、主節の動詞を特定させる。",
+      "notes": "生徒がつまずく最頻出項目。",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.93, "runs": 20 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 2
+    },
+    {
+      "id": "G015",
+      "name": "分詞の形容詞用法（前置）",
+      "name_en": "participial adjective (attributive)",
+      "status": "published",
+      "level": "B1",
+      "parent_id": null,
+      "prerequisites": ["G007"],
+      "criteria": "現在分詞/過去分詞が名詞の前に置かれて修飾する",
+      "patterns": ["V-ing + N", "V-ed(pp) + N"],
+      "positive_examples": [
+        { "sentence": "A crying baby needs care.", "span": "crying" },
+        { "sentence": "I found a broken cup.", "span": "broken" },
+        { "sentence": "Look at the sleeping cat.", "span": "sleeping" }
+      ],
+      "negative_examples": [
+        { "sentence": "The baby is crying.", "reason": "現在進行形（叙述用法）" },
+        { "sentence": "The theory, first proposed in 1984, is old.", "reason": "分詞構文（挿入型）" }
+      ],
+      "common_misconceptions": ["前置修飾の分詞を動詞と誤読する"],
+      "probe_template": "分詞と被修飾名詞の関係（能動/受動）を問う。",
+      "notes": "分詞構文の前提。",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.91, "runs": 12 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 1
+    },
+    {
+      "id": "G016",
+      "name": "分詞構文（過去分詞・挿入型）",
+      "name_en": "participial construction (past participle, parenthetical)",
+      "status": "published",
+      "level": "B1",
+      "parent_id": null,
+      "prerequisites": ["G015", "G008"],
+      "criteria": "コンマで区切られた過去分詞句が主節の主語を修飾している",
+      "patterns": [", first proposed in ...,", ", written by ...,"],
+      "positive_examples": [
+        { "sentence": "The theory, first proposed in 1984, has since been challenged.", "span": "first proposed in 1984" },
+        { "sentence": "The book, written in simple English, is popular.", "span": "written in simple English" },
+        { "sentence": "The bridge, built 100 years ago, still stands.", "span": "built 100 years ago" }
+      ],
+      "negative_examples": [
+        { "sentence": "The proposed theory has been challenged.", "reason": "過去分詞の前置修飾であり挿入型ではない（G015）" },
+        { "sentence": "The theory was proposed in 1984.", "reason": "受動態の単文（G008）" }
+      ],
+      "common_misconceptions": [
+        "挿入句内の過去分詞を主節の動詞と誤読する",
+        "proposed を過去形の動詞と解釈し、文に動詞が2つあると混乱する"
+      ],
+      "probe_template": "挿入句を除去した文を提示して主節の理解を確認する。次に挿入句のみを取り出し、分詞の意味上の主語を問う。",
+      "notes": "2026年度3年A組で頻出。教科書 Lesson 4 に出現。",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.95, "runs": 20 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 3
+    },
+    {
+      "id": "G017",
+      "name": "仮定法過去",
+      "name_en": "subjunctive (present counterfactual)",
+      "status": "published",
+      "level": "B2",
+      "parent_id": null,
+      "prerequisites": ["G004", "G005"],
+      "criteria": "If + S + 過去形, S + would/could + 原形 で現在の事実に反する仮定を表す",
+      "patterns": ["If S + V(過去), S + would/could + V(原形)"],
+      "positive_examples": [
+        { "sentence": "If I had more time, I would travel the world.", "span": "had ... would travel" },
+        { "sentence": "If I were you, I would study harder.", "span": "were ... would study" },
+        { "sentence": "If it were sunny, we could go out.", "span": "were ... could go" }
+      ],
+      "negative_examples": [
+        { "sentence": "If it rains, I will stay home.", "reason": "直説法（条件文・現在の可能性）" },
+        { "sentence": "When I was young, I lived in Osaka.", "reason": "単なる過去の事実" }
+      ],
+      "common_misconceptions": [
+        "if節の過去形を過去の出来事と解釈する",
+        "were を was に直してしまう（I were → I was）"
+      ],
+      "probe_template": "if節が現実か非現実かを問い、主節のwould/couldの役割を確認する。",
+      "notes": "",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.94, "runs": 18 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 2
+    },
+    {
+      "id": "G018",
+      "name": "時制の一致",
+      "name_en": "sequence of tenses",
+      "status": "published",
+      "level": "B1",
+      "parent_id": null,
+      "prerequisites": ["G004"],
+      "criteria": "主節が過去のとき、that節など従属節の動詞も過去にずれる",
+      "patterns": ["S + said/thought (past) + that + S + V(past)"],
+      "positive_examples": [
+        { "sentence": "She said that she was tired.", "span": "was" },
+        { "sentence": "I thought he would come.", "span": "would come" },
+        { "sentence": "He told me that he had finished.", "span": "had finished" }
+      ],
+      "negative_examples": [
+        { "sentence": "She says that she is tired.", "reason": "主節が現在なので一致は起きない" },
+        { "sentence": "The sun rises in the east, he said.", "reason": "不変の真理は一致しない" }
+      ],
+      "common_misconceptions": [
+        "主節が過去でも従属節を現在形のままにする",
+        "would を単なる未来と解釈する"
+      ],
+      "probe_template": "主節の時制を確認し、that節の動詞がなぜ過去なのかを問う。",
+      "notes": "間接話法の前提。",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.92, "runs": 15 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 1
+    },
+    {
+      "id": "G019",
+      "name": "間接話法",
+      "name_en": "reported speech",
+      "status": "published",
+      "level": "B1",
+      "parent_id": null,
+      "prerequisites": ["G018"],
+      "criteria": "直接話法の発話を that節等に変換し、人称・時制・指示語を調整する",
+      "patterns": ["S + said (that) + S + V ..."],
+      "positive_examples": [
+        { "sentence": "He said that he was busy that day.", "span": "said that he was busy" },
+        { "sentence": "She asked me if I was ready.", "span": "asked me if I was" },
+        { "sentence": "They told us that they would help.", "span": "told us that they would help" }
+      ],
+      "negative_examples": [
+        { "sentence": "He said, \"I am busy.\"", "reason": "直接話法" },
+        { "sentence": "I know that he is busy.", "reason": "時制の一致が起きない現在の知識" }
+      ],
+      "common_misconceptions": ["人称の変換を忘れる", "時制のずらしを忘れる"],
+      "probe_template": "直接話法との対応をとり、変換された人称・時制を確認する。",
+      "notes": "",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.9, "runs": 11 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 1
+    },
+    {
+      "id": "G020",
+      "name": "比較級・最上級",
+      "name_en": "comparatives and superlatives",
+      "status": "published",
+      "level": "A2",
+      "parent_id": null,
+      "prerequisites": ["G002"],
+      "criteria": "-er/more で比較級、-est/most で最上級を作り程度を比べる",
+      "patterns": ["Adj-er than", "the Adj-est", "more/most + Adj"],
+      "positive_examples": [
+        { "sentence": "This book is more interesting than that one.", "span": "more interesting than" },
+        { "sentence": "She is the tallest in her class.", "span": "the tallest" },
+        { "sentence": "Today is colder than yesterday.", "span": "colder than" }
+      ],
+      "negative_examples": [
+        { "sentence": "This book is interesting.", "reason": "原級（比較なし）" },
+        { "sentence": "I like this better.", "reason": "副詞betterの用法だが比較対象が明示されていない" }
+      ],
+      "common_misconceptions": ["more と -er を重ねる（more taller 等）"],
+      "probe_template": "比較の対象（than以下）と比較級の形を確認する。",
+      "notes": "",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.93, "runs": 14 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 1
+    }
+  ]
+}

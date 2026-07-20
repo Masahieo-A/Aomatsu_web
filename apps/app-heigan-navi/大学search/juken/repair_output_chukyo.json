@@ -1,0 +1,1528 @@
+[
+  {
+    "id": "chukyo-2027-ippan-a-3kyoka-bunkei",
+    "university": "中京大学",
+    "faculty": "全学部共通（工学部以外）",
+    "department": "文系型【3教科型】対象全学科・専攻",
+    "methodName": "一般選抜前期日程A方式【3教科型】文系型",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [
+        {
+          "subject": "英語"
+        }
+      ],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語"
+            }
+          ],
+          "pick": 1
+        },
+        {
+          "from": [
+            {
+              "subject": "日本史"
+            },
+            {
+              "subject": "世界史"
+            },
+            {
+              "subject": "公民"
+            },
+            {
+              "subject": "数学"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-12-17",
+      "applicationEnd": "2027-01-19",
+      "examDates": [
+        "2027-02-03",
+        "2027-02-04",
+        "2027-02-05",
+        "2027-02-06"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2027-02-20",
+      "enrollDeadline": "2027-02-25"
+    },
+    "fee": 35000,
+    "feeNote": "3受験Pack（1受験あたり）適用可（【3教科型】のみ）",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "中京大学/2027/ippan_一般選抜A方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "12 月 17 日（木）",
+        "pdfFile": "中京大学/2027/ippan_一般選抜A方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationEnd",
+        "quote": "11 1199\n経経済済学学部部 経経済済学学科科 8855 ○○ ○○ 月月 日日（（火火））",
+        "pdfFile": "中京大学/2027/ippan_一般選抜A方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "22 33\n月月 日日（（水水））\n文文学学部部 日日本本文文学学科科 1166 ○○ −−\n22 44 名名古古屋屋キキャャンンパパスス\n月月 日日（（木木））\n札札幌幌※※\n言言語語表表現現学学科科 1166 ○○ −−\n22 55 東東京京\n月月 日日（（金金））\n心心理理学学部部 心心理理学学科科 4488 ○○ −− 出出願願期期間間 富富山山\n22 66\n1122 月月 1177 日日（（木木）） 月月 日日（（土土））",
+        "pdfFile": "中京大学/2027/ippan_一般選抜A方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2 20 月 日（土）",
+        "pdfFile": "中京大学/2027/ippan_一般選抜A方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "2月25日（木）",
+        "pdfFile": "中京大学/2027/ippan_一般選抜A方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "subjects.required",
+        "quote": "文学部は国語、それ以外の学部は英語が必須科目です。",
+        "pdfFile": "中京大学/2027/ippan_一般選抜A方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2027-ippan-mf-3kyoka-bunkei",
+    "university": "中京大学",
+    "faculty": "全学部共通（工学部以外）",
+    "department": "文系型【3教科型】M方式",
+    "methodName": "一般選抜前期日程 全問マークシートM方式【3教科型】文系型",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [
+        {
+          "subject": "英語"
+        }
+      ],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語"
+            }
+          ],
+          "pick": 1
+        },
+        {
+          "from": [
+            {
+              "subject": "日本史"
+            },
+            {
+              "subject": "世界史"
+            },
+            {
+              "subject": "公民"
+            },
+            {
+              "subject": "数学"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-12-17",
+      "applicationEnd": "2027-01-19",
+      "examDates": [
+        "2027-02-07",
+        "2027-02-08"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2027-02-20",
+      "enrollDeadline": "2027-02-25"
+    },
+    "fee": 35000,
+    "feeNote": "＋5,000円で3受験Pack追加可能",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "中京大学/2027/ippan_一般選抜MF方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "22 77\n月月 日日（（日日））\n22 88\n月月 日日（（月月））",
+        "pdfFile": "中京大学/2027/ippan_一般選抜MF方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "12 月 17 日（木）",
+        "pdfFile": "中京大学/2027/ippan_一般選抜MF方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationEnd",
+        "quote": "1 19 月 日（火）",
+        "pdfFile": "中京大学/2027/ippan_一般選抜MF方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2 20 10：00 試験時間 月 日（土）",
+        "pdfFile": "中京大学/2027/ippan_一般選抜MF方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "2月25日（木）",
+        "pdfFile": "中京大学/2027/ippan_一般選抜MF方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2027-ippan-f-2kyoka-bunkeiA",
+    "university": "中京大学",
+    "faculty": "全学部共通（文学部・工学部以外）",
+    "department": "文系型①【2教科型】F方式",
+    "methodName": "一般選抜後期日程 全問マークシートF方式【2教科型】文系型①",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [
+        {
+          "subject": "英語"
+        }
+      ],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語"
+            },
+            {
+              "subject": "数学"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2027-02-17",
+      "applicationEnd": "2027-02-25",
+      "examDates": [
+        "2027-03-06"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-19",
+      "enrollDeadline": null
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "schedule.applicationStart",
+        "quote": "出出願願期期間間\n22 1177\n月月 日日（（水水））",
+        "pdfFile": "中京大学/2027/ippan_一般選抜MF方式概要_20260706.pdf",
+        "page": 2,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationEnd",
+        "quote": "2 月 25 日（木）",
+        "pdfFile": "中京大学/2027/ippan_一般選抜MF方式概要_20260706.pdf",
+        "page": 2,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "33 66\n月月 日日（（土土））",
+        "pdfFile": "中京大学/2027/ippan_一般選抜MF方式概要_20260706.pdf",
+        "page": 2,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "33 1199\n経経営営学学部部 経経営営学学科科 1100 ○○ −− −− 月月 日日（（金金））",
+        "pdfFile": "中京大学/2027/ippan_一般選抜MF方式概要_20260706.pdf",
+        "page": 2,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000",
+        "pdfFile": "中京大学/2027/ippan_一般選抜MF方式概要_20260706.pdf",
+        "page": 2,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2027-ippan-f-2kyoka-rikei",
+    "university": "中京大学",
+    "faculty": "工学部・経済学部",
+    "department": "理系型【2教科型】F方式",
+    "methodName": "一般選抜後期日程 全問マークシートF方式【2教科型】理系型",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [
+        {
+          "subject": "数学",
+          "range": "理系数学（ⅠⅡⅢA・B・C）"
+        },
+        {
+          "subject": "英語"
+        }
+      ],
+      "choiceGroups": [],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2027-02-17",
+      "applicationEnd": "2027-02-25",
+      "examDates": [
+        "2027-03-06"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-19",
+      "enrollDeadline": null
+    },
+    "fee": 35000,
+    "feeNote": "経済学部の【理系2教科型】と工学部の【理系2教科型】の併願はできません。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "subjects.required",
+        "quote": "【2教科型】 理系 必須 数学 + 英 必須 語 = 3 満 00 点 点",
+        "pdfFile": "中京大学/2027/ippan_一般選抜MF方式概要_20260706.pdf",
+        "page": 2,
+        "verified": true
+      },
+      {
+        "field": "feeNote",
+        "quote": "経済学部の【理系2教科型】と工学部の【理系2教科型】の併願はできません。",
+        "pdfFile": "中京大学/2027/ippan_一般選抜MF方式概要_20260706.pdf",
+        "page": 2,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2027-ippan-tokui-eigo",
+    "university": "中京大学",
+    "faculty": "全学部共通（文学部・工学部以外）",
+    "department": "英語重視型",
+    "methodName": "得意科目重視型共通テストプラス方式【英語重視型】",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [
+        {
+          "subject": "英語"
+        }
+      ],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語"
+            },
+            {
+              "subject": "数学"
+            },
+            {
+              "subject": "日本史"
+            },
+            {
+              "subject": "世界史"
+            },
+            {
+              "subject": "公民"
+            },
+            {
+              "subject": "物理"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-12-17",
+      "applicationEnd": "2027-01-19",
+      "examDates": [
+        "2027-02-03",
+        "2027-02-04",
+        "2027-02-05",
+        "2027-02-06"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2027-02-20",
+      "enrollDeadline": "2027-02-25"
+    },
+    "fee": 35000,
+    "feeNote": "＋5,000円で3受験Pack追加可能。A方式（2月3日・4日・5日・6日）と共通の問題を課し、200点満点に換算します。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "subjects.required",
+        "quote": "英語 + 外国語 + 国語 数学 地理歴史・公民 理科 = 満点",
+        "pdfFile": "中京大学/2027/ippan_得意科目重視型共通テストプラス方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "12 17",
+        "pdfFile": "中京大学/2027/ippan_得意科目重視型共通テストプラス方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "22 33\n学学科科 月月 日日（（水水））",
+        "pdfFile": "中京大学/2027/ippan_得意科目重視型共通テストプラス方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "中京大学/2027/ippan_得意科目重視型共通テストプラス方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2027-kyotsu-zenki-2kamoku",
+    "university": "中京大学",
+    "faculty": "全学部共通",
+    "department": "2科目型",
+    "methodName": "共通テスト利用方式 前期日程【2科目型】",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        {
+          "subject": "英語"
+        }
+      ],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語"
+            },
+            {
+              "subject": "数学"
+            },
+            {
+              "subject": "日本史"
+            },
+            {
+              "subject": "世界史"
+            },
+            {
+              "subject": "公民"
+            },
+            {
+              "subject": "物理"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            },
+            {
+              "subject": "地理"
+            },
+            {
+              "subject": "情報"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-12-17",
+      "applicationEnd": "2027-01-28",
+      "examDates": [
+        "2027-01-16",
+        "2027-01-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2027-02-20",
+      "enrollDeadline": "2027-02-25"
+    },
+    "fee": 20000,
+    "feeNote": "前期日程のみ3受験Pack適用可",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "共通テスト受験後（自己採点後）に 併願可能！",
+        "pdfFile": "中京大学/2027/kyotsu_共通テスト利用方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "20,000",
+        "pdfFile": "中京大学/2027/kyotsu_共通テスト利用方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "12 17 12月17日（木）",
+        "pdfFile": "中京大学/2027/kyotsu_共通テスト利用方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationEnd",
+        "quote": "1 月 28 日（木）",
+        "pdfFile": "中京大学/2027/kyotsu_共通テスト利用方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1 16 月 日（土） 1 月 17 日（日）",
+        "pdfFile": "中京大学/2027/kyotsu_共通テスト利用方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "22 2200 締締切切日日 期期間間にに最最終終入入\n競技実績2科目型 月月 日日（（土土））",
+        "pdfFile": "中京大学/2027/kyotsu_共通テスト利用方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "2月25日（木）",
+        "pdfFile": "中京大学/2027/kyotsu_共通テスト利用方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2027-kyotsu-kyogijisseki2kamoku",
+    "university": "中京大学",
+    "faculty": "スポーツ科学部",
+    "department": "スポーツマネジメント学科・スポーツ健康科学科・トレーナー学科・スポーツ教育学科・競技スポーツ科学科",
+    "methodName": "共通テスト利用方式【競技実績2科目型】",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        {
+          "subject": "英語"
+        }
+      ],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語"
+            },
+            {
+              "subject": "数学"
+            },
+            {
+              "subject": "日本史"
+            },
+            {
+              "subject": "世界史"
+            },
+            {
+              "subject": "公民"
+            },
+            {
+              "subject": "物理"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            },
+            {
+              "subject": "地理"
+            },
+            {
+              "subject": "情報"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-12-17",
+      "applicationEnd": "2027-01-23",
+      "examDates": [
+        "2027-01-16",
+        "2027-01-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": null,
+    "feeNote": "競技実績（下記参照）＋大学入学共通テストで250点満点",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "subjects.required",
+        "quote": "必須 高得点1科目 必須 ス 〈配点〉 + 地理歴史・ + 競技実績 = 250点 ト\n外国語 国語 数学 理科 公民 （下記参照） 満点",
+        "pdfFile": "中京大学/2027/kyotsu_共通テスト利用方式概要_20260706.pdf",
+        "page": 2,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2027-kobo-kiso-eigo-kokusai",
+    "university": "中京大学",
+    "faculty": "国際学部",
+    "department": "国際学科（国際人文学専攻・国際関係専攻・ビジネス専攻）・言語文化学科（言語文化専攻・英米学専攻）",
+    "methodName": "公募制一般推薦【基礎学力型】（英語基礎学力型）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        {
+          "subject": "英語"
+        }
+      ],
+      "choiceGroups": [],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-11-01",
+      "applicationEnd": "2026-11-06",
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-04",
+      "enrollDeadline": "2026-12-10"
+    },
+    "fee": 35000,
+    "feeNote": "併願可（学内外）。専願方式ではないため、他大学や他方式と同時出願（併願）も可能",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "他大学や他方式と同時出願（併願）も可能",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "11 月 1 日（日）",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationEnd",
+        "quote": "11 月 6 日（金）",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11 月 21 日（土）",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "静岡 12 4 基礎学力型 論述問題\n経営学部 経営学科 29 全体 状 の 況 学 3. 習 0以 成 上 績の 11 月 6 日（金） 浜松 月 日（金）",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12月10日（木）",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "subjects.required",
+        "quote": "英語読解力問題 募\n国際学科 ＋ 100点 ● 制\n国際学科 国際関係専攻 8 英語 論述問題",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2027-kobo-kiso-kokugo-nihonbungaku",
+    "university": "中京大学",
+    "faculty": "文学部",
+    "department": "日本文学科",
+    "methodName": "公募制一般推薦【基礎学力型】（国語基礎学力型：現代文＋古文）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        {
+          "subject": "国語",
+          "range": "現代文＋古文"
+        }
+      ],
+      "choiceGroups": [],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-11-01",
+      "applicationEnd": "2026-11-06",
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-04",
+      "enrollDeadline": "2026-12-10"
+    },
+    "fee": 35000,
+    "feeNote": "併願可（学内外）",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "subjects.required",
+        "quote": "国語読解力問題［現代文＋古文］\n文学部 日本文学科 ＋ 100点 ● 歴史文化学科 12\n国語 論述問題",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2027-kobo-kiso-kokugo-gengohyogen",
+    "university": "中京大学",
+    "faculty": "文学部",
+    "department": "言語表現学科",
+    "methodName": "公募制一般推薦【基礎学力型】（国語基礎学力型：現代文のみ）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        {
+          "subject": "国語",
+          "range": "現代文のみ"
+        }
+      ],
+      "choiceGroups": [],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-11-01",
+      "applicationEnd": "2026-11-06",
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-04",
+      "enrollDeadline": "2026-12-10"
+    },
+    "fee": 35000,
+    "feeNote": "併願可（学内外）",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "subjects.required",
+        "quote": "基礎学力型 国語読解力問題［現代文のみ］\n文学部 日本文学科 9\n名古屋キャンパス 言語表現学科 ＋ 100点 ●\n論述問題",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2027-kobo-kiso-kokugo-keiei",
+    "university": "中京大学",
+    "faculty": "経営学部",
+    "department": "経営学科（国語基礎学力型）",
+    "methodName": "公募制一般推薦【基礎学力型】（国語基礎学力型）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        {
+          "subject": "国語",
+          "range": "現代文のみ"
+        }
+      ],
+      "choiceGroups": [],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-11-01",
+      "applicationEnd": "2026-11-06",
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-04",
+      "enrollDeadline": "2026-12-10"
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "subjects.required",
+        "quote": "国語 ＋ 100点 ●\n9：45〜10：00 15：00 基礎学力型 論述問題\n出願書類 受験上の注意 津 経営学部 経営学科",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2027-kobo-nyusu-gendaishakai",
+    "university": "中京大学",
+    "faculty": "現代社会学部",
+    "department": "現代社会学科（社会学専攻・コミュニティ学専攻・社会福祉学専攻・国際文化専攻）",
+    "methodName": "公募制一般推薦【基礎学力型】（ニュース読解力型）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-11-01",
+      "applicationEnd": "2026-11-06",
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-04",
+      "enrollDeadline": "2026-12-10"
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "ニュース読解力型問題\n※他方式との併願はP25参照。 票「」証明書類」が必 試験会場への ニュース （新聞・雑誌等のニュースが正しく理解できているかどうか、また\n要です。 交通案内 新聞・雑誌等のニュースにかかわる知識が あるかを試す問 題） 100点 ●",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2027-kobo-sugaku-kogakubu",
+    "university": "中京大学",
+    "faculty": "工学部",
+    "department": "機械システム工学科・電気電子工学科・情報工学専攻・知能情報学専攻・応用情報学専攻",
+    "methodName": "公募制一般推薦【基礎学力型】（数学基礎学力型）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        {
+          "subject": "数学",
+          "range": "数学Ⅰ・Ⅱ・Ⅲ・A・B・C"
+        }
+      ],
+      "choiceGroups": [],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-11-01",
+      "applicationEnd": "2026-11-06",
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-04",
+      "enrollDeadline": "2026-12-10"
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "subjects.required",
+        "quote": "数学Ⅰ・Ⅱ・Ⅲ・A・B・Cの基礎学力問題\n応用情報学専攻 5 機械システム工学科 数学 ［数学A：場合の数と確率、図形の性質］［数学B：数列、統計的な推測］\n工学部 電気電子工学科 ［数学C：ベクトル、平面上の曲線と複素数平面］ 100点 ●",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2027-kobo-kiso-sports",
+    "university": "中京大学",
+    "faculty": "スポーツ科学部",
+    "department": "スポーツマネジメント学科・スポーツ健康科学科・トレーナー学科・スポーツ教育学科・競技スポーツ科学科",
+    "methodName": "公募制一般推薦【基礎学力型】（国語基礎学力型）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        {
+          "subject": "国語",
+          "range": "現代文のみ"
+        }
+      ],
+      "choiceGroups": [],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-11-01",
+      "applicationEnd": "2026-11-06",
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-04",
+      "enrollDeadline": "2026-12-10"
+    },
+    "fee": 35000,
+    "feeNote": "午前・午後の併願可能。スポーツ科学部は「国語基礎学力型」と「競技実績プラス型」で併願可能",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "subjects.required",
+        "quote": "国語 国語読解力問題［現代文のみ］\nスポーツ健康科学科 20 ＋ 100点 ●\n基礎学力型 論述問題",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "feeNote",
+        "quote": "※スポーツ科学部は「国語基\n礎学力型」と「競技実績プ ※競技実績プラス型 13：00〜14：30\n機械システム工学科 12 ラス型」で併願可能。",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2027-sogo-kisogakuryoku-hogaku",
+    "university": "中京大学",
+    "faculty": "法学部",
+    "department": "法律学科",
+    "methodName": "高大接続入試 基礎力評価型【基礎学力型】",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        {
+          "subject": "国語",
+          "range": "現代文のみ"
+        }
+      ],
+      "choiceGroups": [],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-11-01",
+      "applicationEnd": "2026-11-06",
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-04",
+      "enrollDeadline": "2026-12-10"
+    },
+    "fee": 35000,
+    "feeNote": "専願方式ではないため、他大学や他方式と同時出願（併願）も可能",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "他大学や他方式と同時出願（併願）も可能",
+        "pdfFile": "中京大学/2027/sogo_高大接続入試基礎力評価型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "中京大学/2027/sogo_高大接続入試基礎力評価型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "11 月 1 日（日）",
+        "pdfFile": "中京大学/2027/sogo_高大接続入試基礎力評価型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationEnd",
+        "quote": "11 月 6 日（金）",
+        "pdfFile": "中京大学/2027/sogo_高大接続入試基礎力評価型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11 月 21 日（土）",
+        "pdfFile": "中京大学/2027/sogo_高大接続入試基礎力評価型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12 月 4 日（金）",
+        "pdfFile": "中京大学/2027/sogo_高大接続入試基礎力評価型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12月10日（木）",
+        "pdfFile": "中京大学/2027/sogo_高大接続入試基礎力評価型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2027-sogo-kokusaisikou-kokusai",
+    "university": "中京大学",
+    "faculty": "国際学部",
+    "department": "国際学科（国際人文学専攻・国際関係専攻・ビジネス専攻）・言語文化学科（言語文化専攻・英米学専攻）",
+    "methodName": "高大接続入試【国際思考型】",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "プレゼン",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-08",
+      "examDates": [
+        "2026-11-01"
+      ],
+      "examDateSelectable": false,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": 35000,
+    "feeNote": "専願制のため、合格した場合は当該入試方式及び当該学科・専攻での入学手続が必須となり、入学辞退はできません（年内に合格発表がある専願方式）",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "○専願制のため、合格した場合は当該入試方式及び当該学科・専攻での入学手続が必須となり、入学辞退はできません。",
+        "pdfFile": "中京大学/2027/sogo_高大接続入試国際思考型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "中京大学/2027/sogo_高大接続入試国際思考型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "9 月 1 1 0： 日 0 （ 0 火）",
+        "pdfFile": "中京大学/2027/sogo_高大接続入試国際思考型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationEnd",
+        "quote": "9 月 8 日（火）",
+        "pdfFile": "中京大学/2027/sogo_高大接続入試国際思考型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "質疑応答 ス 11 月 1 日（日）",
+        "pdfFile": "中京大学/2027/sogo_高大接続入試国際思考型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2027-sogo-eigo-presentation-kokusai",
+    "university": "中京大学",
+    "faculty": "国際学部",
+    "department": "国際学科（国際人文学専攻・国際関係専攻・ビジネス専攻）・言語文化学科（言語文化専攻・英米学専攻）",
+    "methodName": "英語プレゼンテーション特別入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [
+        {
+          "subject": "英語"
+        }
+      ],
+      "choiceGroups": [],
+      "totalCount": 1,
+      "nonAcademic": [
+        "書類",
+        "プレゼン",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-16",
+      "applicationEnd": "2026-09-24",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": 35000,
+    "feeNote": "CEFR B1（英検2級合格相当）以上のスコアの方のみ出願可能。専願方式（年内に合格発表がある専願方式）",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "○専願制のため、合格した場合は当該入試方式及び当該学科・専攻での入学手続が必須となり、入学辞退はできません。",
+        "pdfFile": "中京大学/2027/sogo_高大接続入試国際思考型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "中京大学/2027/sogo_高大接続入試国際思考型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "10 月 17 日（土）",
+        "pdfFile": "中京大学/2027/sogo_高大接続入試国際思考型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2026-sogo-jizentaiken-keiei",
+    "university": "中京大学",
+    "faculty": "経営学部",
+    "department": "経営学科",
+    "methodName": "高大接続入試【事前体験型】（2026年度実績）",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-14",
+      "applicationEnd": "2025-10-21",
+      "examDates": [
+        "2025-11-22"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2025-12-04",
+      "enrollDeadline": "2025-12-10"
+    },
+    "fee": 35000,
+    "feeNote": "経営学部は、P26の公募制一般推薦【基礎学力型】において同時間帯に実施される学部（型）との併願はできません。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "国語基礎学力型 出願書類＋経営学部事前体験型講義時に提出した講義レポート＋国語基礎学力型問題注3",
+        "pdfFile": "中京大学/2026_実績/sogo_kobo_総合型学校推薦型選抜入学試験要項_20260706.pdf",
+        "page": 8,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "10 14 月 日（火）",
+        "pdfFile": "中京大学/2026_実績/sogo_kobo_総合型学校推薦型選抜入学試験要項_20260706.pdf",
+        "page": 8,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11 月 22 日",
+        "pdfFile": "中京大学/2026_実績/sogo_kobo_総合型学校推薦型選抜入学試験要項_20260706.pdf",
+        "page": 8,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "経営学部\t12 4\n月 日（木）",
+        "pdfFile": "中京大学/2026_実績/sogo_kobo_総合型学校推薦型選抜入学試験要項_20260706.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "feeNote",
+        "quote": "・経営学部は、P26の公募制一般推薦【基礎学力型】において同時間帯に実施さ ※同時間帯に実施される学部（型）との併願はできません。",
+        "pdfFile": "中京大学/2026_実績/sogo_kobo_総合型学校推薦型選抜入学試験要項_20260706.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2026-sogo-global-kokusai",
+    "university": "中京大学",
+    "faculty": "国際学部",
+    "department": "国際学科（国際人文学専攻・国際関係専攻・ビジネス専攻・GLS専攻）・言語文化学科（言語文化専攻・英米学専攻）",
+    "methodName": "グローバル特別入試（2026年度実績・2027年版で未確認）",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-14",
+      "applicationEnd": "2025-10-21",
+      "examDates": [
+        "2025-11-15"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2025-12-04",
+      "enrollDeadline": "2025-12-10"
+    },
+    "fee": 35000,
+    "feeNote": "CEFR B1（英検2級合格相当）以上のスコアの方のみ出願可能。専願方式ではないため、他大学や他方式と同時出願（併願）も可能",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "専願方式ではないため、他大学や\nスコアの方のみ出願可能！ 意欲をアピールできる！ 他方式と同時出願（併願）も可能",
+        "pdfFile": "中京大学/2026_実績/sogo_kobo_総合型学校推薦型選抜入学試験要項_20260706.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000円",
+        "pdfFile": "中京大学/2026_実績/sogo_kobo_総合型学校推薦型選抜入学試験要項_20260706.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "10 14 月 日（火）",
+        "pdfFile": "中京大学/2026_実績/sogo_kobo_総合型学校推薦型選抜入学試験要項_20260706.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationEnd",
+        "quote": "10 21 月 日（火）",
+        "pdfFile": "中京大学/2026_実績/sogo_kobo_総合型学校推薦型選抜入学試験要項_20260706.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11 月 15 日（土）",
+        "pdfFile": "中京大学/2026_実績/sogo_kobo_総合型学校推薦型選抜入学試験要項_20260706.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "経営学部 経営学科 2 小論文 ＋ 注（360分） 12 月 4 日（木）",
+        "pdfFile": "中京大学/2026_実績/sogo_kobo_総合型学校推薦型選抜入学試験要項_20260706.pdf",
+        "page": 22,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2026-kobo-ichigei-keiei",
+    "university": "中京大学",
+    "faculty": "経営学部",
+    "department": "経営学科",
+    "methodName": "一芸一能（特Ⅰ）推薦（2026年度実績・2027年版で未確認）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-11-01",
+      "applicationEnd": "2025-11-06",
+      "examDates": [
+        "2025-11-15"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2025-12-04",
+      "enrollDeadline": "2025-12-10"
+    },
+    "fee": 35000,
+    "feeNote": "専願方式ではないため、他大学や他方式と同時出願（併願）も可能。現役のみ",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "専願方式ではないため、 面接で活動実績を\n課外活動実績 他大学や他方式と アピールできる！\n（スポーツ・社会活動・文化・芸術等）を評価！ 同時出願（併願）も可能",
+        "pdfFile": "中京大学/2026_実績/sogo_kobo_総合型学校推薦型選抜入学試験要項_20260706.pdf",
+        "page": 30,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000円",
+        "pdfFile": "中京大学/2026_実績/sogo_kobo_総合型学校推薦型選抜入学試験要項_20260706.pdf",
+        "page": 30,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "11 1 月 日（土）",
+        "pdfFile": "中京大学/2026_実績/sogo_kobo_総合型学校推薦型選抜入学試験要項_20260706.pdf",
+        "page": 30,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationEnd",
+        "quote": "11 6 月 日（木）",
+        "pdfFile": "中京大学/2026_実績/sogo_kobo_総合型学校推薦型選抜入学試験要項_20260706.pdf",
+        "page": 30,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11 15 月 日（土）",
+        "pdfFile": "中京大学/2026_実績/sogo_kobo_総合型学校推薦型選抜入学試験要項_20260706.pdf",
+        "page": 30,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12 合格 4 発表日\n11 15 月 日（木）\n月 日（土）",
+        "pdfFile": "中京大学/2026_実績/sogo_kobo_総合型学校推薦型選抜入学試験要項_20260706.pdf",
+        "page": 30,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  }
+]

@@ -1,0 +1,1678 @@
+[
+  {
+    "id": "nanzan-2027-sogo-shikaku-kentei-keiei",
+    "university": "南山大学",
+    "faculty": "経営学部",
+    "department": "経営学科",
+    "methodName": "総合型入試［資格・検定試験活用型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": null
+    },
+    "fee": 35000,
+    "feeNote": "入学検定料の他に取扱手数料（一律990円）が必要になります。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型入試［資格・検定試験活用型］",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。ただし、本学総合型入試において出願できるのは 1 学科のみです。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "2026年9月1日",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationEnd",
+        "quote": "～2026年9月7日",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "経営 15 資格・検定試験活用型 2026年9月21日 2026年10月17日 2026年11月2日",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2026年11月2日",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 35,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "feeNote",
+        "quote": "入学検定料の他に取扱手数料（一律990円）が必要になります。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 8,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-shikaku-kentei-hogaku",
+    "university": "南山大学",
+    "faculty": "法学部",
+    "department": "法律学科",
+    "methodName": "総合型入試［資格・検定試験活用型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": [
+        "2026-09-26"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": null
+    },
+    "fee": 35000,
+    "feeNote": "入学検定料の他に取扱手数料（一律990円）が必要になります。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型入試［資格・検定試験活用型］",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "subjects",
+        "quote": "◎広く政治・法律・経済に強い関心を持ち、法律学や隣接諸科学を学ぶ意欲の高い人で、\nニュース時事能力検定試験（N検）3級以上に合格していることが必要です。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "2026年9月1日",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationEnd",
+        "quote": "～2026年9月7日",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "法 法律 7 資格・検定試験活用型 - - 2026年9月26日 2026年11月2日",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2026年11月2日",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 35,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 18,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-presentation-keizai",
+    "university": "南山大学",
+    "faculty": "経済学部",
+    "department": "経済学科",
+    "methodName": "総合型入試［プレゼンテーション型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "プレゼン",
+        "面接",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": null
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "プレゼンテーション型 p.21～",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "2026年9月1日",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationEnd",
+        "quote": "～2026年9月7日",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "経 2026年9月1日 2026年9月21日\n経済 10 プレゼンテーション型 2026年9月21日 2026年10月17日 2026年11月2日",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2026年11月2日",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 5,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2027-ippan-a-keizai",
+    "university": "中京大学",
+    "faculty": "経済学部",
+    "department": "経済学科",
+    "methodName": "前期日程 A方式【3教科型】",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [
+        {
+          "subject": "英語"
+        }
+      ],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "日本史"
+            },
+            {
+              "subject": "世界史"
+            },
+            {
+              "subject": "公民"
+            },
+            {
+              "subject": "数学"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": null,
+      "examDates": [
+        "2026-02-03"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-02-25"
+    },
+    "fee": 35000,
+    "feeNote": "3受験Pack（1受験あたり）35,000円",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "前期日程 A方式",
+        "pdfFile": "中京大学/2027/ippan_一般選抜A方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "subjects.required",
+        "quote": "【3教科型】 + + 日本史 世界史 政治・経済 文系数学 = 300点",
+        "pdfFile": "中京大学/2027/ippan_一般選抜A方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "subjects.required",
+        "quote": "※1 文学部は国語、それ以外の学部は英語が必須科目です。",
+        "pdfFile": "中京大学/2027/ippan_一般選抜A方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "12 月 17 日（木）",
+        "pdfFile": "中京大学/2027/ippan_一般選抜A方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "2 3 ※1\n月 日（水）",
+        "pdfFile": "中京大学/2027/ippan_一般選抜A方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2 20\n月 日（土）",
+        "pdfFile": "中京大学/2027/ippan_一般選抜A方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "受験上の注意 四日市 2月25日（木）",
+        "pdfFile": "中京大学/2027/ippan_一般選抜A方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "中京大学/2027/ippan_一般選抜A方式概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "chukyo-2027-kobo-kiso-gakuryoku-keizai",
+    "university": "中京大学",
+    "faculty": "経済学部",
+    "department": "経済学科",
+    "methodName": "公募制一般推薦【基礎学力型】",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        {
+          "subject": "国語"
+        }
+      ],
+      "choiceGroups": [],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-11-01",
+      "applicationEnd": "2026-11-06",
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": null,
+      "enrollDeadline": "2026-12-10"
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "公募制一般推薦",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "subjects.required",
+        "quote": "国語 国 語 ＋ 読解力問題［現代文のみ］ 100点",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "面接がなく、筆記試験（基礎学力型問題＋論述問題）",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "専願方式ではないため、",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "11 月 1 日（日）",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationEnd",
+        "quote": "11 月 6 日（金）",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11 月 21 日（土）",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12月10日（木）",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "中京大学/2027/kobo_公募制一般推薦概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "aichi-2026-ippan-standard-hogaku",
+    "university": "愛知大学",
+    "faculty": "法学部",
+    "department": "法学科",
+    "methodName": "一般入試 スタンダード方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [
+        {
+          "subject": "英語"
+        },
+        {
+          "subject": "国語"
+        }
+      ],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "日本史"
+            },
+            {
+              "subject": "世界史"
+            },
+            {
+              "subject": "地理"
+            },
+            {
+              "subject": "公民"
+            },
+            {
+              "subject": "数学"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": "2026-01-14",
+      "examDates": [
+        "2026-02-01",
+        "2026-02-02",
+        "2026-02-05",
+        "2026-02-06"
+      ],
+      "examDateSelectable": true,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "2出願目以降1出願につき15,000円",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      {
+        "field": "faculty/department",
+        "quote": "法学部 法学科 315 210",
+        "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "subjects",
+        "quote": "外国語\t「英語コミュニケーションⅠ，英語コミュニケーションⅡ\n英語コミュニケーションⅢ，論理・表現Ⅰ，論理・表現Ⅱ\n論理・表現Ⅲ」（リスニングを除く）\t，\n，100点\t300点\t200点",
+        "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "subjects.required (国語)",
+        "quote": "国語\t「現代の国語，言語文化，論理国語，古典探究」\n（古文・漢文はいずれか一方を試験当日に選択）\t100点",
+        "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "地理歴史\n公民\n数学\t「歴史総合，日本史探究」「歴史総合，世界史探究」「地\n理総合，地理探究（注）」「公共，政治・経済（注）」「数学Ⅰ\n数学Ⅱ，数学Ａ（図形の性質，場合の数と確率）」\n（5科目から出願時に1科目選択）",
+        "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "WEB出願登録期間\n12月17日（水）10：00〜",
+        "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationEnd",
+        "quote": "1月14日（水）15：00まで",
+        "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "短大スタンダード方式Ａ 1月29日（木） ●\n2月 1日（日） ● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ●\nスタンダード方式",
+        "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "短大スタンダード方式Ｂ 2月 2日（月） ● ● ● ● ● ●\n共通テスト併用方式\n最高得点重視方式 2月 5日（木） ● ● ● ● ● ●\n2科目方式\n2月 6日（金） ● ● ● ● ● ●",
+        "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料\t1出願\t30,000円",
+        "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "feeNote",
+        "quote": "2出願目以降1出願につき\t15,000円",
+        "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 21,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "aichi-2027-sogo-presentation-chiiki-seisaku",
+    "university": "愛知大学",
+    "faculty": "地域政策学部",
+    "department": "地域政策学科",
+    "methodName": "地域政策学部プレゼンテーション入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "プレゼン",
+        "面接",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": [
+        "2026-10-18"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-09"
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "地域政策学部プレゼンテーション入試",
+        "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(地域政策学部プレゼン)_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "本学専願者（本学を第１志望とし、合格者は必ず入学すること) 。",
+        "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(地域政策学部プレゼン)_20260706.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "出願期間\n２０２６年９月１日(火) ～ ９月７日(月)《必着》",
+        "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(地域政策学部プレゼン)_20260706.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "試験日 ２０２６年１０月１８日(日)",
+        "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(地域政策学部プレゼン)_20260706.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "二次試験 ２０２６年１１月２日(月) １０時００分～",
+        "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(地域政策学部プレゼン)_20260706.pdf",
+        "page": 11,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "第一次入学手続\t２０２６年１１月 ９日(月)\t入学金納入",
+        "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(地域政策学部プレゼン)_20260706.pdf",
+        "page": 11,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 ３５，０００円",
+        "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(地域政策学部プレゼン)_20260706.pdf",
+        "page": 8,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "調査書（全体の学習成績の状況）、プレゼンテーション、個人面接により総合判定して合格者を決\n定します。",
+        "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(地域政策学部プレゼン)_20260706.pdf",
+        "page": 5,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "aichi-shukutoku-sogo-daigaku-rinen-kokubungaku",
+    "university": "愛知淑徳大学",
+    "faculty": "文学部",
+    "department": "国文学科",
+    "methodName": "大学理念・違いを共に生きる入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "書類",
+        "プレゼン"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-02",
+      "applicationEnd": "2026-09-09",
+      "examDates": [
+        "2026-10-10"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-26"
+    },
+    "fee": 25000,
+    "feeNote": "大学理念・違いを共に生きる入試、活動実績入試、学科・専攻適性入試の3つを受験する場合の検定料 35,000円",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "大学理念・違いを共に生きる入試 専願制 現役生 既卒者",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "本学への入学を熱望する者を対象とした専願制入試です（合格した場合は、本学に入学することを条件とします）。",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "出願期間 2026年9月2日（水）〜9月9日（水） 締切日消印有効",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "〔第2次選考〕試験日 2026年10月10日（土）",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2026年11月2日（月）10:00〜11月8日（日）23:59",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 11,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続時納入金 締切日\n2026年11月26日（木）〔一括納入〕",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 11,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "初回検定料\n25,000円\n（大学理念・違いを共に生きる入試、活動実績入試、学科・専攻適性入試のいずれか1つを受験する場合）",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "feeNote",
+        "quote": "大学理念・違いを共に生きる入試、活動実績入試、学科・専攻適性入試の3つを受験する場合の検定料 35,000円",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "faculty/department",
+        "quote": "文学部 国文学科 3名",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 10,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "aichi-shukutoku-sogo-katsudo-jisseki-kokubungaku",
+    "university": "愛知淑徳大学",
+    "faculty": "文学部",
+    "department": "国文学科",
+    "methodName": "活動実績入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "面接",
+        "書類",
+        "プレゼン"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-15",
+      "applicationEnd": "2026-09-28",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-26"
+    },
+    "fee": 25000,
+    "feeNote": "大学理念・違いを共に生きる入試、活動実績入試、学科・専攻適性入試の3つを受験する場合の検定料 35,000円",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "活動実績入試 専願制 現役生\nのみ",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "当該学科・専攻への入学を熱望する者を対象とした専願制入試です（合格した場合は、本学に入学することを条件とします）。",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "出願期間 2026年9月15日（火）〜9月28日（月） 締切日消印有効",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "試験日 2026年10月17日（土）",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2026年11月2日(月）10:00〜11月8日(日）23:59",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続時納入金 締切日\n2026年11月26日（木）〔一括納入〕",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "初回検定料\n25,000円\n（大学理念・違いを共に生きる入試、活動実績入試、学科・専攻適性入試のいずれか1つを受験する場合）",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 20,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "活動実績票\t80点\t200点\n調査書［学習成績の状況］\t20点\t\n日本語活用能力試験（30分）\n全問マーク式\t40点\t\n個人面接\t55点\t\n志望理由書\t5点\t",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "faculty/department",
+        "quote": "文学部 国文学科 3名",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 14,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "aichi-shukutoku-sogo-gakka-senko-tekisei-kokubungaku",
+    "university": "愛知淑徳大学",
+    "faculty": "文学部",
+    "department": "国文学科",
+    "methodName": "学科・専攻適性入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "面接",
+        "書類",
+        "小論文"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-15",
+      "applicationEnd": "2026-09-28",
+      "examDates": [
+        "2026-10-18"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-26"
+    },
+    "fee": 25000,
+    "feeNote": "大学理念・違いを共に生きる入試、活動実績入試、学科・専攻適性入試の3つを受験する場合の検定料 35,000円",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "学科・専攻適性入試 専願制 現役生 既卒者",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 24,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "当該学科・専攻への入学を熱望する者を対象とした専願制入試です（合格した場合は、本学に入学することを条件とします）。",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 24,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "出願期間 2026年9月15日（火）〜9月28日（月） 締切日消印有効",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 24,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "試験日 2026年10月18日（日）",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 24,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2026年11月2日（月）10:00〜11月8日（日）23:59",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 24,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続時納入金 締切日\n2026年11月26日（木）〔一括納入〕",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 24,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "初回検定料\n25,000円\n（大学理念・違いを共に生きる入試、活動実績入試、学科・専攻適性入試のいずれか1つを受験する場合）",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "調査書［学習成績の状況］\t20点\t100点\n学科・専攻別適性試験（60分）\t40点\t\n面接\t35点\t\n志望理由書\t5点\t",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 27,
+        "verified": true
+      },
+      {
+        "field": "faculty/department",
+        "quote": "文学部 国文学科 16名",
+        "pdfFile": "愛知淑徳大学/2027/sogo_総合型選抜入学試験要項_20260706.pdf",
+        "page": 24,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "kinjo-gakuin-ippan-zenki-2kamoku-nihongo-nihonbunka",
+    "university": "金城学院大学",
+    "faculty": "文学部",
+    "department": "日本語日本文化学科",
+    "methodName": "一般入試（前期）2科目型",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [
+        {
+          "subject": "国語",
+          "range": "現代の国語・言語文化（漢文を除く）"
+        }
+      ],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "世界史",
+              "range": "歴総（世界史部分のみ）・世探"
+            },
+            {
+              "subject": "日本史",
+              "range": "歴総（日本史部分のみ）・日探"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2027-01-06",
+      "applicationEnd": "2027-01-17",
+      "examDates": [
+        "2027-02-01",
+        "2027-02-03",
+        "2027-02-04"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2027-02-18",
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "1日受験 30,000円 2日間受験 35,000円 3日間受験 40,000円（2日間以降の検定料が、一律5,000円）",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一 般 入 試（ 前 期 ）",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試前期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "faculty/department",
+        "quote": "日本語日本文化学科 22名 10名 3名",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試前期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "インターネット出願\n1月6日（月）〜\n1月17日（金）",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試前期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "★ 2月1日 ・ 2月3日 ・ 2月4日",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試前期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDateSelectable",
+        "quote": "受験する日程を自分で選ぶことができ、複数日［最大3日間（薬学科は2日間）］の受験が可能な制度です。",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試前期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2月18日（火）",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試前期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "1日受験 2日間受験 3日間受験 併願割引制度を活用すれば、\n30,000円 35,000円 40,000円",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試前期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "feeNote",
+        "quote": "2日間以降の検定料が、一律 5,000円",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試前期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "subjects.required",
+        "quote": "必須科目 国語 現代の国語・言語文化（漢文を除く） 150点",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試前期概要_20260706.pdf",
+        "page": 2,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "選択科目 地歴 世界史［歴総（世界史部分のみ）・世探］、 100点",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試前期概要_20260706.pdf",
+        "page": 2,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "kinjo-gakuin-kobo-shikaku-mensetsu-eigo-eibei-bunka",
+    "university": "金城学院大学",
+    "faculty": "文学部",
+    "department": "英語英米文化学科",
+    "methodName": "一般公募制推薦入試 資格・面接型",
+    "methodCategory": "kobo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "面接",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-11-01",
+      "applicationEnd": "2026-11-05",
+      "examDates": [
+        "2026-11-16"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-19",
+      "enrollDeadline": "2027-01-09"
+    },
+    "fee": 30000,
+    "feeNote": "一般公募制推薦入試の内、不合格となった入試種別がある場合のみ、その「受験票」を一般入試（前期・後期）、共通テスト利用入試（前期・後期）または共通テストプラス方式入試の出願書類に同封することにより、1枚の受験票につき10,000円入学検定料を割引します。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一 般 公 募 制 推 薦 入 試 資格・面接型［ 専願制※］",
+        "pdfFile": "金城学院大学/2027/kobo_資格面接型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "faculty",
+        "quote": "実施学部 文学部（英語英米文化学科、音楽芸術学科） 生活環境学部（生活マネジメント学科）",
+        "pdfFile": "金城学院大学/2027/kobo_資格面接型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "※専願制入試に合格した場合は、",
+        "pdfFile": "金城学院大学/2027/kobo_資格面接型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "文学部 11月1日（金）〜11月5日（火）",
+        "pdfFile": "金城学院大学/2027/kobo_資格面接型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11月16日（土）／本学",
+        "pdfFile": "金城学院大学/2027/kobo_資格面接型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12月19日（木）",
+        "pdfFile": "金城学院大学/2027/kobo_資格面接型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "1月9日（木）",
+        "pdfFile": "金城学院大学/2027/kobo_資格面接型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 30,000円",
+        "pdfFile": "金城学院大学/2027/kobo_資格面接型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "feeNote",
+        "quote": "一般公募制推薦入試の内、不合格となった入試種別がある場合のみ、その「受験票」を一\n般入試（前期・後期）、共通テスト利用入試（前期・後期）または共通テストプラス方式入試の\n出願書類に同封することにより、1枚の受験票につき10,000円入学検定料を割引します。",
+        "pdfFile": "金城学院大学/2027/kobo_資格面接型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "面接（英語による",
+        "pdfFile": "金城学院大学/2027/kobo_資格面接型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-houshiki-hougakubu",
+    "university": "名城大学",
+    "faculty": "法学部",
+    "department": "法学科",
+    "methodName": "一般選抜 3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [
+        {
+          "subject": "英語"
+        },
+        {
+          "subject": "国語"
+        }
+      ],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "地理"
+            },
+            {
+              "subject": "公民"
+            },
+            {
+              "subject": "数学"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": [
+        "2026-02-01",
+        "2026-02-02",
+        "2026-02-03"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "３教科型 A方式（全学部）",
+        "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "subjects.required",
+        "quote": "法（110） ◎ 外国語（100） ◎ 国語（100）",
+        "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "□ 地理歴史\n経済 経済（50）\n法・経営・経済・外国語・ □ 公民 （100）\n○ ○ ○ 第2志望 産業社会（23） ◎ 外国語（100） ◎ 国語（100） 300\n人間・都市情報 □ 数学①\n国際英語 1教科1科目選択",
+        "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "2025年12月18日（木）～2026年1月15日（木）",
+        "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "2/1（日）2/2（月）2/3（火）",
+        "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2月20日（金）",
+        "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3月10日（火）",
+        "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000円",
+        "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf",
+        "page": 10,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2027-sogo-shikaku-kentei-katsuyo-keizai",
+    "university": "名城大学",
+    "faculty": "経済学部",
+    "department": "経済学科",
+    "methodName": "学部独自総合型 資格・検定活用型（経済学部）",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-05",
+      "examDates": [
+        "2026-09-28",
+        "2026-10-11"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-10-10",
+      "enrollDeadline": "2027-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "一次試験合格後に納入いただきます。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "資格・検定活用型（経済学部）",
+        "pdfFile": "名城大学/2027/sogo_学部独自総合型入学試験要項_20260706.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可",
+        "pdfFile": "名城大学/2027/sogo_学部独自総合型入学試験要項_20260706.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "面接 個人面接またはグループ面接。面接担当者2名で行う。志望理由書に\n基づく質疑応答を行う。",
+        "pdfFile": "名城大学/2027/sogo_学部独自総合型入学試験要項_20260706.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "調査書（※） 文部科学省指定の様式で、出願前3か月以内に出身学校長が作成し、厳封\nされたものを提出してください。",
+        "pdfFile": "名城大学/2027/sogo_学部独自総合型入学試験要項_20260706.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000円",
+        "pdfFile": "名城大学/2027/sogo_学部独自総合型入学試験要項_20260706.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "feeNote",
+        "quote": "※一次試験合格後に納入いただきます。",
+        "pdfFile": "名城大学/2027/sogo_学部独自総合型入学試験要項_20260706.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "2026年９月１日（火）〜９月5日（土）",
+        "pdfFile": "名城大学/2027/sogo_学部独自総合型入学試験要項_20260706.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "9月28日（月）",
+        "pdfFile": "名城大学/2027/sogo_学部独自総合型入学試験要項_20260706.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "10月11日（日）",
+        "pdfFile": "名城大学/2027/sogo_学部独自総合型入学試験要項_20260706.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "10月10日（土）",
+        "pdfFile": "名城大学/2027/sogo_学部独自総合型入学試験要項_20260706.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3月10日\n（水）※3",
+        "pdfFile": "名城大学/2027/sogo_学部独自総合型入学試験要項_20260706.pdf",
+        "page": 4,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "aichi-gakuin-2026-ippan-zenki-a-hogaku",
+    "university": "愛知学院大学",
+    "faculty": "法学部",
+    "department": "法律学科",
+    "methodName": "前期試験A",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [
+        {
+          "subject": "国語",
+          "range": "現代の国語・言語文化・論理国語・古典探究（いずれも漢文を除く）"
+        },
+        {
+          "subject": "英語"
+        }
+      ],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "日本史"
+            },
+            {
+              "subject": "世界史"
+            },
+            {
+              "subject": "公民"
+            },
+            {
+              "subject": "数学"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-06",
+      "applicationEnd": "2026-01-19",
+      "examDates": [
+        "2026-02-01",
+        "2026-02-02",
+        "2026-02-03",
+        "2026-02-04"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-05"
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（2出願目以降15,000円）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "〔３〕前期試験Ａ",
+        "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 8,
+        "verified": true
+      },
+      {
+        "field": "subjects.required",
+        "quote": "国 語\t｢現代の国語・言語文化・論理国語・古典探究(いずれも漢文を除く)」\t\t60分\t100点\t300点",
+        "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "subjects.required",
+        "quote": "外 国 語\t｢英語コミュニケーションⅠ・Ⅱ・論理・表現Ⅰ」\t\t60分\t100点",
+        "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "地 理 歴 史\n公 民\n数 学\t｢日本史探究」「世界史探究」\n｢政治・経済」 から1科目\n｢数学Ⅰ・Ⅱ・A(図形の性質､場合の数と確率)」\t\t60分\t100点",
+        "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "2026年\n1月6日（火）\n〜",
+        "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 8,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationEnd",
+        "quote": "1月19日（月）\n《※》",
+        "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 8,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "商 学 部 2月1日（日）\n2月2日（月）\n経 営 学 部 2月13日（金）\n2月3日（火）\n経 済 学 部 2月4日（水）",
+        "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 8,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2月20日（金） 3月5日（木）",
+        "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 8,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3月5日（木）",
+        "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 8,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料\t30,000円（2出願目以降15,000円）",
+        "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 8,
+        "verified": true
+      },
+      {
+        "field": "examDateSelectable",
+        "quote": "試験日が異なれば同一学科および他学科を併願することができます。",
+        "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf",
+        "page": 8,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "aichi-gakuin-2026-sogo-ao-hogaku",
+    "university": "愛知学院大学",
+    "faculty": "法学部",
+    "department": "-",
+    "methodName": "AO入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": [
+        "2025-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2025-11-01",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "Ａ\nＯ\n入\n試\t文 学 部\n( 宗 教 文 化 )\n法 学 部\n歯 学 部\n短 期 大 学 部",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "【Net出願】\n2025年\n９月22日㈪\n〜\n９月29日㈪\n最終日の出願登録は\n正午(昼12時)までです｡",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "10月10日㈮\t\t10月14日㈫\n〜\n10月17日㈮",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "10月19日㈰\n（\t\t11月１日㈯\t\t11月12日㈬",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "11月12日㈬",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 13,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成)",
+    "reviewedAt": "2026-07-06"
+  }
+]

@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* English Hub デザインシステム（docs/design-system.md 準拠）: ライト基調に統一。
+   既存コンポーネントの dark: ユーティリティは .dark クラス基準に切り替え、
+   実際には .dark を付与しないことでライト表示に固定する。 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+
+  /* カラーパレット */
+  --color-accent: #2d6a4f;
+  --color-accent-light: #52b788;
+  --color-accent-dim: #d8f3dc;
+  --color-accent-strong: #1f5238;
+  --color-bg: #f8f7f4;
+  --color-surface: #ffffff;
+  --color-border: #e2ddd8;
+  --color-text: #1a1714;
+  --color-text-muted: #6b645c;
+
+  --background: var(--color-bg);
+  --foreground: var(--color-text);
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "Noto Sans JP",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic UI", "Yu Gothic",
+    "Segoe UI", Roboto, system-ui, sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* モバイルファースト（375px基準）を前提にレイアウトする */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  min-width: 320px;
+}

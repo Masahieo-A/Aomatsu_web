@@ -1,0 +1,644 @@
+# 育てるAI — 設計・使用書
+
+> AIに英文法を「教える」ことで、自分自身の理解と説明力を高める対話型学習Webアプリ
+
+---
+
+## 目次
+
+1. [コンセプト](#1-コンセプト)
+2. [技術スタック](#2-技術スタック)
+3. [ディレクトリ構成](#3-ディレクトリ構成)
+4. [セットアップ手順](#4-セットアップ手順)
+5. [使い方（ユーザー向け）](#5-使い方ユーザー向け)
+6. [アーキテクチャ設計](#6-アーキテクチャ設計)
+7. [AIプロンプト設計（知識制御）](#7-aiプロンプト設計知識制御)
+8. [データ型定義](#8-データ型定義)
+9. [APIリファレンス](#9-apiリファレンス)
+10. [問題セット（差し替え方法）](#10-問題セット差し替え方法)
+11. [スコア評価の仕組み](#11-スコア評価の仕組み)
+12. [Supabaseセットアップ](#12-supabaseセットアップ)
+13. [今後の拡張予定](#13-今後の拡張予定)
+
+---
+
+## 1. コンセプト
+
+### 学習の逆転：AIに「教える」
+
+一般的な生成AI活用では、生徒がAIから答えやヒントを「もらう」。
+本アプリはその逆で、**生徒がAIに英文法を「教え」**、AIは教わった内容だけを使って問題を解く。
+
+```
+通常:  生徒 ──質問→ AI ──答え→ 生徒
+育てるAI: 生徒 ──説明→ AI ──解答・思考過程・つまずき→ 生徒（自分の説明の穴に気づく）
+```
+
+### 対話型フローへの刷新（Phase 3）
+
+初期版は「自由入力で一括説明 → AIが穴埋めを解く → スコア」という**単発型**だったが、
+以下の2つの課題があった：
+
+1. 教える側が「何をどう教えればよいか」が漠然としすぎていた
+2. オープンな入力窓に一括入力するだけで、心理的な取り組みやすさが低かった
+
+これを、**足場掛け（scaffolding）と段階化された対話型フロー**に作り替えた。
+
+```
+⓪腕試し → ①基礎説明 → ②練習対話 → ③学習内容の把握 → ④テスト → スコア
+```
+
+| ステップ | 内容 |
+|---|---|
+| ⓪腕試し（コールドオープン） | AIが**前提知識だけで**練習問題1問に挑戦し、必ず失敗して具体的な質問をする（サーバ側で誤答を確定）。生徒の最初の入力は「作文」ではなく「質問への返答」になる |
+| ①基礎説明 | 従来UI（教え方ガイド付き）でAIに基本ルールを教える |
+| ②練習対話 | AIが**4択の練習問題を1問ずつ**解き、正答でも「他の選択肢がなぜ違うか分からない」「この型は解けないかも」とつぶやき・質問。生徒が**同一画面で1問1答**で追加説明する |
+| ③学習内容の把握 | 「生徒の学習内容を把握する」でAIが教わったこと・理解したこと・不足点を要約 |
+| ④テスト | 「テストを受けてもらう」でAIがテスト問題を全問解答 → スコアリング → ランキング |
+
+さらに、**「教える際のヒントを見る」ボタン**を①②で常時表示。押すと「文法マスター（教師AI）」が
+*教え方* のヒント（「○○という文法用語に触れると良い」「対応表で整理すると良い」等）を返す。
+※ 生徒役AI（教わる側）と文法マスター（教え方を助言する側）は**別ロール**。
+
+### 教育的根拠
+
+- **Learning by Teaching**（教えることで学ぶ）：教育心理学で実証されている学習促進効果
+- **Teachable Agent** 研究（Betty's Brain 等）の系譜：エージェントに教える設計が理解深化に結びつく
+- AIが「迷った箇所・不足知識」を**対話の中で逐次**可視化することで、学習者のメタ認知を誘発する
+
+### 本アプリの独自性
+
+| 点 | 内容 |
+|---|---|
+| 知識制御 | Geminiに「教わった知識だけで解く」よう制約するガードレール設計 |
+| 段階的対話 | 練習問題ごとにAIがつまずきを言語化し、生徒が1問1答で教え直す |
+| 二重のAIロール | 教わる「生徒役AI」と、教え方を助言する「文法マスター」 |
+| スコア化 | 教え方の正確性・明確さ・網羅性を100点満点でスコアリング |
+| サーバ側採点 | 正誤判定はサーバ側で正解ラベルと照合し確定（AIの自己採点ミスを排除） |
+
+---
+
+## 2. 技術スタック
+
+| 層 | 採用技術 | バージョン |
+|---|---|---|
+| フレームワーク | **Next.js** (App Router) | 16.2.6 |
+| 言語 | **TypeScript** | ^5 |
+| スタイリング | **Tailwind CSS** | ^4 |
+| AIモデル | **Google Gemini 2.5 Flash** | — |
+| AI SDK | **@google/generative-ai** | ^0.24.1 |
+| データベース / Realtime | **Supabase** (@supabase/supabase-js) | ^2.106.2 |
+| ユーティリティ | clsx / tailwind-merge | — |
+| ランタイム | Node.js / Vercel 対応 | — |
+
+---
+
+## 3. ディレクトリ構成
+
+```
+sodateru-ai/
+│
+├── app/                              # Next.js App Router
+│   ├── layout.tsx                    # ルートレイアウト
+│   ├── page.tsx                      # ランディング（授業に参加 / 教員用ページ）
+│   ├── globals.css
+│   ├── join/
+│   │   └── page.tsx                  # 生徒: 参加コード入力
+│   ├── session/[code]/
+│   │   └── page.tsx                  # 生徒: 待機→レッスン（新フロー）→ランキング
+│   ├── teacher/
+│   │   ├── page.tsx                  # 教員: ログイン
+│   │   ├── dashboard/
+│   │   │   └── page.tsx              # 教員: セッション一覧・作成
+│   │   └── session/[id]/
+│   │       └── page.tsx              # 教員: リアルタイムランキング・管理
+│   └── api/
+│       ├── lesson/                   # ★ 新レッスンAPI
+│       │   ├── practice/route.ts     # POST 練習対話（生徒役AIの1ターン）
+│       │   ├── hint/route.ts         # POST 文法マスターの教え方ヒント
+│       │   ├── summary/route.ts      # POST 学習内容の要約
+│       │   └── test/route.ts         # POST テスト採点 + DB保存
+│       ├── teacher/route.ts          # POST 教員認証
+│       └── sessions/
+│           ├── route.ts              # GET/POST /api/sessions
+│           └── [code]/
+│               ├── route.ts          # GET /api/sessions/[code]
+│               ├── join/route.ts     # POST 参加
+│               ├── start/route.ts    # POST 授業開始
+│               └── end/route.ts      # POST 授業終了
+│
+├── components/
+│   ├── TeachingInput.tsx             # ①基礎説明フォーム（教え方ガイド付き）
+│   ├── PracticeChat.tsx              # ②練習問題ごとの1問1答対話UI
+│   ├── TeacherHintPanel.tsx          # 「教える際のヒントを見る」（文法マスター）
+│   ├── LearningSummary.tsx           # ③学習内容の把握（要約表示）
+│   ├── SolvingDisplay.tsx            # ④AIがテストを解くアニメーション
+│   └── TestResult.tsx               # スコア・思考過程・フィードバック表示
+│
+├── lib/
+│   ├── gemini.ts                     # Gemini クライアント（4関数）
+│   ├── questions.ts                  # 単元・問題セット定義（4択／練習・テスト）
+│   ├── supabase.ts                   # Supabaseクライアント（anon key）
+│   ├── supabase-server.ts            # Supabaseサーバークライアント（service role）
+│   └── utils.ts
+│
+├── types/index.ts                    # 全TypeScript型定義
+├── supabase/schema.sql               # DBスキーマ（Supabase SQL Editorで実行）
+├── .env.local                        # 環境変数 ※gitignore対象
+├── .env.example                      # 環境変数サンプル
+└── DESIGN.md                         # 本ドキュメント
+```
+
+---
+
+## 4. セットアップ手順
+
+### 必要なもの
+
+- Node.js 18以上
+- Google AI Studio の Gemini APIキー → https://aistudio.google.com/apikey
+- Supabase アカウント（無料）→ https://supabase.com
+
+### Step 1: 依存関係のインストール
+
+```bash
+cd sodateru-ai
+npm install
+```
+
+### Step 2: Supabase プロジェクト作成
+
+1. https://supabase.com でプロジェクトを新規作成
+2. **SQL Editor** を開き `supabase/schema.sql` の内容を貼り付けて実行
+3. **Project Settings > API** からキーを確認
+
+### Step 3: 環境変数の設定
+
+`.env.local` を編集：
+
+```env
+GEMINI_API_KEY=AIzaSy...（Gemini APIキー）
+
+NEXT_PUBLIC_SUPABASE_URL=https://xxxx.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJ...（anon key）
+SUPABASE_SERVICE_ROLE_KEY=eyJ...（service_role key）
+
+TEACHER_PASSWORD=（教員パスワードに使う任意の文字列）
+```
+
+### Step 4: 起動
+
+```bash
+npm run dev
+# → http://localhost:3000
+```
+
+### ビルド・本番起動
+
+```bash
+npm run build
+npm run start
+```
+
+---
+
+## 5. 使い方（ユーザー向け）
+
+本アプリは**授業モード（セッション）に一本化**されている。教員がセッションを作成し、
+生徒が参加コードで参加して学習する。
+
+### 教員の操作手順
+
+1. `http://localhost:3000/teacher` にアクセス
+2. `.env.local` に設定した `TEACHER_PASSWORD` を入力してログイン
+3. **ダッシュボード**で「授業名」と「単元」を入力してセッション作成
+4. 発行された **6文字の参加コード** を生徒に伝える（黒板・投影など）
+5. 「管理」ボタンでセッション画面を開き **「授業を開始する」** をクリック
+6. リアルタイムランキングで生徒のテストスコアを確認
+7. 授業終了後「授業を終了する」をクリック
+
+### 生徒の操作手順（新フロー）
+
+1. `http://localhost:3000/join` にアクセス（またはトップページから「授業に参加する」）
+2. 教員から伝えられた **参加コード**（6文字）とニックネームを入力
+3. 待機画面で教員のスタートを待つ
+4. 授業開始後、以下のステップで進む：
+
+   1. **基礎説明**：選んだ文法のルールを自分の言葉で説明（20文字以上）。
+      画面下の「教える際のヒントを見る」で文法マスターの助言も得られる。
+   2. **練習対話**：AIが練習問題（4択）を1問ずつ解く。AIのつぶやき・質問に対し、
+      テキストで「追加で教える」を繰り返す。AIが十分理解すると「次の練習問題へ」が緑になる。
+   3. **学習内容の把握**：「テストを受けてもらう」前に、AIが何を学んだかを要約で確認。
+   4. **テスト**：AIがテスト問題を解き、**教え方スコア**（0〜100）が算出される。
+   5. **結果・ランキング**：スコア内訳・フィードバック・問題別の思考過程を表示。
+      「教え方を改善して再挑戦」で最初からやり直せる（最高スコアがランキングに反映）。
+
+---
+
+## 6. アーキテクチャ設計
+
+### 画面遷移（全体）
+
+```
+/（ランディング）
+├── /join  ─────────────────────────────────────────────────┐
+│   └── /session/[code]                                      │
+│         ├── waiting: 待機（教員スタート待ち）              │
+│         ├── active:  レッスン（下記ステップマシン）        │ 生徒
+│         └── ended:   終了・最終ランキング                  │
+│                                                            ┘
+└── /teacher  ──────────────────────────────────────────────┐
+    └── /teacher/dashboard                                   │
+          └── /teacher/session/[id]                          │ 教員
+                ├── 参加者一覧・スタート                     │
+                └── リアルタイムランキング                   │
+                                                             ┘
+```
+
+### レッスンのステップマシン（`/session/[code]` の active 状態）
+
+```
+cold-open    → 腕試し（ColdOpenChat）。AIが前提知識だけで練習問題1問目に挑戦
+                →サーバ強制で誤答＋質問。生徒は1問1答で返答（0回でも進める）
+explain      → 基礎説明（TeachingInput）
+                送信で dialogue に {role:"teacher", content: 説明文} を追記し practice へ
+                （コールドオープンのやりとりも dialogue に含まれる）
+practice     → practiceQuestions を1問ずつ <PracticeChat> で対話
+                AIが解く→つぶやき→生徒が追加で教える（1問1答）→satisfied で次へ
+                最終問題後 summary へ
+summary      → <LearningSummary>（学習内容の要約）→「テストを受けてもらう」
+test-loading → /api/lesson/test 呼び出し中
+test-solving → <SolvingDisplay>（AIがテストを解くアニメ）
+result       → <TestResult>（スコア） + RankingList
+```
+
+### 対話（dialogue）の管理
+
+レッスン全体の対話は `LessonMessage[]`（`role: "teacher" | "student"`）として
+`/session/[code]/page.tsx` が保持する。
+- `teacher` = ユーザー（教える側）の発言
+- `student` = AI（教わる側）の発言
+
+`PracticeChat` は API送信用の最新対話を `useRef` で保持し（stateの非同期性による
+取りこぼしを回避）、各ターンを親へ `onAppend` で同期する。
+要約・テストは親が保持する `dialogue` 全文を送信する（ステートレス）。
+
+### データフロー（テスト送信時）
+
+```
+生徒ブラウザ
+  ↓ POST /api/lesson/test  { unit_id, dialogue, student_id, session_id }
+  → Gemini 2.5 Flash がテスト問題を解答
+  → サーバ側で is_correct / ai_correct_count を確定
+  → attempts に記録 / students.best_score を更新
+  ← TestResult
+  → Supabase Realtime → 全員のランキングが即時更新
+```
+
+---
+
+## 7. AIプロンプト設計（知識制御）
+
+本アプリの核心。`lib/gemini.ts` に5つの役割を定義する。すべて
+`gemini-2.5-flash-lite` / `responseMimeType: application/json` ＋ `responseSchema`
+（対話系は temperature 0.3、判定・採点系は 0）。
+
+全呼び出しは共通ラッパー `callGeminiWithRetry()` を経由する：
+- **リトライ**：最大3回、指数バックオフ＋ジッター（0.5s → 1.5s → 4s）。
+  対象は 429 / 5xx / タイムアウト / JSONパース失敗
+- **同時実行制御**：サーバ側セマフォでGemini呼び出しを同時4本に制限（教室同時利用対策）
+- **冪等化**：クライアントは各呼び出しに `attempt_id` を付け、サーバは成功レスポンスを
+  Supabase `ai_responses` にキャッシュ。同一IDの再送はキャッシュを返す
+  （再試行ボタン連打・「戻る」で二重生成しない）
+- **フォールバック**：練習対話はリトライ後も失敗した場合、定型の誤答＋質問
+  （`isFallback: true`）を返して授業を止めない
+- APIルートは `maxDuration = 60` を宣言（Vercelのタイムアウト対策）
+- クライアント側は全エラーUIに「🔄 もう一度」ボタン（`<ErrorRetry>`）。
+  再試行は同じ `attempt_id` で再送され、会話履歴は消えない
+
+> **設計原則：知識制御はAIの「演技」に任せず、境界の宣言＋サーバ側の検証・確定で行う。**
+> - 知識の3層契約：前提知識（assumedKnowledge＝最初から使ってよい）／学習対象
+>   （coverageTopics＝教わってはじめて使える）／範囲外（出題しない）
+> - 「教わっていない問題で正解する」経路は、カバレッジ判定（下記⑤）＋サーバ側の
+>   解答確定で構造的に塞ぐ（forceStumble と同じ原則の一般化）
+
+### ① practiceChat（生徒役AI・練習問題の1ターン）
+
+```
+[役割] あなたは「{unit.name}」を自分では知らない、素直で好奇心旺盛な英語学習者（生徒）です。
+
+[ガードレール]
+- 先生が教えた内容以外の文法知識は使わない（知っていても「教わっていない」と振る舞う）
+- 4択なので「なんとなく」正解できることがある。正解できても、他の選択肢がなぜ
+  間違いか確信が持てない／別タイプの問題は解けないかも、と理解の浅さを言葉にする
+- もっと教えてほしいことは具体的に質問する（1問1答）
+
+[これまでの対話] {dialogue}
+[取り組む問題] {sentence} と4択
+
+[出力（JSON）]
+{ "message": "...", "chosenLabel": "A", "satisfied": false }
+```
+- `is_followup` フラグで「新しい問題」か「先生の追加説明への応答」かを切り替える
+- 各ターンの解答ラベルは、問題の `requiredTopics` に対するカバレッジ判定（⑤）から
+  **サーバ側で確定**する：未カバー → 誤答（commonMistake）＋教わるための質問／
+  全カバー → 正解＋説明の引用（evidence）＋**一歩踏み込んだ確認質問**
+  （「合っていますよね？」で終わらせず、1問1答の往復を作る）
+- `isCorrect` は**サーバ側**で `chosenLabel === answerLabel` を照合して確定
+
+### ② teachingHint（文法マスター・教え方の助言）
+
+```
+[役割] あなたは英文法の達人「文法マスター」。
+       生徒（教える人）に【どう教えればよいか】のヒントを与える。
+[方針] 答えそのものは直接言わず、教え方・説明の切り口（文法用語・対応表など）を示す。
+[出力（JSON）] { "hint": "..." }
+```
+
+### ③ learningSummary（学習内容の要約）
+
+```
+[役割] あなたは教わってきた生徒AI。何を教わり、何を理解できたかを振り返る。
+[出力（JSON）] { "taught": [...], "learned": [...], "gaps": [...], "summary": "..." }
+```
+
+### ④ runTest（テスト採点）
+
+```
+[役割] 教わった内容だけを知識として持つ生徒AI。解答ラベルはサーバ側で確定済みで、
+       LLMは「教わった内容のどこを使えば解けるか」の思考文とルーブリック評価のみ生成。
+[出力（JSON）]
+{
+  "answers": [{ "question_id": 1, "thinking": "..." }],
+  "score_breakdown": { "accuracy": 80, "clarity": 70 },
+  "feedback": "..."
+}
+```
+- 各問の解答は**サーバ側で確定**：requiredTopics を全カバー → 正解／未カバー → 誤答
+  （commonMistake）＋「未習」の思考文＋不足トピック名（missingTopics）
+- `teaching_score` は **テスト正答率40% + 網羅性30% + 正確性20% + わかりやすさ10%**
+  の加重和をサーバ側で計算（`SCORE_WEIGHTS`）。決定的な成分（正答率・網羅性）が70%を
+  占めるため、LLM評価のぶれがランキングに与える影響が小さい。採点系は temperature 0。
+
+### ⑤ coverageJudge（カバレッジ判定器・テスト採点の前段）
+
+```
+[役割] ロールプレイなしの判定器。「先生の説明は、各学習トピック（coverageTopics）を
+       問題が解けるレベルで含むか」を含意判定する。
+[出力（JSON）] { "coverage": [{ "topic_index": 0, "covered": true, "evidence": "説明からの引用" }] }
+```
+- `evidence`（一字一句の引用）は**サーバ側で説明文と照合**し、検証できない covered は
+  false に倒す（ハルシネーション対策）
+- 各問題は `requiredTopics`（必要トピックのインデックス）を持ち、未カバーの問題は
+  **サーバ側で誤答（commonMistake）と「未習」の思考文・不足トピック名を確定**する
+  → 潜在知識による「教えていないのに正解」が構造的に発生しない（練習・テスト共通）
+- 練習フローの冒頭には**コールドオープン**（`practiceChat` の `is_cold_open`）があり、
+  何も教わっていない状態でAIが必ずつまずく（誤答ラベルはサーバ確定）
+
+---
+
+## 8. データ型定義
+
+`types/index.ts` で定義。
+
+```typescript
+// 4択の選択肢
+type Choice = { label: string; text: string };           // label: "A".."D"
+
+// 4択問題
+type MCQuestion = {
+  id: number;
+  sentence: string;        // "This is the city ___ I was born."
+  choices: Choice[];       // 4択
+  answerLabel: string;     // 正解ラベル "A"
+  explanation?: string;    // 正解理由・誤答理由（文法マスター/採点の参照用）
+  hint?: string;
+};
+
+// 単元
+type GrammarUnit = {
+  id: string;
+  name: string;
+  description: string;
+  teachingGuide: TeachingGuide;       // 前提知識・出題トピック・考え方のヒント
+  practiceQuestions: MCQuestion[];    // 練習問題（1問ずつ対話）
+  testQuestions: MCQuestion[];        // テスト問題（最後に一括採点）
+};
+
+// 対話（teacher=ユーザ, student=AI）
+type LessonMessage = { role: "teacher" | "student"; content: string };
+
+// 練習問題でのAIの1ターン
+type PracticeTurn = {
+  message: string;
+  chosenLabel?: string;
+  isCorrect?: boolean;     // サーバ側で確定
+  satisfied: boolean;      // この問題を十分理解し、次へ進んでよいか
+};
+
+// 文法マスターのヒント
+type TeachingHint = { hint: string };
+
+// 学習内容の要約
+type LearningSummary = {
+  taught: string[];
+  learned: string[];
+  gaps: string[];
+  summary: string;
+};
+
+// テストの各問の回答
+type TestAnswer = {
+  question_id: number;
+  chosenLabel: string;
+  thinking: string;
+  is_correct: boolean;     // サーバ側で確定
+};
+
+// テスト結果
+type TestResult = {
+  answers: TestAnswer[];
+  teaching_score: number;             // 教え方スコア（0-100）
+  score_breakdown: { accuracy: number; clarity: number; completeness: number };
+  feedback: string;
+  ai_correct_count: number;
+  total_questions: number;
+};
+```
+
+---
+
+## 9. APIリファレンス
+
+すべて `POST`。レッスン系は `app/api/lesson/` 配下。
+
+### `POST /api/lesson/practice`
+
+練習問題における生徒役AIの1ターンを返す。
+
+**リクエスト**
+```json
+{
+  "unit_id": "relative-adverb",
+  "question_id": 1,
+  "dialogue": [{ "role": "teacher", "content": "..." }],
+  "is_followup": false
+}
+```
+**レスポンス**
+```json
+{ "message": "...", "chosenLabel": "A", "isCorrect": true, "satisfied": false }
+```
+
+### `POST /api/lesson/hint`
+
+文法マスターが「教え方」のヒントを返す。
+
+**リクエスト**：`{ unit_id, dialogue, question_id? }`
+**レスポンス**：`{ "hint": "..." }`
+
+### `POST /api/lesson/summary`
+
+AIの学習内容を要約する。
+
+**リクエスト**：`{ unit_id, dialogue }`
+**レスポンス**：`{ taught, learned, gaps, summary }`
+
+### `POST /api/lesson/test`
+
+テスト問題をAIが解き、スコアを確定してDBに保存する。
+
+**リクエスト**：`{ unit_id, dialogue, student_id?, session_id? }`
+（`student_id` と `session_id` がある場合のみ `attempts` 記録・`best_score` 更新）
+**レスポンス**：`TestResult`
+
+**エラー（共通）**
+
+| ステータス | 条件 |
+|---|---|
+| 400 | 必須フィールド未指定 |
+| 404 | 存在しない unit_id / question_id |
+| 500 | Gemini APIエラー / パース失敗 |
+
+---
+
+## 10. 問題セット（差し替え方法）
+
+`lib/questions.ts` に4単元（関係副詞・関係代名詞・受動態・仮定法）を定義。
+**収録されている問題はサンプル**であり、自由に差し替えてよい。
+
+各単元は以下を持つ：
+
+- `teachingGuide`：前提知識・出題トピック・考え方のヒント（①基礎説明の足場掛け）
+- `practiceQuestions`：練習問題（3問程度。1問ずつAIと対話）
+- `testQuestions`：テスト問題（6問程度。最後に一括採点）
+
+### 問題の書き方（例）
+
+```typescript
+{
+  id: 1,
+  sentence: "This is the city ___ I was born.",
+  choices: [
+    { label: "A", text: "where" },
+    { label: "B", text: "when" },
+    { label: "C", text: "which" },
+    { label: "D", text: "who" },
+  ],
+  answerLabel: "A",
+  explanation: "先行詞 the city は場所なので where。…（採点・マスターの参照用）",
+  hint: "場所を表す関係副詞",
+}
+```
+
+- `choices` は4択を想定（A〜D）。
+- `answerLabel` が正解ラベル。正誤判定はこのラベルとの照合でサーバ側が行う。
+- `explanation` は任意。文法マスターの助言やフィードバックの質を高める参照情報。
+
+---
+
+## 11. スコア評価の仕組み
+
+### 教え方スコア（0〜100点）
+
+テスト時にGeminiが以下の3観点で評価し、総合スコアを算出する。
+
+| 観点 | 内容 | 高スコアの条件 |
+|---|---|---|
+| **正確性**（accuracy） | 説明の内容が文法的に正しいか | 誤った説明・誤用がない |
+| **わかりやすさ**（clarity） | 表現が明瞭で理解しやすいか | 簡潔・具体的・例文あり |
+| **網羅性**（completeness） | 問題を解くのに必要な情報が揃っているか | 全パターン・例外も網羅 |
+
+### AI正答率（サーバ側で確定）
+
+各テスト問題の `is_correct` は、AIが選んだ `chosenLabel` を正解 `answerLabel` と
+**サーバ側で照合**して確定する（AIの自己採点に依存しない）。`ai_correct_count` も同様。
+
+### スコアの目安
+
+| スコア | 評価 | 色 |
+|---|---|---|
+| 80〜100 | 優秀な説明 | 緑 |
+| 60〜79 | 改善の余地あり | 黄 |
+| 0〜59 | 要改善 | 赤 |
+
+### ランキング
+
+`students.best_score` に**テスト得点の最大値**が保存され、ランキングに反映される。
+「教え方を改善して再挑戦」で更新を狙える。
+
+---
+
+## 12. Supabaseセットアップ
+
+### DBテーブル構成（`supabase/schema.sql`）
+
+| テーブル | 役割 |
+|---|---|
+| `sessions` | 授業セッション（コード・単元・ステータス） |
+| `students` | セッション参加者（名前・ベストスコア・試行回数） |
+| `attempts` | 各試行の記録（教えた対話全文・スコア・テスト結果JSON） |
+
+> `attempts.explanation` には、その回のレッスン対話（`dialogue`）全文を
+> テキスト化して保存する。`result_json` には `TestResult` を保存する。
+> スキーマ自体は初期版から変更なし。
+
+### Realtime 設定
+
+`supabase/schema.sql` の最後に以下が含まれる：
+
+```sql
+ALTER PUBLICATION supabase_realtime ADD TABLE students;
+ALTER PUBLICATION supabase_realtime ADD TABLE sessions;
+```
+
+Supabase ダッシュボードの **Database > Replication** で `students` と `sessions` の
+Realtime が有効か確認すること。
+
+### 教員認証の仕組み
+
+簡易的なパスワード認証：
+
+1. 教員が `/teacher` でパスワード入力
+2. `POST /api/teacher` でサーバ側の `TEACHER_PASSWORD` 環境変数と照合
+3. 一致すれば `localStorage` にパスワードを保存
+4. 以降の教員用APIコールは `x-teacher-password` ヘッダーにパスワードを付与
+
+> **注意**: これは試運転用の簡易認証。本番運用時は Supabase Auth 等への移行を検討。
+
+---
+
+## 13. 今後の拡張予定
+
+| 機能 | 内容 |
+|---|---|
+| 単元追加 | 不定詞・動名詞・比較表現など |
+| カスタム問題 | 教員が独自の4択問題（練習・テスト）を登録できる |
+| 難易度設定 | 問題の難易度をAIが動的に調整 |
+| 生徒の成長グラフ | スコア推移の可視化 |
+| 採点の堅牢化 | Gemini応答のスキーマ検証（zod等）・リトライ |
+| レート制限 | `/api/lesson/*` の濫用・課金対策 |
+
+---
+
+*作成日：2026-05-26 / 対話型フロー刷新：2026-06-06*

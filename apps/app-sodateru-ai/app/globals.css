@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  /* English Hub デザインシステム（docs/design-system.md 準拠） */
+  --color-accent: #2d6a4f;
+  --color-accent-light: #52b788;
+  --color-accent-dim: #d8f3dc;
+  --color-accent-strong: #1f5238;
+  --color-bg: #f8f7f4;
+  --color-surface: #ffffff;
+  --color-border: #e2ddd8;
+  --color-text: #1a1714;
+  --color-text-muted: #6b645c;
+
+  --background: var(--color-bg);
+  --foreground: var(--color-text);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans JP",
+    var(--font-geist-sans), sans-serif;
+  line-height: 1.6;
+}

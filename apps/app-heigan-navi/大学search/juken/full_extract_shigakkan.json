@@ -1,0 +1,4842 @@
+[
+  {
+    "id": "shigakkan-2026-ippan-zenki-3科目型-栄養科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "栄養科学科",
+    "methodName": "一般入試（前期）3科目型",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            }
+          ],
+          "pick": 3
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-23",
+      "examDates": [
+        "2026-01-30",
+        "2026-01-31"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般入試（前期）3科目型／2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "英 語 「英語コミュニケーションⅠ,英語コミュニケーションⅡ,論理・表現Ⅰ」",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "subjects.totalCount",
+        "quote": "3科目 300点 2科目※ 200点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ 8（木）〜 1／23（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1／30（金）・31（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-ippan-zenki-2科目型-栄養科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "栄養科学科",
+    "methodName": "一般入試（前期）2科目型",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            }
+          ],
+          "pick": 2
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-23",
+      "examDates": [
+        "2026-01-30",
+        "2026-01-31"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般入試（前期）3科目型／2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "英 語 「英語コミュニケーションⅠ,英語コミュニケーションⅡ,論理・表現Ⅰ」",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "subjects.totalCount",
+        "quote": "3科目 300点 2科目※ 200点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ 8（木）〜 1／23（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1／30（金）・31（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-ippan-zenki-3科目型-こども健康・教育学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "こども健康・教育学科",
+    "methodName": "一般入試（前期）3科目型",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            }
+          ],
+          "pick": 3
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-23",
+      "examDates": [
+        "2026-01-30",
+        "2026-01-31"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般入試（前期）3科目型／2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "英 語 「英語コミュニケーションⅠ,英語コミュニケーションⅡ,論理・表現Ⅰ」",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "subjects.totalCount",
+        "quote": "3科目 300点 2科目※ 200点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ 8（木）〜 1／23（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1／30（金）・31（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-ippan-zenki-2科目型-こども健康・教育学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "こども健康・教育学科",
+    "methodName": "一般入試（前期）2科目型",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            }
+          ],
+          "pick": 2
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-23",
+      "examDates": [
+        "2026-01-30",
+        "2026-01-31"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般入試（前期）3科目型／2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "英 語 「英語コミュニケーションⅠ,英語コミュニケーションⅡ,論理・表現Ⅰ」",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "subjects.totalCount",
+        "quote": "3科目 300点 2科目※ 200点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ 8（木）〜 1／23（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1／30（金）・31（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-ippan-zenki-3科目型-体育科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "体育科学科",
+    "methodName": "一般入試（前期）3科目型",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            }
+          ],
+          "pick": 3
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-23",
+      "examDates": [
+        "2026-01-30",
+        "2026-01-31"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般入試（前期）3科目型／2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "英 語 「英語コミュニケーションⅠ,英語コミュニケーションⅡ,論理・表現Ⅰ」",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "subjects.totalCount",
+        "quote": "3科目 300点 2科目※ 200点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ 8（木）〜 1／23（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1／30（金）・31（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-ippan-zenki-2科目型-体育科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "体育科学科",
+    "methodName": "一般入試（前期）2科目型",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            }
+          ],
+          "pick": 2
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-23",
+      "examDates": [
+        "2026-01-30",
+        "2026-01-31"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般入試（前期）3科目型／2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "英 語 「英語コミュニケーションⅠ,英語コミュニケーションⅡ,論理・表現Ⅰ」",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "subjects.totalCount",
+        "quote": "3科目 300点 2科目※ 200点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ 8（木）〜 1／23（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1／30（金）・31（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-ippan-zenki-3科目型-健康スポーツ科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "健康スポーツ科学科",
+    "methodName": "一般入試（前期）3科目型",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            }
+          ],
+          "pick": 3
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-23",
+      "examDates": [
+        "2026-01-30",
+        "2026-01-31"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般入試（前期）3科目型／2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "英 語 「英語コミュニケーションⅠ,英語コミュニケーションⅡ,論理・表現Ⅰ」",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "subjects.totalCount",
+        "quote": "3科目 300点 2科目※ 200点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ 8（木）〜 1／23（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1／30（金）・31（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-ippan-zenki-2科目型-健康スポーツ科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "健康スポーツ科学科",
+    "methodName": "一般入試（前期）2科目型",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            }
+          ],
+          "pick": 2
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-23",
+      "examDates": [
+        "2026-01-30",
+        "2026-01-31"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般入試（前期）3科目型／2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "英 語 「英語コミュニケーションⅠ,英語コミュニケーションⅡ,論理・表現Ⅰ」",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "subjects.totalCount",
+        "quote": "3科目 300点 2科目※ 200点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 12,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ 8（木）〜 1／23（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1／30（金）・31（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 13,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-ippan-koki-2kamoku-栄養科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "栄養科学科",
+    "methodName": "一般入試（後期）2科目型",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            }
+          ],
+          "pick": 2
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-02-16",
+      "applicationEnd": "2026-02-24",
+      "examDates": [
+        "2026-02-28"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-03-06",
+      "enrollDeadline": "2026-03-13"
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般入試（後期）2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "subjects.totalCount",
+        "quote": "2科目選択 200点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 2／16（月）〜 2／24（火）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "2／28（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3／ 6（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3／13（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-ippan-koki-2kamoku-こども健康・教育学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "こども健康・教育学科",
+    "methodName": "一般入試（後期）2科目型",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            }
+          ],
+          "pick": 2
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-02-16",
+      "applicationEnd": "2026-02-24",
+      "examDates": [
+        "2026-02-28"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-03-06",
+      "enrollDeadline": "2026-03-13"
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般入試（後期）2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "subjects.totalCount",
+        "quote": "2科目選択 200点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 2／16（月）〜 2／24（火）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "2／28（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3／ 6（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3／13（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-ippan-koki-2kamoku-体育科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "体育科学科",
+    "methodName": "一般入試（後期）2科目型",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            }
+          ],
+          "pick": 2
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-02-16",
+      "applicationEnd": "2026-02-24",
+      "examDates": [
+        "2026-02-28"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-03-06",
+      "enrollDeadline": "2026-03-13"
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般入試（後期）2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "subjects.totalCount",
+        "quote": "2科目選択 200点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 2／16（月）〜 2／24（火）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "2／28（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3／ 6（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3／13（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-ippan-koki-2kamoku-健康スポーツ科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "健康スポーツ科学科",
+    "methodName": "一般入試（後期）2科目型",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            }
+          ],
+          "pick": 2
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-02-16",
+      "applicationEnd": "2026-02-24",
+      "examDates": [
+        "2026-02-28"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-03-06",
+      "enrollDeadline": "2026-03-13"
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般入試（後期）2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "subjects.totalCount",
+        "quote": "2科目選択 200点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 2／16（月）〜 2／24（火）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "2／28（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3／ 6（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3／13（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 15,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-ippan-kyotsu-plus-栄養科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "栄養科学科",
+    "methodName": "共通テストプラス入試",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-30",
+      "examDates": [
+        "2026-02-07"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "共通テストプラス入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 20,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 20,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "英 語 ｢英語コミュニケーションⅠ,英語コミュニケーションⅡ,論理・表現Ⅰ｣ 1教科 各100点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 20,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ 8（木）〜1／30（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "2／ 7（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-ippan-kyotsu-plus-こども健康・教育学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "こども健康・教育学科",
+    "methodName": "共通テストプラス入試",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-30",
+      "examDates": [
+        "2026-02-07"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "共通テストプラス入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 20,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 20,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "英 語 ｢英語コミュニケーションⅠ,英語コミュニケーションⅡ,論理・表現Ⅰ｣ 1教科 各100点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 20,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ 8（木）〜1／30（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "2／ 7（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-ippan-kyotsu-plus-体育科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "体育科学科",
+    "methodName": "共通テストプラス入試",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-30",
+      "examDates": [
+        "2026-02-07"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "共通テストプラス入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 20,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 20,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "英 語 ｢英語コミュニケーションⅠ,英語コミュニケーションⅡ,論理・表現Ⅰ｣ 1教科 各100点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 20,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ 8（木）〜1／30（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "2／ 7（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-ippan-kyotsu-plus-健康スポーツ科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "健康スポーツ科学科",
+    "methodName": "共通テストプラス入試",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-30",
+      "examDates": [
+        "2026-02-07"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "共通テストプラス入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 20,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 20,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "英 語 ｢英語コミュニケーションⅠ,英語コミュニケーションⅡ,論理・表現Ⅰ｣ 1教科 各100点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 20,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ 8（木）〜1／30（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "2／ 7（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 21,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kyotsu-zenki-3科目型-栄養科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "栄養科学科",
+    "methodName": "共通テスト利用入試（前期）3科目型",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学"
+            },
+            {
+              "subject": "物理"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            },
+            {
+              "subject": "情報"
+            }
+          ],
+          "pick": 3
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-30",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 15000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "共通テスト利用入試（前期）3科目型／2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "外国語 ｢英語（ リスニングを含む）｣",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ （8 木）〜 1／30（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "個別試験は\n実施しません",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kyotsu-zenki-2科目型-栄養科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "栄養科学科",
+    "methodName": "共通テスト利用入試（前期）2科目型",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学"
+            },
+            {
+              "subject": "物理"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            },
+            {
+              "subject": "情報"
+            }
+          ],
+          "pick": 2
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-30",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 15000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "共通テスト利用入試（前期）3科目型／2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "外国語 ｢英語（ リスニングを含む）｣",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ （8 木）〜 1／30（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "個別試験は\n実施しません",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kyotsu-zenki-3科目型-こども健康・教育学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "こども健康・教育学科",
+    "methodName": "共通テスト利用入試（前期）3科目型",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学"
+            },
+            {
+              "subject": "物理"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            },
+            {
+              "subject": "情報"
+            }
+          ],
+          "pick": 3
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-30",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 15000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "共通テスト利用入試（前期）3科目型／2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "外国語 ｢英語（ リスニングを含む）｣",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ （8 木）〜 1／30（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "個別試験は\n実施しません",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kyotsu-zenki-2科目型-こども健康・教育学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "こども健康・教育学科",
+    "methodName": "共通テスト利用入試（前期）2科目型",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学"
+            },
+            {
+              "subject": "物理"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            },
+            {
+              "subject": "情報"
+            }
+          ],
+          "pick": 2
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-30",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 15000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "共通テスト利用入試（前期）3科目型／2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "外国語 ｢英語（ リスニングを含む）｣",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ （8 木）〜 1／30（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "個別試験は\n実施しません",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kyotsu-zenki-3科目型-体育科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "体育科学科",
+    "methodName": "共通テスト利用入試（前期）3科目型",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学"
+            },
+            {
+              "subject": "物理"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            },
+            {
+              "subject": "情報"
+            }
+          ],
+          "pick": 3
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-30",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 15000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "共通テスト利用入試（前期）3科目型／2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "外国語 ｢英語（ リスニングを含む）｣",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ （8 木）〜 1／30（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "個別試験は\n実施しません",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kyotsu-zenki-2科目型-体育科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "体育科学科",
+    "methodName": "共通テスト利用入試（前期）2科目型",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学"
+            },
+            {
+              "subject": "物理"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            },
+            {
+              "subject": "情報"
+            }
+          ],
+          "pick": 2
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-30",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 15000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "共通テスト利用入試（前期）3科目型／2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "外国語 ｢英語（ リスニングを含む）｣",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ （8 木）〜 1／30（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "個別試験は\n実施しません",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kyotsu-zenki-3科目型-健康スポーツ科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "健康スポーツ科学科",
+    "methodName": "共通テスト利用入試（前期）3科目型",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学"
+            },
+            {
+              "subject": "物理"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            },
+            {
+              "subject": "情報"
+            }
+          ],
+          "pick": 3
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-30",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 15000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "共通テスト利用入試（前期）3科目型／2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "外国語 ｢英語（ リスニングを含む）｣",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ （8 木）〜 1／30（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "個別試験は\n実施しません",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kyotsu-zenki-2科目型-健康スポーツ科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "健康スポーツ科学科",
+    "methodName": "共通テスト利用入試（前期）2科目型",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学"
+            },
+            {
+              "subject": "物理"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            },
+            {
+              "subject": "情報"
+            }
+          ],
+          "pick": 2
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-08",
+      "applicationEnd": "2026-01-30",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-02-12",
+      "enrollDeadline": "2026-02-26"
+    },
+    "fee": 15000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "共通テスト利用入試（前期）3科目型／2科目型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "外国語 ｢英語（ リスニングを含む）｣",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 16,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 1／ （8 木）〜 1／30（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "個別試験は\n実施しません",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2／12（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "手続金：2／26（木）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 17,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kyotsu-koki-2kamoku-栄養科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "栄養科学科",
+    "methodName": "共通テスト利用入試（後期）2科目型",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学"
+            },
+            {
+              "subject": "物理"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            },
+            {
+              "subject": "情報"
+            }
+          ],
+          "pick": 2
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-02-16",
+      "applicationEnd": "2026-02-27",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-03-06",
+      "enrollDeadline": "2026-03-13"
+    },
+    "fee": 15000,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "共通テスト利用入試（後期）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "subjects.totalCount",
+        "quote": "2教科\n各100点 200点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 2／16（月）〜 2／27（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 19,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3／ 6（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 19,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3／13（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 19,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 19,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kyotsu-koki-2kamoku-こども健康・教育学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "こども健康・教育学科",
+    "methodName": "共通テスト利用入試（後期）2科目型",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学"
+            },
+            {
+              "subject": "物理"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            },
+            {
+              "subject": "情報"
+            }
+          ],
+          "pick": 2
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-02-16",
+      "applicationEnd": "2026-02-27",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-03-06",
+      "enrollDeadline": "2026-03-13"
+    },
+    "fee": 15000,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "共通テスト利用入試（後期）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "subjects.totalCount",
+        "quote": "2教科\n各100点 200点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 2／16（月）〜 2／27（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 19,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3／ 6（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 19,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3／13（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 19,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 19,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kyotsu-koki-2kamoku-体育科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "体育科学科",
+    "methodName": "共通テスト利用入試（後期）2科目型",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学"
+            },
+            {
+              "subject": "物理"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            },
+            {
+              "subject": "情報"
+            }
+          ],
+          "pick": 2
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-02-16",
+      "applicationEnd": "2026-02-27",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-03-06",
+      "enrollDeadline": "2026-03-13"
+    },
+    "fee": 15000,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "共通テスト利用入試（後期）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "subjects.totalCount",
+        "quote": "2教科\n各100点 200点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 2／16（月）〜 2／27（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 19,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3／ 6（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 19,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3／13（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 19,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 19,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kyotsu-koki-2kamoku-健康スポーツ科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "健康スポーツ科学科",
+    "methodName": "共通テスト利用入試（後期）2科目型",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学"
+            },
+            {
+              "subject": "物理"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            },
+            {
+              "subject": "情報"
+            }
+          ],
+          "pick": 2
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-02-16",
+      "applicationEnd": "2026-02-27",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-03-06",
+      "enrollDeadline": "2026-03-13"
+    },
+    "fee": 15000,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "共通テスト利用入試（後期）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "subjects.totalCount",
+        "quote": "2教科\n各100点 200点",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2026年 2／16（月）〜 2／27（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 19,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3／ 6（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 19,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3／13（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 19,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 19,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-sogo-ao-栄養科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "栄養科学科",
+    "methodName": "AO入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "プレゼン"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-10",
+      "applicationEnd": "2025-09-17",
+      "examDates": [
+        "2025-09-23",
+        "2025-10-18"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2025-10-28",
+      "enrollDeadline": "2025-11-14"
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "AO入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "専願",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "学習成績の状況（20点） 小論文（50点） 面接（30点）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "プレゼンテーション（100点）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2025年 9／10（水）〜9／17（水）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "9／23（火・祝） 10／ 3（金） 10／18（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "10／28（火）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "11／14（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 27,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-sogo-ao-こども健康・教育学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "こども健康・教育学科",
+    "methodName": "AO入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "プレゼン"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-10",
+      "applicationEnd": "2025-09-17",
+      "examDates": [
+        "2025-09-23",
+        "2025-10-18"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2025-10-28",
+      "enrollDeadline": "2025-11-14"
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "AO入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "専願",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "学習成績の状況（20点） 小論文（50点） 面接（30点）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "プレゼンテーション（100点）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2025年 9／10（水）〜9／17（水）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "9／23（火・祝） 10／ 3（金） 10／18（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "10／28（火）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "11／14（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 27,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-sogo-ao-体育科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "体育科学科",
+    "methodName": "AO入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "プレゼン"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-10",
+      "applicationEnd": "2025-09-17",
+      "examDates": [
+        "2025-09-23",
+        "2025-10-18"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2025-10-28",
+      "enrollDeadline": "2025-11-14"
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "AO入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "専願",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "学習成績の状況（20点） 小論文（50点） 面接（30点）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "プレゼンテーション（100点）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2025年 9／10（水）〜9／17（水）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "9／23（火・祝） 10／ 3（金） 10／18（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "10／28（火）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "11／14（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 27,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-sogo-ao-健康スポーツ科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "健康スポーツ科学科",
+    "methodName": "AO入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "プレゼン"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-10",
+      "applicationEnd": "2025-09-17",
+      "examDates": [
+        "2025-09-23",
+        "2025-10-18"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2025-10-28",
+      "enrollDeadline": "2025-11-14"
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "AO入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "専願",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "学習成績の状況（20点） 小論文（50点） 面接（30点）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "プレゼンテーション（100点）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2025年 9／10（水）〜9／17（水）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "9／23（火・祝） 10／ 3（金） 10／18（土）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "10／28（火）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "11／14（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 26,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 27,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kobo-前期-kiso-栄養科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "栄養科学科",
+    "methodName": "公募制一般推薦入試（前期）基礎学力検査+適性検査型",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-27",
+      "applicationEnd": "2025-10-31",
+      "resultDate": "2025-12-01",
+      "enrollDeadline": "2025-12-19",
+      "examDates": [
+        "2025-11-08"
+      ],
+      "examDateSelectable": false
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "公募制一般推薦入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "面接",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.required",
+        "quote": "基礎学力検査（100点）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2025年10／27（月）〜10／31（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12／ 1（月）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kobo-前期-kiso-こども健康・教育学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "こども健康・教育学科",
+    "methodName": "公募制一般推薦入試（前期）基礎学力検査+適性検査型",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-27",
+      "applicationEnd": "2025-10-31",
+      "resultDate": "2025-12-01",
+      "enrollDeadline": "2025-12-19",
+      "examDates": [
+        "2025-11-09"
+      ],
+      "examDateSelectable": false
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "公募制一般推薦入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "面接",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.required",
+        "quote": "基礎学力検査（100点）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2025年10／27（月）〜10／31（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12／ 1（月）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kobo-前期-運動能力評価型-体育科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "体育科学科",
+    "methodName": "公募制一般推薦入試（前期）運動能力評価型",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文",
+        "実技"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-27",
+      "applicationEnd": "2025-10-31",
+      "resultDate": "2025-12-01",
+      "enrollDeadline": "2025-12-19",
+      "examDates": [
+        "2025-11-09"
+      ],
+      "examDateSelectable": false
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "公募制一般推薦入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "運動能力評価型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "競技成績評価型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2025年10／27（月）〜10／31（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12／ 1（月）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kobo-前期-競技成績評価型-体育科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "体育科学科",
+    "methodName": "公募制一般推薦入試（前期）競技成績評価型",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-27",
+      "applicationEnd": "2025-10-31",
+      "resultDate": "2025-12-01",
+      "enrollDeadline": "2025-12-19",
+      "examDates": [
+        "2025-11-09"
+      ],
+      "examDateSelectable": false
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "公募制一般推薦入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "運動能力評価型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "競技成績評価型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2025年10／27（月）〜10／31（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12／ 1（月）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kobo-前期-運動能力評価型-健康スポーツ科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "健康スポーツ科学科",
+    "methodName": "公募制一般推薦入試（前期）運動能力評価型",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文",
+        "実技"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-27",
+      "applicationEnd": "2025-10-31",
+      "resultDate": "2025-12-01",
+      "enrollDeadline": "2025-12-19",
+      "examDates": [
+        "2025-11-08"
+      ],
+      "examDateSelectable": false
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "公募制一般推薦入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "運動能力評価型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "競技成績評価型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2025年10／27（月）〜10／31（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12／ 1（月）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kobo-前期-競技成績評価型-健康スポーツ科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "健康スポーツ科学科",
+    "methodName": "公募制一般推薦入試（前期）競技成績評価型",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-27",
+      "applicationEnd": "2025-10-31",
+      "resultDate": "2025-12-01",
+      "enrollDeadline": "2025-12-19",
+      "examDates": [
+        "2025-11-08"
+      ],
+      "examDateSelectable": false
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "公募制一般推薦入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "運動能力評価型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "競技成績評価型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2025年10／27（月）〜10／31（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12／ 1（月）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kobo-後期-kiso-栄養科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "栄養科学科",
+    "methodName": "公募制一般推薦入試（後期）基礎学力検査+適性検査型",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-12-01",
+      "applicationEnd": "2025-12-08",
+      "resultDate": "2025-12-19",
+      "enrollDeadline": "2026-01-09",
+      "examDates": [
+        "2025-12-13"
+      ],
+      "examDateSelectable": false
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "公募制一般推薦入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "面接",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.required",
+        "quote": "基礎学力検査（100点）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2025年12／ 1（月）〜12／ 8（月）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12／19（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kobo-後期-kiso-こども健康・教育学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "こども健康・教育学科",
+    "methodName": "公募制一般推薦入試（後期）基礎学力検査+適性検査型",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-12-01",
+      "applicationEnd": "2025-12-08",
+      "resultDate": "2025-12-19",
+      "enrollDeadline": "2026-01-09",
+      "examDates": [
+        "2025-12-14"
+      ],
+      "examDateSelectable": false
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "公募制一般推薦入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "面接",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.required",
+        "quote": "基礎学力検査（100点）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2025年12／ 1（月）〜12／ 8（月）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12／19（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kobo-後期-運動能力評価型-体育科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "体育科学科",
+    "methodName": "公募制一般推薦入試（後期）運動能力評価型",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文",
+        "実技"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-12-01",
+      "applicationEnd": "2025-12-08",
+      "resultDate": "2025-12-19",
+      "enrollDeadline": "2026-01-09",
+      "examDates": [
+        "2025-12-14"
+      ],
+      "examDateSelectable": false
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "公募制一般推薦入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "運動能力評価型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "競技成績評価型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2025年12／ 1（月）〜12／ 8（月）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12／19（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kobo-後期-競技成績評価型-体育科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "体育科学科",
+    "methodName": "公募制一般推薦入試（後期）競技成績評価型",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-12-01",
+      "applicationEnd": "2025-12-08",
+      "resultDate": "2025-12-19",
+      "enrollDeadline": "2026-01-09",
+      "examDates": [
+        "2025-12-14"
+      ],
+      "examDateSelectable": false
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "公募制一般推薦入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "運動能力評価型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "競技成績評価型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2025年12／ 1（月）〜12／ 8（月）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12／19（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kobo-後期-運動能力評価型-健康スポーツ科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "健康スポーツ科学科",
+    "methodName": "公募制一般推薦入試（後期）運動能力評価型",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文",
+        "実技"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-12-01",
+      "applicationEnd": "2025-12-08",
+      "resultDate": "2025-12-19",
+      "enrollDeadline": "2026-01-09",
+      "examDates": [
+        "2025-12-13"
+      ],
+      "examDateSelectable": false
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "公募制一般推薦入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "運動能力評価型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "競技成績評価型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2025年12／ 1（月）〜12／ 8（月）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12／19（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      }
+    ]
+  },
+  {
+    "id": "shigakkan-2026-kobo-後期-競技成績評価型-健康スポーツ科学科",
+    "university": "至学館大学",
+    "faculty": "健康科学部",
+    "department": "健康スポーツ科学科",
+    "methodName": "公募制一般推薦入試（後期）競技成績評価型",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "国語",
+              "range": "古文漢文除く"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "小論文"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-12-01",
+      "applicationEnd": "2025-12-08",
+      "resultDate": "2025-12-19",
+      "enrollDeadline": "2026-01-09",
+      "examDates": [
+        "2025-12-13"
+      ],
+      "examDateSelectable": false
+    },
+    "fee": 35000,
+    "feeNote": "1回の出願と1回分の入学検定料で、それ以降の入学試験を無料で受験できます（異なる学科の受験でも可）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "公募制一般推薦入試",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "併願可能",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "運動能力評価型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "競技成績評価型",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 22,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "インターネット出願：2025年12／ 1（月）〜12／ 8（月）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12／19（金）",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "35,000 円",
+        "pdfFile": "至学館大学/2026_実績/sogo_学生募集要項一式_20260707.pdf",
+        "page": 23,
+        "verified": true
+      }
+    ]
+  }
+]

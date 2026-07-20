@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  /* 青松English Hub 共通トンマナ（design-system.md） */
+  --color-accent: #2d6a4f;
+  --color-accent-light: #52b788;
+  --color-accent-dim: #d8f3dc;
+  --color-bg: #f8f7f4;
+  --color-surface: #ffffff;
+  --color-border: #e2ddd8;
+  --color-text: #1a1714;
+  --color-text-muted: #6b645c;
+}
+
+body {
+  @apply antialiased;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans JP", sans-serif;
+  line-height: 1.6;
+}
+
+/* スマホ表示最適化（要件: 生徒は主にスマホ/Chromebook） */
+.container-mobile {
+  @apply mx-auto w-full max-w-md px-4 py-6;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl px-4 py-3 font-medium transition active:scale-[0.98] disabled:opacity-40;
+}
+.btn-primary {
+  @apply btn bg-brand text-white hover:bg-brand-dark;
+}
+.btn-ghost {
+  @apply btn bg-white text-slate-700 ring-1 ring-slate-200 hover:bg-slate-100;
+}
+.card {
+  @apply rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-100;
+}
+.choice {
+  @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-left transition hover:border-brand hover:bg-brand-dim;
+}
+.choice-selected {
+  @apply border-brand bg-brand-dim ring-2 ring-brand/30;
+}

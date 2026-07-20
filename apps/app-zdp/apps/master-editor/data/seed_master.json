@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "deprecated_ids": [],
+  "items": [
+    {
+      "id": "G001",
+      "name": "基本文型（SVO）",
+      "name_en": "basic clause structure (SVO)",
+      "status": "published",
+      "level": "A1",
+      "parent_id": null,
+      "prerequisites": [],
+      "criteria": "主語+動詞+目的語からなる基本的な平叙文",
+      "patterns": ["S + V + O"],
+      "positive_examples": [
+        { "sentence": "I like music.", "span": "I like music" },
+        { "sentence": "She reads books.", "span": "She reads books" },
+        { "sentence": "We play soccer.", "span": "We play soccer" }
+      ],
+      "negative_examples": [
+        { "sentence": "It is cold.", "reason": "SVCで目的語を取らない" },
+        { "sentence": "Run!", "reason": "命令文で主語省略" }
+      ],
+      "common_misconceptions": ["補語と目的語を区別できない"],
+      "probe_template": "文の主語・動詞・目的語を1つずつ指させる。",
+      "notes": "",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.98, "runs": 20 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 1
+    },
+    {
+      "id": "G007",
+      "name": "過去分詞の形",
+      "name_en": "past participle form",
+      "status": "published",
+      "level": "A2",
+      "parent_id": null,
+      "prerequisites": [],
+      "criteria": "動詞の過去分詞形（-ed / 不規則第三変化）そのものの認識",
+      "patterns": ["V-ed(pp)", "written, taken, made"],
+      "positive_examples": [
+        { "sentence": "The letter is written in English.", "span": "written" },
+        { "sentence": "The window was broken.", "span": "broken" },
+        { "sentence": "These cars are made in Japan.", "span": "made" }
+      ],
+      "negative_examples": [
+        { "sentence": "He wrote a letter.", "reason": "過去形であり過去分詞ではない" },
+        { "sentence": "He is writing a letter.", "reason": "現在分詞" }
+      ],
+      "common_misconceptions": ["過去形と過去分詞を混同する"],
+      "probe_template": "動詞の三段変化のうち第三変化を答えさせる。",
+      "notes": "受動態・分詞の共通前提。",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.92, "runs": 14 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 1
+    },
+    {
+      "id": "G008",
+      "name": "受動態",
+      "name_en": "passive voice",
+      "status": "published",
+      "level": "B1",
+      "parent_id": null,
+      "prerequisites": ["G007"],
+      "criteria": "be動詞 + 過去分詞 で「〜される」を表す",
+      "patterns": ["S + be + V(pp) (+ by ...)"],
+      "positive_examples": [
+        { "sentence": "This book was written by a famous author.", "span": "was written" },
+        { "sentence": "English is spoken in many countries.", "span": "is spoken" },
+        { "sentence": "The room is cleaned every day.", "span": "is cleaned" }
+      ],
+      "negative_examples": [
+        { "sentence": "He has written a book.", "reason": "現在完了(have+pp)" },
+        { "sentence": "The falling leaves are red.", "reason": "分詞の形容詞用法" }
+      ],
+      "common_misconceptions": ["be動詞を落とす", "現在完了と混同する"],
+      "probe_template": "be動詞+過去分詞を指させ、能動文に書き換えさせる。",
+      "notes": "",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.95, "runs": 20 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 2
+    },
+    {
+      "id": "G015",
+      "name": "分詞の形容詞用法（前置）",
+      "name_en": "participial adjective (attributive)",
+      "status": "published",
+      "level": "B1",
+      "parent_id": null,
+      "prerequisites": ["G007"],
+      "criteria": "現在分詞/過去分詞が名詞の前に置かれて修飾する",
+      "patterns": ["V-ing + N", "V-ed(pp) + N"],
+      "positive_examples": [
+        { "sentence": "A crying baby needs care.", "span": "crying" },
+        { "sentence": "I found a broken cup.", "span": "broken" },
+        { "sentence": "Look at the sleeping cat.", "span": "sleeping" }
+      ],
+      "negative_examples": [
+        { "sentence": "The baby is crying.", "reason": "現在進行形" },
+        { "sentence": "The theory, first proposed in 1984, is old.", "reason": "分詞構文（挿入型）" }
+      ],
+      "common_misconceptions": ["前置修飾の分詞を動詞と誤読する"],
+      "probe_template": "分詞と被修飾名詞の関係（能動/受動）を問う。",
+      "notes": "分詞構文の前提。",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.91, "runs": 12 },
+      "created_at": "2026-06-01T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 1
+    },
+    {
+      "id": "G016",
+      "name": "分詞構文（過去分詞・挿入型）",
+      "name_en": "participial construction (past participle, parenthetical)",
+      "status": "draft",
+      "level": "B1",
+      "parent_id": null,
+      "prerequisites": ["G015", "G008"],
+      "criteria": "コンマで区切られた過去分詞句が主節の主語を修飾している",
+      "patterns": [", first proposed in ...,", ", written by ...,"],
+      "positive_examples": [
+        { "sentence": "The theory, first proposed in 1984, has since been challenged.", "span": "first proposed in 1984" },
+        { "sentence": "The book, written in simple English, is popular.", "span": "written in simple English" }
+      ],
+      "negative_examples": [
+        { "sentence": "The proposed theory has been challenged.", "reason": "前置修飾（G015）" }
+      ],
+      "common_misconceptions": ["挿入句内の過去分詞を主節の動詞と誤読する"],
+      "probe_template": "挿入句を除去した文で主節を確認し、分詞の意味上の主語を問う。",
+      "notes": "draft: 陽性例3件・陰性例2件に未達。テストベンチ未実施。",
+      "test_results": { "last_tested_at": null, "accuracy": null, "runs": 0 },
+      "created_at": "2026-06-20T00:00:00+09:00",
+      "updated_at": "2026-06-20T00:00:00+09:00",
+      "version": 1
+    },
+    {
+      "id": "G017",
+      "name": "仮定法過去",
+      "name_en": "subjunctive (present counterfactual)",
+      "status": "verified",
+      "level": "B2",
+      "parent_id": null,
+      "prerequisites": [],
+      "criteria": "If + S + 過去形, S + would/could + 原形 で現在の事実に反する仮定を表す",
+      "patterns": ["If S + V(過去), S + would/could + V(原形)"],
+      "positive_examples": [
+        { "sentence": "If I had more time, I would travel the world.", "span": "had ... would travel" },
+        { "sentence": "If I were you, I would study harder.", "span": "were ... would study" },
+        { "sentence": "If it were sunny, we could go out.", "span": "were ... could go" }
+      ],
+      "negative_examples": [
+        { "sentence": "If it rains, I will stay home.", "reason": "直説法（現在の条件）" },
+        { "sentence": "When I was young, I lived in Osaka.", "reason": "単なる過去の事実" }
+      ],
+      "common_misconceptions": ["if節の過去形を過去の出来事と解釈する", "were を was に直す"],
+      "probe_template": "if節が現実か非現実かを問い、would/couldの役割を確認する。",
+      "notes": "verified: テスト正答率0.94/18回。prerequisites設定後にpublish予定。",
+      "test_results": { "last_tested_at": "2026-07-01T00:00:00+09:00", "accuracy": 0.94, "runs": 18 },
+      "created_at": "2026-06-10T00:00:00+09:00",
+      "updated_at": "2026-07-01T00:00:00+09:00",
+      "version": 2
+    },
+    {
+      "id": "G099",
+      "name": "（メモ）that節の中の時制のずれ",
+      "name_en": "",
+      "status": "memo",
+      "level": "B1",
+      "parent_id": null,
+      "prerequisites": [],
+      "criteria": "",
+      "patterns": [],
+      "positive_examples": [],
+      "negative_examples": [],
+      "common_misconceptions": [],
+      "probe_template": "",
+      "notes": "7/3の授業: She said that she was... の was を「過去の話」と誤読する生徒が3人。時制の一致として項目化する。",
+      "test_results": { "last_tested_at": null, "accuracy": null, "runs": 0 },
+      "created_at": "2026-07-03T00:00:00+09:00",
+      "updated_at": "2026-07-03T00:00:00+09:00",
+      "version": 1
+    }
+  ]
+}

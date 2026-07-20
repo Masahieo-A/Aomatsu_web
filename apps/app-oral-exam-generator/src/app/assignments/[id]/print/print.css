@@ -1,0 +1,57 @@
+/* A4縦・1生徒=1枚（要件定義 §8 画面4） */
+@page {
+  size: A4 portrait;
+  margin: 12mm;
+}
+
+.sheet {
+  width: 210mm;
+  min-height: 296mm;
+  padding: 14mm;
+  margin: 16px auto;
+  background: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  color: #111;
+}
+
+.answer-line {
+  border-bottom: 1px solid #444;
+  height: 9mm;
+}
+
+.essay-text {
+  line-height: 2;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 11.5pt;
+}
+
+.sentence-no {
+  font-size: 8pt;
+  color: #888;
+  font-weight: bold;
+  margin-right: 2px;
+  user-select: none;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+  }
+  .sheet {
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    break-after: page;
+    page-break-after: always;
+  }
+  .sheet:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+}

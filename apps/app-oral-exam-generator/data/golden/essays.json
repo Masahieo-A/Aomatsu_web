@@ -1,0 +1,112 @@
+[
+  {
+    "label": "g01_club_A2",
+    "note": "部活・平易・標準長",
+    "text": "I belong to the basketball club at my school. I practice very hard every day because I want to win the city tournament. Last year, we lost in the first game. It was a very sad experience for me. However, I learned that practice is the most important thing. Therefore, I will keep practicing with my teammates and never give up."
+  },
+  {
+    "label": "g02_future_job_A2",
+    "note": "将来の夢・平易",
+    "text": "In the future, I want to be a nurse. When I was ten years old, I stayed in a hospital for two weeks. The nurses were very kind to me, and they made me feel safe. This experience changed my life. Now I study hard every day to enter nursing school. I believe helping sick people is a wonderful job."
+  },
+  {
+    "label": "g03_environment_B1",
+    "note": "環境問題・論説・B1",
+    "text": "Plastic pollution is one of the most serious problems in the world today. For example, many sea animals eat plastic bags by mistake and die. I think we should reduce the amount of plastic we use in our daily lives. First, we can bring our own bags to the supermarket. Second, we can choose products with less packaging. These small actions may seem unimportant, but if everyone does them, they will make a big difference."
+  },
+  {
+    "label": "g04_smartphone_B1",
+    "note": "賛否論述・B1",
+    "text": "Some people say that students should not bring smartphones to school. I disagree with this opinion for two reasons. First, smartphones are useful for studying because we can look up words and watch educational videos. Second, they are necessary for safety. If an earthquake happens, students can contact their families quickly. Of course, some students may play games during class. However, I believe schools should teach students how to use smartphones wisely instead of banning them."
+  },
+  {
+    "label": "g05_reading_B2",
+    "note": "高難度語彙を含む・B2",
+    "text": "Reading literature has profoundly influenced my perspective on human relationships. When I encountered a novel depicting an elderly man's solitude, I realized that loneliness is a universal phenomenon that transcends generations. This insight motivated me to participate in volunteer activities at a local nursing home. Through these experiences, I have acquired the ability to empathize with people whose circumstances differ significantly from mine. Consequently, I am determined to pursue a career in social welfare."
+  },
+  {
+    "label": "g06_school_trip_A1",
+    "note": "とても平易・A1",
+    "text": "I went to Kyoto on our school trip last month. I saw many old temples with my friends. The food was very good, and I ate a lot. I bought a small gift for my mother. She was very happy. I want to visit Kyoto again with my family next year. It was the best trip of my life."
+  },
+  {
+    "label": "g07_ai_opinion_B2",
+    "note": "AI・抽象論・B2",
+    "text": "Artificial intelligence is transforming our society at an unprecedented speed. Although many people worry that AI will take away human jobs, I believe it will create new opportunities instead. For instance, AI can handle repetitive tasks, which allows humans to focus on creative work. Moreover, new professions related to AI management are emerging. Nevertheless, we must not ignore the risks. Therefore, learning how to cooperate with AI is essential for our generation."
+  },
+  {
+    "label": "g08_breakfast_A2",
+    "note": "生活習慣・具体例あり",
+    "text": "Eating breakfast every morning is very important for students. When I skip breakfast, I cannot concentrate in class and often feel tired. My mother always makes rice and miso soup for me. Thanks to her, I can study hard until lunch time. Some of my friends do not eat anything in the morning. I always tell them that breakfast gives us energy for the whole day."
+  },
+  {
+    "label": "g09_grammar_errors",
+    "note": "文法エラーを多く含む（非文気味だが処理対象）",
+    "text": "I like play soccer very much since I am child. My father he teach me how to kick ball when I was five years old. It make me happy when I score goal in the game. My team win the tournament last year and I very proud. I want to becoming professional player in future. So I practice every day hardly with my friends."
+  },
+  {
+    "label": "g10_homestay_B1",
+    "note": "体験談・過去形中心",
+    "text": "Last summer, I did a homestay in Australia for two weeks. At first, I was too nervous to speak English with my host family. However, they were patient and listened to me carefully. One day, my host mother asked me to cook a Japanese dinner. I made curry and rice, and everyone said it was delicious. This experience gave me confidence. Now I am not afraid of making mistakes when I speak English."
+  },
+  {
+    "label": "g11_short_invalid",
+    "note": "エッジケース：30語未満（バリデーション落ち想定）",
+    "text": "I like music. I play the guitar every day. It is fun."
+  },
+  {
+    "label": "g12_japanese_mixed_invalid",
+    "note": "エッジケース：日本語混入（バリデーション落ち想定）",
+    "text": "I want to be a teacher in the future. なぜなら子供が好きだからです。 I like children very much and I enjoy teaching my little brother. He always asks me many questions about homework. I feel happy when he understands difficult problems. Therefore I study education hard every day."
+  },
+  {
+    "label": "g13_two_sentences_invalid",
+    "note": "エッジケース：3文未満（バリデーション落ち想定）",
+    "text": "I have been playing the piano for ten years and I practice every single day after school because my dream is to become a professional pianist who can perform in famous concert halls around the world. My teacher always tells me that continuous effort is much more important than natural talent, and I strongly agree with her opinion."
+  },
+  {
+    "label": "g14_symbols_short_invalid",
+    "note": "エッジケース：記号混じり・極端に短い",
+    "text": "My hobby is ... game!!! I play 5 hours. GG."
+  },
+  {
+    "label": "g15_sports_day_A2",
+    "note": "学校行事・標準",
+    "text": "The sports day at our school is my favorite event of the year. My class practiced the relay race for three weeks before the event. I ran the last part because I am the fastest runner in my class. When I got the baton, our team was in third place. I ran as fast as I could and we finished second. Everyone cheered for us, and I felt proud of my classmates."
+  },
+  {
+    "label": "g16_part_time_logic_B1",
+    "note": "賛否・理由列挙型",
+    "text": "I think high school students should be allowed to have part-time jobs. First, working teaches us the value of money. When I earn money by myself, I think carefully before spending it. Second, we can learn communication skills that we cannot learn at school. For example, talking politely with customers is good practice for the future. On the other hand, some people say jobs take time away from studying. However, if we manage our schedule well, we can do both."
+  },
+  {
+    "label": "g17_grandma_story_A2",
+    "note": "家族エピソード・情緒的",
+    "text": "My grandmother lives in a small village in the mountains. Every summer, I visit her and help her with the vegetable garden. She grows tomatoes, cucumbers, and eggplants. The vegetables she grows taste much better than the ones from the supermarket. Last year, she taught me how to make pickles. It was difficult but interesting. I want to keep this family tradition in the future."
+  },
+  {
+    "label": "g18_long_essay_B1",
+    "note": "長め（250語超）上限近く",
+    "text": "Learning a foreign language is like opening a door to a new world. I started studying English seriously two years ago, and it has completely changed the way I see things. Before that, I thought English was just a school subject that I had to study for tests. However, one day I found a video of a foreign musician talking about his life, and I really wanted to understand what he was saying. This small wish became the starting point of my journey. I began watching videos with subtitles, writing down new words in my notebook, and practicing pronunciation every night in my room. After six months, I could understand about half of what he said, and I was very excited. My English teacher noticed my improvement and asked me to join the English speech contest. I practiced my speech more than one hundred times. On the day of the contest, I was so nervous that my hands were shaking, but I did my best and won the second prize. Through this experience, I learned two important things. First, having a clear goal makes studying much more enjoyable. Second, small daily efforts bring big results in the end. Now I am studying for the English proficiency test, and my next dream is to study abroad in Canada. I believe that continuing to challenge myself is the key to growing as a person, and I will never stop learning new things in my life."
+  },
+  {
+    "label": "g19_cooking_A2",
+    "note": "趣味・手順説明",
+    "text": "Cooking is my favorite hobby. I started cooking when my mother was sick in bed last winter. At first, I could only make simple dishes like fried eggs. But I watched cooking videos every day and practiced a lot. Now I can make curry, pasta, and even birthday cakes. My family enjoys my dishes every weekend. Cooking teaches me that trying new things is fun. I want to make dinner for my grandmother next month."
+  },
+  {
+    "label": "g20_library_idea_B1",
+    "note": "アイデア提案型（未来の図書館）",
+    "text": "I think the library of the future should be a place for communication, not just for books. In my idea, the library has a big open space where people can talk freely about books they read. Also, elderly people can teach children traditional games there. Of course, there should be quiet rooms for people who want to study alone. Digital books are convenient, but I believe real books and real conversations have special power. My plan can make the library the warmest place in town."
+  },
+  {
+    "label": "g21_volunteer_B1",
+    "note": "社会参加・具体と抽象の混在",
+    "text": "Last year, I joined a volunteer activity to clean the beach in my town. To be honest, I joined it only because my friend invited me. However, when I saw the huge amount of garbage on the beach, I was really shocked. We collected fifty bags of garbage in three hours. An old man who lives near the beach thanked us with tears in his eyes. At that moment, I understood that small actions can make someone happy. Volunteering is not a special thing but a natural part of life."
+  },
+  {
+    "label": "g22_pets_A1",
+    "note": "ペット・平易・短め（30語台）",
+    "text": "I have a dog named Pochi. He is three years old and very friendly. I walk him every morning before school. When I come home, he always runs to me. He makes my family happy. I love him very much."
+  }
+]

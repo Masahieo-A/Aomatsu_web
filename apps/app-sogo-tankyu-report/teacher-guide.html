@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>教員向け操作ガイド（実務編） — 富田高校 総合探究成果報告会サイト</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent:       #2a5c3f;
+      --accent-dark:  #1e4530;
+      --accent-light: #e8f0eb;
+      --bg:           #f6f1ea;
+      --card:         #ffffff;
+      --border:       #e4ddd4;
+      --text:         #1c1c1c;
+      --muted:        #6b6b6b;
+      --green:        #16a34a;
+      --green-bg:     #f0fdf4;
+      --green-bd:     #bbf7d0;
+      --yellow-bg:    #fefce8;
+      --yellow-bd:    #fef08a;
+      --red-bg:       #fef2f2;
+      --red-bd:       #fecaca;
+      --blue-bg:      #eff6ff;
+      --blue-bd:      #bfdbfe;
+      --radius:       12px;
+      --font:         "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    /* ===== サイドバーレイアウト ===== */
+    .layout {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 240px;
+      flex-shrink: 0;
+      background: var(--accent-dark);
+      color: #fff;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      padding: 1.5rem 0 2rem;
+    }
+
+    .sidebar-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.55);
+      padding: 0 1.25rem 0.75rem;
+      text-transform: uppercase;
+    }
+
+    .sidebar nav a {
+      display: block;
+      padding: 0.5rem 1.25rem;
+      color: rgba(255,255,255,0.82);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      border-left: 3px solid transparent;
+      transition: all 0.15s;
+    }
+
+    .sidebar nav a:hover {
+      color: #fff;
+      background: rgba(255,255,255,0.1);
+      border-left-color: #fff;
+    }
+
+    .sidebar nav .nav-section {
+      margin-top: 1.25rem;
+      padding: 0 1.25rem 0.4rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .content {
+      flex: 1;
+      max-width: 860px;
+      padding: 2.5rem 3rem;
+      min-width: 0;
+    }
+
+    /* ===== モバイル用目次 ===== */
+    .mobile-toc { display: none; }
+
+    /* ===== ガイドヘッダー ===== */
+    .guide-hero {
+      background: linear-gradient(145deg, var(--accent) 0%, var(--accent-dark) 100%);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 2.5rem 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .guide-hero .badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      background: rgba(255,255,255,0.16);
+      color: rgba(255,255,255,0.92);
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      margin: 0 0.35rem 0.75rem 0;
+      text-transform: uppercase;
+    }
+
+    .guide-hero h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .guide-hero p {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .guide-hero a { color: #fff; }
+
+    /* ===== セクション ===== */
+    .section {
+      margin-bottom: 3rem;
+      scroll-margin-top: 2rem;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+
+    .section h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text);
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--accent-light);
+      margin-bottom: 1.25rem;
+    }
+
+    .section h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 1.5rem 0 0.75rem;
+    }
+
+    p { margin-bottom: 0.75rem; color: var(--text); }
+
+    /* ===== カード ===== */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+
+    /* ===== 注意・ポイントボックス ===== */
+    .note {
+      border-radius: 8px;
+      padding: 0.9rem 1.1rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      display: flex;
+      gap: 0.65rem;
+    }
+
+    .note-icon { flex-shrink: 0; font-size: 1.1rem; }
+    .note-body { flex: 1; }
+    .note-body strong { display: block; margin-bottom: 0.2rem; }
+
+    .note.tip    { background: var(--green-bg);  border: 1px solid var(--green-bd); }
+    .note.warn   { background: var(--yellow-bg); border: 1px solid var(--yellow-bd); }
+    .note.danger { background: var(--red-bg);    border: 1px solid var(--red-bd); }
+    .note.info   { background: var(--blue-bg);   border: 1px solid var(--blue-bd); }
+
+    /* ===== ステップ ===== */
+    .steps { counter-reset: step; list-style: none; }
+
+    .steps > li {
+      counter-increment: step;
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .steps > li::before {
+      content: counter(step);
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 700;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+
+    .steps > li .step-body { flex: 1; }
+    .steps > li .step-body strong { font-size: 1rem; display: block; margin-bottom: 0.3rem; }
+
+    /* ===== フロー図 ===== */
+    .flow {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: 1rem 0;
+    }
+
+    .flow-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .flow-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+      width: 36px;
+    }
+
+    .flow-dot {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .flow-line {
+      width: 2px;
+      flex: 1;
+      min-height: 24px;
+      background: var(--border);
+      margin: 2px 0;
+    }
+
+    .flow-body {
+      flex: 1;
+      padding: 0.5rem 0 1.25rem;
+    }
+
+    .flow-body strong { font-size: 0.95rem; display: block; margin-bottom: 0.25rem; }
+    .flow-body p { font-size: 0.88rem; color: var(--muted); margin: 0; }
+    .flow-body .role {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.1rem 0.5rem;
+      border-radius: 999px;
+      margin-bottom: 0.3rem;
+    }
+    .role.student { background: #dbeafe; color: #1d4ed8; }
+    .role.teacher { background: #fce7f3; color: #9d174d; }
+    .role.auto    { background: #f3f4f6; color: #374151; }
+
+    /* ===== スクリーンモック（Windows 風） ===== */
+    .screen-wrap {
+      margin: 1.25rem 0;
+    }
+
+    .screen-caption {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .screen-caption::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .screen {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+      background: #fff;
+    }
+
+    /* Windows のブラウザと同じく、閉じる・最大化・最小化ボタンは右上 */
+    .screen-bar {
+      background: #f1f3f4;
+      padding: 0.45rem 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .screen-bar .url {
+      flex: 1;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 0.75rem;
+      color: var(--muted);
+      padding: 0.2rem 0.75rem;
+      font-family: Consolas, monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .win-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.15rem;
+      flex-shrink: 0;
+      margin-left: 0.4rem;
+    }
+
+    .win-controls span {
+      width: 26px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.68rem;
+      color: #5f6368;
+      border-radius: 4px;
+      font-family: "Segoe UI Symbol", sans-serif;
+      line-height: 1;
+    }
+
+    .screen-body { background: #fff; }
+
+    /* ── サイトモック共通（現デザイン: クリーム×グリーン） ── */
+    .mock-nav {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 0.55rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+    .mock-nav .nav-title { font-size: 0.8rem; font-weight: 700; color: var(--accent); }
+    .mock-nav .nav-badge {
+      font-size: 0.62rem; font-weight: 600; color: var(--muted);
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: 999px; padding: 0.1em 0.6em;
+    }
+
+    .mock-hero {
+      background: var(--accent);
+      color: #fff;
+      padding: 1.25rem 1rem 1.1rem;
+      text-align: center;
+    }
+    .mock-hero .date { font-size: 0.68rem; opacity: 0.85; margin-bottom: 0.2rem; }
+    .mock-hero h1 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.1rem; }
+    .mock-hero .school { font-size: 0.72rem; opacity: 0.8; margin-bottom: 0.75rem; }
+    .mock-hero .stats { display: flex; justify-content: center; gap: 1.5rem; }
+    .mock-hero .stat { display: flex; flex-direction: column; align-items: center; }
+    .mock-hero .stat b { font-size: 1.05rem; font-weight: 700; line-height: 1.2; }
+    .mock-hero .stat span { font-size: 0.6rem; opacity: 0.8; }
+
+    .mock-main { padding: 0.9rem 1rem; background: var(--bg); }
+
+    .mock-panel {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 0.6rem;
+      padding: 0.6rem 0.9rem;
+      font-size: 0.78rem;
+    }
+    .mock-panel .panel-title { font-weight: 600; color: var(--muted); display: flex; justify-content: space-between; }
+
+    .mock-search-pill {
+      display: flex; align-items: center; gap: 0.4rem;
+      background: var(--bg); border: 1.5px solid var(--border);
+      border-radius: 999px; padding: 0.35rem 0.75rem; margin-bottom: 0.55rem;
+    }
+    .mock-search-pill input {
+      border: none; background: transparent; font-size: 0.75rem; flex: 1;
+      outline: none; font-family: inherit; color: var(--text);
+    }
+
+    .mock-pills { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; }
+    .mock-pill {
+      font-size: 0.68rem; font-weight: 500; color: var(--muted);
+      border: 1.5px solid var(--border); border-radius: 999px;
+      padding: 0.15em 0.7em; background: #fff;
+    }
+    .mock-pill.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+    .mock-count { font-size: 0.7rem; font-weight: 600; color: var(--accent); margin-left: auto; }
+
+    .mock-table-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+    .mock-table { width: 100%; border-collapse: collapse; font-size: 0.72rem; }
+    .mock-table th { background: #ede8e0; padding: 0.45rem 0.6rem; text-align: left; font-size: 0.68rem; font-weight: 600; border-bottom: 1px solid var(--border); white-space: nowrap; }
+    .mock-table td { padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .mock-table tr:last-child td { border-bottom: none; }
+    .mock-table .group-name { color: var(--accent); font-weight: 600; }
+
+    /* ── グループ詳細モック ── */
+    .mock-detail-main { padding: 0.9rem 1rem; background: var(--bg); }
+    .mock-back { color: var(--accent); font-size: 0.72rem; margin-bottom: 0.6rem; display: block; font-weight: 500; }
+    .mock-detail-title { font-size: 1rem; font-weight: 700; margin-bottom: 0.15rem; }
+    .mock-detail-meta  { font-size: 0.7rem; color: var(--muted); margin-bottom: 0.7rem; }
+    .mock-block { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 0.7rem 0.9rem; margin-bottom: 0.55rem; }
+    .mock-block h4 { font-size: 0.75rem; font-weight: 700; margin-bottom: 0.35rem; }
+    .mock-block p  { font-size: 0.72rem; color: var(--text); margin: 0; }
+    .mock-pdf-box  { background: var(--bg); border: 1px solid var(--border); border-radius: 6px; height: 76px; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 0.72rem; margin-bottom: 0.4rem; }
+    .mock-link     { font-size: 0.72rem; color: var(--accent); font-weight: 500; }
+
+    /* ── ログイン画面モック ── */
+    .mock-auth {
+      background: var(--bg);
+      padding: 1.75rem 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    .mock-auth-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      text-align: center;
+      max-width: 300px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .mock-auth-card .badge2 {
+      display: inline-block; font-size: 0.6rem; font-weight: 600; color: var(--muted);
+      background: var(--bg); border: 1px solid var(--border); border-radius: 999px;
+      padding: 0.1em 0.6em; margin-bottom: 0.5rem;
+    }
+    .mock-auth-card h4 { font-size: 0.85rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .mock-auth-card p { font-size: 0.7rem; color: var(--muted); margin-bottom: 0.75rem; }
+    .mock-gsi {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      border: 1px solid #dadce0; border-radius: 4px;
+      font-size: 0.75rem; color: #3c4043; padding: 0.35rem 0.9rem; font-weight: 500;
+    }
+
+    /* ── Sheets モック ── */
+    .mock-sheets { background: #fff; border-radius: 8px; overflow: hidden; }
+
+    .mock-sheets-header {
+      background: #0f9d58;
+      color: #fff;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .mock-sheets-menu {
+      background: #f8f9fa;
+      border-bottom: 1px solid #dadce0;
+      padding: 0.3rem 0.75rem;
+      font-size: 0.72rem;
+      color: #3c4043;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .mock-sheets-menu .menu-item { padding: 0.15rem 0.3rem; border-radius: 3px; }
+    .mock-sheets-menu .menu-item.highlight { background: #e6f4ea; color: #137333; font-weight: 600; }
+
+    .mock-sheets-grid { overflow-x: auto; }
+
+    .mock-sheets-table { border-collapse: collapse; font-size: 0.72rem; min-width: 500px; }
+    .mock-sheets-table th,
+    .mock-sheets-table td {
+      border: 1px solid #e0e0e0;
+      padding: 0.3rem 0.5rem;
+      text-align: left;
+      white-space: nowrap;
+    }
+    .mock-sheets-table th { background: #f8f9fa; color: #3c4043; font-weight: 600; }
+    .mock-sheets-table .col-auto { background: #e8f5e9; color: #2e7d32; }
+    .mock-sheets-table .col-header-auto { background: #c8e6c9; color: #1b5e20; font-weight: 600; }
+
+    .mock-sheets-tabs {
+      display: flex; background: #f1f3f4; border-top: 1px solid #e0e0e0;
+      padding: 0.3rem 0.5rem; gap: 0.5rem;
+    }
+    .mock-sheets-tabs span {
+      font-size: 0.72rem; background: #fff; border: 1px solid #dadce0;
+      padding: 0.2rem 0.75rem; border-radius: 3px;
+    }
+
+    .mock-menu-dropdown {
+      background: #fff; border: 1px solid #dadce0; border-radius: 6px;
+      padding: 0.4rem 0; min-width: 230px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+    .mock-menu-dropdown div { padding: 0.4rem 1rem; font-size: 0.8rem; color: #3c4043; }
+    .mock-menu-dropdown .sep { height: 1px; background: #e0e0e0; margin: 0.25rem 0; padding: 0; }
+    .mock-menu-dropdown .primary { background: #e6f4ea; color: #137333; font-weight: 700; }
+
+    .mock-dialog {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      max-width: 360px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      background: #fff;
+    }
+
+    .mock-dialog-title {
+      background: var(--accent-dark);
+      color: #fff;
+      padding: 0.6rem 1rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+    .mock-dialog-title .x { font-size: 0.75rem; opacity: 0.8; }
+
+    .mock-dialog-body { padding: 1rem; font-size: 0.82rem; color: var(--text); }
+
+    .mock-dialog-foot {
+      padding: 0.6rem 1rem;
+      background: #f8f9fa;
+      border-top: 1px solid var(--border);
+      text-align: right;
+    }
+
+    .mock-dialog-ok {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 0.35rem 0.9rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    /* ===== テーブル ===== */
+    .guide-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 0.75rem 0 1rem; }
+    .guide-table th { background: var(--accent-dark); color: #fff; padding: 0.55rem 0.9rem; text-align: left; font-weight: 600; font-size: 0.8rem; }
+    .guide-table td { padding: 0.55rem 0.9rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .guide-table tr:last-child td { border-bottom: none; }
+    .guide-table tr:nth-child(even) td { background: #faf7f2; }
+
+    /* ===== コード ===== */
+    code {
+      font-family: "SF Mono", "Fira Code", Consolas, monospace;
+      font-size: 0.85em;
+      background: #f1ede6;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.1em 0.4em;
+    }
+
+    /* ===== FAQ ===== */
+    .faq {
+      margin-bottom: 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .faq summary {
+      padding: 0.9rem 1.25rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: "▼"; color: var(--muted); font-size: 0.8rem; flex-shrink: 0; }
+    .faq[open] summary::after { content: "▲"; }
+    .faq .faq-body {
+      padding: 0.75rem 1.25rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.88rem;
+      background: #faf7f2;
+    }
+
+    .divider { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+    /* ===== 別ガイドへの誘導バナー ===== */
+    .guide-link-banner {
+      display: block;
+      background: var(--card);
+      border: 1.5px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      text-decoration: none;
+      color: var(--text);
+      transition: background 0.15s;
+    }
+    .guide-link-banner:hover { background: var(--accent-light); }
+    .guide-link-banner strong { color: var(--accent); display: block; margin-bottom: 0.2rem; }
+    .guide-link-banner span { font-size: 0.85rem; color: var(--muted); }
+
+    /* ===== レスポンシブ ===== */
+    @media (max-width: 700px) {
+      .sidebar { display: none; }
+      .content { padding: 1.5rem 1.25rem; }
+      .mobile-toc {
+        display: block;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        margin-bottom: 1.5rem;
+        overflow: hidden;
+      }
+      .mobile-toc summary {
+        padding: 0.85rem 1.25rem;
+        font-weight: 700;
+        font-size: 0.9rem;
+        cursor: pointer;
+        list-style: none;
+      }
+      .mobile-toc summary::-webkit-details-marker { display: none; }
+      .mobile-toc nav { border-top: 1px solid var(--border); padding: 0.5rem 0; }
+      .mobile-toc nav a {
+        display: block;
+        padding: 0.45rem 1.5rem;
+        color: var(--text);
+        text-decoration: none;
+        font-size: 0.85rem;
+      }
+      .mobile-toc nav .nav-section {
+        padding: 0.6rem 1.25rem 0.2rem;
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: var(--muted);
+        letter-spacing: 0.08em;
+      }
+    }
+
+    /* ===== 印刷 ===== */
+    @media print {
+      body { background: #fff; font-size: 12px; }
+      .sidebar, .mobile-toc { display: none; }
+      .content { max-width: none; padding: 0; }
+      .guide-hero { background: none; color: var(--text); border: 1px solid var(--border); padding: 1.25rem; }
+      .guide-hero .badge { background: none; border: 1px solid var(--border); color: var(--text); }
+      .guide-hero p { color: var(--muted); }
+      .screen, .card, .mock-dialog { box-shadow: none; }
+      .section { break-inside: avoid-page; }
+      .faq { break-inside: avoid; }
+      .faq[open] summary::after, .faq summary::after { content: ""; }
+      details:not([open]) > *:not(summary) { display: block; } /* 折りたたみも印刷する */
+    }
+  </style>
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <p class="sidebar-title">操作ガイド（実務編）</p>
+    <nav>
+      <div class="nav-section">はじめに</div>
+      <a href="#overview">サイトの概要</a>
+      <a href="#flow">全体の流れ</a>
+
+      <div class="nav-section">毎年の運用</div>
+      <a href="#annual-prep">事前準備（グループ登録）</a>
+      <a href="#annual-students">生徒への指示</a>
+      <a href="#annual-run">ボタン一つで反映</a>
+      <a href="#annual-resubmit">再提出があったら</a>
+
+      <div class="nav-section">サイトの見方</div>
+      <a href="#view-index">スケジュール一覧</a>
+      <a href="#view-detail">グループ詳細</a>
+
+      <div class="nav-section">困ったときは</div>
+      <a href="#faq">よくある質問</a>
+
+      <div class="nav-section">管理者の方へ</div>
+      <a href="admin-guide.html">🔧 管理者向けガイド</a>
+    </nav>
+  </aside>
+
+  <!-- ===== メインコンテンツ ===== -->
+  <main class="content">
+
+    <!-- モバイル用目次（画面幅が狭いときだけ表示） -->
+    <details class="mobile-toc">
+      <summary>📑 目次を開く</summary>
+      <nav>
+        <div class="nav-section">はじめに</div>
+        <a href="#overview">サイトの概要</a>
+        <a href="#flow">全体の流れ</a>
+        <div class="nav-section">毎年の運用</div>
+        <a href="#annual-prep">事前準備（グループ登録）</a>
+        <a href="#annual-students">生徒への指示</a>
+        <a href="#annual-run">ボタン一つで反映</a>
+        <a href="#annual-resubmit">再提出があったら</a>
+        <div class="nav-section">サイトの見方</div>
+        <a href="#view-index">スケジュール一覧</a>
+        <a href="#view-detail">グループ詳細</a>
+        <div class="nav-section">困ったときは</div>
+        <a href="#faq">よくある質問</a>
+        <div class="nav-section">管理者の方へ</div>
+        <a href="admin-guide.html">🔧 管理者向けガイド</a>
+      </nav>
+    </details>
+
+    <!-- ヒーロー -->
+    <div class="guide-hero">
+      <div>
+        <span class="badge">教員向け操作ガイド（実務編）</span>
+        <span class="badge">校内限定資料</span>
+      </div>
+      <h1>富田高校 総合探究成果報告会<br>Webサイト 操作ガイド</h1>
+      <p>生徒の提出物をWebサイトに掲載するまでの、<strong>毎年の作業手順</strong>を説明します。<br>
+         使うのは Google スプレッドシートと Classroom だけ。<strong>特別な知識は必要ありません。</strong></p>
+    </div>
+
+    <a class="guide-link-banner" href="admin-guide.html">
+      <strong>🔧 初回セットアップ・引き継ぎ・技術的なトラブルはこちら → 管理者向けガイド</strong>
+      <span>このガイドは「毎年の運用」のみを扱います。仕組みの初期設定やシステム側のエラー対応は、技術担当者向けの別ガイドにまとめてあります。</span>
+    </a>
+
+
+    <!-- ===== 概要 ===== -->
+    <section class="section" id="overview">
+      <div class="section-label">はじめに</div>
+      <h2>サイトの概要</h2>
+
+      <p>このWebサイトは、探究発表会の<strong>スケジュール一覧</strong>と<strong>各グループの資料（PDF）</strong>を生徒・教員が閲覧できるようにするものです。</p>
+
+      <div class="card">
+        <table class="guide-table">
+          <thead><tr><th>ページ</th><th>内容</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>スケジュール一覧</strong>（トップページ）</td>
+              <td>全グループの時間帯・教室・テーマ一覧。検索・絞り込み・並び替えができ、行をクリックで詳細へ</td>
+            </tr>
+            <tr>
+              <td><strong>グループ詳細</strong></td>
+              <td>探究テーマ・概要・レポートPDF・発表スライドPDF</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>閲覧できるのは学校アカウントの人だけ</h3>
+
+      <p>サイトを開くと、下のような<strong>ログイン画面</strong>が表示されます。学校の Google アカウントでログインした人だけが中を見られます（学校外のアカウントは弾かれます）。</p>
+
+      <div class="screen-wrap">
+        <div class="screen-caption">サイトを開いた直後の画面</div>
+        <div class="screen">
+          <div class="screen-bar">
+            <div class="url">発表会サイトのURL</div>
+            <div class="win-controls"><span>─</span><span>▢</span><span>✕</span></div>
+          </div>
+          <div class="mock-auth">
+            <div class="mock-auth-card">
+              <span class="badge2">学内限定</span>
+              <h4>学校の Google アカウントでログイン</h4>
+              <p>このサイトは学校のアカウントを持つ方のみ閲覧できます。</p>
+              <span class="mock-gsi"><span style="font-weight:700; color:#4285f4">G</span> Google でログイン</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="note info">
+        <span class="note-icon">ℹ️</span>
+        <div class="note-body">
+          <strong>PDF（生徒の作品）は Google Drive が守っています</strong>
+          PDFファイルの本体は Google Drive にあり、共有設定が「組織内のみ」になっています。万一リンクが外部に漏れても、学校アカウント以外では中身を開けません。
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== 全体の流れ ===== -->
+    <section class="section" id="flow">
+      <div class="section-label">はじめに</div>
+      <h2>全体の流れ</h2>
+
+      <div class="flow">
+        <div class="flow-item">
+          <div class="flow-left">
+            <div class="flow-dot">1</div>
+            <div class="flow-line"></div>
+          </div>
+          <div class="flow-body">
+            <span class="role student">生徒</span>
+            <strong>Google Slides で資料を作成・提出</strong>
+            <p>レポート用・発表スライド用の2種類を Classroom に提出。</p>
+          </div>
+        </div>
+
+        <div class="flow-item">
+          <div class="flow-left">
+            <div class="flow-dot">2</div>
+            <div class="flow-line"></div>
+          </div>
+          <div class="flow-body">
+            <span class="role teacher">教員</span>
+            <strong>締切後、スプレッドシートのメニューをクリック</strong>
+            <p>「⚡ すべて一括実行」を押すだけ。あとは自動で進みます。</p>
+          </div>
+        </div>
+
+        <div class="flow-item">
+          <div class="flow-left">
+            <div class="flow-dot">3</div>
+            <div class="flow-line"></div>
+          </div>
+          <div class="flow-body">
+            <span class="role auto">自動</span>
+            <strong>Classroom から提出物を集めて、グループごとに整理</strong>
+            <p>提出者の<strong>メールアドレス</strong>でグループと紐付けます（同姓同名でも安全）。</p>
+          </div>
+        </div>
+
+        <div class="flow-item">
+          <div class="flow-left">
+            <div class="flow-dot">4</div>
+            <div class="flow-line"></div>
+          </div>
+          <div class="flow-body">
+            <span class="role auto">自動</span>
+            <strong>PDFに変換して、学校アカウント限定で共有</strong>
+            <p>Google Drive 上で自動処理されます。</p>
+          </div>
+        </div>
+
+        <div class="flow-item">
+          <div class="flow-left">
+            <div class="flow-dot">5</div>
+            <div class="flow-line"></div>
+          </div>
+          <div class="flow-body">
+            <span class="role auto">自動</span>
+            <strong>Webサイトに公開（反映まで数分）</strong>
+            <p>スケジュールと資料へのリンクがサイトに反映されます。</p>
+          </div>
+        </div>
+
+        <div class="flow-item">
+          <div class="flow-left">
+            <div class="flow-dot">✓</div>
+          </div>
+          <div class="flow-body">
+            <span class="role student">全員</span>
+            <strong>Webサイトで閲覧・PDFを確認</strong>
+            <p>学校アカウントでログインすると、スケジュールと資料が表示されます。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="note tip">
+        <span class="note-icon">✅</span>
+        <div class="note-body">
+          <strong>毎年更新するのは3か所だけ</strong>
+          「グループ一覧」シート・「生徒対応」シート・「設定」シートの開催日（Event Date）。それ以外は触る必要がありません。
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ===== 毎年①：グループ登録 ===== -->
+    <section class="section" id="annual-prep">
+      <div class="section-label">毎年の運用</div>
+      <h2>事前準備：グループ情報を登録する</h2>
+
+      <p>発表会の1〜2週間前までに、管理用スプレッドシート（「総合探究 発表会管理」）の <strong>「グループ一覧」シート</strong>と<strong>「生徒対応」シート</strong>を記入します。あわせて「設定」シートの <code>Event Date</code>（開催日）も今年の日付に更新してください。</p>
+
+      <h3>「グループ一覧」シートの記入内容</h3>
+
+      <div class="screen-wrap">
+        <div class="screen-caption">「グループ一覧」シートの例</div>
+        <div class="screen">
+          <div class="screen-bar">
+            <div class="url">docs.google.com/spreadsheets — グループ一覧</div>
+            <div class="win-controls"><span>─</span><span>▢</span><span>✕</span></div>
+          </div>
+          <div class="mock-sheets">
+            <div class="mock-sheets-grid">
+              <table class="mock-sheets-table">
+                <thead>
+                  <tr>
+                    <th>group_id</th>
+                    <th>group_name</th>
+                    <th>timeslot_label</th>
+                    <th>room_name</th>
+                    <th>theme_title</th>
+                    <th>theme_detail</th>
+                    <th class="col-header-auto">report_file_id（自動）</th>
+                    <th class="col-header-auto">…（自動）</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>101</td>
+                    <td>1年1組 1班</td>
+                    <td>第1発表（9:00〜9:45）</td>
+                    <td>101教室</td>
+                    <td>プラスチックごみ削減への道</td>
+                    <td>地域の…</td>
+                    <td class="col-auto">（自動で入力されます）</td>
+                    <td class="col-auto">（自動で入力されます）</td>
+                  </tr>
+                  <tr>
+                    <td>102</td>
+                    <td>1年1組 2班</td>
+                    <td>第1発表（9:00〜9:45）</td>
+                    <td>102教室</td>
+                    <td>地域農業の担い手不足と解決策</td>
+                    <td>少子…</td>
+                    <td class="col-auto"></td>
+                    <td class="col-auto"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="note info">
+        <span class="note-icon">🟢</span>
+        <div class="note-body">
+          <strong>緑色の列（自動入力）は触らなくてOK</strong>
+          G列以降は自動で埋まります。白い列（A〜F）だけ入力してください。<strong>列の並び順は変えないでください</strong>（仕組みが列の位置でデータを読んでいるため）。
+        </div>
+      </div>
+
+      <div class="note warn">
+        <span class="note-icon">💡</span>
+        <div class="note-body">
+          <strong>group_id の付け方</strong>
+          「1年1組1班 → <code>101</code>」のように、クラスと班から機械的に決まる番号にしておくと迷いません。グループごとに重複しなければ形式は自由です。
+        </div>
+      </div>
+
+      <h3>「生徒対応」シートの記入内容</h3>
+      <p>生徒の<strong>学校アカウントのメールアドレス</strong>と、グループIDを対応させます。<strong>氏名ではなくメールアドレス</strong>で照合するため、同姓同名の生徒がいても正しく紐付きます。</p>
+
+      <div class="card">
+        <table class="guide-table">
+          <thead><tr><th>A列：メールアドレス（学校アカウント）</th><th>B列：group_id</th><th>C列：氏名（メモ用・任意）</th></tr></thead>
+          <tbody>
+            <tr><td>taro.tomita@school.ed.jp</td><td>101</td><td>富田 太郎</td></tr>
+            <tr><td>hanako.yamada@school.ed.jp</td><td>101</td><td>山田 花子</td></tr>
+            <tr><td>ichiro.suzuki@school.ed.jp</td><td>102</td><td>鈴木 一郎</td></tr>
+          </tbody>
+        </table>
+        <p style="font-size:0.82rem;color:var(--muted);margin-top:0.5rem">※ 同じグループのメンバーは全員分入力してください。Classroom の「メンバー」ページからメールアドレスを一括コピーできます。</p>
+      </div>
+    </section>
+
+
+    <!-- ===== 毎年②：生徒への指示 ===== -->
+    <section class="section" id="annual-students">
+      <div class="section-label">毎年の運用</div>
+      <h2>生徒への提出指示</h2>
+
+      <div class="note danger">
+        <span class="note-icon">❌</span>
+        <div class="note-body">
+          <strong>Google ドキュメントでの提出は受け付けません</strong>
+          PDF変換時にレイアウトが崩れるため、必ず<strong>Google スライド</strong>で作成・提出させてください。
+        </div>
+      </div>
+
+      <h3>生徒に伝える内容</h3>
+
+      <div class="card">
+        <table class="guide-table">
+          <thead><tr><th>資料の種類</th><th>使用ツール</th><th>提出方法</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>探究レポート</strong><br>（製本・サイト掲載用）</td>
+              <td>Google スライド</td>
+              <td>Classroom の「探究レポート」課題に提出</td>
+            </tr>
+            <tr>
+              <td><strong>発表スライド</strong><br>（当日の発表用）</td>
+              <td>Google スライド</td>
+              <td>Classroom の「発表スライド」課題に提出</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="note tip">
+        <span class="note-icon">💡</span>
+        <div class="note-body">
+          <strong>Classroomの課題設定のコツ</strong>
+          課題を作成する際に「各生徒にコピーを配布」を選択すると、生徒全員に個別のコピーが届き、提出後の処理がスムーズです。レポートの用紙（テンプレート）は、スプレッドシートのメニュー「📄 レポートテンプレートを作成」で自動生成できます。
+        </div>
+      </div>
+
+      <div class="note warn">
+        <span class="note-icon">👥</span>
+        <div class="note-body">
+          <strong>グループで1人だけが提出するよう指示してください</strong>
+          同じグループの複数人が別々のファイルを提出すると、後から処理されたファイルで上書きされます。「班の代表者が提出」に統一するのが安全です。
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== 毎年③：ボタン実行 ===== -->
+    <section class="section" id="annual-run">
+      <div class="section-label">毎年の運用</div>
+      <h2>締切後：ボタン一つでサイトに反映</h2>
+
+      <p>提出締切後、スプレッドシートを開いてメニューから実行します。</p>
+
+      <ol class="steps">
+        <li>
+          <div class="step-body">
+            <strong>スプレッドシートを開く</strong>
+            Google Drive から「総合探究 発表会管理」スプレッドシートを開く。
+          </div>
+        </li>
+        <li>
+          <div class="step-body">
+            <strong>メニューから「⚡ すべて一括実行」をクリックし、確認ダイアログで「OK」</strong>
+          </div>
+        </li>
+        <li>
+          <div class="step-body">
+            <strong>数分待つ（途中の操作は不要）</strong>
+            グループ数が多いほど時間がかかります。処理中はスプレッドシートを開いたまま待ってください。
+          </div>
+        </li>
+        <li>
+          <div class="step-body">
+            <strong>「✅ すべての処理が完了しました」が表示されたら完了</strong>
+            サイトへの反映にはさらに数分かかります。少し待ってからサイトを開いて確認してください。
+          </div>
+        </li>
+      </ol>
+
+      <div class="screen-wrap">
+        <div class="screen-caption">スプレッドシートのメニュー操作</div>
+        <div class="screen">
+          <div class="screen-bar">
+            <div class="url">docs.google.com/spreadsheets/d/…</div>
+            <div class="win-controls"><span>─</span><span>▢</span><span>✕</span></div>
+          </div>
+          <div class="mock-sheets">
+            <div class="mock-sheets-header">📊 総合探究 発表会管理</div>
+            <div class="mock-sheets-menu">
+              <span class="menu-item">ファイル</span>
+              <span class="menu-item">編集</span>
+              <span class="menu-item">表示</span>
+              <span class="menu-item highlight">📋 発表会サイト管理 ▼</span>
+            </div>
+            <div style="display:flex; gap:1rem; padding:1rem 1.25rem; background:#f6f1ea">
+              <div class="mock-menu-dropdown">
+                <div>① 提出物を取得・整理</div>
+                <div>② PDFに変換</div>
+                <div>③ サイトに反映</div>
+                <div class="sep"></div>
+                <div class="primary">⚡ すべて一括実行</div>
+                <div class="sep"></div>
+                <div>♻️ PDFを再変換（URL列をクリア）</div>
+                <div class="sep"></div>
+                <div>🔑 GitHub トークンを設定</div>
+                <div>📄 レポートテンプレートを作成</div>
+                <div>🔧 初期セットアップ（シート生成）</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="note info">
+        <span class="note-icon">ℹ️</span>
+        <div class="note-body">
+          <strong>普段使うのは「⚡ すべて一括実行」だけ</strong>
+          メニューの下の方にある「🔑」「🔧」などの項目は管理者用です。触る必要はありません。
+        </div>
+      </div>
+
+      <div class="screen-wrap">
+        <div class="screen-caption">完了ダイアログの例</div>
+        <div class="mock-dialog">
+          <div class="mock-dialog-title">✅ すべての処理が完了しました <span class="x">✕</span></div>
+          <div class="mock-dialog-body">
+            サイトへの反映が完了しました。<br>
+            数分後にWebサイトを開いて確認してください。
+          </div>
+          <div class="mock-dialog-foot">
+            <button class="mock-dialog-ok">OK</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="note tip">
+        <span class="note-icon">✅</span>
+        <div class="note-body">
+          <strong>個別に実行することもできます</strong>
+          途中でエラーが起きた場合などは、メニューから ①〜③ を個別に選択して再実行できます。②は変換済みのグループを自動でスキップするため、何度実行しても安全です。
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== 毎年④：再提出 ===== -->
+    <section class="section" id="annual-resubmit">
+      <div class="section-label">毎年の運用</div>
+      <h2>生徒が再提出したら：PDFを再変換する</h2>
+
+      <p>一度変換したPDFは（処理を速くするため）自動では作り直されません。生徒が資料を再提出したときは、次の手順で差し替えます。</p>
+
+      <ol class="steps">
+        <li>
+          <div class="step-body">
+            <strong>「① 提出物を取得・整理」を実行</strong>
+            再提出された新しいファイルの情報がシートに書き込まれます。
+          </div>
+        </li>
+        <li>
+          <div class="step-body">
+            <strong>「♻️ PDFを再変換（URL列をクリア）」を実行</strong>
+            ダイアログに再提出したグループの group_id（例: <code>101</code>）を入力して OK。空欄で OK すると全グループを作り直します。
+          </div>
+        </li>
+        <li>
+          <div class="step-body">
+            <strong>「③ サイトに反映」を実行</strong>
+            新しい PDF がサイトに反映されます。
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ===== サイトの見方①：一覧 ===== -->
+    <section class="section" id="view-index">
+      <div class="section-label">サイトの見方</div>
+      <h2>スケジュール一覧ページ</h2>
+
+      <p>サイトのトップページです。全グループの発表スケジュールが一覧表示されます。</p>
+
+      <div class="screen-wrap">
+        <div class="screen-caption">スケジュール一覧（トップページ）の画面</div>
+        <div class="screen">
+          <div class="screen-bar">
+            <div class="url">発表会サイトのURL</div>
+            <div class="win-controls"><span>─</span><span>▢</span><span>✕</span></div>
+          </div>
+          <div class="screen-body">
+            <div class="mock-nav">
+              <span class="nav-title">富田高校　総合探究成果報告会</span>
+              <span class="nav-badge">学内限定</span>
+            </div>
+            <div class="mock-hero">
+              <div class="date">2026年3月13日</div>
+              <h1>総合探究成果報告会</h1>
+              <div class="school">富田高校</div>
+              <div class="stats">
+                <div class="stat"><b>42</b><span>グループ</span></div>
+                <div class="stat"><b>3</b><span>時間帯</span></div>
+                <div class="stat"><b>14</b><span>教室</span></div>
+              </div>
+            </div>
+            <div class="mock-main">
+              <div class="mock-panel">
+                <div class="panel-title">本日の時間割 <span>▼</span></div>
+              </div>
+
+              <div class="mock-panel">
+                <div class="mock-search-pill">
+                  <span style="opacity:0.55">🔍</span>
+                  <input type="text" placeholder="教室・グループ・探究テーマで検索" readonly>
+                </div>
+                <div class="mock-pills">
+                  <span class="mock-pill active">すべて</span>
+                  <span class="mock-pill">第1発表</span>
+                  <span class="mock-pill">第2発表</span>
+                  <span class="mock-pill">第3発表</span>
+                  <span style="font-size:0.68rem; color:var(--muted); margin-left:0.5rem">教室 [すべて ▼]</span>
+                  <span class="mock-count">全42件</span>
+                </div>
+              </div>
+
+              <div class="mock-table-card">
+                <table class="mock-table">
+                  <thead>
+                    <tr>
+                      <th>時間帯 ▲</th>
+                      <th>教室 ↕</th>
+                      <th>グループ ↕</th>
+                      <th>探究テーマ ↕</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>第1発表<br>（9:00〜9:45）</td>
+                      <td>101教室</td>
+                      <td class="group-name">1年1組 1班</td>
+                      <td>プラスチックごみ削減への道</td>
+                    </tr>
+                    <tr>
+                      <td>第1発表<br>（9:00〜9:45）</td>
+                      <td>102教室</td>
+                      <td class="group-name">1年1組 2班</td>
+                      <td>地域農業の担い手不足と解決策</td>
+                    </tr>
+                    <tr>
+                      <td>第2発表<br>（10:00〜10:45）</td>
+                      <td>103教室</td>
+                      <td class="group-name">1年1組 3班</td>
+                      <td>SNSと青少年のメンタルヘルス</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>使い方のポイント</h3>
+
+      <div class="card">
+        <table class="guide-table">
+          <thead><tr><th>機能</th><th>操作方法</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>グループ詳細を見る</strong></td>
+              <td>表の行をどこでもクリック</td>
+            </tr>
+            <tr>
+              <td><strong>キーワード検索</strong></td>
+              <td>上部の検索ボックスに入力（教室・グループ名・テーマ・概要で絞り込める）</td>
+            </tr>
+            <tr>
+              <td><strong>時間帯で絞り込む</strong></td>
+              <td>「第1発表」「第2発表」…のボタンをクリック</td>
+            </tr>
+            <tr>
+              <td><strong>教室で絞り込む</strong></td>
+              <td>「教室」のドロップダウンを選択</td>
+            </tr>
+            <tr>
+              <td><strong>並び替え</strong></td>
+              <td>表のヘッダー（「時間帯」「教室」など）をクリック。もう一度クリックで逆順</td>
+            </tr>
+            <tr>
+              <td><strong>時間割を確認する</strong></td>
+              <td>「本日の時間割」パネルをクリックして展開</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <!-- ===== サイトの見方②：詳細 ===== -->
+    <section class="section" id="view-detail">
+      <div class="section-label">サイトの見方</div>
+      <h2>グループ詳細ページ</h2>
+
+      <p>一覧表の行をクリックすると、そのグループの詳細ページに移動します。</p>
+
+      <div class="screen-wrap">
+        <div class="screen-caption">グループ詳細ページの画面（1年1組 1班の例）</div>
+        <div class="screen">
+          <div class="screen-bar">
+            <div class="url">発表会サイトのURL/group.html?group_id=101</div>
+            <div class="win-controls"><span>─</span><span>▢</span><span>✕</span></div>
+          </div>
+          <div class="screen-body">
+            <div class="mock-nav">
+              <span class="nav-title">富田高校　総合探究成果報告会</span>
+              <span class="nav-badge">学内限定</span>
+            </div>
+            <div class="mock-detail-main">
+              <span class="mock-back">← スケジュール一覧にもどる</span>
+              <div class="mock-detail-title">1年1組 1班</div>
+              <div class="mock-detail-meta">発表時間: 第1発表（9:00〜9:45）　 教室: 101教室</div>
+
+              <div class="mock-block">
+                <h4>探究テーマ</h4>
+                <p>プラスチックごみ削減への道</p>
+              </div>
+
+              <div class="mock-block">
+                <h4>発表概要</h4>
+                <p>地域のプラスチックごみ問題を調査し、削減策を提案する。アンケートや現地調査を通じて実態を把握した。</p>
+              </div>
+
+              <div class="mock-block">
+                <h4>資料（レポートPDF）</h4>
+                <div class="mock-pdf-box">📄 PDFプレビュー（Google Drive）</div>
+                <a class="mock-link">新規タブで開く ↗</a>
+              </div>
+
+              <div class="mock-block">
+                <h4>発表スライド</h4>
+                <div class="mock-pdf-box">📊 スライドPDFプレビュー（Google Drive）</div>
+                <a class="mock-link">新規タブで開く ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="note info">
+        <span class="note-icon">ℹ️</span>
+        <div class="note-body">
+          <strong>PDFが「リクエストされたファイルは存在しません」と表示される場合</strong>
+          Driveのファイルが削除・移動されているか、共有設定が変わっている可能性があります。DriveとClassroomを確認してください。
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ===== FAQ ===== -->
+    <section class="section" id="faq">
+      <div class="section-label">困ったときは</div>
+      <h2>よくある質問</h2>
+
+      <details class="faq">
+        <summary>実行時に「権限エラー」や「承認が必要」と出る</summary>
+        <div class="faq-body">
+          初回実行時はGoogleの認証画面が出ます。「詳細を表示」→「（アプリ名）に移動」→「許可」の順に進んでください。「安全でない」と表示されますが、学校で作成・管理している仕組みなので問題ありません。
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>一部のグループのPDFだけサイトに出ていない</summary>
+        <div class="faq-body">
+          「生徒対応」シートに<strong>メールアドレスが登録されていない生徒</strong>の提出物は処理されません。漏れている生徒をシートに追加してから、「① 提出物を取得・整理」→「② PDFに変換」→「③ サイトに反映」を順に再実行してください。
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>生徒が資料を再提出した。サイトのPDFを差し替えたい</summary>
+        <div class="faq-body">
+          <a href="#annual-resubmit">「再提出があったら」</a>の手順どおり、「①」→「♻️ PDFを再変換」（該当の group_id を指定）→「③」の順に実行してください。
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>同姓同名の生徒がいる。正しく処理されるか？</summary>
+        <div class="faq-body">
+          問題ありません。生徒の紐付けは氏名ではなく<strong>メールアドレス</strong>（学校アカウント）で行うため、同姓同名や氏名の表記ゆれの影響を受けません。「生徒対応」シートのメールアドレスが正しいことだけ確認してください。
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>「⚡ すべて一括実行」が途中で止まった／時間切れになった</summary>
+        <div class="faq-body">
+          一度に処理できる時間に上限（約6分）があり、グループ数が多いと超えることがあります。その場合は ①〜③ をメニューから<strong>個別に</strong>実行してください。「② PDFに変換」は変換済みのグループをスキップするので、もう一度実行すれば続きから処理されます。
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>サイトを開いてもスケジュールが更新されていない</summary>
+        <div class="faq-body">
+          反映には数分かかります。しばらく待ってからブラウザを再読み込み（<code>Ctrl+Shift+R</code>）してください。10分以上待っても反映されない場合は、技術担当者（管理者）に連絡してください。
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>「GitHub…」「トークン…」など、見慣れないエラーが表示された</summary>
+        <div class="faq-body">
+          サイトの公開システム側の設定に問題が起きています（毎年の作業でこのエラーが出た場合、多くは年1回の更新作業が必要な設定の期限切れです）。<strong>技術担当者（管理者）に連絡</strong>してください。対応方法は<a href="admin-guide.html">管理者向けガイド</a>に記載されています。
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>サイトのログイン画面でログインできない生徒がいる</summary>
+        <div class="faq-body">
+          個人の Gmail アカウント（@gmail.com）でログインしようとしていないか確認してください。このサイトは<strong>学校のアカウント</strong>でのみ閲覧できます。学校アカウントでもログインできない場合は、技術担当者に連絡してください。
+        </div>
+      </details>
+
+      <div class="note info" style="margin-top:1.5rem">
+        <span class="note-icon">🔧</span>
+        <div class="note-body">
+          <strong>ここに載っていない問題が起きたら</strong>
+          技術担当者（管理者）に連絡してください。初回セットアップ・引き継ぎ・システム側のトラブル対応は<a href="admin-guide.html">管理者向けガイド</a>にまとめてあります。
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>

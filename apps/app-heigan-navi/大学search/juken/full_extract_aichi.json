@@ -1,0 +1,964 @@
+[
+  {
+    "id": "aichi-2026-ippan-standard-hogaku",
+    "university": "愛知大学",
+    "faculty": "法学部",
+    "department": "法学科",
+    "methodName": "スタンダード方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        { "subject": "英語", "range": "リスニングを除く" },
+        { "subject": "国語", "range": "古文・漢文はいずれか一方を試験当日に選択" }
+      ],
+      "choiceGroups": [
+        { "from": [ { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "地理" }, { "subject": "公民" }, { "subject": "数学" } ], "pick": 1 }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": "2026-01-14",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-05", "2026-02-06"],
+      "examDateSelectable": true,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "2出願目以降1出願につき15,000円（割引制度あり）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "subjects", "quote": "外国語 国語 選択1科目 300点\nスタンダード方式\n（100点） （100点） （100点） 満点", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 6, "verified": true },
+      { "field": "subjects.choiceGroups", "quote": "「歴史総合，日本史探究」「歴史総合，世界史探究」「地理総合，地理探究（注）」「公共，政治・経済（注）」「数学Ⅰ，数学Ⅱ，数学Ａ（図形の性質，場合の数と確率）」\n（5科目から出願時に1科目選択）", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 21, "verified": true },
+      { "field": "schedule.applicationStart", "quote": "2025年\n12月17日（水）\n10：00", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 20, "verified": true },
+      { "field": "schedule.applicationEnd", "quote": "2026年\n1月14日（水）\n15：00まで", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 20, "verified": true },
+      { "field": "schedule.examDates", "quote": "2月1日（日）\n名古屋\n豊橋\n2月2日（月）\n名古屋\n豊橋\n2月5日（木）\n名古屋\n豊橋\n2月6日（金）\n名古屋\n豊橋", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 20, "verified": true },
+      { "field": "fee", "quote": "1出願 30,000円\n入学検定料\n2出願目以降1出願につき 15,000円", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 21, "verified": true },
+      { "field": "heiganPolicy", "quote": "一般入試はどの試験日でも、1回の試験で複数の学部・学科・コースに併願できます。", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2026-ippan-standard-keizai",
+    "university": "愛知大学",
+    "faculty": "経済学部",
+    "department": "経済学科",
+    "methodName": "スタンダード方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        { "subject": "英語", "range": "リスニングを除く" },
+        { "subject": "国語", "range": "古文・漢文はいずれか一方を試験当日に選択" }
+      ],
+      "choiceGroups": [
+        { "from": [ { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "地理" }, { "subject": "公民" }, { "subject": "数学" } ], "pick": 1 }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": "2026-01-14",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-05", "2026-02-06"],
+      "examDateSelectable": true,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "2出願目以降1出願につき15,000円（割引制度あり）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "schedule.examDates", "quote": "経済学部 経済学科 72 2月1日（日）2月1日（日）", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 20, "verified": true },
+      { "field": "fee", "quote": "1出願 30,000円\n入学検定料\n2出願目以降1出願につき 15,000円", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 21, "verified": true },
+      { "field": "heiganPolicy", "quote": "一般入試はどの試験日でも、1回の試験で複数の学部・学科・コースに併願できます。", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2026-ippan-standard-keiei",
+    "university": "愛知大学",
+    "faculty": "経営学部",
+    "department": "経営学科",
+    "methodName": "スタンダード方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        { "subject": "英語", "range": "リスニングを除く" },
+        { "subject": "国語", "range": "古文・漢文はいずれか一方を試験当日に選択" }
+      ],
+      "choiceGroups": [
+        { "from": [ { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "地理" }, { "subject": "公民" }, { "subject": "数学" } ], "pick": 1 }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": "2026-01-14",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-05", "2026-02-06"],
+      "examDateSelectable": true,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "2出願目以降1出願につき15,000円（割引制度あり）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "schedule.examDates", "quote": "経営学科 52", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 20, "verified": true },
+      { "field": "fee", "quote": "1出願 30,000円\n入学検定料\n2出願目以降1出願につき 15,000円", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 21, "verified": true },
+      { "field": "heiganPolicy", "quote": "一般入試はどの試験日でも、1回の試験で複数の学部・学科・コースに併願できます。", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2026-ippan-standard-kaikeifainansu",
+    "university": "愛知大学",
+    "faculty": "経営学部",
+    "department": "会計ファイナンス学科",
+    "methodName": "スタンダード方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        { "subject": "英語", "range": "リスニングを除く" },
+        { "subject": "国語", "range": "古文・漢文はいずれか一方を試験当日に選択" }
+      ],
+      "choiceGroups": [
+        { "from": [ { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "地理" }, { "subject": "公民" }, { "subject": "数学" } ], "pick": 1 }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": "2026-01-14",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-05", "2026-02-06"],
+      "examDateSelectable": true,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "2出願目以降1出願につき15,000円（割引制度あり）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "schedule.examDates", "quote": "会計ファイナンス学科 24", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 20, "verified": true },
+      { "field": "fee", "quote": "1出願 30,000円\n入学検定料\n2出願目以降1出願につき 15,000円", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 21, "verified": true },
+      { "field": "heiganPolicy", "quote": "一般入試はどの試験日でも、1回の試験で複数の学部・学科・コースに併願できます。", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2026-ippan-standard-gendaichugoku",
+    "university": "愛知大学",
+    "faculty": "現代中国学部",
+    "department": "現代中国学科",
+    "methodName": "スタンダード方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        { "subject": "英語", "range": "リスニングを除く" },
+        { "subject": "国語", "range": "古文・漢文はいずれか一方を試験当日に選択" }
+      ],
+      "choiceGroups": [
+        { "from": [ { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "地理" }, { "subject": "公民" }, { "subject": "数学" } ], "pick": 1 }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": "2026-01-14",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-05", "2026-02-06"],
+      "examDateSelectable": true,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "2出願目以降1出願につき15,000円（割引制度あり）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "schedule.examDates", "quote": "現代中国学部 現代中国学科 40", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 20, "verified": true },
+      { "field": "fee", "quote": "1出願 30,000円\n入学検定料\n2出願目以降1出願につき 15,000円", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 21, "verified": true },
+      { "field": "heiganPolicy", "quote": "一般入試はどの試験日でも、1回の試験で複数の学部・学科・コースに併願できます。", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2026-ippan-standard-eigogakka",
+    "university": "愛知大学",
+    "faculty": "国際コミュニケーション学部",
+    "department": "英語学科",
+    "methodName": "スタンダード方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        { "subject": "英語", "range": "リスニングを除く" },
+        { "subject": "国語", "range": "古文・漢文はいずれか一方を試験当日に選択" }
+      ],
+      "choiceGroups": [
+        { "from": [ { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "地理" }, { "subject": "公民" }, { "subject": "数学" } ], "pick": 1 }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": "2026-01-14",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-05", "2026-02-06"],
+      "examDateSelectable": true,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "2出願目以降1出願につき15,000円（割引制度あり）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "schedule.examDates", "quote": "英語学科 24", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 20, "verified": true },
+      { "field": "fee", "quote": "1出願 30,000円\n入学検定料\n2出願目以降1出願につき 15,000円", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 21, "verified": true },
+      { "field": "heiganPolicy", "quote": "一般入試はどの試験日でも、1回の試験で複数の学部・学科・コースに併願できます。", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2026-ippan-standard-kokusaikyoyo",
+    "university": "愛知大学",
+    "faculty": "国際コミュニケーション学部",
+    "department": "国際教養学科",
+    "methodName": "スタンダード方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        { "subject": "英語", "range": "リスニングを除く" },
+        { "subject": "国語", "range": "古文・漢文はいずれか一方を試験当日に選択" }
+      ],
+      "choiceGroups": [
+        { "from": [ { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "地理" }, { "subject": "公民" }, { "subject": "数学" } ], "pick": 1 }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": "2026-01-14",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-05", "2026-02-06"],
+      "examDateSelectable": true,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "2出願目以降1出願につき15,000円（割引制度あり）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "schedule.examDates", "quote": "国際教養学科 24", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 20, "verified": true },
+      { "field": "fee", "quote": "1出願 30,000円\n入学検定料\n2出願目以降1出願につき 15,000円", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 21, "verified": true },
+      { "field": "heiganPolicy", "quote": "一般入試はどの試験日でも、1回の試験で複数の学部・学科・コースに併願できます。", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2026-ippan-standard-jinbunshakai",
+    "university": "愛知大学",
+    "faculty": "文学部",
+    "department": "人文社会学科",
+    "methodName": "スタンダード方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        { "subject": "英語", "range": "リスニングを除く" },
+        { "subject": "国語", "range": "古文・漢文はいずれか一方を試験当日に選択" }
+      ],
+      "choiceGroups": [
+        { "from": [ { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "地理" }, { "subject": "公民" }, { "subject": "数学" } ], "pick": 1 }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": "2026-01-14",
+      "examDates": ["2026-02-02"],
+      "examDateSelectable": false,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "2出願目以降1出願につき15,000円（割引制度あり）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "schedule.examDates", "quote": "2月2日（月）2月2日（月）\n名古屋 岐阜 浜松 2月20日（金）", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 20, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 20, "verified": true },
+      { "field": "fee", "quote": "1出願 30,000円\n入学検定料\n2出願目以降1出願につき 15,000円", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 21, "verified": true },
+      { "field": "heiganPolicy", "quote": "一般入試はどの試験日でも、1回の試験で複数の学部・学科・コースに併願できます。", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2026-ippan-standard-rekishichiri",
+    "university": "愛知大学",
+    "faculty": "文学部",
+    "department": "歴史地理学科",
+    "methodName": "スタンダード方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        { "subject": "英語", "range": "リスニングを除く" },
+        { "subject": "国語", "range": "古文・漢文はいずれか一方を試験当日に選択" }
+      ],
+      "choiceGroups": [
+        { "from": [ { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "地理" }, { "subject": "公民" }, { "subject": "数学" } ], "pick": 1 }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": "2026-01-14",
+      "examDates": ["2026-02-05"],
+      "examDateSelectable": false,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "2出願目以降1出願につき15,000円（割引制度あり）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "schedule.examDates", "quote": "文学部 歴史地理学科 20 2026年", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 20, "verified": true },
+      { "field": "fee", "quote": "1出願 30,000円\n入学検定料\n2出願目以降1出願につき 15,000円", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 21, "verified": true },
+      { "field": "heiganPolicy", "quote": "一般入試はどの試験日でも、1回の試験で複数の学部・学科・コースに併願できます。", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2026-ippan-standard-nihongonihonbungaku",
+    "university": "愛知大学",
+    "faculty": "文学部",
+    "department": "日本語日本文学科",
+    "methodName": "スタンダード方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        { "subject": "英語", "range": "リスニングを除く" },
+        { "subject": "国語", "range": "古文・漢文はいずれか一方を試験当日に選択" }
+      ],
+      "choiceGroups": [
+        { "from": [ { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "地理" }, { "subject": "公民" }, { "subject": "数学" } ], "pick": 1 }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": "2026-01-14",
+      "examDates": ["2026-02-05"],
+      "examDateSelectable": false,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "2出願目以降1出願につき15,000円（割引制度あり）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "schedule.examDates", "quote": "日本語日本文学科 12", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 20, "verified": true },
+      { "field": "fee", "quote": "1出願 30,000円\n入学検定料\n2出願目以降1出願につき 15,000円", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 21, "verified": true },
+      { "field": "heiganPolicy", "quote": "一般入試はどの試験日でも、1回の試験で複数の学部・学科・コースに併願できます。", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2026-ippan-standard-shinrigakka",
+    "university": "愛知大学",
+    "faculty": "文学部",
+    "department": "心理学科",
+    "methodName": "スタンダード方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        { "subject": "英語", "range": "リスニングを除く" },
+        { "subject": "国語", "range": "古文・漢文はいずれか一方を試験当日に選択" }
+      ],
+      "choiceGroups": [
+        { "from": [ { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "地理" }, { "subject": "公民" }, { "subject": "数学" } ], "pick": 1 }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": "2026-01-14",
+      "examDates": ["2026-02-05"],
+      "examDateSelectable": false,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "2出願目以降1出願につき15,000円（割引制度あり）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "schedule.examDates", "quote": "心理学科 16 名古屋 岐阜 浜松", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 20, "verified": true },
+      { "field": "fee", "quote": "1出願 30,000円\n入学検定料\n2出願目以降1出願につき 15,000円", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 21, "verified": true },
+      { "field": "heiganPolicy", "quote": "一般入試はどの試験日でも、1回の試験で複数の学部・学科・コースに併願できます。", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2026-ippan-standard-chiikiseisaku-kokyoseisaku",
+    "university": "愛知大学",
+    "faculty": "地域政策学部",
+    "department": "地域政策学科（公共政策コース）",
+    "methodName": "スタンダード方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        { "subject": "英語", "range": "リスニングを除く" },
+        { "subject": "国語", "range": "古文・漢文はいずれか一方を試験当日に選択" }
+      ],
+      "choiceGroups": [
+        { "from": [ { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "地理" }, { "subject": "公民" }, { "subject": "数学" } ], "pick": 1 }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": "2026-01-14",
+      "examDates": ["2026-02-06"],
+      "examDateSelectable": false,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "2出願目以降1出願につき15,000円（割引制度あり）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "schedule.examDates", "quote": "公共政策コース 16\n豊橋 四日市 津", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 20, "verified": true },
+      { "field": "fee", "quote": "1出願 30,000円\n入学検定料\n2出願目以降1出願につき 15,000円", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 21, "verified": true },
+      { "field": "heiganPolicy", "quote": "一般入試はどの試験日でも、1回の試験で複数の学部・学科・コースに併願できます。", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2026-ippan-standard-tanki-lifedesign",
+    "university": "愛知大学",
+    "faculty": "短期大学部",
+    "department": "ライフデザイン総合学科",
+    "methodName": "短大スタンダード方式B",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        { "subject": "英語", "range": "リスニングを除く" },
+        { "subject": "国語", "range": "古文・漢文はいずれか一方を試験当日に選択" }
+      ],
+      "choiceGroups": [
+        { "from": [ { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "地理" }, { "subject": "公民" }, { "subject": "数学" } ], "pick": 1 }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": "2026-01-14",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-05", "2026-02-06"],
+      "examDateSelectable": true,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "2出願目以降1出願につき15,000円（割引制度あり）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "schedule.examDates", "quote": "短期大学部（女子のみ出願可能） ライフデザイン総合学科 10", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 20, "verified": true },
+      { "field": "fee", "quote": "1出願 30,000円\n入学検定料\n2出願目以降1出願につき 15,000円", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 21, "verified": true },
+      { "field": "heiganPolicy", "quote": "一般入試はどの試験日でも、1回の試験で複数の学部・学科・コースに併願できます。", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2026-ippan-tanki-standard-a",
+    "university": "愛知大学",
+    "faculty": "短期大学部",
+    "department": "ライフデザイン総合学科",
+    "methodName": "短大スタンダード方式A",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        { "subject": "英語", "range": "リスニングを除く" },
+        { "subject": "国語", "range": "現代文のみ" }
+      ],
+      "choiceGroups": [],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": "2026-01-14",
+      "examDates": ["2026-01-29"],
+      "examDateSelectable": false,
+      "resultDate": "2026-02-05",
+      "enrollDeadline": null
+    },
+    "fee": 25000,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "subjects", "quote": "「英語コミュニケーションⅠ，英語コミュニケー ションⅡ，論理・表現Ⅰ」（リスニングを除く）", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 18, "verified": true },
+      { "field": "schedule.examDates", "quote": "1月29日（木）\n2月5日（木）\n豊橋", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 18, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月5日（木）", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 18, "verified": true },
+      { "field": "fee", "quote": "入学検定料 25,000円", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 18, "verified": true },
+      { "field": "heiganPolicy", "quote": "一般入試はどの試験日でも、1回の試験で複数の学部・学科・コースに併願できます。", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2026-ippan-kyotsuheiyo-hogaku",
+    "university": "愛知大学",
+    "faculty": "法学部",
+    "department": "法学科",
+    "methodName": "共通テスト併用方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        { "subject": "英語" },
+        { "subject": "国語" }
+      ],
+      "choiceGroups": [
+        { "from": [ { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "地理" }, { "subject": "公民" }, { "subject": "数学" } ], "pick": 1 }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": "2026-01-14",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-05", "2026-02-06"],
+      "examDateSelectable": true,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": 15000,
+    "feeNote": "共通テスト併用方式単独の出願は不可。スタンダード方式で同じ試験日・学部学科コースへの出願が必須。割引制度は出願確認票1枚単位。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "subjects", "quote": "スタンダード方式で受験した３教科３科目のうち、最高得点科目１科目を採用", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 23, "verified": true },
+      { "field": "fee", "quote": "入学検定料 １出願ごと １5,000円", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 23, "verified": true },
+      { "field": "heiganPolicy", "quote": "スタンダード方式をベースに共通テスト併用方式、最高得点重視方式、２科目方式に出願可能", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 20, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2026-ippan-saikotokutenjushi-hogaku",
+    "university": "愛知大学",
+    "faculty": "法学部",
+    "department": "法学科",
+    "methodName": "最高得点重視方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        { "subject": "英語" },
+        { "subject": "国語" }
+      ],
+      "choiceGroups": [
+        { "from": [ { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "地理" }, { "subject": "公民" }, { "subject": "数学" } ], "pick": 1 }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": "2026-01-14",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-05", "2026-02-06"],
+      "examDateSelectable": true,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": 15000,
+    "feeNote": "最高得点重視方式単独の出願は不可。スタンダード方式で同じ試験日・学部学科コースへの出願が必須。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "subjects", "quote": "スタンダード方式で\n受験した\n3教科3科目のうち\n最高得点1科目を採用", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 25, "verified": true },
+      { "field": "fee", "quote": "入学検定料 1出願ごと 15,000円", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 25, "verified": true },
+      { "field": "heiganPolicy", "quote": "スタンダード方式をベースに共通テスト併用方式、最高得点重視方式、２科目方式に出願可能", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 20, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2026-ippan-2kamoku-keizai",
+    "university": "愛知大学",
+    "faculty": "経済学部",
+    "department": "経済学科",
+    "methodName": "2科目方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        { "subject": "数学", "range": "ⅠⅡＡ（図形の性質，場合の数と確率）" }
+      ],
+      "choiceGroups": [
+        { "from": [ { "subject": "英語" }, { "subject": "国語" } ], "pick": 1 }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": "2026-01-14",
+      "examDates": ["2026-02-01"],
+      "examDateSelectable": false,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": 15000,
+    "feeNote": "2科目方式単独の出願は不可。スタンダード方式で同じ試験日・学部学科コースへの出願が必須（数学選択必須）。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "subjects", "quote": "スタンダード方式で\n受験した\n外国語と国語のうち、\n高得点科目を採用", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 27, "verified": true },
+      { "field": "schedule.examDates", "quote": "経済学部 経済学科 25", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 26, "verified": true },
+      { "field": "fee", "quote": "入学検定料 1出願ごと 15,000円", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 27, "verified": true },
+      { "field": "heiganPolicy", "quote": "スタンダード方式をベースに共通テスト併用方式、最高得点重視方式、２科目方式に出願可能", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 20, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2026-kyotsu-zenki3kamoku-hogaku",
+    "university": "愛知大学",
+    "faculty": "法学部",
+    "department": "法学科",
+    "methodName": "共通テスト利用入試（前期）3科目方式",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        { "subject": "国語", "range": "国語（近代以降の文章）" }
+      ],
+      "choiceGroups": [
+        { "from": [ { "subject": "英語" } ], "pick": 1 },
+        { "from": [ { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "地理" }, { "subject": "公民" }, { "subject": "数学" }, { "subject": "物理" }, { "subject": "化学" }, { "subject": "生物" }, { "subject": "情報" } ], "pick": 1 }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-17",
+      "applicationEnd": "2026-01-27",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": null
+    },
+    "fee": 20000,
+    "feeNote": "2出願目以降1出願につき10,000円",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "schedule.applicationEnd", "quote": "2026年\n1月27日（火）\n15：00まで", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 28, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 28, "verified": true },
+      { "field": "fee", "quote": "1出願 20,000円\n入学検定料\n2出願目以降1出願につき 10,000円", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 31, "verified": true },
+      { "field": "heiganPolicy", "quote": "共通テスト利用入試は、前期日程であれば前期２科目・３科目・４科目・５科目方式それぞれで、\n後期日程であれば後期３科目方式で、複数の学部・学科・コースに併願が可能です。", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2026-kyotsu-kohki3kamoku-hogaku",
+    "university": "愛知大学",
+    "faculty": "法学部",
+    "department": "法学科",
+    "methodName": "共通テスト利用入試（後期）",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        { "subject": "国語", "range": "国語（近代以降の文章）" }
+      ],
+      "choiceGroups": [
+        { "from": [ { "subject": "英語" } ], "pick": 1 },
+        { "from": [ { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "地理" }, { "subject": "公民" }, { "subject": "数学" }, { "subject": "物理" }, { "subject": "化学" }, { "subject": "生物" }, { "subject": "情報" } ], "pick": 1 }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-02-13",
+      "applicationEnd": "2026-03-05",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-03-17",
+      "enrollDeadline": null
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "schedule.applicationStart", "quote": "2026年\n2月13日（金）\n10：00", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 32, "verified": true },
+      { "field": "schedule.applicationEnd", "quote": "3月 5日（木）\n15：00まで", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 32, "verified": true },
+      { "field": "schedule.resultDate", "quote": "3月17日（火）", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 32, "verified": true },
+      { "field": "heiganPolicy", "quote": "共通テスト利用入試（後期）における複数学部、学科、コースの併願", "pdfFile": "愛知大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 32, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2027-sogo-chiikiseisaku-presentation",
+    "university": "愛知大学",
+    "faculty": "地域政策学部",
+    "department": "地域政策学科",
+    "methodName": "地域政策学部プレゼンテーション入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["プレゼン", "面接", "書類"]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": ["2026-10-18"],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-09"
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      { "field": "heiganPolicy", "quote": "本学専願者（本学を第１志望とし、合格者は必ず入学すること) 。", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(地域政策学部プレゼン)_20260706.pdf", "page": 4, "verified": true },
+      { "field": "subjects.nonAcademic", "quote": "調査書（全体の学習成績の状況）、プレゼンテーション、個人面接により総合判定して合格者を決\n定します。", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(地域政策学部プレゼン)_20260706.pdf", "page": 5, "verified": true },
+      { "field": "schedule.examDates", "quote": "試験日 ２０２６年１０月１８日(日)", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(地域政策学部プレゼン)_20260706.pdf", "page": 5, "verified": true },
+      { "field": "schedule.applicationStart", "quote": "２０２６年９月１日(火) ～ ９月７日(月)《必着》", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(地域政策学部プレゼン)_20260706.pdf", "page": 9, "verified": true },
+      { "field": "schedule.resultDate", "quote": "二次試験 ２０２６年１１月２日(月) １０時００分～", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(地域政策学部プレゼン)_20260706.pdf", "page": 11, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "第一次入学手続 ２０２６年１１月 ９日(月) 入学金納入", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(地域政策学部プレゼン)_20260706.pdf", "page": 11, "verified": true },
+      { "field": "fee", "quote": "入学検定料 ３５，０００円", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(地域政策学部プレゼン)_20260706.pdf", "page": 9, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2027-sogo-gendaichugoku-global",
+    "university": "愛知大学",
+    "faculty": "現代中国学部",
+    "department": "現代中国学科",
+    "methodName": "現代中国学部グローバル人材特別入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["小論文", "面接", "書類"]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-18",
+      "applicationEnd": "2026-09-29",
+      "examDates": ["2026-10-18"],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-09"
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      { "field": "heiganPolicy", "quote": "本学専願者（本学を第1志望とし、合格者は必ず入学すること）。", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 5, "verified": true },
+      { "field": "subjects.nonAcademic", "quote": "志望理由書・調査書（全体の学習成績の状況）、資格・活動実績、小論文、個人面接により総合\n判定して合格者を決定します。", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 6, "verified": true },
+      { "field": "schedule.examDates", "quote": "試験日 ２０２６年１０月１８日(日)", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 6, "verified": true },
+      { "field": "schedule.applicationStart", "quote": "２０２６年９月１８日(金) ～ ９月２９日(火)《必着》", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "発表日 ２０２６年１１月２日(月) １０時００分～", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 12, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "第一次入学手続 ２０２６年１１月 ９日(月) 入学金納入", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 12, "verified": true },
+      { "field": "fee", "quote": "入学検定料 ３５，０００円", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 10, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2027-sogo-kokusaikomyunikeshon-eigo-tokubetsu",
+    "university": "愛知大学",
+    "faculty": "国際コミュニケーション学部",
+    "department": "英語学科",
+    "methodName": "国際コミュニケーション学部英語学科特別入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [{ "subject": "英語" }],
+      "choiceGroups": [],
+      "totalCount": 1,
+      "nonAcademic": ["面接", "書類"]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-18",
+      "applicationEnd": "2026-09-29",
+      "examDates": ["2026-10-18"],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-09"
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      { "field": "heiganPolicy", "quote": "本学専願者（本学を第1志望とし、合格者は必ず入学すること）。", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 7, "verified": true },
+      { "field": "subjects", "quote": "調 査書（全体の学習成績の状況）、資格点、試験日当日の英文読解問題および英文エッセイの作\n成、個人面接により総合判定して合格者を決定します。", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 8, "verified": true },
+      { "field": "schedule.examDates", "quote": "試験日 ２０２６年１０月１８日(日)", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 8, "verified": true },
+      { "field": "schedule.applicationStart", "quote": "２０２６年９月１８日(金) ～ ９月２９日(火)《必着》", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "発表日 ２０２６年１１月２日(月) １０時００分～", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 12, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "第一次入学手続 ２０２６年１１月 ９日(月) 入学金納入", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 12, "verified": true },
+      { "field": "fee", "quote": "入学検定料 ３５，０００円", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 10, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2027-sogo-tanki-tokubetsu",
+    "university": "愛知大学",
+    "faculty": "短期大学部",
+    "department": "ライフデザイン総合学科",
+    "methodName": "短大特別入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["面接", "書類"]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-18",
+      "applicationEnd": "2026-09-29",
+      "examDates": ["2026-10-18"],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-09"
+    },
+    "fee": 35000,
+    "feeNote": "第二次入学手続の延期・入学金振替制度あり（本学や他大学併願受験者向け）",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      { "field": "heiganPolicy", "quote": "※試験日が異なれば、学内外の併願が可能です。", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 9, "verified": true },
+      { "field": "subjects.nonAcademic", "quote": "調 査書（全体の学習成績の状況）、志望理由書、面接により総合判定して合格者を決定します。", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 9, "verified": true },
+      { "field": "schedule.examDates", "quote": "試験日 ２０２６年１０月１８日(日)", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 9, "verified": true },
+      { "field": "schedule.applicationStart", "quote": "２０２６年９月１８日(金) ～ ９月２９日(火)《必着》", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "発表日 ２０２６年１１月２日(月) １０時００分～", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 12, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "第一次入学手続 ２０２６年１１月 ９日(月) 入学金納入", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 12, "verified": true },
+      { "field": "fee", "quote": "入学検定料 ３５，０００円", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(現代中国_国コミ英語_短大特別)_20260706.pdf", "page": 10, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-2027-sogo-bungaku-eigoken-tokubetsu",
+    "university": "愛知大学",
+    "faculty": "文学部",
+    "department": "人文社会学科（英語圏文化コース）",
+    "methodName": "英語圏文化コース特別入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [{ "subject": "英語" }],
+      "choiceGroups": [],
+      "totalCount": 1,
+      "nonAcademic": ["面接", "書類"]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-18",
+      "applicationEnd": "2026-09-29",
+      "examDates": ["2026-10-18"],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-09"
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      { "field": "heiganPolicy", "quote": "本学専願者（本学を第１志望とし、合格者は必ず入学すること) 。", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(英語圏文化コース特別)_20260706.pdf", "page": 4, "verified": true },
+      { "field": "subjects", "quote": "調査書（全体の学習成績の状況）、資格点、スピーチ、個人面接により総合判定して合格者を決定\nします。", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(英語圏文化コース特別)_20260706.pdf", "page": 5, "verified": true },
+      { "field": "schedule.examDates", "quote": "試験日 ２０２６年１０月１８日(日)", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(英語圏文化コース特別)_20260706.pdf", "page": 5, "verified": true },
+      { "field": "schedule.applicationStart", "quote": "２０２６年９月１８日(金) ～ ９月２９日(火)《必着》", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(英語圏文化コース特別)_20260706.pdf", "page": 7, "verified": true },
+      { "field": "schedule.resultDate", "quote": "発表日 ２０２６年１１月２日(月) １０時００分～", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(英語圏文化コース特別)_20260706.pdf", "page": 9, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "第一次入学手続 ２０２６年１１月 ９日(月) 入学金納入", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(英語圏文化コース特別)_20260706.pdf", "page": 9, "verified": true },
+      { "field": "fee", "quote": "入学検定料 ３５，０００円", "pdfFile": "愛知大学/2027/sogo_総合型選抜募集要項(英語圏文化コース特別)_20260706.pdf", "page": 7, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  }
+]

@@ -1,0 +1,1858 @@
+[
+  {
+    "id": "nanzan-2027-sogo-shikaku-kentei-gaikokugo-eibei",
+    "university": "南山大学",
+    "faculty": "外国語学部",
+    "department": "英米学科",
+    "methodName": "総合型入試［資格・検定試験活用型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-11",
+      "applicationEnd": "2026-09-17",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "入学検定料の他に取扱手数料（一律990円）が必要になります。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "外国語学部 2026年9月11日（金）10:00 ～ 9月17日（木）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "2026年10月17日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 20,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 35,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "feeNote",
+        "quote": "入学検定料の他に取扱手数料（一律990円）が必要になります。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 8,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "10:00～11:30（90分） 小論文 200点",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 20,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-shikaku-kentei-gaikokugo-supein-latenamerica",
+    "university": "南山大学",
+    "faculty": "外国語学部",
+    "department": "スペイン・ラテンアメリカ学科",
+    "methodName": "総合型入試［資格・検定試験活用型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-11",
+      "applicationEnd": "2026-09-17",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "入学検定料の他に取扱手数料（一律990円）が必要になります。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "外国語学部 2026年9月11日（金）10:00 ～ 9月17日（木）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "2026年10月17日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 20,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 35,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "スペインおよびラテンアメリカの政治・経済・社会・文化・\n歴史・芸術等に関し、２題から１つを選択して論述する",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 22,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-shikaku-kentei-gaikokugo-france",
+    "university": "南山大学",
+    "faculty": "外国語学部",
+    "department": "フランス学科",
+    "methodName": "総合型入試［資格・検定試験活用型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-11",
+      "applicationEnd": "2026-09-17",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "入学検定料の他に取扱手数料（一律990円）が必要になります。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "外国語学部 2026年9月11日（金）10:00 ～ 9月17日（木）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "2026年10月17日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 20,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 35,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "フランス語圏の文化と社会に関する文章を読み、設問に答\nえ、扱われたテーマについて自分の考えを論述する",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 22,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-shikaku-kentei-gaikokugo-germany",
+    "university": "南山大学",
+    "faculty": "外国語学部",
+    "department": "ドイツ学科",
+    "methodName": "総合型入試［資格・検定試験活用型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-11",
+      "applicationEnd": "2026-09-17",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "入学検定料の他に取扱手数料（一律990円）が必要になります。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "外国語学部 2026年9月11日（金）10:00 ～ 9月17日（木）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "2026年10月17日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 20,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 35,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "ドイツ語圏や日本の文化・社会に関する文章を読み、設問\nに答え、関連するテーマについて自分の考えを論述する",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 22,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-shikaku-kentei-gaikokugo-asia",
+    "university": "南山大学",
+    "faculty": "外国語学部",
+    "department": "アジア学科",
+    "methodName": "総合型入試［資格・検定試験活用型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-11",
+      "applicationEnd": "2026-09-17",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "入学検定料の他に取扱手数料（一律990円）が必要になります。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "外国語学部 2026年9月11日（金）10:00 ～ 9月17日（木）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "2026年10月17日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 20,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 35,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "アジアの社会、文化、民間交流（民際交流）に関する文章\nを読み、設問に答え、文章の内容について自分の考えを論\n述する（1000字程度）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 22,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-shikaku-kentei-keiei",
+    "university": "南山大学",
+    "faculty": "経営学部",
+    "department": "経営学科",
+    "methodName": "総合型入試［資格・検定試験活用型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "第1次審査 入学検定料10,000円、第2次審査 入学検定料25,000円（銀行窓口支払い）。振込手数料は振込依頼人負担。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "経営学部 2026年9月1日（火）10:00 ～ 9月7日（月）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "2026年10月17日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 21,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 （第1次審査） 10,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 19,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 （第2次審査） 25,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 19,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "10:00～11:30（90分） 小論文 100点",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 21,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-shikaku-kentei-horitsu",
+    "university": "南山大学",
+    "faculty": "法学部",
+    "department": "法律学科",
+    "methodName": "総合型入試［資格・検定試験活用型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": [
+        "2026-09-26"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "入学検定料の他に取扱手数料（一律990円）が必要になります。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "法学部 2026年9月1日（火）10:00 ～ 9月7日（月）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "2026年9月26日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 20,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 35,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 18,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "ニュース時事能力検定試験（N検）3級以上に合格していることが必要です。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 14,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-presentation-kirisutokyo",
+    "university": "南山大学",
+    "faculty": "人文学部",
+    "department": "キリスト教学科",
+    "methodName": "総合型入試［プレゼンテーション型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "プレゼン",
+        "面接",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "第1次審査 入学検定料10,000円、第2次審査 入学検定料25,000円（銀行窓口支払い）。振込手数料は振込依頼人負担。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "登録期間 2026年9月1日（火）10:00 ～ 9月7日（月）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 27,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "実施日 2026年10月17日（土）※予備日 2026年10月24日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 29,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 （第1次審査） 10,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 28,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 （第2次審査） 25,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 28,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "10:00～11:30（90分） 小論文 100点 300点",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 30,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-presentation-jinruibunka",
+    "university": "南山大学",
+    "faculty": "人文学部",
+    "department": "人類文化学科",
+    "methodName": "総合型入試［プレゼンテーション型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "プレゼン",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "第1次審査 入学検定料10,000円、第2次審査 入学検定料25,000円（銀行窓口支払い）。振込手数料は振込依頼人負担。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "登録期間 2026年9月1日（火）10:00 ～ 9月7日（月）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 27,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "実施日 2026年10月17日（土）※予備日 2026年10月24日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 29,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 （第1次審査） 10,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 28,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "10:00～11:00（60分）\t小論文\t200点\t600点",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 30,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-presentation-keizai",
+    "university": "南山大学",
+    "faculty": "経済学部",
+    "department": "経済学科",
+    "methodName": "総合型入試［プレゼンテーション型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "プレゼン",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "第1次審査 入学検定料10,000円、第2次審査 入学検定料25,000円（銀行窓口支払い）。振込手数料は振込依頼人負担。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "登録期間 2026年9月1日（火）10:00 ～ 9月7日（月）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 27,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "実施日 2026年10月17日（土）※予備日 2026年10月24日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 29,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 （第1次審査） 10,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 28,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "経済・社会問題に関する文章や資料を読んで、内容に関する設問について論\n述する。（1000字程度）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 31,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-presentation-sogoseisaku",
+    "university": "南山大学",
+    "faculty": "総合政策学部",
+    "department": "総合政策学科",
+    "methodName": "総合型入試［プレゼンテーション型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "プレゼン",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "第1次審査 入学検定料10,000円、第2次審査 入学検定料25,000円（銀行窓口支払い）。振込手数料は振込依頼人負担。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "登録期間 2026年9月1日（火）10:00 ～ 9月7日（月）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 27,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "実施日 2026年10月17日（土）※予備日 2026年10月24日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 29,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 （第1次審査） 10,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 28,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "課題文や図表等の資料を参照し、各設問に対して指定された文字数で論述す\nる。（1000～1200字程度）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 31,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-presentation-software",
+    "university": "南山大学",
+    "faculty": "理工学部",
+    "department": "ソフトウェア工学科",
+    "methodName": "総合型入試［プレゼンテーション型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "プレゼン",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "第1次審査 入学検定料10,000円、第2次審査 入学検定料25,000円（銀行窓口支払い）。振込手数料は振込依頼人負担。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "登録期間 2026年9月1日（火）10:00 ～ 9月7日（月）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 27,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "実施日 2026年10月17日（土）※予備日 2026年10月24日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 29,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 （第1次審査） 10,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 28,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "数学Ⅰ、数学Ⅱ、数学Ⅲ、数学Ａ、数学Ｂ、数学Ｃを含め、学科での勉\n学に必要な基礎学力を問う",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 31,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-presentation-datascience",
+    "university": "南山大学",
+    "faculty": "理工学部",
+    "department": "データサイエンス学科",
+    "methodName": "総合型入試［プレゼンテーション型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "プレゼン",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "第1次審査 入学検定料10,000円、第2次審査 入学検定料25,000円（銀行窓口支払い）。振込手数料は振込依頼人負担。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "登録期間 2026年9月1日（火）10:00 ～ 9月7日（月）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 27,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "実施日 2026年10月17日（土）※予備日 2026年10月24日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 29,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 （第1次審査） 10,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 28,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "数学、情報、物理の教科書の発展・課題学習や探究活動などの欄で紹介され\nた課題について、またはこれらの教科に関する自分で選んだ課題について、\n志望する学科との関連を含めて行う。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 31,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-presentation-denshijoho",
+    "university": "南山大学",
+    "faculty": "理工学部",
+    "department": "電子情報工学科",
+    "methodName": "総合型入試［プレゼンテーション型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "プレゼン",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "第1次審査 入学検定料10,000円、第2次審査 入学検定料25,000円（銀行窓口支払い）。振込手数料は振込依頼人負担。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "登録期間 2026年9月1日（火）10:00 ～ 9月7日（月）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 27,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "実施日 2026年10月17日（土）※予備日 2026年10月24日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 29,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 （第1次審査） 10,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 28,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "数学、情報、物理の教科書の発展・課題学習や探究活動などの欄で紹介され\nた課題について、またはこれらの教科に関する自分で選んだ課題について、\n志望する学科との関連を含めて行う。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 31,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-presentation-kikaisystem",
+    "university": "南山大学",
+    "faculty": "理工学部",
+    "department": "機械システム工学科",
+    "methodName": "総合型入試［プレゼンテーション型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "プレゼン",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "第1次審査 入学検定料10,000円、第2次審査 入学検定料25,000円（銀行窓口支払い）。振込手数料は振込依頼人負担。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "登録期間 2026年9月1日（火）10:00 ～ 9月7日（月）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 27,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "実施日 2026年10月17日（土）※予備日 2026年10月24日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 29,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 （第1次審査） 10,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 28,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "数学、情報、物理の教科書の発展・課題学習や探究活動などの欄で紹介され\nた課題について、またはこれらの教科に関する自分で選んだ課題について、\n志望する学科との関連を含めて行う。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 31,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-presentation-kokusaikyoyo",
+    "university": "南山大学",
+    "faculty": "国際教養学部",
+    "department": "国際教養学科",
+    "methodName": "総合型入試［プレゼンテーション型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "プレゼン",
+        "面接",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "第1次審査 入学検定料10,000円、第2次審査 入学検定料25,000円（銀行窓口支払い）。振込手数料は振込依頼人負担。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "登録期間 2026年9月1日（火）10:00 ～ 9月7日（月）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 27,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "実施日 2026年10月17日（土）※予備日 2026年10月24日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 29,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 （第1次審査） 10,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 28,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "英文を読み日本語で要約する（400字程度）\n和文を読み英語で要約する（150 words程度）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 31,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-kogitaiken-nihonbunka",
+    "university": "南山大学",
+    "faculty": "人文学部",
+    "department": "日本文化学科",
+    "methodName": "総合型入試［講義体験型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "書類",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "第1次審査 入学検定料10,000円、第2次審査 入学検定料25,000円（銀行窓口支払い）。振込手数料は振込依頼人負担。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "登録期間 2026年9月1日（火）10:00 ～ 9月7日（月）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 34,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "実施日 2026年10月17日（土）\n※予備日 2026年10月24日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 36,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 （第1次審査） 10,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 35,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "日本文化学科4領域（日本文\n化・日本文学・日本語学・日\n本語教育）のうち2領域の講義\nを各40分行う。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 37,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-kogitaiken-denshijoho",
+    "university": "南山大学",
+    "faculty": "理工学部",
+    "department": "電子情報工学科",
+    "methodName": "総合型入試［講義体験型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "書類",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "第1次審査 入学検定料10,000円、第2次審査 入学検定料25,000円（銀行窓口支払い）。振込手数料は振込依頼人負担。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "登録期間 2026年9月1日（火）10:00 ～ 9月7日（月）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 34,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "実施日 2026年10月17日（土）\n※予備日 2026年10月24日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 36,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 （第1次審査） 10,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 35,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "数学Ⅰ、数学Ⅱ、数学Ⅲ、数学Ａ、\n数学Ｂ、数学Ｃを含め、学科での勉学\nに必要な基礎学力を問う。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 37,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-kogitaiken-kikaisystem",
+    "university": "南山大学",
+    "faculty": "理工学部",
+    "department": "機械システム工学科",
+    "methodName": "総合型入試［講義体験型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "書類",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "第1次審査 入学検定料10,000円、第2次審査 入学検定料25,000円（銀行窓口支払い）。振込手数料は振込依頼人負担。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "登録期間 2026年9月1日（火）10:00 ～ 9月7日（月）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 34,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "実施日 2026年10月17日（土）\n※予備日 2026年10月24日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 36,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 （第1次審査） 10,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 35,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "数学Ⅰ、数学Ⅱ、数学Ⅲ、数学Ａ、\n数学Ｂ、数学Ｃを含め、学科での勉学\nに必要な基礎学力を問う。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 37,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-kogitaiken-asia",
+    "university": "南山大学",
+    "faculty": "外国語学部",
+    "department": "アジア学科",
+    "methodName": "総合型入試［講義体験型］（体験授業）",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "面接",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-11",
+      "applicationEnd": "2026-09-17",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "入学検定料の他に取扱手数料（一律990円）が必要になります。事前に体験授業（2026年8月1日実施）への参加と課題レポート提出、修了認定が出願要件。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "登録期間 2026年9月11日（金）～9月17日（木）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 41,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "2026年10月17日（土）\n※予備日 2026年10月24日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 42,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 35,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 41,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "口頭試問\n（グループで実施、30分）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 42,
+        "verified": true
+      },
+      {
+        "field": "feeNote",
+        "quote": "外国語学部アジア学科が事前実施する「体験授業」\nに参加し、課題レポートを提出し、審査の結果、体験授業の修了を認められた者。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 40,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "nanzan-2027-sogo-groupwork-shinrininngen",
+    "university": "南山大学",
+    "faculty": "人文学部",
+    "department": "心理人間学科",
+    "methodName": "総合型入試［グループワーク型］",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "小論文",
+        "面接",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-07",
+      "examDates": [
+        "2026-10-17"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-02",
+      "enrollDeadline": "2026-11-11"
+    },
+    "fee": 35000,
+    "feeNote": "第1次審査 入学検定料10,000円、第2次審査 入学検定料25,000円（銀行窓口支払い）。振込手数料は振込依頼人負担。",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "本学総合型入試は、専願ではありません。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart/applicationEnd",
+        "quote": "登録期間 2026年9月1日（火）～9月7日（月）17:00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 45,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "2026年10月17日（土）\n※予備日 2026年10月24日（土）",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 47,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "合格発表日時 2026年11月2日（月）13：00",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "入学手続期間 2026年11月4日（水）～11月11日（水）＜最終日消印有効＞",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 50,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 （第1次審査） 10,000円",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 45,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "資料を活用しながら、自分の考えを論理的\nに記述する力を問う。",
+        "pdfFile": "南山大学/2027/sogo_学生募集要項_20260706.pdf",
+        "page": 47,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  }
+]

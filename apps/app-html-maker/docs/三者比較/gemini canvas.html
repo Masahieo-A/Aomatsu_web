@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>等位接続詞（and/or/but）の構造解析ガイド</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        .highlight-and {
+            background-color: #fef08a;
+            padding: 0 4px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #b45309;
+        }
+        .block-a { border: 2px solid #3b82f6; background-color: #eff6ff; }
+        .block-b { border: 2px solid #10b981; background-color: #ecfdf5; }
+        .block-main { border: 2px dashed #6366f1; }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+        
+        <!-- Header -->
+        <header class="bg-indigo-600 text-white p-6">
+            <h1 class="text-2xl md:text-3xl font-bold">等位接続詞（and, or, but）の構造解析ガイド</h1>
+            <p class="mt-2 text-indigo-100">長文読解の鍵となる「何と何を繋いでいるか」を視覚的に理解する</p>
+        </header>
+
+        <div class="p-6 md:p-8 space-y-10">
+
+            <!-- Section 1: 実践！3つのandが含まれる文の解析 -->
+            <section>
+                <h2 class="text-xl md:text-2xl font-bold text-gray-800 border-b-2 border-indigo-200 pb-2 mb-4">
+                    1. 実践解説：3つの "and" が織りなす階層構造
+                </h2>
+                
+                <div class="bg-gray-50 p-4 rounded-lg text-lg md:text-xl font-serif mb-6 border-l-4 border-indigo-500">
+                    "you are determined <span class="highlight-and">and①</span> focused toward success <br class="hidden md:block">
+                    <span class="highlight-and">and②</span> <br class="hidden md:block">
+                    motivated to continually evaluate <span class="highlight-and">and③</span> improve your performance."
+                </div>
+
+                <p class="mb-4">
+                    この文には <strong>and</strong> が3回登場します。左から順番に漫然と読んでしまうと迷子になりますが、ご推察の通り、これらは<strong>「前のand(①)のまとまり」と「後ろのand(③)のまとまり」を、中間のand(②)が大きく繋いでいる</strong>という入れ子（マトリョーシカ）のような構造になっています。
+                </p>
+
+                <!-- 図解部分 -->
+                <div class="bg-white border p-6 rounded-lg shadow-sm my-6">
+                    <div class="text-center mb-4 font-bold text-gray-600">【視覚的構造マップ】</div>
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="text-lg mb-2">you are</div>
+                        
+                        <!-- Main Wrapper -->
+                        <div class="block-main p-4 rounded-lg w-full max-w-2xl flex flex-col md:flex-row items-stretch justify-center gap-4 relative">
+                            
+                            <!-- Block A -->
+                            <div class="block-a p-4 rounded-md flex-1 text-center shadow-sm">
+                                <div class="text-sm font-bold text-blue-600 mb-2">前半のまとまり (A)</div>
+                                <span class="font-bold">determined</span>
+                                <span class="mx-2 px-2 py-1 bg-blue-200 text-blue-800 rounded-full font-bold text-sm">and①</span>
+                                <span class="font-bold">focused</span>
+                                <div class="text-sm text-gray-500 mt-1">toward success</div>
+                            </div>
+
+                            <!-- Middle AND -->
+                            <div class="flex items-center justify-center py-2 md:py-0">
+                                <span class="px-4 py-2 bg-indigo-500 text-white rounded-full font-bold shadow-md text-lg transform hover:scale-110 transition">and②</span>
+                            </div>
+
+                            <!-- Block B -->
+                            <div class="block-b p-4 rounded-md flex-1 text-center shadow-sm">
+                                <div class="text-sm font-bold text-green-600 mb-2">後半のまとまり (B)</div>
+                                motivated to continually<br>
+                                <span class="font-bold">evaluate</span>
+                                <span class="mx-2 px-2 py-1 bg-green-200 text-green-800 rounded-full font-bold text-sm">and③</span>
+                                <span class="font-bold">improve</span>
+                                <div class="text-sm text-gray-500 mt-1">your performance</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4 text-gray-700">
+                    <p><strong>構造の解説：</strong>主語(S) <code>you</code> と動詞(V) <code>are</code> に対して、2つの大きな補語(C)の塊が <strong>and②</strong> によって並列されています。</p>
+                    <ul class="list-disc list-inside space-y-2 ml-2">
+                        <li><strong>and①:</strong> <code>determined</code>（決意した）と <code>focused</code>（集中した）という2つの形容詞（過去分詞）をミクロに繋いでいます。</li>
+                        <li><strong>and③:</strong> 不定詞 <code>to</code> の後ろで、<code>evaluate</code>（評価する）と <code>improve</code>（改善する）という2つの動詞の原形をミクロに繋いでいます。</li>
+                        <li><strong>and②:</strong> この文の<strong>大黒柱</strong>です。「and①を含む前半の塊(A)」と「and③を含む後半の塊(B)」をマクロに繋いでいます。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 2: どうすれば判断できるか -->
+            <section>
+                <h2 class="text-xl md:text-2xl font-bold text-gray-800 border-b-2 border-indigo-200 pb-2 mb-4">
+                    2. どうすれば繋がっているものを判断できるか？（鉄則）
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-yellow-50 p-5 rounded-lg border border-yellow-200">
+                        <h3 class="font-bold text-yellow-800 mb-2 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            鉄則：まずは「直後」を見る
+                        </h3>
+                        <p class="text-sm">
+                            等位接続詞を見つけたら、まずは<strong>その直後の単語の「品詞」や「形」</strong>を確認します。<br>
+                            例：<code>and improve(動詞の原形)</code>
+                        </p>
+                    </div>
+
+                    <div class="bg-yellow-50 p-5 rounded-lg border border-yellow-200">
+                        <h3 class="font-bold text-yellow-800 mb-2 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                            鉄則：「前」へ戻って同じ形を探す
+                        </h3>
+                        <p class="text-sm">
+                            直後の形が分かったら、視線を前に戻し、<strong>文法的に同じレベル・同じ形</strong>のものを探します。<br>
+                            例：前にある動詞の原形 <code>evaluate</code> を発見！ → 「あ、evaluate と improve を繋いでいるんだな」と確定します。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 bg-white border border-gray-200 p-5 rounded-lg">
+                    <h4 class="font-bold text-gray-800 mb-2">and②（大黒柱）の見つけ方</h4>
+                    <p class="text-sm text-gray-600">
+                        <code>... success and motivated to ...</code><br>
+                        直後が <code>motivated(過去分詞)</code> です。前に戻って過去分詞を探すと <code>determined</code> や <code>focused</code> があります。<br>
+                        意味的にも「(あなたは)〜に向けて決意し集中している」<b>【かつ】</b>「〜するように動機づけられている」と繋ぐのが自然であるため、ここで文が大きく2つに分岐していると判断できます。
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 3: そう判断することでどんなメリットが有るのか -->
+            <section>
+                <h2 class="text-xl md:text-2xl font-bold text-gray-800 border-b-2 border-indigo-200 pb-2 mb-4">
+                    3. 構造を正確に把握する「3つのメリット」
+                </h2>
+
+                <div class="space-y-4">
+                    <!-- Merit 1 -->
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mt-1">1</div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-bold text-gray-800">長文の「骨格」が一瞬で見える（速読力の向上）</h3>
+                            <p class="text-gray-600 text-sm mt-1">
+                                単語を左から右へ一つずつ訳すのではなく、「Aの塊」と「Bの塊」というブロック単位で文を捉えられるようになります。情報が整理されるため、読むスピードと理解度が劇的に向上します。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Merit 2 -->
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mt-1">2</div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-bold text-gray-800">致命的な「誤訳」を防げる</h3>
+                            <p class="text-gray-600 text-sm mt-1">
+                                何と何が並列されているかを間違えると、修飾関係（どの単語がどこに掛かっているか）が狂い、文全体の意味が全く違うものになってしまいます。等位接続詞を正しく処理することは、正確な翻訳・解釈の絶対条件です。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Merit 3 -->
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mt-1">3</div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-bold text-gray-800">共通要素の「省略」を見抜ける</h3>
+                            <p class="text-gray-600 text-sm mt-1">
+                                英語は繰り返しを嫌うため、等位接続詞で繋ぐ際、共通部分は省略されます。<br>
+                                今回の例では、後半の <code>motivated</code> の前には <strong>"you are"</strong> が省略されており、<code>improve</code> の前には <strong>"to continually"</strong> が省略されていることを見抜けるようになります。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Conclusion -->
+            <div class="bg-indigo-50 p-6 rounded-lg border border-indigo-100 text-center">
+                <p class="text-indigo-900 font-medium">
+                    等位接続詞（and, or, but）は、単なる「おまけの繋ぎ言葉」ではなく、<br class="hidden md:block">
+                    <strong>文の設計図（アーキテクチャ）を示す最重要の標識</strong>です。<br>
+                    ミクロな繋がりとマクロな繋がり（入れ子構造）を意識することで、どんな長文もクリアに読み解くことができます。
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

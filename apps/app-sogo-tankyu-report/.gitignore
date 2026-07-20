@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets (パスワード等を別管理する場合)
+.env
+.env.local
+*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ローカル作業用（Drive からダウンロードした実データ等はコミットしない）
+sample data/
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+.claude/
+
+# Optional: 本番用 schedule.json をリポジトリに含めない運用にする場合
+# data/schedule.json

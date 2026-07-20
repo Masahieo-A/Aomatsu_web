@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>等位接続詞 and/but/or の使い方</title>
+<style>
+:root{--vp-fg:#1e293b;--vp-muted:#64748b;--vp-line:#cbd5e1;--vp-bg:#ffffff;}
+*{box-sizing:border-box;}
+body{margin:0;background:#f1f5f9;color:var(--vp-fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.7;}
+.vp-doc{max-width:760px;margin:0 auto;padding:28px 20px 64px;background:var(--vp-bg);min-height:100vh;}
+.vp-title{font-size:1.5rem;font-weight:700;margin:0 0 4px;}
+.vp-meta{color:var(--vp-muted);font-size:.85rem;margin-bottom:18px;}
+.vp-h{line-height:1.4;margin:1.6em 0 .5em;}
+.vp-h1{font-size:1.5rem;} .vp-h2{font-size:1.25rem;border-left:4px solid #6366f1;padding-left:.5em;} .vp-h3{font-size:1.05rem;}
+.vp-p{margin:.6em 0;}
+.vp-sentence{font-size:1.15rem;line-height:2.2;margin:1em 0;}
+.vp-tok{padding:.12em .4em;border-radius:6px;font-weight:600;white-space:nowrap;}
+.vp-tok--plain{color:var(--vp-fg);}
+.vp-tree{overflow-x:auto;padding:8px 0;margin:1em 0;}
+.vp-branch{display:flex;flex-direction:column;align-items:flex-start;}
+.vp-node{display:inline-flex;align-items:center;gap:.4em;border:1px solid var(--vp-line);background:#fff;border-radius:8px;padding:.35em .6em;margin:.25em 0;box-shadow:0 1px 2px rgba(0,0,0,.04);}
+.vp-root{font-weight:700;background:#f8fafc;}
+.vp-children{margin-left:1.1em;padding-left:1.1em;border-left:2px solid var(--vp-line);}
+.vp-role{font-size:.72rem;font-weight:700;padding:.1em .45em;border-radius:999px;}
+.vp-role--plain{background:#e2e8f0;color:#475569;}
+.vp-val{font-weight:600;}
+.vp-note{border-radius:10px;padding:.8em 1em;margin:1.2em 0;border:1px solid;}
+.vp-note-label{font-weight:700;font-size:.85rem;margin-bottom:.25em;}
+.vp-note--point{background:#eef2ff;border-color:#c7d2fe;}
+.vp-note--point .vp-note-label{color:#4338ca;}
+.vp-note--tip{background:#ecfdf5;border-color:#a7f3d0;}
+.vp-note--tip .vp-note-label{color:#047857;}
+.vp-note--warning{background:#fff7ed;border-color:#fed7aa;}
+.vp-note--warning .vp-note-label{color:#c2410c;}
+.vp-fig{margin:1.2em 0;text-align:center;}
+.vp-fig img{max-width:100%;border-radius:8px;}
+.vp-fig figcaption{color:var(--vp-muted);font-size:.85rem;margin-top:.4em;}
+.vp-legend{display:flex;flex-wrap:wrap;gap:.6em 1em;margin:0 0 18px;padding:10px 12px;background:#f8fafc;border-radius:8px;font-size:.82rem;}
+.vp-legend-item{display:inline-flex;align-items:center;gap:.4em;}
+.vp-swatch{width:14px;height:14px;border-radius:4px;display:inline-block;}
+.vp-foot{margin-top:40px;color:var(--vp-muted);font-size:.75rem;text-align:center;}
+@media print{body{background:#fff;}.vp-doc{box-shadow:none;max-width:none;}.vp-tree{overflow:visible;}}
+@media(max-width:480px){.vp-doc{padding:18px 14px 48px;}.vp-sentence{font-size:1.05rem;}}
+</style>
+</head>
+<body>
+<main class="vp-doc">
+<h1 class="vp-title">等位接続詞 and/but/or の使い方</h1>
+<div class="vp-meta">Viewpoint で作成した教材</div>
+<div class="vp-legend"><span class="vp-legend-item"><span class="vp-swatch" style="color:#FFFFFF;background:#E74C3C;"></span>接続詞</span><span class="vp-legend-item"><span class="vp-swatch" style="color:#FFFFFF;background:#3498DB;"></span>名詞句</span><span class="vp-legend-item"><span class="vp-swatch" style="color:#FFFFFF;background:#2ECC71;"></span>動詞句</span><span class="vp-legend-item"><span class="vp-swatch" style="color:#FFFFFF;background:#9B59B6;"></span>形容詞句</span><span class="vp-legend-item"><span class="vp-swatch" style="color:#FFFFFF;background:#2C3E50;"></span>主語</span><span class="vp-legend-item"><span class="vp-swatch" style="color:#FFFFFF;background:#1ABC9C;"></span>動詞</span><span class="vp-legend-item"><span class="vp-swatch" style="color:#FFFFFF;background:#F39C12;"></span>補語</span><span class="vp-legend-item"><span class="vp-swatch" style="color:#FFFFFF;background:#7F8C8D;"></span>修飾語句</span><span class="vp-legend-item"><span class="vp-swatch" style="color:#333333;background:#F8F9FA;"></span>その他</span></div>
+<h1 class="vp-h vp-h1">等位接続詞 and/but/or の役割</h1>
+<p class="vp-p">等位接続詞 (and, but, or) は、文中で同じ文法的働きをする語、句、または節どうしを結びつけます。これにより、文の構造が明確になり、複数の要素を簡潔に表現することができます。</p>
+<aside class="vp-note vp-note--point"><div class="vp-note-label">着眼点</div><div class="vp-note-body">等位接続詞が何を繋いでいるかを判断する鍵は、接続詞の後ろに続く語句の形（品詞や文の構造）に注目し、それと同じ形の要素を前に探すことです。これにより、文の並列構造を正確に把握できます。</div></aside>
+<h2 class="vp-h vp-h2">例1: 名詞句の接続</h2>
+<p class="vp-p">PDF資料の例文1より、'or' が3つの名詞句を繋いでいます。</p>
+<p class="vp-sentence"><span class="vp-tok" style="color:#333333;background:#F8F9FA;" title="その他">You</span> <span class="vp-tok" style="color:#333333;background:#F8F9FA;" title="その他">can</span> <span class="vp-tok" style="color:#333333;background:#F8F9FA;" title="その他">choose</span> <span class="vp-tok" style="color:#FFFFFF;background:#3498DB;" title="名詞句">cake</span> <span class="vp-tok" style="color:#333333;background:#F8F9FA;" title="その他">,</span> <span class="vp-tok" style="color:#FFFFFF;background:#3498DB;" title="名詞句">pudding</span> <span class="vp-tok" style="color:#333333;background:#F8F9FA;" title="その他">,</span> <span class="vp-tok" style="color:#FFFFFF;background:#E74C3C;" title="接続詞">or</span> <span class="vp-tok" style="color:#FFFFFF;background:#3498DB;" title="名詞句">ice cream</span> <span class="vp-tok" style="color:#333333;background:#F8F9FA;" title="その他">for</span> <span class="vp-tok" style="color:#333333;background:#F8F9FA;" title="その他">dessert</span> <span class="vp-tok" style="color:#333333;background:#F8F9FA;" title="その他">.</span></p>
+<h2 class="vp-h vp-h2">例2: 動詞句の接続</h2>
+<p class="vp-p">PDF資料の例文2より、'and' が2つの動詞句を繋いでいます。</p>
+<p class="vp-sentence"><span class="vp-tok" style="color:#FFFFFF;background:#2C3E50;" title="主語">We</span> <span class="vp-tok" style="color:#FFFFFF;background:#1ABC9C;" title="動詞">helped</span> <span class="vp-tok" style="color:#333333;background:#F8F9FA;" title="その他">the</span> <span class="vp-tok" style="color:#333333;background:#F8F9FA;" title="その他">search</span> <span class="vp-tok" style="color:#333333;background:#F8F9FA;" title="その他">party</span> <span class="vp-tok" style="color:#FFFFFF;background:#2ECC71;" title="動詞句">find</span> <span class="vp-tok" style="color:#FFFFFF;background:#E74C3C;" title="接続詞">and</span> <span class="vp-tok" style="color:#FFFFFF;background:#2ECC71;" title="動詞句">rescue</span> <span class="vp-tok" style="color:#333333;background:#F8F9FA;" title="その他">the</span> <span class="vp-tok" style="color:#333333;background:#F8F9FA;" title="その他">missing</span> <span class="vp-tok" style="color:#333333;background:#F8F9FA;" title="その他">climbers</span> <span class="vp-tok" style="color:#333333;background:#F8F9FA;" title="その他">.</span></p>
+<h2 class="vp-h vp-h2">例3: 複数の 'and' が登場する複雑な構造</h2>
+<p class="vp-p">PDF資料の長文より、以下の文には 'and' が3つ登場します。これらが何を繋いでいるか、構造を視覚的に見てみましょう。</p>
+<p class="vp-sentence"><span class="vp-tok" style="color:#FFFFFF;background:#2C3E50;" title="主語">you</span> <span class="vp-tok" style="color:#FFFFFF;background:#1ABC9C;" title="動詞">are</span> <span class="vp-tok" style="color:#FFFFFF;background:#9B59B6;" title="形容詞句">determined</span> <span class="vp-tok" style="color:#FFFFFF;background:#E74C3C;" title="接続詞">and</span> <span class="vp-tok" style="color:#FFFFFF;background:#9B59B6;" title="形容詞句">focused</span> <span class="vp-tok" style="color:#FFFFFF;background:#7F8C8D;" title="修飾語句">toward</span> <span class="vp-tok" style="color:#FFFFFF;background:#7F8C8D;" title="修飾語句">success</span> <span class="vp-tok" style="color:#FFFFFF;background:#E74C3C;" title="接続詞">and</span> <span class="vp-tok" style="color:#FFFFFF;background:#9B59B6;" title="形容詞句">motivated</span> <span class="vp-tok" style="color:#FFFFFF;background:#7F8C8D;" title="修飾語句">to</span> <span class="vp-tok" style="color:#FFFFFF;background:#7F8C8D;" title="修飾語句">continually</span> <span class="vp-tok" style="color:#FFFFFF;background:#7F8C8D;" title="修飾語句">evaluate</span> <span class="vp-tok" style="color:#FFFFFF;background:#7F8C8D;" title="修飾語句">and</span> <span class="vp-tok" style="color:#FFFFFF;background:#7F8C8D;" title="修飾語句">improve</span> <span class="vp-tok" style="color:#FFFFFF;background:#7F8C8D;" title="修飾語句">your</span> <span class="vp-tok" style="color:#FFFFFF;background:#7F8C8D;" title="修飾語句">performance</span> <span class="vp-tok" style="color:#333333;background:#F8F9FA;" title="その他">.</span></p>
+<p class="vp-p">この文では、'you are' の補語として3つの形容詞句が並列に並んでいます。複数の 'and' がある場合、通常は最も近い同じ種類の要素を繋ぎ、それがさらに大きな並列構造の一部となることがあります。ご指示の通り、A and B のように繋がっていると考える場合、A and B and C は (A and B) and C のように解釈できます。</p>
+<div class="vp-tree"><div class="vp-branch"><div class="vp-node vp-root">you are</div><div class="vp-children"><div class="vp-branch"><div class="vp-node"><span class="vp-role" style="color:#FFFFFF;background:#F39C12;">補語</span><span class="vp-val">補語全体</span></div><div class="vp-children"><div class="vp-branch"><div class="vp-node"><span class="vp-role" style="color:#FFFFFF;background:#9B59B6;">形容詞句</span><span class="vp-val">determined</span></div></div><div class="vp-branch"><div class="vp-node"><span class="vp-role" style="color:#FFFFFF;background:#E74C3C;">接続詞</span><span class="vp-val">and</span></div></div><div class="vp-branch"><div class="vp-node"><span class="vp-role" style="color:#FFFFFF;background:#9B59B6;">形容詞句</span><span class="vp-val">focused toward success</span></div></div><div class="vp-branch"><div class="vp-node"><span class="vp-role" style="color:#FFFFFF;background:#E74C3C;">接続詞</span><span class="vp-val">and</span></div></div><div class="vp-branch"><div class="vp-node"><span class="vp-role" style="color:#FFFFFF;background:#9B59B6;">形容詞句</span><span class="vp-val">motivated to continually evaluate and improve your performance</span></div></div></div></div></div></div></div>
+<p class="vp-p">上記のツリー構造は、3つの形容詞句が 'and' によって並列に接続されていることを示しています。最初の 'and' は「determined」と「focused toward success」を繋ぎ、2番目の 'and' はその結合された句全体と「motivated to continually evaluate and improve your performance」を繋いでいると解釈できます。</p>
+<aside class="vp-note vp-note--tip"><div class="vp-note-label">学習のメリット</div><div class="vp-note-body">等位接続詞が何を繋いでいるかを正確に把握することで、複雑な英文の主語、動詞、目的語、補語などの主要な要素を正確に特定できるようになります。これにより、文全体の意味をより深く理解し、誤読を防ぐことができます。</div></aside>
+<div class="vp-foot">Generated by Viewpoint</div>
+</main>
+</body>
+</html>

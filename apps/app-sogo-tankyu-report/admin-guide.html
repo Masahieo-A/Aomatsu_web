@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>管理者向けガイド（技術編） — 富田高校 総合探究成果報告会サイト</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent:       #2a5c3f;
+      --accent-dark:  #1e4530;
+      --accent-light: #e8f0eb;
+      --bg:           #f6f1ea;
+      --card:         #ffffff;
+      --border:       #e4ddd4;
+      --text:         #1c1c1c;
+      --muted:        #6b6b6b;
+      --green:        #16a34a;
+      --green-bg:     #f0fdf4;
+      --green-bd:     #bbf7d0;
+      --yellow-bg:    #fefce8;
+      --yellow-bd:    #fef08a;
+      --red-bg:       #fef2f2;
+      --red-bd:       #fecaca;
+      --blue-bg:      #eff6ff;
+      --blue-bd:      #bfdbfe;
+      --radius:       12px;
+      --font:         "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    /* ===== サイドバーレイアウト ===== */
+    .layout {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 240px;
+      flex-shrink: 0;
+      background: var(--accent-dark);
+      color: #fff;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      padding: 1.5rem 0 2rem;
+    }
+
+    .sidebar-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.55);
+      padding: 0 1.25rem 0.75rem;
+      text-transform: uppercase;
+    }
+
+    .sidebar nav a {
+      display: block;
+      padding: 0.5rem 1.25rem;
+      color: rgba(255,255,255,0.82);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      border-left: 3px solid transparent;
+      transition: all 0.15s;
+    }
+
+    .sidebar nav a:hover {
+      color: #fff;
+      background: rgba(255,255,255,0.1);
+      border-left-color: #fff;
+    }
+
+    .sidebar nav .nav-section {
+      margin-top: 1.25rem;
+      padding: 0 1.25rem 0.4rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .content {
+      flex: 1;
+      max-width: 860px;
+      padding: 2.5rem 3rem;
+      min-width: 0;
+    }
+
+    /* ===== モバイル用目次 ===== */
+    .mobile-toc { display: none; }
+
+    /* ===== ガイドヘッダー ===== */
+    .guide-hero {
+      background: linear-gradient(145deg, var(--accent) 0%, var(--accent-dark) 100%);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 2.5rem 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .guide-hero .badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      background: rgba(255,255,255,0.16);
+      color: rgba(255,255,255,0.92);
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      margin: 0 0.35rem 0.75rem 0;
+      text-transform: uppercase;
+    }
+
+    .guide-hero h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .guide-hero p {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .guide-hero a { color: #fff; }
+
+    /* ===== セクション ===== */
+    .section {
+      margin-bottom: 3rem;
+      scroll-margin-top: 2rem;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+
+    .section h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text);
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--accent-light);
+      margin-bottom: 1.25rem;
+    }
+
+    .section h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 1.5rem 0 0.75rem;
+    }
+
+    p { margin-bottom: 0.75rem; color: var(--text); }
+
+    /* ===== カード ===== */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+
+    /* ===== 注意・ポイントボックス ===== */
+    .note {
+      border-radius: 8px;
+      padding: 0.9rem 1.1rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      display: flex;
+      gap: 0.65rem;
+    }
+
+    .note-icon { flex-shrink: 0; font-size: 1.1rem; }
+    .note-body { flex: 1; }
+    .note-body strong { display: block; margin-bottom: 0.2rem; }
+
+    .note.tip    { background: var(--green-bg);  border: 1px solid var(--green-bd); }
+    .note.warn   { background: var(--yellow-bg); border: 1px solid var(--yellow-bd); }
+    .note.danger { background: var(--red-bg);    border: 1px solid var(--red-bd); }
+    .note.info   { background: var(--blue-bg);   border: 1px solid var(--blue-bd); }
+
+    /* ===== ステップ ===== */
+    .steps { counter-reset: step; list-style: none; }
+
+    .steps > li {
+      counter-increment: step;
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .steps > li::before {
+      content: counter(step);
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 700;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+
+    .steps > li .step-body { flex: 1; }
+    .steps > li .step-body strong { font-size: 1rem; display: block; margin-bottom: 0.3rem; }
+
+    /* ===== フロー図 ===== */
+    .flow {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: 1rem 0;
+    }
+
+    .flow-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .flow-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+      width: 36px;
+    }
+
+    .flow-dot {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .flow-line {
+      width: 2px;
+      flex: 1;
+      min-height: 24px;
+      background: var(--border);
+      margin: 2px 0;
+    }
+
+    .flow-body {
+      flex: 1;
+      padding: 0.5rem 0 1.25rem;
+    }
+
+    .flow-body strong { font-size: 0.95rem; display: block; margin-bottom: 0.25rem; }
+    .flow-body p { font-size: 0.88rem; color: var(--muted); margin: 0; }
+    .flow-body .role {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.1rem 0.5rem;
+      border-radius: 999px;
+      margin-bottom: 0.3rem;
+    }
+    .role.gws  { background: #e6f4ea; color: #137333; }
+    .role.gh   { background: #f3f4f6; color: #24292f; }
+    .role.vc   { background: #f5f5f5; color: #000; }
+
+    /* ===== スクリーンモック（Windows 風） ===== */
+    .screen-wrap {
+      margin: 1.25rem 0;
+    }
+
+    .screen-caption {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .screen-caption::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .screen {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+      background: #fff;
+    }
+
+    /* Windows のブラウザと同じく、閉じる・最大化・最小化ボタンは右上 */
+    .screen-bar {
+      background: #f1f3f4;
+      padding: 0.45rem 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .screen-bar .url {
+      flex: 1;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 0.75rem;
+      color: var(--muted);
+      padding: 0.2rem 0.75rem;
+      font-family: Consolas, monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .win-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.15rem;
+      flex-shrink: 0;
+      margin-left: 0.4rem;
+    }
+
+    .win-controls span {
+      width: 26px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.68rem;
+      color: #5f6368;
+      border-radius: 4px;
+      font-family: "Segoe UI Symbol", sans-serif;
+      line-height: 1;
+    }
+
+    .screen-body { background: #fff; }
+
+    /* ── ログイン画面モック ── */
+    .mock-auth {
+      background: var(--bg);
+      padding: 1.75rem 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    .mock-auth-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      text-align: center;
+      max-width: 300px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .mock-auth-card .badge2 {
+      display: inline-block; font-size: 0.6rem; font-weight: 600; color: var(--muted);
+      background: var(--bg); border: 1px solid var(--border); border-radius: 999px;
+      padding: 0.1em 0.6em; margin-bottom: 0.5rem;
+    }
+    .mock-auth-card h4 { font-size: 0.85rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .mock-auth-card p { font-size: 0.7rem; color: var(--muted); margin-bottom: 0.75rem; }
+    .mock-gsi {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      border: 1px solid #dadce0; border-radius: 4px;
+      font-size: 0.75rem; color: #3c4043; padding: 0.35rem 0.9rem; font-weight: 500;
+    }
+
+    /* ── Sheets モック ── */
+    .mock-sheets { background: #fff; border-radius: 8px; overflow: hidden; }
+
+    .mock-sheets-header {
+      background: #0f9d58;
+      color: #fff;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .mock-sheets-menu {
+      background: #f8f9fa;
+      border-bottom: 1px solid #dadce0;
+      padding: 0.3rem 0.75rem;
+      font-size: 0.72rem;
+      color: #3c4043;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .mock-sheets-menu .menu-item { padding: 0.15rem 0.3rem; border-radius: 3px; }
+    .mock-sheets-menu .menu-item.highlight { background: #e6f4ea; color: #137333; font-weight: 600; }
+
+    .mock-sheets-grid { overflow-x: auto; }
+
+    .mock-sheets-table { border-collapse: collapse; font-size: 0.72rem; min-width: 500px; }
+    .mock-sheets-table th,
+    .mock-sheets-table td {
+      border: 1px solid #e0e0e0;
+      padding: 0.3rem 0.5rem;
+      text-align: left;
+      white-space: nowrap;
+    }
+    .mock-sheets-table th { background: #f8f9fa; color: #3c4043; font-weight: 600; }
+
+    .mock-sheets-tabs {
+      display: flex; background: #f1f3f4; border-top: 1px solid #e0e0e0;
+      padding: 0.3rem 0.5rem; gap: 0.5rem;
+    }
+    .mock-sheets-tabs span {
+      font-size: 0.72rem; background: #fff; border: 1px solid #dadce0;
+      padding: 0.2rem 0.75rem; border-radius: 3px;
+    }
+
+    .mock-dialog {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      max-width: 360px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      background: #fff;
+    }
+
+    .mock-dialog-title {
+      background: var(--accent-dark);
+      color: #fff;
+      padding: 0.6rem 1rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+    .mock-dialog-title .x { font-size: 0.75rem; opacity: 0.8; }
+
+    .mock-dialog-body { padding: 1rem; font-size: 0.82rem; color: var(--text); }
+
+    .mock-dialog-foot {
+      padding: 0.6rem 1rem;
+      background: #f8f9fa;
+      border-top: 1px solid var(--border);
+      text-align: right;
+    }
+
+    .mock-dialog-ok {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 0.35rem 0.9rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    /* ===== テーブル ===== */
+    .guide-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 0.75rem 0 1rem; }
+    .guide-table th { background: var(--accent-dark); color: #fff; padding: 0.55rem 0.9rem; text-align: left; font-weight: 600; font-size: 0.8rem; }
+    .guide-table td { padding: 0.55rem 0.9rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .guide-table tr:last-child td { border-bottom: none; }
+    .guide-table tr:nth-child(even) td { background: #faf7f2; }
+
+    /* ===== コード ===== */
+    code {
+      font-family: "SF Mono", "Fira Code", Consolas, monospace;
+      font-size: 0.85em;
+      background: #f1ede6;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.1em 0.4em;
+    }
+
+    /* ===== タグ ===== */
+    .tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+    }
+
+    .tag.orange { background: #fff7ed; color: #c2410c; }
+
+    /* ===== FAQ ===== */
+    .faq {
+      margin-bottom: 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .faq summary {
+      padding: 0.9rem 1.25rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: "▼"; color: var(--muted); font-size: 0.8rem; flex-shrink: 0; }
+    .faq[open] summary::after { content: "▲"; }
+    .faq .faq-body {
+      padding: 0.75rem 1.25rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.88rem;
+      background: #faf7f2;
+    }
+
+    .divider { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+    /* ===== 別ガイドへの誘導バナー ===== */
+    .guide-link-banner {
+      display: block;
+      background: var(--card);
+      border: 1.5px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      text-decoration: none;
+      color: var(--text);
+      transition: background 0.15s;
+    }
+    .guide-link-banner:hover { background: var(--accent-light); }
+    .guide-link-banner strong { color: var(--accent); display: block; margin-bottom: 0.2rem; }
+    .guide-link-banner span { font-size: 0.85rem; color: var(--muted); }
+
+    /* ===== レスポンシブ ===== */
+    @media (max-width: 700px) {
+      .sidebar { display: none; }
+      .content { padding: 1.5rem 1.25rem; }
+      .mobile-toc {
+        display: block;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        margin-bottom: 1.5rem;
+        overflow: hidden;
+      }
+      .mobile-toc summary {
+        padding: 0.85rem 1.25rem;
+        font-weight: 700;
+        font-size: 0.9rem;
+        cursor: pointer;
+        list-style: none;
+      }
+      .mobile-toc summary::-webkit-details-marker { display: none; }
+      .mobile-toc nav { border-top: 1px solid var(--border); padding: 0.5rem 0; }
+      .mobile-toc nav a {
+        display: block;
+        padding: 0.45rem 1.5rem;
+        color: var(--text);
+        text-decoration: none;
+        font-size: 0.85rem;
+      }
+      .mobile-toc nav .nav-section {
+        padding: 0.6rem 1.25rem 0.2rem;
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: var(--muted);
+        letter-spacing: 0.08em;
+      }
+    }
+
+    /* ===== 印刷 ===== */
+    @media print {
+      body { background: #fff; font-size: 12px; }
+      .sidebar, .mobile-toc { display: none; }
+      .content { max-width: none; padding: 0; }
+      .guide-hero { background: none; color: var(--text); border: 1px solid var(--border); padding: 1.25rem; }
+      .guide-hero .badge { background: none; border: 1px solid var(--border); color: var(--text); }
+      .guide-hero p { color: var(--muted); }
+      .screen, .card, .mock-dialog { box-shadow: none; }
+      .section { break-inside: avoid-page; }
+      .faq { break-inside: avoid; }
+      .faq[open] summary::after, .faq summary::after { content: ""; }
+      details:not([open]) > *:not(summary) { display: block; } /* 折りたたみも印刷する */
+    }
+  </style>
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <p class="sidebar-title">管理者向けガイド</p>
+    <nav>
+      <div class="nav-section">はじめに</div>
+      <a href="#architecture">システム構成</a>
+
+      <div class="nav-section">初回セットアップ</div>
+      <a href="#setup-sheets">① Sheetsの準備</a>
+      <a href="#setup-script">② Apps Script設定</a>
+      <a href="#setup-github">③ GitHubトークン</a>
+      <a href="#setup-auth">④ 閲覧制限（任意）</a>
+
+      <div class="nav-section">運用・保守</div>
+      <a href="#handover">引き継ぎチェックリスト</a>
+      <a href="#faq">技術FAQ</a>
+      <a href="#guide-maintain">ガイドの更新方法</a>
+
+      <div class="nav-section">実務担当の方へ</div>
+      <a href="teacher-guide.html">📖 実務編ガイドへ戻る</a>
+    </nav>
+  </aside>
+
+  <!-- ===== メインコンテンツ ===== -->
+  <main class="content">
+
+    <!-- モバイル用目次（画面幅が狭いときだけ表示） -->
+    <details class="mobile-toc">
+      <summary>📑 目次を開く</summary>
+      <nav>
+        <div class="nav-section">はじめに</div>
+        <a href="#architecture">システム構成</a>
+        <div class="nav-section">初回セットアップ</div>
+        <a href="#setup-sheets">① Sheetsの準備</a>
+        <a href="#setup-script">② Apps Script設定</a>
+        <a href="#setup-github">③ GitHubトークン</a>
+        <a href="#setup-auth">④ 閲覧制限（任意）</a>
+        <div class="nav-section">運用・保守</div>
+        <a href="#handover">引き継ぎチェックリスト</a>
+        <a href="#faq">技術FAQ</a>
+        <a href="#guide-maintain">ガイドの更新方法</a>
+        <div class="nav-section">実務担当の方へ</div>
+        <a href="teacher-guide.html">📖 実務編ガイドへ戻る</a>
+      </nav>
+    </details>
+
+    <!-- ヒーロー -->
+    <div class="guide-hero">
+      <div>
+        <span class="badge">管理者向けガイド（技術編）</span>
+        <span class="badge">校内限定資料</span>
+      </div>
+      <h1>富田高校 総合探究成果報告会<br>Webサイト 管理者向けガイド</h1>
+      <p>初回セットアップ（GitHub・Vercel・Google Cloud）、引き継ぎ、システム側のトラブル対応をまとめています。<br>
+         <strong>対象: サイトの仕組みを管理する技術担当者。</strong>毎年の実務手順は<a href="teacher-guide.html">実務編ガイド</a>を参照してください。</p>
+    </div>
+
+    <a class="guide-link-banner" href="teacher-guide.html">
+      <strong>📖 毎年の運用手順（グループ登録・一括実行など）→ 実務編ガイド</strong>
+      <span>スプレッドシートと Classroom だけで完結する作業は、誰でも読める実務編にまとめてあります。</span>
+    </a>
+
+
+    <!-- ===== システム構成 ===== -->
+    <section class="section" id="architecture">
+      <div class="section-label">はじめに</div>
+      <h2>システム構成</h2>
+
+      <p>このサイトは、次の3つのサービスを連携させた<strong>静的サイト＋自動更新パイプライン</strong>です。日常運用ではスプレッドシートだけを触り、GitHub と Vercel は「自動で動く裏方」です。</p>
+
+      <div class="flow">
+        <div class="flow-item">
+          <div class="flow-left">
+            <div class="flow-dot">1</div>
+            <div class="flow-line"></div>
+          </div>
+          <div class="flow-body">
+            <span class="role gws">Google Workspace</span>
+            <strong>スプレッドシート ＋ Apps Script（データのマスタ）</strong>
+            <p>Classroom から提出物を取得し、Drive で PDF 変換・共有設定。シートの内容から <code>data/schedule.json</code> を生成します。コードはリポジトリの <code>apps-script/</code> にあり、スプレッドシートの Apps Script エディタに貼り付けて使います。</p>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-left">
+            <div class="flow-dot">2</div>
+            <div class="flow-line"></div>
+          </div>
+          <div class="flow-body">
+            <span class="role gh">GitHub</span>
+            <strong>リポジトリ（サイトのソースコード置き場）</strong>
+            <p>Apps Script が GitHub API 経由で <code>data/schedule.json</code> を直接コミットします（認証は Fine-grained PAT）。HTML/CSS/JS の修正もこのリポジトリに push します。</p>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-left">
+            <div class="flow-dot">3</div>
+          </div>
+          <div class="flow-body">
+            <span class="role vc">Vercel</span>
+            <strong>ホスティング（自動デプロイ）</strong>
+            <p>GitHub への push を検知して自動でデプロイします。<code>vercel.json</code> でセキュリティヘッダー（CSP等）を、<code>.vercelignore</code> で内部資料（このガイド・docs・apps-script）の非公開を設定しています。</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>アクセス制御の設計（2段構え）</h3>
+
+      <div class="card">
+        <table class="guide-table">
+          <thead><tr><th>層</th><th>しくみ</th><th>性質</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>サイトの閲覧ゲート</strong></td>
+              <td>Google Identity Services によるログイン。ID トークンの <code>hd</code>/メールドメインを「設定」シートの <code>Allowed Domain</code> と照合（実装: <code>common.js</code>）</td>
+              <td>クライアントサイドのゲート。一般閲覧者は確実に弾けるが、<strong>schedule.json 自体は技術的には取得可能</strong></td>
+            </tr>
+            <tr>
+              <td><strong>ファイル本体の保護</strong></td>
+              <td>PDF は Drive に置き、共有「組織内のみ」（Apps Script が自動設定）</td>
+              <td>Google の認証・認可で保護される<strong>本命の防御</strong>。リンクが漏れても組織外は開けない</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size:0.85rem; color:var(--muted); margin:0">個人情報や成績等のセンシティブな情報は schedule.json（グループ名・テーマ・概要）に載せない運用としてください。</p>
+      </div>
+
+      <h3>リポジトリの主なファイル</h3>
+
+      <div class="card">
+        <table class="guide-table">
+          <thead><tr><th>パス</th><th>役割</th></tr></thead>
+          <tbody>
+            <tr><td><code>index.html</code> / <code>group.html</code></td><td>一覧・詳細ページ</td></tr>
+            <tr><td><code>common.js</code></td><td>データ読込・URL検証・ログインゲート（共通処理）</td></tr>
+            <tr><td><code>schedule.js</code> / <code>group.js</code></td><td>各ページの表示ロジック</td></tr>
+            <tr><td><code>data/schedule.json</code></td><td>スケジュールデータ（Apps Script が自動更新。手で編集しない）</td></tr>
+            <tr><td><code>apps-script/</code></td><td>スプレッドシートに貼る Apps Script 一式＋セットアップ手順（README.md）</td></tr>
+            <tr><td><code>docs/</code></td><td>DATA_SCHEMA（列構成）・DEPLOY（デプロイ手順）など開発者向け文書</td></tr>
+            <tr><td><code>vercel.json</code> / <code>.vercelignore</code></td><td>セキュリティヘッダー／本番から除外するファイルの指定</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ===== セットアップ①：Sheets ===== -->
+    <section class="section" id="setup-sheets">
+      <div class="section-label">初回セットアップ（1年目のみ）</div>
+      <h2>① Google スプレッドシートを準備する</h2>
+
+      <div class="note warn">
+        <span class="note-icon">⚠️</span>
+        <div class="note-body">
+          <strong>初回のみの作業です</strong>
+          一度設定すれば、翌年以降は実務編の「毎年の運用」だけで回ります。スプレッドシートは<strong>共有ドライブ</strong>に置くと、担当者が変わっても引き継げます。
+        </div>
+      </div>
+
+      <ol class="steps">
+        <li>
+          <div class="step-body">
+            <strong>Google スプレッドシートを新規作成する</strong>
+            Google Drive（推奨: 共有ドライブ）で「新規 → Google スプレッドシート」を作成。名前は「総合探究 発表会管理」など分かりやすい名前にする。
+          </div>
+        </li>
+        <li>
+          <div class="step-body">
+            <strong>Apps Script エディタを開く</strong>
+            スプレッドシートのメニューから<code>拡張機能 → Apps Script</code> を選択。
+          </div>
+        </li>
+        <li>
+          <div class="step-body">
+            <strong>コードファイルを貼り付ける</strong>
+            リポジトリの <code>apps-script/</code> フォルダ内の <code>.gs</code> ファイルの内容をコピーして、Apps Script エディタに貼り付ける（各ファイルごとに別のスクリプトファイルを作成。ファイル名は <code>.gs</code> を除いた名前にする）。
+          </div>
+        </li>
+        <li>
+          <div class="step-body">
+            <strong>「初期セットアップ」を実行する</strong>
+            スプレッドシートに戻るとメニューに「📋 発表会サイト管理」が追加されます。<br>
+            <code>📋 発表会サイト管理 → 🔧 初期セットアップ（シート生成）</code> を実行。
+          </div>
+        </li>
+      </ol>
+
+      <p>実行すると、「設定」「グループ一覧」「生徒対応」の3シートが自動生成されます。「設定」シートには以下を入力します。</p>
+
+      <!-- Sheets モック -->
+      <div class="screen-wrap">
+        <div class="screen-caption">「設定」シートの構成</div>
+        <div class="screen">
+          <div class="screen-bar">
+            <div class="url">docs.google.com/spreadsheets/d/…</div>
+            <div class="win-controls"><span>─</span><span>▢</span><span>✕</span></div>
+          </div>
+          <div class="mock-sheets">
+            <div class="mock-sheets-header">
+              📊 総合探究 発表会管理
+            </div>
+            <div class="mock-sheets-grid">
+              <table class="mock-sheets-table">
+                <thead>
+                  <tr>
+                    <th>A（キー）</th>
+                    <th>B（値）</th>
+                    <th>C（説明）</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>GitHub Owner</td><td style="color:#888">（ここに入力）</td><td style="color:#888">GitHubユーザー名または組織名</td></tr>
+                  <tr><td>GitHub Repo</td><td style="color:#888">（ここに入力）</td><td style="color:#888">リポジトリ名</td></tr>
+                  <tr><td>Classroom Course ID</td><td style="color:#888">（ここに入力）</td><td style="color:#888">ClassroomのコースID</td></tr>
+                  <tr><td>Report / Slides Assignment ID</td><td style="color:#888">（ここに入力）</td><td style="color:#888">課題のID（URL末尾）</td></tr>
+                  <tr><td>Output Folder ID</td><td style="color:#888">（ここに入力）</td><td style="color:#888">PDF保存先のDriveフォルダID</td></tr>
+                  <tr><td>Event Title / Event Date / Notice</td><td>富田高校　総合探究成果報告会 …</td><td>サイトに表示する情報</td></tr>
+                  <tr><td>Allowed Domain</td><td style="color:#888">（例: school.ed.jp）</td><td>閲覧を許可するドメイン</td></tr>
+                  <tr><td>Google Client ID</td><td style="color:#888">（閲覧制限を使う場合）</td><td>OAuth クライアントID</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="mock-sheets-tabs">
+              <span>設定</span>
+              <span>グループ一覧</span>
+              <span>生徒対応</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="note danger">
+        <span class="note-icon">🔑</span>
+        <div class="note-body">
+          <strong>GitHub Token の行はありません（重要）</strong>
+          トークンはシートに貼らず、メニューの「🔑 GitHub トークンを設定」から登録します（<a href="#setup-github">→ ③</a>）。シートのセルに貼ると、シートを閲覧できる人全員にトークンが見えてしまうためです。
+        </div>
+      </div>
+
+      <div class="note info">
+        <span class="note-icon">ℹ️</span>
+        <div class="note-body">
+          <strong>「グループ一覧」シートは列順固定</strong>
+          Apps Script は列を位置（A〜L列）で参照します。列の並び替え・途中挿入は不可。詳細はリポジトリの <code>docs/DATA_SCHEMA.md</code> を参照してください。
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== セットアップ②：Apps Script ===== -->
+    <section class="section" id="setup-script">
+      <div class="section-label">初回セットアップ（1年目のみ）</div>
+      <h2>② Apps Script の APIを有効化する</h2>
+
+      <p>Apps Script エディタの左メニュー「サービス」の <strong>＋ ボタン</strong> から、以下の3つを追加してください。</p>
+
+      <div class="card">
+        <table class="guide-table">
+          <thead><tr><th>追加するAPI</th><th>バージョン</th></tr></thead>
+          <tbody>
+            <tr><td>Google Classroom API</td><td>v1</td></tr>
+            <tr><td>Google Drive API</td><td>v3</td></tr>
+            <tr><td>Google Slides API</td><td>v1</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="note tip">
+        <span class="note-icon">✅</span>
+        <div class="note-body">
+          <strong>権限の確認ダイアログが表示されたら「許可」を選択</strong>
+          初回実行時にGoogleのアクセス許可画面が出ます。「詳細」→「（アプリ名）に移動」→「許可」の順に進んでください。
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== セットアップ③：GitHub ===== -->
+    <section class="section" id="setup-github">
+      <div class="section-label">初回セットアップ（1年目のみ）</div>
+      <h2>③ GitHub トークンを取得・登録する</h2>
+
+      <p>Apps Script が <code>data/schedule.json</code> を GitHub にコミットするために、アクセストークンが必要です。<strong>影響範囲を最小にできる Fine-grained トークン</strong>を使います。</p>
+
+      <ol class="steps">
+        <li>
+          <div class="step-body">
+            <strong>GitHub にログインし、Settings を開く</strong>
+            右上のアイコンをクリック → <code>Settings</code>
+          </div>
+        </li>
+        <li>
+          <div class="step-body">
+            <strong>Developer settings → Personal access tokens → Fine-grained tokens</strong>
+            左メニューの一番下にあります。
+          </div>
+        </li>
+        <li>
+          <div class="step-body">
+            <strong>「Generate new token」をクリックし、次のとおり設定</strong>
+            <table class="guide-table">
+              <tbody>
+                <tr><td><strong>Token name</strong></td><td>例: <code>sogo-happyo-site</code></td></tr>
+                <tr><td><strong>Expiration</strong></td><td>1年（切れたら再発行して再登録）</td></tr>
+                <tr><td><strong>Repository access</strong></td><td><strong>Only select repositories</strong> → 発表会サイトのリポジトリ<strong>1つだけ</strong>を選択</td></tr>
+                <tr><td><strong>Permissions</strong></td><td>Repository permissions → <strong>Contents: Read and write</strong> のみ</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+        <li>
+          <div class="step-body">
+            <strong>表示されたトークンをコピー</strong>
+            <span class="tag orange">⚠ 一度しか表示されません</span> — 必ずコピーしてから閉じる。
+          </div>
+        </li>
+        <li>
+          <div class="step-body">
+            <strong>スプレッドシートのメニューから登録する</strong>
+            <code>📋 発表会サイト管理 → 🔑 GitHub トークンを設定</code> を開き、トークンを貼り付けて OK。
+          </div>
+        </li>
+      </ol>
+
+      <div class="screen-wrap">
+        <div class="screen-caption">トークン登録ダイアログ</div>
+        <div class="mock-dialog">
+          <div class="mock-dialog-title">🔑 GitHub トークンを設定 <span class="x">✕</span></div>
+          <div class="mock-dialog-body">
+            GitHub の Fine-grained personal access token を貼り付けてください。<br><br>
+            <span style="display:block; border:1px solid var(--border); border-radius:4px; padding:0.3rem 0.6rem; font-family:monospace; font-size:0.75rem; color:#888">github_pat_••••••••••••••••</span>
+          </div>
+          <div class="mock-dialog-foot">
+            <button class="mock-dialog-ok">OK</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="note tip">
+        <span class="note-icon">🔒</span>
+        <div class="note-body">
+          <strong>トークンはシートには表示されません</strong>
+          登録したトークンは Apps Script の「スクリプト プロパティ」に保存され、スプレッドシートを閲覧・編集できる人にも見えません。変更したいときは、もう一度「🔑 GitHub トークンを設定」で上書きしてください。
+        </div>
+      </div>
+
+      <div class="note danger">
+        <span class="note-icon">⚠️</span>
+        <div class="note-body">
+          <strong>classic トークン（repo 権限）は使わない</strong>
+          classic の <code>repo</code> スコープは、そのアカウントの<strong>全リポジトリ</strong>への書き込み権限を持ちます。漏洩時の影響が大きすぎるため、必ず Fine-grained（対象リポジトリ1つ・Contents のみ）で発行してください。
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== セットアップ④：閲覧制限 ===== -->
+    <section class="section" id="setup-auth">
+      <div class="section-label">初回セットアップ（任意・推奨）</div>
+      <h2>④ サイトの閲覧制限（学校アカウント限定）を設定する</h2>
+
+      <p>設定すると、サイトを開いたときに Google ログインを求め、<strong>学校ドメイン以外のアカウントを弾く</strong>ようになります。設定しない場合、サイトは誰でも閲覧できます（PDFの中身はどちらの場合も Drive が保護します）。</p>
+
+      <div class="screen-wrap">
+        <div class="screen-caption">閲覧制限を有効にしたときの画面（サイトを開いた直後）</div>
+        <div class="screen">
+          <div class="screen-bar">
+            <div class="url">sogo-happyo.vercel.app</div>
+            <div class="win-controls"><span>─</span><span>▢</span><span>✕</span></div>
+          </div>
+          <div class="mock-auth">
+            <div class="mock-auth-card">
+              <span class="badge2">学内限定</span>
+              <h4>学校の Google アカウントでログイン</h4>
+              <p>このサイトは <strong>@school.ed.jp</strong> のアカウントを持つ方のみ閲覧できます。</p>
+              <span class="mock-gsi"><span style="font-weight:700; color:#4285f4">G</span> Google でログイン</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>手順1: Google Cloud で「OAuth クライアントID」を作る</h3>
+
+      <ol class="steps">
+        <li>
+          <div class="step-body">
+            <strong><a href="https://console.cloud.google.com/" target="_blank" rel="noopener">Google Cloud Console</a> を学校アカウントで開く</strong>
+            初めての場合は画面上部で「プロジェクトを作成」（名前は「発表会サイト」など）。
+          </div>
+        </li>
+        <li>
+          <div class="step-body">
+            <strong>「APIとサービス」→「OAuth 同意画面」を設定</strong>
+            User Type は「<strong>内部</strong>」を選択（学校の Workspace 組織内のみが対象になります）。アプリ名・連絡先を入力して保存。
+          </div>
+        </li>
+        <li>
+          <div class="step-body">
+            <strong>「認証情報」→「認証情報を作成」→「OAuth クライアントID」</strong>
+            アプリケーションの種類は「<strong>ウェブ アプリケーション</strong>」。
+          </div>
+        </li>
+        <li>
+          <div class="step-body">
+            <strong>「承認済みの JavaScript 生成元」にサイトのURLを追加</strong>
+            例: <code>https://sogo-happyo.vercel.app</code>（本番URL。ローカル確認もするなら <code>http://localhost:8080</code> も追加）。
+          </div>
+        </li>
+        <li>
+          <div class="step-body">
+            <strong>作成すると「クライアントID」が表示されるのでコピー</strong>
+            <code>1234…….apps.googleusercontent.com</code> のような文字列です。
+          </div>
+        </li>
+      </ol>
+
+      <h3>手順2: 「設定」シートに2つの値を入力する</h3>
+
+      <div class="card">
+        <table class="guide-table">
+          <thead><tr><th>キー</th><th>入力する値</th></tr></thead>
+          <tbody>
+            <tr><td><code>Allowed Domain</code></td><td>学校のメールドメイン（例: <code>school.ed.jp</code>）</td></tr>
+            <tr><td><code>Google Client ID</code></td><td>手順1でコピーしたクライアントID</td></tr>
+          </tbody>
+        </table>
+        <p style="font-size:0.85rem; color:var(--muted); margin:0">入力後に「③ サイトに反映」を実行すると有効になります。<strong>両方を空欄にして反映すれば、制限なしに戻せます。</strong></p>
+      </div>
+
+      <div class="note info">
+        <span class="note-icon">ℹ️</span>
+        <div class="note-body">
+          <strong>クライアントIDは「秘密」ではありません</strong>
+          クライアントIDは公開されても問題ない識別子です（トークンとは違います）。シートに入力してOKです。
+        </div>
+      </div>
+
+      <div class="note warn">
+        <span class="note-icon">⚠️</span>
+        <div class="note-body">
+          <strong>閲覧ゲートの限界を理解しておく</strong>
+          静的サイトのため、この制限はブラウザ側で動く「ゲート」です。一般の閲覧者は確実に弾けますが、技術のある人がスケジュールデータ（グループ名・テーマ等）を直接取得することは防げません。<strong>生徒の作品（PDF）は Drive の組織内共有が守る</strong>、という役割分担です。
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ===== 引き継ぎ ===== -->
+    <section class="section" id="handover">
+      <div class="section-label">運用・保守</div>
+      <h2>引き継ぎチェックリスト</h2>
+
+      <p>管理者が変わるときは、以下の4点を引き継げば運用を続けられます。</p>
+
+      <div class="card">
+        <table class="guide-table">
+          <thead><tr><th>引き継ぐもの</th><th>ポイント</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>① Google スプレッドシート</strong></td>
+              <td><strong>共有ドライブ</strong>に置いてあれば作業不要。個人のマイドライブにある場合は、共有ドライブへ移動するかオーナー権限を後任に譲渡する。Apps Script のコードとスクリプト プロパティ（トークン）もシートに付いて引き継がれます。</td>
+            </tr>
+            <tr>
+              <td><strong>② GitHub アカウント</strong></td>
+              <td>リポジトリのある GitHub アカウント（または Organization）に後任を招待し、Admin 権限を付与。後任は<strong>自分のアカウントで新しいトークンを発行</strong>し、「🔑 GitHub トークンを設定」で登録し直す。前任者のトークンは GitHub 側で失効させる。</td>
+            </tr>
+            <tr>
+              <td><strong>③ Vercel アカウント</strong></td>
+              <td>Vercel のプロジェクトに後任をメンバー追加（または共有アカウントの認証情報を引き継ぐ）。普段の運用では触る必要はありません。</td>
+            </tr>
+            <tr>
+              <td><strong>④ ガイド2冊</strong></td>
+              <td>実務編 <code>teacher-guide.html</code>（学年の担当教員へ）と、この管理者編 <code>admin-guide.html</code>（後任の技術担当者へ）。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="note tip">
+        <span class="note-icon">📅</span>
+        <div class="note-body">
+          <strong>年1回のメンテナンス</strong>
+          GitHub トークンの有効期限（推奨1年）が切れる前に、再発行 →「🔑 GitHub トークンを設定」で更新してください。年度初めの「グループ一覧」更新のタイミングで一緒にやるのがおすすめです。
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== 技術FAQ ===== -->
+    <section class="section" id="faq">
+      <div class="section-label">運用・保守</div>
+      <h2>技術FAQ（システム側のトラブル）</h2>
+
+      <p>実務担当者から「見慣れないエラーが出た」と連絡があったときは、まずここを確認してください。</p>
+
+      <details class="faq">
+        <summary>「GitHub API エラー」または「GitHub トークンが未設定です」と表示される</summary>
+        <div class="faq-body">
+          トークンが未登録か、<strong>有効期限切れ</strong>の可能性が高いです。GitHubで新しい Fine-grained トークンを発行し（<a href="#setup-github">→ ③の手順</a>）、メニューの「🔑 GitHub トークンを設定」で登録し直してください。401/403 が返る場合はトークンの Repository access / Permissions（Contents: Read and write）も確認を。
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>「③ サイトに反映」は成功するが、サイトが更新されない</summary>
+        <div class="faq-body">
+          GitHub のリポジトリで <code>data/schedule.json</code> に新しいコミットが入っているか確認してください。コミットが入っているのに反映されない場合は、Vercel のダッシュボード → 対象プロジェクト → Deployments でビルドエラーの有無を確認します。ブラウザキャッシュの可能性もあるので <code>Ctrl+Shift+R</code> も試してください。
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>ログイン画面が出ない／誰でも見えてしまう</summary>
+        <div class="faq-body">
+          「設定」シートの <code>Allowed Domain</code> と <code>Google Client ID</code> の<strong>両方</strong>が入力されているか確認し、「③ サイトに反映」を実行してください。どちらかが空だと閲覧ゲートは無効になります（<code>data/schedule.json</code> の <code>auth</code> フィールドで現在の設定値を確認できます）。
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>ログイン画面は出るが、正しいアカウントでも「閲覧できません」と言われる／ボタンが動かない</summary>
+        <div class="faq-body">
+          <ul style="padding-left:1.25rem; line-height:1.8">
+            <li><code>Allowed Domain</code> の値と、実際のメールアドレスのドメイン（@より後ろ）が一致しているか確認。</li>
+            <li>Google Cloud の OAuth クライアントの「承認済みの JavaScript 生成元」に<strong>サイトの本番URL</strong>が登録されているか確認（未登録だとログインボタンが機能しません）。</li>
+            <li>ブラウザの開発者ツール（F12）の Console にエラーが出ていないか確認。</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Apps Script の実行ログはどこで見られる？</summary>
+        <div class="faq-body">
+          スプレッドシートの <code>拡張機能 → Apps Script</code> でエディタを開き、左メニューの「実行数」を開くと、各実行のログ（「生徒対応なし: ○○」等）を確認できます。PDF変換に失敗したグループの原因調査に使えます。
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>HTML/CSS/JS を修正したい。どうやって反映する？</summary>
+        <div class="faq-body">
+          リポジトリをローカルに clone し、修正して <code>main</code> ブランチへ push すれば Vercel が自動デプロイします。ローカル確認は <code>npx serve -l 8080</code>（ルートの <code>serve.json</code> により本番と同じURL挙動になります）。データ（<code>data/schedule.json</code>）は Apps Script が上書きするため、手で編集しないでください。
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>このガイドや docs/ が本番サイトから見えないのはなぜ？</summary>
+        <div class="faq-body">
+          <code>.vercelignore</code> で <code>teacher-guide.html</code>・<code>admin-guide.html</code>・<code>docs/</code>・<code>apps-script/</code>・<code>*.md</code> をデプロイ対象から除外しているためです。リポジトリには含まれるので、ガイドはファイルを直接ブラウザで開くか、リポジトリ経由で共有してください。
+        </div>
+      </details>
+    </section>
+
+
+    <!-- ===== ガイドの更新方法 ===== -->
+    <section class="section" id="guide-maintain">
+      <div class="section-label">運用・保守</div>
+      <h2>ガイドの更新方法</h2>
+
+      <p>ガイドは2つの HTML ファイルに分かれています。どちらもリポジトリ直下にあり、テキストエディタで編集して push すれば更新完了です。</p>
+
+      <div class="card">
+        <table class="guide-table">
+          <thead><tr><th>ファイル</th><th>対象読者</th><th>書いてよい内容</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><code>teacher-guide.html</code><br>（実務編）</td>
+              <td>学年の担当教員<br>（誰でも）</td>
+              <td>スプレッドシート・Classroom・サイトの見方だけ。<strong>GitHub / Vercel / トークン / JSON などの技術用語は出さない</strong>（不安にさせないため）。システム側の問題は「技術担当者に連絡」で誘導する。</td>
+            </tr>
+            <tr>
+              <td><code>admin-guide.html</code><br>（管理者編・このファイル）</td>
+              <td>技術担当者</td>
+              <td>セットアップ・引き継ぎ・技術トラブル対応。技術用語OK。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <ul style="padding-left:1.5rem; margin-bottom:0.75rem; line-height:1.9">
+        <li>どちらのファイルも <code>.vercelignore</code> により<strong>本番サイトには公開されません</strong>。</li>
+        <li>手順（メニュー名・シート構成など）を変えた場合は、<code>apps-script/README.md</code> と <code>docs/</code> 内の該当ドキュメントも合わせて更新してください。</li>
+        <li>2つのガイドは相互リンクしています。ファイル名を変える場合は両方のリンクを直してください。</li>
+      </ul>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>

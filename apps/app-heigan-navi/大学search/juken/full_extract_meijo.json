@@ -1,0 +1,941 @@
+[
+  {
+    "id": "meijo-2026-ippan-a-hou",
+    "university": "名城大学",
+    "faculty": "法学部",
+    "department": "法学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "国語" }],
+      "choiceGroups": [{ "from": [{ "subject": "日本史" }, { "subject": "世界史" }, { "subject": "公民" }, { "subject": "数学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "同一試験日のA・F・Kトリプル出願＋C方式（前期）で入学試験検定料が最大40,000円割引。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "2/1（日）2/2（月）2/3（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 国語（100） □ 地理歴史 □ 公民 （100） □ 数学① 1教科1科目選択", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "試験日が異なれば、他学部・他学科・他専攻の併願も可能", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 6, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-keiei",
+    "university": "名城大学",
+    "faculty": "経営学部",
+    "department": "経営学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "国語" }],
+      "choiceGroups": [{ "from": [{ "subject": "日本史" }, { "subject": "世界史" }, { "subject": "公民" }, { "subject": "数学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "同一試験日のA・F・Kトリプル出願＋C方式（前期）で入学試験検定料が最大40,000円割引。経営学部・経済学部はA方式1回の受験で両学部4学科に同時併願可能。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "2/1（日）2/2（月）2/3（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 国語（100） □ 地理歴史 □ 公民 （100） □ 数学① 1教科1科目選択", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "経営学部・経済学部間、外国語学部専攻間、情報工・理工学部間、農学部内で併願が可能。", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 6, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-kokusai-keiei",
+    "university": "名城大学",
+    "faculty": "経営学部",
+    "department": "国際経営学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "国語" }],
+      "choiceGroups": [{ "from": [{ "subject": "日本史" }, { "subject": "世界史" }, { "subject": "公民" }, { "subject": "数学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "同一試験日のA・F・Kトリプル出願＋C方式（前期）で入学試験検定料が最大40,000円割引。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "2/1（日）2/2（月）2/3（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 国語（100） □ 地理歴史 □ 公民 （100） □ 数学① 1教科1科目選択", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "試験日が異なれば他学部・他学科・他専攻の併願も可能。", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 6, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-keizai",
+    "university": "名城大学",
+    "faculty": "経済学部",
+    "department": "経済学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "国語" }],
+      "choiceGroups": [{ "from": [{ "subject": "日本史" }, { "subject": "世界史" }, { "subject": "公民" }, { "subject": "数学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "同一試験日のA・F・Kトリプル出願＋C方式（前期）で入学試験検定料が最大40,000円割引。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "2/1（日）2/2（月）2/3（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 国語（100） □ 地理歴史 □ 公民 （100） □ 数学① 1教科1科目選択", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "経営学部・経済学部間、外国語学部専攻間、情報工・理工学部間、農学部内で併願が可能。", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 6, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-sangyoshakai",
+    "university": "名城大学",
+    "faculty": "経済学部",
+    "department": "産業社会学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "国語" }],
+      "choiceGroups": [{ "from": [{ "subject": "日本史" }, { "subject": "世界史" }, { "subject": "公民" }, { "subject": "数学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "同一試験日のA・F・Kトリプル出願＋C方式（前期）で入学試験検定料が最大40,000円割引。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "2/1（日）2/2（月）2/3（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 国語（100） □ 地理歴史 □ 公民 （100） □ 数学① 1教科1科目選択", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "経営学部・経済学部間、外国語学部専攻間、情報工・理工学部間、農学部内で併願が可能。", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 6, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-kokusai-eigo-kokusai-career",
+    "university": "名城大学",
+    "faculty": "外国語学部",
+    "department": "国際英語学科・国際キャリア専攻",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "国語" }],
+      "choiceGroups": [{ "from": [{ "subject": "日本史" }, { "subject": "世界史" }, { "subject": "公民" }, { "subject": "数学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "外国語学部国際英語学科は1日程につき1専攻のみ受験可能。英語外部試験のスコア利用可。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "2/1（日）2/2（月）2/3（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 国語（100） □ 地理歴史 □ 公民 （100） □ 数学① 1教科1科目選択", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "試験日が異なれば他学部・他学科・他専攻の併願も可能。", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 6, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-kokusai-eigo-kokusai-eigo",
+    "university": "名城大学",
+    "faculty": "外国語学部",
+    "department": "国際英語学科・国際英語専攻",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "国語" }],
+      "choiceGroups": [{ "from": [{ "subject": "日本史" }, { "subject": "世界史" }, { "subject": "公民" }, { "subject": "数学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "外国語学部国際英語学科は1日程につき1専攻のみ受験可能。英語外部試験のスコア利用可。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "2/1（日）2/2（月）2/3（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 国語（100） □ 地理歴史 □ 公民 （100） □ 数学① 1教科1科目選択", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "試験日が異なれば他学部・他学科・他専攻の併願も可能。", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 6, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-ningen",
+    "university": "名城大学",
+    "faculty": "人間学部",
+    "department": "人間学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "国語" }],
+      "choiceGroups": [{ "from": [{ "subject": "日本史" }, { "subject": "世界史" }, { "subject": "公民" }, { "subject": "数学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "同一試験日のA・F・Kトリプル出願＋C方式（前期）で入学試験検定料が最大40,000円割引。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "2/1（日）2/2（月）2/3（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 国語（100） □ 地理歴史 □ 公民 （100） □ 数学① 1教科1科目選択", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "試験日が異なれば他学部・他学科・他専攻の併願も可能。", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 6, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-toshijoho",
+    "university": "名城大学",
+    "faculty": "都市情報学部",
+    "department": "都市情報学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }],
+      "choiceGroups": [
+        { "from": [{ "subject": "国語" }, { "subject": "物理" }, { "subject": "化学" }, { "subject": "生物" }], "pick": 1 },
+        { "from": [{ "subject": "日本史" }, { "subject": "世界史" }, { "subject": "公民" }, { "subject": "数学" }], "pick": 1 }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "同一試験日のA・F・Kトリプル出願＋C方式（前期）で入学試験検定料が最大40,000円割引。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "2/1（日）2/2（月）2/3（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） □ 国語 （100） □ 理科① 1教科1科目選択 □ 地理歴史 □ 公民 （100） □ 数学① 1教科1科目選択", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "試験日が異なれば他学部・他学科・他専攻の併願も可能。", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 6, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-joho-kogaku",
+    "university": "名城大学",
+    "faculty": "情報工学部",
+    "department": "情報工学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "数学", "range": "ⅠⅡⅢA(図形の性質、場合の数と確率)B(数列)C(ベクトル、平面上の曲線と複素数平面)" }],
+      "choiceGroups": [{ "from": [{ "subject": "物理" }, { "subject": "化学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "情報工・理工学部の数学は記述式問題。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "情報工・理工 ー ○ ○", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 理科②（100） ◎ 数学②（100）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "情報工学部・理工学部のＡ方式に出願することで、Ｆ方式とＫ方式で異なる学部・学科・専攻に出願できます", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 7, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-rikoh-suu",
+    "university": "名城大学",
+    "faculty": "理工学部",
+    "department": "数学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "数学", "range": "ⅠⅡⅢA(図形の性質、場合の数と確率)B(数列)C(ベクトル、平面上の曲線と複素数平面)" }],
+      "choiceGroups": [{ "from": [{ "subject": "物理" }, { "subject": "化学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "情報工・理工学部の数学は記述式問題。第2志望制度あり(化学・物質学科の専攻間のみ)。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "情報工・理工 ー ○ ○", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 理科②（100） ◎ 数学②（100）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "情報工学部・理工学部のＡ方式に出願することで、Ｆ方式とＫ方式で異なる学部・学科・専攻に出願できます", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 7, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-denki-denshi",
+    "university": "名城大学",
+    "faculty": "理工学部",
+    "department": "電気電子工学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "数学", "range": "ⅠⅡⅢA(図形の性質、場合の数と確率)B(数列)C(ベクトル、平面上の曲線と複素数平面)" }],
+      "choiceGroups": [{ "from": [{ "subject": "物理" }, { "subject": "化学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "情報工・理工学部の数学は記述式問題。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "情報工・理工 ー ○ ○", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 理科②（100） ◎ 数学②（100）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "情報工学部・理工学部のＡ方式に出願することで、Ｆ方式とＫ方式で異なる学部・学科・専攻に出願できます", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 7, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-kagaku-oyokagaku",
+    "university": "名城大学",
+    "faculty": "理工学部",
+    "department": "化学・物質学科・応用化学専攻",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "数学", "range": "ⅠⅡⅢA(図形の性質、場合の数と確率)B(数列)C(ベクトル、平面上の曲線と複素数平面)" }],
+      "choiceGroups": [{ "from": [{ "subject": "物理" }, { "subject": "化学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "化学・物質学科は1日程につき1専攻のみ受験可能。第2志望制度あり(専攻間)。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "情報工・理工 ー ○ ○", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 理科②（100） ◎ 数学②（100）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "外国語学部国際英語学科および理工学部化学・物質学科は1日程につき1専攻のみ受験可能です。", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-zairyo-kino",
+    "university": "名城大学",
+    "faculty": "理工学部",
+    "department": "化学・物質学科・材料機能工学専攻",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "数学", "range": "ⅠⅡⅢA(図形の性質、場合の数と確率)B(数列)C(ベクトル、平面上の曲線と複素数平面)" }],
+      "choiceGroups": [{ "from": [{ "subject": "物理" }, { "subject": "化学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "化学・物質学科は1日程につき1専攻のみ受験可能。第2志望制度あり(専攻間)。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "情報工・理工 ー ○ ○", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 理科②（100） ◎ 数学②（100）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "外国語学部国際英語学科および理工学部化学・物質学科は1日程につき1専攻のみ受験可能です。", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-kikai",
+    "university": "名城大学",
+    "faculty": "理工学部",
+    "department": "機械工学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "数学", "range": "ⅠⅡⅢA(図形の性質、場合の数と確率)B(数列)C(ベクトル、平面上の曲線と複素数平面)" }],
+      "choiceGroups": [{ "from": [{ "subject": "物理" }, { "subject": "化学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "情報工・理工学部の数学は記述式問題。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "情報工・理工 ー ○ ○", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 理科②（100） ◎ 数学②（100）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "情報工学部・理工学部のＡ方式に出願することで、Ｆ方式とＫ方式で異なる学部・学科・専攻に出願できます", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 7, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-kotsu-kikai",
+    "university": "名城大学",
+    "faculty": "理工学部",
+    "department": "交通機械工学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "数学", "range": "ⅠⅡⅢA(図形の性質、場合の数と確率)B(数列)C(ベクトル、平面上の曲線と複素数平面)" }],
+      "choiceGroups": [{ "from": [{ "subject": "物理" }, { "subject": "化学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "情報工・理工学部の数学は記述式問題。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "情報工・理工 ー ○ ○", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 理科②（100） ◎ 数学②（100）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "情報工学部・理工学部のＡ方式に出願することで、Ｆ方式とＫ方式で異なる学部・学科・専攻に出願できます", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 7, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-mecatro",
+    "university": "名城大学",
+    "faculty": "理工学部",
+    "department": "メカトロニクス工学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "数学", "range": "ⅠⅡⅢA(図形の性質、場合の数と確率)B(数列)C(ベクトル、平面上の曲線と複素数平面)" }],
+      "choiceGroups": [{ "from": [{ "subject": "物理" }, { "subject": "化学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "情報工・理工学部の数学は記述式問題。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "情報工・理工 ー ○ ○", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 理科②（100） ◎ 数学②（100）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "情報工学部・理工学部のＡ方式に出願することで、Ｆ方式とＫ方式で異なる学部・学科・専攻に出願できます", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 7, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-shakai-kiban",
+    "university": "名城大学",
+    "faculty": "理工学部",
+    "department": "社会基盤デザイン工学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "数学", "range": "ⅠⅡⅢA(図形の性質、場合の数と確率)B(数列)C(ベクトル、平面上の曲線と複素数平面)" }],
+      "choiceGroups": [{ "from": [{ "subject": "物理" }, { "subject": "化学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "情報工・理工学部の数学は記述式問題。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "情報工・理工 ー ○ ○", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 理科②（100） ◎ 数学②（100）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "情報工学部・理工学部のＡ方式に出願することで、Ｆ方式とＫ方式で異なる学部・学科・専攻に出願できます", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 7, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-kankyo-sozo",
+    "university": "名城大学",
+    "faculty": "理工学部",
+    "department": "環境創造工学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "数学", "range": "ⅠⅡⅢA(図形の性質、場合の数と確率)B(数列)C(ベクトル、平面上の曲線と複素数平面)" }],
+      "choiceGroups": [{ "from": [{ "subject": "物理" }, { "subject": "化学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "情報工・理工学部の数学は記述式問題。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "情報工・理工 ー ○ ○", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 理科②（100） ◎ 数学②（100）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "情報工学部・理工学部のＡ方式に出願することで、Ｆ方式とＫ方式で異なる学部・学科・専攻に出願できます", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 7, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-kenchiku",
+    "university": "名城大学",
+    "faculty": "理工学部",
+    "department": "建築学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "数学", "range": "ⅠⅡⅢA(図形の性質、場合の数と確率)B(数列)C(ベクトル、平面上の曲線と複素数平面)" }],
+      "choiceGroups": [{ "from": [{ "subject": "物理" }, { "subject": "化学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "情報工・理工学部の数学は記述式問題。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "情報工・理工 ー ○ ○", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 理科②（100） ◎ 数学②（100）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "情報工学部・理工学部のＡ方式に出願することで、Ｆ方式とＫ方式で異なる学部・学科・専攻に出願できます", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 7, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-seibutsu-shigen",
+    "university": "名城大学",
+    "faculty": "農学部",
+    "department": "生物資源学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "化学" }],
+      "choiceGroups": [{ "from": [{ "subject": "国語" }, { "subject": "数学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-01", "2026-02-02"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "農学部の理科①は「物理基礎・物理」「化学基礎・化学」「生物基礎・生物」から1。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "農 ○ ○ ー", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 理科①（100） □ 数学③ 1教科1科目選択", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "経営学部・経済学部間、外国語学部専攻間、情報工・理工学部間、農学部内で併願が可能。", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 6, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-oyo-seibutsu-kagaku",
+    "university": "名城大学",
+    "faculty": "農学部",
+    "department": "応用生物化学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "化学" }],
+      "choiceGroups": [{ "from": [{ "subject": "国語" }, { "subject": "数学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-01", "2026-02-02"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "農学部内で他学科併願が可能。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "農 ○ ○ ー", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 理科①（100） □ 数学③ 1教科1科目選択", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "経営学部・経済学部間、外国語学部専攻間、情報工・理工学部間、農学部内で併願が可能。", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 6, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-seibutsu-kankyo",
+    "university": "名城大学",
+    "faculty": "農学部",
+    "department": "生物環境科学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "化学" }],
+      "choiceGroups": [{ "from": [{ "subject": "国語" }, { "subject": "数学" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-01", "2026-02-02"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": "農学部内で他学科併願が可能。",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "農 ○ ○ ー", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎ 理科①（100） □ 数学③ 1教科1科目選択", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "経営学部・経済学部間、外国語学部専攻間、情報工・理工学部間、農学部内で併願が可能。", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 6, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  },
+  {
+    "id": "meijo-2026-ippan-a-yaku",
+    "university": "名城大学",
+    "faculty": "薬学部",
+    "department": "薬学科",
+    "methodName": "3教科型A方式",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }, { "subject": "化学" }, { "subject": "数学", "range": "ⅠⅡA(図形の性質、場合の数と確率)B(数列)C(ベクトル)" }],
+      "choiceGroups": [],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2025-12-18",
+      "applicationEnd": "2026-01-15",
+      "examDates": ["2026-02-01"],
+      "examDateSelectable": false,
+      "resultDate": "2026-02-20",
+      "enrollDeadline": "2026-03-10"
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "fee", "quote": "35,000円", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.applicationStart/applicationEnd", "quote": "2025年12月18日（木）～2026年1月15日（木）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.examDates", "quote": "薬 ○ ー ー", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月10日（火）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "subjects", "quote": "◎ 外国語（100） ◎理科③（150） ◎数学③（100）", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 10, "verified": true },
+      { "field": "heiganPolicy", "quote": "試験日が異なれば他学部・他学科・他専攻の併願も可能。", "pdfFile": "名城大学/2026_実績/ippan_一般選抜入学試験要項_20260706.pdf", "page": 6, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-06"
+  }
+]

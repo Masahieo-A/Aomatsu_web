@@ -1,0 +1,9 @@
+# 本番サイトにデプロイしない内部資料・開発用ファイル
+teacher-guide.html
+admin-guide.html
+docs/
+apps-script/
+sample data/
+.claude/
+serve.json
+*.md

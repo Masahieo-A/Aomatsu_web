@@ -1,0 +1,509 @@
+[
+  {
+    "id": "aichi-gakuin-2026-sogo-koudaisetsuzoku-rekishi",
+    "university": "愛知学院大学",
+    "faculty": "文学部",
+    "department": "歴史学科",
+    "methodName": "高大接続型入試（事前課題型）",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": [
+        "2025-10-19"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2025-11-01",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": 35000,
+    "feeNote": "第1次選考15,000円、第2次選考20,000円（第2次選考まで受験した場合の合計35,000円）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "事前体験型 事前課題型 自己考察型",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "faculty",
+        "quote": "歴 史 学 科 − − ● − −",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "10月19日㈰ 11月１日㈯ 11月12日㈬ ９月29日㈪",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "⑶ ＡО入試・高大接続型入試は、合格した場合には本学に入学することを条件とします。",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "・ＡО入試・高大接続型入試 第１次選考：15,000円 第2次選考：20,000円",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "④歴史に強い興味関心を有し、研究意欲を有する者\t【書類審査】\n・学習成績の状況:30点\n・事前課題レポート:50点\n・事前課題レポート以\n外の出願書類:20点\t【面接･プレゼンテー\nション】\n30分:100点",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 10,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "flagged修復パス（原本照合済）",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-sogo-koudaisetsuzoku-shinri",
+    "university": "愛知学院大学",
+    "faculty": "心理学部",
+    "department": "心理学科",
+    "methodName": "高大接続型入試（事前体験型）",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "小論文",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": [
+        "2025-10-19"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2025-11-01",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": 35000,
+    "feeNote": "第1次選考15,000円、第2次選考20,000円（第2次選考まで受験した場合の合計35,000円）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      {
+        "field": "faculty",
+        "quote": "心 理 学 科 − ● − − −",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "【小論文】\nテーマ型 60分\n800字:50点\n（論題は試験室で提示）\n【面接】\n健 健\n康 康 個人面接",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 8,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "⑶ ＡО入試・高大接続型入試は、合格した場合には本学に入学することを条件とします。",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "・ＡО入試・高大接続型入試 第１次選考：15,000円 第2次選考：20,000円",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "methodName",
+        "quote": "⑵大学入学試験の出願資格を有している者（既卒者は卒後1年以内まで）＊\n心 理 心 理 ５名 ⑶出願学科が実施する事前体験型講義に参加した者 【小論文】",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 8,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "flagged修復パス（原本照合済）",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-sogo-koudaisetsuzoku-shogaku",
+    "university": "愛知学院大学",
+    "faculty": "商学部",
+    "department": "商学科",
+    "methodName": "高大接続型入試（事前課題型）",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "小論文",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": [
+        "2025-10-19"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2025-11-01",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": 35000,
+    "feeNote": "第1次選考15,000円、第2次選考20,000円（第2次選考まで受験した場合の合計35,000円）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      {
+        "field": "faculty",
+        "quote": "商 学 科 − − ● − −",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "⑶ ＡО入試・高大接続型入試は、合格した場合には本学に入学することを条件とします。",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "・ＡО入試・高大接続型入試 第１次選考：15,000円 第2次選考：20,000円",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "methodName",
+        "quote": "・【ＡО入試】【高大接続型入試（事前課題型）｢商学科｣｢経営学科｣】へ出願する方が使用します。",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "外の出願書類:30点\t【小論文】\nテーマ型 60分\n800字:40点\n（論題は試験室で提示）\n【面接･プレゼンテー\nション】\n30分:60点",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 10,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "flagged修復パス（原本照合済）",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-sogo-koudaisetsuzoku-keiei",
+    "university": "愛知学院大学",
+    "faculty": "経営学部",
+    "department": "経営学科",
+    "methodName": "高大接続型入試（事前課題型）",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "小論文",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": [
+        "2025-10-19"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2025-11-01",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": 35000,
+    "feeNote": "第1次選考15,000円、第2次選考20,000円（第2次選考まで受験した場合の合計35,000円）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      {
+        "field": "faculty",
+        "quote": "経 営 学 科 − − ● − −",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "⑶ ＡО入試・高大接続型入試は、合格した場合には本学に入学することを条件とします。",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "・ＡО入試・高大接続型入試 第１次選考：15,000円 第2次選考：20,000円",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "methodName",
+        "quote": "・【ＡО入試】【高大接続型入試（事前課題型）｢商学科｣｢経営学科｣】へ出願する方が使用します。",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 14,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "外の出願書類:30点\t【小論文】\nテーマ型 60分\n800字:40点\n（論題は試験室で提示）\n【面接･プレゼンテー\nション】\n30分:60点",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 10,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "flagged修復パス（原本照合済）",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-sogo-koudaisetsuzoku-sogoseisaku",
+    "university": "愛知学院大学",
+    "faculty": "総合政策学部",
+    "department": "総合政策学科",
+    "methodName": "高大接続型入試（事前体験型）",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": [
+        "2025-10-19"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2025-11-01",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": 35000,
+    "feeNote": "第1次選考15,000円、第2次選考20,000円（第2次選考まで受験した場合の合計35,000円）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      {
+        "field": "faculty",
+        "quote": "総 合 政 策 学 科 − ● − − −",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "総 総 （※）60点は出願書類 【面接】\n合 合 で評価し、公民･\n政 政 10名 個人面接",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 8,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "⑶ ＡО入試・高大接続型入試は、合格した場合には本学に入学することを条件とします。",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "・ＡО入試・高大接続型入試 第１次選考：15,000円 第2次選考：20,000円",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 15,
+        "verified": true
+      },
+      {
+        "field": "methodName",
+        "quote": "総合政策学部 総 合 政 策 学 科 主張を伝えるパラグラフラ\n男女共同参画の現状と課題\nイティング",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "flagged修復パス（原本照合済）",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-sogo-eigoshikaku-eibei",
+    "university": "愛知学院大学",
+    "faculty": "文学部",
+    "department": "英語英米文化学科",
+    "methodName": "英語資格特別入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": [
+        "2025-10-19"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2025-11-01",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": 35000,
+    "feeNote": "第1次選考はありません",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      {
+        "field": "faculty",
+        "quote": "英語英米文化学科 − ● − − ●",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "英語資格特別入試 35,000円（第１次選考はありません）",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "10月19日㈰",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "⑷ 英語資格特別入試は、入学手続き完了後、やむをえず入学を辞退する場合には、速やかに入学辞退届\nを提出してください。2026 年３月 31 日㈫正午（昼 12 時）までに本学入試センターに入学辞退届を\n提出した者は、入学金以外を返還します。",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "TOEIC Bridge (L&R) 73点以上\t【書類審査】\n・学習成績の状況:30点\n・出願書類:40点\n【面接】\n個人面接（日本語と英語）\n20分程度:30点",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 12,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "flagged修復パス（原本照合済）",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-sogo-eigoshikaku-global",
+    "university": "愛知学院大学",
+    "faculty": "文学部",
+    "department": "グローバル英語学科",
+    "methodName": "英語資格特別入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": [
+        "2025-10-19"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2025-11-01",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": 35000,
+    "feeNote": "第1次選考はありません",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      {
+        "field": "faculty",
+        "quote": "グローバル英語学科 − ● − − ●",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "英語資格特別入試 35,000円（第１次選考はありません）",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 13,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "⑷ 英語資格特別入試は、入学手続き完了後、やむをえず入学を辞退する場合には、速やかに入学辞退届\nを提出してください。2026 年３月 31 日㈫正午（昼 12 時）までに本学入試センターに入学辞退届を\n提出した者は、入学金以外を返還します。",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 17,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "TOEIC Bridge (L&R) 73点以上\t【書類審査】\n・学習成績の状況:30点\n・出願書類:40点\n【面接】\n個人面接（日本語と英語）\n20分程度:30点",
+        "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf",
+        "page": 12,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "flagged修復パス（原本照合済）",
+    "reviewedAt": "2026-07-07"
+  }
+]

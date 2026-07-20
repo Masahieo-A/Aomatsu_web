@@ -1,0 +1,6033 @@
+[
+  {
+    "id": "shubun-2027-sogo-kenko-ao1ki",
+    "university": "修文大学",
+    "faculty": "健康栄養学部",
+    "department": "管理栄養学科",
+    "methodName": "総合型選抜（AO）1期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": null,
+      "applicationEnd": null,
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-07-22",
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（２回目以降受験の場合、割引制度が適用となり、検定料は１０，０００円になります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "7/22（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "個人面接\n（口頭試問含む）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-kenko-ao2ki",
+    "university": "修文大学",
+    "faculty": "健康栄養学部",
+    "department": "管理栄養学科",
+    "methodName": "総合型選抜（AO）2期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-18",
+      "examDates": [
+        "2026-10-03"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-03",
+      "enrollDeadline": "2026-11-13"
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（２回目以降受験の場合、割引制度が適用となり、検定料は１０，０００円になります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "9/ 1（火）〜 9/18（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "10/ 3（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "11/ 3（火・祝）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "11/13（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-kenko-ao3ki",
+    "university": "修文大学",
+    "faculty": "健康栄養学部",
+    "department": "管理栄養学科",
+    "methodName": "総合型選抜（AO）3期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-18",
+      "examDates": [
+        "2026-10-03"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-03",
+      "enrollDeadline": "2026-11-13"
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（２回目以降受験の場合、割引制度が適用となり、検定料は１０，０００円になります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "9/ 1（火）〜 9/18（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "10/ 3（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "11/ 3（火・祝）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "11/13（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-kenko-ao5ki",
+    "university": "修文大学",
+    "faculty": "健康栄養学部",
+    "department": "管理栄養学科",
+    "methodName": "総合型選抜（AO）5期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-11-24",
+      "applicationEnd": "2026-12-04",
+      "examDates": [
+        "2026-12-12"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-19",
+      "enrollDeadline": "2026-12-25"
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（２回目以降受験の場合、割引制度が適用となり、検定料は１０，０００円になります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "11/24（火）〜12/ 4（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "12/12（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12/19（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12/25（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-kenko-ao6ki",
+    "university": "修文大学",
+    "faculty": "健康栄養学部",
+    "department": "管理栄養学科",
+    "methodName": "総合型選抜（AO）6期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-02-01",
+      "applicationEnd": "2027-02-24",
+      "examDates": [
+        "2027-03-05"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-12",
+      "enrollDeadline": "2027-03-18"
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（２回目以降受験の場合、割引制度が適用となり、検定料は１０，０００円になります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "2/ 1（月）〜 2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "3/ 5（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3/12（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3/18（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-iryo-ao1ki",
+    "university": "修文大学",
+    "faculty": "医療科学部",
+    "department": "臨床検査学科",
+    "methodName": "総合型選抜（AO）1期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": null,
+      "applicationEnd": null,
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-07-22",
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（２回目以降受験の場合、割引制度が適用となり、検定料は１０，０００円になります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "7/22（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "個人面接\n（口頭試問含む）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-iryo-ao2ki",
+    "university": "修文大学",
+    "faculty": "医療科学部",
+    "department": "臨床検査学科",
+    "methodName": "総合型選抜（AO）2期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-18",
+      "examDates": [
+        "2026-10-03"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-03",
+      "enrollDeadline": "2026-11-13"
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（２回目以降受験の場合、割引制度が適用となり、検定料は１０，０００円になります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "9/ 1（火）〜 9/18（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "10/ 3（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "11/ 3（火・祝）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "11/13（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-iryo-ao3ki",
+    "university": "修文大学",
+    "faculty": "医療科学部",
+    "department": "臨床検査学科",
+    "methodName": "総合型選抜（AO）3期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-18",
+      "examDates": [
+        "2026-10-03"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-03",
+      "enrollDeadline": "2026-11-13"
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（２回目以降受験の場合、割引制度が適用となり、検定料は１０，０００円になります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "9/ 1（火）〜 9/18（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "10/ 3（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "11/ 3（火・祝）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "11/13（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-iryo-ao5ki",
+    "university": "修文大学",
+    "faculty": "医療科学部",
+    "department": "臨床検査学科",
+    "methodName": "総合型選抜（AO）5期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-11-24",
+      "applicationEnd": "2026-12-04",
+      "examDates": [
+        "2026-12-12"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-19",
+      "enrollDeadline": "2026-12-25"
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（２回目以降受験の場合、割引制度が適用となり、検定料は１０，０００円になります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "11/24（火）〜12/ 4（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "12/12（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12/19（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12/25（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-iryo-ao6ki",
+    "university": "修文大学",
+    "faculty": "医療科学部",
+    "department": "臨床検査学科",
+    "methodName": "総合型選抜（AO）6期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-02-01",
+      "applicationEnd": "2027-02-24",
+      "examDates": [
+        "2027-03-05"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-12",
+      "enrollDeadline": "2027-03-18"
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（２回目以降受験の場合、割引制度が適用となり、検定料は１０，０００円になります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "2/ 1（月）〜 2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "3/ 5（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3/12（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3/18（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-kango-ao3ki",
+    "university": "修文大学",
+    "faculty": "看護学部",
+    "department": "看護学科",
+    "methodName": "総合型選抜（AO）3期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-01",
+      "applicationEnd": "2026-09-18",
+      "examDates": [
+        "2026-10-03"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-03",
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（２回目以降受験の場合、割引制度が適用となり、検定料は１０，０００円になります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "9/ 1（火）〜 9/18（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "10/ 3（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "11/ 3（火・祝）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-kango-ao4ki",
+    "university": "修文大学",
+    "faculty": "看護学部",
+    "department": "看護学科",
+    "methodName": "総合型選抜（AO）4期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接",
+        "基礎学力調査"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-10-26",
+      "applicationEnd": "2026-11-11",
+      "examDates": [
+        "2026-11-22"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-01",
+      "enrollDeadline": "2026-12-15"
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（２回目以降受験の場合、割引制度が適用となり、検定料は１０，０００円になります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "10/26（月）〜11/11（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11/22（日）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12/ 1（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12/15（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 4,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kobo-kenko-ippana",
+    "university": "修文大学",
+    "faculty": "健康栄養学部",
+    "department": "管理栄養学科",
+    "methodName": "学校推薦型選抜（一般推薦）A方式",
+    "methodCategory": "kobo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接",
+        "小論文"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-10-26",
+      "applicationEnd": "2026-11-11",
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-01",
+      "enrollDeadline": "2026-12-15"
+    },
+    "fee": 30000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "（一般推薦）［A方式：専願制］［B方式：併願制］",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "①本学各学部のアドミッション・ポリシーを理解し、合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "10/26（月）〜11/11（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11/21（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12/ 1（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12/15（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kobo-kenko-ippanb",
+    "university": "修文大学",
+    "faculty": "健康栄養学部",
+    "department": "管理栄養学科",
+    "methodName": "学校推薦型選抜（一般推薦）B方式",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接",
+        "小論文"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-10-26",
+      "applicationEnd": "2026-11-11",
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-01",
+      "enrollDeadline": "2026-12-15"
+    },
+    "fee": 30000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "（一般推薦）［A方式：専願制］［B方式：併願制］",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "①本学各学部のアドミッション・ポリシーを理解した者。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "10/26（月）〜11/11（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11/21（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12/ 1（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12/15（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kobo-kango-ippana",
+    "university": "修文大学",
+    "faculty": "看護学部",
+    "department": "看護学科",
+    "methodName": "学校推薦型選抜（一般推薦）A方式",
+    "methodCategory": "kobo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接",
+        "小論文"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-10-26",
+      "applicationEnd": "2026-11-11",
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-01",
+      "enrollDeadline": "2026-12-15"
+    },
+    "fee": 30000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "（一般推薦）［A方式：専願制］［B方式：併願制］",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "①本学各学部のアドミッション・ポリシーを理解し、合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "10/26（月）〜11/11（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11/21（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12/ 1（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12/15（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kobo-kango-ippanb",
+    "university": "修文大学",
+    "faculty": "看護学部",
+    "department": "看護学科",
+    "methodName": "学校推薦型選抜（一般推薦）B方式",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接",
+        "小論文"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-10-26",
+      "applicationEnd": "2026-11-11",
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-01",
+      "enrollDeadline": "2026-12-15"
+    },
+    "fee": 30000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "（一般推薦）［A方式：専願制］［B方式：併願制］",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "①本学各学部のアドミッション・ポリシーを理解した者。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "10/26（月）〜11/11（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11/21（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12/ 1（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12/15（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kobo-iryo-ippana",
+    "university": "修文大学",
+    "faculty": "医療科学部",
+    "department": "臨床検査学科",
+    "methodName": "学校推薦型選抜（一般推薦）A方式",
+    "methodCategory": "kobo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接",
+        "小論文"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-10-26",
+      "applicationEnd": "2026-11-11",
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-01",
+      "enrollDeadline": "2026-12-15"
+    },
+    "fee": 30000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "（一般推薦）［A方式：専願制］［B方式：併願制］",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "①本学各学部のアドミッション・ポリシーを理解し、合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "10/26（月）〜11/11（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11/21（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12/ 1（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12/15（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kobo-iryo-ippanb",
+    "university": "修文大学",
+    "faculty": "医療科学部",
+    "department": "臨床検査学科",
+    "methodName": "学校推薦型選抜（一般推薦）B方式",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接",
+        "小論文"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-10-26",
+      "applicationEnd": "2026-11-11",
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-01",
+      "enrollDeadline": "2026-12-15"
+    },
+    "fee": 30000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "（一般推薦）［A方式：専願制］［B方式：併願制］",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "①本学各学部のアドミッション・ポリシーを理解した者。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "10/26（月）〜11/11（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11/21（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12/ 1（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12/15（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kobo-kenko-shiteiko",
+    "university": "修文大学",
+    "faculty": "健康栄養学部",
+    "department": "管理栄養学科",
+    "methodName": "学校推薦型選抜（指定校）",
+    "methodCategory": "shiteiko",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": null,
+      "applicationEnd": null,
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": null,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "学校推薦型選抜（指定校）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "①学校推薦型選抜（指定校）においては学習成績を満たし合格した者。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 2,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "本学の試験は、個人面接（口頭試問含む）です。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "flagged",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kobo-kango-shiteiko",
+    "university": "修文大学",
+    "faculty": "看護学部",
+    "department": "看護学科",
+    "methodName": "学校推薦型選抜（指定校）",
+    "methodCategory": "shiteiko",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": null,
+      "applicationEnd": null,
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": null,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "学校推薦型選抜（指定校）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "①学校推薦型選抜（指定校）においては学習成績を満たし合格した者。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 2,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "本学の試験は、個人面接（口頭試問含む）です。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "flagged",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kobo-iryo-shiteiko",
+    "university": "修文大学",
+    "faculty": "医療科学部",
+    "department": "臨床検査学科",
+    "methodName": "学校推薦型選抜（指定校）",
+    "methodCategory": "shiteiko",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": null,
+      "applicationEnd": null,
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": null,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "学校推薦型選抜（指定校）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "①学校推薦型選抜（指定校）においては学習成績を満たし合格した者。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 2,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "本学の試験は、個人面接（口頭試問含む）です。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "flagged",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-ippan-kenko-zenki",
+    "university": "修文大学",
+    "faculty": "健康栄養学部",
+    "department": "管理栄養学科",
+    "methodName": "一般選抜前期",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        },
+        {
+          "from": [
+            {
+              "subject": "国語",
+              "range": "現代の国語・言語文化（古文・漢文を除く）・論理国語"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-01-04",
+      "applicationEnd": "2027-01-21",
+      "examDates": [
+        "2027-01-29",
+        "2027-01-30"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2027-02-16",
+      "enrollDeadline": "2027-02-24"
+    },
+    "fee": 30000,
+    "feeNote": "両日受験可能（2回目以降受験、併願（同時出願）受験の場合、割引制度が適用となります。P1参照）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "1/ 4（月）〜1/21（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1/29（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1/30（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2/16（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "4科目から 9：30〜10：30",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "2科目から 11：20〜12：20",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-ippan-kenko-koki",
+    "university": "修文大学",
+    "faculty": "健康栄養学部",
+    "department": "管理栄養学科",
+    "methodName": "一般選抜後期",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        },
+        {
+          "from": [
+            {
+              "subject": "国語",
+              "range": "現代の国語・言語文化（古文・漢文を除く）・論理国語"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-02-01",
+      "applicationEnd": "2027-02-24",
+      "examDates": [
+        "2027-03-05"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-12",
+      "enrollDeadline": "2027-03-18"
+    },
+    "fee": 30000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "2/ 1（月）〜2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "3/5（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3/12（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3/18（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-ippan-kango-zenki",
+    "university": "修文大学",
+    "faculty": "看護学部",
+    "department": "看護学科",
+    "methodName": "一般選抜前期",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        },
+        {
+          "from": [
+            {
+              "subject": "国語",
+              "range": "現代の国語・言語文化（古文・漢文を除く）・論理国語"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-01-04",
+      "applicationEnd": "2027-01-21",
+      "examDates": [
+        "2027-01-29",
+        "2027-01-30"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2027-02-16",
+      "enrollDeadline": "2027-02-24"
+    },
+    "fee": 30000,
+    "feeNote": "両日受験可能（2回目以降受験、併願（同時出願）受験の場合、割引制度が適用となります。P1参照）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "1/ 4（月）〜1/21（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1/29（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1/30（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2/16（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "4科目から 9：30〜10：30",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "2科目から 11：20〜12：20",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-ippan-kango-koki",
+    "university": "修文大学",
+    "faculty": "看護学部",
+    "department": "看護学科",
+    "methodName": "一般選抜後期",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        },
+        {
+          "from": [
+            {
+              "subject": "国語",
+              "range": "現代の国語・言語文化（古文・漢文を除く）・論理国語"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-02-01",
+      "applicationEnd": "2027-02-24",
+      "examDates": [
+        "2027-03-05"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-12",
+      "enrollDeadline": "2027-03-18"
+    },
+    "fee": 30000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "2/ 1（月）〜2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "3/5（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3/12（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3/18（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-ippan-iryo-zenki",
+    "university": "修文大学",
+    "faculty": "医療科学部",
+    "department": "臨床検査学科",
+    "methodName": "一般選抜前期",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        },
+        {
+          "from": [
+            {
+              "subject": "国語",
+              "range": "現代の国語・言語文化（古文・漢文を除く）・論理国語"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-01-04",
+      "applicationEnd": "2027-01-21",
+      "examDates": [
+        "2027-01-29",
+        "2027-01-30"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2027-02-16",
+      "enrollDeadline": "2027-02-24"
+    },
+    "fee": 30000,
+    "feeNote": "両日受験可能（2回目以降受験、併願（同時出願）受験の場合、割引制度が適用となります。P1参照）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "1/ 4（月）〜1/21（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1/29（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1/30（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2/16（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "4科目から 9：30〜10：30",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "2科目から 11：20〜12：20",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-ippan-iryo-koki",
+    "university": "修文大学",
+    "faculty": "医療科学部",
+    "department": "臨床検査学科",
+    "methodName": "一般選抜後期",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        },
+        {
+          "from": [
+            {
+              "subject": "国語",
+              "range": "現代の国語・言語文化（古文・漢文を除く）・論理国語"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-02-01",
+      "applicationEnd": "2027-02-24",
+      "examDates": [
+        "2027-03-05"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-12",
+      "enrollDeadline": "2027-03-18"
+    },
+    "fee": 30000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "2/ 1（月）〜2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "3/5（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3/12（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3/18（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 5,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-ippan-kenko-plus-zenki",
+    "university": "修文大学",
+    "faculty": "健康栄養学部",
+    "department": "管理栄養学科",
+    "methodName": "一般選抜共通テストプラス方式前期",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語",
+              "range": "近代以降の文章のみ"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅡBC"
+            },
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-01-04",
+      "applicationEnd": "2027-01-21",
+      "examDates": [
+        "2027-01-29",
+        "2027-01-30"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2027-02-16",
+      "enrollDeadline": "2027-02-24"
+    },
+    "fee": 15000,
+    "feeNote": "15,000円（2回目以降受験、併願（同時出願）受験の場合、割引制度が適用となります。P1参照）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般選抜\n共通テストプラス方式",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "1/ 4（月）〜1/21（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1/29（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1/30（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2/16（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-ippan-kenko-plus-koki",
+    "university": "修文大学",
+    "faculty": "健康栄養学部",
+    "department": "管理栄養学科",
+    "methodName": "一般選抜共通テストプラス方式後期",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語",
+              "range": "近代以降の文章のみ"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅡBC"
+            },
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-02-01",
+      "applicationEnd": "2027-02-24",
+      "examDates": [
+        "2027-03-05"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-12",
+      "enrollDeadline": "2027-03-18"
+    },
+    "fee": 15000,
+    "feeNote": "15,000円（2回目以降受験、併願（同時出願）受験の場合、割引制度が適用となります。P1参照）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般選抜\n共通テストプラス方式",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "2/ 1（月）〜2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "3/5（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3/12（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3/18（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-ippan-iryo-plus-zenki",
+    "university": "修文大学",
+    "faculty": "医療科学部",
+    "department": "臨床検査学科",
+    "methodName": "一般選抜共通テストプラス方式前期",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語",
+              "range": "近代以降の文章のみ"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅡBC"
+            },
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-01-04",
+      "applicationEnd": "2027-01-21",
+      "examDates": [
+        "2027-01-29",
+        "2027-01-30"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2027-02-16",
+      "enrollDeadline": "2027-02-24"
+    },
+    "fee": 15000,
+    "feeNote": "15,000円（2回目以降受験、併願（同時出願）受験の場合、割引制度が適用となります。P1参照）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般選抜\n共通テストプラス方式",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "1/ 4（月）〜1/21（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1/29（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1/30（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2/16（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-ippan-iryo-plus-koki",
+    "university": "修文大学",
+    "faculty": "医療科学部",
+    "department": "臨床検査学科",
+    "methodName": "一般選抜共通テストプラス方式後期",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語",
+              "range": "近代以降の文章のみ"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅡBC"
+            },
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-02-01",
+      "applicationEnd": "2027-02-24",
+      "examDates": [
+        "2027-03-05"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-12",
+      "enrollDeadline": "2027-03-18"
+    },
+    "fee": 15000,
+    "feeNote": "15,000円（2回目以降受験、併願（同時出願）受験の場合、割引制度が適用となります。P1参照）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般選抜\n共通テストプラス方式",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "2/ 1（月）〜2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "3/5（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3/12（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3/18（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kyotsu-kenko-zenki",
+    "university": "修文大学",
+    "faculty": "健康栄養学部",
+    "department": "管理栄養学科",
+    "methodName": "大学入学共通テスト利用選抜前期",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "数学",
+              "range": "Ⅰ"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅡBC"
+            },
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "地理",
+              "range": "基礎相当科目"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-01-04",
+      "applicationEnd": "2027-01-26",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2027-02-16",
+      "enrollDeadline": "2027-02-24"
+    },
+    "fee": 15000,
+    "feeNote": "15,000円（2回目以降受験、併願（同時出願）受験の場合、割引制度が適用となります。P1参照）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "大学入学共通テスト利用選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "1/ 4（月）〜1/26（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2/16（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "個別学力試験を",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kyotsu-kenko-chuki",
+    "university": "修文大学",
+    "faculty": "健康栄養学部",
+    "department": "管理栄養学科",
+    "methodName": "大学入学共通テスト利用選抜中期",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "数学",
+              "range": "Ⅰ"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅡBC"
+            },
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "地理",
+              "range": "基礎相当科目"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-02-01",
+      "applicationEnd": "2027-02-24",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-04",
+      "enrollDeadline": null
+    },
+    "fee": 15000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "大学入学共通テスト利用選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "2/ 1（月）〜2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3/ 4（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kyotsu-kenko-koki",
+    "university": "修文大学",
+    "faculty": "健康栄養学部",
+    "department": "管理栄養学科",
+    "methodName": "大学入学共通テスト利用選抜後期",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "数学",
+              "range": "Ⅰ"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅡBC"
+            },
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "地理",
+              "range": "基礎相当科目"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-03-01",
+      "applicationEnd": "2027-03-15",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-19",
+      "enrollDeadline": null
+    },
+    "fee": 15000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "大学入学共通テスト利用選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "3/1（月）〜3/15（月）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3/19（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kyotsu-kango-zenki",
+    "university": "修文大学",
+    "faculty": "看護学部",
+    "department": "看護学科",
+    "methodName": "大学入学共通テスト利用選抜前期",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "数学",
+              "range": "Ⅰ"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅡBC"
+            },
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "地理",
+              "range": "基礎相当科目"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-01-04",
+      "applicationEnd": "2027-01-26",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2027-02-16",
+      "enrollDeadline": "2027-02-24"
+    },
+    "fee": 15000,
+    "feeNote": "15,000円（2回目以降受験、併願（同時出願）受験の場合、割引制度が適用となります。P1参照）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "大学入学共通テスト利用選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "1/ 4（月）〜1/26（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2/16（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "個別学力試験を",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kyotsu-kango-chuki",
+    "university": "修文大学",
+    "faculty": "看護学部",
+    "department": "看護学科",
+    "methodName": "大学入学共通テスト利用選抜中期",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "数学",
+              "range": "Ⅰ"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅡBC"
+            },
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "地理",
+              "range": "基礎相当科目"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-02-01",
+      "applicationEnd": "2027-02-24",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-04",
+      "enrollDeadline": null
+    },
+    "fee": 15000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "大学入学共通テスト利用選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "2/ 1（月）〜2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3/ 4（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kyotsu-kango-koki",
+    "university": "修文大学",
+    "faculty": "看護学部",
+    "department": "看護学科",
+    "methodName": "大学入学共通テスト利用選抜後期",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "数学",
+              "range": "Ⅰ"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅡBC"
+            },
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "地理",
+              "range": "基礎相当科目"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-03-01",
+      "applicationEnd": "2027-03-15",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-19",
+      "enrollDeadline": null
+    },
+    "fee": 15000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "大学入学共通テスト利用選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "3/1（月）〜3/15（月）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3/19（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kyotsu-iryo-zenki",
+    "university": "修文大学",
+    "faculty": "医療科学部",
+    "department": "臨床検査学科",
+    "methodName": "大学入学共通テスト利用選抜前期",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "数学",
+              "range": "Ⅰ"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅡBC"
+            },
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "地理",
+              "range": "基礎相当科目"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-01-04",
+      "applicationEnd": "2027-01-26",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2027-02-16",
+      "enrollDeadline": "2027-02-24"
+    },
+    "fee": 15000,
+    "feeNote": "15,000円（2回目以降受験、併願（同時出願）受験の場合、割引制度が適用となります。P1参照）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "大学入学共通テスト利用選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "1/ 4（月）〜1/26（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2/16（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "個別学力試験を",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kyotsu-iryo-chuki",
+    "university": "修文大学",
+    "faculty": "医療科学部",
+    "department": "臨床検査学科",
+    "methodName": "大学入学共通テスト利用選抜中期",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "数学",
+              "range": "Ⅰ"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅡBC"
+            },
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "地理",
+              "range": "基礎相当科目"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-02-01",
+      "applicationEnd": "2027-02-24",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-04",
+      "enrollDeadline": null
+    },
+    "fee": 15000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "大学入学共通テスト利用選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "2/ 1（月）〜2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3/ 4（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kyotsu-iryo-koki",
+    "university": "修文大学",
+    "faculty": "医療科学部",
+    "department": "臨床検査学科",
+    "methodName": "大学入学共通テスト利用選抜後期",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "数学",
+              "range": "Ⅰ"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅡBC"
+            },
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "地理",
+              "range": "基礎相当科目"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-03-01",
+      "applicationEnd": "2027-03-15",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-19",
+      "enrollDeadline": null
+    },
+    "fee": 15000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "大学入学共通テスト利用選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "3/1（月）〜3/15（月）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3/19（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 6,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-seikatsu-ao1ki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "生活文化学科",
+    "methodName": "総合型選抜（AO）1期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-06-01",
+      "applicationEnd": "2026-06-30",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-07-22",
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（一度入学検定料（30,000円）をお振り込みいただいていれば、2回目以降受験の場合、入学検定料は不要となります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "6/ 1（月）〜 6/30（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-seikatsu-ao2ki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "生活文化学科",
+    "methodName": "総合型選抜（AO）2期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-07-02",
+      "applicationEnd": "2026-07-29",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-08-29",
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（一度入学検定料（30,000円）をお振り込みいただいていれば、2回目以降受験の場合、入学検定料は不要となります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "7/ 2（木）〜 7/29（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-seikatsu-ao3ki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "生活文化学科",
+    "methodName": "総合型選抜（AO）3期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-08-03",
+      "applicationEnd": "2026-09-02",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-09-26",
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（一度入学検定料（30,000円）をお振り込みいただいていれば、2回目以降受験の場合、入学検定料は不要となります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "8/ 3（月）〜 9/ 2（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-seikatsu-ao4ki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "生活文化学科",
+    "methodName": "総合型選抜（AO）4期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-10-26",
+      "applicationEnd": "2026-11-11",
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-01",
+      "enrollDeadline": "2026-12-15"
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（一度入学検定料（30,000円）をお振り込みいただいていれば、2回目以降受験の場合、入学検定料は不要となります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "10/26（月）〜11/11（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11/21（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12/ 1（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12/15（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-seikatsu-ao5ki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "生活文化学科",
+    "methodName": "総合型選抜（AO）5期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-11-24",
+      "applicationEnd": "2026-12-04",
+      "examDates": [
+        "2026-12-12"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-19",
+      "enrollDeadline": "2026-12-25"
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（一度入学検定料（30,000円）をお振り込みいただいていれば、2回目以降受験の場合、入学検定料は不要となります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "11/24（火）〜12/ 4（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "12/12（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12/19（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12/25（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-seikatsu-ao6ki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "生活文化学科",
+    "methodName": "総合型選抜（AO）6期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-02-01",
+      "applicationEnd": "2027-02-24",
+      "examDates": [
+        "2027-03-05"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-12",
+      "enrollDeadline": "2027-03-18"
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（一度入学検定料（30,000円）をお振り込みいただいていれば、2回目以降受験の場合、入学検定料は不要となります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "2/ 1（月）〜 2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "3/ 5（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3/12（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3/18（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-yoji3-ao1ki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "幼児教育学科第三部",
+    "methodName": "総合型選抜（AO）1期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-06-01",
+      "applicationEnd": "2026-06-30",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-07-22",
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（一度入学検定料（30,000円）をお振り込みいただいていれば、2回目以降受験の場合、入学検定料は不要となります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "6/ 1（月）〜 6/30（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-yoji3-ao2ki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "幼児教育学科第三部",
+    "methodName": "総合型選抜（AO）2期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-07-02",
+      "applicationEnd": "2026-07-29",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-08-29",
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（一度入学検定料（30,000円）をお振り込みいただいていれば、2回目以降受験の場合、入学検定料は不要となります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "7/ 2（木）〜 7/29（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-yoji3-ao3ki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "幼児教育学科第三部",
+    "methodName": "総合型選抜（AO）3期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-08-03",
+      "applicationEnd": "2026-09-02",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2026-09-26",
+      "enrollDeadline": null
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（一度入学検定料（30,000円）をお振り込みいただいていれば、2回目以降受験の場合、入学検定料は不要となります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "8/ 3（月）〜 9/ 2（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-yoji3-ao4ki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "幼児教育学科第三部",
+    "methodName": "総合型選抜（AO）4期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-10-26",
+      "applicationEnd": "2026-11-11",
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-01",
+      "enrollDeadline": "2026-12-15"
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（一度入学検定料（30,000円）をお振り込みいただいていれば、2回目以降受験の場合、入学検定料は不要となります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "10/26（月）〜11/11（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11/21（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12/ 1（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12/15（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-yoji3-ao5ki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "幼児教育学科第三部",
+    "methodName": "総合型選抜（AO）5期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-11-24",
+      "applicationEnd": "2026-12-04",
+      "examDates": [
+        "2026-12-12"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-19",
+      "enrollDeadline": "2026-12-25"
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（一度入学検定料（30,000円）をお振り込みいただいていれば、2回目以降受験の場合、入学検定料は不要となります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "11/24（火）〜12/ 4（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "12/12（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12/19（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12/25（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-sogo-yoji3-ao6ki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "幼児教育学科第三部",
+    "methodName": "総合型選抜（AO）6期",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-02-01",
+      "applicationEnd": "2027-02-24",
+      "examDates": [
+        "2027-03-05"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-12",
+      "enrollDeadline": "2027-03-18"
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（一度入学検定料（30,000円）をお振り込みいただいていれば、2回目以降受験の場合、入学検定料は不要となります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "総合型選抜（AO）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "②合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "2/ 1（月）〜 2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "3/ 5（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3/12（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "3/18（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kobo-seikatsu-ippana",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "生活文化学科",
+    "methodName": "学校推薦型選抜（一般推薦）A方式",
+    "methodCategory": "kobo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": null,
+      "applicationEnd": null,
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-01",
+      "enrollDeadline": "2026-12-15"
+    },
+    "fee": 30000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "（一般推薦）［A方式：専願制］［B方式：併願制］",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "①本学各学科のアドミッション・ポリシーを理解し、合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11/21（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12/ 1（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12/15（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kobo-seikatsu-ippanb",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "生活文化学科",
+    "methodName": "学校推薦型選抜（一般推薦）B方式",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": null,
+      "applicationEnd": null,
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-01",
+      "enrollDeadline": "2026-12-15"
+    },
+    "fee": 30000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "（一般推薦）［A方式：専願制］［B方式：併願制］",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "①本学各学科のアドミッション・ポリシーを理解した者。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11/21（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12/ 1（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12/15（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kobo-yoji3-ippana",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "幼児教育学科第三部",
+    "methodName": "学校推薦型選抜（一般推薦）A方式",
+    "methodCategory": "kobo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": null,
+      "applicationEnd": null,
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-01",
+      "enrollDeadline": "2026-12-15"
+    },
+    "fee": 30000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "（一般推薦）［A方式：専願制］［B方式：併願制］",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "①本学各学科のアドミッション・ポリシーを理解し、合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11/21（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12/ 1（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12/15（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kobo-yoji3-ippanb",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "幼児教育学科第三部",
+    "methodName": "学校推薦型選抜（一般推薦）B方式",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": null,
+      "applicationEnd": null,
+      "examDates": [
+        "2026-11-21"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-01",
+      "enrollDeadline": "2026-12-15"
+    },
+    "fee": 30000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "（一般推薦）［A方式：専願制］［B方式：併願制］",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "①本学各学科のアドミッション・ポリシーを理解した者。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11/21（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12/ 1（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12/15（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 3,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kobo-seikatsu-shiteiko",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "生活文化学科",
+    "methodName": "学校推薦型選抜（指定校）",
+    "methodCategory": "shiteiko",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": null,
+      "applicationEnd": null,
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": null,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "学校推薦型選抜（指定校）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "①学校推薦型選抜（指定校）においては学習成績を満たし合格した者。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 2,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "本学の試験は、個人面接（口頭試問含む）です。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "flagged",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kobo-yoji3-shiteiko",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "幼児教育学科第三部",
+    "methodName": "学校推薦型選抜（指定校）",
+    "methodCategory": "shiteiko",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": null,
+      "applicationEnd": null,
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": null,
+      "enrollDeadline": null
+    },
+    "fee": null,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "学校推薦型選抜（指定校）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "①学校推薦型選抜（指定校）においては学習成績を満たし合格した者。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 2,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "本学の試験は、個人面接（口頭試問含む）です。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 9,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "flagged",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kobo-seikatsu-sports",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "生活文化学科",
+    "methodName": "学校推薦型選抜（スポーツ）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-10-26",
+      "applicationEnd": "2026-11-04",
+      "examDates": [
+        "2026-11-14"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-01",
+      "enrollDeadline": "2026-12-15"
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（一度入学検定料（30,000円）をお振り込みいただいていれば、2回目以降受験の場合、入学検定料は不要となります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "学校推薦型選抜（スポーツ）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "①本学各学科のアドミッション・ポリシーを理解し、合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "10/26（月）〜11/4（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11/14（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12/1（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12/15（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kobo-yoji3-sports",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "幼児教育学科第三部",
+    "methodName": "学校推薦型選抜（スポーツ）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-10-26",
+      "applicationEnd": "2026-11-04",
+      "examDates": [
+        "2026-11-14"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-01",
+      "enrollDeadline": "2026-12-15"
+    },
+    "fee": 30000,
+    "feeNote": "30,000円（一度入学検定料（30,000円）をお振り込みいただいていれば、2回目以降受験の場合、入学検定料は不要となります。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "学校推薦型選抜（スポーツ）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "①本学各学科のアドミッション・ポリシーを理解し、合格した場合、必ず本学へ入学する者（専願）。",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "10/26（月）〜11/4（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "11/14（土）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12/1（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12/15（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-ippan-seikatsu-zenki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "生活文化学科",
+    "methodName": "一般選抜",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [
+        {
+          "subject": "国語",
+          "range": "近代以降の文章のみ"
+        }
+      ],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "地理"
+            },
+            {
+              "subject": "日本史"
+            },
+            {
+              "subject": "世界史"
+            },
+            {
+              "subject": "公民"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "数学",
+              "range": "Ⅰ"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅡBC"
+            },
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "地理",
+              "range": "地学基礎"
+            },
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "情報"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-01-04",
+      "applicationEnd": "2027-01-21",
+      "examDates": [
+        "2027-01-29"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2027-02-16",
+      "enrollDeadline": "2027-02-24"
+    },
+    "fee": 30000,
+    "feeNote": "15,000円（合算して入学検定料を30,000円お支払いいただいていれば、以降の受験に関する入学検定料は不要です。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "subjects.required",
+        "quote": "『国語（近代以降の文章のみ）』",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "左記に示す教科・科目",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "1/ 4（月）〜1/21（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1/29（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2/16（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-ippan-yoji3-zenki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "幼児教育学科第三部",
+    "methodName": "一般選抜",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [
+        {
+          "subject": "国語",
+          "range": "近代以降の文章のみ"
+        }
+      ],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "地理"
+            },
+            {
+              "subject": "日本史"
+            },
+            {
+              "subject": "世界史"
+            },
+            {
+              "subject": "公民"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅠA"
+            },
+            {
+              "subject": "数学",
+              "range": "Ⅰ"
+            },
+            {
+              "subject": "数学",
+              "range": "ⅡBC"
+            },
+            {
+              "subject": "物理",
+              "range": "基礎"
+            },
+            {
+              "subject": "化学",
+              "range": "基礎"
+            },
+            {
+              "subject": "生物",
+              "range": "基礎"
+            },
+            {
+              "subject": "地理",
+              "range": "地学基礎"
+            },
+            {
+              "subject": "英語"
+            },
+            {
+              "subject": "情報"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-01-04",
+      "applicationEnd": "2027-01-21",
+      "examDates": [
+        "2027-01-29"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2027-02-16",
+      "enrollDeadline": "2027-02-24"
+    },
+    "fee": 30000,
+    "feeNote": "15,000円（合算して入学検定料を30,000円お支払いいただいていれば、以降の受験に関する入学検定料は不要です。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "一般選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "subjects.required",
+        "quote": "『国語（近代以降の文章のみ）』",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "左記に示す教科・科目",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "1/ 4（月）〜1/21（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1/29（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2/16（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kyotsu-seikatsu-zenki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "生活文化学科",
+    "methodName": "大学入学共通テスト利用選抜前期",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-01-04",
+      "applicationEnd": "2027-01-26",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2027-02-16",
+      "enrollDeadline": "2027-02-24"
+    },
+    "fee": 15000,
+    "feeNote": "15,000円（合算して入学検定料を30,000円お支払いいただいていれば、以降の受験に関する入学検定料は不要です。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "大学入学共通テスト利用選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "1/ 4（月）〜1/26（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2/16（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kyotsu-seikatsu-chuki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "生活文化学科",
+    "methodName": "大学入学共通テスト利用選抜中期",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-02-01",
+      "applicationEnd": "2027-02-24",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-04",
+      "enrollDeadline": null
+    },
+    "fee": 15000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "大学入学共通テスト利用選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "2/ 1（月）〜2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3/ 4（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kyotsu-seikatsu-koki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "生活文化学科",
+    "methodName": "大学入学共通テスト利用選抜後期",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-03-01",
+      "applicationEnd": "2027-03-15",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-19",
+      "enrollDeadline": null
+    },
+    "fee": 15000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "大学入学共通テスト利用選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "3/1（月）〜3/15（月）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3/19（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kyotsu-yoji3-zenki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "幼児教育学科第三部",
+    "methodName": "大学入学共通テスト利用選抜前期",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-01-04",
+      "applicationEnd": "2027-01-26",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2027-02-16",
+      "enrollDeadline": "2027-02-24"
+    },
+    "fee": 15000,
+    "feeNote": "15,000円（合算して入学検定料を30,000円お支払いいただいていれば、以降の受験に関する入学検定料は不要です。）",
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "大学入学共通テスト利用選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "1/ 4（月）〜1/26（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2/16（火）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kyotsu-yoji3-chuki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "幼児教育学科第三部",
+    "methodName": "大学入学共通テスト利用選抜中期",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-02-01",
+      "applicationEnd": "2027-02-24",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-04",
+      "enrollDeadline": null
+    },
+    "fee": 15000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "大学入学共通テスト利用選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "2/ 1（月）〜2/24（水）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3/ 4（木）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "shubun-2027-kyotsu-yoji3-koki",
+    "university": "修文大学",
+    "faculty": "短期大学部",
+    "department": "幼児教育学科第三部",
+    "methodName": "大学入学共通テスト利用選抜後期",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-03-01",
+      "applicationEnd": "2027-03-15",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-19",
+      "enrollDeadline": null
+    },
+    "fee": 15000,
+    "feeNote": null,
+    "evidence": [
+      {
+        "field": "methodName",
+        "quote": "大学入学共通テスト利用選抜",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "3/1（月）〜3/15（月）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3/19（金）",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "15,000円",
+        "pdfFile": "修文大学/2027/guide_2027入試ガイド_20260707.pdf",
+        "page": 10,
+        "verified": true
+      }
+    ],
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  }
+]

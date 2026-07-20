@@ -1,0 +1,1278 @@
+[
+  {
+    "id": "aichi-gakuin-2026-ippan-zenki-a-bungaku",
+    "university": "愛知学院大学",
+    "faculty": "文学部",
+    "department": "-",
+    "methodName": "前期試験A",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "国語", "range": "現代の国語・言語文化・論理国語・古典探究(いずれも漢文を除く)" }, { "subject": "英語" }],
+      "choiceGroups": [{ "from": [{ "subject": "日本史" }, { "subject": "世界史" }, { "subject": "公民" }, { "subject": "数学", "range": "ⅠAⅡ(図形の性質､場合の数と確率)" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-06",
+      "applicationEnd": "2026-01-19",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-03", "2026-02-04"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-13",
+      "enrollDeadline": "2026-02-20"
+    },
+    "fee": 30000,
+    "feeNote": "2出願目以降15,000円",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "methodName", "quote": "〔３〕前期試験Ａ", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true },
+      { "field": "schedule.applicationStart", "quote": "2026年\n1月6日（火）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true },
+      { "field": "schedule.applicationEnd", "quote": "1月19日（月）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true },
+      { "field": "schedule.examDates", "quote": "2月1日（日）\n2月2日（月）\n経 営 学 部 2月13日（金）\n2月3日（火）\n経 済 学 部 2月4日（水）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月20日（金） 3月5日（木）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "2月20日（金） 3月5日（木）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true },
+      { "field": "fee", "quote": "30,000円（2出願目以降15,000円）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true },
+      { "field": "subjects", "quote": "文 学 部 国 語 ｢現代の国語・言語文化・論理国語・古典探究(いずれも漢文を除く)」 60分 100点", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 9, "verified": true },
+      { "field": "subjects", "quote": "経 済 学 部 地 理 歴 史 ｢日本史探究」「世界史探究」 300点 Ａ", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 9, "verified": true },
+      { "field": "heiganPolicy", "quote": "試験日が異なれば、同一学科および他学科を併願することができます。", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-ippan-zenki-a-shorigaku",
+    "university": "愛知学院大学",
+    "faculty": "心理学部",
+    "department": "心理学科",
+    "methodName": "前期試験A（Ⅰ型）",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "国語", "range": "現代の国語・言語文化・論理国語・古典探究(いずれも漢文を除く)" }, { "subject": "英語" }],
+      "choiceGroups": [{ "from": [{ "subject": "日本史" }, { "subject": "世界史" }, { "subject": "公民" }, { "subject": "数学", "range": "ⅠAⅡ(図形の性質､場合の数と確率)" }], "pick": 1 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-06",
+      "applicationEnd": "2026-01-19",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-03", "2026-02-04"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-13",
+      "enrollDeadline": "2026-02-20"
+    },
+    "fee": 30000,
+    "feeNote": "2出願目以降15,000円",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "subjects", "quote": "Ⅰ型\n2月1日 外 国 語 ｢英語コミュニケーションⅠ・Ⅱ・論理・表現Ⅰ」 60分 100点\n2月2日 300点\n地 理 歴 史 ｢日本史探究」「世界史探究」\n2月3日\n心理学部 2月4日 公 民 ｢政治・経済」 から1科目 60分 100点\n【注1】 数 学 ｢数学Ⅰ・Ⅱ・A(図形の性質､場合の数と確率)」", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 9, "verified": true },
+      { "field": "schedule.applicationStart", "quote": "2026年\n1月6日（火）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true },
+      { "field": "fee", "quote": "30,000円（2出願目以降15,000円）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-ippan-zenki-a-yakugaku",
+    "university": "愛知学院大学",
+    "faculty": "薬学部",
+    "department": "医療薬学科",
+    "methodName": "前期試験A",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }],
+      "choiceGroups": [{ "from": [{ "subject": "数学", "range": "ⅠAⅡ(図形の性質､場合の数と確率)" }, { "subject": "物理" }, { "subject": "化学" }, { "subject": "生物" }], "pick": 2 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-06",
+      "applicationEnd": "2026-01-19",
+      "examDates": ["2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-11",
+      "enrollDeadline": "2026-02-20"
+    },
+    "fee": 30000,
+    "feeNote": "2出願目以降15,000円",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "subjects", "quote": "薬 学 部 外 国 語 ｢英語コミュニケーションⅠ・Ⅱ・論理・表現Ⅰ」 60分 100点", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 9, "verified": true },
+      { "field": "schedule.examDates", "quote": "2月2日（月）\n2月3日（火）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true },
+      { "field": "schedule.resultDate", "quote": "2月11日（水）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-ippan-zenki-a-shigaku",
+    "university": "愛知学院大学",
+    "faculty": "歯学部",
+    "department": "歯学科",
+    "methodName": "前期試験A",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }],
+      "choiceGroups": [{ "from": [{ "subject": "数学", "range": "ⅠAⅡ(図形の性質､場合の数と確率)" }, { "subject": "物理" }, { "subject": "化学" }, { "subject": "生物" }], "pick": 2 }],
+      "totalCount": 3,
+      "nonAcademic": ["面接"]
+    },
+    "schedule": {
+      "applicationStart": "2026-01-06",
+      "applicationEnd": "2026-01-19",
+      "examDates": ["2026-02-02", "2026-02-03"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-11",
+      "enrollDeadline": "2026-02-20"
+    },
+    "fee": 30000,
+    "feeNote": "2出願目以降15,000円",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "subjects", "quote": "面 接 個人面接【注3】 10〜15分 −", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 9, "verified": true },
+      { "field": "schedule.examDates", "quote": "2月2日（月）\n2月3日（火）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-ippan-zenki-a-tankidaigaku",
+    "university": "愛知学院大学",
+    "faculty": "短期大学部",
+    "department": "歯科衛生学科",
+    "methodName": "前期試験A",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [{ "from": [{ "subject": "国語", "range": "現代の国語・言語文化・論理国語・古典探究(いずれも漢文を除く)" }, { "subject": "英語" }], "pick": 1 }],
+      "totalCount": 1,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-06",
+      "applicationEnd": "2026-01-19",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-03", "2026-02-04"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-13",
+      "enrollDeadline": "2026-02-20"
+    },
+    "fee": 30000,
+    "feeNote": "2出願目以降15,000円",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "subjects", "quote": "国 語 ｢現代の国語・言語文化・論理国語・古典探究(いずれも漢文を除く)」\n短 期 大 学 部 から1科目 60分 100点 100点\n外 国 語 ｢英語コミュニケーションⅠ・Ⅱ・論理・表現Ⅰ」", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 9, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-ippan-zenki-b-bungaku",
+    "university": "愛知学院大学",
+    "faculty": "文学部",
+    "department": "歴史学科・日本文化学科",
+    "methodName": "前期試験B（傾斜配点方式）",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [{ "from": [{ "subject": "国語" }, { "subject": "英語" }, { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "公民" }, { "subject": "数学" }], "pick": 2 }],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-06",
+      "applicationEnd": "2026-01-19",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-03", "2026-02-04"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-13",
+      "enrollDeadline": "2026-02-20"
+    },
+    "fee": 5000,
+    "feeNote": "前期試験Aとの同時出願必須。2出願目以降0円",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "methodName", "quote": "〔４〕 前期試験Ｂ\n（傾斜配点方式）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 11, "verified": true },
+      { "field": "fee", "quote": "入学検定料 5,000円（2出願目以降0円）\n前期試験Aとの同時出願必須", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 11, "verified": true },
+      { "field": "subjects", "quote": "国 語 ｢現代の国語・言語文化・論理国語・古典探究(いずれも漢文を除く)」\n宗教文化学科 外 国 語 ｢英語コミュニケーションⅠ・Ⅱ・論理・表現Ⅰ」\n前期試験Aの科目\n商 学 部 地理歴史 ｢日本史探究」「世界史探究」\nから高得点の2科目\n経 済 学 部 公 民 ｢政治・経済」\n法 学 部 数 学 ｢数学Ⅰ・Ⅱ・A(図形の性質､場合の数と確率)」", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 11, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-ippan-kyotsu-plus-bungaku",
+    "university": "愛知学院大学",
+    "faculty": "文学部",
+    "department": "歴史学科",
+    "methodName": "共通テストプラス試験",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [{ "from": [{ "subject": "英語" }, { "subject": "国語" }, { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "公民" }, { "subject": "数学" }, { "subject": "物理" }, { "subject": "化学" }, { "subject": "生物" }, { "subject": "情報" }], "pick": 2 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-06",
+      "applicationEnd": "2026-01-19",
+      "examDates": ["2026-02-01", "2026-02-02", "2026-02-03", "2026-02-04"],
+      "examDateSelectable": true,
+      "resultDate": "2026-02-13",
+      "enrollDeadline": "2026-02-20"
+    },
+    "fee": 5000,
+    "feeNote": "前期試験Aとの同時出願必須。2出願目以降0円",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "methodName", "quote": "〔５〕共通テストプラス試験", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 12, "verified": true },
+      { "field": "fee", "quote": "入学検定料 5,000円（2出願目以降0円）\n前期試験Aとの同時出願必須 大学入学共通テスト 2科目 ＋ 前期試験A 1科目", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 12, "verified": true },
+      { "field": "subjects", "quote": "外国語 ｢英語｣（リスニングを含む）｢ドイツ語｣｢フランス語｣｢中国語｣｢韓国語｣", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 12, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-ippan-zenki-m-bungaku",
+    "university": "愛知学院大学",
+    "faculty": "文学部",
+    "department": "-",
+    "methodName": "前期試験M（オールマーク方式）",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }],
+      "choiceGroups": [{ "from": [{ "subject": "国語" }, { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "公民" }, { "subject": "数学" }], "pick": 2 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-06",
+      "applicationEnd": "2026-01-19",
+      "examDates": ["2026-02-05"],
+      "examDateSelectable": false,
+      "resultDate": "2026-02-13",
+      "enrollDeadline": "2026-02-20"
+    },
+    "fee": 30000,
+    "feeNote": "前期試験Aと併願する場合：15,000円（2出願目以降5,000円）",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "methodName", "quote": "〔６〕前期試験Ｍ\n（オールマーク方式）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 14, "verified": true },
+      { "field": "schedule.examDates", "quote": "2月5日（木） 2月13日（金） 2月20日（金） 3月5日（木）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 14, "verified": true },
+      { "field": "fee", "quote": "入学検定料（前期試験Aと併願する場合：15,000円）\n（2出願目以降5,000円）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 14, "verified": true },
+      { "field": "subjects", "quote": "文 学 部 外国語 ｢英語コミュニケーションⅠ・Ⅱ・論理・表現Ⅰ」 60分 100点\n心 理 学 部\n健 康 科 学 部\n(健康科学科) 国 語 ｢現代の国語・言語文化・論理国語・古典探究(いずれも漢文を除く)」 全科目100%\n商 学 部 地理歴史 ｢日本史探究」「世界史探究」 2科目で マークシート 各科目とも 300点\n経 営 学 部 公 民 ｢政治・経済」 から2科目 120分 による解答 100点", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 14, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-kyotsu-riyo-1ki-3ka-bungaku",
+    "university": "愛知学院大学",
+    "faculty": "文学部",
+    "department": "-",
+    "methodName": "「共通テスト」利用試験Ⅰ期〈3科目型〉",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }],
+      "choiceGroups": [{ "from": [{ "subject": "国語" }, { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "公民" }, { "subject": "数学" }, { "subject": "物理" }, { "subject": "化学" }, { "subject": "生物" }, { "subject": "情報" }], "pick": 2 }],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-06",
+      "applicationEnd": "2026-01-23",
+      "examDates": ["2026-01-17", "2026-01-18"],
+      "examDateSelectable": false,
+      "resultDate": "2026-02-13",
+      "enrollDeadline": "2026-02-20"
+    },
+    "fee": 15000,
+    "feeNote": "2学科目以降5,000円",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "methodName", "quote": "〔７〕｢共通テスト」", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 15, "verified": true },
+      { "field": "fee", "quote": "入学検定料 15,000円（2学科目以降5,000円）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 15, "verified": true },
+      { "field": "schedule.applicationEnd", "quote": "1月23日（金）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 15, "verified": true },
+      { "field": "schedule.examDates", "quote": "1月17日（土）\n1月18日（日）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 15, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-ippan-chuki-bungaku",
+    "university": "愛知学院大学",
+    "faculty": "文学部",
+    "department": "-",
+    "methodName": "中期試験（2科目型オールマーク方式・傾斜配点方式）",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [{ "from": [{ "subject": "国語" }, { "subject": "英語" }, { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "公民" }, { "subject": "数学" }], "pick": 2 }],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-06",
+      "applicationEnd": "2026-01-23",
+      "examDates": ["2026-02-14"],
+      "examDateSelectable": false,
+      "resultDate": "2026-02-23",
+      "enrollDeadline": "2026-03-05"
+    },
+    "fee": 30000,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "methodName", "quote": "〔９〕 中期試験\n（2科目型オールマーク方式・傾斜配点方式）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 19, "verified": true },
+      { "field": "schedule.examDates", "quote": "2月14日（土） 2月23日（月）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 19, "verified": true },
+      { "field": "schedule.applicationEnd", "quote": "1月23日（金）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 19, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "3月5日（木） 3月12日（木）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 19, "verified": true },
+      { "field": "fee", "quote": "入学検定料 30,000円", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 19, "verified": true },
+      { "field": "heiganPolicy", "quote": "他試験との併願はできますが、本試験内では複数の学部・学科への出願はできません。", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 19, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-kyotsu-riyo-2ki-bungaku",
+    "university": "愛知学院大学",
+    "faculty": "文学部",
+    "department": "-",
+    "methodName": "「共通テスト」利用試験Ⅱ期（2科目型）",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [{ "from": [{ "subject": "英語" }, { "subject": "国語" }, { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "公民" }, { "subject": "数学" }, { "subject": "物理" }, { "subject": "化学" }, { "subject": "生物" }, { "subject": "情報" }], "pick": 2 }],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-01-26",
+      "applicationEnd": "2026-02-25",
+      "examDates": ["2026-03-07"],
+      "examDateSelectable": false,
+      "resultDate": "2026-03-13",
+      "enrollDeadline": "2026-03-13"
+    },
+    "fee": 15000,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "methodName", "quote": "〔10〕「共通テスト」利用試験Ⅱ期", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 21, "verified": true },
+      { "field": "schedule.applicationStart", "quote": "1月26日（月）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 21, "verified": true },
+      { "field": "schedule.applicationEnd", "quote": "2月25日（水）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 21, "verified": true },
+      { "field": "schedule.examDates", "quote": "3月7日（土） 3月13日（金）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 21, "verified": true },
+      { "field": "fee", "quote": "入学検定料 15,000円", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 21, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-ippan-koki-bungaku",
+    "university": "愛知学院大学",
+    "faculty": "文学部",
+    "department": "-",
+    "methodName": "後期試験",
+    "methodCategory": "ippan",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [{ "subject": "英語" }],
+      "choiceGroups": [{ "from": [{ "subject": "国語" }, { "subject": "日本史" }, { "subject": "世界史" }, { "subject": "公民" }, { "subject": "数学" }], "pick": 1 }],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-02-02",
+      "applicationEnd": "2026-02-25",
+      "examDates": ["2026-03-07"],
+      "examDateSelectable": false,
+      "resultDate": "2026-03-15",
+      "enrollDeadline": "2026-03-25"
+    },
+    "fee": 30000,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "methodName", "quote": "〔11〕 後期試験", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 22, "verified": true },
+      { "field": "schedule.applicationStart", "quote": "2026年\n2月2日（月）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 22, "verified": true },
+      { "field": "schedule.applicationEnd", "quote": "2月25日（水）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 22, "verified": true },
+      { "field": "schedule.examDates", "quote": "3月7日（土） 3月15日（日） 3月25日（水）", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 22, "verified": true },
+      { "field": "fee", "quote": "入学検定料 30,000円", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 22, "verified": true },
+      { "field": "subjects", "quote": "文 学 部 外 国 語 ｢英語コミュニケーションⅠ・Ⅱ・論理・表現Ⅰ」 60分 100点", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 22, "verified": true },
+      { "field": "heiganPolicy", "quote": "他試験との併願はできますが、本試験内では複数の学部・学科への出願はできません。", "pdfFile": "愛知学院大学/2026_実績/ippan_一般選抜募集要項_20260706.pdf", "page": 22, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-kobo-a-rekishi",
+    "university": "愛知学院大学",
+    "faculty": "文学部",
+    "department": "歴史学科",
+    "methodName": "公募制推薦入学試験A（専願）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["基礎学力調査"]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-30",
+      "applicationEnd": "2025-11-06",
+      "examDates": ["2025-11-15"],
+      "examDateSelectable": false,
+      "resultDate": "2025-12-01",
+      "enrollDeadline": "2025-12-12"
+    },
+    "fee": 35000,
+    "feeNote": "第2志望学科を出願する場合、追加の入学検定料は不要",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "methodName", "quote": "〔３〕 公募制推薦入学試験Ａ（専 願）", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 7, "verified": true },
+      { "field": "heiganPolicy", "quote": "本学への入学を特に希望する者（合格したら本学に入学することを条件とします）", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 7, "verified": true },
+      { "field": "schedule.applicationStart", "quote": "2025年\n10月30日㈭", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 7, "verified": true },
+      { "field": "schedule.applicationEnd", "quote": "11月６日㈭", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 7, "verified": true },
+      { "field": "schedule.examDates", "quote": "11月15日㈯", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 7, "verified": true },
+      { "field": "schedule.resultDate", "quote": "12月１日㈪", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 7, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "12月12日㈮", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 7, "verified": true },
+      { "field": "fee", "quote": "3 5 , 0 0 0 円", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 9, "verified": true },
+      { "field": "subjects.nonAcademic", "quote": "心理学部 英語・国語の基礎 60分", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-kobo-a-shinri",
+    "university": "愛知学院大学",
+    "faculty": "心理学部",
+    "department": "心理学科",
+    "methodName": "公募制推薦入学試験A（専願）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["基礎学力調査"]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-30",
+      "applicationEnd": "2025-11-06",
+      "examDates": ["2025-11-15"],
+      "examDateSelectable": false,
+      "resultDate": "2025-12-01",
+      "enrollDeadline": "2025-12-12"
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "methodName", "quote": "公 募 Ａ 経済・法・総合政策・", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 3, "verified": true },
+      { "field": "heiganPolicy", "quote": "本学への入学を特に希望する者（合格したら本学に入学することを条件とします）", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 7, "verified": true },
+      { "field": "fee", "quote": "3 5 , 0 0 0 円", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 9, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-kobo-a-yakugaku",
+    "university": "愛知学院大学",
+    "faculty": "薬学部",
+    "department": "医療薬学科",
+    "methodName": "公募制推薦入学試験A（専願）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["基礎学力調査", "面接"]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-30",
+      "applicationEnd": "2025-11-06",
+      "examDates": ["2025-11-15"],
+      "examDateSelectable": false,
+      "resultDate": "2025-12-01",
+      "enrollDeadline": "2025-12-12"
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "subjects.nonAcademic", "quote": "化学基礎・化学（「高分子化合物｣を除く） 45分", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 8, "verified": true },
+      { "field": "heiganPolicy", "quote": "本学への入学を特に希望する者（合格したら本学に入学することを条件とします）", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 7, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-kobo-a-shigaku",
+    "university": "愛知学院大学",
+    "faculty": "歯学部",
+    "department": "歯学科",
+    "methodName": "公募制推薦入学試験A（専願）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["小論文", "面接"]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-30",
+      "applicationEnd": "2025-11-06",
+      "examDates": ["2025-11-15"],
+      "examDateSelectable": false,
+      "resultDate": "2025-12-01",
+      "enrollDeadline": "2025-12-12"
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "subjects.nonAcademic", "quote": "小論文（課題文型） 60分\n歯学部\n個人面接 10〜15分", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 8, "verified": true },
+      { "field": "heiganPolicy", "quote": "本学への入学を特に希望する者（合格したら本学に入学することを条件とします）", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 7, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-kobo-a-tanki",
+    "university": "愛知学院大学",
+    "faculty": "短期大学部",
+    "department": "歯科衛生学科",
+    "methodName": "公募制推薦入学試験A（専願）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["基礎学力調査", "面接"]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-30",
+      "applicationEnd": "2025-11-06",
+      "examDates": ["2025-11-15"],
+      "examDateSelectable": false,
+      "resultDate": "2025-12-01",
+      "enrollDeadline": "2025-12-12"
+    },
+    "fee": 35000,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "subjects.nonAcademic", "quote": "適性検査\n英語・国語の基礎\n（100％マークシート解答による） 60分\n個人面接 5〜10分", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 8, "verified": true },
+      { "field": "heiganPolicy", "quote": "本学への入学を特に希望する者（合格したら本学に入学することを条件とします）", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 7, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-kobo-b-bungaku",
+    "university": "愛知学院大学",
+    "faculty": "文学部",
+    "department": "-",
+    "methodName": "公募制推薦入学試験B（併願可）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["基礎学力調査"]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-30",
+      "applicationEnd": "2025-11-06",
+      "examDates": ["2025-11-15"],
+      "examDateSelectable": false,
+      "resultDate": "2025-12-01",
+      "enrollDeadline": "2026-02-20"
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "methodName", "quote": "〔４〕 公募制推薦入学試験B （併願可）", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 11, "verified": true },
+      { "field": "heiganPolicy", "quote": "〔４〕 公募制推薦入学試験B （併願可）", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 11, "verified": true },
+      { "field": "schedule.applicationStart", "quote": "2025年\n10月30日㈭", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 11, "verified": true },
+      { "field": "schedule.applicationEnd", "quote": "11月６日㈭", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 11, "verified": true },
+      { "field": "schedule.examDates", "quote": "11月15日㈯", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 11, "verified": true },
+      { "field": "schedule.resultDate", "quote": "12月１日㈪", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 11, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "2026年\n2月20日㈮", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 11, "verified": true },
+      { "field": "subjects.nonAcademic", "quote": "適性検査\n英語・国語の基礎\n（100％マークシート解答による） 60分", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 12, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-kobo-b-kenkokagaku",
+    "university": "愛知学院大学",
+    "faculty": "健康科学部",
+    "department": "-",
+    "methodName": "公募制推薦入学試験B（併願可）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["基礎学力調査"]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-30",
+      "applicationEnd": "2025-11-06",
+      "examDates": ["2025-11-15"],
+      "examDateSelectable": false,
+      "resultDate": "2025-12-01",
+      "enrollDeadline": "2026-02-20"
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "faculty", "quote": "健康科学部\n商学部 10月30日㈭", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 11, "verified": true },
+      { "field": "heiganPolicy", "quote": "〔４〕 公募制推薦入学試験B （併願可）", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 11, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-kobo-b-shogaku",
+    "university": "愛知学院大学",
+    "faculty": "商学部",
+    "department": "商学科",
+    "methodName": "公募制推薦入学試験B（併願可）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["基礎学力調査"]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-30",
+      "applicationEnd": "2025-11-06",
+      "examDates": ["2025-11-15"],
+      "examDateSelectable": false,
+      "resultDate": "2025-12-01",
+      "enrollDeadline": "2026-02-20"
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "faculty", "quote": "商学部 商学科 250名 − 17名 17名", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 3, "verified": true },
+      { "field": "heiganPolicy", "quote": "〔４〕 公募制推薦入学試験B （併願可）", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 11, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-kobo-b-yakugaku",
+    "university": "愛知学院大学",
+    "faculty": "薬学部",
+    "department": "医療薬学科",
+    "methodName": "公募制推薦入学試験B（併願可）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["基礎学力調査", "面接"]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-30",
+      "applicationEnd": "2025-11-06",
+      "examDates": ["2025-11-15"],
+      "examDateSelectable": false,
+      "resultDate": "2025-12-01",
+      "enrollDeadline": "2026-02-20"
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "subjects.nonAcademic", "quote": "薬学部 受 験 注 意 適 性 検 査 面 接", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 12, "verified": true },
+      { "field": "heiganPolicy", "quote": "〔４〕 公募制推薦入学試験B （併願可）", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 11, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-kobo-b-shigaku",
+    "university": "愛知学院大学",
+    "faculty": "歯学部",
+    "department": "歯学科",
+    "methodName": "公募制推薦入学試験B（併願可）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["小論文", "面接"]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-30",
+      "applicationEnd": "2025-11-06",
+      "examDates": ["2025-11-15"],
+      "examDateSelectable": false,
+      "resultDate": "2025-12-01",
+      "enrollDeadline": "2025-12-12"
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "subjects.nonAcademic", "quote": "歯学部 受 験 注 意 小 論文（課題文型） 面 接", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 12, "verified": true },
+      { "field": "heiganPolicy", "quote": "〔４〕 公募制推薦入学試験B （併願可）", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 11, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "12月12日㈮", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 11, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-senmongakka-shogaku",
+    "university": "愛知学院大学",
+    "faculty": "商学部",
+    "department": "商学科",
+    "methodName": "専門学科推薦入学試験（専願）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["小論文"]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-30",
+      "applicationEnd": "2025-11-06",
+      "examDates": ["2025-11-15"],
+      "examDateSelectable": false,
+      "resultDate": "2025-12-01",
+      "enrollDeadline": "2025-12-12"
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "methodName", "quote": "〔５〕 専門学科推薦入学試験 （専 願）", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 15, "verified": true },
+      { "field": "heiganPolicy", "quote": "本学への入学を特に希望する者（合格したら本学に入学することを条件とします）", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 15, "verified": true },
+      { "field": "subjects.nonAcademic", "quote": "小 論 文 テーマ型 800字以内（論題は試験室で提示） 60分", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 16, "verified": true },
+      { "field": "schedule.examDates", "quote": "11月15日㈯ 12月１日㈪ 12月12日㈮", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 15, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-senmongakka-keiei",
+    "university": "愛知学院大学",
+    "faculty": "経営学部",
+    "department": "経営学科",
+    "methodName": "専門学科推薦入学試験（専願）",
+    "methodCategory": "kobo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["小論文"]
+    },
+    "schedule": {
+      "applicationStart": "2025-10-30",
+      "applicationEnd": "2025-11-06",
+      "examDates": ["2025-11-15"],
+      "examDateSelectable": false,
+      "resultDate": "2025-12-01",
+      "enrollDeadline": "2025-12-12"
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "methodName", "quote": "〔５〕 専門学科推薦入学試験 （専 願）", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 15, "verified": true },
+      { "field": "heiganPolicy", "quote": "本学への入学を特に希望する者（合格したら本学に入学することを条件とします）", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 15, "verified": true },
+      { "field": "subjects.nonAcademic", "quote": "小 論 文 テーマ型 800字以内（論題は試験室で提示） 60分", "pdfFile": "愛知学院大学/2026_実績/kobo_学校推薦型選抜募集要項_20260706.pdf", "page": 16, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-sogo-ao-shukyobunka",
+    "university": "愛知学院大学",
+    "faculty": "文学部",
+    "department": "宗教文化学科",
+    "methodName": "AO入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["小論文", "面接", "書類"]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": ["2025-10-10"],
+      "examDateSelectable": false,
+      "resultDate": "2025-10-14",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "faculty", "quote": "宗 教 文 化 学 科 ● − − − −", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 3, "verified": true },
+      { "field": "heiganPolicy", "quote": "本学科のアドミッション･ポリシーを理解し､本学科で学ぶことを特に希望する者\n（合格した場合には､本学に入学することを条件とする）", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 7, "verified": true },
+      { "field": "subjects.nonAcademic", "quote": "【小論文】\nテーマ型 60分\n800字:50点\n（論題は試験室で提示）\n【面接】\n個人面接\n20分〜30分:50点", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 7, "verified": true },
+      { "field": "schedule.applicationStart", "quote": "2025年\n９月22日㈪", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 13, "verified": true },
+      { "field": "schedule.applicationEnd", "quote": "９月29日㈪", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 13, "verified": true },
+      { "field": "schedule.examDates", "quote": "10月10日㈮ 10月19日㈰ 11月１日㈯ 11月12日㈬", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 13, "verified": true },
+      { "field": "schedule.resultDate", "quote": "10月14日㈫", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 13, "verified": true },
+      { "field": "schedule.enrollDeadline", "quote": "11月12日㈬", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 13, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-sogo-ao-horitsu",
+    "university": "愛知学院大学",
+    "faculty": "法学部",
+    "department": "法律学科",
+    "methodName": "AO入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["小論文", "面接", "書類"]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": ["2025-10-10"],
+      "examDateSelectable": false,
+      "resultDate": "2025-10-14",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "faculty", "quote": "法 律 ３名", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 7, "verified": true },
+      { "field": "heiganPolicy", "quote": "本学科のアドミッション･ポリシーを理解し､本学科で学ぶことを特に希望する者\n（合格した場合には､本学に入学することを条件とする）", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 7, "verified": true },
+      { "field": "subjects.nonAcademic", "quote": "【小論文】\nテーマ型 60分\n800字:50点\n（論題は試験室で提示）", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 7, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-sogo-ao-gendaishakaiho",
+    "university": "愛知学院大学",
+    "faculty": "法学部",
+    "department": "現代社会法学科",
+    "methodName": "AO入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["小論文", "面接", "書類"]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": ["2025-10-10"],
+      "examDateSelectable": false,
+      "resultDate": "2025-10-14",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "faculty", "quote": "現代社会法学科 ● − − − −", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 3, "verified": true },
+      { "field": "heiganPolicy", "quote": "本学科のアドミッション･ポリシーを理解し､本学科で学ぶことを特に希望する者\n（合格した場合には､本学に入学することを条件とする）", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 7, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-sogo-ao-shigaku",
+    "university": "愛知学院大学",
+    "faculty": "歯学部",
+    "department": "歯学科",
+    "methodName": "AO入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["書類", "面接"]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": ["2025-10-10"],
+      "examDateSelectable": false,
+      "resultDate": "2025-10-14",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "faculty", "quote": "歯 学 部 歯 学 科 ● − − − −", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 3, "verified": true },
+      { "field": "heiganPolicy", "quote": "本学科のアドミッション･ポリシーを理解し､本学科で学ぶことを特に希望する者\n（合格した場合には､本学に入学することを条件とする）", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 7, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-sogo-ao-shikaeisei",
+    "university": "愛知学院大学",
+    "faculty": "短期大学部",
+    "department": "歯科衛生学科",
+    "methodName": "AO入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["小論文", "面接"]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": ["2025-10-10"],
+      "examDateSelectable": false,
+      "resultDate": "2025-10-14",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "faculty", "quote": "短期大学部 歯 科 衛 生 学 科 ● − − − −", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 3, "verified": true },
+      { "field": "heiganPolicy", "quote": "本学科のアドミッション･ポリシーを理解し､本学科で学ぶことを特に希望する者\n（合格した場合には、本学に入学することを条件とする）", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 7, "verified": true }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-sogo-koudaisetsuzoku-rekishi",
+    "university": "愛知学院大学",
+    "faculty": "文学部",
+    "department": "歴史学科",
+    "methodName": "高大接続型入試（事前課題型）",
+    "methodCategory": "sogo",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["書類", "小論文", "面接"]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": ["2025-10-19"],
+      "examDateSelectable": false,
+      "resultDate": "2025-11-01",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "methodName", "quote": "事前体験型 事前課題型 自己考察型", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 3, "verified": true },
+      { "field": "faculty", "quote": "歴 史 学 科 − − ● − −", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 3, "verified": true },
+      { "field": "schedule.examDates", "quote": "10月19日㈰ 11月１日㈯ 11月12日㈬ ９月29日㈪", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 13, "verified": true }
+    ],
+    "reviewStatus": "flagged",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-sogo-koudaisetsuzoku-shinri",
+    "university": "愛知学院大学",
+    "faculty": "心理学部",
+    "department": "心理学科",
+    "methodName": "高大接続型入試（事前課題型）",
+    "methodCategory": "sogo",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["書類", "小論文", "面接"]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": ["2025-10-19"],
+      "examDateSelectable": false,
+      "resultDate": "2025-11-01",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "faculty", "quote": "心 理 学 科 − ● − − −", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 3, "verified": true },
+      { "field": "subjects.nonAcademic", "quote": "【小論文】\nテーマ型 60分\n800字:50点\n（論題は試験室で提示）\n【面接】\n健 健\n康 康 個人面接", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "flagged",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-sogo-koudaisetsuzoku-shogaku",
+    "university": "愛知学院大学",
+    "faculty": "商学部",
+    "department": "商学科",
+    "methodName": "高大接続型入試（事前体験型）",
+    "methodCategory": "sogo",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["書類", "面接"]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": ["2025-10-19"],
+      "examDateSelectable": false,
+      "resultDate": "2025-11-01",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "faculty", "quote": "商 学 科 − − ● − −", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 3, "verified": true }
+    ],
+    "reviewStatus": "flagged",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-sogo-koudaisetsuzoku-keiei",
+    "university": "愛知学院大学",
+    "faculty": "経営学部",
+    "department": "経営学科",
+    "methodName": "高大接続型入試（事前体験型）",
+    "methodCategory": "sogo",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["書類", "面接"]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": ["2025-10-19"],
+      "examDateSelectable": false,
+      "resultDate": "2025-11-01",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "faculty", "quote": "経 営 学 科 − − ● − −", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 3, "verified": true }
+    ],
+    "reviewStatus": "flagged",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-sogo-koudaisetsuzoku-sogoseisaku",
+    "university": "愛知学院大学",
+    "faculty": "総合政策学部",
+    "department": "総合政策学科",
+    "methodName": "高大接続型入試（事前課題型）",
+    "methodCategory": "sogo",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["書類", "面接"]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": ["2025-10-19"],
+      "examDateSelectable": false,
+      "resultDate": "2025-11-01",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": null,
+    "feeNote": null,
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "faculty", "quote": "総 合 政 策 学 科 − ● − − −", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 3, "verified": true },
+      { "field": "subjects.nonAcademic", "quote": "総 総 （※）60点は出願書類 【面接】\n合 合 で評価し、公民･\n政 政 10名 個人面接", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 8, "verified": true }
+    ],
+    "reviewStatus": "flagged",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-sogo-eigoshikaku-eibei",
+    "university": "愛知学院大学",
+    "faculty": "文学部",
+    "department": "英語英米文化学科",
+    "methodName": "英語資格特別入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["書類", "面接"]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": ["2025-10-19"],
+      "examDateSelectable": false,
+      "resultDate": "2025-11-01",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": 35000,
+    "feeNote": "第1次選考はありません",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "faculty", "quote": "英語英米文化学科 − ● − − ●", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 3, "verified": true },
+      { "field": "fee", "quote": "英語資格特別入試 35,000円（第１次選考はありません）", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 13, "verified": true },
+      { "field": "schedule.examDates", "quote": "10月19日㈰", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 13, "verified": true }
+    ],
+    "reviewStatus": "flagged",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "aichi-gakuin-2026-sogo-eigoshikaku-global",
+    "university": "愛知学院大学",
+    "faculty": "文学部",
+    "department": "グローバル英語学科",
+    "methodName": "英語資格特別入試",
+    "methodCategory": "sogo",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": ["書類", "面接"]
+    },
+    "schedule": {
+      "applicationStart": "2025-09-22",
+      "applicationEnd": "2025-09-29",
+      "examDates": ["2025-10-19"],
+      "examDateSelectable": false,
+      "resultDate": "2025-11-01",
+      "enrollDeadline": "2025-11-12"
+    },
+    "fee": 35000,
+    "feeNote": "第1次選考はありません",
+    "dataYear": 2026,
+    "dataStatus": "carryover_2026",
+    "evidence": [
+      { "field": "faculty", "quote": "グローバル英語学科 − ● − − ●", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 3, "verified": true },
+      { "field": "fee", "quote": "英語資格特別入試 35,000円（第１次選考はありません）", "pdfFile": "愛知学院大学/2026_実績/sogo_総合型選抜募集要項_20260706.pdf", "page": 13, "verified": true }
+    ],
+    "reviewStatus": "flagged",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  }
+]

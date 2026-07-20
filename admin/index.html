@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="English Hub 教員用ツール集。教材作成・作問・進路指導・校務支援のアプリをまとめたページ。" />
+  <title>English Hub — 教員用</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ============================
+     HEADER
+     ============================ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../index.html" class="site-logo">
+      <div class="logo-mark" aria-hidden="true">🌿</div>
+      <div>
+        <span class="logo-text">English Hub</span>
+        <span class="logo-sub"> — Teacher's Room</span>
+      </div>
+    </a>
+  </div>
+</header>
+
+<!-- ============================
+     HERO
+     ============================ -->
+<section class="hero" aria-labelledby="hero-title">
+  <h1 class="hero-title" id="hero-title">教員用ツール</h1>
+  <p class="hero-desc">教材作成・作問・進路指導・校務支援のためのアプリをまとめています。<br />
+  生徒用ポータルへは左上のロゴから戻れます。</p>
+</section>
+
+<!-- ============================
+     APP GRID
+     ============================ -->
+<main class="app-grid-section" id="main-content">
+  <div class="app-grid" id="app-grid" aria-live="polite">
+
+    <article class="app-card" data-category="utility">
+      <div class="card-icon">📅</div>
+      <div class="card-body">
+        <h3 class="card-title">保護者懇談会 日程調整</h3>
+        <p class="card-desc">保護者の出席可能時間をタップで収集し、重複なく自動割り当て・Excel出力までできる日程調整アプリ。</p>
+        <div class="card-meta">
+          <span class="tag">校務</span>
+        </div>
+      </div>
+      <a href="https://parent-teacher-meeting.vercel.app" class="card-link" aria-label="保護者懇談会 日程調整を開く"></a>
+    </article>
+
+    <article class="app-card" data-category="utility">
+      <div class="card-icon">🧭</div>
+      <div class="card-body">
+        <h3 class="card-title">併願照合ナビ（HeiganNavi）</h3>
+        <p class="card-desc">第一志望を基準に、併願候補校の科目充足・日程被り・入学金先払いを面談中に横断照合できる進路指導ツール。</p>
+        <div class="card-meta">
+          <span class="tag">進路指導</span>
+        </div>
+      </div>
+      <a href="https://heigan-search.vercel.app" class="card-link" aria-label="併願照合ナビを開く"></a>
+    </article>
+
+    <article class="app-card coming-soon" data-category="utility">
+      <div class="card-icon">🌳</div>
+      <div class="card-body">
+        <h3 class="card-title">Viewpoint 教材オーサリング</h3>
+        <p class="card-desc">英語の文構造を樹形図・色分け・注釈で視覚化した教材をAI下書き＋ノード編集で作り、自己完結HTMLで配布できるツール。</p>
+        <div class="card-meta">
+          <span class="tag">教材作成</span>
+        </div>
+      </div>
+      <span class="badge-coming">未デプロイ</span>
+    </article>
+
+    <article class="app-card coming-soon" data-category="utility">
+      <div class="card-icon">🗣️</div>
+      <div class="card-body">
+        <h3 class="card-title">口頭試問プリント生成ツール</h3>
+        <p class="card-desc">生徒の英作文から一人ひとりに合わせた追随質問・模範解答・採点基準を自動生成し、A4小テストとして印刷できるツール。</p>
+        <div class="card-meta">
+          <span class="tag">作問</span>
+        </div>
+      </div>
+      <span class="badge-coming">ローカル専用</span>
+    </article>
+
+    <article class="app-card coming-soon" data-category="utility">
+      <div class="card-icon">✏️</div>
+      <div class="card-body">
+        <h3 class="card-title">Vision Quest風問題メーカー</h3>
+        <p class="card-desc">英文を貼り付けると、文法項目と空欄数を指定して思考ヒント付きの空欄補充問題を自動生成する作問ツール。</p>
+        <div class="card-meta">
+          <span class="tag">作問</span>
+        </div>
+      </div>
+      <span class="badge-coming">未デプロイ</span>
+    </article>
+
+    <article class="app-card" data-category="utility">
+      <div class="card-icon">📝</div>
+      <div class="card-body">
+        <h3 class="card-title">青松問答</h3>
+        <p class="card-desc">青松AI構築に向けた日次質問回答アプリ。約350問への回答を思考層コーパスとしてJSONL形式でエクスポートする私的ツール。</p>
+        <div class="card-meta">
+          <span class="tag">AI構築</span>
+        </div>
+      </div>
+      <a href="https://aomatsu-mondo.vercel.app" class="card-link" aria-label="青松問答を開く"></a>
+    </article>
+
+  </div><!-- /#app-grid -->
+</main>
+
+<!-- ============================
+     FOOTER
+     ============================ -->
+<footer class="site-footer">
+  <p>© 2025 English Hub &nbsp;|&nbsp;
+    <a href="../index.html">生徒用ポータルへ戻る</a>
+  </p>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,845 @@
+[
+  {
+    "id": "kinjo-2027-ippan-zenki-3kamoku-eibei",
+    "university": "金城学院大学",
+    "faculty": "文学部",
+    "department": "英語英米文化学科",
+    "methodName": "一般入試（前期）3科目型",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [
+        {
+          "subject": "英語"
+        }
+      ],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語",
+              "range": "現代の国語・言語文化（古文・漢文を除く）"
+            },
+            {
+              "subject": "世界史"
+            },
+            {
+              "subject": "日本史"
+            },
+            {
+              "subject": "数学",
+              "range": "数Ⅰ・数A（図形の性質・場合の数と確率）"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            }
+          ],
+          "pick": 2
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2027-01-06",
+      "applicationEnd": "2027-01-17",
+      "examDates": [
+        "2027-02-01",
+        "2027-02-03",
+        "2027-02-04"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2027-02-18",
+      "enrollDeadline": "2027-02-27"
+    },
+    "fee": 30000,
+    "feeNote": "2日間受験35,000円、3日間受験40,000円（併願割引制度）",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "subjects.required",
+        "quote": "必須科目 外国語 英語コミュニケーションⅠ・Ⅱ・論理・表現Ⅰ 150点",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試前期概要_20260706.pdf",
+        "page": 2,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "文学部英語英米文化学科選択科目国地語歴/理科世現界代の史[国歴語総・(言世語界文史化(部古分文の・み漢)文・世を探除]く、)各400点1科目:60分(1教科1科目選択)数学/理科日数I本・史数[A歴(総図(形日の本史性部質分・場のみ合)の・日数探と]/確生率基)いずれか1科目100点(2教科2科目選択)数学/理科日数I本・史数[A歴(総図(形日の本史性部質分・場のみ合)の・日数探と]/確生率基)いずれか1科目100点",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試前期概要_20260706.pdf",
+        "page": 2,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "1月6日（月）〜 1月17日（金）",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試前期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2月18日（火）",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試前期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "2月27日（木）",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試前期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "30,000円 35,000円 40,000円",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試前期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "kinjo-2027-ippan-zenki-ongaku",
+    "university": "金城学院大学",
+    "faculty": "文学部",
+    "department": "音楽芸術学科",
+    "methodName": "一般入試（前期）音楽実技型",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語",
+              "range": "現代の国語・言語文化（古文・漢文を除く）"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 1,
+      "nonAcademic": [
+        "実技"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2027-01-06",
+      "applicationEnd": "2027-01-17",
+      "examDates": [
+        "2027-02-01",
+        "2027-02-03",
+        "2027-02-04"
+      ],
+      "examDateSelectable": true,
+      "resultDate": "2027-02-18",
+      "enrollDeadline": "2027-02-27"
+    },
+    "fee": 30000,
+    "feeNote": "2日間受験35,000円、3日間受験40,000円（併願割引制度）",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "必須 音楽 音楽実技（ピアノ、声楽、管楽器から１つ選択） 300点",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試前期概要_20260706.pdf",
+        "page": 2,
+        "verified": true
+      },
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "音楽芸術学科 必須 音楽 音楽実技（ピアノ、声楽、管楽器から１つ選択） 300点 400点 選択科目 （1教科1科目選択） 国語 外国語 現代の国語・言語文化（古文・漢文を除く） 英語コミュニケーションⅠ・Ⅱ・論理・表現Ⅰ 100点",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試前期概要_20260706.pdf",
+        "page": 2,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "1月6日（月）〜 1月17日（金）",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試前期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "kinjo-2027-ippan-kouki-yakugaku",
+    "university": "金城学院大学",
+    "faculty": "薬学部",
+    "department": "薬学科",
+    "methodName": "一般入試（後期）",
+    "methodCategory": "ippan",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "化学",
+              "range": "化基・化"
+            },
+            {
+              "subject": "生物",
+              "range": "生基・生（生態と環境を除く）"
+            }
+          ],
+          "pick": 1
+        },
+        {
+          "from": [
+            {
+              "subject": "数学",
+              "range": "数Ⅰ・数Ⅱ・数A・数B（数列）・数C（ベクトル）"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 1
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2027-02-05",
+      "applicationEnd": "2027-02-21",
+      "examDates": [
+        "2027-03-05"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-07",
+      "enrollDeadline": "2027-03-13"
+    },
+    "fee": 30000,
+    "feeNote": null,
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "理科化基・化、生基・生(生態と環境を除く)各入(2)通常の課程による12年の学校教育を修了した者、または2025年3月修了見込みの者。試薬学部薬学科(2教科2科目選択)数学数I・数II・数A・数B(数列)・数C(ベクトル)100点200点2科目:120分((3)学校教育法施行規則の規定により、高等学校を卒業した者と同等以上の学力があると認められる者。ただし、理科から外国語英語コミュニケーションI・II・論理・表現I",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試後期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "2月5日（水）〜2月21日（金）",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試後期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 30,000円",
+        "pdfFile": "金城学院大学/2027/ippan_一般入試後期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "kinjo-2027-kobo-tekisei-2kamoku-nihongo",
+    "university": "金城学院大学",
+    "faculty": "文学部",
+    "department": "日本語日本文化学科",
+    "methodName": "一般公募制推薦入試 適性検査型",
+    "methodCategory": "kobo",
+    "heiganPolicy": "heigan_ok",
+    "subjects": {
+      "required": [
+        {
+          "subject": "国語",
+          "range": "現代の国語・言語文化（古文・漢文を除く）"
+        },
+        {
+          "subject": "英語",
+          "range": "英語コミュニケーションⅠ・Ⅱ・論理・表現Ⅰ"
+        }
+      ],
+      "choiceGroups": [],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2026-11-01",
+      "applicationEnd": "2026-11-05",
+      "examDates": [
+        "2026-11-16"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-02",
+      "enrollDeadline": "2026-12-19"
+    },
+    "fee": 30000,
+    "feeNote": "2回目の検定料との併願で5,000円（適性検査型と小論文型の併願割引）",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "適性検査型［ 併願制］",
+        "pdfFile": "金城学院大学/2027/kobo_特別奨学生2科目型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "subjects.required",
+        "quote": "国語［現代の国語・言語文化（古文・漢文を除く）］ 外国語［英語コミュニケーションⅠ・Ⅱ・論理・表現Ⅰ］ 時間 2科目90分 配点 各100点 日本語日本文化学科",
+        "pdfFile": "金城学院大学/2027/kobo_特別奨学生2科目型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "11月1日（金）〜11月5日（火）",
+        "pdfFile": "金城学院大学/2027/kobo_特別奨学生2科目型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.examDates",
+        "quote": "1本1学月・1豊6橋日(・岐土阜)/・四日市12月2日(月)",
+        "pdfFile": "金城学院大学/2027/kobo_特別奨学生2科目型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "12月2日（月）",
+        "pdfFile": "金城学院大学/2027/kobo_特別奨学生2科目型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "12月2日(月)1第22月次1手9続日(木)",
+        "pdfFile": "金城学院大学/2027/kobo_特別奨学生2科目型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 30,000円",
+        "pdfFile": "金城学院大学/2027/kobo_特別奨学生2科目型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "kinjo-2027-kobo-shikaku-mensetsu-eibei",
+    "university": "金城学院大学",
+    "faculty": "文学部",
+    "department": "英語英米文化学科",
+    "methodName": "一般公募制推薦入試 資格・面接型",
+    "methodCategory": "kobo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "面接",
+        "書類"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-11-01",
+      "applicationEnd": "2026-11-05",
+      "examDates": [
+        "2026-11-16"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-12-02",
+      "enrollDeadline": "2026-12-19"
+    },
+    "fee": 30000,
+    "feeNote": "一般公募制推薦入試の内、不合格となった入試種別がある場合のみ、その「受験票」を一般入試（前期・後期）等の出願書類に同封することにより、1枚の受験票につき10,000円入学検定料を割引",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "資格・面接型［ 専願制※］",
+        "pdfFile": "金城学院大学/2027/kobo_資格面接型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "heiganPolicy",
+        "quote": "※専願制入試に合格した場合は、 ●文学部（音楽芸術学科） ●生活環境学部（生活マネジメント学科） 他の入試を受験できません。",
+        "pdfFile": "金城学院大学/2027/kobo_資格面接型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "英語英米文化学科 音楽芸術学科 面接（英語による 質疑応答を含む） 40点 書類審査 60点",
+        "pdfFile": "金城学院大学/2027/kobo_資格面接型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "11月1日（金）〜11月5日（火）",
+        "pdfFile": "金城学院大学/2027/kobo_資格面接型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "11月16日（土）／本学 12月2日（月）",
+        "pdfFile": "金城学院大学/2027/kobo_資格面接型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 30,000円",
+        "pdfFile": "金城学院大学/2027/kobo_資格面接型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "kinjo-2027-kyotsu-zenki-nihongo",
+    "university": "金城学院大学",
+    "faculty": "文学部",
+    "department": "日本語日本文化学科",
+    "methodName": "共通テスト利用入試（前期）",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [
+        {
+          "subject": "国語"
+        }
+      ],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "世界史"
+            },
+            {
+              "subject": "日本史"
+            },
+            {
+              "subject": "地理"
+            },
+            {
+              "subject": "公民"
+            },
+            {
+              "subject": "数学"
+            },
+            {
+              "subject": "物理"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 2
+        }
+      ],
+      "totalCount": 3,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2027-01-06",
+      "applicationEnd": "2027-01-24",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2027-02-18",
+      "enrollDeadline": "2027-02-27"
+    },
+    "fee": 10000,
+    "feeNote": "2学科/コース目以降の検定料が、一律5,000円（1学科10,000円/2学科15,000円/3学科20,000円）",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "subjects.required",
+        "quote": "必須科目 国語：「国」 200点",
+        "pdfFile": "金城学院大学/2027/kyotsu_共通テスト利用前期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "1月6日（月）〜1月24日（金）",
+        "pdfFile": "金城学院大学/2027/kyotsu_共通テスト利用前期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "2月18日（火）",
+        "pdfFile": "金城学院大学/2027/kyotsu_共通テスト利用前期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "2月27日（木）",
+        "pdfFile": "金城学院大学/2027/kyotsu_共通テスト利用前期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 10,000円",
+        "pdfFile": "金城学院大学/2027/kyotsu_共通テスト利用前期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "kinjo-2027-kyotsu-kouki-nihongo",
+    "university": "金城学院大学",
+    "faculty": "文学部",
+    "department": "日本語日本文化学科",
+    "methodName": "共通テスト利用入試（後期）",
+    "methodCategory": "kyotsu",
+    "heiganPolicy": "unknown",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [
+        {
+          "from": [
+            {
+              "subject": "国語"
+            },
+            {
+              "subject": "世界史"
+            },
+            {
+              "subject": "日本史"
+            },
+            {
+              "subject": "地理"
+            },
+            {
+              "subject": "公民"
+            },
+            {
+              "subject": "数学"
+            },
+            {
+              "subject": "物理"
+            },
+            {
+              "subject": "化学"
+            },
+            {
+              "subject": "生物"
+            },
+            {
+              "subject": "英語"
+            }
+          ],
+          "pick": 2
+        }
+      ],
+      "totalCount": 2,
+      "nonAcademic": []
+    },
+    "schedule": {
+      "applicationStart": "2027-02-19",
+      "applicationEnd": "2027-03-08",
+      "examDates": [],
+      "examDateSelectable": false,
+      "resultDate": "2027-03-21",
+      "enrollDeadline": null
+    },
+    "fee": 10000,
+    "feeNote": "2学科/コース目以降の検定料が、一律5,000円",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "subjects.choiceGroups",
+        "quote": "国語:「国」3科目以上受験した場合は、高得点の2教地歴・公民:「歴総,世探」、「歴総,日探」、科2科目を合否判定に使用。日本語日本文化学科「地総,地探」、「地総/歴総/公」、国語は「近代以降の文章」(110点満点)選択科目「公,倫」、「公,政・経」から1各と「古典(古文・漢文)」(90点満点)に分英語英米文化学科(2教科2科目選択※)数学:「数I」、「数I,数A」、「数II,数B,数C」から1100点200点",
+        "pdfFile": "金城学院大学/2027/kyotsu_共通テスト利用後期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "2月19日（水）〜3月8日（土）",
+        "pdfFile": "金城学院大学/2027/kyotsu_共通テスト利用後期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "3月21日（金）",
+        "pdfFile": "金城学院大学/2027/kyotsu_共通テスト利用後期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 10,000円",
+        "pdfFile": "金城学院大学/2027/kyotsu_共通テスト利用前期概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "kinjo-2027-sogo-presen-eibei",
+    "university": "金城学院大学",
+    "faculty": "文学部",
+    "department": "英語英米文化学科",
+    "methodName": "総合型選抜入試 プレゼンテーション型",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "プレゼン",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-02",
+      "applicationEnd": "2026-09-09",
+      "examDates": [
+        "2026-11-01"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-18",
+      "enrollDeadline": "2027-01-09"
+    },
+    "fee": 35000,
+    "feeNote": "総合型選抜入試で不合格だった場合、その「受験票」を一般公募制推薦入試等の出願書類に同封することにより、10,000円入学検定料を割引",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "プレゼンテーション型［ 専願制※］ ※専願制入試に合格した場合は、 他の入試を受験できません。",
+        "pdfFile": "金城学院大学/2027/sogo_プレゼンテーション型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "1次選考書類審査100点100点◎◎△合実施学部文学部(英語英米文化学科、外国語コミュニケーション学科、音楽芸術学科)型英語英米文化学科プレゼンテーション50点◎◎○選国際情報学部(国際情報学科/グローバルスタディーズコース)人間科学部(現代子ども教育学科、コミュニティ福祉学科)2次選考100点抜面接50点○◎○",
+        "pdfFile": "金城学院大学/2027/sogo_プレゼンテーション型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "9月2日（月）〜9月9日（月）",
+        "pdfFile": "金城学院大学/2027/sogo_プレゼンテーション型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.resultDate",
+        "quote": "11月18日（月）",
+        "pdfFile": "金城学院大学/2027/sogo_プレゼンテーション型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.enrollDeadline",
+        "quote": "1月9日（木）",
+        "pdfFile": "金城学院大学/2027/sogo_プレゼンテーション型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 35,000円",
+        "pdfFile": "金城学院大学/2027/sogo_プレゼンテーション型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "kinjo-2027-sogo-presen-kokusai-global",
+    "university": "金城学院大学",
+    "faculty": "国際情報学部",
+    "department": "国際情報学科/グローバルスタディーズコース",
+    "methodName": "総合型選抜入試 プレゼンテーション型",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "プレゼン",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-02",
+      "applicationEnd": "2026-09-09",
+      "examDates": [
+        "2026-11-01"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-18",
+      "enrollDeadline": "2027-01-09"
+    },
+    "fee": 35000,
+    "feeNote": "総合型選抜入試で不合格だった場合、その「受験票」を一般公募制推薦入試等の出願書類に同封することにより、10,000円入学検定料を割引",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "※専願制入試に合格した場合は、 他の入試を受験できません。",
+        "pdfFile": "金城学院大学/2027/sogo_プレゼンテーション型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "1次選考書類審査100点100点◎○○)インターネット出願第1次手続国際情報学科/9月2日(月)〜9月9日(月)(入学金の納入)国際情報学部グローバルスタディーズコース2次選考プレゼンテーション50点100点○◎○音楽芸術学科2名※締切日の出願登録は11月18日(月)面接50点○○◎",
+        "pdfFile": "金城学院大学/2027/sogo_プレゼンテーション型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "9月2日（月）〜9月9日（月）",
+        "pdfFile": "金城学院大学/2027/sogo_プレゼンテーション型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 35,000円",
+        "pdfFile": "金城学院大学/2027/sogo_プレゼンテーション型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  },
+  {
+    "id": "kinjo-2027-sogo-taiken-seikatsu-management",
+    "university": "金城学院大学",
+    "faculty": "生活環境学部",
+    "department": "生活マネジメント学科",
+    "methodName": "総合型選抜入試 体験授業型",
+    "methodCategory": "sogo",
+    "heiganPolicy": "sengan",
+    "subjects": {
+      "required": [],
+      "choiceGroups": [],
+      "totalCount": 0,
+      "nonAcademic": [
+        "書類",
+        "面接"
+      ]
+    },
+    "schedule": {
+      "applicationStart": "2026-09-02",
+      "applicationEnd": "2026-09-09",
+      "examDates": [
+        "2026-10-12"
+      ],
+      "examDateSelectable": false,
+      "resultDate": "2026-11-01",
+      "enrollDeadline": "2027-01-09"
+    },
+    "fee": 35000,
+    "feeNote": "総合型選抜入試で不合格だった場合、その「受験票」を一般公募制推薦入試等の出願書類に同封することにより、10,000円入学検定料を割引",
+    "dataYear": 2027,
+    "dataStatus": "confirmed_2027",
+    "evidence": [
+      {
+        "field": "heiganPolicy",
+        "quote": "※ 専 他の 願 入 制 試 入 を 試 受 に 験 合 で 格 き し ま た せ 場 ん 合 。 は、",
+        "pdfFile": "金城学院大学/2027/sogo_体験授業型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "subjects.nonAcademic",
+        "quote": "第1次手続1次選考書類審査100点100点○○インターネット出願(入学金の納入)9月2日(月)〜9月9日(月)授業(アクティブラーニングを含む)20点◎11月18日(月)生活環境学部生活マネジメント学科※締切日の出願登録は2次選考レポート40点100点◎○共音楽芸術学科3名17:00まで9月20日(金)10月12日(土)11月1日(金)通利本学第2次手続面接40点○◎",
+        "pdfFile": "金城学院大学/2027/sogo_体験授業型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "schedule.applicationStart",
+        "quote": "9月2日（月）〜9月9日（月）",
+        "pdfFile": "金城学院大学/2027/sogo_体験授業型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      },
+      {
+        "field": "fee",
+        "quote": "入学検定料 35,000円",
+        "pdfFile": "金城学院大学/2027/sogo_体験授業型概要_20260706.pdf",
+        "page": 1,
+        "verified": true
+      }
+    ],
+    "reviewStatus": "confirmed",
+    "reviewedBy": "サンプルデータ(自動生成・全件版)",
+    "reviewedAt": "2026-07-07"
+  }
+]

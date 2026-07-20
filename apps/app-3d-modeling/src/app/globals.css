@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* English Hub 共通デザイントークン（design-system.md 準拠） */
+:root {
+  --color-accent: #2d6a4f;
+  --color-accent-light: #52b788;
+  --color-accent-dim: #d8f3dc;
+  --color-bg: #f8f7f4;
+  --color-surface: #ffffff;
+  --color-border: #e2ddd8;
+  --color-text: #1a1714;
+  --color-text-muted: #6b645c;
+
+  /* 3Dシーン背景（描画側で参照する既存トークンは維持） */
+  --background: var(--color-bg);
+  --foreground: var(--color-text);
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans JP", sans-serif;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}

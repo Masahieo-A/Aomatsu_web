@@ -13,6 +13,11 @@
 **/.env
 **/.env.*
 !**/.env.example
+!**/.env.local.example
+**/secrets/
+
+# ───────── 実データ（生徒PII含む・コミット禁止） ─────────
+apps/app-mirai-library/data/
 
 # ───────── Vercel ローカル連携 ─────────
 **/.vercel/

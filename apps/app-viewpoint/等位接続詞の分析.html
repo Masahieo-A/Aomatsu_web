@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson3 着眼点③ — and / but / or の分析</title>
+<style>
+  :root{
+    --bg:#f7f9fc; --card:#ffffff; --ink:#1f2933; --muted:#5b6b7b;
+    --and:#1565c0; --andbg:#e3f0fd;
+    --or:#2e7d32; --orbg:#e6f4e7;
+    --but:#c62828; --butbg:#fdeaea;
+    --A:#1565c0; --Abg:#e3f0fd;
+    --B:#ad1457; --Bbg:#fce4ef;
+    --C:#ef6c00; --Cbg:#fff3e0;
+    --mid:#6a1b9a; --midbg:#f3e5f5;
+    --line:#d8e0ea;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,system-ui,sans-serif;
+    line-height:1.8;padding:32px 18px;}
+  .wrap{max-width:900px;margin:0 auto;}
+  header.title{background:linear-gradient(135deg,#1565c0,#1e88e5);color:#fff;
+    border-radius:16px;padding:26px 30px;box-shadow:0 6px 18px rgba(21,101,192,.25);}
+  header.title h1{margin:0 0 6px;font-size:1.5rem;}
+  header.title p{margin:0;opacity:.92;font-size:.95rem;}
+
+  .legend{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 6px;}
+  .chip{padding:6px 14px;border-radius:999px;font-weight:700;font-size:.9rem;}
+  .chip.and{background:var(--andbg);color:var(--and);}
+  .chip.or{background:var(--orbg);color:var(--or);}
+  .chip.but{background:var(--butbg);color:var(--but);}
+
+  .rule{background:#fffbe6;border:1px solid #f0e0a0;border-radius:12px;
+    padding:16px 20px;margin:18px 0 30px;font-size:.95rem;}
+  .rule b{color:#8a6d00;}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:22px 24px;margin:18px 0;box-shadow:0 2px 8px rgba(31,41,51,.05);}
+  .card h3{margin:0 0 4px;font-size:1.1rem;display:flex;align-items:center;gap:10px;}
+  .tag{font-size:.72rem;font-weight:700;color:#fff;padding:3px 9px;border-radius:7px;}
+  .tag.and{background:var(--and);} .tag.or{background:var(--or);} .tag.but{background:var(--but);}
+  .src{font-size:.78rem;color:var(--muted);margin:0 0 14px;}
+
+  .sent{font-family:Georgia,"Times New Roman",serif;font-size:1.08rem;
+    background:#fafcff;border-left:4px solid var(--line);padding:12px 16px;
+    border-radius:8px;margin:10px 0;line-height:2.1;}
+  .cc{font-weight:800;padding:1px 7px;border-radius:6px;}
+  .cc.and{background:var(--and);color:#fff;}
+  .cc.or{background:var(--or);color:#fff;}
+  .cc.but{background:var(--but);color:#fff;}
+  .cc.a1{background:var(--A);color:#fff;}
+  .cc.mid{background:var(--mid);color:#fff;}
+  .cc.a3{background:var(--C);color:#fff;}
+  .u{padding:1px 5px;border-radius:5px;font-weight:600;}
+  .uA{background:var(--Abg);color:var(--A);} .uB{background:var(--Bbg);color:var(--B);}
+  .uC{background:var(--Cbg);color:var(--C);}
+
+  .connects{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:14px 0;}
+  .box{padding:8px 14px;border-radius:9px;font-weight:700;font-size:.95rem;}
+  .boxA{background:var(--Abg);color:var(--A);border:1.5px solid var(--A);}
+  .boxB{background:var(--Bbg);color:var(--B);border:1.5px solid var(--B);}
+  .boxC{background:var(--Cbg);color:var(--C);border:1.5px solid var(--C);}
+  .link{font-weight:800;font-size:1.1rem;}
+  .link.and{color:var(--and);} .link.or{color:var(--or);} .link.but{color:var(--but);}
+  .pos{font-size:.78rem;color:var(--muted);font-weight:600;}
+
+  .grid{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;margin-top:12px;font-size:.93rem;}
+  .grid .k{font-weight:700;color:var(--muted);white-space:nowrap;}
+  .grid .check{color:var(--or);font-weight:700;}
+
+  /* spotlight */
+  .spot{background:#fff;border:2px solid var(--and);border-radius:16px;
+    padding:26px;margin:34px 0;box-shadow:0 8px 24px rgba(21,101,192,.14);}
+  .spot h2{margin:0 0 4px;color:var(--and);font-size:1.3rem;}
+  .spot .lead{color:var(--muted);margin:0 0 18px;font-size:.95rem;}
+  .bigsent{font-family:Georgia,serif;font-size:1.18rem;line-height:2.4;
+    background:#f4f8fe;border-radius:10px;padding:16px 18px;}
+  .num{font-size:.65rem;vertical-align:super;font-weight:800;}
+
+  .tier{margin:22px 0;}
+  .tierlabel{font-weight:700;color:var(--muted);font-size:.85rem;margin-bottom:6px;}
+  .tierrow{display:flex;align-items:stretch;gap:10px;flex-wrap:wrap;}
+  .seg{flex:1;min-width:180px;border-radius:10px;padding:10px 14px;font-size:.92rem;line-height:1.6;}
+
+  .interp{background:#eef6ff;border:1.5px dashed var(--and);border-radius:12px;
+    padding:18px 20px;margin-top:18px;}
+  .interp .formula{text-align:center;font-family:Georgia,serif;font-size:1.25rem;
+    margin:8px 0 14px;letter-spacing:.5px;}
+  .pill{padding:3px 10px;border-radius:8px;font-weight:800;}
+  .pillmid{background:var(--mid);color:#fff;}
+  .pillA{background:var(--Abg);color:var(--A);border:1.5px solid var(--A);}
+  .pillB{background:var(--Cbg);color:var(--C);border:1.5px solid var(--C);}
+
+  .trans{background:#f3fbf4;border-left:4px solid var(--or);border-radius:8px;
+    padding:12px 16px;margin-top:16px;font-size:.95rem;}
+  .footer{text-align:center;color:var(--muted);font-size:.82rem;margin:36px 0 8px;}
+  .meritbar{background:var(--orbg);border-radius:8px;padding:8px 14px;margin-top:12px;
+    font-size:.9rem;color:#1b5e20;}
+  .meritbar b{color:#1b5e20;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="title">
+  <h1>着眼点③　and / but / or の徹底分析</h1>
+  <p>Lesson3 本文 ― 等位接続詞が「何と何を繋いでいるか」を一目でわかるように整理しました。</p>
+</header>
+
+<div class="legend">
+  <span class="chip and">and ＝ 並列「A も B も」</span>
+  <span class="chip or">or ＝ 選択「A か B か」</span>
+  <span class="chip but">but ＝ 対比「A だが B」</span>
+</div>
+
+<div class="rule">
+  <b>大原則：</b>and / but / or は<b>「同じ働きをする」語(句)・節どうし</b>を繋ぐ。<br>
+  <b>見つけ方：</b>まず接続詞の<u>後ろの形(品詞)</u>を見る → それと<u>同じ形</u>のものを前から探す。<br>
+  <b>メリット：</b>繋がれている要素を正しく束ねられるので、文の骨組み(主語・動詞・修飾の範囲)が崩れず、訳と構文把握が一気に安定する。
+</div>
+
+<!-- 1 -->
+<div class="card">
+  <h3><span class="tag or">or</span>① 3つの名詞句を選択で繋ぐ</h3>
+  <p class="src">第1段落（下線部1）</p>
+  <div class="sent">…would you take <span class="u uA">the person with the highest IQ score</span>, <span class="u uA">the best grades</span>, <span class="cc or">or</span> <span class="u uA">the strongest need to achieve</span>?</div>
+  <div class="connects">
+    <span class="box boxA">the highest IQ score</span>
+    <span class="link or">/</span>
+    <span class="box boxA">the best grades</span>
+    <span class="link or">or</span>
+    <span class="box boxA">the strongest need to achieve</span>
+  </div>
+  <div class="grid">
+    <span class="k">何を繋ぐ？</span><span>take の目的語になる<b>3つの名詞句</b>（A, B, or C 型）</span>
+    <span class="k">判断の根拠</span><span class="check">or の後ろが名詞句 → 前にも同形の名詞句が並ぶ。カンマ区切りの最後に or。</span>
+    <span class="k">メリット</span><span>「IQ・成績・達成欲求のどれを選ぶ？」と<b>3択の問い</b>だと確定でき、設問(1)が解ける。</span>
+  </div>
+</div>
+
+<!-- 2 -->
+<div class="card">
+  <h3><span class="tag but">but</span>② 2つの動詞句を対比で繋ぐ</h3>
+  <p class="src">第1段落（下線部2）</p>
+  <div class="sent">some high school graduates who <span class="u uA">did not go to college</span> <span class="cc but">but</span> now <span class="u uB">have their own successful companies</span>…</div>
+  <div class="connects">
+    <span class="box boxA">did not go to college</span>
+    <span class="link but">but</span>
+    <span class="box boxB">(now) have their own companies</span>
+  </div>
+  <div class="grid">
+    <span class="k">何を繋ぐ？</span><span>関係代名詞 who に続く<b>2つの動詞句</b>（過去の事実 ↔ 現在の事実）</span>
+    <span class="k">判断の根拠</span><span class="check">but の前後がどちらも〈動詞句〉。意味も「大学に行かなかった ⇄ 会社を持つ」と逆接。</span>
+    <span class="k">メリット</span><span>2つの動詞句が<b>同じ who に係る</b>と分かり、「大学に行かなかったが今は会社を持つ卒業生」と一塊で訳せる。</span>
+  </div>
+</div>
+
+<!-- 3 -->
+<div class="card">
+  <h3><span class="tag and">and</span><span class="tag or">or</span>③ 主語の and と 目的語の or（1文に2つ）</h3>
+  <p class="src">第1段落 末尾</p>
+  <div class="sent">In the long run, <span class="u uA">desire</span> <span class="cc and">and</span> <span class="u uA">determination</span> exceed <span class="u uC">talent</span> <span class="cc or">or</span> <span class="u uC">brains</span>.</div>
+  <div class="connects">
+    <span class="box boxA">desire</span><span class="link and">and</span><span class="box boxA">determination</span>
+    <span class="pos">＝主語(名詞)</span>
+    <span style="width:14px"></span>
+    <span class="box boxC">talent</span><span class="link or">or</span><span class="box boxC">brains</span>
+    <span class="pos">＝目的語(名詞)</span>
+  </div>
+  <div class="grid">
+    <span class="k">何を繋ぐ？</span><span><span style="color:var(--and)">and</span>＝主語の名詞2つ／<span style="color:var(--or)">or</span>＝動詞 exceed の目的語の名詞2つ</span>
+    <span class="k">判断の根拠</span><span class="check">and / or の前後がどちらも単独の名詞。位置(動詞の前=主語／後=目的語)で役割を区別。</span>
+    <span class="k">メリット</span><span>「欲求と決意 が 才能や頭脳 に勝る」と、<b>主語2語・目的語2語</b>の対応が崩れず訳せる。</span>
+  </div>
+</div>
+
+<!-- SPOTLIGHT: 3 ands -->
+<div class="spot">
+  <h2>★ 重点解説：and が 3 つ出てくる文（下線部3）</h2>
+  <p class="lead">設問「and が何と何を繋ぐかに注意して訳しなさい」のターゲット。3つの and を順に見ていきます。</p>
+
+  <div class="bigsent">
+    you are
+    <span class="u uA">determined</span>
+    <span class="cc a1">and<span class="num">①</span></span>
+    <span class="u uA">focused toward success</span>
+    <span class="cc mid">and<span class="num">②</span></span>
+    <span class="u uC">motivated to continually</span>
+    <span class="u uC">evaluate</span>
+    <span class="cc a3">and<span class="num">③</span></span>
+    <span class="u uC">improve</span>
+    <span class="u uC">your performance</span>
+  </div>
+
+  <div class="tier">
+    <div class="tierlabel">3つの and がそれぞれ繋ぐもの</div>
+    <div class="tierrow">
+      <div class="seg" style="background:var(--Abg);border:1.5px solid var(--A);">
+        <b style="color:var(--A)">and ①</b><br>
+        <span style="color:var(--A)">determined</span> ＋ <span style="color:var(--A)">focused (toward success)</span><br>
+        <span class="pos">be 動詞に続く形容詞(過去分詞)どうし</span>
+      </div>
+      <div class="seg" style="background:var(--midbg);border:1.5px solid var(--mid);">
+        <b style="color:var(--mid)">and ②</b><br>
+        〔determined and focused…〕 ＋ <span style="color:var(--mid)">motivated to…</span><br>
+        <span class="pos">大きな2つのカタマリを束ねる「中心の and」</span>
+      </div>
+      <div class="seg" style="background:var(--Cbg);border:1.5px solid var(--C);">
+        <b style="color:var(--C)">and ③</b><br>
+        <span style="color:var(--C)">evaluate</span> ＋ <span style="color:var(--C)">improve</span><br>
+        <span class="pos">to 不定詞の中の動詞どうし</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="interp">
+    <div class="tierlabel" style="color:var(--and)">この文の見方：「and (A) and and (B)」 ― 中心の and② が、and①入りのカタマリと and③入りのカタマリを繋ぐ</div>
+    <div class="formula">
+      <span class="pill pillA">and (A)</span>
+      <span class="pill pillmid">and ②</span>
+      <span class="pill pillB">and (B)</span>
+    </div>
+    <p style="margin:0;font-size:.94rem;line-height:2;">
+      この文は形容詞を3つ並べただけ（A, B, and C）ではなく、<b>2つの大きなカタマリ</b>が中心の and② で繋がれていると見ると構造がきれいに割れます。
+    </p>
+    <div class="connects" style="margin-top:14px;">
+      <span class="box boxA" style="line-height:1.6">A ＝ determined <b>and①</b> focused toward success<br><span class="pos">（成功に向けて「決意し・集中している」）</span></span>
+      <span class="link" style="font-size:1.4rem;color:var(--mid);">and②</span>
+      <span class="box boxC" style="line-height:1.6">B ＝ motivated to … evaluate <b>and③</b> improve your performance<br><span class="pos">（成果を「評価し・改善する」意欲がある）</span></span>
+    </div>
+    <p style="margin:10px 0 0;font-size:.92rem;">
+      つまり <b>and① と and③ は各カタマリの内部</b>で小さな並列を作り、<b>中心の and② がその2つのカタマリ全体</b>を繋いでいる ―
+      これが「<b>and (A) and and (B)</b>」（＝前の and と後ろの and を、真ん中の and が繋ぐ）という捉え方です。
+    </p>
+  </div>
+
+  <div class="trans">
+    <b>この見方で訳すと：</b><br>
+    「あなたは（A）<b>成功に向けて決意を固め集中し</b>、（B）<b>絶えず自分の成果を評価し改善しようという意欲をもっている</b>。」<br>
+    <span class="pos">— A＝目標へのひたむきさ、B＝自己改善の意欲、という2つの内容が中心の and② で対等に並ぶ。</span>
+  </div>
+  <div class="meritbar">
+    <b>メリット：</b>3つの and を「どれが大きく・どれが小さく束ねるか」で階層づけできるので、形容詞がただ羅列されている文に見えず、
+    <b>「目標志向」＋「自己改善」という2本柱</b>として意味を正確に取れる。設問(2)の和訳が安定します。
+  </div>
+</div>
+
+<!-- 4 -->
+<div class="card">
+  <h3><span class="tag and">and</span>④ 3つの名詞を並列で繋ぐ</h3>
+  <p class="src">第2段落</p>
+  <div class="sent">…an organizing force in linking your <span class="u uA">thoughts</span>, <span class="u uA">feelings</span> <span class="cc and">and</span> <span class="u uA">actions</span>.</div>
+  <div class="connects">
+    <span class="box boxA">thoughts</span><span class="link and">/</span><span class="box boxA">feelings</span><span class="link and">and</span><span class="box boxA">actions</span>
+  </div>
+  <div class="grid">
+    <span class="k">何を繋ぐ？</span><span>動名詞 linking の目的語になる<b>3つの名詞</b>（A, B and C 型）</span>
+    <span class="k">判断の根拠</span><span class="check">and の後ろが名詞 actions → 前のカンマ区切りの名詞 thoughts, feelings と同列。</span>
+    <span class="k">メリット</span><span>「思考・感情・行動」の3つが等しく結びつけられる対象だと分かり、訳の範囲を取り違えない。</span>
+  </div>
+</div>
+
+<!-- 5 -->
+<div class="card">
+  <h3><span class="tag and">and</span>⑤ 2つの動詞句を並列で繋ぐ</h3>
+  <p class="src">第2段落 末尾</p>
+  <div class="sent">…you <span class="u uA">go out of control</span> <span class="cc and">and</span> eventually <span class="u uB">give them up</span>.</div>
+  <div class="connects">
+    <span class="box boxA">go out of control</span>
+    <span class="link and">and</span>
+    <span class="box boxB">(eventually) give them up</span>
+  </div>
+  <div class="grid">
+    <span class="k">何を繋ぐ？</span><span>主語 you に続く<b>2つの動詞句</b>（制御を失う → 結局あきらめる）</span>
+    <span class="k">判断の根拠</span><span class="check">and の前後がどちらも動詞句。間の eventually は後ろの動詞句を修飾する副詞。</span>
+    <span class="k">メリット</span><span>主語 you が<b>2つの動作</b>を行うと分かり、設問(3)「失敗の理由」の説明に直結する。</span>
+  </div>
+</div>
+
+<!-- 6 -->
+<div class="card">
+  <h3><span class="tag but">but</span>⑥ 節レベルの対比で繋ぐ</h3>
+  <p class="src">第3段落</p>
+  <div class="sent">Low-need achievers <span class="u uA">also kept trying</span>, <span class="cc but">but</span> <span class="u uB">only when they were told the task was easy</span>.</div>
+  <div class="connects">
+    <span class="box boxA">also kept trying（挑戦は続けた）</span>
+    <span class="link but">but</span>
+    <span class="box boxB">only when … easy（簡単と言われた時だけ）</span>
+  </div>
+  <div class="grid">
+    <span class="k">何を繋ぐ？</span><span>「挑戦を続けた」という内容と、それに<b>条件で制限をかける副詞節</b>を逆接で結ぶ。</span>
+    <span class="k">判断の根拠</span><span class="check">but の後ろに only（限定）＋when節 → 前の主節に「ただし～の時だけ」と但し書きを付ける逆接。</span>
+    <span class="k">メリット</span><span>「続けた、<b>ただし簡単な時だけ</b>」という限定が読み取れ、高達成者との差を正確に対比できる。</span>
+  </div>
+</div>
+
+<!-- reference examples -->
+<div class="card" style="background:#f7faff;">
+  <h3 style="font-size:1rem;">参考：着眼点の例文</h3>
+  <div class="sent" style="font-size:.98rem;">You can choose <span class="u uA">cake</span>, <span class="u uA">pudding</span>, <span class="cc or">or</span> <span class="u uA">ice cream</span>. <span class="pos">→ or が名詞3つを選択で並列</span></div>
+  <div class="sent" style="font-size:.98rem;">We helped the search party <span class="u uA">find</span> <span class="cc and">and</span> <span class="u uA">rescue</span> the missing climbers. <span class="pos">→ and が動詞2つ(find / rescue)を並列</span></div>
+</div>
+
+<div class="footer">
+  色の意味 ― <span style="color:var(--and)">■ and</span>／<span style="color:var(--or)">■ or</span>／<span style="color:var(--but)">■ but</span>。
+  同じ色の囲みは「同じ働き＝繋がれている要素」を示します。
+</div>
+
+</div>
+</body>
+</html>
