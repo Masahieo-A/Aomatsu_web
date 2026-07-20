@@ -24,12 +24,12 @@ export function Table({ pos, rot, scl }: RoomObject) {
         <boxGeometry args={[TOP_W, TOP_H, TOP_D]} />
         <meshStandardMaterial map={woodTex} roughness={0.6} />
       </mesh>
-      {[
+      {([
         [-TOP_W / 2 + LEG_R, LEG_H / 2, -TOP_D / 2 + LEG_R],
         [TOP_W / 2 - LEG_R, LEG_H / 2, -TOP_D / 2 + LEG_R],
         [-TOP_W / 2 + LEG_R, LEG_H / 2, TOP_D / 2 - LEG_R],
         [TOP_W / 2 - LEG_R, LEG_H / 2, TOP_D / 2 - LEG_R],
-      ].map((p, i) => (
+      ] as [number, number, number][]).map((p, i) => (
         <mesh key={i} castShadow position={p}>
           <cylinderGeometry args={[LEG_R, LEG_R, LEG_H, 8]} />
           <meshStandardMaterial map={woodTex} roughness={0.5} metalness={0.2} />

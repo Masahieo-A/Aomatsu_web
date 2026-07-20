@@ -51,8 +51,12 @@ export function SceneContainer({ roomId, objects, bounds }: SceneContainerProps)
               radius={0.4}
               intensity={50}
               luminanceInfluence={0.4}
-              color="black"
+              color={new THREE.Color("black")}
               bias={0.02}
+              worldDistanceThreshold={100}
+              worldDistanceFalloff={5}
+              worldProximityThreshold={0.4}
+              worldProximityFalloff={0.1}
             />
             <Bloom luminanceThreshold={0.9} luminanceSmoothing={0.9} intensity={0.3} />
             <ToneMapping />

@@ -24,13 +24,13 @@ function parseRoomData(data: unknown): RoomObject[] {
   const raw = data as Record<string, { type: string; pos?: unknown; rot?: unknown; scl?: unknown }>;
   return Object.entries(raw).map(([id, obj]) => {
     const pos = obj.pos && typeof obj.pos === "object" && "x" in obj.pos
-      ? { x: Number((obj.pos as { x: number }).x), y: Number((obj.pos as { y: number }).y), z: Number((obj.pos as { z: number }).z) }
+      ? { x: Number((obj.pos as { x: number }).x), y: Number((obj.pos as unknown as { y: number }).y), z: Number((obj.pos as unknown as { z: number }).z) }
       : { x: 0, y: 0, z: 0 };
     const rot = obj.rot && typeof obj.rot === "object" && "x" in obj.rot
-      ? { x: Number((obj.rot as { x: number }).x), y: Number((obj.rot as { y: number }).y), z: Number((obj.rot as { z: number }).z) }
+      ? { x: Number((obj.rot as { x: number }).x), y: Number((obj.rot as unknown as { y: number }).y), z: Number((obj.rot as unknown as { z: number }).z) }
       : { x: 0, y: 0, z: 0 };
     const sclRaw = obj.scl && typeof obj.scl === "object" && "x" in obj.scl
-      ? { x: Number((obj.scl as { x: number }).x), y: Number((obj.scl as { y: number }).y), z: Number((obj.scl as { z: number }).z) }
+      ? { x: Number((obj.scl as { x: number }).x), y: Number((obj.scl as unknown as { y: number }).y), z: Number((obj.scl as unknown as { z: number }).z) }
       : { x: 1, y: 1, z: 1 };
     const scl = sanitizeScale(sclRaw);
     const type = VALID_TYPES.includes(obj.type as ObjectType) ? (obj.type as ObjectType) : "wall";

@@ -31,12 +31,12 @@ export function Chair({ pos, rot, scl }: RoomObject) {
         <boxGeometry args={[BACK_W, BACK_H, BACK_D]} />
         <meshStandardMaterial map={fabricTex} roughness={0.8} />
       </mesh>
-      {[
+      {([
         [-SEAT_W / 2 + LEG_R, LEG_H / 2, -SEAT_D / 2 + LEG_R],
         [SEAT_W / 2 - LEG_R, LEG_H / 2, -SEAT_D / 2 + LEG_R],
         [-SEAT_W / 2 + LEG_R, LEG_H / 2, SEAT_D / 2 - LEG_R],
         [SEAT_W / 2 - LEG_R, LEG_H / 2, SEAT_D / 2 - LEG_R],
-      ].map((p, i) => (
+      ] as [number, number, number][]).map((p, i) => (
         <mesh key={i} castShadow position={p}>
           <cylinderGeometry args={[LEG_R, LEG_R, LEG_H, 8]} />
           <meshStandardMaterial color="#404040" metalness={0.6} roughness={0.3} />
