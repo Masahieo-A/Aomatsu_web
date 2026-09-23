@@ -36,7 +36,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .crumb-app { font-size: 14px; font-weight: 600; }
 
 .wrap { max-width: 980px; margin: 0 auto; padding: 24px 16px 16px; }
-.hero { margin-bottom: 20px; }
+.page-title { font-size: clamp(1.4rem, 3vw, 1.8rem); font-weight: 800; margin: 4px 0 20px; }
 .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
 .hero h1 { font-size: clamp(1.3rem, 3vw, 1.7rem); font-weight: 800; margin: 4px 0 8px; }
 .lead { color: var(--muted); max-width: 760px; }
