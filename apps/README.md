@@ -43,6 +43,7 @@ apps/app-xxx/
 | `app-parent-teacher-meeting` | APP016 | 保護者懇談会 日程調整 | 教員 | 校務 | 静的HTML + xlsx |
 | `app-heigan-navi` | APP017 | 併願照合ナビ（HeiganNavi） | 教員 | 進路指導 | Next.js |
 | `app-aomatsu-mondo` | APP018 | 青松問答 | 教員 | AI構築 | Next.js + Supabase |
+| `app-qt-print` | APP019 | Question Time 印刷 | 教員 | 作問 | 静的HTML + SheetJS |
 
 - **生徒向け**アプリはポータルトップ（`/index.html`）のカードに掲載する。
 - **教員向け**アプリは教員用ページ（`/admin/index.html`）のカードに掲載する（トップのフッター「教員用」リンクから遷移）。

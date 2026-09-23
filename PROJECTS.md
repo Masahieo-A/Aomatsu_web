@@ -16,6 +16,7 @@
 | APP003 | Cloze Test Maker（旧） | — | 🗑 廃止（APP004へ統合） | — |
 | APP004 | Cloze + 整序メーカー | `apps/app-cloze-seijo-maker` | ✅ 本番稼働 | Next.js / React / Supabase(予定) |
 | APP005 | 発音チェック（ELSA風） | `apps/app-elsa-like` | ✅ 本番稼働 | 静的HTML / Web Speech API |
+| APP019 | Question Time 印刷 | `apps/app-qt-print` | ✅ 本番稼働（ポータル同一デプロイ） | 静的HTML / SheetJS（通信なし） |
 | — | ポータル本体 | `/`（リポジトリルート） | ✅ 本番稼働 | 静的HTML / CSS / JS |
 
 > **APP002 / APP003 は APP004「Cloze + 整序メーカー」に統合され廃止。** モノレポからフォルダを削除し、ポータルからもカードを除外済み。App ID は使い回さず欠番として保持する。旧GitHubリポジトリ `Masahieo-A/seijo-maker` / `Masahieo-A/cloze-maker` と旧Vercelプロジェクト `seijo-maker` / `cloze-maker` はオーナーが削除（またはアーカイブ）する。
@@ -56,6 +57,12 @@
 - **Main Tech Stack**: 静的HTML / Vanilla JS / Web Speech API（マイク権限が必要）
 - **Env**: なし
 - **Notes**: `vercel.json` でマイク用 Permissions-Policy（`microphone=(self)`）を許可。
+
+### APP019 — Question Time 印刷
+- **Description**: Googleフォームで集めた essay と、Gem（サブスク内のAI）が作った追随質問のスプレッドシートを読み込み、解答用紙・採点シート・返却シートを A4縦1枚ずつ印刷する教員用ツール。
+- **URL**: ポータル同一デプロイ `/apps/app-qt-print/index.html`（教員用ページにカード掲載）
+- **Main Tech Stack**: 静的HTML / CSS / JS / SheetJS（ブラウザ内処理のみ。通信・DB・AI APIなし）
+- **Notes**: Gem のシステムプロンプトの正本は `apps/app-qt-print/docs/system-prompt.md`。旧Webアプリ版 `~/Projects/question-time`（Vercel: question-time-sable）は API 課金のため運用停止（2026-09-23）。
 
 ### ポータル本体
 - **Description**: 各アプリへのカードリンクを持つトップページ。カテゴリフィルタ付き。

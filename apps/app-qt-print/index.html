@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Question Time 印刷</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header no-print">
+    <a href="../../index.html" class="site-logo"><span class="logo-mark" aria-hidden="true">🌿</span>English Hub</a>
+    <span class="crumb-sep">›</span>
+    <a href="../../admin/index.html" class="crumb">教員用</a>
+    <span class="crumb-sep">›</span>
+    <span class="crumb-app">Question Time 印刷</span>
+  </header>
+
+  <main class="wrap no-print">
+    <section class="hero">
+      <p class="eyebrow">Question Time</p>
+      <h1>essayを「自分のもの」にしているかを、紙で確かめる</h1>
+      <p class="lead">
+        生徒のessayごとの追随質問を、A4縦1枚の解答用紙・採点シート・返却シートにして印刷します。
+        ファイルはこのブラウザの中だけで読み込み、どこにも送信しません（AIも使いません）。
+      </p>
+    </section>
+
+    <!-- STEP 0 -->
+    <details class="card step" id="step-setup">
+      <summary><span class="step-no">0</span>はじめに（最初の1回だけ）：フォームとGemの準備</summary>
+      <div class="step-body">
+        <ol class="howto">
+          <li><strong>Googleフォーム</strong>を作り、次の4項目を順に設定します（すべて必須）。
+            <ul>
+              <li>「クラス」…プルダウン（例: 2A, 2B …）</li>
+              <li>「番号」…記述式（回答の検証: 数値・1〜45）</li>
+              <li>「氏名」…記述式</li>
+              <li>「essay」…段落。説明文に「紙に書いたessayを、スペルや文法を直さずにそのまま入力してください。」</li>
+            </ul>
+            設定 ›「回答」で「tomidah.com のユーザーに限定」をオンにします。回答タブ ›「スプレッドシートにリンク」で回答シートを作ります。
+          </li>
+          <li>そのスプレッドシートに、空のシート「<strong>質問</strong>」を追加します（Gemの出力を貼る場所）。</li>
+          <li><strong>Gem</strong>（Gemini ›「Gem マネージャー」›「新しい Gem」）またはマイGPTを作り、下の「システムプロンプト」を指示欄に貼り付けて保存します。
+            学校アカウント（@tomidah.com）の Gemini の利用を推奨します。</li>
+        </ol>
+        <div class="row">
+          <button type="button" class="btn btn-primary" id="copy-prompt">システムプロンプトをコピー</button>
+          <button type="button" class="btn btn-secondary" id="toggle-prompt">中身を表示</button>
+        </div>
+        <pre class="prompt-view" id="prompt-view" hidden></pre>
+      </div>
+    </details>
+
+    <!-- STEP 1 -->
+    <section class="card step">
+      <h2><span class="step-no">1</span>課題の情報</h2>
+      <div class="grid-form">
+        <label class="field"><span>課題名</span><input class="input" id="s-title" placeholder="例: 2学期中間 Question Time" /></label>
+        <label class="field"><span>実施日</span><input class="input" id="s-date" type="date" /></label>
+        <label class="field wide"><span>essayトピック（英語・用紙に印字）</span><input class="input" id="s-topic" lang="en" placeholder="Draft a proposal to boost youth tourism in our town." /></label>
+        <label class="field"><span>学年目標CEFR（Gemに渡す）</span>
+          <select class="input" id="s-cefr"><option>A2</option><option selected>B1</option><option>B2</option></select></label>
+        <label class="field"><span>解答時間（分）</span><input class="input" id="s-minutes" type="number" min="5" max="60" value="15" /></label>
+      </div>
+      <p class="muted small">この欄はこのブラウザに保存されます。</p>
+    </section>
+
+    <!-- STEP 2 -->
+    <section class="card step">
+      <h2><span class="step-no">2</span>スプレッドシートを読み込む</h2>
+      <p>Googleスプレッドシートで「ファイル › ダウンロード › Microsoft Excel（.xlsx）」を選んで保存したファイルを選びます。
+        フォームの回答シートと「質問」シートの両方が入っていれば、IDで自動的に結び付けます。</p>
+      <label class="drop" id="drop">
+        <input type="file" id="file" accept=".xlsx,.xls,.csv" multiple />
+        <span>ここに .xlsx をドロップ、またはクリックして選択</span>
+      </label>
+      <div class="row"><button type="button" class="btn btn-secondary btn-sm" id="load-sample">サンプル（架空の生徒4人）で試す</button></div>
+      <div id="load-summary" class="summary"></div>
+    </section>
+
+    <!-- STEP 3 -->
+    <section class="card step">
+      <h2><span class="step-no">3</span>Gemに渡す（質問がまだない生徒）</h2>
+      <p>最初に「課題開始メッセージ」を送り、続けて5人分ずつ貼り付けます。まとめて送りすぎると、後半の質問が一般論に寄りやすくなります。
+        渡すのは <strong>ID と本文だけ</strong>です（氏名は含みません）。</p>
+      <div class="row">
+        <button type="button" class="btn btn-secondary" id="copy-kickoff">課題開始メッセージをコピー</button>
+        <label class="field inline"><span>1回の人数</span><input class="input narrow" id="batch-size" type="number" min="1" max="10" value="5" /></label>
+        <label class="check"><input type="checkbox" id="batch-missing-only" checked />質問がまだない生徒だけ</label>
+      </div>
+      <div id="batches" class="batches"></div>
+      <p class="muted small">Gemが出した表（見出し行ごと）を、スプレッドシートの「質問」シートのA1から下へ続けて貼り付けます（2回目以降は見出し行があっても構いません）。
+        貼り終えたら、もう一度 .xlsx をダウンロードして手順2で読み込み直します。</p>
+      <details class="paste-box">
+        <summary>スプレッドシートを使わず、Gemの出力をここに直接貼る</summary>
+        <p class="muted small">ページを閉じると消えます。記録を残すには「質問」シートに貼る方法がおすすめです。</p>
+        <textarea class="input tsv" id="tsv" placeholder="Gemの出力（TSV）を貼り付け"></textarea>
+        <button type="button" class="btn btn-secondary" id="apply-tsv">貼り付けた内容を取り込む</button>
+      </details>
+    </section>
+
+    <!-- STEP 4 -->
+    <section class="card step">
+      <h2><span class="step-no">4</span>点検</h2>
+      <p>AIの誤りでいちばん多いのは「essayにない文の引用」です。引用が本文に一字一句あるか、質問の語数などを機械的に確かめます。
+        ✗が出た生徒は「質問」シートを直すか、Gemに作り直させてから読み込み直してください。</p>
+      <div class="row">
+        <select class="input narrow" id="class-filter"><option value="">全クラス</option></select>
+        <div class="filters" id="status-filter">
+          <button type="button" data-f="all" class="on">全員</button>
+          <button type="button" data-f="ng">要確認</button>
+          <button type="button" data-f="missing">質問なし</button>
+        </div>
+      </div>
+      <div class="table-wrap"><table class="table" id="check-table"></table></div>
+    </section>
+
+    <!-- STEP 5 -->
+    <section class="card step">
+      <h2><span class="step-no">5</span>印刷</h2>
+      <div class="row">
+        <div class="filters" id="kind">
+          <button type="button" data-k="student" class="on">解答用紙（生徒）</button>
+          <button type="button" data-k="teacher">採点シート（教員）</button>
+          <button type="button" data-k="feedback">返却シート（生徒）</button>
+        </div>
+      </div>
+      <div class="row">
+        <label class="check"><input type="checkbox" id="use-backup" />質問がない生徒・要確認の生徒は予備問題で印刷する</label>
+        <label class="check"><input type="checkbox" id="include-ng" />点検で✗の生徒も印刷する</label>
+      </div>
+      <p class="muted small" id="print-count"></p>
+      <div class="row">
+        <button type="button" class="btn btn-primary btn-lg" id="print">印刷する（A4縦・余白なし）</button>
+      </div>
+      <p class="muted small">Chromeの印刷画面で「用紙サイズ: A4」「余白: なし」「倍率: 100」「背景のグラフィック: オン」にしてください。PDFに保存して印刷しても同じです。</p>
+    </section>
+
+    <section class="preview-head">
+      <h2>プレビュー</h2>
+      <p class="muted small">下に印刷されるものがそのまま並びます（1人1枚）。</p>
+    </section>
+  </main>
+
+  <div id="sheets" class="sheets"></div>
+  <div id="toast" class="toast no-print" hidden></div>
+
+  <script src="xlsx.full.min.js"></script>
+  <script src="prompt.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
