@@ -10,7 +10,7 @@
     { label: "論理転移", structure: "条件文・比較" },
     { label: "平易化", structure: "文の組み替え（関係詞・分詞構文をほどく）" },
   ];
-  const Q_FIELDS = ["引用", "質問", "意図", "論点", "A例", "B例", "等価構造"];
+  const Q_FIELDS = ["引用", "質問", "和訳", "意図", "論点", "A例", "B例", "等価構造"];
   const REQUIRED_FIELDS = ["引用", "質問", "論点", "A例", "B例"];
   const LANGUAGE_RUBRIC = [
     ["2", "指定構造、または機能が同じ構造（等価構造）を使い、意味が通る（PL-3）"],
@@ -19,9 +19,9 @@
   ];
   // §17.2 汎用予備問題（essayに依存しない。Content軸は評価対象外）
   const BACKUP = [
-    "Some people disagree with the main idea of your essay. Write their opinion first, and then explain why you still keep your opinion.",
-    "Imagine that your idea was tried in a different place, such as a big city or another country. Would it work better or worse? Explain why.",
-    "Choose the most important sentence in your essay. Copy it, and then say the same thing again in two short and simple English sentences.",
+    ["Some people disagree with the main idea of your essay. Write their opinion first, and then explain why you still keep your opinion.", "あなたのessayの主な考えに反対する人もいます。まずその人たちの意見を書き、それでもなぜ自分の意見を変えないのかを説明しなさい。"],
+    ["Imagine that your idea was tried in a different place, such as a big city or another country. Would it work better or worse? Explain why.", "あなたの考えを、大都市や外国など別の場所で試したとします。うまくいくでしょうか、それともうまくいかないでしょうか。理由を説明しなさい。"],
+    ["Choose the most important sentence in your essay. Copy it, and then say the same thing again in two short and simple English sentences.", "あなたのessayでいちばん大事な1文を選んで書き写し、同じ内容を短く簡単な英文2文で言い直しなさい。"],
   ];
 
   function rubricFor(qi, quote, point) {
@@ -311,28 +311,22 @@
       return { backup: false, level: r.level, items: [0, 1, 2].map((i) => Object.fromEntries(Q_FIELDS.map((f) => [f, q[`Q${i + 1}_${f}`] || ""]))), claim: q["主張"] || "", reasons: q["理由"] || "" };
     }
     if (!useBackup) return null;
-    return { backup: true, level: r.level, items: BACKUP.map((t) => ({ 質問: t, 引用: "", 意図: "汎用予備問題", 論点: "", A例: "", B例: "", 等価構造: "" })), claim: q?.["主張"] || "", reasons: "" };
+    return { backup: true, level: r.level, items: BACKUP.map(([t, ja]) => ({ 質問: t, 和訳: ja, 引用: "", 意図: "汎用予備問題", 論点: "", A例: "", B例: "", 等価構造: "" })), claim: q?.["主張"] || "", reasons: "" };
   }
 
   function studentSheet(s, qd, st) {
     const quotes = qd.items.map((x) => x["引用"]);
     return `<section class="sheet student"><div class="sheet-inner">
       ${headBlock(s, st, "解答用紙")}
-      <div class="rules">
-        <div><b>解答時間</b> ${esc(st.minutes)}分</div>
-        <div><b>使えないもの</b> 辞書・スマホ・AI</div>
-        <div><b>見てよいもの</b> 自分のessay（下に印刷してあります）</div>
-        <div><b>日本語</b> 英語で書けない部分は日本語でもよい（英語の点は0）</div>
-        <div style="grid-column:1/-1">覚えているかではなく、<b>このessayの考えを自分のものとして説明できるか</b>を見ます。下線部はそれぞれの質問が取り上げている部分です。</div>
-      </div>
       <div class="essay-box"><div class="label">YOUR ESSAY</div><div class="essay-text" lang="en">${qd.backup ? esc(s.essay) : markQuotes(s.essay, quotes)}</div></div>
       ${qd.items.map((x, i) => `<div class="q">
         <div class="q-head"><span class="q-no">Q${i + 1}</span><span class="q-text" lang="en">${esc(x["質問"])}</span>
           <span class="q-score">内容<span></span> 英語<span></span></span></div>
+        ${x["和訳"] ? `<div class="q-ja">${esc(x["和訳"])}</div>` : ""}
         <div class="lines" data-q="${i}"></div>
       </div>`).join("")}
     </div>
-    <div class="sheet-foot"><span>${esc(s.id)}${qd.backup ? "　予備問題" : ""}</span><span>Question Time — 書いたessayを、自分の言葉で守れるか</span></div>
+    <div class="sheet-foot"><span>${esc(s.id)}${qd.backup ? "　予備問題" : ""}</span></div>
     </section>`;
   }
 
@@ -384,6 +378,7 @@
         const rb = rubricFor(i, x["引用"], x["論点"]);
         return `<div class="f-q">
           <div class="q-head"><span class="q-no">Q${i + 1}</span><span class="q-text" lang="en">${esc(x["質問"])}</span></div>
+          ${x["和訳"] ? `<div class="q-ja">${esc(x["和訳"])}</div>` : ""}
           ${qd.backup ? "" : `<div class="f-row"><b>内容のA基準</b><span>${esc(rb.A)}</span></div>
           <div class="f-row"><b>解答例</b><span lang="en">${esc(x["A例"])}</span></div>
           <div class="f-row"><b>使える表現</b><span lang="en">${esc(x["等価構造"])}</span></div>`}
@@ -397,7 +392,7 @@
         <div class="f-row"><b>それへの答え</b><span class="lines"><div class="line"></div><div class="line"></div><div class="line"></div></span></div>
       </div>
     </div>
-    <div class="sheet-foot"><span>${esc(s.id)}</span><span>Question Time — 書いたessayを、自分の言葉で守れるか</span></div>
+    <div class="sheet-foot"><span>${esc(s.id)}</span></div>
     </section>`;
   }
 
@@ -495,6 +490,7 @@
   function init() {
     loadSettings();
     $("prompt-view").textContent = window.QT_SYSTEM_PROMPT || "";
+    if (!window.QT_SYSTEM_PROMPT) toast("システムプロンプトを読み込めませんでした。ページを再読み込み（Cmd+Shift+R）してください。", true);
     $("copy-prompt").addEventListener("click", () => copy(window.QT_SYSTEM_PROMPT || "", "システムプロンプトをコピーしました。Gemの「指示」欄に貼り付けてください。"));
     $("toggle-prompt").addEventListener("click", () => { $("prompt-view").hidden = !$("prompt-view").hidden; });
     $("copy-kickoff").addEventListener("click", () => {

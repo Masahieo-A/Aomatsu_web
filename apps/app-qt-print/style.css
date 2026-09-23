@@ -139,6 +139,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .q-text { font-size: 10pt; font-weight: 600; flex: 1; }
 .q-score { font-size: 7.5pt; white-space: nowrap; color: #555; }
 .q-score span { display: inline-block; width: 7mm; height: 5mm; border: 0.25mm solid #777; vertical-align: middle; margin-left: 1mm; }
+.q-ja { font-size: 8.3pt; color: #444; padding-left: 10mm; line-height: 1.4; }
 .quote { font-style: italic; font-size: 8.8pt; border-left: 0.8mm solid #52b788; background: #eef6f1; padding: 0.6mm 2mm; }
 .lines .line { height: 7.6mm; border-bottom: 0.25mm dotted #888; }
 .sheet-foot { position: absolute; left: 12mm; right: 12mm; bottom: 5mm; font-size: 6.5pt; color: #888; display: flex; justify-content: space-between; }
