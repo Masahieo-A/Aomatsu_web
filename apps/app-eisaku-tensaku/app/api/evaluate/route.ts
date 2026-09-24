@@ -55,6 +55,11 @@ export async function POST(request: Request) {
     const result = await evaluateEssayWithGemini(topic, wordCountReq, essay);
     return NextResponse.json(result, { status: 200 });
   } catch (e) {
+    // 原因調査用：Gemini のエラー内容（HTTPステータス・メッセージ）を Vercel ログに残す（APIキーは含まれない）
+    console.error(
+      "[api/evaluate] Gemini call failed:",
+      isGeminiApiError(e) ? `status=${e.status} ${e.message}` : e instanceof Error ? e.message : e
+    );
     if (isGeminiApiError(e)) {
       if (e.status === 429 || (e.status >= 500 && e.status < 600)) {
         return NextResponse.json(

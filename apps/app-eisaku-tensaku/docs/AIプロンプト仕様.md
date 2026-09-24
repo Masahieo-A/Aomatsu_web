@@ -11,7 +11,7 @@
 | 項目 | 内容 |
 |---|---|
 | 使用 API | Google Gemini API（`@google/genai` SDK） |
-| モデル | `gemini-2.5-flash`（定義: `lib/gemini.ts` の `GEMINI_MODEL`） |
+| モデル | `gemini-3.8-flash`（定義: `lib/gemini.ts` の `GEMINI_MODEL`） |
 | 呼び出し箇所 | `POST /api/evaluate`（サーバー側のみ） |
 | API キー | 環境変数 `GEMINI_API_KEY`（サーバー側のみ。クライアントには露出しない） |
 | 出力形式 | `responseMimeType: "application/json"` ＋ `responseSchema` による構造化 JSON |

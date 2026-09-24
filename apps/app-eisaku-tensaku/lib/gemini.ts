@@ -7,7 +7,7 @@ import { ApiError, FinishReason, GoogleGenAI, Type } from "@google/genai";
 import { SYSTEM_PROMPT } from "./prompt";
 import { OutputSchema, type OutputType, ERROR_TYPE_VALUES } from "./schema";
 
-export const GEMINI_MODEL = "gemini-2.5-flash";
+export const GEMINI_MODEL = "gemini-3.8-flash";
 
 /** generateContent に渡す responseSchema（ErrorType の列挙を含む） */
 function buildResponseSchema() {

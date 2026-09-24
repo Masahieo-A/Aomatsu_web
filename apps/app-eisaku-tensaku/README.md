@@ -75,7 +75,7 @@ SSH ではなく HTTPS を使う場合は、`origin` の URL を `https://github
 ## Gemini API まわりの注意
 
 - このリポジトリでは **API の自動リトライ（ループ）をアプリ側で行いません**（SDK の HTTP 再試行は `attempts: 1` に制限）。
-- モデル名は `lib/gemini.ts` の `GEMINI_MODEL`（既定: `gemini-2.5-flash`）です。利用できない場合は、Google のモデル一覧を確認のうえ、動作確認後に変更してください。
+- モデル名は `lib/gemini.ts` の `GEMINI_MODEL`（既定: `gemini-3.8-flash`）です。利用できない場合は、Google のモデル一覧を確認のうえ、動作確認後に変更してください。
 
 ## ライセンス
 
