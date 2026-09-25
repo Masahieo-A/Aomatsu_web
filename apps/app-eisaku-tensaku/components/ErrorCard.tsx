@@ -66,6 +66,11 @@ function AnswerPractice({ correction }: { correction: CorrectionType }) {
         </>
       ) : (
         <>
+          {/* 注意書き：全文を入力してしまう生徒が多いため、問題文の直前に目立つ形で表示 */}
+          <p className="mb-2 flex items-center gap-2 rounded-[6px] border-l-4 border-[#52b788] bg-[#d8f3dc] px-3 py-2 text-sm font-bold text-[#2d6a4f]">
+            <span aria-hidden="true">⚠️</span>
+            下線部のみ解答欄に入力してください。
+          </p>
           <p className="mb-2 font-mono text-sm leading-relaxed text-[#1a1714]">
             {correction.maskedSentence}
           </p>
@@ -74,7 +79,7 @@ function AnswerPractice({ correction }: { correction: CorrectionType }) {
             value={value}
             onChange={(e) => onChange(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && check()}
-            placeholder="空欄に入る語を入力"
+            placeholder="下線部に入る語だけを入力"
             className="w-full rounded-[6px] border border-[#e2ddd8] bg-white p-2.5 font-mono text-sm text-[#1a1714] outline-none focus:border-[#52b788]"
           />
         </>
