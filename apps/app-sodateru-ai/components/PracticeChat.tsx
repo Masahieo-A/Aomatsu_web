@@ -1,5 +1,8 @@
 "use client";
 
+import { AppIcon } from "@/components/AppIcon";
+import { SotaAvatar } from "@/components/SotaAvatar";
+
 import { useEffect, useRef, useState } from "react";
 import { ErrorRetry } from "@/components/ErrorRetry";
 import type { GrammarUnit, MCQuestion, LessonMessage, PracticeTurn } from "@/types";
@@ -10,6 +13,8 @@ type Bubble =
 
 type Props = {
   unit: GrammarUnit;
+  participantId: string;
+  sessionId: string;
   question: MCQuestion;
   questionIndex: number; // 0-based
   totalQuestions: number;
@@ -38,6 +43,8 @@ type Props = {
 
 export function PracticeChat({
   unit,
+  participantId,
+  sessionId,
   question,
   questionIndex,
   totalQuestions,
@@ -56,13 +63,15 @@ export function PracticeChat({
   const [loading, setLoading] = useState(true);
   const [reply, setReply] = useState("");
   const [error, setError] = useState<string | null>(null);
+  const [prepaidDepleted, setPrepaidDepleted] = useState(false);
 
   // API送信用の「最新の対話全文」を ref で保持（state の非同期性を回避）
   const convoRef = useRef<LessonMessage[]>(dialogue);
   // 初回ターンを一度だけ起動するためのガード
   const startedRef = useRef(false);
-  // この問題で先生が追加で教えた回数（安全弁：2回以上で必ず次へ進める）
+  // この問題で先生が追加で教えた回数（対話の長さを伝えるため）
   const teacherRepliesRef = useRef(0);
+  const questionStartRef = useRef(dialogue.length);
   // 冪等化キー：ターンごとに発行し、エラー時の再試行では同じIDを再送する
   // （サーバがキャッシュを返すため、連打・再試行で二重生成されない）
   const attemptIdRef = useRef<string>(
@@ -81,8 +90,11 @@ export function PracticeChat({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           unit_id: unit.id,
+          participant_id: participantId,
+          session_id: sessionId,
           question_id: question.id,
           dialogue: convoRef.current,
+          question_dialogue: convoRef.current.slice(questionStartRef.current),
           is_followup: isFollowup,
           exchange_count: teacherRepliesRef.current,
           // 初回ターンのみ forceStumble を送る（あえて1問間違えさせる）
@@ -91,7 +103,10 @@ export function PracticeChat({
         }),
       });
       const data = await res.json();
-      if (!res.ok) throw new Error(data.error ?? "AIの応答に失敗しました");
+      if (!res.ok) {
+        if (data.code === "PREPAID_CREDITS_DEPLETED") setPrepaidDepleted(true);
+        throw new Error(data.error ?? "ソウタの応答に失敗しました");
+      }
 
       const turn = data as PracticeTurn;
       const studentMsg: LessonMessage = { role: "student", content: turn.message };
@@ -111,9 +126,7 @@ export function PracticeChat({
       if (!isFollowup) onFirstAnswer?.(!!turn.isCorrect);
       // “あえて間違える”演出が発動した初回ターンを親へ通知（事後開示用）
       if (!isFollowup && forceStumble) onStumble?.();
-      // 安全弁：2回以上教えたら、AIの応答に関わらず次へ進めるようにする
-      // （同じ質問の繰り返しで生徒が足止めされ、意欲を失うのを防ぐ）
-      setSatisfied(!!turn.satisfied || teacherRepliesRef.current >= 2);
+      setSatisfied(!!turn.satisfied);
     } catch (err) {
       setError(err instanceof Error ? err.message : "エラーが発生しました");
     } finally {
@@ -133,6 +146,10 @@ export function PracticeChat({
   const handleSend = async () => {
     const text = reply.trim();
     if (!text || loading) return;
+    if (/^(分からない|わからない|分かりません|わかりません)[。.!！]?$/.test(text)) {
+      handleUnknown(text);
+      return;
+    }
     const teacherMsg: LessonMessage = { role: "teacher", content: text };
     convoRef.current = [...convoRef.current, teacherMsg];
     onAppend(teacherMsg);
@@ -143,6 +160,18 @@ export function PracticeChat({
     // 新しいターンなので冪等化キーを発行し直す（再試行時はこのIDを使い回す）
     attemptIdRef.current = crypto.randomUUID();
     await runTurn(true);
+  };
+
+  const handleUnknown = (answer = "分からない（この内容はまだ説明できません）") => {
+    if (loading) return;
+    const teacherMsg: LessonMessage = {
+      role: "teacher",
+      content: answer,
+      unknownTopics: question.requiredTopics ?? [],
+    };
+    convoRef.current = [...convoRef.current, teacherMsg];
+    onAppend(teacherMsg);
+    onNext();
   };
 
   return (
@@ -197,7 +226,7 @@ export function PracticeChat({
                 <span>{c.text}</span>
                 {chosen && (
                   <span className="ml-auto">
-                    {lastStudent?.isCorrect ? "✅" : "❌"}
+                    <AppIcon name={lastStudent?.isCorrect ? "success" : "error"} />
                   </span>
                 )}
               </div>
@@ -211,7 +240,7 @@ export function PracticeChat({
         {bubbles.map((b, i) =>
           b.kind === "student" ? (
             <div key={i} className="flex items-start gap-2">
-              <span className="text-2xl flex-shrink-0">🤖</span>
+              <SotaAvatar />
               <div className="bg-indigo-50 border border-indigo-100 rounded-2xl rounded-tl-sm px-4 py-3 max-w-[85%]">
                 <p className="text-sm text-indigo-900 leading-relaxed whitespace-pre-wrap">
                   {b.content}
@@ -223,14 +252,14 @@ export function PracticeChat({
               <div className="bg-gray-800 text-white rounded-2xl rounded-tr-sm px-4 py-3 max-w-[85%]">
                 <p className="text-sm leading-relaxed whitespace-pre-wrap">{b.content}</p>
               </div>
-              <span className="text-2xl flex-shrink-0">🧑‍🏫</span>
+              <AppIcon name="teacher" size={28} className="text-gray-600" />
             </div>
           )
         )}
 
         {loading && (
           <div className="flex items-start gap-2">
-            <span className="text-2xl flex-shrink-0">🤖</span>
+            <SotaAvatar />
             <div className="bg-indigo-50 border border-indigo-100 rounded-2xl rounded-tl-sm px-4 py-3">
               <span className="flex gap-1 items-center">
                 <span className="w-2 h-2 bg-indigo-300 rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
@@ -245,7 +274,7 @@ export function PracticeChat({
       {error && !loading && (
         <ErrorRetry
           message={error}
-          onRetry={() => runTurn(lastFollowupRef.current)}
+          onRetry={prepaidDepleted ? undefined : () => runTurn(lastFollowupRef.current)}
           note="再試行しても、これまでの会話は消えません。"
         />
       )}
@@ -255,24 +284,29 @@ export function PracticeChat({
         <div className="space-y-3">
           <div className="bg-white rounded-2xl border border-gray-200 p-3">
             <label className="block text-xs font-bold text-gray-500 mb-1.5">
-              💬 AIにさらに教える・質問に答える
+              <AppIcon name="chat" /> ソウタにさらに教える・質問に答える
             </label>
             <textarea
               value={reply}
               onChange={(e) => setReply(e.target.value)}
-              placeholder="AIのつぶやきや質問に答えて、もっと深く教えてあげましょう。"
+              placeholder="ソウタのつぶやきや質問に答えて、もっと深く教えてあげましょう。"
               rows={3}
               className="w-full p-2 text-sm text-gray-800 focus:outline-none resize-none leading-relaxed"
             />
             <button
               onClick={handleSend}
-              disabled={reply.trim().length === 0}
+              disabled={prepaidDepleted || reply.trim().length === 0}
               className="w-full mt-1 py-2.5 px-4 bg-indigo-600 text-white font-bold rounded-xl
                 hover:bg-indigo-700 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed text-sm"
             >
-              ✏️ 追加で教える
+              <AppIcon name="pencil" /> 追加で教える
             </button>
           </div>
+
+          <button type="button" onClick={() => handleUnknown()} className="w-full py-3 px-4 rounded-xl border-2 border-amber-200 bg-amber-50 text-amber-900 font-bold hover:bg-amber-100">
+            分からない — 未理解のまま次へ進む
+          </button>
+          <p className="text-xs text-amber-800 text-center">分からないと気づくのも学習です。この内容はソウタが理解した扱いにせず、最後の振り返りに残します。</p>
 
           <button
             onClick={onNext}
@@ -284,19 +318,19 @@ export function PracticeChat({
                 : "bg-indigo-50 border-2 border-indigo-200 text-indigo-600 hover:bg-indigo-100"
             }`}
           >
-            {satisfied && !error ? "✅ " : ""}
+            {satisfied && !error && <AppIcon name="success" />}
             {error
-              ? `⚠️ AIの解答をスキップして${isLast ? "学習内容の確認へ" : "次へ"} →`
+              ? `ソウタの解答をスキップして${isLast ? "学習内容の確認へ" : "次へ"}`
               : isLast
-              ? "学習内容を確認する →"
-              : "次の練習問題へ →"}
+              ? "学習内容を確認する"
+              : "次の練習問題へ"} <AppIcon name="next" />
           </button>
           <p className="text-center text-xs font-medium text-gray-400">
             {error
-              ? "スキップすると、この問題でAIに教える機会はなくなります。できれば「もう一度」を試してください。"
+              ? prepaidDepleted ? "前払い残高が補充されるまで、ソウタの解答は利用できません。" : "スキップすると、この問題でソウタに教える機会はなくなります。できれば「もう一度」を試してください。"
               : satisfied
-              ? "AIはこの問題を十分に理解できたようです！"
-              : "いつでも次に進めます。納得いくまで教えてもOK。"}
+              ? "ソウタはこの問題を十分に理解できたようです！"
+              : "いつでも次に進めます。分からない場合は上のボタンで記録できます。"}
           </p>
         </div>
       )}

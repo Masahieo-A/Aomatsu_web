@@ -1,5 +1,8 @@
 "use client";
 
+import { AppIcon } from "@/components/AppIcon";
+import { SotaAvatar } from "@/components/SotaAvatar";
+
 import { useEffect, useRef, useState } from "react";
 import { ErrorRetry } from "@/components/ErrorRetry";
 import type { GrammarUnit, LessonMessage, PracticeTurn } from "@/types";
@@ -10,6 +13,8 @@ type Bubble =
 
 type Props = {
   unit: GrammarUnit;
+  participantId: string;
+  sessionId: string;
   /** 親のレッスン対話へ1メッセージ追記 */
   onAppend: (m: LessonMessage) => void;
   /** 基礎説明（説明ビルダー）へ進む */
@@ -34,25 +39,25 @@ function KnowledgeContract({ unit }: { unit: GrammarUnit }) {
         className="w-full flex items-center justify-between px-4 py-2.5 bg-indigo-50 hover:bg-indigo-100 transition-colors text-left"
       >
         <div className="flex items-center gap-2">
-          <span className="text-base">🤝</span>
+          <AppIcon name="handshake" />
           <span className="text-sm font-bold text-indigo-700">
-            このAIが知っていること・知らないこと
+            ソウタが知っていること・知らないこと
           </span>
         </div>
         <span className="text-indigo-400 text-xs font-medium">
-          {open ? "▲ 閉じる" : "▼ 開く"}
+          <AppIcon name={open ? "up" : "down"} /> {open ? "閉じる" : "開く"}
         </span>
       </button>
       {open && (
         <div className="bg-white px-4 py-3 space-y-3">
           <div>
             <p className="text-xs font-bold text-gray-400 mb-1.5">
-              🧠 最初から知っていること（教えなくてOK）
+              <AppIcon name="brain" /> 最初から知っていること（教えなくてOK）
             </p>
             <ul className="space-y-1">
               {assumedKnowledge.map((item, i) => (
                 <li key={i} className="flex items-start gap-2 text-xs text-gray-500">
-                  <span className="mt-0.5 flex-shrink-0">✓</span>
+                  <AppIcon name="check" className="mt-0.5" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -60,12 +65,12 @@ function KnowledgeContract({ unit }: { unit: GrammarUnit }) {
           </div>
           <div>
             <p className="text-xs font-bold text-indigo-600 mb-1.5">
-              📚 今日きみが教えること（これだけでOK）
+              <AppIcon name="books" /> 今日きみが教えること（これだけでOK）
             </p>
             <ul className="space-y-1">
               {coverageTopics.map((item, i) => (
                 <li key={i} className="flex items-start gap-2 text-xs text-gray-700">
-                  <span className="mt-0.5 text-indigo-300 flex-shrink-0 font-bold">□</span>
+                  <AppIcon name="empty" className="mt-0.5 text-indigo-300" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -83,13 +88,21 @@ function KnowledgeContract({ unit }: { unit: GrammarUnit }) {
  * 生徒の最初の入力を「説明の作文」ではなく「質問への返答」にすることで、
  * 0→1のハードルを下げる（教える必然性も先に体感させる）。
  */
-export function ColdOpenChat({ unit, onAppend, onProceed, attemptScope }: Props) {
+export function ColdOpenChat({
+  unit,
+  participantId,
+  sessionId,
+  onAppend,
+  onProceed,
+  attemptScope,
+}: Props) {
   const question = unit.practiceQuestions[0];
 
   const [bubbles, setBubbles] = useState<Bubble[]>([]);
   const [loading, setLoading] = useState(true);
   const [reply, setReply] = useState("");
   const [error, setError] = useState<string | null>(null);
+  const [prepaidDepleted, setPrepaidDepleted] = useState(false);
 
   // API送信用の「最新の対話全文」を ref で保持（state の非同期性を回避）
   const convoRef = useRef<LessonMessage[]>([]);
@@ -112,6 +125,8 @@ export function ColdOpenChat({ unit, onAppend, onProceed, attemptScope }: Props)
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           unit_id: unit.id,
+          participant_id: participantId,
+          session_id: sessionId,
           question_id: question.id,
           dialogue: convoRef.current,
           is_followup: isFollowup,
@@ -121,7 +136,10 @@ export function ColdOpenChat({ unit, onAppend, onProceed, attemptScope }: Props)
         }),
       });
       const data = await res.json();
-      if (!res.ok) throw new Error(data.error ?? "AIの応答に失敗しました");
+      if (!res.ok) {
+        if (data.code === "PREPAID_CREDITS_DEPLETED") setPrepaidDepleted(true);
+        throw new Error(data.error ?? "ソウタの応答に失敗しました");
+      }
 
       const turn = data as PracticeTurn;
       const studentMsg: LessonMessage = { role: "student", content: turn.message };
@@ -171,9 +189,9 @@ export function ColdOpenChat({ unit, onAppend, onProceed, attemptScope }: Props)
       {/* 導入メッセージ */}
       <div className="p-4 bg-indigo-50 rounded-xl border border-indigo-100">
         <div className="flex items-start gap-2">
-          <span className="text-2xl">🤖</span>
+          <SotaAvatar />
           <div>
-            <p className="font-bold text-indigo-800">まずはAIの腕試し</p>
+            <p className="font-bold text-indigo-800">まずはソウタの腕試し</p>
             <p className="text-indigo-700 text-sm mt-1 leading-relaxed">
               「{unit.name}」はまだ教わっていませんが、いまの知識だけで1問だけ挑戦してみます。
               つまずいたところを教えてあげてください！
@@ -208,7 +226,7 @@ export function ColdOpenChat({ unit, onAppend, onProceed, attemptScope }: Props)
               >
                 <span className="font-bold">{c.label}.</span>
                 <span>{c.text}</span>
-                {chosen && <span className="ml-auto">🤔</span>}
+                {chosen && <AppIcon name="brain" className="ml-auto" />}
               </div>
             );
           })}
@@ -223,7 +241,7 @@ export function ColdOpenChat({ unit, onAppend, onProceed, attemptScope }: Props)
         {bubbles.map((b, i) =>
           b.kind === "student" ? (
             <div key={i} className="flex items-start gap-2">
-              <span className="text-2xl flex-shrink-0">🤖</span>
+              <SotaAvatar />
               <div className="bg-indigo-50 border border-indigo-100 rounded-2xl rounded-tl-sm px-4 py-3 max-w-[85%]">
                 <p className="text-sm text-indigo-900 leading-relaxed whitespace-pre-wrap">
                   {b.content}
@@ -235,14 +253,14 @@ export function ColdOpenChat({ unit, onAppend, onProceed, attemptScope }: Props)
               <div className="bg-gray-800 text-white rounded-2xl rounded-tr-sm px-4 py-3 max-w-[85%]">
                 <p className="text-sm leading-relaxed whitespace-pre-wrap">{b.content}</p>
               </div>
-              <span className="text-2xl flex-shrink-0">🧑‍🏫</span>
+              <AppIcon name="teacher" size={28} className="text-gray-600" />
             </div>
           )
         )}
 
         {loading && (
           <div className="flex items-start gap-2">
-            <span className="text-2xl flex-shrink-0">🤖</span>
+            <SotaAvatar />
             <div className="bg-indigo-50 border border-indigo-100 rounded-2xl rounded-tl-sm px-4 py-3">
               <span className="flex gap-1 items-center">
                 <span className="w-2 h-2 bg-indigo-300 rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
@@ -257,7 +275,7 @@ export function ColdOpenChat({ unit, onAppend, onProceed, attemptScope }: Props)
       {error && !loading && (
         <ErrorRetry
           message={error}
-          onRetry={() => runTurn(lastFollowupRef.current)}
+          onRetry={prepaidDepleted ? undefined : () => runTurn(lastFollowupRef.current)}
           note="再試行しても、これまでの会話は消えません。"
         />
       )}
@@ -267,14 +285,14 @@ export function ColdOpenChat({ unit, onAppend, onProceed, attemptScope }: Props)
         <div className="space-y-3">
           <div className="bg-white rounded-2xl border border-gray-200 p-3">
             <label className="block text-xs font-bold text-gray-500 mb-1.5">
-              💬 AIの質問に、ひとことで答えてあげよう
+              <AppIcon name="chat" /> ソウタの質問に、ひとことで答えてあげよう
             </label>
             <textarea
               value={reply}
               onChange={(e) => setReply(e.target.value)}
               placeholder={
                 lastAiMessage
-                  ? `AIの質問「${
+                  ? `ソウタの質問「${
                       lastAiMessage.length > 40
                         ? `${lastAiMessage.slice(0, 40)}…`
                         : lastAiMessage
@@ -286,11 +304,11 @@ export function ColdOpenChat({ unit, onAppend, onProceed, attemptScope }: Props)
             />
             <button
               onClick={handleSend}
-              disabled={reply.trim().length === 0}
+              disabled={prepaidDepleted || reply.trim().length === 0}
               className="w-full mt-1 py-2.5 px-4 bg-indigo-600 text-white font-bold rounded-xl
                 hover:bg-indigo-700 transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed text-sm"
             >
-              ✏️ 答えてあげる
+              <AppIcon name="pencil" /> 答えてあげる
             </button>
           </div>
 
@@ -302,12 +320,12 @@ export function ColdOpenChat({ unit, onAppend, onProceed, attemptScope }: Props)
                 : "bg-indigo-50 border-2 border-indigo-200 text-indigo-600 hover:bg-indigo-100"
             }`}
           >
-            {replied ? "✅ " : ""}📚 基本ルールをまとめて教える →
+            {replied && <AppIcon name="success" />} <AppIcon name="books" /> 基本ルールをまとめて教える <AppIcon name="next" />
           </button>
           <p className="text-center text-xs font-medium text-gray-400">
             {replied
               ? "いい調子！次は、ここまでの内容もふまえて基本からまとめて教えてあげよう。"
-              : "先に質問に答えてあげると、AIに伝わりやすくなります（すぐ進んでもOK）。"}
+              : "先に質問に答えてあげると、ソウタに伝わりやすくなります（すぐ進んでもOK）。"}
           </p>
         </div>
       )}

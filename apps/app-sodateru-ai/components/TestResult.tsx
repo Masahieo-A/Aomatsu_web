@@ -1,7 +1,11 @@
 "use client";
 
+import { AppIcon } from "@/components/AppIcon";
+import { SotaAvatar } from "@/components/SotaAvatar";
+
 import { GrammarUnit, TestResult as TR } from "@/types";
 import { cn } from "@/lib/utils";
+import type { AiLearningEvidence, MasteryEvidence } from "@/types/learning";
 
 type Props = {
   result: TR;
@@ -9,6 +13,9 @@ type Props = {
   onRetry: () => void;
   /** 練習中に“あえて1問間違える”演出が発動した場合 true（事後開示する） */
   forceStumbleUsed?: boolean;
+  /** Structured evidence from the learner checkpoint. Optional for legacy result views. */
+  aiLearningEvidence?: AiLearningEvidence[];
+  masteryEvidence?: MasteryEvidence[];
 };
 
 function ScoreRing({
@@ -18,7 +25,7 @@ function ScoreRing({
 }: {
   score: number;
   label: string;
-  /** 教え方スコアに占める重み（例: "40%"） */
+  /** 教え方スコアに占める重み（例: "20%"） */
   weight: string;
 }) {
   const color =
@@ -42,6 +49,8 @@ export function TestResult({
   unit,
   onRetry,
   forceStumbleUsed = false,
+  aiLearningEvidence = [],
+  masteryEvidence = [],
 }: Props) {
   const testRate = Math.round(
     (result.ai_correct_count / result.total_questions) * 100
@@ -55,6 +64,28 @@ export function TestResult({
 
   return (
     <div className="space-y-6">
+      {masteryEvidence.length > 0 && (
+        <div className="bg-green-50 rounded-2xl border border-green-100 shadow-sm p-5">
+          <h2 className="text-lg font-black text-green-900 mb-1"><AppIcon name="success" /> 自分で解けたこと</h2>
+          <p className="text-sm text-green-800 mb-4">
+            独立チェック正答: {masteryEvidence.filter((e) => e.isCorrect).length}/{masteryEvidence.length}問
+          </p>
+          <div className="space-y-2">
+            {masteryEvidence.map((e) => (
+              <div key={e.id} className={cn("rounded-xl border px-3 py-2.5", e.isCorrect ? "bg-white border-green-200" : "bg-amber-50 border-amber-200")}>
+                <div className="flex items-start gap-2">
+                  <AppIcon name={e.isCorrect ? "success" : "empty"} />
+                  <div className="min-w-0">
+                    <p className="text-sm font-medium text-gray-800">{e.topicRef.topic}</p>
+                    <p className="text-xs text-gray-600 mt-1">{e.checkQuestion}</p>
+                    <p className="text-xs text-gray-500 mt-1">あなたの答え: {e.selectedAnswer} {e.isCorrect ? "（正解）" : `（正解: ${e.expectedAnswer}）`}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
       {/* スコアヘッダー */}
       <div
         className={cn(
@@ -62,27 +93,29 @@ export function TestResult({
           scoreColor
         )}
       >
-        <div className="text-sm font-medium opacity-90 mb-1">教え方スコア</div>
+        <div className="text-sm font-medium opacity-90 mb-1">ソウタに伝わったこと／教え方スコア</div>
         <div className="text-6xl font-black mb-2">{result.teaching_score}</div>
         <div className="text-sm opacity-90">/ 100点</div>
         <div className="mt-3 text-sm bg-white/20 rounded-lg px-3 py-1 inline-block">
-          AIのテスト正答率: {result.ai_correct_count}/{result.total_questions}問 （
+          ソウタのテスト正答率: {result.ai_correct_count}/{result.total_questions}問 （
           {testRate}%）
         </div>
+        {aiLearningEvidence.length > 0 && (
+          <div className="mt-2 text-xs opacity-90">ソウタの理解確認: {aiLearningEvidence.length}トピック</div>
+        )}
       </div>
 
-      {/* スコア詳細（重みは lib/gemini.ts の SCORE_WEIGHTS と一致させること） */}
+      {/* AIに伝わったことの内訳（重みは lib/gemini.ts と一致） */}
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-        <h3 className="font-bold text-gray-800 mb-1">📊 スコア内訳</h3>
+        <h3 className="font-bold text-gray-800 mb-1"><AppIcon name="chart" /> ソウタに伝わったことの内訳</h3>
         <p className="text-xs text-gray-400 mb-4 leading-relaxed">
-          教え方スコア ＝ テスト正答率×40％ ＋ 網羅性×30％ ＋ 正確性×20％ ＋
-          わかりやすさ×10％
+          教え方スコア ＝ ソウタのテスト正答率×20％ ＋ 網羅性×30％ ＋ 正確性×25％ ＋ わかりやすさ×25％
         </p>
         <div className="grid grid-cols-4 gap-3 text-center">
           <ScoreRing
             score={result.score_breakdown.test_rate ?? testRate}
             label="テスト正答率"
-            weight="40%"
+            weight="20%"
           />
           <ScoreRing
             score={result.score_breakdown.completeness}
@@ -92,12 +125,12 @@ export function TestResult({
           <ScoreRing
             score={result.score_breakdown.accuracy}
             label="正確性"
-            weight="20%"
+            weight="25%"
           />
           <ScoreRing
             score={result.score_breakdown.clarity}
             label="わかりやすさ"
-            weight="10%"
+            weight="25%"
           />
         </div>
       </div>
@@ -105,9 +138,9 @@ export function TestResult({
       {/* 教えた範囲の判定（網羅性の内訳） */}
       {result.topicCoverage && result.topicCoverage.length > 0 && (
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-          <h3 className="font-bold text-gray-800 mb-1">📚 教えた範囲の判定</h3>
+          <h3 className="font-bold text-gray-800 mb-1"><AppIcon name="books" /> 教えた範囲の判定</h3>
           <p className="text-xs text-gray-400 mb-4 leading-relaxed">
-            網羅性スコアはここから計算されています。教わっていないトピックの問題を、AIは推測でしか解けません。
+            網羅性スコアはここから計算されています。教わっていないトピックの問題を、ソウタは推測でしか解けません。
           </p>
           <div className="space-y-2">
             {result.topicCoverage.map((t) => (
@@ -117,11 +150,13 @@ export function TestResult({
                   "rounded-xl px-3 py-2.5 border",
                   t.covered
                     ? "bg-green-50 border-green-100"
+                    : t.status === "partial"
+                    ? "bg-amber-50 border-amber-200"
                     : "bg-gray-50 border-gray-200"
                 )}
               >
                 <div className="flex items-start gap-2">
-                  <span className="flex-shrink-0">{t.covered ? "✅" : "⬜"}</span>
+                  <AppIcon name={t.covered ? "success" : t.status === "partial" ? "warning" : "empty"} />
                   <div className="min-w-0">
                     <p
                       className={cn(
@@ -140,11 +175,11 @@ export function TestResult({
                         」
                       </p>
                     )}
-                    {!t.covered && (
-                      <p className="text-xs text-gray-400 mt-1">
-                        まだ教わっていない → 次はここを教えるとスコアが上がる！
-                      </p>
-                    )}
+                    {!t.covered && <p className="text-xs text-gray-600 mt-1">
+                      {t.status === "partial"
+                        ? `説明はありますが、まだ不足しています${t.gap ? `：${t.gap}` : "。判断基準を補ってください。"}`
+                        : `説明がないか、誤りがあります${t.gap ? `：${t.gap}` : "。もう一度説明してください。"}`}
+                    </p>}
                   </div>
                 </div>
               </div>
@@ -156,9 +191,9 @@ export function TestResult({
       {/* AIのフィードバック */}
       <div className="bg-indigo-50 rounded-2xl border border-indigo-100 p-5">
         <div className="flex items-start gap-3">
-          <span className="text-2xl">🤖</span>
+          <SotaAvatar />
           <div>
-            <h3 className="font-bold text-indigo-800 mb-2">AIからのフィードバック</h3>
+            <h3 className="font-bold text-indigo-800 mb-2">ソウタからのフィードバック</h3>
             <p className="text-indigo-700 text-sm leading-relaxed whitespace-pre-wrap">
               {result.feedback}
             </p>
@@ -170,14 +205,14 @@ export function TestResult({
       {forceStumbleUsed && (
         <div className="bg-amber-50 rounded-2xl border border-amber-200 p-5">
           <div className="flex items-start gap-3">
-            <span className="text-2xl">🎭</span>
+            <AppIcon name="smile" size={28} />
             <div>
               <h3 className="font-bold text-amber-800 mb-1">ネタばらし</h3>
               <p className="text-amber-700 text-sm leading-relaxed">
-                実は最後の練習問題で、AIはあなたの理解を深めるために
+                実は最後の練習問題で、ソウタはあなたの理解を深めるために
                 <strong>わざと間違えました</strong>
                 。あなたの説明がとても分かりやすく、全問正解しそうだったからこその仕掛けです。
-                「なぜ間違えたのか」を考え、AIに訂正してあげる経験が、
+                「なぜ間違えたのか」を考え、ソウタに訂正してあげる経験が、
                 あなた自身の理解をさらに強くします。
               </p>
             </div>
@@ -191,12 +226,12 @@ export function TestResult({
           result.learningDiagnosis.weakPoints.length > 0 ||
           result.learningDiagnosis.suggestion) && (
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-            <h3 className="font-bold text-gray-800 mb-4">🩺 学習診断</h3>
+            <h3 className="font-bold text-gray-800 mb-4"><AppIcon name="checklist" /> 教え方の診断</h3>
             <div className="space-y-4">
               {result.learningDiagnosis.strongPoints.length > 0 && (
                 <div>
                   <p className="text-xs font-bold text-green-700 mb-1.5">
-                    ✅ うまく教えられた点
+                    <AppIcon name="success" /> うまく教えられた点
                   </p>
                   <ul className="space-y-1">
                     {result.learningDiagnosis.strongPoints.map((p, i) => (
@@ -213,7 +248,7 @@ export function TestResult({
               {result.learningDiagnosis.weakPoints.length > 0 && (
                 <div>
                   <p className="text-xs font-bold text-orange-700 mb-1.5">
-                    ⚠️ もう一歩だった点
+                    <AppIcon name="warning" /> もう一歩だった点
                   </p>
                   <ul className="space-y-1">
                     {result.learningDiagnosis.weakPoints.map((p, i) => (
@@ -230,7 +265,7 @@ export function TestResult({
               {result.learningDiagnosis.suggestion && (
                 <div className="bg-indigo-50 rounded-xl p-3">
                   <p className="text-xs font-bold text-indigo-700 mb-1">
-                    💡 次に試すといいこと
+                    <AppIcon name="idea" /> 次に試すといいこと
                   </p>
                   <p className="text-sm text-indigo-800 leading-relaxed">
                     {result.learningDiagnosis.suggestion}
@@ -243,10 +278,10 @@ export function TestResult({
 
       {/* 問題ごとの回答と思考過程 */}
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-        <h3 className="font-bold text-gray-800 mb-4">🧠 AIの回答と思考過程</h3>
+        <h3 className="font-bold text-gray-800 mb-4"><AppIcon name="brain" /> ソウタの回答と思考過程</h3>
         <div className="space-y-4">
           {result.answers.map((a, i) => {
-            const q = unit.testQuestions[i];
+            const q = unit.testQuestions.find((question) => question.id === a.question_id);
             const correctText = q?.choices.find(
               (c) => c.label === q.answerLabel
             )?.text;
@@ -264,8 +299,28 @@ export function TestResult({
                 )}
               >
                 <p className="text-sm font-medium text-gray-700 mb-1">
-                  問{i + 1}: {q?.sentence}
+                  問{i + 1}: {q?.sentence ?? `問題ID ${a.question_id}`}
                 </p>
+                {q && (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 my-3" aria-label={`問${i + 1}の選択肢`}>
+                    {q.choices.map((choice) => {
+                      const chosen = choice.label === a.chosenLabel;
+                      const correct = choice.label === q.answerLabel;
+                      return (
+                        <div key={choice.label} className={cn(
+                          "rounded-lg border px-3 py-2 text-xs leading-relaxed",
+                          chosen ? "border-indigo-400 bg-indigo-50 text-indigo-900" :
+                          correct ? "border-green-300 bg-green-50 text-green-900" :
+                          "border-gray-200 bg-white text-gray-700",
+                        )}>
+                          <span className="font-bold">{choice.label}. {choice.text}</span>
+                          {chosen && <span className="ml-2 font-bold"><AppIcon name="back" /> ソウタが選択</span>}
+                          {correct && <span className="ml-2 font-bold"><AppIcon name="check" /> 正解</span>}
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
                 <div className="flex items-center gap-3 mb-2 flex-wrap">
                   <span
                     className={cn(
@@ -275,7 +330,7 @@ export function TestResult({
                         : "bg-red-200 text-red-800"
                     )}
                   >
-                    AIの答え: {a.chosenLabel}
+                    ソウタの答え: {a.chosenLabel}
                     {chosenText ? `. ${chosenText}` : ""}
                   </span>
                   {!a.is_correct && correctText && (
@@ -283,10 +338,10 @@ export function TestResult({
                       正解: {q.answerLabel}. {correctText}
                     </span>
                   )}
-                  <span className="text-lg">{a.is_correct ? "✅" : "❌"}</span>
+                  <AppIcon name={a.is_correct ? "success" : "error"} size={21} />
                   {a.taught === false && (
                     <span className="text-xs px-2 py-0.5 rounded-full font-bold bg-gray-200 text-gray-600">
-                      🔒 未習で誤答
+                      <AppIcon name="lock" /> 未習で誤答
                       {a.missingTopics?.length
                         ? `：「${a.missingTopics.join("」「")}」が不足`
                         : ""}
@@ -294,7 +349,7 @@ export function TestResult({
                   )}
                 </div>
                 <p className="text-xs text-gray-600 bg-white/70 rounded-lg p-2 leading-relaxed">
-                  💭 {a.thinking}
+                  <AppIcon name="brain" /> {a.thinking}
                 </p>
               </div>
             );
@@ -309,7 +364,7 @@ export function TestResult({
           hover:bg-indigo-700 transition-colors duration-200
           flex items-center justify-center gap-2 text-lg"
       >
-        🔄 教え方を改善して再挑戦
+        <AppIcon name="refresh" /> 教え方を改善して再挑戦
       </button>
     </div>
   );

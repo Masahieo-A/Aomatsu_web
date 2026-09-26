@@ -11,7 +11,8 @@ import { LearningSummary } from "@/components/LearningSummary";
 import { SolvingDisplay } from "@/components/SolvingDisplay";
 import { TestResult } from "@/components/TestResult";
 import { ErrorRetry } from "@/components/ErrorRetry";
-import { getUnitById } from "@/lib/questions";
+import { AiUnderstandingCheck } from "@/components/AiUnderstandingCheck";
+import { AppIcon } from "@/components/AppIcon";
 import { loadParticipant, clearParticipant } from "@/lib/participant";
 import type {
   Session,
@@ -20,6 +21,7 @@ import type {
   LessonMessage,
   TestResult as TR,
 } from "@/types";
+import type { AiLearningEvidence, MasteryEvidence } from "@/types/learning";
 
 const POLL_INTERVAL_MS = 3000;
 
@@ -29,11 +31,10 @@ type LessonStep =
   | "explain" // 基礎説明
   | "practice" // 練習問題で対話
   | "summary" // 学習内容の把握
+  | "understanding-check" // AIの推測を確認し、独立問題で別に確かめる
   | "test-loading" // テスト評価中
   | "test-solving" // AIがテストを解くアニメ
   | "result"; // スコア表示
-
-const MEDAL: Record<number, string> = { 1: "🥇", 2: "🥈", 3: "🥉" };
 
 // ============================================================
 // 共通ヘッダー（render 内で定義するとstateがリセットされるため外出し）
@@ -54,7 +55,7 @@ function LessonHeader({
     <header className="border-b border-gray-100 bg-white/80 backdrop-blur sticky top-0 z-10">
       <div className="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="text-2xl">🌱</span>
+          <AppIcon name="plant" size={28} className="text-green-600" />
           <span className="font-black text-indigo-700 text-lg">育てるAI</span>
         </div>
         <div className="flex items-center gap-3">
@@ -79,7 +80,7 @@ function LessonHeader({
               href="/"
               className="text-sm text-gray-400 hover:text-gray-700 font-medium transition flex items-center gap-1"
             >
-              ← トップへ
+              <AppIcon name="back" /> トップへ
             </Link>
           )}
         </div>
@@ -102,7 +103,7 @@ function RankingList({
 
   return (
     <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-      <h3 className="font-bold text-gray-800 mb-4">🏆 ランキング</h3>
+      <h3 className="font-bold text-gray-800 mb-4"><AppIcon name="trophy" /> ランキング</h3>
       <div className="space-y-2">
         {sorted.map((student, index) => {
           const rank = index + 1;
@@ -117,7 +118,7 @@ function RankingList({
               }`}
             >
               <span className="text-xl w-8 text-center flex-shrink-0">
-                {MEDAL[rank] ?? <span className="text-gray-500 font-bold text-sm">{rank}</span>}
+                {rank <= 3 ? <AppIcon name="medal" size={25} className={rank === 1 ? "text-amber-500" : rank === 2 ? "text-slate-400" : "text-orange-600"} /> : <span className="text-gray-500 font-bold text-sm">{rank}</span>}
               </span>
               <span
                 className={`flex-1 font-bold text-sm truncate ${
@@ -183,6 +184,8 @@ export default function SessionPage({
   // “あえて間違える”演出が実際に発動したか（結果画面で事後開示するために保持）
   const [didForceStumble, setDidForceStumble] = useState(false);
   const [testResult, setTestResult] = useState<TR | null>(null);
+  const [aiLearningEvidence, setAiLearningEvidence] = useState<AiLearningEvidence[]>([]);
+  const [masteryEvidence, setMasteryEvidence] = useState<MasteryEvidence[]>([]);
   // 冪等化キーの接頭辞。レッスン実行（挑戦）ごとに一意で、
   // 同一実行内の再試行・戻る操作ではAI応答が二重生成されない
   const [lessonRunId, setLessonRunId] = useState(() => crypto.randomUUID());
@@ -194,8 +197,7 @@ export default function SessionPage({
   // ============================================================
   // 生徒一覧の再フェッチ
   // ============================================================
-  // Supabase へはブラウザから直接接続せず自サイトの API 経由で取得する
-  // （*.supabase.co が遮断されたネットワークで "Failed to fetch" になるため）
+  // D1 へはブラウザから直接接続せず、認証済みの自サイト API 経由で取得する。
   const fetchStudents = useCallback(async (sessionCode: string) => {
     const res = await fetch(`/api/sessions/${sessionCode}/students`, { cache: "no-store" });
     if (!res.ok) return;
@@ -245,7 +247,7 @@ export default function SessionPage({
       const sessionData: Session = await res.json();
       setSession(sessionData);
 
-      const unitData = getUnitById(sessionData.unit_id);
+      const unitData = sessionData.unit;
       if (!unitData) {
         setInitError("単元情報が見つかりませんでした");
         setIsInitializing(false);
@@ -327,6 +329,8 @@ export default function SessionPage({
           dialogue,
           student_id: studentId,
           session_id: sessionId,
+          ai_learning_evidence: aiLearningEvidence,
+          mastery_evidence: masteryEvidence,
           // 同一実行・同一対話内容なら同じキー → 再試行で二重採点・二重保存しない
           attempt_id: `${lessonRunId}:test:d${dialogue.length}`,
         }),
@@ -341,6 +345,12 @@ export default function SessionPage({
     }
   };
 
+  const handleUnderstandingComplete = (ai: AiLearningEvidence[], mastery: MasteryEvidence[]) => {
+    setAiLearningEvidence(ai);
+    setMasteryEvidence(mastery);
+    setLessonStep("summary");
+  };
+
   // 最初からやり直す（教え方を改善して再挑戦）
   const handleRetry = () => {
     setDialogue([]);
@@ -348,6 +358,8 @@ export default function SessionPage({
     setInitialWrongCount(0);
     setDidForceStumble(false);
     setTestResult(null);
+    setAiLearningEvidence([]);
+    setMasteryEvidence([]);
     setError(null);
     // 新しい挑戦なので冪等化キーの接頭辞も切り替える（前回のキャッシュを引かない）
     setLessonRunId(crypto.randomUUID());
@@ -368,7 +380,7 @@ export default function SessionPage({
     return (
       <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 flex items-center justify-center">
         <div className="text-center">
-          <div className="text-5xl mb-4 animate-bounce">🌱</div>
+          <AppIcon name="plant" size={52} className="mb-4 text-green-600 animate-bounce" />
           <p className="text-indigo-600 font-bold">読み込み中...</p>
         </div>
       </div>
@@ -382,9 +394,9 @@ export default function SessionPage({
     return (
       <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 flex items-center justify-center px-4">
         <div className="text-center max-w-sm w-full">
-          <div className="text-5xl mb-4">😥</div>
+          <AppIcon name="error" size={52} className="mb-4 text-red-500" />
           <div className="bg-red-50 border border-red-200 rounded-2xl p-6">
-            <p className="text-red-700 font-bold mb-4">⚠️ {initError}</p>
+            <p className="text-red-700 font-bold mb-4"><AppIcon name="warning" /> {initError}</p>
             <button
               onClick={() => router.push("/join")}
               className="w-full py-3 px-6 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition-colors"
@@ -420,7 +432,7 @@ export default function SessionPage({
         {header}
         <main className="flex-1 max-w-2xl mx-auto w-full px-4 py-8 space-y-6">
           <div className="bg-white rounded-2xl border border-indigo-100 shadow-sm p-8 text-center">
-            <div className="text-5xl mb-4 animate-pulse">🌱</div>
+            <AppIcon name="plant" size={52} className="mb-4 text-green-600 animate-pulse" />
             <h1 className="text-xl font-black text-indigo-700 mb-2">
               授業の開始を待っています...
             </h1>
@@ -444,7 +456,7 @@ export default function SessionPage({
 
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
             <h2 className="font-bold text-gray-800 mb-4">
-              👥 参加中の生徒 ({students.length}人)
+              <AppIcon name="users" /> 参加中の生徒 ({students.length}人)
             </h2>
             <div className="flex flex-wrap gap-2">
               {students.map((s) => (
@@ -490,7 +502,7 @@ export default function SessionPage({
               />
             ) : (
               <div className="bg-red-50 border border-red-200 rounded-xl px-4 py-3 text-sm text-red-700">
-                ⚠️ {error}
+                <AppIcon name="warning" /> {error}
               </div>
             ))}
 
@@ -498,6 +510,8 @@ export default function SessionPage({
           {lessonStep === "cold-open" && (
             <ColdOpenChat
               unit={unit}
+              participantId={studentId!}
+              sessionId={sessionId!}
               onAppend={appendDialogue}
               onProceed={() => setLessonStep("explain")}
               attemptScope={lessonRunId}
@@ -512,7 +526,12 @@ export default function SessionPage({
                 onSubmit={handleExplainSubmit}
                 isLoading={false}
               />
-              <TeacherHintPanel unit={unit} dialogue={dialogue} />
+              <TeacherHintPanel
+                unit={unit}
+                participantId={studentId!}
+                sessionId={sessionId!}
+                dialogue={dialogue}
+              />
             </>
           )}
 
@@ -522,6 +541,8 @@ export default function SessionPage({
               <PracticeChat
                 key={practiceIndex}
                 unit={unit}
+                participantId={studentId!}
+                sessionId={sessionId!}
                 question={currentQuestion}
                 questionIndex={practiceIndex}
                 totalQuestions={unit.practiceQuestions.length}
@@ -542,6 +563,8 @@ export default function SessionPage({
               <TeacherHintPanel
                 key={`hint-${practiceIndex}`}
                 unit={unit}
+                participantId={studentId!}
+                sessionId={sessionId!}
                 dialogue={dialogue}
                 questionId={currentQuestion.id}
               />
@@ -553,19 +576,29 @@ export default function SessionPage({
             <LearningSummary
               unit={unit}
               dialogue={dialogue}
-              studentId={studentId}
-              onStartTest={handleStartTest}
+              studentId={studentId!}
+              sessionId={sessionId!}
+              onStartTest={aiLearningEvidence.length > 0 ? handleStartTest : () => setLessonStep("understanding-check")}
               onBack={() => setLessonStep("practice")}
               attemptScope={lessonRunId}
+            />
+          )}
+
+          {lessonStep === "understanding-check" && (
+            <AiUnderstandingCheck
+              unit={unit}
+              dialogue={dialogue}
+              storageScope={{ sessionId: sessionId!, participantId: studentId! }}
+              onComplete={handleUnderstandingComplete}
             />
           )}
 
           {/* テスト評価中 */}
           {lessonStep === "test-loading" && (
             <div className="bg-white rounded-2xl border border-indigo-100 shadow-sm p-8 text-center">
-              <div className="text-4xl mb-3 animate-bounce">📝</div>
+              <AppIcon name="note" size={44} className="mb-3 animate-bounce" />
               <p className="text-indigo-600 font-bold">
-                AIがテストに挑戦しています...
+                ソウタがテストに挑戦しています...
               </p>
             </div>
           )}
@@ -587,6 +620,8 @@ export default function SessionPage({
                 unit={unit}
                 onRetry={handleRetry}
                 forceStumbleUsed={didForceStumble}
+                aiLearningEvidence={aiLearningEvidence}
+                masteryEvidence={masteryEvidence}
               />
               {studentId && (
                 <RankingList students={students} currentStudentId={studentId} />
@@ -606,7 +641,7 @@ export default function SessionPage({
       {header}
       <main className="flex-1 max-w-2xl mx-auto w-full px-4 py-8 space-y-6">
         <div className="bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl p-8 text-white text-center shadow-lg">
-          <div className="text-5xl mb-3">🎉</div>
+          <AppIcon name="celebrate" size={52} className="mb-3" />
           <h1 className="text-2xl font-black mb-2">授業終了！</h1>
           <p className="text-indigo-100 text-sm">お疲れ様でした！全員の最終スコアです</p>
         </div>
@@ -616,10 +651,10 @@ export default function SessionPage({
         )}
 
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 text-center">
-          <div className="text-4xl mb-3">✨</div>
+          <AppIcon name="sparkle" size={44} className="mb-3 text-amber-500" />
           <p className="text-gray-700 font-bold mb-1">よく頑張りました！</p>
           <p className="text-gray-500 text-sm">
-            AIに教えることで、自分の理解が深まりましたね。
+            ソウタに教えることで、自分の理解が深まりましたね。
             <br />
             次の授業でもまた挑戦しましょう！
           </p>
@@ -631,7 +666,7 @@ export default function SessionPage({
             hover:bg-indigo-700 transition-colors duration-200
             flex items-center justify-center gap-2"
         >
-          🏠 トップページへ
+          <AppIcon name="home" /> トップページへ
         </Link>
       </main>
     </div>

@@ -1,4 +1,4 @@
-# deployment.md — GitHub / Vercel 対応表
+# deployment.md — GitHub / Vercel / Cloudflare 対応表
 
 各アプリのデプロイ構成をまとめた表。**Vercel設定の変更・環境変数の変更は、必ずオーナーが手動で行う**こと（Claude Code は変更しない）。
 
@@ -25,6 +25,7 @@
 | APP001 英作文添削 | `apps/app-eisaku-tensaku` | `Masahieo-A/Aomatsu_web` ✅ | `apps/app-eisaku-tensaku` | `eisaku-tensaku-app` | https://eisaku-tensaku-app.vercel.app | `GEMINI_API_KEY` |
 | APP004 Cloze+整序 | `apps/app-cloze-seijo-maker` | `Masahieo-A/Aomatsu_web` ✅ | `apps/app-cloze-seijo-maker` | `cloze-seijo-maker` | https://cloze-seijo-maker.vercel.app | Supabase（整備中） |
 | APP005 発音チェック | `apps/app-elsa-like` | `Masahieo-A/Aomatsu_web` ✅ | `apps/app-elsa-like` | `elsa-like` | https://elsa-like.vercel.app | なし |
+| ~~APP006 育てるAI（旧Vercel版）~~ | 廃止（Cloudflare Workers 版へ移行） | ~~`Masahieo-A/sodateru-ai`~~ | — | `sodateru-ai`（prj_O4TsGSy5WvrAUgu1MREdq7sUFAGC・削除予定） | ~~sodateru-ai.vercel.app~~ | — |
 | ~~APP002 整序メーカー~~ | 削除済み | — | — | `seijo-maker`（削除予定） | ~~seijo-maker.vercel.app~~ | — |
 | ~~APP003 Cloze Maker~~ | 削除済み | — | — | `cloze-maker`（削除予定） | ~~cloze-maker.vercel.app~~ | — |
 
@@ -32,7 +33,6 @@
 
 | App | Root Directory（切替時に設定） | 現在の Connected Repo | Vercel Project Name | Production URL | Env Vars |
 |---|---|---|---|---|---|
-| APP006 育てるAI | `apps/app-sodateru-ai` | `Masahieo-A/sodateru-ai` | `sodateru-ai`（prj_O4TsGSy5WvrAUgu1MREdq7sUFAGC） | https://sodateru-ai.vercel.app | GEMINI_API_KEY / Supabase 3種 / 教員PW |
 | APP008 着眼点③ | `apps/app-viewpoint` | `Masahieo-A/viewpoint` | `viewpoint`（旧個別。※viewpoint.vercel.app は無関係の他者サービスが占有） | ポータル同一デプロイの相対リンクで提供（apps/app-viewpoint/index.html）→ 旧個別プロジェクトは切替不要・廃止候補 | なし |
 | APP010 総合探究発表会 | `apps/app-sogo-tankyu-report` | `Masahieo-A/sogo-tankyu-report` | （sogo-happyo） | https://sogo-happyo.vercel.app | なし（Apps Script連携） |
 | APP012 未来の図書館 | `apps/app-mirai-library` | Git未接続（CLI直デプロイ） | `image_2.0`（prj_c92R3MT7JGHDdSR45ufDC9xNA4D6） | image_2.0 系 | NextAuth / Google OAuth / Supabase / OpenAI |
@@ -47,6 +47,14 @@
 - APP007 ZDP（`apps/app-zdp`・npm workspaces）/ APP009 探究サポート（`apps/app-tankyu-support`）/ APP011 3Dルームビューアー（`apps/app-3d-modeling`）/ APP013 Viewpoint教材オーサリング（`apps/app-html-maker`）
 - APP014 口頭試問（`apps/app-oral-exam-generator`）はローカル専用運用
 - APP015 VQ問題メーカー（`apps/app-vq-question-maker`）は FastAPI バックエンドを含むため Vercel 単体では不可（frontend のみ可）
+
+### Cloudflare Workers
+
+| App | Local Path | デプロイ方法 | Worker 名 | Production URL | Secrets / Vars |
+|---|---|---|---|---|---|
+| APP006 育てるAI | `apps/app-sodateru-ai` | アプリフォルダで `npm run build:vinext && npm run deploy:vinext`（wrangler ログイン済みの端末から） | `sodateru-ai`（D1: `sodateru-ai`） | https://sodateru-ai.aomatsu-apps.workers.dev/ | `GEMINI_API_KEY` / `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` / `AUTH_SECRET` / `TEACHER_ALLOWLIST`（secret）、`APP_URL`（wrangler.jsonc vars） |
+
+> Vercel 版 APP006（sodateru-ai.vercel.app）は **廃止**。Vercel プロジェクト `sodateru-ai` はオーナーが削除する。
 
 > すべて同一 Vercel チーム（org: `team_48IzfiiYdsd5KvTIG7Mx7ELc`）に所属。✅ = モノレポ連携済み（`main` push で自動デプロイ）。
 

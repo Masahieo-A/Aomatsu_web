@@ -30,7 +30,7 @@ apps/app-xxx/
 | ~~`app-cloze-maker`~~（退役・`app-cloze-seijo-maker` に統合） | APP003 | Cloze Test Maker | 生徒 | 文法 | Next.js |
 | `app-cloze-seijo-maker` | APP004 | Cloze + 整序メーカー | 生徒 | 文法 | Next.js + Supabase |
 | `app-elsa-like` | APP005 | 発音チェック（ELSA風） | 生徒 | リスニング | 静的HTML |
-| `app-sodateru-ai` | APP006 | 育てるAI | 生徒 | 文法 | Next.js + Supabase |
+| `app-sodateru-ai` | APP006 | 育てるAI | 生徒 | 文法 | Next.js（vinext）+ Cloudflare Workers + D1 |
 | `app-zdp` | APP007 | 英文法つまずき診断 | 生徒 | 文法 | Next.js（npm workspaces） |
 | `app-viewpoint` | APP008 | 着眼点③ and/but/or の分析 | 生徒 | 文法 | 静的HTML |
 | `app-tankyu-support` | APP009 | 探究ファシリテーターAI | 生徒 | ユーティリティ | Next.js + Gemini |

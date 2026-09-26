@@ -15,12 +15,18 @@
 !**/.env.example
 !**/.env.local.example
 **/secrets/
+**/.dev.vars
+**/.dev.vars.*
 
 # ───────── 実データ（生徒PII含む・コミット禁止） ─────────
 apps/app-mirai-library/data/
 
 # ───────── Vercel ローカル連携 ─────────
 **/.vercel/
+
+# ───────── Cloudflare / vinext ローカル生成物 ─────────
+**/.wrangler/
+**/.vinext/
 
 # ───────── 開発用ツール ─────────
 .claude/
