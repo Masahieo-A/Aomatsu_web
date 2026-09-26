@@ -30,3 +30,25 @@ body {
     var(--font-geist-sans), sans-serif;
   line-height: 1.6;
 }
+
+/* ===== グループ準備プリント（/teacher/worksheet）の印刷設定 ===== */
+.ws-avoid-break {
+  break-inside: avoid;
+}
+.ws-page-break {
+  break-before: page;
+}
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm;
+  }
+  html,
+  body {
+    background: #fff !important;
+  }
+  .ws-sheet {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

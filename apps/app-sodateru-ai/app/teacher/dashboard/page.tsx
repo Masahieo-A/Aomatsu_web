@@ -3,6 +3,7 @@
 import { AppIcon } from "@/components/AppIcon";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import {
   CURRICULUM_ID,
@@ -168,12 +169,20 @@ export default function TeacherDashboardPage() {
             <span className="font-black text-indigo-700 text-lg">育てるAI</span>
             <span className="text-sm text-gray-400 ml-2">教員ダッシュボード</span>
           </div>
-          <button
-            onClick={handleLogout}
-            className="text-sm text-gray-500 hover:text-gray-700 font-medium transition"
-          >
-            ログアウト
-          </button>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/teacher/worksheet"
+              className="text-sm text-indigo-600 hover:text-indigo-800 font-bold transition"
+            >
+              グループ準備プリントを作る
+            </Link>
+            <button
+              onClick={handleLogout}
+              className="text-sm text-gray-500 hover:text-gray-700 font-medium transition"
+            >
+              ログアウト
+            </button>
+          </div>
         </div>
       </header>
 
@@ -214,7 +223,7 @@ export default function TeacherDashboardPage() {
                 >
                   {UNIT_CATALOG.map((u) => (
                     <option key={u.id} value={u.id}>
-                      {u.title}
+                      {u.code} {u.title}
                     </option>
                   ))}
                 </select>

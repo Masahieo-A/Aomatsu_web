@@ -1,0 +1,1643 @@
+{
+  "units": {
+    "unit.lesson01": {
+      "code": "L1"
+    },
+    "unit.lesson02": {
+      "code": "L2"
+    },
+    "unit.lesson03": {
+      "code": "L3"
+    },
+    "unit.plus01": {
+      "code": "Plus1"
+    },
+    "unit.drill01": {
+      "code": "Drill1"
+    },
+    "unit.lesson04": {
+      "code": "L4"
+    },
+    "unit.lesson05": {
+      "code": "L5"
+    },
+    "unit.lesson06": {
+      "code": "L6"
+    },
+    "unit.lesson07": {
+      "code": "L7"
+    },
+    "unit.plus02": {
+      "code": "Plus2"
+    },
+    "unit.lesson08": {
+      "code": "L8"
+    },
+    "unit.lesson09": {
+      "code": "L9"
+    },
+    "unit.lesson10": {
+      "code": "L10"
+    },
+    "unit.plus03": {
+      "code": "Plus3"
+    },
+    "unit.lesson11": {
+      "code": "L11"
+    },
+    "unit.plus04": {
+      "code": "Plus4"
+    },
+    "unit.lesson12": {
+      "code": "L12"
+    },
+    "unit.lesson13": {
+      "code": "L13"
+    },
+    "unit.lesson14": {
+      "code": "L14"
+    },
+    "unit.plus05": {
+      "code": "Plus5"
+    },
+    "unit.lesson15": {
+      "code": "L15"
+    },
+    "unit.plus06": {
+      "code": "Plus6"
+    },
+    "unit.lesson16": {
+      "code": "L16"
+    },
+    "unit.lesson17": {
+      "code": "L17"
+    },
+    "unit.plus07": {
+      "code": "Plus7"
+    },
+    "unit.lesson18": {
+      "code": "L18"
+    },
+    "unit.lesson19": {
+      "code": "L19"
+    },
+    "unit.lesson20": {
+      "code": "L20"
+    },
+    "unit.plus08": {
+      "code": "Plus8"
+    },
+    "unit.drill02": {
+      "code": "Drill2"
+    },
+    "unit.lesson21": {
+      "code": "L21"
+    },
+    "unit.lesson22": {
+      "code": "L22"
+    },
+    "unit.plus09": {
+      "code": "Plus9"
+    },
+    "unit.lesson23": {
+      "code": "L23"
+    },
+    "unit.lesson24": {
+      "code": "L24"
+    },
+    "unit.plus10": {
+      "code": "Plus10"
+    },
+    "unit.extra01": {
+      "code": "Extra1"
+    },
+    "unit.extra02": {
+      "code": "Extra2"
+    },
+    "unit.extra03": {
+      "code": "Extra3"
+    },
+    "unit.extra04": {
+      "code": "Extra4"
+    },
+    "unit.extra05": {
+      "code": "Extra5"
+    },
+    "unit.extra06": {
+      "code": "Extra6"
+    },
+    "unit.extra07": {
+      "code": "Extra7"
+    },
+    "unit.extra08": {
+      "code": "Extra8"
+    },
+    "unit.extra09": {
+      "code": "Extra9"
+    },
+    "unit.extra10": {
+      "code": "Extra10"
+    },
+    "unit.extra11": {
+      "code": "Extra11"
+    }
+  },
+  "knowledge": {
+    "sentence.neg.be": {
+      "decisionCriteria": "述語動詞がbe動詞か",
+      "commonMisconceptions": []
+    },
+    "sentence.neg.do": {
+      "decisionCriteria": "一般動詞か／時制・人称（does・didの選択）／動詞を原形に戻す",
+      "commonMisconceptions": []
+    },
+    "sentence.neg.mod": {
+      "decisionCriteria": "助動詞があるか",
+      "commonMisconceptions": []
+    },
+    "sentence.yn.q": {
+      "decisionCriteria": "述語動詞の種類／時制・人称",
+      "commonMisconceptions": []
+    },
+    "sentence.yn.ans": {
+      "decisionCriteria": "主語の人称・数／疑問文で使われた（助）動詞",
+      "commonMisconceptions": []
+    },
+    "sentence.wh.q": {
+      "decisionCriteria": "答えの文が何の情報か（時・場所・人・理由…）／その後が疑問文の語順か",
+      "commonMisconceptions": []
+    },
+    "sentence.wh.subj": {
+      "decisionCriteria": "疑問詞が主語にあたるか",
+      "commonMisconceptions": []
+    },
+    "sentence.imp": {
+      "decisionCriteria": "主語がなく依頼・指示の意味か／述語が形容詞ならBe",
+      "commonMisconceptions": []
+    },
+    "sentence.imp.neg": {
+      "decisionCriteria": "禁止の意味か",
+      "commonMisconceptions": []
+    },
+    "sentence.lets": {
+      "decisionCriteria": "「～しましょう」の意味か",
+      "commonMisconceptions": []
+    },
+    "sentence.excl.how": {
+      "decisionCriteria": "強める部分が形容詞・副詞のみか",
+      "commonMisconceptions": []
+    },
+    "sentence.excl.what": {
+      "decisionCriteria": "強める部分に名詞を含むか／名詞が単数か複数か（a/anの有無）",
+      "commonMisconceptions": []
+    },
+    "pattern.vi.vt": {
+      "decisionCriteria": "動詞の直後に前置詞なしで名詞（目的語）があるか",
+      "commonMisconceptions": []
+    },
+    "pattern.c.m": {
+      "decisionCriteria": "取り除いても文が成立するか／主語とイコールの関係か",
+      "commonMisconceptions": []
+    },
+    "pattern.element": {
+      "decisionCriteria": "述語動詞の特定→主語→目的語／補語の順で確認",
+      "commonMisconceptions": []
+    },
+    "pattern.o.c": {
+      "decisionCriteria": "S＝その語句の関係が成り立つか（SVC）／O＝Cが成り立つか（SVOC）",
+      "commonMisconceptions": []
+    },
+    "pattern.sv": {
+      "decisionCriteria": "動詞の後にO・Cがなく、修飾語だけが続くか",
+      "commonMisconceptions": []
+    },
+    "pattern.there": {
+      "decisionCriteria": "be動詞の後の名詞が主語か／be動詞の数の一致",
+      "commonMisconceptions": []
+    },
+    "pattern.svc": {
+      "decisionCriteria": "動詞の後の語句が主語の状態・性質を表すか",
+      "commonMisconceptions": []
+    },
+    "pattern.svo": {
+      "decisionCriteria": "動詞の後の名詞が主語とイコールでないか",
+      "commonMisconceptions": []
+    },
+    "pattern.svoo": {
+      "decisionCriteria": "動詞の後に名詞が2つ続き、O1≠O2か",
+      "commonMisconceptions": []
+    },
+    "pattern.svoo.to": {
+      "decisionCriteria": "相手に「届く」ことを前提とする動詞か",
+      "commonMisconceptions": []
+    },
+    "pattern.svoo.for": {
+      "decisionCriteria": "「人のために」行う動作の動詞か",
+      "commonMisconceptions": []
+    },
+    "pattern.svoc": {
+      "decisionCriteria": "O＝Cの関係（Cが名詞または形容詞）か",
+      "commonMisconceptions": []
+    },
+    "pattern.oo.oc": {
+      "decisionCriteria": "2つ目の名詞がOとイコールか（イコールならSVOC）",
+      "commonMisconceptions": []
+    },
+    "verb.vt.noprep": {
+      "decisionCriteria": "日本語の「～に」「～について」につられていないか",
+      "commonMisconceptions": [
+        "approach to / discuss about / mention about【教材】"
+      ]
+    },
+    "verb.vi.prep": {
+      "decisionCriteria": "動詞が自動詞か／対象を表す前置詞",
+      "commonMisconceptions": [
+        "look the flower、apologize the trouble【教材】"
+      ]
+    },
+    "verb.lie.lay": {
+      "decisionCriteria": "目的語の有無／「横たわる」か「横たえる」か／時制／lie（うそをつく）との区別",
+      "commonMisconceptions": []
+    },
+    "morphology.verb.past": {
+      "decisionCriteria": "語尾が「子音字＋y」「短母音＋子音字」「e」か",
+      "commonMisconceptions": []
+    },
+    "morphology.verb.irreg": {
+      "decisionCriteria": "A-A-A型（cost, cut）、A-B-A型（come, run）、A-B-B型、A-B-C型のどれか",
+      "commonMisconceptions": []
+    },
+    "morphology.verb.ing": {
+      "decisionCriteria": "語尾の形／強勢位置",
+      "commonMisconceptions": []
+    },
+    "morphology.cmp.er": {
+      "decisionCriteria": "音節数／語尾の形",
+      "commonMisconceptions": []
+    },
+    "morphology.cmp.more": {
+      "decisionCriteria": "音節数／-ly副詞か",
+      "commonMisconceptions": []
+    },
+    "morphology.cmp.irreg": {
+      "decisionCriteria": "語の品詞・意味",
+      "commonMisconceptions": []
+    },
+    "morphology.cmp.double": {
+      "decisionCriteria": "距離か程度か／時間か順序か／年齢一般か兄弟の長幼か",
+      "commonMisconceptions": []
+    },
+    "tense.pres.state": {
+      "decisionCriteria": "動詞が状態動詞か（like, belong など）",
+      "commonMisconceptions": []
+    },
+    "tense.pres.habit": {
+      "decisionCriteria": "every day, sometimes, often などの頻度表現があるか",
+      "commonMisconceptions": [
+        "習慣を現在進行形にする【教材】(p.10 L4-5(2))"
+      ]
+    },
+    "tense.pres.truth": {
+      "decisionCriteria": "時を限定しない事実か",
+      "commonMisconceptions": []
+    },
+    "tense.past.uses": {
+      "decisionCriteria": "状態動詞か／時点を表す語句か／頻度・期間を表す語句か",
+      "commonMisconceptions": []
+    },
+    "tense.past.form": {
+      "decisionCriteria": "過去を表す副詞（句）があるか",
+      "commonMisconceptions": []
+    },
+    "tense.prog.pres": {
+      "decisionCriteria": "now などの語句／動作動詞か",
+      "commonMisconceptions": []
+    },
+    "tense.prog.past": {
+      "decisionCriteria": "at that time、when節など過去の時点が示されているか",
+      "commonMisconceptions": []
+    },
+    "tense.stative": {
+      "decisionCriteria": "動詞が状態か動作か",
+      "commonMisconceptions": [
+        "are believing、were belonging【教材】"
+      ]
+    },
+    "tense.prog.temp": {
+      "decisionCriteria": "these days, lately などの語句があるか",
+      "commonMisconceptions": []
+    },
+    "tense.fut.will": {
+      "decisionCriteria": "意志を含まない未来か",
+      "commonMisconceptions": []
+    },
+    "tense.fut.will.vol": {
+      "decisionCriteria": "発話の時点で決めたことか",
+      "commonMisconceptions": []
+    },
+    "tense.fut.goingto": {
+      "decisionCriteria": "既に決まっていたことか",
+      "commonMisconceptions": []
+    },
+    "tense.fut.goingto.sign": {
+      "decisionCriteria": "根拠となる状況が文中にあるか",
+      "commonMisconceptions": []
+    },
+    "tense.fut.negq": {
+      "decisionCriteria": "will か be going to か",
+      "commonMisconceptions": []
+    },
+    "tense.fut.prog": {
+      "decisionCriteria": "at this time tomorrow など未来の時点",
+      "commonMisconceptions": []
+    },
+    "tense.fut.prog.course": {
+      "decisionCriteria": "意志を含まない予定か",
+      "commonMisconceptions": []
+    },
+    "tense.advcl.pres": {
+      "decisionCriteria": "その節が副詞節（主節を修飾）か",
+      "commonMisconceptions": [
+        "未来だから節の中も will【教材】"
+      ]
+    },
+    "tense.nouncl.will": {
+      "decisionCriteria": "その節が名詞節（目的語）か",
+      "commonMisconceptions": [
+        "if/when 節ならいつも現在形【教材】"
+      ]
+    },
+    "tense.clause.id": {
+      "decisionCriteria": "節が動詞の目的語か、文全体を修飾するか",
+      "commonMisconceptions": []
+    },
+    "tense.pres.sched": {
+      "decisionCriteria": "時刻表・公式の予定か",
+      "commonMisconceptions": []
+    },
+    "tense.prog.futplan": {
+      "decisionCriteria": "tonight, tomorrow など近い未来の語句と個人の予定",
+      "commonMisconceptions": []
+    },
+    "tense.prog.always": {
+      "decisionCriteria": "always が進行形と共に使われているか",
+      "commonMisconceptions": []
+    },
+    "tense.prog.change": {
+      "decisionCriteria": "変化を表す動詞か",
+      "commonMisconceptions": []
+    },
+    "tense.futperf.compl": {
+      "decisionCriteria": "by＋未来の時点／before節",
+      "commonMisconceptions": []
+    },
+    "tense.futperf.exp": {
+      "decisionCriteria": "回数表現＋if節など未来の条件",
+      "commonMisconceptions": []
+    },
+    "tense.futperf.cont": {
+      "decisionCriteria": "for＋期間＋未来の時点",
+      "commonMisconceptions": []
+    },
+    "perfect.pres.form": {
+      "decisionCriteria": "主語の人称／過去分詞の形",
+      "commonMisconceptions": []
+    },
+    "perfect.pres.compl": {
+      "decisionCriteria": "過去の動作の結果が現在に及んでいるか／yetは否定文・疑問文",
+      "commonMisconceptions": []
+    },
+    "perfect.pres.exp": {
+      "decisionCriteria": "「～したことがある」か／回数表現",
+      "commonMisconceptions": [
+        "before と ever の混同【教材】"
+      ]
+    },
+    "perfect.pres.cont.state": {
+      "decisionCriteria": "状態動詞か／for＋期間、since＋起点",
+      "commonMisconceptions": []
+    },
+    "perfect.pres.cont.act": {
+      "decisionCriteria": "動作動詞か／期間表現",
+      "commonMisconceptions": []
+    },
+    "perfect.vs.past": {
+      "decisionCriteria": "過去の時点を特定する語句があるか",
+      "commonMisconceptions": [
+        "yesterday と現在完了を一緒に使う【教材】"
+      ]
+    },
+    "perfect.been.gone": {
+      "decisionCriteria": "主語が今その場にいるか",
+      "commonMisconceptions": []
+    },
+    "perfect.pres.use.id": {
+      "decisionCriteria": "副詞（just, ever, for…）と動詞の性質",
+      "commonMisconceptions": []
+    },
+    "perfect.past.compl": {
+      "decisionCriteria": "when節などで過去の基準時が示されているか",
+      "commonMisconceptions": []
+    },
+    "perfect.past.exp": {
+      "decisionCriteria": "before/until＋過去の時点",
+      "commonMisconceptions": [
+        "have never と had never の混同【教材】"
+      ]
+    },
+    "perfect.past.cont.state": {
+      "decisionCriteria": "状態動詞＋for/until",
+      "commonMisconceptions": []
+    },
+    "perfect.past.cont.act": {
+      "decisionCriteria": "動作動詞＋期間＋過去の基準時",
+      "commonMisconceptions": []
+    },
+    "perfect.past.anterior": {
+      "decisionCriteria": "2つの過去の出来事の前後関係",
+      "commonMisconceptions": []
+    },
+    "perfect.past.vs.pres": {
+      "decisionCriteria": "基準時（今か、過去のある時点か）",
+      "commonMisconceptions": []
+    },
+    "perfect.past.use.id": {
+      "decisionCriteria": "基準時と副詞・動詞の性質",
+      "commonMisconceptions": []
+    },
+    "modal.basic.form": {
+      "decisionCriteria": "助動詞の後の動詞の形／助動詞の連続",
+      "commonMisconceptions": [
+        "will can、can to＋原形【教材】(p.19 L8-3(1))"
+      ]
+    },
+    "modal.can.ability": {
+      "decisionCriteria": "主語の能力の話か",
+      "commonMisconceptions": []
+    },
+    "modal.beableto": {
+      "decisionCriteria": "他の助動詞と共に使う必要があるか／時制",
+      "commonMisconceptions": [
+        "will can【教材】"
+      ]
+    },
+    "modal.could.past": {
+      "decisionCriteria": "過去の時点を表す語句（when I was young）",
+      "commonMisconceptions": []
+    },
+    "modal.can.permit": {
+      "decisionCriteria": "主語に許可を与える文脈か",
+      "commonMisconceptions": []
+    },
+    "modal.can.request": {
+      "decisionCriteria": "相手に行為を頼んでいるか",
+      "commonMisconceptions": []
+    },
+    "modal.may.permit": {
+      "decisionCriteria": "話し手が許可を求めているか",
+      "commonMisconceptions": [
+        "相手への依頼に May you を使う【教材】(p.19 L8-3(3))"
+      ]
+    },
+    "modal.can.possib": {
+      "decisionCriteria": "一般論としての可能性か",
+      "commonMisconceptions": []
+    },
+    "modal.cant.imposs": {
+      "decisionCriteria": "話し手の確信のある否定的推量か",
+      "commonMisconceptions": []
+    },
+    "modal.may.possib": {
+      "decisionCriteria": "不確実な推量か",
+      "commonMisconceptions": []
+    },
+    "modal.can.use.id": {
+      "decisionCriteria": "主語と文脈",
+      "commonMisconceptions": []
+    },
+    "modal.must.oblig": {
+      "decisionCriteria": "義務の意味か",
+      "commonMisconceptions": []
+    },
+    "modal.hadto.willhaveto": {
+      "decisionCriteria": "時を表す語句（yesterday / tomorrow）",
+      "commonMisconceptions": []
+    },
+    "modal.mustnot": {
+      "decisionCriteria": "「～してはいけない」か",
+      "commonMisconceptions": []
+    },
+    "modal.noneed": {
+      "decisionCriteria": "「～する必要はない」か",
+      "commonMisconceptions": []
+    },
+    "modal.must.infer": {
+      "decisionCriteria": "主語の状態・性質についての確信か",
+      "commonMisconceptions": []
+    },
+    "modal.should.oblig": {
+      "decisionCriteria": "助言・当然すべきことか",
+      "commonMisconceptions": []
+    },
+    "modal.should.infer": {
+      "decisionCriteria": "主語の状態や予定についての見込みか",
+      "commonMisconceptions": []
+    },
+    "modal.hadbetter": {
+      "decisionCriteria": "否定のnotの位置（had better not）",
+      "commonMisconceptions": []
+    },
+    "modal.must.should.use.id": {
+      "decisionCriteria": "主語と文脈（動作か状態か）",
+      "commonMisconceptions": []
+    },
+    "modal.will.vol": {
+      "decisionCriteria": "1人称主語の意志か",
+      "commonMisconceptions": []
+    },
+    "modal.wont.refusal": {
+      "decisionCriteria": "否定＋主語の強い意志・抵抗か",
+      "commonMisconceptions": []
+    },
+    "modal.would.habit": {
+      "decisionCriteria": "動作動詞か／過去の習慣か",
+      "commonMisconceptions": [
+        "状態動詞に would を使う【教材】(p.23 L10-2(4))"
+      ]
+    },
+    "modal.usedto": {
+      "decisionCriteria": "過去の状態か／現在は違うか",
+      "commonMisconceptions": [
+        "used＋原形（toの脱落）【教材】(p.23 L10-2(3))"
+      ]
+    },
+    "modal.would.vs.usedto": {
+      "decisionCriteria": "動詞が状態か動作か",
+      "commonMisconceptions": []
+    },
+    "modal.will.infer": {
+      "decisionCriteria": "現在の状況についての推量か",
+      "commonMisconceptions": []
+    },
+    "modal.willyou": {
+      "decisionCriteria": "相手に行為を頼んでいるか",
+      "commonMisconceptions": []
+    },
+    "modal.shalli": {
+      "decisionCriteria": "話し手が相手のために何かをするか",
+      "commonMisconceptions": [
+        "Shall we との混同【教材】(p.24 L10-4(3))"
+      ]
+    },
+    "modal.shallwe": {
+      "decisionCriteria": "一緒に行う提案か",
+      "commonMisconceptions": []
+    },
+    "modal.will.use.id": {
+      "decisionCriteria": "主語・時制・文脈",
+      "commonMisconceptions": []
+    },
+    "modal.perf.shouldhave": {
+      "decisionCriteria": "過去の行為についての評価か",
+      "commonMisconceptions": []
+    },
+    "modal.perf.oughthave": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "modal.perf.musthave": {
+      "decisionCriteria": "過去の事柄についての強い確信か",
+      "commonMisconceptions": []
+    },
+    "modal.perf.canthave": {
+      "decisionCriteria": "過去の事柄についての否定的確信か",
+      "commonMisconceptions": []
+    },
+    "modal.perf.mayhave": {
+      "decisionCriteria": "過去の事柄についての不確実な推量か",
+      "commonMisconceptions": []
+    },
+    "modal.perf.neednthave": {
+      "decisionCriteria": "実際に行ったことが文脈にあるか",
+      "commonMisconceptions": []
+    },
+    "modal.perf.use.id": {
+      "decisionCriteria": "和文・文脈の意味",
+      "commonMisconceptions": [
+        "can't have と needn't have の混同【教材】(p.26 P3-4(4))"
+      ]
+    },
+    "modal.mayaswell": {
+      "decisionCriteria": "提案か推量か",
+      "commonMisconceptions": [
+        "may well と may as well の混同【教材】(p.26 P3-4(1))"
+      ]
+    },
+    "modal.wouldlike": {
+      "decisionCriteria": "want to をより丁寧に言う場面か",
+      "commonMisconceptions": []
+    },
+    "modal.cannothelp": {
+      "decisionCriteria": "help の後は動名詞、help but の後は動詞の原形",
+      "commonMisconceptions": []
+    },
+    "modal.onlyhaveto": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "modal.wouldrather": {
+      "decisionCriteria": "A・Bとも原形か",
+      "commonMisconceptions": []
+    },
+    "modal.cannottoo": {
+      "decisionCriteria": "cannot と too の組み合わせか",
+      "commonMisconceptions": []
+    },
+    "passive.pres": {
+      "decisionCriteria": "主語が動作を「受ける」側か／主語の数",
+      "commonMisconceptions": []
+    },
+    "passive.past": {
+      "decisionCriteria": "過去を表す語句",
+      "commonMisconceptions": []
+    },
+    "passive.act.to.pas": {
+      "decisionCriteria": "元の文の目的語／元の文の時制／主語の数",
+      "commonMisconceptions": []
+    },
+    "passive.by.agent": {
+      "decisionCriteria": "動作主が明示されているか／一般の人々（they など）か",
+      "commonMisconceptions": []
+    },
+    "passive.neg": {
+      "decisionCriteria": "be動詞の位置",
+      "commonMisconceptions": []
+    },
+    "passive.yn.q": {
+      "decisionCriteria": "be動詞の時制と数",
+      "commonMisconceptions": []
+    },
+    "passive.wh.q": {
+      "decisionCriteria": "疑問詞が主語か、副詞か",
+      "commonMisconceptions": []
+    },
+    "passive.modal": {
+      "decisionCriteria": "助動詞の後の be を原形にする",
+      "commonMisconceptions": []
+    },
+    "passive.prog": {
+      "decisionCriteria": "進行中の受け身か",
+      "commonMisconceptions": []
+    },
+    "passive.perf": {
+      "decisionCriteria": "完了の意味か",
+      "commonMisconceptions": []
+    },
+    "passive.goingto": {
+      "decisionCriteria": "予定の意味か",
+      "commonMisconceptions": []
+    },
+    "passive.svoo": {
+      "decisionCriteria": "主語にする目的語は人か物か／動詞が to 型か for 型か（解答：物を主語にするときは to＋人・for＋人を残す。cook・sing は for：p.28 L11-5(2)(4)）",
+      "commonMisconceptions": []
+    },
+    "passive.svoc": {
+      "decisionCriteria": "元の文の O と C",
+      "commonMisconceptions": []
+    },
+    "passive.itsaid": {
+      "decisionCriteria": "that節で内容が述べられているか",
+      "commonMisconceptions": [
+        "It says that（能動）【教材】(p.29 P4-1)"
+      ]
+    },
+    "passive.saidtobe": {
+      "decisionCriteria": "that節の主語が文の主語になるか",
+      "commonMisconceptions": []
+    },
+    "passive.phrasal": {
+      "decisionCriteria": "動詞＋前置詞（副詞）がひとまとまりか",
+      "commonMisconceptions": []
+    },
+    "passive.nonby.prep": {
+      "decisionCriteria": "決まった前置詞との組み合わせ",
+      "commonMisconceptions": []
+    },
+    "passive.jp.active": {
+      "decisionCriteria": "日本語が「生まれる」「死ぬ」「けがをする」「遅れる」「（雨に）あう」か",
+      "commonMisconceptions": []
+    },
+    "infinitive.noun.subj": {
+      "decisionCriteria": "文の主語の位置にあるか（形式主語の後を含む）",
+      "commonMisconceptions": []
+    },
+    "infinitive.noun.obj": {
+      "decisionCriteria": "want/decide などの後か",
+      "commonMisconceptions": []
+    },
+    "infinitive.noun.comp": {
+      "decisionCriteria": "S is to ～で S＝to ～の関係か",
+      "commonMisconceptions": [
+        "to を落とす（My job is write）【教材】"
+      ]
+    },
+    "infinitive.it.formal": {
+      "decisionCriteria": "It が後ろの不定詞を指しているか",
+      "commonMisconceptions": [
+        "It の代わりに That/This を使う【教材】(p.31 L12-2(3))"
+      ]
+    },
+    "infinitive.it.formalobj": {
+      "decisionCriteria": "SVOCで O の位置に長い不定詞が来るか",
+      "commonMisconceptions": [
+        "this を使う・it を落とす【教材】(p.31 L12-2(2))"
+      ]
+    },
+    "infinitive.func.id": {
+      "decisionCriteria": "形式主語・形式目的語の場合は真主語＝S、真の目的語＝O（解答：p.31 L12-1(1) は O）",
+      "commonMisconceptions": []
+    },
+    "infinitive.adj": {
+      "decisionCriteria": "直前の名詞を説明しているか／名詞と不定詞の関係（主語・目的語・同格）",
+      "commonMisconceptions": []
+    },
+    "infinitive.adj.prep": {
+      "decisionCriteria": "修飾される名詞が前置詞の目的語にあたるか",
+      "commonMisconceptions": []
+    },
+    "infinitive.adv.purpose": {
+      "decisionCriteria": "動作の目的を表しているか",
+      "commonMisconceptions": []
+    },
+    "infinitive.adv.emotion": {
+      "decisionCriteria": "直前が感情の形容詞（sorry, glad, surprised, excited）か",
+      "commonMisconceptions": []
+    },
+    "infinitive.adv.judge": {
+      "decisionCriteria": "人の性質・評価を表す形容詞（polite, rude, clever, lucky など）の後か",
+      "commonMisconceptions": []
+    },
+    "infinitive.adv.result": {
+      "decisionCriteria": "前の動作の後に起きた結果か（意図がないか）",
+      "commonMisconceptions": []
+    },
+    "infinitive.adv.use.id": {
+      "decisionCriteria": "前の語が動詞・感情の形容詞・評価の形容詞のどれか（解答の分類：目的／感情の原因／判断の根拠／動作・行為の結果）",
+      "commonMisconceptions": []
+    },
+    "infinitive.subj.for": {
+      "decisionCriteria": "形容詞が行為そのものの性質（necessary, natural, important, dangerous, difficult）か",
+      "commonMisconceptions": [
+        "of との混同【教材】(p.33 L13-2)"
+      ]
+    },
+    "infinitive.subj.of": {
+      "decisionCriteria": "形容詞が人の性質や人柄，能力などを示すか（kind, polite, careless, foolish）",
+      "commonMisconceptions": [
+        "for を使う【教材】(p.33 L13-2)"
+      ]
+    },
+    "infinitive.of.rewrite": {
+      "decisionCriteria": "形容詞が人の性質を表すか",
+      "commonMisconceptions": []
+    },
+    "infinitive.voto": {
+      "decisionCriteria": "動詞がこの型をとるか／O が不定詞の意味上の主語か",
+      "commonMisconceptions": []
+    },
+    "infinitive.causative": {
+      "decisionCriteria": "強制（make）・許可（let）・依頼（have）の違い",
+      "commonMisconceptions": [
+        "to を付ける（let me to buy）【教材】(p.35 L14-3(1))"
+      ]
+    },
+    "infinitive.perception": {
+      "decisionCriteria": "動作の一部始終を知覚しているか",
+      "commonMisconceptions": [
+        "to を付ける【教材】(p.35 L14-3(3))"
+      ]
+    },
+    "infinitive.to.or.bare": {
+      "decisionCriteria": "使役・知覚動詞か／それ以外（tell, permit など）か",
+      "commonMisconceptions": []
+    },
+    "infinitive.neg": {
+      "decisionCriteria": "not の位置",
+      "commonMisconceptions": [
+        "to not（分離不定詞）【教材】(p.35 L14-3(4))"
+      ]
+    },
+    "infinitive.wh": {
+      "decisionCriteria": "何を尋ねているか（方法・物・時・場所）",
+      "commonMisconceptions": [
+        "what to get to the station【教材】(p.36 L14-4)"
+      ]
+    },
+    "infinitive.seem": {
+      "decisionCriteria": "that節と主節の時制が同じか",
+      "commonMisconceptions": []
+    },
+    "infinitive.seem.perf": {
+      "decisionCriteria": "that節の時制が主節より前か",
+      "commonMisconceptions": [
+        "seemed to go のように時制で調整する【教材】(p.37 P5-1(2))"
+      ]
+    },
+    "infinitive.seem.prog.pass": {
+      "decisionCriteria": "that節が進行形か受動態か",
+      "commonMisconceptions": []
+    },
+    "infinitive.tough": {
+      "decisionCriteria": "主語が不定詞の目的語にあたるか",
+      "commonMisconceptions": []
+    },
+    "infinitive.cometo": {
+      "decisionCriteria": "変化か、努力による達成か",
+      "commonMisconceptions": []
+    },
+    "infinitive.beto": {
+      "decisionCriteria": "文脈（予定／指示／否定＋受動＝可能）",
+      "commonMisconceptions": []
+    },
+    "infinitive.indep": {
+      "decisionCriteria": "決まった表現か",
+      "commonMisconceptions": []
+    },
+    "infinitive.too.enough": {
+      "decisionCriteria": "enough の位置（形容詞の後）／too の否定的な意味",
+      "commonMisconceptions": []
+    },
+    "infinitive.proform": {
+      "decisionCriteria": "直前の動詞句の繰り返しか",
+      "commonMisconceptions": []
+    },
+    "gerund.subj": {
+      "decisionCriteria": "文の主語の位置にあるか／動詞は単数で受けるか",
+      "commonMisconceptions": []
+    },
+    "gerund.obj": {
+      "decisionCriteria": "動詞の直後か",
+      "commonMisconceptions": []
+    },
+    "gerund.comp": {
+      "decisionCriteria": "S＝～ingの関係か",
+      "commonMisconceptions": []
+    },
+    "gerund.prep": {
+      "decisionCriteria": "直前が前置詞か（How about, before, of, in）",
+      "commonMisconceptions": []
+    },
+    "gerund.func.id": {
+      "decisionCriteria": "文中の位置",
+      "commonMisconceptions": []
+    },
+    "gerund.sense.subj": {
+      "decisionCriteria": "動名詞の前に（代）名詞があるか／文の主語と一致するか",
+      "commonMisconceptions": []
+    },
+    "gerund.neg": {
+      "decisionCriteria": "not の位置",
+      "commonMisconceptions": []
+    },
+    "gerund.vs.inf.verb": {
+      "decisionCriteria": "目的語をとる動詞の種類",
+      "commonMisconceptions": []
+    },
+    "gerund.inf.meaning": {
+      "decisionCriteria": "行為が過去のことか、これからのことか",
+      "commonMisconceptions": []
+    },
+    "gerund.perf": {
+      "decisionCriteria": "主節の時制より前のことか",
+      "commonMisconceptions": []
+    },
+    "gerund.pass": {
+      "decisionCriteria": "意味上の主語が動作を受ける側か",
+      "commonMisconceptions": [
+        "過去分詞だけにする（like called）【教材】(p.42 P6-5(3))"
+      ]
+    },
+    "gerund.perf.pass": {
+      "decisionCriteria": "前の時の出来事かつ受け身か",
+      "commonMisconceptions": []
+    },
+    "gerund.idiom.to.prep": {
+      "decisionCriteria": "to が前置詞か不定詞の to か",
+      "commonMisconceptions": [
+        "look forward to see【教材】(p.42 P6-5(2))"
+      ]
+    },
+    "gerund.idiom.nouse": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": [
+        "no use to＋原形【教材】(p.42 P6-5(1))"
+      ]
+    },
+    "gerund.idiom.thereisno": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "gerund.idiom.feellike": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": [
+        "feel like to＋原形【教材】(p.42 P6-5(4))"
+      ]
+    },
+    "gerund.idiom.others": {
+      "decisionCriteria": "決まった表現か",
+      "commonMisconceptions": [
+        "On hear【教材】(p.42 P6-5(5))"
+      ]
+    },
+    "participle.act.pass": {
+      "decisionCriteria": "名詞と分詞の意味上の関係（能動か受動か）",
+      "commonMisconceptions": []
+    },
+    "participle.pre.mod": {
+      "decisionCriteria": "分詞が1語か",
+      "commonMisconceptions": []
+    },
+    "participle.post.mod": {
+      "decisionCriteria": "分詞に目的語・修飾語が付いているか",
+      "commonMisconceptions": []
+    },
+    "participle.adj.fixed": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "participle.svc": {
+      "decisionCriteria": "主語が分詞の動作をする側か、受ける側か",
+      "commonMisconceptions": []
+    },
+    "participle.svoc": {
+      "decisionCriteria": "O と分詞の関係（O がする側か、される側か）",
+      "commonMisconceptions": []
+    },
+    "participle.perc.oc": {
+      "decisionCriteria": "O が進行中の動作をしているか、動作を受けているか",
+      "commonMisconceptions": []
+    },
+    "participle.have.get.pp": {
+      "decisionCriteria": "O が動作を受ける側か／依頼か被害か",
+      "commonMisconceptions": [
+        "現在分詞を使う【教材】(p.45 L17-1(2)(4))"
+      ]
+    },
+    "participle.make.oneself": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "participle.constr.form": {
+      "decisionCriteria": "従属節と主節の主語が同じか／時制",
+      "commonMisconceptions": []
+    },
+    "participle.constr.time": {
+      "decisionCriteria": "文脈（時）",
+      "commonMisconceptions": []
+    },
+    "participle.constr.reason": {
+      "decisionCriteria": "文脈（原因・理由）",
+      "commonMisconceptions": []
+    },
+    "participle.constr.attend": {
+      "decisionCriteria": "2つの動作が同時か",
+      "commonMisconceptions": []
+    },
+    "participle.constr.seq": {
+      "decisionCriteria": "2つの動作が順に起きるか",
+      "commonMisconceptions": []
+    },
+    "participle.constr.pass": {
+      "decisionCriteria": "主語が動作を受ける側か",
+      "commonMisconceptions": []
+    },
+    "participle.constr.neg": {
+      "decisionCriteria": "not の位置",
+      "commonMisconceptions": []
+    },
+    "participle.constr.use.id": {
+      "decisionCriteria": "主節との意味関係（解答の分類：時／原因・理由／付帯状況／連続した動作や出来事）",
+      "commonMisconceptions": []
+    },
+    "participle.constr.perf": {
+      "decisionCriteria": "従属節の時制が主節より前か",
+      "commonMisconceptions": []
+    },
+    "participle.absolute": {
+      "decisionCriteria": "従属節と主節の主語が違うか",
+      "commonMisconceptions": []
+    },
+    "participle.idiom": {
+      "decisionCriteria": "決まった表現か",
+      "commonMisconceptions": []
+    },
+    "participle.with": {
+      "decisionCriteria": "O と分詞の関係（する側か、される側か）",
+      "commonMisconceptions": [
+        "with her eyes closing【教材】(p.47 P7-3)"
+      ]
+    },
+    "participle.there.ing": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "participle.go.ing": {
+      "decisionCriteria": "場所の前置詞（to でない）",
+      "commonMisconceptions": []
+    },
+    "participle.busy.ing": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "relative.antecedent": {
+      "decisionCriteria": "関係詞の直前の名詞（句）／節の終わり",
+      "commonMisconceptions": []
+    },
+    "relative.who.subj": {
+      "decisionCriteria": "先行詞が人か／節の主語が欠けているか",
+      "commonMisconceptions": []
+    },
+    "relative.which.subj": {
+      "decisionCriteria": "先行詞が人か人以外か",
+      "commonMisconceptions": [
+        "動物に who を使う【教材】(p.49 L18-1(4)。解答は which)"
+      ]
+    },
+    "relative.obj": {
+      "decisionCriteria": "節の目的語（前置詞の目的語を含む）が欠けているか",
+      "commonMisconceptions": []
+    },
+    "relative.whose": {
+      "decisionCriteria": "先行詞と後の名詞が所有の関係か",
+      "commonMisconceptions": []
+    },
+    "relative.omit": {
+      "decisionCriteria": "関係代名詞が目的格か主格か",
+      "commonMisconceptions": []
+    },
+    "relative.combine": {
+      "decisionCriteria": "2文目で先行詞を指す語の格",
+      "commonMisconceptions": []
+    },
+    "relative.case.id": {
+      "decisionCriteria": "関係詞節で欠けている要素",
+      "commonMisconceptions": []
+    },
+    "relative.agree": {
+      "decisionCriteria": "節の主語は何か",
+      "commonMisconceptions": []
+    },
+    "relative.that": {
+      "decisionCriteria": "格が主格・目的格か",
+      "commonMisconceptions": [
+        "whose の代わりに that を使う【教材】(p.51 L19-1(3))"
+      ]
+    },
+    "relative.that.pref": {
+      "decisionCriteria": "先行詞の修飾語（解答：that が好まれるが which / who も可能で「どちらでもよい」が正解：p.51 L19-2(3)–(5)）",
+      "commonMisconceptions": []
+    },
+    "relative.prep.front": {
+      "decisionCriteria": "前置詞の後は which / whom（that・who は不可）",
+      "commonMisconceptions": []
+    },
+    "relative.prep.end": {
+      "decisionCriteria": "節の中で前置詞の目的語が欠けているか",
+      "commonMisconceptions": []
+    },
+    "relative.what": {
+      "decisionCriteria": "先行詞がないか／what 節が S・O・C になっているか",
+      "commonMisconceptions": []
+    },
+    "relative.nonrestr": {
+      "decisionCriteria": "コンマの有無／先行詞が全部か一部か",
+      "commonMisconceptions": []
+    },
+    "relative.nonrestr.nothat": {
+      "decisionCriteria": "コンマの有無",
+      "commonMisconceptions": []
+    },
+    "relative.which.clause": {
+      "decisionCriteria": "先行詞が名詞ではなく前の内容全体か",
+      "commonMisconceptions": []
+    },
+    "relative.adv.where": {
+      "decisionCriteria": "先行詞が場所か／節の中が完全な文か",
+      "commonMisconceptions": []
+    },
+    "relative.adv.when": {
+      "decisionCriteria": "先行詞が時か／節の中が完全な文か",
+      "commonMisconceptions": []
+    },
+    "relative.adv.why": {
+      "decisionCriteria": "先行詞が reason か",
+      "commonMisconceptions": []
+    },
+    "relative.adv.how": {
+      "decisionCriteria": "先行詞 the way と how を同時に使っていないか",
+      "commonMisconceptions": []
+    },
+    "relative.adv.nonrestr": {
+      "decisionCriteria": "コンマの有無",
+      "commonMisconceptions": []
+    },
+    "relative.adv.prepwhich": {
+      "decisionCriteria": "先行詞に合う前置詞",
+      "commonMisconceptions": []
+    },
+    "relative.adv.vs.pron": {
+      "decisionCriteria": "節の中で主語・目的語が欠けているか",
+      "commonMisconceptions": []
+    },
+    "relative.whoever.noun": {
+      "decisionCriteria": "節が主語・目的語になっているか",
+      "commonMisconceptions": []
+    },
+    "relative.whoever.concess": {
+      "decisionCriteria": "節が副詞節（主節の外）か",
+      "commonMisconceptions": []
+    },
+    "relative.wherever.whenever": {
+      "decisionCriteria": "場所か時か",
+      "commonMisconceptions": []
+    },
+    "relative.however": {
+      "decisionCriteria": "形容詞・副詞が however の直後にあるか",
+      "commonMisconceptions": []
+    },
+    "relative.nomatter": {
+      "decisionCriteria": "譲歩か名詞節か",
+      "commonMisconceptions": []
+    },
+    "comparison.asas": {
+      "decisionCriteria": "2つのものが同程度か",
+      "commonMisconceptions": [
+        "最初の as を落とす【教材】(p.59 L21-1(1))"
+      ]
+    },
+    "comparison.notasas": {
+      "decisionCriteria": "not の位置（動詞側）",
+      "commonMisconceptions": [
+        "can run not as fast【教材】(p.59 L21-1(2))"
+      ]
+    },
+    "comparison.asmany": {
+      "decisionCriteria": "可算か不可算か／名詞の位置",
+      "commonMisconceptions": [
+        "shoes as many as【教材】(p.59 L21-1(3))"
+      ]
+    },
+    "comparison.times": {
+      "decisionCriteria": "倍数表現の位置（as の前）／times の複数形",
+      "commonMisconceptions": [
+        "as twice、four time【教材】(p.59 L21-1(4)(5))"
+      ]
+    },
+    "comparison.er.than": {
+      "decisionCriteria": "-er か more か",
+      "commonMisconceptions": []
+    },
+    "comparison.reverse": {
+      "decisionCriteria": "反意語／not as ～ as",
+      "commonMisconceptions": []
+    },
+    "comparison.emph": {
+      "decisionCriteria": "強調語の種類と位置",
+      "commonMisconceptions": []
+    },
+    "comparison.diff": {
+      "decisionCriteria": "差を表す語句の位置",
+      "commonMisconceptions": []
+    },
+    "comparison.less": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "comparison.est": {
+      "decisionCriteria": "-est か most か／the の有無",
+      "commonMisconceptions": []
+    },
+    "comparison.in.of": {
+      "decisionCriteria": "範囲が「場所・集団」か「複数のもの・数」か",
+      "commonMisconceptions": []
+    },
+    "comparison.adv.est": {
+      "decisionCriteria": "修飾しているのが動詞か（解答：副詞の最上級では the を置かないことが多い。p.61 L22-4(1) は (the) latest）",
+      "commonMisconceptions": []
+    },
+    "comparison.ordinal": {
+      "decisionCriteria": "序数の位置",
+      "commonMisconceptions": []
+    },
+    "comparison.least": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "comparison.est.emph": {
+      "decisionCriteria": "強調語の位置",
+      "commonMisconceptions": []
+    },
+    "comparison.oneof": {
+      "decisionCriteria": "名詞を複数形にするか",
+      "commonMisconceptions": []
+    },
+    "comparison.est.equiv": {
+      "decisionCriteria": "any other の後の名詞は単数か",
+      "commonMisconceptions": []
+    },
+    "comparison.latin": {
+      "decisionCriteria": "形容詞・動詞が to を使うものか",
+      "commonMisconceptions": [
+        "superior than【教材】(p.63 P9-1(1))"
+      ]
+    },
+    "comparison.themore": {
+      "decisionCriteria": "両方に the があるか／語順",
+      "commonMisconceptions": [
+        "the を落とす【教材】(p.63 P9-1(2))"
+      ]
+    },
+    "comparison.nothe.same": {
+      "decisionCriteria": "他のものとの比較か、同じもの自身の比較か",
+      "commonMisconceptions": [
+        "常に the を付ける【教材】(p.63 P9-1(3))"
+      ]
+    },
+    "comparison.the.of.two": {
+      "decisionCriteria": "2つの中からの選択か",
+      "commonMisconceptions": []
+    },
+    "comparison.nomore.noless": {
+      "decisionCriteria": "no か not か／more か less か",
+      "commonMisconceptions": []
+    },
+    "comparison.no.er.than": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "comparison.whale": {
+      "decisionCriteria": "両方とも否定の意味になるか",
+      "commonMisconceptions": []
+    },
+    "comparison.notsomuch": {
+      "decisionCriteria": "A と B の順序",
+      "commonMisconceptions": []
+    },
+    "comparison.er.and.er": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "comparison.asmanyas": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "comparison.possible": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "subjunctive.open.cond": {
+      "decisionCriteria": "主節が will か would か／事実に反するか",
+      "commonMisconceptions": [
+        "仮定法と混同する【教材】(p.65 L23-1)"
+      ]
+    },
+    "subjunctive.past": {
+      "decisionCriteria": "現在の事実に反するか",
+      "commonMisconceptions": [
+        "帰結節を過去形にする（I studied）【教材】(p.65 L23-2(1))"
+      ]
+    },
+    "subjunctive.were": {
+      "decisionCriteria": "仮定法の be動詞か",
+      "commonMisconceptions": [
+        "解答は were。解答の解説には「口語では主語が1人称・3人称単数の場合 was も使われる」とある（p.66 L23-5(2)）"
+      ]
+    },
+    "subjunctive.pastperf": {
+      "decisionCriteria": "過去の事実に反するか",
+      "commonMisconceptions": [
+        "帰結節を could＋原形にする【教材】(p.65 L23-2(3))"
+      ]
+    },
+    "subjunctive.mixed": {
+      "decisionCriteria": "帰結節に now などの現在を表す語句があるか",
+      "commonMisconceptions": [
+        "帰結節も would have にする【教材】(p.65 L23-2(4))"
+      ]
+    },
+    "subjunctive.modal.choice": {
+      "decisionCriteria": "和文が「～できるのに」か「～するのに」か",
+      "commonMisconceptions": [
+        "can を使う【教材】(p.65 L23-2(2))"
+      ]
+    },
+    "subjunctive.fact.conv": {
+      "decisionCriteria": "元の文の時制／肯定・否定／実際に起こり得ることか（解答：p.66 L23-6(1) は直説法 If it doesn’t rain…, we will go out.）",
+      "commonMisconceptions": []
+    },
+    "subjunctive.wereto": {
+      "decisionCriteria": "未来についての仮の想定か",
+      "commonMisconceptions": [
+        "状態の仮定に were to を使う・are to を使う【教材】(p.67 L24-1(1))"
+      ]
+    },
+    "subjunctive.should": {
+      "decisionCriteria": "実現の可能性が極めて低い未来か（可能性のまったくない仮定には使わない）／主節は助動詞の過去形または現在形",
+      "commonMisconceptions": [
+        "would を使う【教材】(p.67 L24-1(4))"
+      ]
+    },
+    "subjunctive.iwish.past": {
+      "decisionCriteria": "現在についての願望か",
+      "commonMisconceptions": []
+    },
+    "subjunctive.iwish.pp": {
+      "decisionCriteria": "過去についての願望か",
+      "commonMisconceptions": []
+    },
+    "subjunctive.asif": {
+      "decisionCriteria": "主節と同じ時か、それより前か",
+      "commonMisconceptions": []
+    },
+    "subjunctive.inversion": {
+      "decisionCriteria": "助動詞・be動詞が文頭にあるか",
+      "commonMisconceptions": []
+    },
+    "subjunctive.without": {
+      "decisionCriteria": "現在か過去か",
+      "commonMisconceptions": []
+    },
+    "subjunctive.otherwise": {
+      "decisionCriteria": "前文の事実を反転した条件",
+      "commonMisconceptions": []
+    },
+    "subjunctive.implicit.subj": {
+      "decisionCriteria": "主語の名詞に条件の意味があるか",
+      "commonMisconceptions": []
+    },
+    "subjunctive.implicit.inf": {
+      "decisionCriteria": "文頭の不定詞に条件の意味があるか",
+      "commonMisconceptions": []
+    },
+    "subjunctive.implicit.phrase": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "subjunctive.ifonly": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "subjunctive.itstime": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "negation.not.no": {
+      "decisionCriteria": "否定の対象が動詞か名詞か",
+      "commonMisconceptions": [
+        "does no listen【教材】(p.71 E1-1(1))"
+      ]
+    },
+    "negation.never": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "negation.few.little": {
+      "decisionCriteria": "名詞が可算か不可算か",
+      "commonMisconceptions": []
+    },
+    "negation.hardly.seldom": {
+      "decisionCriteria": "程度か頻度か",
+      "commonMisconceptions": []
+    },
+    "negation.partial": {
+      "decisionCriteria": "not と all の位置関係",
+      "commonMisconceptions": []
+    },
+    "negation.total": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "negation.double": {
+      "decisionCriteria": "否定語が2つあるか",
+      "commonMisconceptions": []
+    },
+    "negation.transfer": {
+      "decisionCriteria": "主節の動詞が think か hope か",
+      "commonMisconceptions": []
+    },
+    "negation.notuntil": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "negation.nolonger": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "negation.but.only": {
+      "decisionCriteria": "but＝only の意味か",
+      "commonMisconceptions": []
+    },
+    "negation.not.words": {
+      "decisionCriteria": "決まった表現か",
+      "commonMisconceptions": []
+    },
+    "negation.beforelong": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "negation.inf.not": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": [
+        "to not【教材】(p.71 E1-1(4))"
+      ]
+    },
+    "nominal.inanimate": {
+      "decisionCriteria": "動詞がとる型（enable O to、rob O of、prevent O from ～ing）",
+      "commonMisconceptions": []
+    },
+    "nominal.noun.constr": {
+      "decisionCriteria": "副詞→形容詞、動詞→名詞の対応",
+      "commonMisconceptions": []
+    },
+    "reported.seq": {
+      "decisionCriteria": "主節の時制／従属節の元の時制",
+      "commonMisconceptions": []
+    },
+    "reported.statement": {
+      "decisionCriteria": "誰が誰に言ったか／時の基準",
+      "commonMisconceptions": []
+    },
+    "reported.question": {
+      "decisionCriteria": "Yes/No疑問文か疑問詞疑問文か／平叙文の語順",
+      "commonMisconceptions": []
+    },
+    "reported.imperative": {
+      "decisionCriteria": "命令か依頼か／否定か",
+      "commonMisconceptions": [
+        "said to me to ～【教材】(p.75 E5-1(3))"
+      ]
+    },
+    "reported.exclamation": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "reported.compound": {
+      "decisionCriteria": "but / and の後の節も伝達内容か",
+      "commonMisconceptions": []
+    },
+    "reported.embedded": {
+      "decisionCriteria": "従属節の元の時制",
+      "commonMisconceptions": []
+    },
+    "conjunction.coord": {
+      "decisionCriteria": "前後の論理関係",
+      "commonMisconceptions": []
+    },
+    "conjunction.for": {
+      "decisionCriteria": "コンマの後で理由を補っているか",
+      "commonMisconceptions": []
+    },
+    "conjunction.that.noun": {
+      "decisionCriteria": "that 節が主語・補語になっているか",
+      "commonMisconceptions": []
+    },
+    "conjunction.whether.if": {
+      "decisionCriteria": "名詞節か（補語の位置では whether）",
+      "commonMisconceptions": []
+    },
+    "conjunction.correl": {
+      "decisionCriteria": "組み合わせの語／A と B が同じ品詞・形か",
+      "commonMisconceptions": []
+    },
+    "conjunction.imp.andor": {
+      "decisionCriteria": "結果が望ましいか望ましくないか",
+      "commonMisconceptions": []
+    },
+    "conjunction.time": {
+      "decisionCriteria": "時の前後関係／継続の起点か終点か",
+      "commonMisconceptions": []
+    },
+    "conjunction.reason": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "conjunction.concess": {
+      "decisionCriteria": "事実か仮定か",
+      "commonMisconceptions": []
+    },
+    "conjunction.cond": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "conjunction.sothat": {
+      "decisionCriteria": "so の直後が形容詞・副詞か、that か",
+      "commonMisconceptions": []
+    },
+    "conjunction.incase": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "conjunction.whether.or": {
+      "decisionCriteria": "副詞節か",
+      "commonMisconceptions": []
+    },
+    "preposition.time": {
+      "decisionCriteria": "時刻か曜日か月か期間か",
+      "commonMisconceptions": []
+    },
+    "preposition.until.by": {
+      "decisionCriteria": "動作が続くか、その時までに完了するか",
+      "commonMisconceptions": []
+    },
+    "preposition.place": {
+      "decisionCriteria": "場所の捉え方（点・面・空間）",
+      "commonMisconceptions": []
+    },
+    "preposition.between.among": {
+      "decisionCriteria": "対象の数",
+      "commonMisconceptions": []
+    },
+    "preposition.direction": {
+      "decisionCriteria": "移動の経路や向き",
+      "commonMisconceptions": [
+        "left to Sydney（for との混同）【教材】"
+      ]
+    },
+    "preposition.position": {
+      "decisionCriteria": "上下・前後・近接",
+      "commonMisconceptions": []
+    },
+    "preposition.of.range": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "interrogative.choice": {
+      "decisionCriteria": "答えの文の情報の種類／which は選択肢がある場合",
+      "commonMisconceptions": []
+    },
+    "interrogative.how.quant": {
+      "decisionCriteria": "数か手段か年齢か",
+      "commonMisconceptions": []
+    },
+    "interrogative.indirect": {
+      "decisionCriteria": "疑問詞の後が平叙文の語順か",
+      "commonMisconceptions": []
+    },
+    "interrogative.doyouthink": {
+      "decisionCriteria": "動詞が think 系か（know なら Do you know＋疑問詞）",
+      "commonMisconceptions": []
+    },
+    "interrogative.idioms": {
+      "decisionCriteria": "決まった表現か",
+      "commonMisconceptions": []
+    },
+    "pronoun.case": {
+      "decisionCriteria": "文中の働き（主語・名詞の前・目的語・単独で「～のもの」）",
+      "commonMisconceptions": []
+    },
+    "pronoun.oftheirs": {
+      "decisionCriteria": "名詞の前に冠詞などがあるか",
+      "commonMisconceptions": []
+    },
+    "pronoun.reflex": {
+      "decisionCriteria": "主語と目的語が同一か",
+      "commonMisconceptions": []
+    },
+    "pronoun.general.we": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "pronoun.it.use": {
+      "decisionCriteria": "it が指すものは何か（解答の分類：前出の語を指す／形式主語／形式目的語／時を表す）",
+      "commonMisconceptions": []
+    },
+    "pronoun.that.those": {
+      "decisionCriteria": "繰り返しを避ける名詞の数",
+      "commonMisconceptions": []
+    },
+    "pronoun.it.costs": {
+      "decisionCriteria": "―",
+      "commonMisconceptions": []
+    },
+    "pronoun.one.it": {
+      "decisionCriteria": "前に出たものと同一か、同じ種類の別のものか",
+      "commonMisconceptions": []
+    },
+    "pronoun.some.any": {
+      "decisionCriteria": "文の種類",
+      "commonMisconceptions": []
+    },
+    "pronoun.other": {
+      "decisionCriteria": "全体の数／残りが特定か不特定か／単数か複数か",
+      "commonMisconceptions": []
+    },
+    "pronoun.both.either.neither": {
+      "decisionCriteria": "対象が2つか／肯定か否定か",
+      "commonMisconceptions": []
+    },
+    "pronoun.all.each.agree": {
+      "decisionCriteria": "何が主語の中心語か",
+      "commonMisconceptions": []
+    }
+  }
+}

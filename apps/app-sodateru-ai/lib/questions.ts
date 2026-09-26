@@ -3,7 +3,8 @@ import runtime from "@/curriculum/generated/g24-runtime.json";
 import { loadCurriculum, toGrammarUnit } from "@/lib/curriculum/loader";
 
 /** Runtime projection of the published G24 curriculum. */
-const curriculum = loadCurriculum(runtime);
+export const CURRICULUM = loadCurriculum(runtime);
+const curriculum = CURRICULUM;
 
 export const GRAMMAR_UNITS: GrammarUnit[] = curriculum.units
   .map((unit) => toGrammarUnit(curriculum, unit.id))

@@ -3,6 +3,7 @@ export const CURRICULUM_ID = "curriculum.g24.grammar-workbook";
 export const CURRICULUM_VERSION = 1;
 export type UnitCatalogEntry = {
   id: string;
+  code: string;
   title: string;
   description: string;
   knowledgeTopics: ReadonlyArray<{ id: string; label: string }>;
@@ -12,6 +13,7 @@ export type UnitCatalogEntry = {
 export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   {
     "id": "unit.lesson01",
+    "code": "L1",
     "title": "文の種類",
     "description": "否定文・疑問文・命令文・感嘆文",
     "knowledgeTopics": [
@@ -69,6 +71,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson02",
+    "code": "L2",
     "title": "文型と動詞1",
     "description": "自動詞・他動詞、SV/SVC/SVO、補語と修飾語",
     "knowledgeTopics": [
@@ -110,6 +113,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson03",
+    "code": "L3",
     "title": "文型と動詞2",
     "description": "SVOO・SVOC、to/forへの書きかえ",
     "knowledgeTopics": [
@@ -139,6 +143,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.plus01",
+    "code": "Plus1",
     "title": "文型と動詞",
     "description": "間違えやすい自動詞・他動詞、lie/lay・rise/raise",
     "knowledgeTopics": [
@@ -160,6 +165,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.drill01",
+    "code": "Drill1",
     "title": "動詞の活用",
     "description": "過去形・過去分詞形・-ing形（35語）",
     "knowledgeTopics": [
@@ -181,6 +187,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson04",
+    "code": "L4",
     "title": "時制1",
     "description": "現在形・過去形・進行形、状態動詞",
     "knowledgeTopics": [
@@ -226,6 +233,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson05",
+    "code": "L5",
     "title": "時制2",
     "description": "will・be going to・未来進行形",
     "knowledgeTopics": [
@@ -263,6 +271,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson06",
+    "code": "L6",
     "title": "完了形1",
     "description": "現在完了・現在完了進行形",
     "knowledgeTopics": [
@@ -304,6 +313,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson07",
+    "code": "L7",
     "title": "完了形2",
     "description": "過去完了・過去完了進行形・大過去",
     "knowledgeTopics": [
@@ -341,6 +351,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.plus02",
+    "code": "Plus2",
     "title": "時制と完了形",
     "description": "時・条件の副詞節、未来を表す現在形・進行形、未来完了",
     "knowledgeTopics": [
@@ -390,6 +401,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson08",
+    "code": "L8",
     "title": "助動詞1",
     "description": "can/could/be able to/may",
     "knowledgeTopics": [
@@ -443,6 +455,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson09",
+    "code": "L9",
     "title": "助動詞2",
     "description": "must/have to/should/ought to/had better",
     "knowledgeTopics": [
@@ -488,6 +501,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson10",
+    "code": "L10",
     "title": "助動詞3",
     "description": "will/would/used to/shall",
     "knowledgeTopics": [
@@ -537,6 +551,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.plus03",
+    "code": "Plus3",
     "title": "助動詞",
     "description": "助動詞＋have＋過去分詞、助動詞を含む慣用表現",
     "knowledgeTopics": [
@@ -598,6 +613,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson11",
+    "code": "L11",
     "title": "受動態",
     "description": "受動態の基本形・否定・疑問・助動詞・進行形・完了形・文型別",
     "knowledgeTopics": [
@@ -659,6 +675,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.plus04",
+    "code": "Plus4",
     "title": "受動態",
     "description": "It is said that、群動詞、by以外の前置詞",
     "knowledgeTopics": [
@@ -688,6 +705,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson12",
+    "code": "L12",
     "title": "不定詞1",
     "description": "名詞的用法・形式主語／形式目的語・形容詞的用法",
     "knowledgeTopics": [
@@ -729,6 +747,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson13",
+    "code": "L13",
     "title": "不定詞2",
     "description": "副詞的用法、意味上の主語 for/of",
     "knowledgeTopics": [
@@ -770,6 +789,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson14",
+    "code": "L14",
     "title": "不定詞3",
     "description": "V＋O＋to V、使役・知覚動詞＋原形、疑問詞＋to V",
     "knowledgeTopics": [
@@ -803,6 +823,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.plus05",
+    "code": "Plus5",
     "title": "不定詞",
     "description": "seem to、難易形容詞構文、be to、独立不定詞、too/enough",
     "knowledgeTopics": [
@@ -848,6 +869,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson15",
+    "code": "L15",
     "title": "動名詞",
     "description": "動名詞の働き、意味上の主語、動名詞と不定詞の使い分け",
     "knowledgeTopics": [
@@ -893,6 +915,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.plus06",
+    "code": "Plus6",
     "title": "動名詞",
     "description": "完了動名詞・受動動名詞・慣用表現",
     "knowledgeTopics": [
@@ -934,6 +957,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson16",
+    "code": "L16",
     "title": "分詞1",
     "description": "名詞を修飾する分詞、SVC・SVOCの分詞",
     "knowledgeTopics": [
@@ -967,6 +991,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson17",
+    "code": "L17",
     "title": "分詞2",
     "description": "知覚・使役＋O＋分詞、分詞構文",
     "knowledgeTopics": [
@@ -1020,6 +1045,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.plus07",
+    "code": "Plus7",
     "title": "分詞",
     "description": "完了形・独立分詞構文、慣用表現、with＋O＋分詞",
     "knowledgeTopics": [
@@ -1057,6 +1083,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson18",
+    "code": "L18",
     "title": "関係詞1",
     "description": "who/which/whom/whose、省略",
     "knowledgeTopics": [
@@ -1102,6 +1129,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson19",
+    "code": "L19",
     "title": "関係詞2",
     "description": "that、前置詞＋関係代名詞、what",
     "knowledgeTopics": [
@@ -1131,6 +1159,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson20",
+    "code": "L20",
     "title": "関係詞3",
     "description": "非制限用法、関係副詞",
     "knowledgeTopics": [
@@ -1180,6 +1209,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.plus08",
+    "code": "Plus8",
     "title": "関係詞",
     "description": "複合関係代名詞・複合関係副詞",
     "knowledgeTopics": [
@@ -1209,6 +1239,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.drill02",
+    "code": "Drill2",
     "title": "比較変化",
     "description": "比較級・最上級の形（52項目）",
     "knowledgeTopics": [
@@ -1234,6 +1265,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson21",
+    "code": "L21",
     "title": "比較1",
     "description": "原級・倍数・比較級・差の表現",
     "knowledgeTopics": [
@@ -1279,6 +1311,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson22",
+    "code": "L22",
     "title": "比較2",
     "description": "最上級・in/of・最上級に相当する表現",
     "knowledgeTopics": [
@@ -1320,6 +1353,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.plus09",
+    "code": "Plus9",
     "title": "比較",
     "description": "ラテン系比較、the＋比較級, the＋比較級、no more than 類",
     "knowledgeTopics": [
@@ -1373,6 +1407,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson23",
+    "code": "L23",
     "title": "仮定法1",
     "description": "仮定法過去・過去完了・混合型",
     "knowledgeTopics": [
@@ -1410,6 +1445,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.lesson24",
+    "code": "L24",
     "title": "仮定法2",
     "description": "were to/should、I wish、as if",
     "knowledgeTopics": [
@@ -1439,6 +1475,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.plus10",
+    "code": "Plus10",
     "title": "仮定法",
     "description": "倒置、without/but for、otherwise、if節の代わり、It's time",
     "knowledgeTopics": [
@@ -1480,6 +1517,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.extra01",
+    "code": "Extra1",
     "title": "否定1",
     "description": "not/no/never、準否定、部分否定・全体否定",
     "knowledgeTopics": [
@@ -1521,6 +1559,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.extra02",
+    "code": "Extra2",
     "title": "否定2",
     "description": "否定の移動、not until、no longer、否定語を使わない否定",
     "knowledgeTopics": [
@@ -1554,6 +1593,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.extra03",
+    "code": "Extra3",
     "title": "無生物主語・名詞構文",
     "description": "無生物主語＋動詞、名詞構文",
     "knowledgeTopics": [
@@ -1571,6 +1611,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.extra04",
+    "code": "Extra4",
     "title": "話法1",
     "description": "時制の一致、平叙文の話法転換",
     "knowledgeTopics": [
@@ -1588,6 +1629,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.extra05",
+    "code": "Extra5",
     "title": "話法2",
     "description": "疑問文・命令文・感嘆文・重文の話法転換",
     "knowledgeTopics": [
@@ -1617,6 +1659,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.extra06",
+    "code": "Extra6",
     "title": "接続詞1",
     "description": "等位接続詞・相関接続詞・名詞節",
     "knowledgeTopics": [
@@ -1650,6 +1693,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.extra07",
+    "code": "Extra7",
     "title": "接続詞2",
     "description": "従位接続詞（時・理由・譲歩・条件・目的・結果）",
     "knowledgeTopics": [
@@ -1687,6 +1731,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.extra08",
+    "code": "Extra8",
     "title": "前置詞",
     "description": "時・場所・方向の前置詞",
     "knowledgeTopics": [
@@ -1724,6 +1769,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.extra09",
+    "code": "Extra9",
     "title": "疑問詞",
     "description": "疑問詞の選択、間接疑問、慣用的な疑問文",
     "knowledgeTopics": [
@@ -1753,6 +1799,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.extra10",
+    "code": "Extra10",
     "title": "代名詞1",
     "description": "格・再帰代名詞・itの用法・that/those",
     "knowledgeTopics": [
@@ -1790,6 +1837,7 @@ export const UNIT_CATALOG: ReadonlyArray<UnitCatalogEntry> = [
   },
   {
     "id": "unit.extra11",
+    "code": "Extra11",
     "title": "代名詞2",
     "description": "one/another/the other(s)、both/either/neither/all/each",
     "knowledgeTopics": [

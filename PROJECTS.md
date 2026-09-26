@@ -66,6 +66,7 @@
 - **Main Tech Stack**: Next.js 16（vinext）/ Cloudflare Workers / D1 / Google OIDC（tomidah.com 限定）/ Gemini API
 - **Env**: `GEMINI_API_KEY` / `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` / `AUTH_SECRET` / `TEACHER_ALLOWLIST`（Cloudflare のシークレット）、`APP_URL`（wrangler.jsonc の vars）
 - **Notes**: 2026-09-26 に単独リポジトリ `Masahieo-A/sodateru-ai`（ブランチ `codex/cloudflare-curriculum-migration` 先頭 `db4d549`）から移転。旧 Vercel 版（sodateru-ai.vercel.app、Next.js + Supabase）は廃止し、旧モノレポ版は `~/Archive/_削除候補_2026-09-26/` へ退避。デプロイ手順はアプリ内 README 参照。
+- **Update 2026-09-26**: 教員向け「グループ準備プリント作成」（`/teacher/worksheet`）を追加。単元・知識項目を選んで材料（TSV）をコピー → サブスクAIで作成 → 出力（JSON）を貼るとA4プリントになる。LLM API は使わない。テスト用（assessment）問題は書き出さない。要件は `docs/要件定義_グループ準備プリント.md`。
 
 ### APP019 — Question Time 印刷
 - **Description**: Googleフォームで集めた essay と、Gem（サブスク内のAI）が作った追随質問のスプレッドシートを読み込み、解答用紙・採点シート・返却シートを A4縦1枚ずつ印刷する教員用ツール。

@@ -29,7 +29,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         {/* ===== English Hub 共通ヘッダー（ポータルへ戻る導線） ===== */}
-        <header className="sticky top-0 z-50 flex h-[52px] items-center gap-3 border-b border-[#e2ddd8] bg-white px-5">
+        <header className="sticky top-0 z-50 flex print:hidden h-[52px] items-center gap-3 border-b border-[#e2ddd8] bg-white px-5">
           <a
             href="https://aomatsu-english-portal.vercel.app"
             className="flex items-center gap-2 font-bold text-[15px] text-[#1a1714] no-underline"
