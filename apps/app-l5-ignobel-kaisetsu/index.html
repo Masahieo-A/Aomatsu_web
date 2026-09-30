@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>L5 イグノーベル賞 本文解説</title>
+<style>
+:root{--fg:#1e293b;--muted:#64748b;--line:#cbd5e1;--bg:#fff;--page:#f1f5f9;--accent:#6366f1;
+--pm:#dc2626;}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{margin:0;background:var(--page);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.7;}
+.doc{max-width:1120px;margin:0 auto;padding:20px 16px 64px;background:var(--bg);min-height:100vh;}
+h1{font-size:1.45rem;margin:.2em 0 .1em;line-height:1.35;}
+.meta{color:var(--muted);font-size:.85rem;margin-bottom:10px;}
+/* 上部バー */
+.bar{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(4px);border-bottom:1px solid var(--line);
+ margin:0 -16px 12px;padding:8px 16px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+.bar a,.bar button{font:inherit;font-size:.85rem;border:1px solid var(--line);background:#fff;border-radius:999px;padding:3px 12px;color:var(--fg);text-decoration:none;cursor:pointer;}
+.bar a:hover,.bar button:hover{background:#eef2ff;}
+.bar button.on{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bar .sp{flex:1;}
+@media (max-width:600px){.bar{gap:4px;padding:6px 16px;} .bar a,.bar button{white-space:nowrap;font-size:.78rem;padding:2px 9px;} .bar .sp{display:none;}
+ .howto dl{grid-template-columns:1fr;gap:2px;} .howto dd{margin-bottom:8px;}}
+/* 凡例 */
+.howto{border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:12px 0 18px;background:#f8fafc;font-size:.9rem;}
+.howto h2{font-size:1rem;margin:0 0 6px;}
+.howto dl{display:grid;grid-template-columns:1fr;gap:2px;margin:0;}
+.howto dd{margin:0 0 10px;padding-left:1em;}
+.howto dt{font-family:Georgia,"Times New Roman",serif;font-size:1.05rem;}
+.howto dd{margin:0;}
+/* Part */
+.part{margin-top:28px;}
+.part-h{font-size:1.35rem;border-left:6px solid var(--accent);padding:2px 0 2px 10px;margin:0 0 12px;}
+.part-h span{display:block;font-size:.85rem;color:var(--muted);font-weight:600;}
+.para-h{font-size:.95rem;color:#4338ca;margin:22px 0 6px;padding-bottom:3px;border-bottom:1px dashed #c7d2fe;}
+.box{border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:14px 0;font-size:.92rem;}
+.box-h{font-weight:700;margin-bottom:4px;}
+.box ul{margin:4px 0;padding-left:1.3em;}
+.sum{background:#fefce8;border-color:#fde68a;}
+.pt{background:#eef2ff;border-color:#c7d2fe;}
+.legend ul{list-style:none;padding:0;}
+.legend li{margin:6px 0;display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;}
+.legend .ref{font-family:Georgia,"Times New Roman",serif;font-size:1rem;}
+.legend .arrow{color:var(--muted);}
+.legend .prons{font-family:Georgia,"Times New Roman",serif;font-weight:600;}
+/* 1文ずつ */
+.sent{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid #eef2f7;}
+.sno{flex:0 0 auto;min-width:2.6em;font-size:.75rem;font-weight:700;color:#fff;background:#94a3b8;border-radius:6px;height:1.7em;
+ display:flex;align-items:center;justify-content:center;margin-top:.55em;padding:0 4px;}
+.sent.head .sno{background:#f59e0b;}
+.sbody{flex:1;min-width:0;}
+.en{font-family:Georgia,"Times New Roman",serif;font-size:1.22rem;line-height:2.05;margin:0 0 4px;word-spacing:.05em;}
+.sent.head .en{font-weight:700;}
+.small{font-size:.8em;font-weight:400;color:var(--muted);}
+.ja{margin:2px 0 4px;padding:6px 10px;background:#f8fafc;border-left:4px solid #94a3b8;border-radius:4px;font-size:.95rem;}
+.pts{margin:4px 0 0;padding-left:1.2em;font-size:.88rem;color:#334155;}
+.pts li{margin:2px 0;}
+/* 注釈ユニット：英語の下に説明 */
+.u{display:inline-flex;flex-direction:column;align-items:flex-start;vertical-align:baseline;max-width:100%;margin:0 1px;}
+.u>.t{display:block;}
+.n{display:block;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;font-size:.62rem;line-height:1.3;
+ font-weight:700;margin:1px 0 4px;max-width:15em;white-space:normal;word-spacing:0;}
+.ng{color:#475569;}
+.nx{color:#475569;}
+/* 後置修飾：名詞＝緑の塗り、説明＝緑のカッコ（⊔） */
+/* 後置修飾：名詞に赤線＋「名詞」、説明を〈 〉で囲み、下に「↩説明＋種類」 */
+.pn{align-items:center;}
+.pn>.t{border-bottom:2.5px solid var(--pm);}
+.pnn{color:var(--pm);}
+.br{color:var(--pm);font-weight:400;font-size:1.15em;line-height:1;margin:0 1px;font-family:"Hiragino Mincho ProN","Yu Mincho",serif;}
+.bo{margin-left:-.45em;}
+.bc{margin-right:-.4em;}
+.pm-open>.n{width:0;white-space:nowrap;overflow:visible;max-width:none;}
+.pmn{color:var(--pm);}
+.arw{width:1.9em;height:1.35em;vertical-align:-.25em;margin-right:1px;}
+.chip{display:inline-block;color:#fff;background:var(--pm);border-radius:4px;padding:0 4px;margin-left:4px;font-weight:700;}
+.pnt{border-bottom:2px solid var(--pm);font-weight:700;}
+.brt{color:var(--pm);}
+/* 文法注釈：灰色の下線 */
+.gr>.t{border-bottom:2px dotted #94a3b8;}
+/* 指示語（同じ記号＝同じもの） */
+.ref{padding:0 .18em;-webkit-box-decoration-break:clone;box-decoration-break:clone;position:relative;font-weight:700;}
+.ref[data-k]::after{content:attr(data-k);font-family:-apple-system,sans-serif;font-size:.55em;vertical-align:super;margin-left:2px;
+ padding:0 3px;border-radius:3px;color:#fff;font-weight:700;line-height:1;}
+.s-b{color:#1d4ed8;border:2px solid #1d4ed8;border-radius:3px;} .s-b::after{background:#1d4ed8;} .c-b{color:#1d4ed8;}
+.s-r{color:#15803d;border:2px solid #15803d;border-radius:999px;padding:0 .4em;} .s-r::after{background:#15803d;} .c-r{color:#15803d;}
+.s-o{color:#c2410c;border:2px dashed #c2410c;border-radius:2px;} .s-o::after{background:#c2410c;} .c-o{color:#c2410c;}
+.s-p{color:#7e22ce;text-decoration:underline wavy #7e22ce;text-decoration-thickness:1.5px;text-underline-offset:4px;} .s-p::after{background:#7e22ce;} .c-p{color:#7e22ce;}
+.s-t{color:#0f766e;border-bottom:4px double #0f766e;} .s-t::after{background:#0f766e;} .c-t{color:#0f766e;}
+.s-k{color:#be185d;border:2px dotted #be185d;border-radius:6px;} .s-k::after{background:#be185d;} .c-k{color:#be185d;}
+.s-x{color:#334155;background:#e2e8f0;border-radius:4px;}
+.nr::before{content:"";}
+/* 表 */
+table{width:100%;border-collapse:collapse;margin-top:6px;font-size:.88rem;}
+th,td{border:1px solid var(--line);padding:5px 8px;text-align:left;vertical-align:top;}
+th{background:#f8fafc;}
+.en-s{font-family:Georgia,"Times New Roman",serif;}
+.check{overflow-x:auto;}
+/* 確認モード：注釈・和訳を隠してタップで表示 */
+body.quiz .n:not(.show){background:#e2e8f0;border-radius:3px;cursor:pointer;min-width:3.5em;}
+body.quiz .n:not(.show),body.quiz .n:not(.show) *{color:transparent!important;background-color:#e2e8f0;}
+body.quiz .ans:not(.show){background:#e2e8f0;color:transparent;border-radius:3px;cursor:pointer;}
+body.hideja .ja:not(.show){filter:blur(6px);cursor:pointer;user-select:none;}
+.foot{margin-top:40px;color:var(--muted);font-size:.8rem;text-align:center;}
+@media (min-width:900px){
+ .en{font-size:1.4rem;line-height:2.1;}
+ .ja{font-size:1.02rem;}
+ .pts{font-size:.95rem;}
+ .n{font-size:.7rem;}
+ .box{font-size:.98rem;}
+}
+@media (max-width:600px){
+ .en{font-size:1.08rem;line-height:1.95;}
+ .sent{gap:6px;}
+ .sno{min-width:2.3em;font-size:.68rem;}
+}
+@media print{
+ body{background:#fff;}
+ .bar,.howto .tip{display:none!important;}
+ .doc{max-width:none;padding:0;}
+ .sent{break-inside:avoid;}
+ .box{break-inside:avoid;}
+ body.quiz .n,body.quiz .n *{color:inherit!important;background:none!important;}
+ body.hideja .ja{filter:none;}
+ .ref,.chip,.pn>.t,.br,.sno{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+}
+</style>
+</head>
+<body>
+<div class="doc">
+<nav class="bar">
+<a href="#top">↑</a><a href="#part1">Part 1</a><a href="#part2">Part 2</a><a href="#part3">Part 3</a>
+<span class="sp"></span>
+<button id="btn-quiz" type="button">注釈をかくす</button><button id="btn-ja" type="button">和訳をぼかす</button>
+</nav>
+<header id="top">
+<div class="meta">英語コミュニケーション　テスト勉強用　本文解説</div>
+<h1>Lesson 5　Ig Nobel Prize<br><span style="font-size:.8em;">人を笑わせ，それから考えさせる科学の賞</span></h1>
+</header>
+
+<div class="howto">
+<h2>記号の見かた</h2>
+<dl>
+<dt><span class="ref s-b" data-k="A">the Ig Nobel Prizes</span> … <span class="ref s-b" data-k="A">them</span></dt>
+<dd><b>同じ色・同じ形・同じ記号（A, B…）＝ 同じもの</b>。代名詞の下に「= 〇〇」と指すものを書いています。</dd>
+<dt><span class="ref s-x">you</span></dt><dd>灰色：本文中の名詞ではないもの（読者・筆者・形式主語など）を指す語。</dd>
+<dt>even <span class="u pn"><span class="t">people</span><span class="n pnn">名詞</span></span> <span class="u pm-open"><span class="t"><span class="br bo">〈</span></span><span class="n pmn"><svg class="arw" viewBox="0 0 20 14" aria-hidden="true"><path d="M16 1 Q17 12 3.5 7.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M6.1 11.4 L3 7.5 L7.8 5.9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>説明<b class="chip">現在分詞</b></span></span>sleeping deeply<span class="br bc">〉</span> cannot help …</dt>
+<dd><b>後置修飾</b>：<b>赤線の名詞</b>を、すぐ後ろの <b>〈 〉のカタマリ</b>が後ろから説明。矢印の横が種類（現在分詞・関係詞・to不定詞）。〈 〉の中から読んで名詞に戻ると訳しやすい。</dd>
+<dt><span class="u gr"><span class="t">cannot help waking up</span><span class="n ng">～せずにはいられない</span></span></dt><dd>点線：重要な文法・表現。</dd>
+</dl>
+<p class="tip" style="margin:8px 0 0;">📝 テスト前は上の <b>「注釈をかくす」</b>「<b>和訳をぼかす</b>」を押して、自分で言えるか確認しよう（かくれた所をタップすると1つずつ表示）。</p>
+</div>
+<section class="part" id="part1">
+<h2 class="part-h">Part 1<span>イグ・ノーベル賞とは／研究①ポテトチップス</span></h2>
+<div class="box sum"><div class="box-h">このPartの内容（要点）</div><ul><li>イグ・ノーベル賞：<b>1991年</b>、科学ユーモア雑誌の編集者 <b>Marc Abrahams</b> が創設。</li><li>毎年、<b>「まず人々を笑わせ、それから考えさせる」10の業績</b>に授与。</li><li>研究①（栄養学賞・2008年）：ヘッドホンでパリパリ音を大きくすると、ポテトチップスが<b>実際よりパリパリで新鮮</b>だと評価された。</li></ul></div>
+<div class="box legend"><div class="box-h">指示語マップ：同じ色・同じ形・同じ記号 ＝ 同じもの</div><ul>
+<li><span class="ref s-b" data-k="A">the Ig Nobel Prizes</span><span class="arrow">⟵</span><span class="prons c-b">them（S2）／The prizes（S4）</span></li>
+<li><span class="ref s-r" data-k="B">several online news articles about them</span><span class="arrow">⟵</span><span class="prons c-r">the articles（S2）</span></li>
+<li><span class="ref s-o" data-k="C">Marc Abrahams</span><span class="arrow">⟵</span><span class="prons c-o">the American editor …（S3・同格）</span></li>
+<li><span class="ref s-p" data-k="D">Italian and British researchers</span><span class="arrow">⟵</span><span class="prons c-p">their／they（S7）</span></li>
+<li><span class="ref s-k" data-k="E">potato chips</span><span class="arrow">⟵</span><span class="prons c-k">they（見出し）／the chips・they（S8）</span></li>
+<li><span class="ref s-x">灰色</span><span class="arrow">…</span><span class="prons">読者（you）・筆者（I／my）・形式主語 it・後ろを指す語など</span></li>
+</ul></div>
+<h3 class="para-h">タイトル</h3>
+<div class="sent head"><div class="sno">題</div><div class="sbody">
+<p class="en">Class Newspaper</p>
+<p class="ja">（クラス新聞）</p>
+<ul class="pts"><li>この文章は Amy Green が書いた<b>クラス新聞の記事</b>。</li></ul>
+</div></div>
+<div class="sent head"><div class="sno">題</div><div class="sbody">
+<p class="en"><span class="u gr"><span class="t">Amusing</span><span class="n ng">形容詞「愉快な」</span></span> Findings from Ig Nobel Prizes<br>By Amy Green</p>
+<p class="ja">愉快なイグ・ノーベル賞の研究成果　エイミー・グリーン</p>
+<ul class="pts"><li>筆者は Amy Green。本文中の <b>I／my はすべて Amy</b>、<b>you は読者（みなさん）</b>。</li></ul>
+</div></div>
+<h3 class="para-h">段落 1</h3>
+<div class="sent"><div class="sno">S1</div><div class="sbody">
+<p class="en">Have <span class="u "><span class="t"><span class="ref s-x">you</span></span><span class="n nx">読者</span></span> ever heard of <span class="ref s-b" data-k="A">the “Ig Nobel Prizes”</span>?</p>
+<p class="ja">「イグ・ノーベル賞」のことを耳にしたことがありますか。</p>
+<ul class="pts"><li>Have you ever＋過去分詞 ～?：現在完了〈経験〉「今までに～したことがありますか」。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S2</div><div class="sbody">
+<p class="en">Last month, <span class="u "><span class="t"><span class="ref s-x">I</span></span><span class="n nx">筆者 Amy</span></span> read <span class="ref s-r" data-k="B">several online news articles</span> about <span class="u "><span class="t"><span class="ref s-b" data-k="A">them</span></span><span class="n nr c-b">= the Ig Nobel Prizes</span></span> and <span class="u gr"><span class="t">found</span><span class="n ng">find O C</span></span> <span class="u "><span class="t"><span class="ref s-r" data-k="B">the articles</span></span><span class="n nr c-r">= 前半の記事</span></span> <span class="u gr"><span class="t">very amusing</span><span class="n ng">C（補語）</span></span>.</p>
+<p class="ja">先月，私はそれについてのオンラインのニュース記事をいくつか読み，その記事がとてもおもしろいとわかりました。</p>
+<ul class="pts"><li><b>them ＝ the Ig Nobel Prizes</b>（前の文）。</li><li><b>the articles ＝ several online news articles about them</b>。一度出た名詞を the＋名詞 で受けて「その記事」。</li><li>find O C「O が C だとわかる」：found / the articles (O) / very amusing (C)。</li><li>read は Last month があるので過去形（発音は [red]）。</li></ul>
+</div></div>
+<h3 class="para-h">段落 2</h3>
+<div class="sent"><div class="sno">S3</div><div class="sbody">
+<p class="en"><span class="ref s-b" data-k="A">The Ig Nobel Prizes</span> <span class="u gr"><span class="t">were started</span><span class="n ng">受動態「始められた」</span></span> by <span class="ref s-o" data-k="C">Marc Abrahams</span>, <span class="u gr"><span class="t"><span class="ref s-o" data-k="C">the American editor</span></span><span class="n ng">同格：= Marc Abrahams</span></span> of a humorous magazine about science, in 1991.</p>
+<p class="ja">イグ・ノーベル賞は，1991年，科学に関するユーモアある雑誌のアメリカ人編集者，マーク・エイブラハムズによって始められました。</p>
+<ul class="pts"><li><b>A, B ＝ 同格</b>：コンマで並べて言い換え。Marc Abrahams ＝ the American editor …（どんな人かの説明）。</li><li>were started by ～：受動態「～によって始められた」。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S4</div><div class="sbody">
+<p class="en"><span class="u "><span class="t"><span class="ref s-b" data-k="A">The prizes</span></span><span class="n nr c-b">= The Ig Nobel Prizes</span></span> <span class="u gr"><span class="t">are awarded</span><span class="n ng">受動態「授与される」</span></span> annually for the ten greatest <span class="u pn"><span class="t">achievements</span><span class="n pnn">名詞</span></span> <span class="u pm-open"><span class="t"><span class="br bo">〈</span></span><span class="n pmn"><svg class="arw" viewBox="0 0 20 14" aria-hidden="true"><path d="M16 1 Q17 12 3.5 7.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M6.1 11.4 L3 7.5 L7.8 5.9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>説明<b class="chip">関係詞</b></span></span>that first make people laugh, and then think<span class="br bc">〉</span>.</p>
+<p class="ja">その賞は，まず人々を笑わせ，それから考えさせるような最もすばらしい10の業績に対して毎年，授与されます。</p>
+<ul class="pts"><li><b>The prizes ＝ The Ig Nobel Prizes</b>。</li><li><b>achievements ←〈that …〉</b>：関係代名詞 that（主格）のカタマリが後ろから説明「まず人々を笑わせ，それから考えさせるような業績」。that の直後に動詞 make が続く。</li><li>make people laugh, and then (make people) think：使役 make O＋動詞の原形「O に～させる」。think も make の後ろにつながる。</li><li>first ～, and then …「まず～，それから…」：イグ・ノーベル賞のキャッチフレーズ。Part 3 の最後で回収される。</li><li>annually「毎年」＝ every year。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S5</div><div class="sbody">
+<p class="en"><span class="u "><span class="t"><span class="ref s-x">The following</span></span><span class="n nx">次の3つの研究</span></span> are three examples of <span class="u gr"><span class="t">prize-winning</span><span class="n ng">前から修飾「受賞した」</span></span> research.</p>
+<p class="ja">次に挙げるのは，受賞した研究の３つの例です。</p>
+<ul class="pts"><li><b>The following ＝「次に挙げるもの」</b>：これから紹介する3つの研究を指す（<b>後ろ</b>を指す指示語）。</li><li>prize-winning「賞を勝ち取った」：ハイフンでつないだ形容詞が research を<b>前から</b>修飾。</li></ul>
+</div></div>
+<h3 class="para-h">研究 1</h3>
+<div class="sent head"><div class="sno">見出し</div><div class="sbody">
+<p class="en">1. Do <span class="ref s-k" data-k="E">potato chips</span> taste better if <span class="u "><span class="t"><span class="ref s-k" data-k="E">they</span></span><span class="n nr c-k">= potato chips</span></span> sound crunchier?<br><span class="small">(Nutrition Prize, 2008)</span></p>
+<p class="ja">1. ポテトチップスは，パリパリした音がより大きいと，よりおいしくなるか？（栄養学賞，2008年）</p>
+<ul class="pts"><li><b>they ＝ potato chips</b>。</li><li>taste＋形容詞「～な味がする」／sound＋形容詞「～に聞こえる」（どちらも SVC）。better は good の比較級、crunchier は crunchy の比較級。</li></ul>
+</div></div>
+<h3 class="para-h">段落 3</h3>
+<div class="sent"><div class="sno">S6</div><div class="sbody">
+<p class="en"><span class="ref s-p" data-k="D">Italian and British researchers</span> worked together <span class="u gr"><span class="t">to find out</span><span class="n ng">不定詞〈目的〉</span></span> <span class="u gr"><span class="t">whether</span><span class="n ng">～かどうか</span></span> <span class="u pn"><span class="t"><span class="ref s-k" data-k="E">potato chips</span></span><span class="n pnn">名詞</span></span> <span class="u pm-open"><span class="t"><span class="br bo">〈</span></span><span class="n pmn"><svg class="arw" viewBox="0 0 20 14" aria-hidden="true"><path d="M16 1 Q17 12 3.5 7.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M6.1 11.4 L3 7.5 L7.8 5.9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>説明<b class="chip">関係詞</b></span></span>that sound better<span class="br bc">〉</span> <span class="u gr"><span class="t">taste better</span><span class="n ng">V（whether節の動詞）</span></span>.</p>
+<p class="ja">イタリアとイギリスの研究者は，よりよい音のするポテトチップスはよりおいしいのかどうか探り出すために一緒に研究をしました。</p>
+<ul class="pts"><li>to find out ～：不定詞〈目的〉「～を探り出すために」。</li><li>whether S V「S が V するかどうか」：whether 節の<b>主語 ＝ potato chips that sound better</b>、<b>動詞 ＝ taste</b>。</li><li><b>potato chips ←〈that sound better〉</b>：関係代名詞 that（主格）「よりよい音のするポテトチップス」。<b>sound と taste、動詞が2つ並ぶ</b>ので区切りに注意。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S7</div><div class="sbody">
+<p class="en">In <span class="u "><span class="t"><span class="ref s-p" data-k="D">their</span></span><span class="n nr c-p">= the researchers’</span></span> experiment, <span class="u "><span class="t"><span class="ref s-p" data-k="D">they</span></span><span class="n nr c-p">= the researchers</span></span> <span class="u gr"><span class="t">asked volunteers to eat</span><span class="n ng">ask O to do</span></span> potato chips <span class="u gr"><span class="t">while wearing headphones</span><span class="n ng">while ～ing「～しながら」</span></span>.</p>
+<p class="ja">実験で，彼らはボランティアの人たちに，ヘッドホンを着用しながらポテトチップスを食べるように依頼しました。</p>
+<ul class="pts"><li><b>their／they ＝ Italian and British researchers</b>。</li><li>ask O to do「O に～するように頼む」：O ＝ volunteers。</li><li>while wearing headphones「ヘッドホンをつけながら」：つけているのは食べる人（volunteers）。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S8</div><div class="sbody">
+<p class="en">When <span class="u gr"><span class="t">the crunching sounds</span><span class="n ng">crunching が前から修飾</span></span> <span class="u gr"><span class="t">were made louder</span><span class="n ng">make O C の受動態</span></span> in the headphones, <span class="u "><span class="t"><span class="ref s-k" data-k="E">the chips</span></span><span class="n nr c-k">= the potato chips</span></span> <span class="u gr"><span class="t">were rated crisper and fresher</span><span class="n ng">rate O C の受動態</span></span> than <span class="u "><span class="t"><span class="ref s-k" data-k="E">they</span></span><span class="n nr c-k">= the chips</span></span> really were.</p>
+<p class="ja">ヘッドホンでパリパリした音をより大きくすると，ポテトチップスは実際よりもパリパリして新鮮だとみなされました。</p>
+<ul class="pts"><li><b>the chips／they ＝ the potato chips</b>（実験で食べたポテトチップス）。</li><li>make O C「O を C にする」→ 受動態 O was made C「O が C にされた」：音が「より大きく」された。</li><li>rate O C「O を C と評価する」→ 受動態 were rated crisper and fresher「よりパリパリして新鮮だと評価された」。</li><li>than they really were：「実際（のパリパリ・新鮮さ）よりも」。were の後ろの crisp and fresh が省略。</li><li>結論：<b>音が大きい → 実際よりおいしく感じる</b>。</li></ul>
+</div></div>
+<div class="box check"><div class="box-h">指示語チェック表（テスト前に隠して言えるか確認）</div><table><thead><tr><th>文</th><th>語</th><th>指すもの</th></tr></thead><tbody>
+<tr><td>S1</td><td class="en-s">you</td><td><span class="ans">読者（みなさん）</span></td></tr>
+<tr><td>S2</td><td class="en-s">I</td><td><span class="ans">筆者 Amy Green</span></td></tr>
+<tr><td>S2</td><td class="en-s">them</td><td><span class="ans">the Ig Nobel Prizes</span></td></tr>
+<tr><td>S2</td><td class="en-s">the articles</td><td><span class="ans">several online news articles about them</span></td></tr>
+<tr><td>S3</td><td class="en-s">the American editor …</td><td><span class="ans">Marc Abrahams（同格の言い換え）</span></td></tr>
+<tr><td>S4</td><td class="en-s">The prizes</td><td><span class="ans">The Ig Nobel Prizes</span></td></tr>
+<tr><td>S5</td><td class="en-s">The following</td><td><span class="ans">次に紹介する3つの受賞研究（後ろを指す）</span></td></tr>
+<tr><td>見出し</td><td class="en-s">they</td><td><span class="ans">potato chips</span></td></tr>
+<tr><td>S7</td><td class="en-s">their／they</td><td><span class="ans">Italian and British researchers</span></td></tr>
+<tr><td>S8</td><td class="en-s">the chips／they</td><td><span class="ans">the potato chips（実験のポテトチップス）</span></td></tr>
+</tbody></table></div>
+<div class="box check"><div class="box-h">後置修飾の一覧（名詞 ← 説明）</div><table><thead><tr><th>名詞</th><th>← 後ろからの説明</th><th>種類</th><th>意味</th></tr></thead><tbody>
+<tr><td class="en-s"><span class="pnt">achievements</span></td><td class="en-s"><span class="brt">←〈</span>that first make people laugh, and then think<span class="brt">〉</span></td><td>関係詞</td><td><span class="ans">まず人々を笑わせ，それから考えさせる（業績）</span></td></tr>
+<tr><td class="en-s"><span class="pnt">potato chips</span></td><td class="en-s"><span class="brt">←〈</span>that sound better<span class="brt">〉</span></td><td>関係詞</td><td><span class="ans">よりよい音のする（ポテトチップス）</span></td></tr>
+</tbody></table></div>
+<div class="box pt"><div class="box-h">テストに向けた読解ポイント</div><ul><li><b>find O C</b>「O が C だとわかる」（found the articles very amusing）</li><li><b>同格</b>：Marc Abrahams, the American editor of …（コンマで言い換え）</li><li><b>make O 原形</b>「O に～させる」（make people laugh, and then think）</li><li><b>whether S V</b>「S が V するかどうか」＋ 関係代名詞で主語が長くなる（potato chips that sound better / taste better）</li><li><b>ask O to do</b>「O に～するよう頼む」、<b>while ～ing</b>「～しながら」</li><li><b>make O C／rate O C の受動態</b>（were made louder／were rated crisper and fresher）</li></ul></div>
+</section><section class="part" id="part2">
+<h2 class="part-h">Part 2<span>研究②わさび警報装置／研究③音楽とネズミ</span></h2>
+<div class="box sum"><div class="box-h">このPartの内容（要点）</div><ul><li>研究②（化学賞・2011年）：日本の研究グループが<b>わさび警報装置</b>を発明。火災時にわさびガスを出す。</li><li>きっかけ：<b>聴覚障がいのある人</b>を緊急時に起こす方法。腐った卵など<b>何百もの匂い</b>を試した末にわさびに決定。</li><li>研究③（医学賞・2013年）：心臓移植したネズミ。<b>通常 7日 → モーツァルト 20日 → イタリアのオペラ 27日</b>。</li></ul></div>
+<div class="box legend"><div class="box-h">指示語マップ：同じ色・同じ形・同じ記号 ＝ 同じもの</div><ul>
+<li><span class="ref s-b" data-k="A">the wasabi-based alarm system</span><span class="arrow">⟵</span><span class="prons c-b">It（S2）</span></li>
+<li><span class="ref s-r" data-k="B">One Japanese research group</span><span class="arrow">⟵</span><span class="prons c-r">the researchers（S3）／They（S4）</span></li>
+<li><span class="ref s-o" data-k="C">mice</span><span class="arrow">⟵</span><span class="prons c-o">Mice（S7）／those ×2（S8）</span></li>
+<li><span class="ref s-p" data-k="D">heart transplants</span><span class="arrow">⟵</span><span class="prons c-p">the operation（S7）</span></li>
+<li><span class="ref s-x">灰色</span><span class="arrow">…</span><span class="prons">読者（you）・筆者（I／my）・形式主語 it・後ろを指す語など</span></li>
+</ul></div>
+<h3 class="para-h">研究 2</h3>
+<div class="sent head"><div class="sno">見出し</div><div class="sbody">
+<p class="en">2. How can <span class="u "><span class="t"><span class="ref s-x">we</span></span><span class="n nx">私たち（一般の人）</span></span> wake people in a deep sleep?<br><span class="small">(Chemistry Prize, 2011)</span></p>
+<p class="ja">2. どうすれば熟睡している人を目覚めさせることができるか？（化学賞，2011年）</p>
+<ul class="pts"><li>in a deep sleep「深い眠りの中にいる」＝熟睡している。</li></ul>
+</div></div>
+<h3 class="para-h">段落 1</h3>
+<div class="sent"><div class="sno">S1</div><div class="sbody">
+<p class="en"><span class="ref s-r" data-k="B">One Japanese research group</span> invented <span class="ref s-b" data-k="A">the <span class="u gr"><span class="t">wasabi-based</span><span class="n ng">前から修飾</span></span> alarm system</span>.</p>
+<p class="ja">ある日本の研究グループは，わさびを主成分とした警報装置を発明しました。</p>
+<ul class="pts"><li>wasabi-based「わさびを主成分とした」：ハイフン付きの形容詞が alarm system を<b>前から</b>修飾。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S2</div><div class="sbody">
+<p class="en"><span class="u "><span class="t"><span class="ref s-b" data-k="A">It</span></span><span class="n nr c-b">= the wasabi-based alarm system</span></span> <span class="u gr"><span class="t">gives off</span><span class="n ng">～を放つ</span></span> wasabi gas <span class="u gr"><span class="t">in case of</span><span class="n ng">～の場合に</span></span> a fire.</p>
+<p class="ja">それは，火災が起こったら，わさびガスを放ちます。</p>
+<ul class="pts"><li><b>It ＝ the wasabi-based alarm system</b>（前の文）。</li><li>give off ～「（ガス・においなど）を放つ」、in case of ～「～の場合には」。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S3</div><div class="sbody">
+<p class="en">At the very first stage of <span class="u "><span class="t"><span class="ref s-x">the research</span></span><span class="n nx">= わさび警報装置の研究</span></span>, <span class="u "><span class="t"><span class="ref s-r" data-k="B">the researchers</span></span><span class="n nr c-r">= その研究グループの人</span></span> <span class="u gr"><span class="t">had been thinking of</span><span class="n ng">過去完了進行形</span></span> <span class="u gr"><span class="t">how to wake up</span><span class="n ng">～する方法</span></span> people with hearing disabilities in an emergency.</p>
+<p class="ja">研究の一番最初の段階では，研究者は聴覚障がいのある人々を緊急時に目覚めさせる方法をずっと考えていました。</p>
+<ul class="pts"><li><b>the researchers ＝ One Japanese research group（の研究者たち）</b>、the research ＝ その研究グループのわさび警報装置の研究。</li><li>the very first stage「まさに一番最初の段階」（very は強調）。</li><li>with hearing disabilities：with ～「～を持った・～のある」→「聴覚障がいのある」。</li><li>had been thinking：<b>過去完了進行形</b>「（わさびに決める時まで）ずっと考えていた」。</li><li>how to wake up ～「～を起こす方法」。</li><li>なぜ？ → 音の警報が聞こえない人でも<b>におい</b>なら起きられるから。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S4</div><div class="sbody">
+<p class="en"><span class="u "><span class="t"><span class="ref s-r" data-k="B">They</span></span><span class="n nr c-r">= the researchers</span></span> <span class="u gr"><span class="t">had tried</span><span class="n ng">過去完了</span></span> hundreds of odors, including rotten eggs, <span class="u gr"><span class="t">before deciding on</span><span class="n ng">before＋動名詞</span></span> wasabi.</p>
+<p class="ja">彼らは，わさびに決める前に，腐った卵を含めて何百もの匂いを試しました。</p>
+<ul class="pts"><li><b>They ＝ the researchers</b>。</li><li>had tried：<b>過去完了</b>。わさびに決めた（過去）<b>より前に</b>試していた。</li><li>including ～「～を含めて」：odors（匂い）の具体例を補足。</li><li>before deciding on ～：前置詞 before＋動名詞。decide on ～「～に決める」。hundreds of ～「何百もの～」。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S5</div><div class="sbody">
+<p class="en">An ingredient in wasabi stimulates nerves in the nose, and even <span class="u pn"><span class="t">people</span><span class="n pnn">名詞</span></span> <span class="u pm-open"><span class="t"><span class="br bo">〈</span></span><span class="n pmn"><svg class="arw" viewBox="0 0 20 14" aria-hidden="true"><path d="M16 1 Q17 12 3.5 7.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M6.1 11.4 L3 7.5 L7.8 5.9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>説明<b class="chip">現在分詞</b></span></span>sleeping deeply<span class="br bc">〉</span> <span class="u gr"><span class="t">cannot help waking up</span><span class="n ng">～せずにはいられない</span></span>.</p>
+<p class="ja">わさびの中のある成分は鼻の神経を刺激し，熟睡している人でさえ目を覚まさずにはいられません。</p>
+<ul class="pts"><li>前半の主語は <b>An ingredient in wasabi</b>「わさびの中のある成分」、動詞は stimulates。</li><li><b>people ←〈sleeping deeply〉</b>：現在分詞のカタマリが後ろから people を説明「熟睡している人々」。これが後半の主語。</li><li><b>cannot help ～ing</b>「～せずにはいられない」（重要表現）。</li><li>even「～でさえ」は people sleeping deeply 全体にかかる。</li></ul>
+</div></div>
+<h3 class="para-h">研究 3</h3>
+<div class="sent head"><div class="sno">見出し</div><div class="sbody">
+<p class="en">3. What can <span class="u "><span class="t"><span class="ref s-x">we</span></span><span class="n nx">私たち（一般の人）</span></span> do <span class="u gr"><span class="t">for <span class="ref s-o" data-k="C">mice</span> to live longer</span><span class="n ng">for 人 to do</span></span>?<br><span class="small">(Medicine Prize, 2013)</span></p>
+<p class="ja">3. ネズミがより長く生きるために私たちに何ができるか？（医学賞，2013年）</p>
+<ul class="pts"><li>for mice to live longer：<b>for ～ が to live の意味上の主語</b>「ネズミがより長く生きるために」。</li><li>mice は mouse の複数形。</li></ul>
+</div></div>
+<h3 class="para-h">段落 2</h3>
+<div class="sent"><div class="sno">S6</div><div class="sbody">
+<p class="en">A group including Japanese researchers found <span class="u gr"><span class="t">that</span><span class="n ng">～ということ</span></span> a particular kind of music <span class="u gr"><span class="t">helped</span><span class="n ng">help O 原形</span></span> <span class="ref s-o" data-k="C">mice</span> with <span class="ref s-p" data-k="D">heart transplants</span> live longer.</p>
+<p class="ja">日本人研究者を含むあるグループは，ある特定の種類の音楽が，心臓移植をしたネズミがより長く生きる助けになることを発見しました。</p>
+<ul class="pts"><li>including ～「～を含む」：A group including Japanese researchers「日本人研究者を含むグループ」。</li><li>found that S V：that 節の<b>主語 ＝ a particular kind of music</b>、<b>動詞 ＝ helped</b>。</li><li><b>help O＋動詞の原形</b>「O が～するのを助ける」：helped / mice with heart transplants (O) / live longer。</li><li>with heart transplants「心臓移植を受けた」。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S7</div><div class="sbody">
+<p class="en"><span class="ref s-o" data-k="C">Mice</span> normally <span class="u gr"><span class="t">stayed alive</span><span class="n ng">stay＋形容詞</span></span> for an average of seven days after <span class="u "><span class="t"><span class="ref s-p" data-k="D">the operation</span></span><span class="n nr c-p">= heart transplants の手術</span></span>.</p>
+<p class="ja">ネズミは通常，手術後平均７日間生き続けました。</p>
+<ul class="pts"><li><b>the operation ＝ 前の文の heart transplants</b>（心臓移植の手術）。</li><li>stay alive「生きたままでいる＝生き続ける」、for an average of ～「平均～の間」。</li><li>normally「通常は」→ 次の文の However と対比。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S8</div><div class="sbody">
+<p class="en">However, <span class="u pn"><span class="t"><span class="ref s-o" data-k="C">those</span></span><span class="n pnn">名詞 = the mice</span></span> <span class="u pm-open"><span class="t"><span class="br bo">〈</span></span><span class="n pmn"><svg class="arw" viewBox="0 0 20 14" aria-hidden="true"><path d="M16 1 Q17 12 3.5 7.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M6.1 11.4 L3 7.5 L7.8 5.9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>説明<b class="chip">現在分詞</b></span></span>listening to Mozart<span class="br bc">〉</span> lived for 20 days, and <span class="u pn"><span class="t"><span class="ref s-o" data-k="C">those</span></span><span class="n pnn">名詞 = the mice</span></span> <span class="u pm-open"><span class="t"><span class="br bo">〈</span></span><span class="n pmn"><svg class="arw" viewBox="0 0 20 14" aria-hidden="true"><path d="M16 1 Q17 12 3.5 7.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M6.1 11.4 L3 7.5 L7.8 5.9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>説明<b class="chip">現在分詞</b></span></span>listening to Italian opera<span class="br bc">〉</span> survived for 27 days.</p>
+<p class="ja">しかし，モーツァルトを聞いたネズミは20日間生き，イタリアのオペラを聞いたネズミは27日間生き延びました。</p>
+<ul class="pts"><li><b>those ＝ the mice</b>：同じ名詞の繰り返しを避ける those（複数）。</li><li><b>those ←〈listening to ～〉</b>：現在分詞のカタマリが後ろから those を説明「モーツァルト／イタリアのオペラを聞いたネズミ」。</li><li>数字の対比：<b>通常 7日 ⇔ モーツァルト 20日 ⇔ イタリアのオペラ 27日</b>。</li><li>survive「生き延びる」。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S9</div><div class="sbody">
+<p class="en">Do <span class="u "><span class="t"><span class="ref s-x">you</span></span><span class="n nx">読者</span></span> think music will also <span class="u gr"><span class="t">help you live longer</span><span class="n ng">help O 原形</span></span>?</p>
+<p class="ja">音楽は，みなさんがより長く生きるのにも役立つと思いますか。</p>
+<ul class="pts"><li>Do you think (that) S V?「S が V すると思いますか」。</li><li>help you live longer：help O＋原形。also「～も」＝ネズミだけでなく「あなたも」。</li></ul>
+</div></div>
+<div class="box check"><div class="box-h">指示語チェック表（テスト前に隠して言えるか確認）</div><table><thead><tr><th>文</th><th>語</th><th>指すもの</th></tr></thead><tbody>
+<tr><td>見出し2・3</td><td class="en-s">we</td><td><span class="ans">私たち（一般の人）</span></td></tr>
+<tr><td>S2</td><td class="en-s">It</td><td><span class="ans">the wasabi-based alarm system</span></td></tr>
+<tr><td>S3</td><td class="en-s">the research</td><td><span class="ans">日本の研究グループのわさび警報装置の研究</span></td></tr>
+<tr><td>S3</td><td class="en-s">the researchers</td><td><span class="ans">One Japanese research group（の研究者）</span></td></tr>
+<tr><td>S4</td><td class="en-s">They</td><td><span class="ans">the researchers</span></td></tr>
+<tr><td>S7</td><td class="en-s">the operation</td><td><span class="ans">heart transplants（心臓移植の手術）</span></td></tr>
+<tr><td>S8</td><td class="en-s">those（2回）</td><td><span class="ans">the mice</span></td></tr>
+<tr><td>S9</td><td class="en-s">you</td><td><span class="ans">読者（みなさん）</span></td></tr>
+</tbody></table></div>
+<div class="box check"><div class="box-h">後置修飾の一覧（名詞 ← 説明）</div><table><thead><tr><th>名詞</th><th>← 後ろからの説明</th><th>種類</th><th>意味</th></tr></thead><tbody>
+<tr><td class="en-s"><span class="pnt">people</span></td><td class="en-s"><span class="brt">←〈</span>sleeping deeply<span class="brt">〉</span></td><td>現在分詞</td><td><span class="ans">熟睡している（人々）</span></td></tr>
+<tr><td class="en-s"><span class="pnt">those</span></td><td class="en-s"><span class="brt">←〈</span>listening to Mozart<span class="brt">〉</span></td><td>現在分詞</td><td><span class="ans">モーツァルトを聞いた（ネズミ）</span></td></tr>
+<tr><td class="en-s"><span class="pnt">those</span></td><td class="en-s"><span class="brt">←〈</span>listening to Italian opera<span class="brt">〉</span></td><td>現在分詞</td><td><span class="ans">イタリアのオペラを聞いた（ネズミ）</span></td></tr>
+</tbody></table></div>
+<div class="box pt"><div class="box-h">テストに向けた読解ポイント</div><ul><li><b>現在分詞の後置修飾</b>：people sleeping deeply／those listening to ～（テスト頻出）</li><li><b>過去完了（進行形）</b>：had been thinking／had tried（わさびに決めた時点より前）</li><li><b>cannot help ～ing</b>「～せずにはいられない」、<b>in case of</b>「～の場合」、<b>give off</b>「放つ」</li><li><b>help O 原形</b>「O が～するのを助ける」（helped mice … live longer／help you live longer）</li><li><b>for 人 to do</b>：for mice to live longer（mice が live の主語）</li><li><b>those ＝ the mice</b>（名詞の繰り返しを避ける those）</li></ul></div>
+</section><section class="part" id="part3">
+<h2 class="part-h">Part 3<span>受賞の基準・授賞式／筆者の呼びかけ</span></h2>
+<div class="box sum"><div class="box-h">このPartの内容（要点）</div><ul><li>候補は<b>毎年 9,000件</b> → 受賞はとても難しい。</li><li>唯一の基準：<b>まず人々が笑うか</b>、そして<b>1週間後も友人に話したくなるか</b>。</li><li>受賞者：<b>賞金なし</b>・代わりに<b>手作りの賞品</b>・<b>交通費は自分持ち</b>。授賞式は<b>ハーバード大学</b>、賞を渡すのは<b>本物のノーベル賞受賞者</b>。</li><li>締め：ウェブサイトを見て、大笑いして、それから<b>考えて</b>みよう。</li></ul></div>
+<div class="box legend"><div class="box-h">指示語マップ：同じ色・同じ形・同じ記号 ＝ 同じもの</div><ul>
+<li><span class="ref s-b" data-k="B">the Ig Nobel Prizes</span><span class="arrow">⟵</span><span class="prons c-b">the prizes（S8）</span></li>
+<li><span class="ref s-r" data-k="C">a prize-winning achievement</span><span class="arrow">⟵</span><span class="prons c-r">it（S4）</span></li>
+<li><span class="ref s-o" data-k="D">people</span><span class="arrow">⟵</span><span class="prons c-o">their（S4）</span></li>
+<li><span class="ref s-p" data-k="E">the winners</span><span class="arrow">⟵</span><span class="prons c-p">they（S6）／they・their（S7）</span></li>
+<li><span class="ref s-t" data-k="F">the Ig Nobel ceremony at Harvard University</span><span class="arrow">⟵</span><span class="prons c-t">the ceremony（S8）</span></li>
+<li><span class="ref s-k" data-k="G">the Ig Nobel Prizes website</span><span class="arrow">⟵</span><span class="prons c-k">it（S11）</span></li>
+<li><span class="ref s-x">灰色</span><span class="arrow">…</span><span class="prons">読者（you）・筆者（I／my）・形式主語 it・後ろを指す語など</span></li>
+</ul></div>
+<h3 class="para-h">段落 1</h3>
+<div class="sent"><div class="sno">S1</div><div class="sbody">
+<p class="en">Well, what do <span class="u "><span class="t"><span class="ref s-x">you</span></span><span class="n nx">読者</span></span> think about <span class="u "><span class="t"><span class="ref s-x">those research findings</span></span><span class="n nx">= Part 1・2 の3つの研究</span></span>?</p>
+<p class="ja">さて，これらの研究の成果についてどう思いますか。</p>
+<ul class="pts"><li><b>those research findings ＝ Part 1・2 で紹介した3つの研究成果</b>（ポテトチップス・わさび警報・音楽とネズミ）。</li><li>What do you think about ～?「～についてどう思いますか」（How ではなく What）。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S2</div><div class="sbody">
+<p class="en">Have you <span class="u gr"><span class="t">become interested in</span><span class="n ng">～に興味を持つようになる</span></span> <span class="ref s-b" data-k="B">the Ig Nobel Prizes</span>?</p>
+<p class="ja">イグ・ノーベル賞に興味がわきましたか。</p>
+<ul class="pts"><li>Have you become ～?：現在完了〈完了・結果〉「～するようになりましたか」。be interested in ～「～に興味がある」。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S3</div><div class="sbody">
+<p class="en"><span class="u gr"><span class="t">According to</span><span class="n ng">～によると</span></span> Marc Abrahams, there are 9,000 new nominations for <span class="ref s-b" data-k="B">the Ig Nobel Prizes</span> every year, so <span class="u "><span class="t"><span class="ref s-x">it</span></span><span class="n nx">形式主語 → to win …</span></span> is very difficult <span class="u gr"><span class="t">to win a prize</span><span class="n ng">真主語</span></span>.</p>
+<p class="ja">マーク・エイブラハムズによると，イグ・ノーベル賞の新しい候補にあがる研究は毎年 9,000 あるため，賞を獲得するのは非常に困難だそうです。</p>
+<ul class="pts"><li><b>it は形式主語</b>：中身は to win a prize「賞を取ること（は難しい）」。前の名詞を指す it では<b>ない</b>！</li><li>nominations「候補（ノミネート）」。</li><li>According to ～「～によると」。, so …「だから…」：9,000件もある → 受賞は難しい。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S4</div><div class="sbody">
+<p class="en">The only criterion for <span class="ref s-r" data-k="C">a prize-winning achievement</span> <span class="u gr"><span class="t">is based on</span><span class="n ng">～に基づいている</span></span> <span class="u gr"><span class="t">whether or not</span><span class="n ng">～かどうか</span></span> <span class="ref s-o" data-k="D">people</span> laugh at first, and then a week later still want to tell <span class="u "><span class="t"><span class="ref s-o" data-k="D">their</span></span><span class="n nr c-o">= people’s</span></span> friends about <span class="u "><span class="t"><span class="ref s-r" data-k="C">it</span></span><span class="n nr c-r">= a prize-winning achievement</span></span>.</p>
+<p class="ja">受賞する業績の唯一の基準は，まず人々が笑うかどうか，それから 1 週間たった後でもまだそれについて友人に伝えたいと思うかどうかに基づいています。</p>
+<ul class="pts"><li><b>it ＝ a prize-winning achievement</b>（受賞する業績）、<b>their ＝ people’s</b>。</li><li>criterion「基準」は単数（複数形は criteria）。prize-winning「賞を取る」。</li><li>be based on ～「～に基づいている」。<b>whether or not S V</b>「S が V するかどうか」が前置詞 on の目的語。</li><li>people laugh …, and then … still want：主語 people が laugh と want の<b>両方</b>の主語。</li><li>at first ～, and then …：Part 1 の first make people laugh, and then think と対応。</li></ul>
+</div></div>
+<h3 class="para-h">段落 2</h3>
+<div class="sent"><div class="sno">S5</div><div class="sbody">
+<p class="en"><span class="u gr"><span class="t">To my surprise</span><span class="n ng">驚いたことに</span></span>, <span class="ref s-p" data-k="E">the winners</span> <span class="u gr"><span class="t">are not given any prize money</span><span class="n ng">give O O の受動態</span></span>.</p>
+<p class="ja">驚いたことに，受賞者に賞金は全く与えられません。</p>
+<ul class="pts"><li>To my surprise「驚いたことに」：my ＝ 筆者 Amy。</li><li>be given ～「～を与えられる」（give 人 物 の受動態）。not … any ～「全く～ない」。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S6</div><div class="sbody">
+<p class="en"><span class="u gr"><span class="t">Instead</span><span class="n ng">賞金の代わりに</span></span>, <span class="u "><span class="t"><span class="ref s-p" data-k="E">they</span></span><span class="n nr c-p">= the winners</span></span> are given a handmade award.</p>
+<p class="ja">代わりに，手作りの賞品を渡されます。</p>
+<ul class="pts"><li><b>they ＝ the winners</b>。</li><li>Instead「その代わりに」：前の文の prize money（賞金）の代わりに。handmade「手作りの」。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S7</div><div class="sbody">
+<p class="en"><span class="u gr"><span class="t">In addition</span><span class="n ng">さらに</span></span>, <span class="u "><span class="t"><span class="ref s-p" data-k="E">they</span></span><span class="n nr c-p">= the winners</span></span> <span class="u gr"><span class="t">have to</span><span class="n ng">～しなければならない</span></span> pay <span class="u "><span class="t"><span class="ref s-p" data-k="E">their</span></span><span class="n nr c-p">= the winners’</span></span> own transportation <span class="u pn"><span class="t">costs</span><span class="n pnn">名詞</span></span> <span class="u pm-open"><span class="t"><span class="br bo">〈</span></span><span class="n pmn"><svg class="arw" viewBox="0 0 20 14" aria-hidden="true"><path d="M16 1 Q17 12 3.5 7.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M6.1 11.4 L3 7.5 L7.8 5.9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>説明<b class="chip">to不定詞</b></span></span>to attend <span class="ref s-t" data-k="F">the Ig Nobel ceremony at Harvard University</span><span class="br bc">〉</span>.</p>
+<p class="ja">さらに，ハーバード大学でのイグ・ノーベル賞授賞式に出席するための交通費は自分で支払わなければなりません。</p>
+<ul class="pts"><li><b>they／their ＝ the winners</b>。their own ～「自分自身の～」。</li><li><b>costs ←〈to attend …〉</b>：to不定詞のカタマリが後ろから costs を説明「～に出席するための交通費」（訳例の読み方）。</li><li>In addition「さらに」：賞金なし＋交通費も自分持ち、と情報を追加。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S8</div><div class="sbody">
+<p class="en">At <span class="u "><span class="t"><span class="ref s-t" data-k="F">the ceremony</span></span><span class="n nr c-t">= the Ig Nobel ceremony</span></span>, <span class="u "><span class="t"><span class="ref s-b" data-k="B">the prizes</span></span><span class="n nr c-b">= the Ig Nobel Prizes</span></span> <span class="u gr"><span class="t">are handed out by</span><span class="n ng">受動態「～によって手渡される」</span></span> genuine Nobel Prize winners.</p>
+<p class="ja">授賞式では，本物のノーベル賞受賞者によって賞が手渡されます。</p>
+<ul class="pts"><li><b>the ceremony ＝ the Ig Nobel ceremony at Harvard University</b>、<b>the prizes ＝ the Ig Nobel Prizes</b>。</li><li>hand out ～「～を手渡す」の受動態。genuine「本物の」：パロディの賞を<b>本物の</b>ノーベル賞受賞者が渡すのがおもしろい点。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S9</div><div class="sbody">
+<p class="en">Wow!</p>
+<p class="ja">すごい！</p>
+</div></div>
+<h3 class="para-h">段落 3</h3>
+<div class="sent"><div class="sno">S10</div><div class="sbody">
+<p class="en"><span class="u "><span class="t"><span class="ref s-x">You</span></span><span class="n nx">読者</span></span> can learn <span class="u gr"><span class="t">a lot more</span><span class="n ng">a lot＋比較級</span></span> about amusing achievements from <span class="ref s-k" data-k="G">the Ig Nobel Prizes website</span>.</p>
+<p class="ja">イグ・ノーベル賞のウェブサイトでは，愉快な業績についてもっとたくさん知ることができます。</p>
+<ul class="pts"><li>a lot more「もっとずっとたくさん」：a lot／much は比較級を強める。</li><li>amusing「愉快な」：Part 1 のタイトル・S2 と同じ語。</li></ul>
+</div></div>
+<div class="sent"><div class="sno">S11</div><div class="sbody">
+<p class="en"><span class="u gr"><span class="t">Why don’t you</span><span class="n ng">～してはどうですか</span></span> check <span class="u "><span class="t"><span class="ref s-k" data-k="G">it</span></span><span class="n nr c-k">= the website</span></span> out, get a big laugh, and then THINK?!</p>
+<p class="ja">そのサイトを調べて，大笑いして，それから「考えて」はいかがでしょう?!</p>
+<ul class="pts"><li><b>it ＝ the Ig Nobel Prizes website</b>。</li><li>Why don’t you ～?「～してはどうですか」（提案）。</li><li>check it out：代名詞 it は check と out の<b>間</b>に入る（check out it は×）。</li><li>check／get／THINK の3つの動詞が and で並列。</li><li>get a big laugh, and then THINK：Part 1 の「まず笑わせ，それから考えさせる」を読者への呼びかけにしている（<b>タイトル回収</b>）。</li></ul>
+</div></div>
+<div class="box check"><div class="box-h">指示語チェック表（テスト前に隠して言えるか確認）</div><table><thead><tr><th>文</th><th>語</th><th>指すもの</th></tr></thead><tbody>
+<tr><td>S1</td><td class="en-s">you</td><td><span class="ans">読者（みなさん）</span></td></tr>
+<tr><td>S1</td><td class="en-s">those research findings</td><td><span class="ans">Part 1・2 で紹介した3つの研究成果</span></td></tr>
+<tr><td>S3</td><td class="en-s">it</td><td><span class="ans">形式主語（中身は to win a prize）</span></td></tr>
+<tr><td>S4</td><td class="en-s">their</td><td><span class="ans">people’s</span></td></tr>
+<tr><td>S4</td><td class="en-s">it</td><td><span class="ans">a prize-winning achievement（受賞する業績）</span></td></tr>
+<tr><td>S5</td><td class="en-s">my</td><td><span class="ans">筆者 Amy Green</span></td></tr>
+<tr><td>S6</td><td class="en-s">they</td><td><span class="ans">the winners</span></td></tr>
+<tr><td>S6</td><td class="en-s">Instead</td><td><span class="ans">賞金（prize money）の代わりに</span></td></tr>
+<tr><td>S7</td><td class="en-s">they／their</td><td><span class="ans">the winners</span></td></tr>
+<tr><td>S8</td><td class="en-s">the ceremony</td><td><span class="ans">the Ig Nobel ceremony at Harvard University</span></td></tr>
+<tr><td>S8</td><td class="en-s">the prizes</td><td><span class="ans">the Ig Nobel Prizes</span></td></tr>
+<tr><td>S10</td><td class="en-s">You</td><td><span class="ans">読者（みなさん）</span></td></tr>
+<tr><td>S11</td><td class="en-s">it</td><td><span class="ans">the Ig Nobel Prizes website</span></td></tr>
+</tbody></table></div>
+<div class="box check"><div class="box-h">後置修飾の一覧（名詞 ← 説明）</div><table><thead><tr><th>名詞</th><th>← 後ろからの説明</th><th>種類</th><th>意味</th></tr></thead><tbody>
+<tr><td class="en-s"><span class="pnt">costs</span></td><td class="en-s"><span class="brt">←〈</span>to attend the Ig Nobel ceremony at Harvard University<span class="brt">〉</span></td><td>to不定詞</td><td><span class="ans">ハーバード大学での授賞式に出席するための（交通費）</span></td></tr>
+</tbody></table></div>
+<div class="box pt"><div class="box-h">テストに向けた読解ポイント</div><ul><li><b>形式主語 it</b>：it is very difficult to win a prize（it は前の名詞を指さない）</li><li><b>whether or not S V</b>「S が V するかどうか」、<b>be based on</b>「～に基づく」</li><li><b>To my surprise</b>「驚いたことに」、<b>Instead</b>「代わりに」、<b>In addition</b>「さらに」</li><li><b>be given ～</b>（give 人 物 の受動態）、<b>not … any</b>「全く～ない」</li><li><b>Why don’t you ～?</b>「～してはどうですか」、<b>check it out</b>（代名詞は間に）</li><li><b>a lot＋比較級</b>「ずっと～」</li></ul></div>
+</section>
+<div class="foot">L5 本文解説（授業で扱った内容の復習用）</div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

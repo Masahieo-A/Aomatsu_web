@@ -18,6 +18,7 @@
 | APP005 | 発音チェック（ELSA風） | `apps/app-elsa-like` | ✅ 本番稼働 | 静的HTML / Web Speech API |
 | APP006 | 育てるAI | `apps/app-sodateru-ai` | ✅ 本番稼働（Cloudflare Workers） | Next.js（vinext）/ Cloudflare Workers + D1 / Gemini API |
 | APP019 | Question Time 印刷 | `apps/app-qt-print` | ✅ 本番稼働（ポータル同一デプロイ） | 静的HTML / SheetJS（通信なし） |
+| APP020 | L5 Ig Nobel Prize 本文解説 | `apps/app-l5-ignobel-kaisetsu` | ✅ 本番稼働（ポータル同一デプロイ・リンク非掲載） | 静的HTML / JS |
 | — | ポータル本体 | `/`（リポジトリルート） | ✅ 本番稼働 | 静的HTML / CSS / JS |
 
 > **APP002 / APP003 は APP004「Cloze + 整序メーカー」に統合され廃止。** モノレポからフォルダを削除し、ポータルからもカードを除外済み。App ID は使い回さず欠番として保持する。旧GitHubリポジトリ `Masahieo-A/seijo-maker` / `Masahieo-A/cloze-maker` と旧Vercelプロジェクト `seijo-maker` / `cloze-maker` はオーナーが削除（またはアーカイブ）する。
@@ -73,6 +74,12 @@
 - **URL**: ポータル同一デプロイ `/apps/app-qt-print/index.html`（教員用ページにカード掲載）
 - **Main Tech Stack**: 静的HTML / CSS / JS / SheetJS（ブラウザ内処理のみ。通信・DB・AI APIなし）
 - **Notes**: Gem のシステムプロンプトの正本は `apps/app-qt-print/docs/system-prompt.md`。旧Webアプリ版 `~/Projects/question-time`（Vercel: question-time-sable）は API 課金のため運用停止（2026-09-23）。
+
+### APP020 — L5 Ig Nobel Prize 本文解説
+- **Description**: 英語コミュニケーション Lesson 5 の本文解説（テスト勉強用）。指示語・後置修飾を色と記号で図示、1文ごとの和訳、注釈・和訳の隠し表示。
+- **URL**: ポータル同一デプロイ `/apps/app-l5-ignobel-kaisetsu/index.html`（**ポータル・教員用ページにはカード非掲載**。URLを直接配布。`noindex`）
+- **Main Tech Stack**: 静的HTML / CSS / JS（通信なし）
+- **Notes**: 正本の生成スクリプトは `~/School/教材/L5_解説/_build/build_L5解説.py`（`--publish` でこのフォルダへ出力）。2026-09-30 追加。
 
 ### ポータル本体
 - **Description**: 各アプリへのカードリンクを持つトップページ。カテゴリフィルタ付き。
