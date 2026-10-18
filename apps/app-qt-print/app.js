@@ -177,7 +177,10 @@
     let qMap = null;
     for (const file of files) {
       try {
-        const wb = XLSX.read(await file.arrayBuffer(), { type: "array" });
+        // CSV は UTF-8 の文字列として読む（BOMのないGoogleスプレッドシートのCSVが文字化けして列を判定できないため）
+        const wb = /\.(csv|tsv|txt)$/i.test(file.name)
+          ? XLSX.read((await file.text()).replace(/^\uFEFF/, ""), { type: "string" })
+          : XLSX.read(await file.arrayBuffer(), { type: "array" });
         for (const name of wb.SheetNames) {
           const rows = sheetRows(wb.Sheets[name]);
           const q = parseQuestionRows(rows);
@@ -234,6 +237,12 @@
     if (/^【要確認】/.test(q["主張"] || "")) return { level: "flag", issues: [q["主張"]] };
     const issues = [];
     let ng = false;
+    // AIが意味を汲み取りきれなかった箇所（理由・意図の【要確認】メモ）は、印刷前に教員が確認する
+    (q["理由"] || "").split(/[；;]/).filter((x) => x.includes("【要確認】")).forEach((x) => issues.push(x.trim()));
+    [1, 2, 3].forEach((i) => {
+      const v = q[`Q${i}_意図`] || "";
+      if (v.includes("【要確認】")) issues.push(`Q${i}: ${v.slice(v.indexOf("【要確認】")).trim()}`);
+    });
     for (let i = 1; i <= 3; i++) {
       const g = (f) => q[`Q${i}_${f}`] || "";
       const missing = REQUIRED_FIELDS.filter((f) => !g(f));
@@ -243,7 +252,6 @@
       if (qw < 5 || qw > 30) { ng = true; issues.push(`Q${i}: 引用が${qw}語`); }
       const w = wordCount(g("質問"));
       if (w < 20 || w > 45) issues.push(`Q${i}: 質問が${w}語`);
-      if (!containsQuote(g("質問"), g("引用"))) issues.push(`Q${i}: 質問に引用がない`);
       if (words(g("A例")).join(" ") === words(g("B例")).join(" ")) { ng = true; issues.push(`Q${i}: A例とB例が同じ`); }
       if (sharesNgram(g("引用"), g("B例"))) issues.push(`Q${i}: B例が引用の語句を使っている`);
       if (/use\s+["“']?(although|if|even if|unlike)/i.test(g("質問"))) issues.push(`Q${i}: 質問が文法を指示している`);
