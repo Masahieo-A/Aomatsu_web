@@ -275,31 +275,88 @@
   const editedCount = () => [...state.essays.values()].filter((s) => Object.keys(editsFor(s) || {}).length).length;
 
   // ---------------- 点検（V-1〜V-6 相当） ----------------
+  /**
+   * 点検（プログラムによる機械判定。AIの出力にエラー情報は含まれない）。
+   * problems は欄ごとの問題: {level: "ng"|"warn"|"memo", key: 列名, q: 問番号, msg}
+   *   ng = このままでは印刷対象外／warn = 印刷はできるが確認したい／memo = AI自身が書いた【要確認】メモ
+   */
   function check(student, q) {
-    if (!q) return { level: "missing", issues: ["質問なし"] };
-    if (/^【要確認】/.test(q["主張"] || "")) return { level: "flag", issues: [q["主張"]] };
-    const issues = [];
-    let ng = false;
+    if (!q) return { level: "missing", issues: ["質問なし"], problems: [] };
+    if (/^【要確認】/.test(q["主張"] || "")) return { level: "flag", issues: [q["主張"]], problems: [{ level: "memo", key: "主張", q: 0, msg: q["主張"] }] };
+    const problems = [];
+    const add = (level, key, qn, msg) => problems.push({ level, key, q: qn, msg });
     // AIが意味を汲み取りきれなかった箇所（理由・意図の【要確認】メモ）は、印刷前に教員が確認する
-    (q["理由"] || "").split(/[；;]/).filter((x) => x.includes("【要確認】")).forEach((x) => issues.push(x.trim()));
+    (q["理由"] || "").split(/[；;]/).filter((x) => x.includes("【要確認】")).forEach((x) => add("memo", "理由", 0, x.trim()));
     [1, 2, 3].forEach((i) => {
       const v = q[`Q${i}_意図`] || "";
-      if (v.includes("【要確認】")) issues.push(`Q${i}: ${v.slice(v.indexOf("【要確認】")).trim()}`);
+      if (v.includes("【要確認】")) add("memo", `Q${i}_意図`, i, v.slice(v.indexOf("【要確認】")).trim());
     });
     for (let i = 1; i <= 3; i++) {
-      const g = (f) => q[`Q${i}_${f}`] || "";
+      const k = (f) => `Q${i}_${f}`;
+      const g = (f) => q[k(f)] || "";
       const missing = REQUIRED_FIELDS.filter((f) => !g(f));
-      if (missing.length) { ng = true; issues.push(`Q${i}: ${missing.join("・")}が空`); continue; }
-      if (!containsQuote(student.essay, g("引用"))) { ng = true; issues.push(`Q${i}: 引用がessayにない`); }
-      const qw = wordCount(g("引用"));
-      if (qw < 5 || qw > 30) { ng = true; issues.push(`Q${i}: 引用が${qw}語`); }
+      missing.forEach((f) => add("ng", k(f), i, `${f}が空`));
+      if (missing.length) continue;
+      const quote = g("引用");
+      if (HEADER.includes(nfkc(quote))) add("ng", k("引用"), i, "引用欄に見出しの文字が入っている（AIの出力ミス）");
+      else if (!containsQuote(student.essay, quote)) add("ng", k("引用"), i, "引用がessayの本文にない（一字一句同じでないと下線を引けない）");
+      const qw = wordCount(quote);
+      if (qw < 5 || qw > 30) add("ng", k("引用"), i, `引用が${qw}語（5〜30語にする）`);
       const w = wordCount(g("質問"));
-      if (w < 20 || w > 45) issues.push(`Q${i}: 質問が${w}語`);
-      if (words(g("A例")).join(" ") === words(g("B例")).join(" ")) { ng = true; issues.push(`Q${i}: A例とB例が同じ`); }
-      if (sharesNgram(g("引用"), g("B例"))) issues.push(`Q${i}: B例が引用の語句を使っている`);
-      if (/use\s+["“']?(although|if|even if|unlike)/i.test(g("質問"))) issues.push(`Q${i}: 質問が文法を指示している`);
+      if (w < 20 || w > 45) add("warn", k("質問"), i, `質問が${w}語（20〜45語が目安）`);
+      if (words(g("A例")).join(" ") === words(g("B例")).join(" ")) add("ng", k("B例"), i, "A例とB例が同じ");
+      if (sharesNgram(quote, g("B例"))) add("warn", k("B例"), i, "B例が引用の語句を使っている（B例はessayとつながらない一般論にする）");
+      if (/use\s+["“']?(although|if|even if|unlike)/i.test(g("質問"))) add("warn", k("質問"), i, "質問が使う文法を指示している");
     }
-    return { level: ng ? "ng" : issues.length ? "warn" : "ok", issues };
+    const issues = problems.map((p) => (p.q && !p.msg.startsWith(`Q${p.q}`) ? `Q${p.q}: ${p.msg}` : p.msg));
+    const level = problems.some((p) => p.level === "ng") ? "ng" : problems.length ? "warn" : "ok";
+    return { level, issues, problems };
+  }
+
+  // ---------------- 修正案（AIなし・プログラムで作れるものだけ） ----------------
+  const STOP = new Set("the a an and or but is are was were be been to of in on for with that this it its you your essay says say said think do does did why what how would will can could give one reason choose more if as at by from they them their we our us i my me so not about have has had there these those which who than then also very just still many much some any when because".split(" "));
+  const contentWords = (t) => words(t).filter((w) => w.length >= 3 && !STOP.has(w));
+  /** essay を文に分け（長い文は読点などで区切り）、引用に使える 5〜30語の候補を作る。候補の文字列は本文そのまま */
+  function quoteCandidates(essay) {
+    const out = [];
+    const re = /[^.!?]+[.!?]*/g;
+    let m;
+    while ((m = re.exec(essay))) {
+      const sent = m[0].trim();
+      if (!sent) continue;
+      const n = wordCount(sent);
+      if (n >= 5 && n <= 30) out.push(sent);
+      if (n > 30 || n >= 12) sent.split(/,\s+|;\s+|\s+(?=because\s|but\s|so\s)/i).map((x) => x.trim()).filter((x) => { const c = wordCount(x); return c >= 5 && c <= 30 && x !== sent; }).forEach((x) => out.push(x));
+    }
+    return [...new Set(out)];
+  }
+  function suggestQuote(student, q, qn) {
+    const target = contentWords(`${q[`Q${qn}_質問`] || ""} ${q[`Q${qn}_質問`] || ""} ${q[`Q${qn}_引用`] || ""} ${q[`Q${qn}_論点`] || ""}`);
+    if (!target.length) return null;
+    const used = [1, 2, 3].filter((i) => i !== qn).map((i) => q[`Q${i}_引用`] || "").filter((x) => containsQuote(student.essay, x));
+    let best = null;
+    quoteCandidates(student.essay).forEach((c) => {
+      if (used.some((u) => joined(u).includes(joined(c)) || joined(c).includes(joined(u)))) return;
+      const cw = new Set(contentWords(c));
+      const hit = [...new Set(target.filter((w) => cw.has(w)))];
+      const score = target.filter((w) => cw.has(w)).length - wordCount(c) * 0.02;
+      if (hit.length >= 2 && (!best || score > best.score)) best = { score, value: c, hit };
+    });
+    return best ? { value: best.value, note: `質問文と同じ語（${best.hit.slice(0, 5).join(", ")}）が最も多い本文の文です` } : null;
+  }
+  /** 問題ごとの修正案。作れないものは null（その場合はGemへの作り直し依頼を使う） */
+  function suggestFix(student, q, p) {
+    if (p.key.endsWith("_引用") && p.level === "ng") return suggestQuote(student, q, p.q);
+    if (p.key.endsWith("_質問") && p.msg.includes("文法を指示")) {
+      const v = (q[p.key] || "").replace(/\s*Use\s+["“']?(although|if|even if|unlike)[^.?!]*[.?!]?/gi, "").trim();
+      return v && v !== q[p.key] ? { value: v, note: "文法を指示している文を取り除いた案です" } : null;
+    }
+    return null;
+  }
+  /** 修正案が作れない問題用：Question Time（Gem・プラグイン）に、この生徒だけ作り直してもらう依頼文 */
+  function regenerateRequest(student, problems) {
+    const list = problems.filter((p) => p.level !== "memo").map((p) => (p.q ? `Q${p.q}の${p.key.split("_")[1]}: ` : "") + p.msg.replace(/^Q\d: /, ""));
+    return `次の1人分を作成してください。前回の出力には次の問題がありました。直して、見出し行つきのTSV（27列）で作り直してください。\n- ${list.join("\n- ")}\n${student.id}\t${student.essay.replace(/\s+/g, " ")}`;
   }
 
   function sortedStudents() {
@@ -315,7 +372,7 @@
     renderBatches();
     renderCheck();
     if (state.view === "edit" && $("editor")) renderEditor();
-    else renderSheets();
+    renderSheets();
   }
 
   function renderCheck() {
@@ -328,8 +385,10 @@
     const label = { ok: ["ok", "OK"], warn: ["warn", "注意"], ng: ["ng", "✗ 要修正"], missing: ["", "質問なし"], flag: ["warn", "要確認（異常essay）"] };
     $("check-table").innerHTML =
       `<thead><tr><th>ID</th><th>氏名</th><th>語数</th><th>判定</th><th>内容</th></tr></thead><tbody>` +
-      shown.map(({ s, r }) => `<tr><td>${esc(s.id)}${s.dup ? ' <span class="badge warn">重複</span>' : ""}</td><td>${esc(s.name)}</td><td>${wordCount(s.essay)}</td>
-        <td><span class="badge ${label[r.level][0]}">${label[r.level][1]}</span></td><td class="small">${esc(r.issues.join(" ／ "))}</td></tr>`).join("") +
+      shown.map(({ s, r }) => `<tr class="${r.level === "ng" ? "row-ng" : ""}"><td>${esc(s.id)}${s.dup ? ' <span class="badge warn">重複</span>' : ""}</td><td>${esc(s.name)}</td><td>${wordCount(s.essay)}</td>
+        <td><span class="badge ${label[r.level][0]}">${label[r.level][1]}</span></td>
+        <td class="small">${r.problems.length ? r.problems.map((p) => `<div class="issue-${p.level}">${p.level === "ng" ? "✗ " : p.level === "warn" ? "△ " : ""}${esc((p.q ? `Q${p.q}: ` : "") + p.msg.replace(/^Q\d: /, ""))}</div>`).join("") : esc(r.issues.join(" ／ "))}
+          ${r.problems.some((p) => p.level !== "memo") && $("editor") ? `<button type="button" class="btn btn-secondary btn-sm fix-btn" data-id="${esc(s.id)}">直す →</button>` : ""}</td></tr>`).join("") +
       `</tbody>` +
       (rows.length ? "" : `<tbody><tr><td colspan="5" class="muted">まだ読み込んでいません</td></tr></tbody>`);
     const f = $("status-filter").children;
@@ -524,26 +583,64 @@
     clearTimeout(renderTimer);
     renderTimer = setTimeout(doRenderSheets, 150);
   }
+  /** 1人分の用紙のHTML。印刷対象外（質問なし・✗など）なら null */
+  function sheetHtmlFor(s, st = settings()) {
+    const qd = questionsFor(s, $("use-backup").checked);
+    if (!qd) return null;
+    // ✗の生徒は印刷しない。ただし編集ONのときは、直す様子を見られるよう「印刷されません」の印を付けて画面にだけ出す
+    const excluded = qd.level === "ng" && !qd.backup && !$("include-ng").checked;
+    if (excluded && state.view !== "edit") return null;
+    const h = state.kind === "student" ? studentSheet(s, qd, st) : state.kind === "teacher" ? teacherSheet(s, qd, st) : feedbackSheet(s, qd, st);
+    return excluded ? h.replace('<section class="sheet', '<section data-excluded="1" class="sheet') : h;
+  }
+  const fitSheet = (sh) => (state.kind === "student" ? fitStudent(sh) : fitSmall(sh));
   function doRenderSheets() {
     const st = settings();
     const cls = $("class-filter").value;
-    const useBackup = $("use-backup").checked;
-    const includeNg = $("include-ng").checked;
     const html = [];
     let skipped = 0;
     sortedStudents().filter((s) => !cls || s.cls === cls).forEach((s) => {
-      const qd = questionsFor(s, useBackup);
-      if (!qd || (qd.level === "ng" && !qd.backup && !includeNg)) { skipped++; return; }
-      if (state.kind === "student") html.push(studentSheet(s, qd, st));
-      else if (state.kind === "teacher") html.push(teacherSheet(s, qd, st));
-      else html.push(feedbackSheet(s, qd, st));
+      const h = sheetHtmlFor(s, st);
+      if (h) html.push(h);
+      if (!h || h.includes('data-excluded="1"')) skipped++;
     });
     const box = $("sheets");
     box.innerHTML = html.join("");
-    box.querySelectorAll(".sheet").forEach((sh) => (state.kind === "student" ? fitStudent(sh) : fitSmall(sh)));
+    box.querySelectorAll(".sheet").forEach(fitSheet);
     const over = box.querySelectorAll('.sheet[data-overflow="1"]').length;
-    $("print-count").textContent = `印刷対象 ${html.length}枚${skipped ? `（対象外 ${skipped}人：質問なし・✗・異常essay。下のチェックで含められます）` : ""}${over ? `　⚠ ${over}枚は1ページに収まりきっていません` : ""}`;
-    $("print").disabled = html.length === 0;
+    const printable = html.length - box.querySelectorAll(".sheet[data-excluded]").length;
+    $("print-count").textContent = `印刷対象 ${printable}枚${skipped ? `（対象外 ${skipped}人：質問なし・✗・異常essay。下のチェックで含められます）` : ""}${over ? `　⚠ ${over}枚は1ページに収まりきっていません` : ""}`;
+    $("print").disabled = printable === 0;
+    applyScale();
+  }
+  /** 編集中に1人分だけ描き直す（全員分を描き直すと重いため）。対象外⇔対象が切り替わるときは全体を描き直す */
+  function rerenderSheet(id) {
+    const s = state.essays.get(id);
+    const el = [...$("sheets").querySelectorAll(".sheet")].find((x) => x.dataset.id === id);
+    const h = s && sheetHtmlFor(s);
+    // 印刷対象かどうかが変わったら、枚数表示も変わるので全体を描き直す
+    if (!el || !h || el.hasAttribute("data-excluded") !== h.includes('data-excluded="1"')) return doRenderSheets();
+    const tmp = document.createElement("div");
+    tmp.innerHTML = h;
+    const ne = tmp.firstElementChild;
+    el.replaceWith(ne);
+    fitSheet(ne);
+    markCurrentSheet();
+  }
+  /** 編集ON（左右2画面）のときは、用紙を左半分の幅に縮小して表示する */
+  function applyScale() {
+    const box = $("sheets");
+    if (state.view === "edit") box.style.setProperty("--sheet-scale", String(Math.min(1, (box.clientWidth - 12) / (210 * MM))));
+    else box.style.removeProperty("--sheet-scale");
+    markCurrentSheet();
+  }
+  function markCurrentSheet() {
+    $("sheets").querySelectorAll(".sheet").forEach((x) => x.classList.toggle("current", state.view === "edit" && x.dataset.id === state.editId));
+  }
+  function scrollToSheet(id) {
+    const el = [...$("sheets").querySelectorAll(".sheet")].find((x) => x.dataset.id === id);
+    if (el) el.scrollIntoView({ block: "start", behavior: "smooth" });
+    return !!el;
   }
 
   // ---------------- 編集画面 ----------------
@@ -574,6 +671,7 @@
     const field = (key, label, where) => `<label class="ed-field ${key in f ? "edited" : ""}" data-key="${key}">
         <span class="ed-head">${esc(label)} <span class="ed-where">→ ${esc(where)}</span>${key in f ? '<span class="badge warn">修正済み</span><button type="button" class="ed-undo">元に戻す</button>' : ""}</span>
         <textarea class="input" data-key="${key}" rows="${Math.min(6, Math.max(2, Math.ceil((q[key] || "").length / 70)))}">${esc(q[key] || "")}</textarea>
+        <div class="ed-probs" data-probs="${key}"></div>
         ${key in f && base[key] ? `<span class="ed-where">元の内容: ${esc(base[key])}</span>` : ""}
       </label>`;
     $("ed-form").innerHTML =
@@ -585,20 +683,41 @@
   function updateEditorStatus(s) {
     const q = questionsMap().get(s.id);
     const r = check(s, q);
-    const label = { ok: ["ok", "点検OK"], warn: ["warn", "注意"], ng: ["ng", "✗ 要修正（このままでは印刷対象外）"], missing: ["", "質問なし"], flag: ["warn", "異常essay（予備問題で印刷）"] }[r.level];
-    $("ed-check").innerHTML = `<span class="badge ${label[0]}">${label[1]}</span>` + (r.issues.length && r.level !== "missing" ? `<ul>${r.issues.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : "");
+    const label = { ok: ["ok", "点検OK"], warn: ["warn", "注意（印刷はできます）"], ng: ["ng", "✗ 要修正（このままでは印刷対象外）"], missing: ["", "質問なし"], flag: ["warn", "異常essay（予備問題で印刷）"] }[r.level];
+    const fixable = r.problems.filter((p) => p.level !== "memo");
+    $("ed-check").innerHTML = `<span class="badge ${label[0]}">${label[1]}</span>` +
+      (r.problems.length ? `<ul>${r.problems.map((p) => `<li class="issue-${p.level}">${esc((p.q ? `Q${p.q}: ` : "") + p.msg.replace(/^Q\d: /, ""))}</li>`).join("")}</ul>` : "") +
+      (fixable.length ? `<p class="small">赤い欄に修正案が出ます（「この案を反映」で反映）。案が出ないものは、下の手順でGemに作り直してもらえます。</p>` : "");
+    $("ed-regen-box").hidden = !fixable.length;
     $("ed-essay").innerHTML = markQuotes(s.essay, [1, 2, 3].map((i) => (q || {})[`Q${i}_引用`] || ""));
+    // 欄ごとの赤字・修正案（入力中のテキスト欄は作り直さない）
+    state.suggestions = {};
+    document.querySelectorAll("#ed-form .ed-field").forEach((box) => {
+      const key = box.dataset.key;
+      const ps = r.problems.filter((p) => p.key === key);
+      box.classList.toggle("has-ng", ps.some((p) => p.level === "ng"));
+      box.classList.toggle("has-warn", !ps.some((p) => p.level === "ng") && ps.some((p) => p.level === "warn"));
+      const fix = ps.map((p) => suggestFix(s, q || {}, p)).find(Boolean);
+      if (fix) state.suggestions[key] = fix.value;
+      box.querySelector(".ed-probs").innerHTML =
+        ps.map((p) => `<div class="p-${p.level}">${p.level === "ng" ? "✗ " : p.level === "warn" ? "△ " : "メモ: "}${esc(p.msg.replace(/^Q\d: /, ""))}</div>`).join("") +
+        (fix ? `<div class="ed-suggest"><div class="ed-suggest-head">修正案</div><div lang="en">${esc(fix.value)}</div><div class="ed-where">${esc(fix.note)}</div>
+          <button type="button" class="btn btn-primary btn-sm ed-apply" data-key="${key}">この案を反映</button></div>` : "");
+    });
   }
   function setView(v) {
     state.view = v;
-    [...$("view-tabs").children].forEach((b) => { const on = b.dataset.v === v; b.classList.toggle("on", on); b.setAttribute("aria-selected", String(on)); });
-    $("editor").hidden = v !== "edit";
-    $("sheets").hidden = v === "edit";
-    $("view-note").textContent = v === "edit"
-      ? `生徒を選んで、直したい欄を書き換えてください。変更はすぐ保存され、プレビュー・点検・印刷に反映されます（修正あり ${editedCount()}人）。`
-      : "下に印刷されるものがそのまま並びます（1人1枚）。直したい所は「編集」タブで生徒ごとに書き換えられます。";
-    if (v === "edit") renderEditor();
-    else doRenderSheets();
+    const on = v === "edit";
+    const sw = $("edit-switch");
+    sw.setAttribute("aria-checked", String(on));
+    sw.querySelector(".lbl").textContent = on ? "編集 ON" : "編集 OFF";
+    $("editor").hidden = !on;
+    $("workspace").classList.toggle("split", on);
+    $("view-note").textContent = on
+      ? `左のプレビューで用紙をクリックするか、右で生徒を選んで書き換えてください。変更はすぐ保存され、プレビュー・点検・印刷に反映されます（修正あり ${editedCount()}人）。`
+      : "下に印刷されるものがそのまま並びます（1人1枚）。直したい所は「編集」をONにすると、右側で生徒ごとに書き換えられます。";
+    if (on) renderEditor();
+    doRenderSheets();
   }
   function questionsTsv() {
     const qs = questionsMap();
@@ -666,13 +785,15 @@
       const map = parseQuestionRows(rows);
       if (!map.size) return toast("見出し行（ID, 主張, … Q1_質問 …）が見つかりません。Gemの出力を見出しごと貼り付けてください。", true);
       map.forEach((v, k) => state.pastedQuestions.set(k, v));
-      toast(`${map.size}人分を取り込みました`);
+      const cleared = [...map.keys()].map((k) => state.idAlias.get(k) || k).filter((k) => state.edits.delete(k));
+      if (cleared.length) saveEdits();
+      toast(`${map.size}人分を取り込みました${cleared.length ? `（${cleared.join("・")} の編集タブでの修正は、新しい出力に置き換えたため外しました）` : ""}`);
       $("tsv").value = "";
       refreshAll();
     });
     $("batch-size").addEventListener("input", renderBatches);
     $("batch-missing-only").addEventListener("change", renderBatches);
-    $("class-filter").addEventListener("change", () => { renderCheck(); if (state.view === "edit") renderEditor(); else renderSheets(); });
+    $("class-filter").addEventListener("change", () => { renderCheck(); if (state.view === "edit") renderEditor(); renderSheets(); });
     [...$("status-filter").children].forEach((b) => b.addEventListener("click", () => {
       state.status = b.dataset.f;
       [...$("status-filter").children].forEach((x) => x.classList.toggle("on", x === b));
@@ -687,8 +808,7 @@
     $("include-ng").addEventListener("change", renderSheets);
     $("print").addEventListener("click", () => {
       // 編集画面のままだと用紙が描かれていないので、プレビューに切り替えてから印刷する
-      if (state.view !== "preview") setView("preview");
-      else doRenderSheets();
+      doRenderSheets();
       window.print();
     });
     // 古いHTMLがキャッシュに残っていて編集タブがない場合は、編集機能だけ無効にして動かす
@@ -697,12 +817,12 @@
   }
 
   function initEditor() {
-    [...$("view-tabs").children].forEach((b) => b.addEventListener("click", () => setView(b.dataset.v)));
-    $("ed-student").addEventListener("change", (e) => { state.editId = e.target.value; renderEditor(); });
+    $("edit-switch").addEventListener("click", () => setView(state.view === "edit" ? "preview" : "edit"));
+    $("ed-student").addEventListener("change", (e) => { state.editId = e.target.value; renderEditor(); markCurrentSheet(); scrollToSheet(state.editId); });
     const step = (d) => {
       const list = editorStudents();
       const i = list.findIndex((s) => s.id === state.editId);
-      if (list[i + d]) { state.editId = list[i + d].id; renderEditor(); $("editor").scrollIntoView({ block: "start" }); }
+      if (list[i + d]) { state.editId = list[i + d].id; renderEditor(); $("editor").scrollTop = 0; markCurrentSheet(); scrollToSheet(state.editId); }
     };
     $("ed-prev").addEventListener("click", () => step(-1));
     $("ed-next").addEventListener("click", () => step(1));
@@ -722,9 +842,21 @@
       }
       updateEditorStatus(s);
       clearTimeout(edCheckTimer);
-      edCheckTimer = setTimeout(renderCheck, 300);
+      edCheckTimer = setTimeout(() => { renderCheck(); rerenderSheet(s.id); }, 350);
     });
     $("ed-form").addEventListener("click", (e) => {
+      if (e.target.classList.contains("ed-apply")) {
+        e.preventDefault();
+        const s = currentEditStudent();
+        const key = e.target.dataset.key;
+        if (!s || !(key in (state.suggestions || {}))) return;
+        setEdit(s, key, state.suggestions[key]);
+        renderEditor();
+        renderCheck();
+        rerenderSheet(s.id);
+        toast(`${s.id} の ${key} に修正案を反映しました`);
+        return;
+      }
       if (!e.target.classList.contains("ed-undo")) return;
       e.preventDefault();
       const s = currentEditStudent();
@@ -732,13 +864,49 @@
       setEdit(s, key, (baseQuestionsMap().get(s.id) || {})[key] || "");
       renderEditor();
       renderCheck();
+      rerenderSheet(s.id);
+    });
+    $("ed-regen").addEventListener("click", () => {
+      const s = currentEditStudent();
+      if (!s) return;
+      copy(regenerateRequest(s, check(s, questionsMap().get(s.id)).problems), "作り直し依頼をコピーしました。ChatGPTで @Question Time を付けて貼り付けてください。");
+    });
+    $("ed-paste-apply").addEventListener("click", () => {
+      const s = currentEditStudent();
+      if (!s) return;
+      const rows = $("ed-paste").value.replace(/^```.*$/gm, "").split(/\r?\n/).filter((l) => l.trim()).map((l) => l.split("\t"));
+      const map = parseQuestionRows(rows);
+      const row = map.get(s.id) || (map.size === 1 ? [...map.values()][0] : null);
+      if (!row) return toast(map.size ? `貼り付けた内容に ${s.id} の行がありません` : "見出し行（ID, 主張, … Q1_質問 …）つきで貼り付けてください", true);
+      HEADER.filter((h) => h !== "ID").forEach((h) => setEdit(s, h, row[h] || ""));
+      $("ed-paste").value = "";
+      renderEditor();
+      renderCheck();
+      rerenderSheet(s.id);
+      toast(`${s.id} にGemの出力を取り込みました（編集として保存。元に戻すこともできます）`);
+    });
+    $("sheets").addEventListener("click", (e) => {
+      if (state.view !== "edit") return;
+      const sh = e.target.closest(".sheet");
+      if (!sh || sh.dataset.id === state.editId) return;
+      state.editId = sh.dataset.id;
+      renderEditor();
+      $("editor").scrollTop = 0;
+      markCurrentSheet();
+    });
+    window.addEventListener("resize", () => { if (state.view === "edit") applyScale(); });
+    $("check-table").addEventListener("click", (e) => {
+      const b = e.target.closest(".fix-btn");
+      if (!b) return;
+      state.editId = b.dataset.id;
+      setView("edit");
+      $("workspace").scrollIntoView({ block: "start" });
+      scrollToSheet(state.editId);
+      const first = document.querySelector("#ed-form .has-ng, #ed-form .has-warn");
+      if (first) $("editor").scrollTop = first.offsetTop - 80;
     });
     $("ed-show").addEventListener("click", () => {
-      const id = state.editId;
-      setView("preview");
-      const el = [...$("sheets").querySelectorAll(".sheet")].find((x) => x.dataset.id === id);
-      if (el) el.scrollIntoView({ block: "start", behavior: "smooth" });
-      else toast("この生徒は今の設定では印刷対象外です（質問なし・✗・異常essay）。印刷の「予備問題で印刷」「✗の生徒も印刷」を確認してください。", true);
+      if (!scrollToSheet(state.editId)) toast("この生徒は今の設定では印刷対象外です（質問なし・✗・異常essay）。印刷の「予備問題で印刷」「✗の生徒も印刷」を確認してください。", true);
     });
     $("ed-reset-one").addEventListener("click", () => {
       const s = currentEditStudent();
@@ -748,6 +916,7 @@
       saveEdits();
       renderEditor();
       renderCheck();
+      rerenderSheet(s.id);
     });
     $("ed-reset-all").addEventListener("click", () => {
       if (!state.edits.size) return toast("修正はありません");
@@ -756,6 +925,7 @@
       saveEdits();
       renderEditor();
       renderCheck();
+      doRenderSheets();
     });
     $("ed-copy-tsv").addEventListener("click", () => {
       if (!questionsMap().size) return toast("まだ質問がありません", true);
