@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex" />
   <title>Question Time 印刷</title>
-  <link rel="stylesheet" href="style.css?v=8" />
+  <link rel="stylesheet" href="style.css?v=10" />
 </head>
 <body>
   <header class="app-header no-print">
@@ -137,13 +137,21 @@
           <span class="knob" aria-hidden="true"></span><span class="lbl">編集 OFF</span>
         </button>
       </div>
-      <p class="muted small" id="view-note">下に印刷されるものがそのまま並びます（1人1枚）。直したい所は「編集」をONにすると、右側で生徒ごとに書き換えられます。</p>
+      <p class="muted small" id="view-note">印刷される用紙を1枚ずつ表示します（「次へ」または → キーで切り替え）。直したい所は「編集」をONにすると、右側で生徒ごとに書き換えられます。</p>
     </section>
 
   </main>
 
   <div class="workspace" id="workspace">
-    <div id="sheets" class="sheets"></div>
+    <div class="preview-nav no-print" id="preview-nav">
+      <button type="button" class="btn btn-secondary" id="pv-prev" aria-label="前の用紙">← 前へ</button>
+      <span class="pv-label" id="pv-label" aria-live="polite"></span>
+      <button type="button" class="btn btn-primary" id="pv-next" aria-label="次の用紙">次へ →</button>
+    </div>
+    <div class="preview-col">
+      <div class="sheet-empty no-print" id="sheet-empty" hidden></div>
+      <div id="sheets" class="sheets"></div>
+    </div>
     <!-- 編集（生徒ごとの個別修正） -->
     <aside class="card editor no-print" id="editor" hidden>
       <div class="row editor-nav">
@@ -167,7 +175,6 @@
       </div>
       <div id="ed-form"></div>
       <div class="row ed-actions">
-        <button type="button" class="btn btn-secondary btn-sm" id="ed-show">プレビューでこの生徒を表示</button>
         <button type="button" class="btn btn-secondary btn-sm" id="ed-reset-one">この生徒の修正を元に戻す</button>
         <button type="button" class="btn btn-secondary btn-sm" id="ed-copy-tsv">修正を反映したTSVをコピー</button>
         <button type="button" class="btn btn-secondary btn-sm" id="ed-reset-all">すべての修正を消す</button>
@@ -179,6 +186,6 @@
 
   <script src="xlsx.full.min.js"></script>
   <script src="prompt.js?v=3"></script>
-  <script src="app.js?v=9"></script>
+  <script src="app.js?v=13"></script>
 </body>
 </html>

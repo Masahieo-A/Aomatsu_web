@@ -112,10 +112,14 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .workspace.split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; align-items: start; }
 .workspace.split .sheets { align-items: flex-start; overflow: hidden; }
 .workspace.split .sheet { transform: scale(var(--sheet-scale, 1)); transform-origin: top left; margin-bottom: calc((var(--sheet-scale, 1) - 1) * 297mm); margin-right: calc((var(--sheet-scale, 1) - 1) * 210mm); cursor: pointer; }
-.workspace.split .sheet.current { outline: 3mm solid var(--accent); }
+.sheet.off-screen { display: none; }
+.preview-nav { position: sticky; top: var(--header-h, 52px); z-index: 5; display: flex; align-items: center; justify-content: center; gap: 12px; padding: 8px 0; background: var(--bg); }
+.preview-nav[hidden] { display: none; }
+.pv-label { min-width: 16em; text-align: center; font-weight: 700; }
+.sheet-empty { margin: 16px 0; padding: 16px; border: 2px dashed var(--line); border-radius: 8px; color: var(--muted); }
 .sheet[data-excluded] { outline: 3mm solid var(--danger); }
 .sheet[data-excluded]::before { content: "✗ 要修正のため、このままでは印刷されません"; position: absolute; top: 0; left: 0; right: 0; z-index: 2; padding: 3mm; background: var(--danger); color: #fff; font-size: 14pt; font-weight: 700; text-align: center; }
-.workspace.split .editor { position: sticky; top: 8px; max-height: calc(100vh - 16px); overflow-y: auto; margin-top: 8px; }
+.workspace.split .editor { position: sticky; top: calc(var(--header-h, 52px) + 8px); max-height: calc(100vh - var(--header-h, 52px) - 16px); overflow-y: auto; margin-top: 8px; }
 .ed-regen { margin: 8px 0 12px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface-alt); }
 .ed-regen ol { margin: 4px 0 8px; padding-left: 20px; }
 .ed-regen .tsv { min-height: 80px; }
@@ -235,6 +239,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   .sheets { display: block; padding: 0; gap: 0; }
   .workspace, .workspace.split { display: block; padding: 0; }
   .workspace.split .sheet { transform: none; margin: 0; outline: none; }
+  .sheet.off-screen { display: block; }
   .sheet[data-excluded] { display: none !important; }
   .sheet { box-shadow: none; margin: 0; break-after: page; page-break-after: always; }
   .sheet:last-child { break-after: auto; page-break-after: auto; }

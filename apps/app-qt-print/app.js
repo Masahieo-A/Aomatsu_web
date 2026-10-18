@@ -634,13 +634,40 @@
     else box.style.removeProperty("--sheet-scale");
     markCurrentSheet();
   }
+  /**
+   * 画面には選んだ1人分の用紙だけを出す（印刷では全員分が出る）。
+   * 用紙はすべて描いて収まりを計算してから隠すので、印刷の体裁は変わらない。
+   */
   function markCurrentSheet() {
-    $("sheets").querySelectorAll(".sheet").forEach((x) => x.classList.toggle("current", state.view === "edit" && x.dataset.id === state.editId));
+    const sheets = [...$("sheets").querySelectorAll(".sheet")];
+    let cur = sheets.find((x) => x.dataset.id === state.editId);
+    // プレビューだけのときは、選んだ生徒が印刷対象外なら先頭の用紙を出す
+    if (!cur && state.view !== "edit" && sheets.length) { cur = sheets[0]; state.editId = cur.dataset.id; }
+    sheets.forEach((x) => x.classList.toggle("off-screen", x !== cur));
+    const empty = $("sheet-empty");
+    const s = state.essays.get(state.editId);
+    empty.hidden = !!cur || !sheets.length && !s || state.view !== "edit";
+    if (!empty.hidden) empty.textContent = s ? `${s.id} は印刷する用紙がありません（質問なし）。右の編集欄で質問を入力するか、Gemの出力を貼り付けてください。` : "";
+    // ナビ（プレビューだけのとき）
+    const i = sheets.indexOf(cur);
+    $("pv-label").textContent = cur ? `${i + 1} / ${sheets.length}　${cur.dataset.id}　${(state.essays.get(cur.dataset.id) || {}).name || ""}` : "表示できる用紙がありません";
+    $("pv-prev").disabled = i <= 0;
+    $("pv-next").disabled = i < 0 || i >= sheets.length - 1;
   }
-  function scrollToSheet(id) {
-    const el = [...$("sheets").querySelectorAll(".sheet")].find((x) => x.dataset.id === id);
-    if (el) el.scrollIntoView({ block: "start", behavior: "smooth" });
-    return !!el;
+  /** プレビューの前へ・次へ（印刷される用紙の順） */
+  function stepSheet(d) {
+    const sheets = [...$("sheets").querySelectorAll(".sheet")];
+    const i = sheets.findIndex((x) => x.dataset.id === state.editId);
+    const next = sheets[i + d];
+    if (!next) return;
+    state.editId = next.dataset.id;
+    markCurrentSheet();
+    scrollPreviewTop();
+  }
+  /** 用紙の途中まで読み進めていたら、次の用紙は先頭から見せる */
+  function scrollPreviewTop() {
+    const top = $("workspace").getBoundingClientRect().top + window.scrollY - (document.querySelector(".app-header")?.offsetHeight || 0);
+    if (window.scrollY > top) window.scrollTo({ top });
   }
 
   // ---------------- 編集画面 ----------------
@@ -712,10 +739,11 @@
     sw.setAttribute("aria-checked", String(on));
     sw.querySelector(".lbl").textContent = on ? "編集 ON" : "編集 OFF";
     $("editor").hidden = !on;
+    $("preview-nav").hidden = on;
     $("workspace").classList.toggle("split", on);
     $("view-note").textContent = on
       ? `左のプレビューで用紙をクリックするか、右で生徒を選んで書き換えてください。変更はすぐ保存され、プレビュー・点検・印刷に反映されます（修正あり ${editedCount()}人）。`
-      : "下に印刷されるものがそのまま並びます（1人1枚）。直したい所は「編集」をONにすると、右側で生徒ごとに書き換えられます。";
+      : "印刷される用紙を1枚ずつ表示します（「次へ」または → キーで切り替え）。直したい所は「編集」をONにすると、右側で生徒ごとに書き換えられます。";
     if (on) renderEditor();
     doRenderSheets();
   }
@@ -818,11 +846,20 @@
 
   function initEditor() {
     $("edit-switch").addEventListener("click", () => setView(state.view === "edit" ? "preview" : "edit"));
-    $("ed-student").addEventListener("change", (e) => { state.editId = e.target.value; renderEditor(); markCurrentSheet(); scrollToSheet(state.editId); });
+    $("pv-prev").addEventListener("click", () => stepSheet(-1));
+    $("pv-next").addEventListener("click", () => stepSheet(1));
+    // ← → キーでも前後へ（入力欄で文字を打っているときは除く）
+    document.addEventListener("keydown", (e) => {
+      if ((e.target instanceof Element && e.target.closest("input, textarea, select, [contenteditable]")) || e.metaKey || e.ctrlKey || e.altKey) return;
+      if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+      const d = e.key === "ArrowLeft" ? -1 : 1;
+      if (state.view === "edit") $(d < 0 ? "ed-prev" : "ed-next").click(); else stepSheet(d);
+    });
+    $("ed-student").addEventListener("change", (e) => { state.editId = e.target.value; renderEditor(); markCurrentSheet(); });
     const step = (d) => {
       const list = editorStudents();
       const i = list.findIndex((s) => s.id === state.editId);
-      if (list[i + d]) { state.editId = list[i + d].id; renderEditor(); $("editor").scrollTop = 0; markCurrentSheet(); scrollToSheet(state.editId); }
+      if (list[i + d]) { state.editId = list[i + d].id; renderEditor(); $("editor").scrollTop = 0; markCurrentSheet(); scrollPreviewTop(); }
     };
     $("ed-prev").addEventListener("click", () => step(-1));
     $("ed-next").addEventListener("click", () => step(1));
@@ -885,28 +922,18 @@
       rerenderSheet(s.id);
       toast(`${s.id} にGemの出力を取り込みました（編集として保存。元に戻すこともできます）`);
     });
-    $("sheets").addEventListener("click", (e) => {
-      if (state.view !== "edit") return;
-      const sh = e.target.closest(".sheet");
-      if (!sh || sh.dataset.id === state.editId) return;
-      state.editId = sh.dataset.id;
-      renderEditor();
-      $("editor").scrollTop = 0;
-      markCurrentSheet();
-    });
-    window.addEventListener("resize", () => { if (state.view === "edit") applyScale(); });
+    // 上部の固定ヘッダーの高さ分だけ、ナビと編集欄を下げる（ヘッダーの裏に隠れないように）
+    const setHeaderH = () => document.documentElement.style.setProperty("--header-h", `${document.querySelector(".app-header")?.offsetHeight || 0}px`);
+    setHeaderH();
+    window.addEventListener("resize", () => { setHeaderH(); if (state.view === "edit") applyScale(); });
     $("check-table").addEventListener("click", (e) => {
       const b = e.target.closest(".fix-btn");
       if (!b) return;
       state.editId = b.dataset.id;
       setView("edit");
       $("workspace").scrollIntoView({ block: "start" });
-      scrollToSheet(state.editId);
       const first = document.querySelector("#ed-form .has-ng, #ed-form .has-warn");
       if (first) $("editor").scrollTop = first.offsetTop - 80;
-    });
-    $("ed-show").addEventListener("click", () => {
-      if (!scrollToSheet(state.editId)) toast("この生徒は今の設定では印刷対象外です（質問なし・✗・異常essay）。印刷の「予備問題で印刷」「✗の生徒も印刷」を確認してください。", true);
     });
     $("ed-reset-one").addEventListener("click", () => {
       const s = currentEditStudent();
