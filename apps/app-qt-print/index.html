@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex" />
   <title>Question Time 印刷</title>
-  <link rel="stylesheet" href="style.css?v=4" />
+  <link rel="stylesheet" href="style.css?v=5" />
 </head>
 <body>
   <header class="app-header no-print">
@@ -97,7 +97,7 @@
     <section class="card step">
       <h2><span class="step-no">4</span>点検</h2>
       <p>AIの誤りでいちばん多いのは「essayにない文の引用」です。引用が本文に一字一句あるか、質問の語数などを機械的に確かめます。
-        ✗が出た生徒は「質問」シートを直すか、Gemに作り直させてから読み込み直してください。</p>
+        ✗が出た生徒は、下の「編集」タブで直すか、「質問」シートを直す・Gemに作り直させてから読み込み直してください。</p>
       <div class="row">
         <select class="input narrow" id="class-filter"><option value="">全クラス</option></select>
         <div class="filters" id="status-filter">
@@ -131,8 +131,33 @@
     </section>
 
     <section class="preview-head">
-      <h2>プレビュー</h2>
-      <p class="muted small">下に印刷されるものがそのまま並びます（1人1枚）。</p>
+      <div class="view-tabs" id="view-tabs" role="tablist" aria-label="プレビューと編集の切り替え">
+        <button type="button" role="tab" data-v="preview" class="on" aria-selected="true">プレビュー</button>
+        <button type="button" role="tab" data-v="edit" aria-selected="false">編集</button>
+      </div>
+      <p class="muted small" id="view-note">下に印刷されるものがそのまま並びます（1人1枚）。直したい所は「編集」タブで生徒ごとに書き換えられます。</p>
+    </section>
+
+    <!-- 編集（生徒ごとの個別修正） -->
+    <section class="card editor" id="editor" hidden>
+      <div class="row editor-nav">
+        <button type="button" class="btn btn-secondary btn-sm" id="ed-prev" aria-label="前の生徒">← 前</button>
+        <select class="input" id="ed-student" aria-label="編集する生徒"></select>
+        <button type="button" class="btn btn-secondary btn-sm" id="ed-next" aria-label="次の生徒">次 →</button>
+      </div>
+      <div id="ed-check" class="ed-check"></div>
+      <div class="ed-essay">
+        <div class="ed-label">essay（下線は各問の引用）</div>
+        <div id="ed-essay" lang="en"></div>
+      </div>
+      <div id="ed-form"></div>
+      <div class="row ed-actions">
+        <button type="button" class="btn btn-secondary btn-sm" id="ed-show">この生徒をプレビューで見る</button>
+        <button type="button" class="btn btn-secondary btn-sm" id="ed-reset-one">この生徒の修正を元に戻す</button>
+        <button type="button" class="btn btn-secondary btn-sm" id="ed-copy-tsv">修正を反映したTSVをコピー</button>
+        <button type="button" class="btn btn-secondary btn-sm" id="ed-reset-all">すべての修正を消す</button>
+      </div>
+      <p class="muted small">修正はこのブラウザに自動で保存され、プレビュー・点検・印刷に反映されます。スプレッドシートの「質問」シートにも残したいときは「修正を反映したTSVをコピー」して貼り直してください。essayの本文が変わった生徒には、前の修正を使いません。</p>
     </section>
   </main>
 
@@ -141,6 +166,6 @@
 
   <script src="xlsx.full.min.js"></script>
   <script src="prompt.js?v=3"></script>
-  <script src="app.js?v=3"></script>
+  <script src="app.js?v=5"></script>
 </body>
 </html>
