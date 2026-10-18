@@ -18,11 +18,11 @@
     ["1", "構造を使おうとしているが誤りがあり、意味が不明瞭"],
     ["0", "指定構造・等価構造が見られない／日本語で解答（PL-2）"],
   ];
-  // §17.2 汎用予備問題（essayに依存しない。Content軸は評価対象外）
+  // §17.2 汎用予備問題（essayに依存しない。Content軸は評価対象外）。本番の質問と同じ「なぜ型・どっち型・もしも型」
   const BACKUP = [
-    ["Some people disagree with the main idea of your essay. Write their opinion first, and then explain why you still keep your opinion.", "あなたのessayの主な考えに反対する人もいます。まずその人たちの意見を書き、それでもなぜ自分の意見を変えないのかを説明しなさい。"],
-    ["Imagine that your idea was tried in a different place, such as a big city or another country. Would it work better or worse? Explain why.", "あなたの考えを、大都市や外国など別の場所で試したとします。うまくいくでしょうか、それともうまくいかないでしょうか。理由を説明しなさい。"],
-    ["Choose the most important sentence in your essay. Copy it, and then say the same thing again in two short and simple English sentences.", "あなたのessayでいちばん大事な1文を選んで書き写し、同じ内容を短く簡単な英文2文で言い直しなさい。"],
+    ["Choose the most important reason in your essay. Why do you think this reason is important to you? Give one reason.", "あなたのessayの中で、いちばん大事な理由を1つ選びましょう。その理由が、なぜあなたにとって大事だと思いますか。正解でなくてよいので、自分の考えで理由を1つ書きましょう。"],
+    ["Think about the main idea of your essay. Do you think this idea is more important for you or for people around you? Choose one and give one reason.", "あなたのessayの主な考えについて考えましょう。この考えは、あなた自身と、あなたの周りの人のどちらにとって、より大切だと思いますか。どちらかを選び、理由を1つ書きましょう。"],
+    ["Think about the main idea of your essay. If you lived in another country, do you think your idea would still be true? Give one reason.", "あなたのessayの主な考えについて考えましょう。もし、あなたが外国に住んでいたら、その考えはそれでも当てはまると思いますか。予想と理由を1つ書きましょう。"],
   ];
 
   function rubricFor(qi, quote, point) {
