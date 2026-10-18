@@ -44,6 +44,7 @@
     essays: new Map(), // ID → {id, cls, num, name, essay, dup}
     fileQuestions: new Map(), // ID → row（スプレッドシートの「質問」シート）
     pastedQuestions: new Map(), // ID → row（画面に直接貼った分。こちらを優先）
+    idAlias: new Map(), // 旧ID → 新ID（クラス表記をまとめたときの読み替え。例 1組-37 → 301組-37）
     kind: "student",
     status: "all",
     copied: new Set(),
@@ -99,6 +100,36 @@
     return header.findIndex((h) => tests.some((t) => (t instanceof RegExp ? t.test(hkey(h)) : hkey(h) === t)));
   }
 
+  /** クラスと番号から ID を作る。数字だけのクラス名（例: 1）だと「1-01」がスプレッドシートで日付に化けるため「1組-01」にする */
+  function essayId(cls, num) {
+    const clsKey = /^\d+$/.test(cls) ? `${cls}組` : cls;
+    return normId(`${clsKey}-${Number.isFinite(num) && num > 0 ? pad2(num) : "?"}`);
+  }
+
+  /**
+   * クラスの表記ゆれをまとめる。「301」と「1」が混在していたら、「1」を末尾の組番号が一致する3桁クラス「301」に読み替える。
+   * 候補の3桁クラスが1つに決まらない（301 と 201 が両方ある等）・3桁クラスがない場合は変えない。
+   */
+  function unifyClasses(list) {
+    const long = [...new Set(list.map((e) => e.cls).filter((c) => /^\d{3}$/.test(c)))];
+    const merged = new Map(); // "1" → {to: "301", count}
+    const unresolved = new Set();
+    if (!long.length) return { merged, unresolved };
+    list.forEach((e) => {
+      if (!e.fromCls || !/^\d{1,2}$/.test(e.cls)) return;
+      const hits = long.filter((c) => Number(c.slice(1)) === Number(e.cls));
+      if (hits.length !== 1) return unresolved.add(e.cls);
+      const m = merged.get(e.cls) || { to: hits[0], count: 0 };
+      m.count++;
+      merged.set(e.cls, m);
+      const oldId = e.id;
+      e.cls = hits[0];
+      e.id = essayId(e.cls, e.num);
+      state.idAlias.set(oldId, e.id);
+    });
+    return { merged, unresolved };
+  }
+
   /** フォームの回答シートらしいか（クラス・番号・essay 列があるか） */
   function parseEssaySheet(rows) {
     if (!rows.length) return null;
@@ -118,10 +149,9 @@
       if (!essay) return;
       const cls = col.cls >= 0 ? nfkc(r[col.cls]).toUpperCase() : "";
       const num = col.num >= 0 ? parseInt(nfkc(r[col.num]), 10) : NaN;
-      // 数字だけのクラス名（例: 1）だと「1-01」がスプレッドシートで日付に化けるため「1組-01」にする
-      const clsKey = /^\d+$/.test(cls) ? `${cls}組` : cls;
-      const id = col.id >= 0 && nfkc(r[col.id]) ? normId(r[col.id]) : normId(`${clsKey}-${Number.isFinite(num) ? pad2(num) : "?"}`);
-      list.push({ id, cls, num: Number.isFinite(num) ? num : 0, name: col.name >= 0 ? nfkc(r[col.name]) : "", essay, order: i });
+      const fromCls = !(col.id >= 0 && nfkc(r[col.id]));
+      const id = fromCls ? essayId(cls, num) : normId(r[col.id]);
+      list.push({ id, fromCls, cls, num: Number.isFinite(num) ? num : 0, name: col.name >= 0 ? nfkc(r[col.name]) : "", essay, order: i });
     });
     return list;
   }
@@ -168,6 +198,10 @@
       }
     }
     if (essayList) {
+      state.idAlias = new Map();
+      const { merged, unresolved } = unifyClasses(essayList);
+      merged.forEach((m, from) => notes.push(["warn", `クラス「${from}」の ${m.count} 件を「${m.to}」と同じクラスにまとめました。`]));
+      if (unresolved.size) notes.push(["warn", `クラス「${[...unresolved].join("」「")}」は、どの3桁クラスにまとめるか決められないため、そのままにしました。`]);
       // 同じIDの重複提出は最後の回答を採用（§2.9）
       const map = new Map();
       const dups = new Set();
@@ -184,7 +218,15 @@
     refreshAll();
   }
 
-  const questionsMap = () => new Map([...state.fileQuestions, ...state.pastedQuestions]);
+  /** 質問（ファイル＋貼り付け）。クラスをまとめる前の旧ID（例 1組-37）で作った質問も新IDで引けるようにする */
+  const questionsMap = () => {
+    const map = new Map([...state.fileQuestions, ...state.pastedQuestions]);
+    state.idAlias.forEach((to, from) => {
+      if (map.has(from) && !map.has(to)) map.set(to, map.get(from));
+      map.delete(from);
+    });
+    return map;
+  };
 
   // ---------------- 点検（V-1〜V-6 相当） ----------------
   function check(student, q) {
