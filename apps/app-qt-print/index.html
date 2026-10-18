@@ -63,7 +63,8 @@
     <section class="card step">
       <h2><span class="step-no">2</span>スプレッドシートを読み込む</h2>
       <p>Googleスプレッドシートで「ファイル › ダウンロード › Microsoft Excel（.xlsx）」を選んで保存したファイルを選びます。
-        フォームの回答シートと「質問」シートの両方が入っていれば、IDで自動的に結び付けます。</p>
+        フォームの回答シートと「質問」シートの両方が入っていれば、IDで自動的に結び付けます。
+        手順5の「再編集用データを保存」で保存したファイルを読み込めば、前回の続きから編集できます。</p>
       <label class="drop" id="drop">
         <input type="file" id="file" accept=".xlsx,.xls,.csv" multiple />
         <span>ここに .xlsx をドロップ、またはクリックして選択</span>
@@ -126,7 +127,9 @@
       <p class="muted small" id="print-count"></p>
       <div class="row">
         <button type="button" class="btn btn-primary btn-lg" id="print">印刷する（A4縦・余白なし）</button>
+        <button type="button" class="btn btn-secondary btn-lg" id="export-xlsx">再編集用データを保存（.xlsx）</button>
       </div>
+      <p class="muted small">「再編集用データを保存」は、essay（氏名つき）・修正込みの質問・課題情報を1つのExcelにまとめてこのPCに保存します（ブラウザの中で作るだけで、外部には送りません）。ページを再読み込みすると読み込んだ内容は消えるので、作業の区切りで保存してください。</p>
       <p class="muted small">Chromeの印刷画面で「用紙サイズ: A4」「余白: なし」「倍率: 100」「背景のグラフィック: オン」にしてください。PDFに保存して印刷しても同じです。</p>
     </section>
 
@@ -186,6 +189,6 @@
 
   <script src="xlsx.full.min.js"></script>
   <script src="prompt.js?v=3"></script>
-  <script src="app.js?v=13"></script>
+  <script src="app.js?v=14"></script>
 </body>
 </html>

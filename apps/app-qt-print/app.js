@@ -180,6 +180,13 @@
           : XLSX.read(await file.arrayBuffer(), { type: "array" });
         for (const name of wb.SheetNames) {
           const rows = sheetRows(wb.Sheets[name]);
+          // 再編集用データの「設定」シート（課題名・トピックなど）を復元する
+          if (name === "設定" && hkey(rows[0]?.[0]) === "キー") {
+            let n = 0;
+            rows.slice(1).forEach(([k, v]) => { if (SETTINGS.includes(nfkc(k))) { $(nfkc(k)).value = v ?? ""; n++; } });
+            if (n) { saveSettings(); notes.push(["ok", `「設定」シートから課題情報（課題名・トピックなど）を復元しました。`]); }
+            continue;
+          }
           const q = parseQuestionRows(rows);
           if (q.size) {
             qMap = qMap || new Map();
@@ -753,6 +760,31 @@
     return [HEADER.join("\t"), ...rows].join("\n");
   }
 
+  // ---------------- 再編集用データの保存（.xlsx） ----------------
+  const SETTING_LABELS = { "s-title": "課題名", "s-date": "実施日", "s-topic": "essayトピック", "s-cefr": "学年目標CEFR", "s-minutes": "解答時間（分）" };
+  /**
+   * essay（氏名つき）・修正込みの質問・課題情報を1つの .xlsx にまとめて保存する。
+   * ブラウザの中で作ってPCに保存するだけなので、氏名などが外部に送られることはない。次回は手順2で読み込めば続きから再開できる。
+   */
+  function exportWorkbook() {
+    const list = sortedStudents();
+    if (!list.length) return toast("まだ essay を読み込んでいません", true);
+    const qs = questionsMap();
+    const essays = [["ID", "クラス", "番号", "氏名", "essay"], ...list.map((s) => [s.id, s.cls, s.num || "", s.name, s.essay])];
+    const withQ = list.filter((s) => qs.has(s.id));
+    const questions = [HEADER, ...withQ.map((s) => HEADER.map((h) => (h === "ID" ? s.id : String(qs.get(s.id)[h] ?? ""))))];
+    const conf = [["キー", "値", "説明"], ...SETTINGS.map((k) => [k, $(k).value, SETTING_LABELS[k] || ""])];
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(essays), "essay");
+    XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(questions), "質問");
+    XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(conf), "設定");
+    const d = new Date();
+    const stamp = `${d.getFullYear()}${pad2(d.getMonth() + 1)}${pad2(d.getDate())}_${pad2(d.getHours())}${pad2(d.getMinutes())}`;
+    const title = (settings().title || "QuestionTime").replace(/[\\/:*?"<>|\s]+/g, "_").slice(0, 40);
+    XLSX.writeFile(wb, `QT再編集用_${title}_${stamp}.xlsx`);
+    toast(`保存しました（essay ${list.length}人・質問 ${withQ.length}人分・課題情報）。次回は手順2でこのファイルを読み込めば続きから編集できます。`);
+  }
+
   async function loadSample() {
     try {
       const blob = await fetch("docs/sample/" + encodeURIComponent("サンプル_QuestionTime.xlsx")).then((r) => { if (!r.ok) throw new Error(r.status); return r.blob(); });
@@ -962,6 +994,7 @@
 
   function initRest() {
     $("load-sample").addEventListener("click", loadSample);
+    $("export-xlsx").addEventListener("click", exportWorkbook);
     refreshAll();
     // ?sample=1&kind=teacher でサンプルを自動表示（動作確認用）
     const params = new URLSearchParams(location.search);
