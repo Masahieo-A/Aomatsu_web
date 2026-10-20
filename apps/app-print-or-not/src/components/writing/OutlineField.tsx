@@ -4,7 +4,9 @@ import type { EvidenceCard } from "@/lib/types";
 import { getArticle, getPoint } from "@/lib/content";
 
 interface Props {
-  label: string;
+  label: string; // 英語の見出し
+  labelJa: string; // 日本語の見出し
+  guide: string; // この欄に何を書くかの日本語ヒント
   hint: string;
   memo: string;
   onMemo: (v: string) => void;
@@ -20,14 +22,18 @@ function cardLabel(c: EvidenceCard): string {
   return `${point}：${fact}`;
 }
 
-export default function OutlineField({ label, hint, memo, onMemo, cards, cardId, onCard }: Props) {
+export default function OutlineField({ label, labelJa, guide, hint, memo, onMemo, cards, cardId, onCard }: Props) {
   const selected = cards?.find((c) => c.articleId === cardId);
   const source = selected ? getArticle(selected.articleId)?.sources[0] : undefined;
   const id = `outline-${label.replace(/\W+/g, "-")}`;
 
   return (
-    <div className="box">
-      <h3 className="section-title">{label}</h3>
+    // 外側のカードの中で、欄どうしを罫線で区切る
+    <div className="border-t border-line pt-4 first:border-t-0 first:pt-0">
+      <h3 className="mb-1 text-base font-bold">
+        {label}（{labelJa}）
+      </h3>
+      <p className="muted mb-2">{guide}</p>
       {cards && onCard && (
         <div className="mb-2">
           <label className="field-label" htmlFor={`${id}-card`}>

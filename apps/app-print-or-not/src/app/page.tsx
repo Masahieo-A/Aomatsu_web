@@ -1,92 +1,80 @@
 "use client";
-// S0 Start: クラスと出席番号だけを入力する（氏名・メールは扱わない）
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+// トップ = 記事を探す画面。左（約2/3）に課題・検索・進め方、右（約1/3）に全記事一覧
+import Link from "next/link";
+import RequireStudent from "@/components/RequireStudent";
+import ArticleIndex from "@/components/home/ArticleIndex";
+import ArticleSearch from "@/components/home/ArticleSearch";
+import StepsPanel from "@/components/home/StepsPanel";
+import { cardCounts, cardsRemaining, mySide } from "@/lib/progress";
 import { useStudent } from "@/lib/store";
+import type { StudentState } from "@/lib/types";
 
-export default function StartPage() {
-  const { ready, state, settings, start, signOut } = useStudent();
-  const router = useRouter();
-  const [classId, setClassId] = useState("");
-  const [num, setNum] = useState("");
-  const [error, setError] = useState("");
+export default function HomePage() {
+  return <RequireStudent>{(s) => <Home s={s} />}</RequireStudent>;
+}
 
-  const submit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const n = Number(num);
-    if (!settings.classes.includes(classId)) return setError("クラスを選んでください。");
-    if (!Number.isInteger(n) || n < 1 || n > 60) return setError("出席番号は 1〜60 の数字で入力してください。");
-    start(classId, n);
-    router.push("/hook");
-  };
+function Home({ s }: { s: StudentState }) {
+  const { settings, reset } = useStudent();
+  const side = mySide(s);
+  const counts = cardCounts(s);
+  const totalCards = Object.keys(s.cards).length;
 
-  if (!ready) return <div className="page muted">読み込み中…</div>;
+  // 次にやること（S5 は2本目の後、S5-2 は反対側を読んだ後、S6 は Card がそろった後に挟む）
+  let next: { href: string; label: string; note: string } | null = null;
+  if (totalCards >= 2 && !s.sortDone) {
+    next = { href: "/sort", label: "Emotion or Evidence? へ", note: "Card が2枚できました。ここで一度「感情論か、根拠ありか」を仕分けます。" };
+  } else if (counts.other >= 1 && !s.trapDone && settings.trapRequired) {
+    next = { href: "/trap", label: "Trap or Treasure? へ", note: "反対側の記事を読んだので、強そうで弱い根拠を見抜く練習をします。" };
+  } else if (side && cardsRemaining(s) === 0 && s.stanceAfter === undefined) {
+    next = { href: "/stance", label: "Stance Check へ", note: "Card がそろいました。読んだあとの立場をもう一度選びます。" };
+  }
 
   return (
-    <div className="page">
-      <h1 className="page-title">PRINT or NOT?</h1>
-      <div className="box mb-6">
-        <p className="font-semibold">Should 3D-printed food become more widespread, or should it be restricted?</p>
-        <p className="mt-2 text-sm">
-          3D-printed food = food made by a machine that puts soft food (paste) layer by layer to make a shape.
-        </p>
-      </div>
+    <div className="mx-auto w-full max-w-6xl px-4 py-6">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="min-w-0 space-y-6 md:col-span-2">
+          <section className="box" aria-labelledby="topic-title">
+            <h1 id="topic-title" className="page-title !mb-2">
+              PRINT or NOT?
+            </h1>
+            <p className="font-semibold">Should 3D-printed food become more widespread, or should it be restricted?</p>
+            <p className="muted">3Dプリント食品は、もっと広めるべき？ それとも制限すべき？</p>
+            <div className="mt-3 border-t border-line pt-3 text-sm">
+              <p>3D-printed food = food made by a machine that puts soft food (paste) layer by layer to make a shape.</p>
+              <p className="muted">3Dプリント食品＝やわらかい食材（ペースト）を機械が一層ずつ重ねて、形を作った食べ物。</p>
+            </div>
+          </section>
 
-      {state ? (
-        <div className="box">
-          <p>
-            {state.classId}・{state.number}番 で続きから始めます。
-          </p>
-          <div className="mt-4 flex flex-wrap gap-2">
-            <button className="btn" onClick={() => router.push(state.hookDone ? "/map" : "/hook")}>
-              続きから
-            </button>
+          {next && (
+            <section className="box border-2 border-accent" aria-label="次にやること">
+              <p className="text-sm font-semibold">次にやること</p>
+              <p className="mt-1 text-sm">{next.note}</p>
+              <Link href={next.href} className="btn mt-2">
+                {next.label}
+              </Link>
+            </section>
+          )}
+
+          <ArticleSearch s={s} />
+          <StepsPanel s={s} />
+
+          <p className="text-right text-xs">
             <button
-              className="btn-secondary"
+              type="button"
+              className="text-muted underline"
               onClick={() => {
-                if (confirm("この端末の作業記録を消して、別の番号で始めますか？")) signOut();
+                if (confirm("この端末の記録（立場・Card・下書き）をすべて消して、最初からにしますか？")) reset();
               }}
             >
-              別の番号で始める
+              この端末の記録を消す
             </button>
-          </div>
+          </p>
         </div>
-      ) : (
-        <form onSubmit={submit} className="box space-y-4">
-          <div>
-            <label className="field-label" htmlFor="class">
-              クラス
-            </label>
-            <select id="class" className="field" value={classId} onChange={(e) => setClassId(e.target.value)}>
-              <option value="">選んでください</option>
-              {settings.classes.map((c) => (
-                <option key={c} value={c}>
-                  {c}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div>
-            <label className="field-label" htmlFor="num">
-              出席番号
-            </label>
-            <input
-              id="num"
-              className="field"
-              inputMode="numeric"
-              pattern="[0-9]*"
-              maxLength={2}
-              value={num}
-              onChange={(e) => setNum(e.target.value.replace(/\D/g, ""))}
-            />
-            <p className="muted mt-1">名前は入力しません。</p>
-          </div>
-          {error && <p className="error-text">{error}</p>}
-          <button type="submit" className="btn w-full">
-            始める
-          </button>
-        </form>
-      )}
+
+        <aside className="min-w-0 md:sticky md:top-[68px] md:max-h-[calc(100vh-84px)] md:self-start md:overflow-y-auto">
+          <ArticleIndex s={s} mySide={side} />
+        </aside>
+      </div>
     </div>
   );
 }

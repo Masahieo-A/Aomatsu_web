@@ -2,6 +2,8 @@
   "id": "con-03",
   "side": "con",
   "hookTitle": "Is printed food \"ultra-processed\"?",
+  "hookTitleJa": "プリントした食べ物は「超加工食品」？",
+  "summaryJa": "超加工食品と健康の関係を調べた研究と、それを3Dプリント食品にそのまま当てはめられない理由を紹介します。",
   "point": "health-unknown",
   "difficulty": 2,
   "minutes": 6,

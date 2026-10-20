@@ -30,7 +30,9 @@ export default function ReadAloud({ paragraphs }: { paragraphs: string[] }) {
   const start = () => {
     window.speechSynthesis.cancel();
     // 長い文をまとめて読むと途中で止まる端末があるため、文ごとに分けて順に読む
-    const sentences = paragraphs.flatMap((p) => splitSentences(p)).filter((x) => x.trim());
+    const sentences = paragraphs
+      .flatMap((p) => splitSentences(p))
+      .filter((x) => x.trim());
     if (sentences.length === 0) return;
     sentences.forEach((sent, i) => {
       const u = new SpeechSynthesisUtterance(sent);
@@ -45,7 +47,12 @@ export default function ReadAloud({ paragraphs }: { paragraphs: string[] }) {
   };
 
   return (
-    <button type="button" className="btn-secondary" onClick={speaking ? stop : start} aria-pressed={speaking}>
+    <button
+      type="button"
+      className="btn-secondary"
+      onClick={speaking ? stop : start}
+      aria-pressed={speaking}
+    >
       {speaking ? "■ 読み上げを止める" : "▶ 読み上げ（Lv1）"}
     </button>
   );

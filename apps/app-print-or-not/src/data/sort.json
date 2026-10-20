@@ -1,10 +1,58 @@
 [
-  { "id": "s1", "text": "Artificial food seems bad for our bodies.", "answer": "emotion", "fix": "「seems」で終わっている。何の事実でそう言える？ 誰の研究？" },
-  { "id": "s2", "text": "Some printer parts cannot be taken apart and washed, and bacteria can grow there (University of Alberta).", "answer": "evidence", "fix": "誰が調べたか（University of Alberta）と、具体的な問題（洗えない部品・細菌）が書いてある。" },
-  { "id": "s3", "text": "It is the future, so it is cool.", "answer": "emotion", "fix": "「cool」は気持ち。誰にとって、何がどう良くなるのかの事実が必要。" },
-  { "id": "s4", "text": "About half of the people in care homes have trouble swallowing (CSIRO). Soft food in a real shape can help them enjoy meals.", "answer": "evidence", "fix": "数字（about half）と出典（CSIRO）があり、だから何が良いのかも書いてある。" },
-  { "id": "s5", "text": "I don't want to eat food made by machines.", "answer": "emotion", "fix": "自分の好き嫌いは、読む人を説得する根拠にならない。安全・費用などの事実で言い直す。" },
-  { "id": "s6", "text": "A report for the UK Food Standards Agency (2023) says there were no rules made especially for 3D food printing.", "answer": "evidence", "fix": "公的機関向けの報告で、年（2023）も書いてあるので確かめられる。" },
-  { "id": "s7", "text": "Printed food looks strange, so nobody will buy it.", "answer": "emotion", "fix": "「nobody」は確かめていない思い込み。調査の数字は？" },
-  { "id": "s8", "text": "In Japan, about 4.6 million tons of food that could still be eaten was thrown away in 2024 (Japanese government).", "answer": "evidence", "fix": "数字・年・出典（日本政府）がそろっている。" }
+  {
+    "id": "s1",
+    "text": "Artificial food seems bad for our bodies.",
+    "ja": "人工の食べ物は、体に悪そうです。",
+    "answer": "emotion",
+    "fix": "「seems」で終わっている。何の事実でそう言える？ 誰の研究？"
+  },
+  {
+    "id": "s2",
+    "text": "Some printer parts cannot be taken apart and washed, and bacteria can grow there (University of Alberta).",
+    "ja": "プリンターの部品には、分解して洗えないものがあり、そこで細菌が増えることがあります（アルバータ大学）。",
+    "answer": "evidence",
+    "fix": "誰が調べたか（University of Alberta）と、具体的な問題（洗えない部品・細菌）が書いてある。"
+  },
+  {
+    "id": "s3",
+    "text": "It is the future, so it is cool.",
+    "ja": "それは未来のものなので、かっこいいです。",
+    "answer": "emotion",
+    "fix": "「cool」は気持ち。誰にとって、何がどう良くなるのかの事実が必要。"
+  },
+  {
+    "id": "s4",
+    "text": "About half of the people in care homes have trouble swallowing (CSIRO). Soft food in a real shape can help them enjoy meals.",
+    "ja": "介護施設にいる人の約半数は、飲み込みにくさを抱えています（CSIRO）。本物の形をしたやわらかい食べ物は、食事を楽しむ助けになります。",
+    "answer": "evidence",
+    "fix": "数字（about half）と出典（CSIRO）があり、だから何が良いのかも書いてある。"
+  },
+  {
+    "id": "s5",
+    "text": "I don't want to eat food made by machines.",
+    "ja": "機械で作られた食べ物は食べたくありません。",
+    "answer": "emotion",
+    "fix": "自分の好き嫌いは、読む人を説得する根拠にならない。安全・費用などの事実で言い直す。"
+  },
+  {
+    "id": "s6",
+    "text": "A report for the UK Food Standards Agency (2023) says there were no rules made especially for 3D food printing.",
+    "ja": "英国食品基準庁向けの報告書（2023年）によると、3Dフードプリンティング専用に作られたルールはありませんでした。",
+    "answer": "evidence",
+    "fix": "公的機関向けの報告で、年（2023）も書いてあるので確かめられる。"
+  },
+  {
+    "id": "s7",
+    "text": "Printed food looks strange, so nobody will buy it.",
+    "ja": "プリントされた食べ物は変わった見た目なので、誰も買わないでしょう。",
+    "answer": "emotion",
+    "fix": "「nobody」は確かめていない思い込み。調査の数字は？"
+  },
+  {
+    "id": "s8",
+    "text": "In Japan, about 4.6 million tons of food that could still be eaten was thrown away in 2024 (Japanese government).",
+    "ja": "日本では2024年に、まだ食べられる食品が約460万トン捨てられました（日本政府）。",
+    "answer": "evidence",
+    "fix": "数字・年・出典（日本政府）がそろっている。"
+  }
 ]

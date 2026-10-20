@@ -14,8 +14,8 @@ export default function CardForm({ id, s }: { id: string; s: StudentState }) {
     return (
       <div className="page">
         <p className="mb-3">記事が見つかりません。</p>
-        <Link href="/map" className="btn-secondary">
-          記事の一覧へ
+        <Link href="/" className="btn-secondary">
+          記事一覧に戻る
         </Link>
       </div>
     );
@@ -84,15 +84,22 @@ function Form({ article, s }: { article: Article; s: StudentState }) {
 
   return (
     <div className="page">
-      <h1 className="page-title">Evidence Card</h1>
-      <p className="mb-4 text-base">{article.hookTitle}</p>
+      <header className="mb-4">
+        <h1 className="page-title">Evidence Card（根拠カード）</h1>
+        <p className="muted mb-3">
+          記事から根拠を1つ選び、自分の英語で書き直して、「だから何が言えるか」を書きます。下の欄を上から順に埋めてください。
+        </p>
+        <p className="text-base font-semibold" lang="en">
+          {article.hookTitle}
+        </p>
+      </header>
 
       <section className="box mb-4">
         <div className="mb-2 flex items-center gap-2">
-          <span className="text-sm font-semibold">Side</span>
+          <span className="text-sm font-semibold">Side（立場）</span>
           <SideBadge side={article.side} />
         </div>
-        <h2 className="field-label">Source</h2>
+        <h2 className="field-label">Source（出典）</h2>
         <ul className="space-y-1 text-sm">
           {article.sources.map((src, i) => (
             <li key={i}>
@@ -239,8 +246,8 @@ function Form({ article, s }: { article: Article; s: StudentState }) {
         <button type="button" className="btn" onClick={save}>
           {prev || saved ? "Card を更新する" : "Card を保存する"}
         </button>
-        <Link href="/map" className="btn-secondary">
-          {saved ? "一覧へ戻る" : "保存せず戻る"}
+        <Link href="/" className="btn-secondary">
+          記事一覧に戻る
         </Link>
       </div>
       {saved && (

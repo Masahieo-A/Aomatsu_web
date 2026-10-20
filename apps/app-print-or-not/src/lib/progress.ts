@@ -41,8 +41,8 @@ export interface GateItem {
 export function gateItems(s: StudentState, settings: Settings): GateItem[] {
   const { mine, other } = cardCounts(s);
   const items: GateItem[] = [
-    { key: "mine", label: `自分の側の Evidence Card ${Math.min(mine, NEED_MINE)}/${NEED_MINE}`, done: mine >= NEED_MINE, href: "/map" },
-    { key: "other", label: `反対側の Evidence Card ${Math.min(other, NEED_OTHER)}/${NEED_OTHER}`, done: other >= NEED_OTHER, href: "/map" },
+    { key: "mine", label: `自分の側の Evidence Card ${Math.min(mine, NEED_MINE)}/${NEED_MINE}`, done: mine >= NEED_MINE, href: "/" },
+    { key: "other", label: `反対側の Evidence Card ${Math.min(other, NEED_OTHER)}/${NEED_OTHER}`, done: other >= NEED_OTHER, href: "/" },
     { key: "sort", label: "Emotion or Evidence?", done: s.sortDone, href: "/sort" },
     { key: "stance", label: "Stance Check（立場の再表明）", done: s.stanceAfter !== undefined, href: "/stance" },
   ];

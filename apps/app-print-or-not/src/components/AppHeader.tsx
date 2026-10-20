@@ -1,9 +1,6 @@
-"use client";
 import Link from "next/link";
-import { useStudent } from "@/lib/store";
 
 export default function AppHeader() {
-  const { state } = useStudent();
   return (
     <header className="sticky top-0 z-50 flex h-[52px] items-center gap-3 border-b border-line bg-white px-4">
       <a
@@ -14,14 +11,9 @@ export default function AppHeader() {
         <span className="hidden sm:inline">English Hub</span>
       </a>
       <span className="text-line">›</span>
-      <Link href={state ? "/map" : "/"} className="truncate text-sm font-semibold text-ink no-underline">
+      <Link href="/" className="truncate text-sm font-semibold text-ink no-underline">
         PRINT or NOT?
       </Link>
-      {state && (
-        <span className="ml-auto shrink-0 text-xs text-muted">
-          {state.classId}・{state.number}番
-        </span>
-      )}
     </header>
   );
 }

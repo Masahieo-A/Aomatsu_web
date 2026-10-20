@@ -4,6 +4,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import RequireStudent from "@/components/RequireStudent";
+import JaToggle from "@/components/card/JaToggle";
 import { useStudent } from "@/lib/store";
 import type { StudentState } from "@/lib/types";
 import items from "@/data/sort.json";
@@ -50,13 +51,14 @@ function Sort({ s }: { s: StudentState }) {
         onDragEnd={() => setDragId(null)}
         className={`box cursor-grab ${isWrong ? "border-red-700" : ""}`}
       >
-        <p>{i.text}</p>
+        <p lang="en">{i.text}</p>
+        <JaToggle ja={i.ja} />
         <div className="mt-2 flex flex-wrap gap-2">
           {(["emotion", "evidence"] as Kind[]).map((k) => (
             <button
               key={k}
               type="button"
-              className={placed[i.id] === k ? "btn-small border-accent bg-accent-dim font-semibold" : "btn-small"}
+              className={placed[i.id] === k ? "btn-small min-h-11 border-accent bg-accent-dim font-semibold" : "btn-small min-h-11"}
               aria-pressed={placed[i.id] === k}
               onClick={() => place(i.id, k)}
             >
@@ -88,10 +90,12 @@ function Sort({ s }: { s: StudentState }) {
 
   return (
     <div className="page space-y-4">
-      <h1 className="page-title">Emotion or Evidence?</h1>
-      <p className="muted">
-        8つの文を「感情論」と「根拠あり」に分けてください。ドラッグするか、ボタンで選びます。見分け方：誰が読んでも確かめられる事実が入っているか。
-      </p>
+      <header>
+        <h1 className="page-title">Emotion or Evidence?（感情論か、根拠ありか）</h1>
+        <p className="muted">
+          8つの英文を、「感情論」（気持ちや思い込み）と「根拠あり」（誰でも確かめられる事実）に仕分けます。パソコンではドラッグ、スマホではボタンで選びます。英文が分かりにくいときは「日本語訳」を押してください。
+        </p>
+      </header>
 
       {unplaced.length > 0 && <ul className="space-y-2">{unplaced.map(renderItem)}</ul>}
 
@@ -103,8 +107,8 @@ function Sort({ s }: { s: StudentState }) {
       {allCorrect ? (
         <div className="box">
           <p className="font-semibold">✓ 全問正解。感情論は、読む人が確かめられないので説得力がありません。</p>
-          <Link href="/map" className="btn mt-3">
-            Article Map に戻る
+          <Link href="/" className="btn mt-3">
+            記事一覧に戻る
           </Link>
         </div>
       ) : (

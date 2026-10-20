@@ -51,6 +51,8 @@ export interface Article {
   id: string; // "pro-01" など
   side: Side;
   hookTitle: string; // 問いの形の見出し
+  hookTitleJa: string; // 見出しの日本語訳
+  summaryJa: string; // 記事の内容（日本語1〜2文。一覧・検索用）
   point: string; // 主な論点 ID（points.json）
   difficulty: 1 | 2 | 3;
   minutes: number;
@@ -110,8 +112,6 @@ export interface WritingDraft {
 
 export interface StudentState {
   version: 1;
-  classId: string;
-  number: number;
   stanceBefore?: number; // 1〜5（1=広めるべき, 5=制限すべき）
   stanceAfter?: number;
   stanceReason?: string;
@@ -130,7 +130,6 @@ export interface StudentState {
 }
 
 export interface Settings {
-  classes: string[];
   soWhatJaAllowed: boolean; // So what を日本語でも可にするか
   wordMin: number;
   wordMax: number;

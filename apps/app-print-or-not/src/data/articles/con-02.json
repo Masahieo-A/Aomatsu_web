@@ -2,6 +2,8 @@
   "id": "con-02",
   "side": "con",
   "hookTitle": "Would you pay 770,000 yen for a food printer?",
+  "hookTitleJa": "77万円の食品プリンター、あなたなら買う？",
+  "summaryJa": "業務用プリンターの価格、大量生産に向かない遅さ、家庭で使うために必要な条件を紹介します。",
   "point": "cost-practical",
   "difficulty": 2,
   "minutes": 5,

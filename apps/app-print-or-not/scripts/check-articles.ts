@@ -21,6 +21,7 @@ for (const id of ids) {
 
   if (a.id !== id) errors.push(`id が ${a.id}（ファイル名は ${id}）`);
   if (!a.hookTitle.endsWith("?")) errors.push("hookTitle が問いの形（?で終わる）でない");
+  if (!a.hookTitleJa || !a.summaryJa) errors.push("hookTitleJa / summaryJa が空");
   if (!a.sources.length) errors.push("sources が空");
   for (const s of a.sources) {
     if (!/^https?:\/\//.test(s.url)) errors.push(`URL不正: ${s.url}`);

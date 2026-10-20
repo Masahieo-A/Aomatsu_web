@@ -5,6 +5,7 @@
     {
       "id": "tf1",
       "statement": "A space agency decided to pay a company to make a food printer.",
+      "ja": "宇宙機関が、フードプリンターを作る会社にお金を払うことを決めました。",
       "answer": true,
       "articleId": "pro-04",
       "explain": "In 2013, NASA decided to give 125,000 dollars to a company for a test food printer."
@@ -12,6 +13,7 @@
     {
       "id": "tf2",
       "statement": "One country in Europe made a law to stop the making and selling of lab-grown meat.",
+      "ja": "ヨーロッパのある国が、培養肉を作ることと売ることをやめさせる法律を作りました。",
       "answer": true,
       "articleId": "con-04",
       "explain": "Italy banned the making and selling of lab-grown meat in November 2023."
@@ -19,6 +21,7 @@
     {
       "id": "tf3",
       "statement": "A food printer can make one piece of sushi in about 30 seconds.",
+      "ja": "フードプリンターは、約30秒で寿司を1貫作ることができます。",
       "answer": false,
       "articleId": "pro-02",
       "explain": "It takes about six or seven minutes to print one piece."

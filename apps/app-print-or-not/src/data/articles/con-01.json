@@ -2,6 +2,8 @@
   "id": "con-01",
   "side": "con",
   "hookTitle": "Who checks if a food printer is clean?",
+  "hookTitleJa": "食品プリンターが清潔かどうか、誰がチェックするの？",
+  "summaryJa": "3Dフードプリンター専用のルールが世界になかったこと（2023年）や、洗いにくい部品と細菌の問題を紹介します。",
   "point": "no-rules",
   "difficulty": 2,
   "minutes": 5,

@@ -9,11 +9,9 @@ const STATE_KEY = "pon:v1:state";
 // 旧版（共有DBあり）で使っていた送信キュー。残っていれば片付ける
 const LEGACY_QUEUE_KEY = "pon:v1:queue";
 
-export function emptyState(classId: string, number: number): StudentState {
+export function emptyState(): StudentState {
   return {
     version: 1,
-    classId,
-    number,
     hookDone: false,
     hookAnswers: {},
     readArticles: [],
@@ -51,9 +49,8 @@ interface StudentCtx {
   ready: boolean;
   state: StudentState | null;
   settings: Settings;
-  start: (classId: string, number: number) => void;
   update: (fn: (s: StudentState) => StudentState) => void;
-  signOut: () => void;
+  reset: () => void;
 }
 
 const Ctx = createContext<StudentCtx | null>(null);
@@ -66,18 +63,16 @@ export function StudentProvider({ children }: { children: React.ReactNode }) {
     try {
       localStorage.removeItem(LEGACY_QUEUE_KEY);
     } catch {}
+    // 出席番号などの入力は求めず、初回は空の記録を作ってすぐ記事を探せるようにする
+    let s = readState();
+    if (!s) {
+      s = emptyState();
+      writeState(s);
+    }
     // localStorage はブラウザでしか読めないため、マウント後に読み込む
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    setState(readState());
+    setState(s);
     setReady(true);
-  }, []);
-
-  const start = useCallback((classId: string, number: number) => {
-    const cur = readState();
-    // 同じ端末で別の出席番号に切り替えた場合は、前の人の作業を引き継がない
-    const next = cur && cur.classId === classId && cur.number === number ? cur : emptyState(classId, number);
-    writeState(next);
-    setState(next);
   }, []);
 
   const update = useCallback((fn: (s: StudentState) => StudentState) => {
@@ -88,14 +83,16 @@ export function StudentProvider({ children }: { children: React.ReactNode }) {
     setState(next);
   }, []);
 
-  const signOut = useCallback(() => {
-    writeState(null);
-    setState(null);
+  // 端末を別の生徒が使うときなどに、記録を最初からにする
+  const reset = useCallback(() => {
+    const next = emptyState();
+    writeState(next);
+    setState(next);
   }, []);
 
   const value = useMemo(
-    () => ({ ready, state, settings: DEFAULT_SETTINGS, start, update, signOut }),
-    [ready, state, start, update, signOut],
+    () => ({ ready, state, settings: DEFAULT_SETTINGS, update, reset }),
+    [ready, state, update, reset],
   );
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
 }

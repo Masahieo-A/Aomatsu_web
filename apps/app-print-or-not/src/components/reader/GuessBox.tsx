@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { guessKey, useStudent } from "@/lib/store";
 import type { Article, HiddenNumber } from "@/lib/types";
+import SectionCard from "./SectionCard";
 
 function fmt(n: number): string {
   return n.toLocaleString("en-US");
@@ -19,10 +20,20 @@ export function diffMessage(guess: number, answer: number): string {
   const r = answer / guess;
   if (r >= 1.5) return `あなたの予想より約${ratioText(r)}倍多い`;
   if (r <= 0.67) return `あなたの予想の約${ratioText(r)}倍（予想より少ない）`;
-  return answer > guess ? "あなたの予想より少し多い" : "あなたの予想より少し少ない";
+  return answer > guess
+    ? "あなたの予想より少し多い"
+    : "あなたの予想より少し少ない";
 }
 
-export default function GuessBox({ article, index, h }: { article: Article; index: number; h: HiddenNumber }) {
+export default function GuessBox({
+  article,
+  index,
+  h,
+}: {
+  article: Article;
+  index: number;
+  h: HiddenNumber;
+}) {
   const { state, update } = useStudent();
   const key = guessKey(article.id, index);
   const saved = state?.guesses[key];
@@ -42,27 +53,43 @@ export default function GuessBox({ article, index, h }: { article: Article; inde
 
   if (saved !== undefined) {
     return (
-      <div className="box my-4" role="status">
-        <p className="muted mb-1">数字当て：{h.label}</p>
+      <SectionCard
+        ja="クイズ 数字当て"
+        en="Guess the number"
+        variant="quiz"
+        className="my-4"
+      >
+        <p className="muted mb-1">{h.label}</p>
         <p className="mb-1">
           あなたの予想：<b>{fmt(saved)}</b> {h.unit}
         </p>
-        <p className="mb-1">
+        <p className="mb-1" role="status">
           答え：<b>{h.display}</b>（{fmt(h.answer)} {h.unit}）
         </p>
         <p className="font-semibold">{diffMessage(saved, h.answer)}</p>
-      </div>
+      </SectionCard>
     );
   }
 
   const step = max - min >= 100 ? 1 : (max - min) / 100;
 
   return (
-    <div className="box my-4">
-      <p className="mb-1 font-semibold">数字当て：{h.label}</p>
-      <p className="muted mb-2">？？？に入る数を予想してから答えを見る。単位：{h.unit}</p>
+    <SectionCard
+      ja="クイズ 数字当て"
+      en="Guess the number"
+      variant="quiz"
+      className="my-4"
+    >
+      <p className="mb-1 font-semibold">{h.label}</p>
+      <p className="mb-2 text-sm">
+        本文の ？？？ に入る数を予想してから答えを見よう。単位：{h.unit}
+      </p>
       {hasChoices ? (
-        <div className="mb-3 grid grid-cols-2 gap-2" role="radiogroup" aria-label={h.label}>
+        <div
+          className="mb-3 grid grid-cols-2 gap-2"
+          role="radiogroup"
+          aria-label={h.label}
+        >
           {h.choices!.map((c) => (
             <button
               key={c}
@@ -71,7 +98,9 @@ export default function GuessBox({ article, index, h }: { article: Article; inde
               aria-checked={pick === c}
               onClick={() => setPick(c)}
               className={`min-h-11 rounded-lg border px-3 py-2 text-base ${
-                pick === c ? "border-accent bg-accent-dim font-semibold" : "border-line bg-white"
+                pick === c
+                  ? "border-accent bg-accent-dim font-semibold"
+                  : "border-line bg-white"
               }`}
             >
               {pick === c ? "✓ " : ""}
@@ -96,14 +125,23 @@ export default function GuessBox({ article, index, h }: { article: Article; inde
           />
           <p className="text-center">
             <b>{fmt(slider)}</b> {h.unit}
-            <span className="muted">（{fmt(min)}〜{fmt(max)}）</span>
+            <span className="muted">
+              （{fmt(min)}〜{fmt(max)}）
+            </span>
           </p>
-          {!touched && <p className="muted text-center">スライダーを動かして予想する</p>}
+          {!touched && (
+            <p className="muted text-center">スライダーを動かして予想する</p>
+          )}
         </div>
       )}
-      <button type="button" className="btn" disabled={current === undefined} onClick={reveal}>
+      <button
+        type="button"
+        className="btn"
+        disabled={current === undefined}
+        onClick={reveal}
+      >
         予想を決めて答えを見る
       </button>
-    </div>
+    </SectionCard>
   );
 }

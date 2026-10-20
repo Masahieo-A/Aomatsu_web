@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import RequireStudent from "@/components/RequireStudent";
+import JaToggle from "@/components/card/JaToggle";
 import { useStudent } from "@/lib/store";
 import type { StudentState } from "@/lib/types";
 import cards from "@/data/trap.json";
@@ -31,26 +32,29 @@ function Trap({ s }: { s: StudentState }) {
 
   return (
     <div className="page space-y-4">
-      <h1 className="page-title">Trap or Treasure?</h1>
-      <p className="muted">
-        Writing で使えそうな根拠です。そのまま使える（Treasure）か、危ない（Trap）かを判定してください。
-        {settings.trapRequired ? "" : "（任意）"}
-      </p>
+      <header>
+        <h1 className="page-title">Trap or Treasure?（使える根拠か、危ない根拠か）</h1>
+        <p className="muted">
+          Writing Builder（英作文の組み立て）で使えそうな根拠が6つあります。そのまま使える（Treasure）か、危ない（Trap）かを判定します。判定すると、理由と「こう書けば使える」例が出ます。
+          {settings.trapRequired ? "" : "この活動は任意です。"}
+        </p>
+      </header>
       <ol className="space-y-3">
         {cards.map((c, i) => {
           const p = picks[c.id];
           return (
             <li key={c.id} className="box">
-              <p className="font-semibold">
+              <p className="font-semibold" lang="en">
                 {i + 1}. {c.text}
               </p>
+              <JaToggle ja={c.ja} />
               <div className="mt-2 flex flex-wrap gap-2">
                 {(["treasure", "trap"] as Verdict[]).map((v) => (
                   <button
                     key={v}
                     type="button"
                     disabled={!!p}
-                    className={p === v ? "btn-small border-accent bg-accent-dim font-semibold" : "btn-small"}
+                    className={p === v ? "btn-small min-h-11 border-accent bg-accent-dim font-semibold" : "btn-small min-h-11"}
                     onClick={() => pick(c.id, v)}
                   >
                     {p === v && "✓ "}
@@ -67,10 +71,15 @@ function Trap({ s }: { s: StudentState }) {
                     ：{c.answer === "treasure" ? ("conditional" in c && c.conditional ? "条件つき Treasure" : "Treasure") : "Trap"}
                   </p>
                   <p>{c.why}</p>
-                  <p>
-                    <span className="font-semibold">こう書けば使える：</span>
-                    <span lang="en">{c.rewrite}</span>
-                  </p>
+                  <div>
+                    <p>
+                      <span className="font-semibold">こう書けば使える：</span>
+                      <span lang="en">{c.rewrite}</span>
+                    </p>
+                    <p lang="ja" className="mt-1 border-l-4 border-line pl-3 text-muted">
+                      {c.rewriteJa}
+                    </p>
+                  </div>
                 </div>
               )}
             </li>
@@ -82,8 +91,8 @@ function Trap({ s }: { s: StudentState }) {
           <p>
             {cards.length}問中 {correct}問 正解。Trap の書き直し例は、反対意見への反論（Rebuttal）にも使えます。
           </p>
-          <Link href="/map" className="btn mt-3">
-            Article Map に戻る
+          <Link href="/" className="btn mt-3">
+            記事一覧に戻る
           </Link>
         </div>
       )}

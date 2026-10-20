@@ -2,15 +2,14 @@
 
 高校3年生向けの期間限定 Web アプリ。Writing 課題「Should 3D-printed food become more widespread, or should it be restricted?」の準備として、賛成側・反対側の短い記事を読み、根拠を Evidence Card に整理してから Writing Builder で書く。
 
-DB・外部API・環境変数は使わない。生徒の作業（立場・Card・下書き）は**その端末のブラウザ内（localStorage）だけ**に保存され、サーバーには送られない。完成した本文はコピーして Google Classroom に提出する。同じ端末で別の出席番号を入力すると、前の人の記録は引き継がれない。
+DB・外部API・環境変数は使わない。生徒の作業（立場・Card・下書き）は**その端末のブラウザ内（localStorage）だけ**に保存され、サーバーには送られない。完成した本文はコピーして Google Classroom に提出する。出席番号などの入力はなく、開くとすぐ記事を探せる。端末を別の生徒が使うときは、トップ下の「この端末の記録を消す」で最初からにする。
 
 ## 画面一覧
 
 | パス | 画面 |
 |---|---|
-| `/` | S0 Start（クラス・出席番号） |
-| `/hook` | S1 Hook（クイズ・立場メーター） |
-| `/map` | S2 Article Map |
+| `/` | 記事を探す（左2/3：課題・検索・進め方と最初の立場、右1/3：全記事一覧）。旧 S0/S2 を統合 |
+| `/hook` | S1 Warm-up（True or False・任意） |
 | `/read/[id]` | S3 Reader |
 | `/card/[id]` | S4 Evidence Card |
 | `/sort` | S5 Emotion or Evidence? |
@@ -32,7 +31,6 @@ npm run dev                  # http://localhost:3000
 
 | キー | 内容 | 既定 |
 |---|---|---|
-| `classes` | Start 画面のクラス一覧 | 3-1〜3-8 |
 | `soWhatJaAllowed` | So what? を日本語でも可にする | false |
 | `wordMin` / `wordMax` | Writing Builder の目標語数 | 130 / 170 |
 | `trapRequired` | Trap or Treasure? を Writing Builder の必須条件にする | false |

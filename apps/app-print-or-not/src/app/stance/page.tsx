@@ -38,11 +38,19 @@ function Stance({ s }: { s: StudentState }) {
 
   return (
     <div className="page space-y-6">
-      <h1 className="page-title">Stance Check</h1>
+      <header>
+        <h1 className="page-title">Stance Check（立場の確認）</h1>
+        <p className="muted">記事を読んだ後の立場を選び、最初の立場とどう変わったかを確かめます。</p>
+      </header>
 
       <section className="box space-y-3">
-        <p className="text-sm">最初の立場：{stanceText(s.stanceBefore)}</p>
-        <p className="muted">記事を読んだ今、どう考えますか。</p>
+        <p className="text-sm">
+          <span className="font-semibold">Before（最初の立場）：</span>
+          {stanceText(s.stanceBefore)}
+        </p>
+        <p className="font-semibold">
+          After（今の立場）：<span className="font-normal">記事を読んだ今、どう考えますか。</span>
+        </p>
         <StanceMeter
           name="after"
           value={value}
@@ -54,12 +62,12 @@ function Stance({ s }: { s: StudentState }) {
         {value !== undefined && <p className="font-semibold">{diffText(s.stanceBefore, value)}</p>}
         {sideAfter && sideBefore && sideAfter !== sideBefore && (
           <p className="flex flex-wrap items-center gap-2 text-sm">
-            自分の側が <SideBadge side={sideAfter} /> に変わります。作成済みの Card は消えず、反対側の Card として数えます。
+            自分の側が <SideBadge side={sideAfter} /> に変わります。作成済みの Evidence Card は消えず、反対側の Card として数えます。
           </p>
         )}
         <div>
           <label className="field-label" htmlFor="reason">
-            立場が変わった／変わらなかった理由（任意・1文）
+            Reason（理由）：立場が変わった／変わらなかった理由（任意・1文）
           </label>
           <input
             id="reason"
@@ -77,8 +85,8 @@ function Stance({ s }: { s: StudentState }) {
         </button>
       </section>
 
-      <Link href="/map" className="btn-secondary">
-        Article Map に戻る
+      <Link href="/" className="btn-secondary">
+        記事一覧に戻る
       </Link>
     </div>
   );

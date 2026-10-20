@@ -2,6 +2,7 @@
 // Hook（導入）の True/False 問題のうち、この記事に対応するものの答え合わせ。
 import { useStudent } from "@/lib/store";
 import hookJson from "@/data/hook.json";
+import SectionCard from "./SectionCard";
 
 interface HookTF {
   id: string;
@@ -22,15 +23,15 @@ function toBool(v: string | undefined): boolean | undefined {
   return undefined;
 }
 
-const label = (b: boolean | undefined) => (b === undefined ? "未回答" : b ? "True" : "False");
+const label = (b: boolean | undefined) =>
+  b === undefined ? "未回答" : b ? "True" : "False";
 
 export default function HookCheck({ articleId }: { articleId: string }) {
   const { state } = useStudent();
   const qs = TF.filter((q) => q.articleId === articleId);
   if (qs.length === 0 || !state) return null;
   return (
-    <section className="box my-6">
-      <h2 className="section-title">Hook の問題</h2>
+    <SectionCard ja="ウォームアップの答え" en="Hook" className="mt-4">
       <ul className="space-y-4">
         {qs.map((q) => {
           const mine = toBool(state.hookAnswers[q.id]);
@@ -39,7 +40,11 @@ export default function HookCheck({ articleId }: { articleId: string }) {
               <p className="mb-1">{q.statement}</p>
               <p className="text-sm">
                 あなたの答え：<b>{label(mine)}</b>
-                {mine !== undefined && <b className="ml-2">{mine === q.answer ? "✓ 正解" : "✗ 不正解"}</b>}
+                {mine !== undefined && (
+                  <b className="ml-2">
+                    {mine === q.answer ? "✓ 正解" : "✗ 不正解"}
+                  </b>
+                )}
               </p>
               <p className="text-sm">
                 正解：<b>{label(q.answer)}</b>
@@ -49,6 +54,6 @@ export default function HookCheck({ articleId }: { articleId: string }) {
           );
         })}
       </ul>
-    </section>
+    </SectionCard>
   );
 }

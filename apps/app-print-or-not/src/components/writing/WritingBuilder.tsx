@@ -25,21 +25,39 @@ export default function WritingBuilder({ s }: { s: StudentState }) {
   return <Builder s={s} settings={settings} />;
 }
 
+// ロック解除の条件ごとに「何をすればよいか」を日本語で添える
+const GATE_HELP: Record<string, string> = {
+  mine: "記事一覧で、自分の側の記事を読み、Evidence Card（根拠カード）を作ります。",
+  other: "記事一覧で、反対側の記事を読み、Evidence Card（根拠カード）を作ります。",
+  sort: "8つの英文を「感情論」と「根拠あり」に仕分け、全問正解にします。",
+  stance: "記事を読んだ後の立場を選んで、保存します。",
+  trap: "6つの根拠を「使える」「危ない」に判定し、最後まで終わらせます。",
+};
+
 function Locked({ s, settings }: { s: StudentState; settings: Settings }) {
   return (
     <div className="page">
-      <h1 className="page-title">Writing Builder</h1>
+      <header>
+        <h1 className="page-title">Writing Builder（英作文の組み立て）</h1>
+        <p className="muted mb-4">アウトラインを作り、英作文を書く画面です。下の条件がすべて ✓ になると使えます。</p>
+      </header>
       <div className="box">
         <p className="section-title">
-          <span aria-hidden>🔒</span> ロック中
+          <span aria-hidden>🔒</span> ロック中：次の活動を終えると開きます
         </p>
-        <p className="muted mb-3">次の条件を満たすと開きます。</p>
-        <ul className="space-y-1">
+        <ul className="divide-y divide-line">
           {gateItems(s, settings).map((g) => (
             <li key={g.key}>
-              <Link href={g.href} className="flex min-h-11 items-center gap-2 text-base text-ink">
-                <span className={g.done ? "font-semibold text-accent" : "font-semibold text-muted"}>{g.done ? "✓" : "未"}</span>
-                <span className="underline">{g.label}</span>
+              <Link
+                // 記事一覧はトップ「/」に統合済み
+                href={g.href}
+                className="flex min-h-11 items-start gap-2 py-2 text-base text-ink no-underline"
+              >
+                <span className={`shrink-0 font-semibold ${g.done ? "text-accent" : "text-muted"}`}>{g.done ? "✓ 済" : "未"}</span>
+                <span>
+                  <span className="underline">{g.label}</span>
+                  {GATE_HELP[g.key] && <span className="muted block">{GATE_HELP[g.key]}</span>}
+                </span>
               </Link>
             </li>
           ))}
@@ -121,7 +139,12 @@ function Builder({ s, settings }: { s: StudentState; settings: Settings }) {
 
   return (
     <div className="page max-w-5xl">
-      <h1 className="page-title">Writing Builder</h1>
+      <header>
+        <h1 className="page-title">Writing Builder（英作文の組み立て）</h1>
+        <p className="muted mb-4">
+          アウトラインで構成を考え、本文を英語で書き、セルフチェックを満たしたら完成です。書いた内容はこの端末に自動で保存されます。
+        </p>
+      </header>
 
       <div className="mb-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
         <span className="muted">立場（1=広めるべき〜5=制限すべき）</span>
@@ -133,8 +156,8 @@ function Builder({ s, settings }: { s: StudentState; settings: Settings }) {
       <div className="md:grid md:grid-cols-[minmax(0,1fr)_280px] md:items-start md:gap-6">
         <div className="space-y-4">
           <div className="box">
-            <p className="section-title">Topic</p>
-            <p className="text-base">
+            <h2 className="section-title">Topic（お題）</h2>
+            <p className="text-base" lang="en">
               Some people say 3D-printed food should become more widespread in our society.
               Others say it should be restricted.
               <br />
@@ -143,18 +166,28 @@ function Builder({ s, settings }: { s: StudentState; settings: Settings }) {
               Also write about the opposite opinion and answer it.
               <br />({wordMin}–{wordMax} words)
             </p>
+            <p lang="ja" className="mt-2 border-l-4 border-line pl-3 text-base text-muted">
+              3Dプリント食品は社会にもっと広めるべきだという人もいれば、制限すべきだという人もいます。あなたの意見は？ 根拠のある理由を2つ書きましょう。反対の意見にも触れて、それに答えましょう。（{wordMin}〜{wordMax}語）
+            </p>
           </div>
 
-          <section className="space-y-3">
-            <h2 className="section-title">アウトライン</h2>
+          <section className="box space-y-4">
+            <div>
+              <h2 className="section-title">Outline（アウトライン）</h2>
+              <p className="muted">書く前に、5つの欄にメモを残します。英語でも日本語でもかまいません。</p>
+            </div>
             <OutlineField
               label="Opinion"
+              labelJa="自分の意見"
+              guide="自分の立場をはっきり言います。理由が2つあることも予告します。"
               hint="自分の立場（理由が2つあると予告）"
               memo={draft.outline.opinion}
               onMemo={(v) => setOutline("opinion", v)}
             />
             <OutlineField
               label="Reason 1"
+              labelJa="理由1"
+              guide="理由 → 事実（数字・例・出典）→ だから何？ の順で書きます。"
               hint="自分のメモ"
               memo={draft.outline.reason1}
               onMemo={(v) => setOutline("reason1", v)}
@@ -164,6 +197,8 @@ function Builder({ s, settings }: { s: StudentState; settings: Settings }) {
             />
             <OutlineField
               label="Reason 2"
+              labelJa="理由2"
+              guide="理由1とは別の理由を、同じ順（理由 → 事実 → だから何？）で書きます。"
               hint="自分のメモ"
               memo={draft.outline.reason2}
               onMemo={(v) => setOutline("reason2", v)}
@@ -173,6 +208,8 @@ function Builder({ s, settings }: { s: StudentState; settings: Settings }) {
             />
             <OutlineField
               label="Counterargument & Rebuttal"
+              labelJa="反対意見と反論"
+              guide="反対側の意見を1つ紹介し、それに答えます（「たしかに…。でも…」の形）。"
               hint="反対意見と、それへの答え（認める＋でも…）"
               memo={draft.outline.counter}
               onMemo={(v) => setOutline("counter", v)}
@@ -182,16 +219,19 @@ function Builder({ s, settings }: { s: StudentState; settings: Settings }) {
             />
             <OutlineField
               label="Conclusion"
+              labelJa="まとめ"
+              guide="最初の立場を、別の言葉でもう一度言います。"
               hint="立場をもう一度、別の言葉で"
               memo={draft.outline.conclusion}
               onMemo={(v) => setOutline("conclusion", v)}
             />
           </section>
 
-          <section>
-            <h2 className="section-title">本文</h2>
-            <details className="box mb-2 md:hidden">
-              <summary className="flex min-h-11 cursor-pointer items-center text-base font-semibold">表現集</summary>
+          <section className="box">
+            <h2 className="section-title">Writing（本文）</h2>
+            <p className="muted mb-3">アウトラインをもとに、英語で本文を書きます。表現集を押すと、カーソルの位置に入ります。</p>
+            <details className="mb-3 rounded-lg border border-line px-3 md:hidden">
+              <summary className="flex min-h-11 cursor-pointer items-center text-base font-semibold">Useful Expressions（表現集）</summary>
               <div className="mt-2 max-h-80 overflow-y-auto">
                 <ExpressionPanel onInsert={insert} />
               </div>
@@ -219,7 +259,8 @@ function Builder({ s, settings }: { s: StudentState; settings: Settings }) {
           </section>
 
           <section className="box">
-            <h2 className="section-title">セルフチェック</h2>
+            <h2 className="section-title">Self-check（セルフチェック）</h2>
+            <p className="muted mb-2">提出前に、7項目を自分で確かめます。すべて満たすと「完成」が押せます。</p>
             <SelfCheck
               checks={draft.checks}
               onToggle={(i, v) => patch((d) => ({ checks: d.checks.map((c, j) => (j === i ? v : c)) }))}
@@ -249,8 +290,8 @@ function Builder({ s, settings }: { s: StudentState; settings: Settings }) {
           </section>
         </div>
 
-        <aside className="hidden md:sticky md:top-16 md:block md:max-h-[calc(100vh-5rem)] md:overflow-y-auto">
-          <h2 className="section-title">表現集</h2>
+        <aside className="box hidden md:sticky md:top-16 md:block md:max-h-[calc(100vh-5rem)] md:overflow-y-auto">
+          <h2 className="section-title">Useful Expressions（表現集）</h2>
           <ExpressionPanel onInsert={insert} />
         </aside>
       </div>
