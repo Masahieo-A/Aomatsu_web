@@ -1,6 +1,8 @@
 # PRINT or NOT?
 
-高校3年生向けの期間限定 Web アプリ。Writing 課題「Should 3D-printed food become more widespread, or should it be restricted?」の準備として、賛成側・反対側の短い記事を読み、根拠を Evidence Card に整理してから Writing Builder で書く。生徒の立場・Card・ヒント開示は共有DB（Supabase）に保存され、教員が分布と Card 一覧を確認して CSV で出力できる。生徒の識別子は「クラス＋出席番号」のみで、氏名・メールは保存しない。
+高校3年生向けの期間限定 Web アプリ。Writing 課題「Should 3D-printed food become more widespread, or should it be restricted?」の準備として、賛成側・反対側の短い記事を読み、根拠を Evidence Card に整理してから Writing Builder で書く。
+
+DB・外部API・環境変数は使わない。生徒の作業（立場・Card・下書き）は**その端末のブラウザ内（localStorage）だけ**に保存され、サーバーには送られない。完成した本文はコピーして Google Classroom に提出する。同じ端末で別の出席番号を入力すると、前の人の記録は引き継がれない。
 
 ## 画面一覧
 
@@ -9,49 +11,33 @@
 | `/` | S0 Start（クラス・出席番号） |
 | `/hook` | S1 Hook（クイズ・立場メーター） |
 | `/map` | S2 Article Map |
-| `/read` | S3 Reader |
-| `/card` | S4 Evidence Card |
+| `/read/[id]` | S3 Reader |
+| `/card/[id]` | S4 Evidence Card |
 | `/sort` | S5 Emotion or Evidence? |
 | `/trap` | S5-2 Trap or Treasure? |
+| `/stance` | S6 Stance Check |
 | `/write` | S7 Writing Builder |
-| `/teacher` | T1 教員用（パスコード） |
 
 ## ローカル起動
 
 ```bash
 cd apps/app-print-or-not
 npm install
-cp .env.example .env.local   # 必要なら編集
 npm run dev                  # http://localhost:3000
 ```
 
-Supabase の環境変数が無い開発環境では、共有DBの代わりに `.data/dev-db.json`（git 管理外）に保存される。本番（`NODE_ENV=production`）で Supabase が未設定の場合は共有DBを使わず、生徒の端末内にだけ保存される（教員画面の集計は出ない）。
+## 教員が変えられる設定
 
-## 環境変数（`.env.example`）
+`src/data/settings-default.json` を編集して push する。
 
-| キー | 内容 |
-|---|---|
-| `SUPABASE_URL` | Supabase プロジェクトの URL |
-| `SUPABASE_SERVICE_ROLE_KEY` | service role キー。サーバー専用。ブラウザや公開リポジトリに出さない |
-| `TEACHER_PASSCODE` | 教員画面のパスコード。8文字以上。未設定だと教員 API はすべて拒否する |
+| キー | 内容 | 既定 |
+|---|---|---|
+| `classes` | Start 画面のクラス一覧 | 3-1〜3-8 |
+| `soWhatJaAllowed` | So what? を日本語でも可にする | false |
+| `wordMin` / `wordMax` | Writing Builder の目標語数 | 130 / 170 |
+| `trapRequired` | Trap or Treasure? を Writing Builder の必須条件にする | false |
 
-## Supabase の設定手順
-
-1. [supabase.com](https://supabase.com) でプロジェクトを作成する。
-2. 左メニュー「SQL Editor」で New query を開き、`supabase/schema.sql` の中身を貼り付けて Run する。
-3. 「Project Settings > API」で Project URL と service_role キーを控える。
-4. Vercel の「Settings > Environment Variables」に `SUPABASE_URL`、`SUPABASE_SERVICE_ROLE_KEY`、`TEACHER_PASSCODE` を追加し、再デプロイする。
-
-生徒はログインしないため、全テーブルで RLS を有効にしてポリシーを作らず、DB へのアクセスを Next.js の API（service role）経由だけに限定している。レート制限（同一 IP で1分120回）はサーバーのメモリ上で数えるので、学校の同一回線から多数が一斉に送ると一時的に「送信が多すぎます」となり、端末が自動で再送する。
-
-## 課題終了後のデータ削除
-
-次のどちらか。どちらも元に戻せないので、先に教員画面で CSV を保存する。
-
-- 教員画面（`/teacher`）の「データ削除」で `DELETE` と入力して実行する。
-- Supabase の SQL Editor で `supabase/purge.sql` を実行する。
-
-pon_students・pon_cards・pon_hint_logs を削除する。設定（クラス一覧など）は残る。
+「本物 or 印刷？」クイズの写真は `src/data/hook.json` の `photos` に入れる（自作・CC0 素材のみ。`public/hook/` に置く）。空のときはクイズ自体を表示しない。
 
 ## 記事データの差し替え
 

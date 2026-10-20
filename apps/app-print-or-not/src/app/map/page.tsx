@@ -16,7 +16,7 @@ export default function MapPage() {
 }
 
 function ArticleMap({ s }: { s: StudentState }) {
-  const { settings, update, syncStatus } = useStudent();
+  const { settings, update } = useStudent();
   const router = useRouter();
   const side = mySide(s);
   const counts = cardCounts(s);
@@ -128,8 +128,6 @@ function ArticleMap({ s }: { s: StudentState }) {
         <Link href="/trap">Trap or Treasure?</Link>
         <Link href="/stance">Stance Check</Link>
       </p>
-      {syncStatus === "no-db" && <p className="muted">共有DBが未設定のため、記録はこの端末内にだけ保存されています。</p>}
-      {syncStatus === "offline" && <p className="muted">通信できないため、記録は端末内に保存し、あとで送信します。</p>}
     </div>
   );
 }

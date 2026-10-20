@@ -22,7 +22,7 @@ export default function HookPage() {
 }
 
 function Hook({ s }: { s: StudentState }) {
-  const { update, sync } = useStudent();
+  const { update } = useStudent();
   const router = useRouter();
   const [photoPick, setPhotoPick] = useState<number | null>(null);
   const [answers, setAnswers] = useState<Record<string, string>>(s.hookAnswers);
@@ -36,7 +36,6 @@ function Hook({ s }: { s: StudentState }) {
     if (!canFinish) return;
     if (!locked) {
       update((cur) => ({ ...cur, hookAnswers: answers, stanceBefore: stance, hookDone: true }));
-      sync("stance", { stanceBefore: stance });
     }
     router.push("/map");
   };

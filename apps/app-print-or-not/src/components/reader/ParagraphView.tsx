@@ -20,7 +20,7 @@ interface Props {
 const HINT_LABEL = ["キーワード", "要旨", "全訳"];
 
 export default function ParagraphView({ article, level, index, paragraph, slash, revealed, taps, onTap }: Props) {
-  const { update, sync } = useStudent();
+  const { update } = useStudent();
   const [opened, setOpened] = useState(0); // 開いた最大のヒント番号（0〜3）
 
   const shown = fillHidden(slash ? paragraph.slash : paragraph.text, article, revealed);
@@ -38,7 +38,6 @@ export default function ParagraphView({ article, level, index, paragraph, slash,
     const hint = (opened + 1) as 1 | 2 | 3;
     const k = hintKey(article.id, level, index, hint);
     update((s) => ({ ...s, hintCounts: { ...s.hintCounts, [k]: (s.hintCounts[k] ?? 0) + 1 } }));
-    sync("hint", { articleId: article.id, level, paragraph: index, hint, at: new Date().toISOString() });
     setOpened(hint);
   };
 

@@ -137,31 +137,3 @@ export interface Settings {
   trapRequired: boolean; // S5-2 を Writing Builder の必須条件にするか
 }
 
-// ---- API ----
-
-export type SyncKind = "stance" | "card" | "hint";
-
-export interface SyncRequest {
-  classId: string;
-  number: number;
-  kind: SyncKind;
-  // stance: { stanceBefore?, stanceAfter?, stanceReason? }
-  // card: EvidenceCard
-  // hint: HintEvent
-  payload: unknown;
-}
-
-export interface ApiResult<T = unknown> {
-  ok: boolean;
-  data?: T;
-  error?: string; // 利用者に見せる日本語メッセージ
-  noDb?: boolean; // DB 未設定（端末内保存のみで動作中）
-}
-
-// クラスの立場分布（匿名）。counts[0] が 1（広めるべき）… counts[4] が 5
-export interface ClassStats {
-  classId: string;
-  before: number[];
-  after: number[];
-  students: number;
-}

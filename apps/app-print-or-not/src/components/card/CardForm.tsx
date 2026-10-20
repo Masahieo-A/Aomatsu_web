@@ -24,7 +24,7 @@ export default function CardForm({ id, s }: { id: string; s: StudentState }) {
 }
 
 function Form({ article, s }: { article: Article; s: StudentState }) {
-  const { settings, update, sync } = useStudent();
+  const { settings, update } = useStudent();
   const prev = s.cards[article.id];
 
   const [point, setPoint] = useState(prev?.point ?? "");
@@ -79,7 +79,6 @@ function Form({ article, s }: { article: Article; s: StudentState }) {
       updatedAt: now,
     };
     update((cur) => ({ ...cur, cards: { ...cur.cards, [article.id]: card } }));
-    sync("card", card);
     setSaved(true);
   };
 
