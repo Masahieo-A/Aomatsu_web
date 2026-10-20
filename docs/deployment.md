@@ -11,6 +11,7 @@
   - APP004 Cloze+整序（Root: `apps/app-cloze-seijo-maker`）
   - APP001 英作文添削（Root: `apps/app-eisaku-tensaku`）
   - APP005 発音チェック（Root: `apps/app-elsa-like`）
+  - APP022 PRINT or NOT?（Root: `apps/app-print-or-not`）
 - **APP002 整序メーカー / APP003 Cloze Maker は廃止**（APP004 に統合）。モノレポからフォルダ削除・ポータルからカード除外済み。旧GitHubリポジトリ・旧Vercelプロジェクトはオーナーが削除/アーカイブ予定。
 - **2026-07-20: 全12アプリのコードをモノレポへ完全統合済み**（原本フォルダは `~/Archive/_monorepo統合退避_2026-07-20/` に退避、コードの正本はこのリポジトリ）。下記「切替待ち」のアプリは、Vercel の接続先がまだ旧個別リポジトリのまま。
 - 未移行アプリは、各 Vercel プロジェクトで **Settings → Git → Connected Repository を `Aomatsu_web` に変更し、Root Directory に `apps/app-xxx` を指定**する（下記「モノレポ移行時の手順」参照）。**URL はプロジェクトに紐づくため、この方法なら本番 URL・ブックマークは変わらない。**
@@ -25,6 +26,7 @@
 | APP001 英作文添削 | `apps/app-eisaku-tensaku` | `Masahieo-A/Aomatsu_web` ✅ | `apps/app-eisaku-tensaku` | `eisaku-tensaku-app` | https://eisaku-tensaku-app.vercel.app | `GEMINI_API_KEY` |
 | APP004 Cloze+整序 | `apps/app-cloze-seijo-maker` | `Masahieo-A/Aomatsu_web` ✅ | `apps/app-cloze-seijo-maker` | `cloze-seijo-maker` | https://cloze-seijo-maker.vercel.app | Supabase（整備中） |
 | APP005 発音チェック | `apps/app-elsa-like` | `Masahieo-A/Aomatsu_web` ✅ | `apps/app-elsa-like` | `elsa-like` | https://elsa-like.vercel.app | なし |
+| APP022 PRINT or NOT? | `apps/app-print-or-not` | `Masahieo-A/Aomatsu_web` ✅ | `apps/app-print-or-not` | `print-or-not` | https://print-or-not.vercel.app | なし |
 | ~~APP006 育てるAI（旧Vercel版）~~ | 廃止（Cloudflare Workers 版へ移行） | ~~`Masahieo-A/sodateru-ai`~~ | — | `sodateru-ai`（prj_O4TsGSy5WvrAUgu1MREdq7sUFAGC・削除予定） | ~~sodateru-ai.vercel.app~~ | — |
 | ~~APP002 整序メーカー~~ | 削除済み | — | — | `seijo-maker`（削除予定） | ~~seijo-maker.vercel.app~~ | — |
 | ~~APP003 Cloze Maker~~ | 削除済み | — | — | `cloze-maker`（削除予定） | ~~cloze-maker.vercel.app~~ | — |
