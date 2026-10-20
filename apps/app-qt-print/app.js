@@ -5,10 +5,10 @@
   "use strict";
 
   // ---------------- 固定仕様（Question Time 要件定義 v1.1 より） ----------------
-  // プロンプト v4 の3問構成（なぜ型・どっち型・もしも型）
+  // プロンプト v5 の3問構成（答えやすい順: どっち型 → なぜ型 → もしも型）
   const Q_TYPES = [
-    { label: "なぜ型", structure: "理由の説明（because / One reason is that）" },
     { label: "どっち型", structure: "選択と理由（I choose ... because）" },
+    { label: "なぜ型", structure: "理由の説明（because / One reason is that）" },
     { label: "もしも型", structure: "条件と予想（If ..., I think ... because）" },
   ];
   const Q_FIELDS = ["引用", "質問", "和訳", "意図", "論点", "A例", "B例", "等価構造"];
@@ -20,9 +20,9 @@
   ];
   // §17.2 汎用予備問題（essayに依存しない。Content軸は評価対象外）。本番の質問と同じ「なぜ型・どっち型・もしも型」
   const BACKUP = [
-    ["Choose the most important reason in your essay. Why do you think this reason is important to you? Give one reason.", "あなたのessayの中で、いちばん大事な理由を1つ選びましょう。その理由が、なぜあなたにとって大事だと思いますか。正解でなくてよいので、自分の考えで理由を1つ書きましょう。"],
-    ["Think about the main idea of your essay. Do you think this idea is more important for you or for people around you? Choose one and give one reason.", "あなたのessayの主な考えについて考えましょう。この考えは、あなた自身と、あなたの周りの人のどちらにとって、より大切だと思いますか。どちらかを選び、理由を1つ書きましょう。"],
-    ["Think about the main idea of your essay. If you lived in another country, do you think your idea would still be true? Give one reason.", "あなたのessayの主な考えについて考えましょう。もし、あなたが外国に住んでいたら、その考えはそれでも当てはまると思いますか。予想と理由を1つ書きましょう。"],
+    ["Think about the main idea of your essay. Is this idea more important for you or for people around you? Choose one and give one reason.", "あなたのessayの主な考えは、あなた自身と、あなたの周りの人のどちらにとって、より大切だと思いますか。どちらかを選び、理由を1つ書きましょう（1文でよい）。"],
+    ["Choose the most important reason in your essay. Why is this reason important to you? Give one reason.", "あなたのessayでいちばん大事な理由を1つ選びましょう。それがあなたにとって大事なのはなぜですか。正解でなくてよいので、自分の考えを1文で書きましょう。"],
+    ["Think about the main idea of your essay. If you lived in another country, do you think your idea would still be true? Give one reason.", "もし外国に住んでいたら、あなたのessayの主な考えはそれでも当てはまると思いますか。予想と理由を1つ書きましょう（1文でよい）。"],
   ];
 
   function rubricFor(qi, quote, point) {
@@ -310,7 +310,7 @@
       const qw = wordCount(quote);
       if (qw < 5 || qw > 30) add("ng", k("引用"), i, `引用が${qw}語（5〜30語にする）`);
       const w = wordCount(g("質問"));
-      if (w < 20 || w > 45) add("warn", k("質問"), i, `質問が${w}語（20〜45語が目安）`);
+      if (w < 12 || w > 40) add("warn", k("質問"), i, `質問が${w}語（12〜35語が目安）`);
       if (words(g("A例")).join(" ") === words(g("B例")).join(" ")) add("ng", k("B例"), i, "A例とB例が同じ");
       if (sharesNgram(quote, g("B例"))) add("warn", k("B例"), i, "B例が引用の語句を使っている（B例はessayとつながらない一般論にする）");
       if (/use\s+["“']?(although|if|even if|unlike)/i.test(g("質問"))) add("warn", k("質問"), i, "質問が使う文法を指示している");
