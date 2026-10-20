@@ -9,7 +9,7 @@
 -- 【個人情報】氏名・メールアドレスの列は作らない。識別子は「クラス＋出席番号」のみ。
 
 -- ---- 生徒の立場 ----
-create table if not exists public.students (
+create table if not exists public.pon_students (
   class_id      text        not null,
   number        smallint    not null check (number between 1 and 60),
   stance_before smallint    check (stance_before between 1 and 5),
@@ -20,7 +20,7 @@ create table if not exists public.students (
 );
 
 -- ---- Evidence Card ----
-create table if not exists public.cards (
+create table if not exists public.pon_cards (
   class_id        text        not null,
   number          smallint    not null check (number between 1 and 60),
   article_id      text        not null,
@@ -37,7 +37,7 @@ create table if not exists public.cards (
 );
 
 -- ---- ヒント開示ログ ----
-create table if not exists public.hint_logs (
+create table if not exists public.pon_hint_logs (
   id         bigserial   primary key,
   class_id   text        not null,
   number     smallint    not null check (number between 1 and 60),
@@ -47,35 +47,35 @@ create table if not exists public.hint_logs (
   hint       smallint    not null check (hint between 1 and 3),
   created_at timestamptz not null default now()
 );
-create index if not exists hint_logs_class_idx on public.hint_logs (class_id, article_id, level, paragraph);
+create index if not exists pon_hint_logs_class_idx on public.pon_hint_logs (class_id, article_id, level, paragraph);
 
 -- ---- 設定（1行だけ） ----
-create table if not exists public.settings (
+create table if not exists public.pon_settings (
   id         int         primary key default 1 check (id = 1),
   data       jsonb       not null default '{}'::jsonb,
   updated_at timestamptz not null default now()
 );
 
 -- ---- RLS: 有効化のみ（ポリシー無し = anon / authenticated は一切読み書きできない） ----
-alter table public.students  enable row level security;
-alter table public.cards     enable row level security;
-alter table public.hint_logs enable row level security;
-alter table public.settings  enable row level security;
+alter table public.pon_students  enable row level security;
+alter table public.pon_cards     enable row level security;
+alter table public.pon_hint_logs enable row level security;
+alter table public.pon_settings  enable row level security;
 
-revoke all on public.students, public.cards, public.hint_logs, public.settings from anon, authenticated;
-revoke all on sequence public.hint_logs_id_seq from anon, authenticated;
+revoke all on public.pon_students, public.pon_cards, public.pon_hint_logs, public.pon_settings from anon, authenticated;
+revoke all on sequence public.pon_hint_logs_id_seq from anon, authenticated;
 
 -- ---- 匿名集計ビュー（出席番号を含まない。件数のみ） ----
-create or replace view public.class_stance_view as
+create or replace view public.pon_class_stance_view as
   select class_id, stance_before, stance_after, count(*)::int as students
-  from public.students
+  from public.pon_students
   group by class_id, stance_before, stance_after;
 
 -- 教員画面で「ヒントが多く開かれた段落」を出すための匿名集計（出席番号を含まない）
-create or replace view public.hint_paragraph_view as
+create or replace view public.pon_hint_paragraph_view as
   select class_id, article_id, level, paragraph, count(*)::int as opens
-  from public.hint_logs
+  from public.pon_hint_logs
   group by class_id, article_id, level, paragraph;
 
 -- ビューも anon / authenticated には公開しない（サーバー API が service role で読む）
-revoke all on public.class_stance_view, public.hint_paragraph_view from anon, authenticated;
+revoke all on public.pon_class_stance_view, public.pon_hint_paragraph_view from anon, authenticated;

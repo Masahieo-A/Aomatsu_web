@@ -153,14 +153,14 @@ class SupabaseRepo implements Repo {
   }
 
   async getSettings(): Promise<Settings | null> {
-    const { data, error } = await this.sb.from("settings").select("data").eq("id", 1).maybeSingle();
+    const { data, error } = await this.sb.from("pon_settings").select("data").eq("id", 1).maybeSingle();
     this.fail(error);
     return (data?.data as Settings | undefined) ?? null;
   }
 
   async saveSettings(settings: Settings): Promise<void> {
     const { error } = await this.sb
-      .from("settings")
+      .from("pon_settings")
       .upsert({ id: 1, data: settings, updated_at: new Date().toISOString() }, { onConflict: "id" });
     this.fail(error);
   }
@@ -171,13 +171,13 @@ class SupabaseRepo implements Repo {
     if (patch.stanceBefore !== undefined) row.stance_before = patch.stanceBefore;
     if (patch.stanceAfter !== undefined) row.stance_after = patch.stanceAfter;
     if (patch.stanceReason !== undefined) row.stance_reason = patch.stanceReason;
-    const { error } = await this.sb.from("students").upsert(row, { onConflict: "class_id,number" });
+    const { error } = await this.sb.from("pon_students").upsert(row, { onConflict: "class_id,number" });
     this.fail(error);
   }
 
   async upsertCard(c: CardInput): Promise<void> {
     // created_at は送らない（新規時は DB 既定値、更新時は元の値が残る）
-    const { error } = await this.sb.from("cards").upsert(
+    const { error } = await this.sb.from("pon_cards").upsert(
       {
         class_id: c.classId,
         number: c.number,
@@ -197,7 +197,7 @@ class SupabaseRepo implements Repo {
   }
 
   async addHint(h: HintInput): Promise<void> {
-    const { error } = await this.sb.from("hint_logs").insert({
+    const { error } = await this.sb.from("pon_hint_logs").insert({
       class_id: h.classId,
       number: h.number,
       article_id: h.articleId,
@@ -210,7 +210,7 @@ class SupabaseRepo implements Repo {
 
   async getStats(classId?: string): Promise<ClassStats> {
     // 出席番号を含まない匿名集計ビューだけを読む
-    const rows = await this.fetchAll("class_stance_view", ["stance_before", "stance_after"], classId);
+    const rows = await this.fetchAll("pon_class_stance_view", ["stance_before", "stance_after"], classId);
     return buildStats(
       classId,
       rows.map((r) => ({
@@ -222,7 +222,7 @@ class SupabaseRepo implements Repo {
   }
 
   async listStudents(classId?: string): Promise<StanceRow[]> {
-    const rows = await this.fetchAll("students", ["class_id", "number"], classId);
+    const rows = await this.fetchAll("pon_students", ["class_id", "number"], classId);
     return rows.map((r) => ({
       classId: String(r.class_id),
       number: Number(r.number),
@@ -234,7 +234,7 @@ class SupabaseRepo implements Repo {
   }
 
   async listCards(classId?: string): Promise<CardRow[]> {
-    const rows = await this.fetchAll("cards", ["class_id", "number", "article_id"], classId);
+    const rows = await this.fetchAll("pon_cards", ["class_id", "number", "article_id"], classId);
     return rows.map((r) => ({
       classId: String(r.class_id),
       number: Number(r.number),
@@ -252,7 +252,7 @@ class SupabaseRepo implements Repo {
   }
 
   async hintCounts(classId?: string): Promise<HintCount[]> {
-    const rows = await this.fetchAll("hint_paragraph_view", ["article_id", "level", "paragraph"], classId);
+    const rows = await this.fetchAll("pon_hint_paragraph_view", ["article_id", "level", "paragraph"], classId);
     const map = new Map<string, HintCount>();
     for (const r of rows) {
       const level = r.level === "lv2" ? "lv2" : "lv1";
@@ -272,9 +272,9 @@ class SupabaseRepo implements Repo {
       this.fail(error);
       return count ?? 0;
     };
-    const hints = await del("hint_logs", "id");
-    const cards = await del("cards", "number");
-    const students = await del("students", "number");
+    const hints = await del("pon_hint_logs", "id");
+    const cards = await del("pon_cards", "number");
+    const students = await del("pon_students", "number");
     return { students, cards, hints };
   }
 }

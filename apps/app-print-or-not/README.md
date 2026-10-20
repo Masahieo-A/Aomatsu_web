@@ -51,7 +51,7 @@ Supabase の環境変数が無い開発環境では、共有DBの代わりに `.
 - 教員画面（`/teacher`）の「データ削除」で `DELETE` と入力して実行する。
 - Supabase の SQL Editor で `supabase/purge.sql` を実行する。
 
-students・cards・hint_logs を削除する。設定（クラス一覧など）は残る。
+pon_students・pon_cards・pon_hint_logs を削除する。設定（クラス一覧など）は残る。
 
 ## 記事データの差し替え
 
