@@ -1,5 +1,5 @@
 "use client";
-// 「記事を探す」。キーワード（英語・日本語）と立場で絞り込む
+// 「記事を探す」。立場と論点で絞り込む
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import SideBadge from "@/components/SideBadge";
@@ -8,29 +8,22 @@ import type { Article, Side } from "@/lib/types";
 
 type SideFilter = "all" | Side;
 
-// 検索対象: 見出し（英・日）、内容の要約、論点、語注、本文（3レベルすべて）
-function haystack(a: Article): string {
-  const points = [a.point, ...a.cardPoints].map((id) => {
-    const p = getPoint(id);
-    return p ? `${p.en} ${p.ja}` : "";
-  });
-  const gloss = a.glossary.map((g) => `${g.word} ${(g.forms ?? []).join(" ")} ${g.ja}`);
-  const body = Object.values(a.levels).flatMap((lv) => lv.paragraphs.map((p) => p.text.replace(/\{\{hidden:\d+\}\}/g, "")));
-  return [a.hookTitle, a.hookTitleJa, a.summaryJa, ...points, ...gloss, ...body].join(" ").toLowerCase();
-}
-
-const INDEX = ARTICLES.map((a) => ({ a, text: haystack(a) }));
+// 記事に出てくる論点だけを選択肢にする
+const POINT_OPTIONS = [...new Set(ARTICLES.flatMap((a) => [a.point, ...a.cardPoints]))]
+  .map((id) => getPoint(id))
+  .filter((p) => p !== undefined);
 
 export default function ArticleSearch() {
-  const [q, setQ] = useState("");
   const [side, setSide] = useState<SideFilter>("all");
+  const [point, setPoint] = useState("");
 
-  const results = useMemo(() => {
-    const words = q.toLowerCase().split(/[\s　]+/).filter(Boolean);
-    return INDEX.filter(({ a, text }) => (side === "all" || a.side === side) && words.every((w) => text.includes(w))).map(
-      ({ a }) => a,
-    );
-  }, [q, side]);
+  const results = useMemo(
+    () =>
+      ARTICLES.filter(
+        (a) => (side === "all" || a.side === side) && (!point || a.point === point || a.cardPoints.includes(point)),
+      ),
+    [side, point],
+  );
 
   const sideChips: { v: SideFilter; label: string }[] = [
     { v: "all", label: "すべて" },
@@ -43,21 +36,9 @@ export default function ArticleSearch() {
       <h2 id="search-title" className="section-title">
         記事を探す <span className="text-sm font-normal text-muted">Find articles</span>
       </h2>
-      <p className="muted mb-3">キーワードは英語でも日本語でも探せます（例：sushi、介護、細菌）。</p>
+      <p className="muted mb-3">立場や論点で絞り込めます。</p>
 
-      <label htmlFor="q" className="field-label">
-        キーワード
-      </label>
-      <input
-        id="q"
-        type="search"
-        className="field"
-        value={q}
-        onChange={(e) => setQ(e.target.value)}
-        placeholder="例：NASA、食品ロス、safety"
-      />
-
-      <div className="mt-3 flex flex-wrap gap-2" role="group" aria-label="立場で絞り込む">
+      <div className="flex flex-wrap gap-2" role="group" aria-label="立場で絞り込む">
         {sideChips.map((c) => (
           <button
             key={c.v}
@@ -72,9 +53,23 @@ export default function ArticleSearch() {
         ))}
       </div>
 
+      <div className="mt-3">
+        <label htmlFor="point" className="field-label">
+          論点で絞り込む
+        </label>
+        <select id="point" className="field" value={point} onChange={(e) => setPoint(e.target.value)}>
+          <option value="">すべての論点</option>
+          {POINT_OPTIONS.map((p) => (
+            <option key={p.id} value={p.id}>
+              {p.ja}
+            </option>
+          ))}
+        </select>
+      </div>
+
       <p className="muted mt-4 mb-2">{results.length}件</p>
       {results.length === 0 ? (
-        <p className="text-sm">見つかりませんでした。キーワードを変えるか、絞り込みを「すべて」に戻してください。</p>
+        <p className="text-sm">見つかりませんでした。絞り込みを「すべて」に戻してください。</p>
       ) : (
         <ul className="space-y-3">
           {results.map((a) => (
