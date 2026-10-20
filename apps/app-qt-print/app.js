@@ -11,6 +11,14 @@
     { label: "なぜ型", structure: "理由の説明（because / One reason is that）" },
     { label: "もしも型", structure: "条件と予想（If ..., I think ... because）" },
   ];
+  /** 型は質問文から判定する（v4以前の質問は「なぜ→どっち→もしも」の順なので、問番号では決めない） */
+  function qType(i, question) {
+    const q = String(question || "");
+    if (/choose one/i.test(q)) return Q_TYPES[0];
+    if (/\bif\b/i.test(q)) return Q_TYPES[2];
+    if (/\bwhy\b/i.test(q)) return Q_TYPES[1];
+    return Q_TYPES[i] || Q_TYPES[0];
+  }
   const Q_FIELDS = ["引用", "質問", "和訳", "意図", "論点", "A例", "B例", "等価構造"];
   const REQUIRED_FIELDS = ["引用", "質問", "論点", "A例", "B例"];
   const LANGUAGE_RUBRIC = [
@@ -506,7 +514,7 @@
       ${qd.items.map((x, i) => {
         const rb = rubricFor(i, x["引用"], x["論点"]);
         return `<div class="t-q">
-          <div class="q-head"><span><span class="q-no">Q${i + 1}</span> <span class="t-type">${Q_TYPES[i].label}</span>　指定構造: ${Q_TYPES[i].structure}</span>
+          <div class="q-head"><span><span class="q-no">Q${i + 1}</span> <span class="t-type">${qType(i, x["質問"]).label}</span>　指定構造: ${qType(i, x["質問"]).structure}</span>
             <span class="t-scores">
               <span class="box">内容 <span class="opt">0</span><span class="opt">1</span><span class="opt">2</span></span>
               <span class="box">英語 <span class="opt">0</span><span class="opt">1</span><span class="opt">2</span></span>
@@ -710,7 +718,7 @@
       </label>`;
     $("ed-form").innerHTML =
       `<div class="ed-group"><h3>essay全体</h3>${field("主張", "主張", EDIT_WHERE["主張"])}${field("理由", "理由", EDIT_WHERE["理由"])}</div>` +
-      [1, 2, 3].map((i) => `<div class="ed-group"><h3>Q${i}　${Q_TYPES[i - 1].label}</h3>${ED_Q_FIELDS.map((k) => field(`Q${i}_${k}`, k, EDIT_WHERE[k])).join("")}</div>`).join("");
+      [1, 2, 3].map((i) => `<div class="ed-group"><h3>Q${i}　${qType(i - 1, q[`Q${i}_質問`]).label}</h3>${ED_Q_FIELDS.map((k) => field(`Q${i}_${k}`, k, EDIT_WHERE[k])).join("")}</div>`).join("");
     updateEditorStatus(s);
   }
   /** 入力中は欄を作り直さず（カーソルが飛ばないように）、点検結果と essay の下線だけ更新する */
