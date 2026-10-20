@@ -1,0 +1,27 @@
+{
+  "photos": [],
+  "photosNote": "F1-1「本物 or 印刷？」の写真。自作・CC0 素材のみ。public/hook/ に置き、{ \"src\": \"/hook/xxx.jpg\", \"alt\": \"...\", \"printed\": true, \"credit\": \"...\" } の形で3件入れると表示される。",
+  "trueFalse": [
+    {
+      "id": "tf1",
+      "statement": "A space agency decided to pay a company to make a food printer.",
+      "answer": true,
+      "articleId": "pro-04",
+      "explain": "In 2013, NASA decided to give 125,000 dollars to a company for a test food printer."
+    },
+    {
+      "id": "tf2",
+      "statement": "One country in Europe made a law to stop the making and selling of lab-grown meat.",
+      "answer": true,
+      "articleId": "con-04",
+      "explain": "Italy banned the making and selling of lab-grown meat in November 2023."
+    },
+    {
+      "id": "tf3",
+      "statement": "A food printer can make one piece of sushi in about 30 seconds.",
+      "answer": false,
+      "articleId": "pro-02",
+      "explain": "It takes about six or seven minutes to print one piece."
+    }
+  ]
+}

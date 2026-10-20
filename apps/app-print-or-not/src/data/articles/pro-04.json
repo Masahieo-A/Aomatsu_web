@@ -1,0 +1,250 @@
+{
+  "id": "pro-04",
+  "side": "pro",
+  "hookTitle": "Why did NASA pay for a food printer?",
+  "point": "space-food",
+  "difficulty": 2,
+  "minutes": 5,
+  "sources": [
+    {
+      "title": "NASA to Award Company Grant for 3-D Food Printer",
+      "publisher": "ABC News",
+      "date": "2013-05-22",
+      "url": "https://abcnews.go.com/blogs/technology/2013/05/nasa-to-award-company-grant-for-3-d-food-printer/",
+      "lang": "en",
+      "authorType": "media",
+      "biasNote": "2013年の報道で、試作機の段階の計画を紹介している。保存期間などは当時の見積もりである"
+    },
+    {
+      "title": "Deep-Space Food Science Research Improves 3D-Printing Capabilities",
+      "publisher": "NASA Spinoff",
+      "date": "2019",
+      "url": "https://spinoff.nasa.gov/node/11015",
+      "lang": "en",
+      "authorType": "government",
+      "biasNote": "NASA自身の刊行物なので、自らの研究成果を好意的に紹介している可能性がある"
+    }
+  ],
+  "levels": {
+    "lv1": {
+      "paragraphs": [
+        {
+          "text": "In 2013, NASA decided to award a company {{hidden:0}}. The money was for a prototype of a 3D food printer. A prototype is the first model of a new machine. NASA wanted to use the printer on long space flights.",
+          "slash": "In 2013, / NASA decided to award a company {{hidden:0}}. / The money was for a prototype of a 3D food printer. / A prototype is the first model of a new machine. / NASA wanted to use the printer on long space flights.",
+          "hints": [
+            "NASA, prototype, space flights",
+            "2013年にNASAは、長い宇宙飛行で使う3D食品プリンターの試作機のために、企業に資金を与えることを決めた。",
+            "2013年、NASAはある企業に{{hidden:0}}を与えることを決めました。そのお金は3D食品プリンターの試作機のためのものでした。試作機とは、新しい機械の最初のモデルのことです。NASAは、このプリンターを長い宇宙飛行で使いたいと考えていました。"
+          ]
+        },
+        {
+          "text": "The printer was planned to make food from powders. The powders contain nutrients, which are the parts of food that the body needs. At that time, the powders were expected to last a long time. The estimated storage time was {{hidden:1}}. On a long flight, food that lasts a long time is very useful.",
+          "slash": "The printer was planned to make food from powders. / The powders contain nutrients, / which are the parts of food that the body needs. / At that time, / the powders were expected to last a long time. / The estimated storage time was {{hidden:1}}. / On a long flight, / food that lasts a long time is very useful.",
+          "hints": [
+            "powders, nutrients, estimate",
+            "このプリンターは栄養素を含む粉末から食べ物を作る計画で、粉末は非常に長く保存できると見積もられていた。",
+            "このプリンターは、粉末から食べ物を作る計画でした。粉末には栄養素が含まれています。栄養素とは、食べ物の中の体が必要とする成分のことです。当時、この粉末は長く保存できると考えられていました。見積もられた保存期間は{{hidden:1}}でした。長い飛行では、長く保存できる食べ物はとても役に立ちます。"
+          ]
+        },
+        {
+          "text": "The printer could also make food for each person. A 2013 news report said it could handle food allergies and personal tastes. This means each person could get food made just for them.",
+          "slash": "The printer could also make food for each person. / A 2013 news report said / it could handle food allergies / and personal tastes. / This means each person could get food made just for them.",
+          "hints": [
+            "each person, allergies, tastes",
+            "プリンターは食物アレルギーや好みに合わせて、一人ひとりに合った食べ物を作れる可能性があった。",
+            "このプリンターは、一人ひとりに合わせた食べ物も作れるはずでした。2013年のニュースは、食物アレルギーや個人の好みに対応できると伝えました。つまり、それぞれの人が自分のためだけに作られた食べ物を受け取れるということです。"
+          ]
+        },
+        {
+          "text": "In 2019, a NASA report explained more about this research. It said printed food could give each person the nutrition they need. It could also reduce packaging waste and the need for refrigeration. Refrigeration means keeping food cold. The report also mentions BeeHex, a company that started in 2016.",
+          "slash": "In 2019, / a NASA report explained more about this research. / It said printed food could give each person the nutrition they need. / It could also reduce packaging waste / and the need for refrigeration. / Refrigeration means keeping food cold. / The report also mentions BeeHex, / a company that started in 2016.",
+          "hints": [
+            "nutrition, packaging waste, refrigeration",
+            "2019年のNASAの報告は、印刷した食べ物が個人に必要な栄養を与え、包装ごみや冷蔵の必要を減らしうると説明している。",
+            "2019年に、NASAの報告がこの研究についてさらに説明しました。報告は、印刷した食べ物は一人ひとりに必要な栄養を与えられると述べています。また、包装ごみや冷蔵の必要も減らせるかもしれません。冷蔵とは、食べ物を冷たく保つことです。報告は、2016年に始まったBeeHexという会社にも触れています。"
+          ]
+        },
+        {
+          "text": "Printing food from powders may be a useful way to feed astronauts. However, the printer in 2013 was only a prototype. The storage time was also only an estimate.",
+          "slash": "Printing food from powders may be a useful way / to feed astronauts. / However, the printer in 2013 was only a prototype. / The storage time was also only an estimate.",
+          "hints": [
+            "astronauts, prototype, estimate",
+            "粉末から食べ物を印刷することは宇宙飛行士の食事に役立つかもしれないが、2013年のものは試作機で、保存期間も見積もりにすぎない。",
+            "粉末から食べ物を印刷することは、宇宙飛行士に食事を与える役に立つ方法かもしれません。ただし、2013年のプリンターは試作機にすぎませんでした。保存期間も見積もりにすぎません。"
+          ]
+        }
+      ]
+    },
+    "lv2": {
+      "paragraphs": [
+        {
+          "text": "In May 2013, ABC News reported that NASA decided to award a company a grant of {{hidden:0}} to build a prototype of a 3D food printer. A prototype is the first model of a new machine, made to test an idea. The money was for this test model only, not for a finished product. NASA wanted a printer that could be used for astronauts on long space flights.",
+          "slash": "In May 2013, / ABC News reported that NASA decided to award a company / a grant of {{hidden:0}} / to build a prototype of a 3D food printer. / A prototype is the first model of a new machine, / made to test an idea. / The money was for this test model only, / not for a finished product. / NASA wanted a printer / that could be used for astronauts on long space flights.",
+          "hints": [
+            "NASA, grant, prototype",
+            "2013年5月の報道によると、NASAは長い宇宙飛行向けの3D食品プリンターの試作機のために企業へ資金を与えることを決めた。",
+            "2013年5月、ABCニュースは、NASAが3D食品プリンターの試作機を作るために、ある企業に{{hidden:0}}の助成金を与えることを決めたと報じました。試作機とは、アイデアを試すために作られる、新しい機械の最初のモデルのことです。そのお金は、完成品ではなく、この試験用のモデルのためのものでした。NASAは、長い宇宙飛行の宇宙飛行士のために使えるプリンターを求めていました。"
+          ]
+        },
+        {
+          "text": "The printer was designed to make food from powders. These powders contain nutrients, which are the parts of food that the body needs. According to an estimate at that time, the powders could be kept for {{hidden:1}}. If this estimate is correct, astronauts on long flights could carry food that lasts for a very long time.",
+          "slash": "The printer was designed to make food from powders. / These powders contain nutrients, / which are the parts of food that the body needs. / According to an estimate at that time, / the powders could be kept for {{hidden:1}}. / If this estimate is correct, / astronauts on long flights could carry food / that lasts for a very long time.",
+          "hints": [
+            "powders, nutrients, storage",
+            "プリンターは栄養素を含む粉末から食べ物を作る設計で、当時の見積もりでは粉末は非常に長く保存できるとされた。",
+            "このプリンターは、粉末から食べ物を作るように設計されていました。この粉末には栄養素が含まれていて、栄養素とは、食べ物の中の体が必要とする成分のことです。当時の見積もりでは、粉末は{{hidden:1}}保存できるとされていました。この見積もりが正しければ、長い飛行の宇宙飛行士は、とても長い期間もつ食べ物を持っていけることになります。"
+          ]
+        },
+        {
+          "text": "Another goal was to make food for each person. The report said that the printer could take care of food allergies and personal tastes. A food allergy is a bad reaction of the body to a certain kind of food. In other words, the machine could change the food for each person, instead of making the same meal for everyone.",
+          "slash": "Another goal was to make food for each person. / The report said that the printer could take care of / food allergies and personal tastes. / A food allergy is a bad reaction of the body / to a certain kind of food. / In other words, / the machine could change the food for each person, / instead of making the same meal for everyone.",
+          "hints": [
+            "each person, allergies, personal tastes",
+            "もう一つの目的は、食物アレルギーや好みに対応して、全員に同じ食事を出すのではなく人ごとに食べ物を変えることだった。",
+            "もう一つの目標は、一人ひとりに合った食べ物を作ることでした。報道は、このプリンターが食物アレルギーや個人の好みに対応できると伝えました。食物アレルギーとは、ある種類の食べ物に対して体が起こす悪い反応のことです。言い換えると、この機械は全員に同じ食事を作るのではなく、人ごとに食べ物を変えることができるということです。"
+          ]
+        },
+        {
+          "text": "In 2019, NASA Spinoff, a NASA publication, wrote more about this research. The title of the article refers to deep-space food science, which means research on food for travel far from Earth. The title also says that this research improves 3D-printing capabilities, or the things a printer can do. It explained that printing food could give each person the nutrition they need. It could also reduce packaging waste and the need for refrigeration, which means keeping food cold. The same article mentions BeeHex, a company that was started in 2016.",
+          "slash": "In 2019, / NASA Spinoff, a NASA publication, wrote more about this research. / The title of the article refers to deep-space food science, / which means research on food for travel far from Earth. / The title also says that this research improves 3D-printing capabilities, / or the things a printer can do. / It explained that printing food could give each person / the nutrition they need. / It could also reduce packaging waste / and the need for refrigeration, / which means keeping food cold. / The same article mentions BeeHex, / a company that was started in 2016.",
+          "hints": [
+            "nutrition, packaging waste, BeeHex",
+            "2019年のNASAの刊行物は、食べ物の印刷が個人に必要な栄養を与え、包装ごみや冷蔵の必要を減らしうると説明し、2016年設立のBeeHex社にも触れている。",
+            "2019年に、NASAの刊行物であるNASA Spinoffが、この研究についてさらに書きました。その記事の題名にある deep-space food science とは、地球から遠く離れた場所へ旅するための食べ物の研究のことです。題名はまた、この研究が3Dプリントの能力、つまりプリンターができることを高めると述べています。そこでは、食べ物を印刷することで、一人ひとりに必要な栄養を与えられると説明されています。また、包装ごみや、食べ物を冷たく保つ冷蔵の必要も減らせるかもしれません。同じ記事は、2016年に始まった会社BeeHexにも触れています。"
+          ]
+        },
+        {
+          "text": "Printing food from powders may be a useful way to feed astronauts on long flights. These points answer the question in the title: NASA decided to pay for a prototype because it wanted a printer that could feed astronauts on long flights. In short, the reports describe three possible benefits: long storage, food for each person, and less waste. However, there are limits. The printer in 2013 was only a prototype, not a finished product. The storage time of {{hidden:1}} was also only an estimate.",
+          "slash": "Printing food from powders may be a useful way / to feed astronauts on long flights. / These points answer the question in the title: / NASA decided to pay for a prototype / because it wanted a printer / that could feed astronauts on long flights. / In short, the reports describe three possible benefits: / long storage, food for each person, and less waste. / However, there are limits. / The printer in 2013 was only a prototype, / not a finished product. / The storage time of {{hidden:1}} / was also only an estimate.",
+          "hints": [
+            "astronauts, prototype, estimate",
+            "粉末から食べ物を印刷することは宇宙飛行士の食事に役立つかもしれないが、2013年のものは試作機で、保存期間も見積もりにすぎない。",
+            "粉末から食べ物を印刷することは、長い飛行中の宇宙飛行士に食事を与える役に立つ方法かもしれません。これらの点が題名の問いへの答えです。NASAは、長い飛行中の宇宙飛行士に食事を与えられるプリンターを求めていたため、試作機にお金を出しました。報告が述べる利点を短くまとめると、長期保存、一人ひとりに合わせた食べ物、ごみの削減の3つです。ただし、限界もあります。2013年のプリンターは試作機にすぎず、完成品ではありませんでした。{{hidden:1}}という保存期間も、見積もりにすぎません。"
+          ]
+        }
+      ]
+    }
+  },
+  "glossary": [
+    {
+      "word": "award",
+      "easyEn": "to give money or a prize to someone",
+      "ja": "与える、授与する"
+    },
+    {
+      "word": "prototype",
+      "easyEn": "the first model of a new machine, made for testing",
+      "ja": "試作機"
+    },
+    {
+      "word": "astronaut",
+      "forms": [
+        "astronauts"
+      ],
+      "easyEn": "a person who travels and works in space",
+      "ja": "宇宙飛行士"
+    },
+    {
+      "word": "powder",
+      "forms": [
+        "powders"
+      ],
+      "easyEn": "a dry material made of very small pieces",
+      "ja": "粉末"
+    },
+    {
+      "word": "nutrient",
+      "forms": [
+        "nutrients"
+      ],
+      "easyEn": "a part of food that the body needs to live and grow",
+      "ja": "栄養素"
+    },
+    {
+      "word": "estimate",
+      "easyEn": "a guess about a number, made from what we know",
+      "ja": "見積もり",
+      "forms": [
+        "estimated"
+      ]
+    },
+    {
+      "word": "allergy",
+      "forms": [
+        "allergies"
+      ],
+      "easyEn": "a bad reaction of the body to some food",
+      "ja": "アレルギー"
+    },
+    {
+      "word": "nutrition",
+      "easyEn": "the food and nutrients that the body needs",
+      "ja": "栄養"
+    },
+    {
+      "word": "packaging",
+      "easyEn": "the boxes and bags that cover things we buy",
+      "ja": "包装"
+    },
+    {
+      "word": "refrigeration",
+      "easyEn": "keeping food cold so that it stays fresh",
+      "ja": "冷蔵"
+    },
+    {
+      "word": "storage",
+      "easyEn": "keeping something in a place for a long time",
+      "ja": "保存"
+    }
+  ],
+  "hiddenNumbers": [
+    {
+      "paragraph": 0,
+      "answer": 125000,
+      "unit": "dollars",
+      "display": "125,000 dollars",
+      "label": "dollars NASA awarded for the printer prototype in 2013",
+      "choices": [
+        5000,
+        25000,
+        125000,
+        1000000
+      ]
+    },
+    {
+      "paragraph": 1,
+      "answer": 30,
+      "unit": "years",
+      "display": "about 30 years",
+      "label": "estimated storage time of the powders",
+      "choices": [
+        3,
+        10,
+        30,
+        100
+      ]
+    }
+  ],
+  "factOpinion": [
+    {
+      "sentence": "The report also mentions BeeHex, a company that started in 2016.",
+      "answer": "fact",
+      "explain": "報告に書かれている会社名と開始年で、確認できる事実。"
+    },
+    {
+      "sentence": "Printing food from powders may be a useful way to feed astronauts.",
+      "answer": "opinion",
+      "explain": "「役に立つかもしれない」という評価・予想で、人によって判断が分かれるので意見。"
+    },
+    {
+      "sentence": "However, the printer in 2013 was only a prototype.",
+      "answer": "fact",
+      "explain": "2013年の機械が試作機の段階だったという確認できる事実。"
+    }
+  ],
+  "cardPoints": [
+    "space-food",
+    "personal-nutrition",
+    "environment"
+  ]
+}

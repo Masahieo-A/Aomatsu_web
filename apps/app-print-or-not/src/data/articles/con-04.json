@@ -1,0 +1,268 @@
+{
+  "id": "con-04",
+  "side": "con",
+  "hookTitle": "Why did some countries ban new meat?",
+  "point": "culture-trust",
+  "difficulty": 2,
+  "minutes": 6,
+  "sources": [
+    {
+      "title": "伊下院、「培養肉」などの細胞性食品の製造・販売禁止法案を承認（EU）",
+      "publisher": "農畜産業振興機構（ALIC）",
+      "date": "2023-11-29",
+      "url": "https://alic.go.jp/chosa-c/joho01_003645.html",
+      "lang": "ja",
+      "authorType": "government",
+      "biasNote": "公的機関の報告で内容は比較的中立。禁止の対象は培養肉で、批判側は「政治的」と主張している点に注意。"
+    },
+    {
+      "title": "Italy bans lab-grown meat in bid to protect traditional food",
+      "publisher": "The Local Italy",
+      "date": "2023-11-17",
+      "url": "https://www.thelocal.it/20231117/italy-bans-lab-grown-meat-in-bid-to-protect-traditional-food",
+      "lang": "en",
+      "authorType": "media",
+      "biasNote": "報道記事。禁止の理由は政府の説明が中心で、批判側の見方は一部にとどまる。"
+    },
+    {
+      "title": "Texas becomes seventh state to ban lab-grown meat",
+      "publisher": "Stateline / News From The States",
+      "date": "2025-06-30",
+      "url": "https://www.newsfromthestates.com/article/texas-becomes-seventh-state-ban-lab-grown-meat",
+      "lang": "en",
+      "authorType": "media",
+      "biasNote": "報道記事。禁止の理由は産業保護や研究時間で、安全性の危険が証明されたわけではない（連邦政府は販売を承認済み）。"
+    },
+    {
+      "title": "Steakholder Foods Launches Innovative Ink to 3D Print Beef Steaks",
+      "publisher": "Steakholder Foods（企業プレスリリース）",
+      "date": "2023-09-27",
+      "url": "https://www.steakholderfoods.com/blog/steakholder-foods-launches-innovative-ink-to-3d-print-beef-steaks",
+      "lang": "en",
+      "authorType": "company",
+      "biasNote": "企業自身の発表なので、製品の良い面が強調されている宣伝の可能性がある。"
+    },
+    {
+      "title": "Effect of Labelling and Information on Consumer Perception of Foods Presented as 3D Printed",
+      "publisher": "Foods 11(6):809（MDPI、アルバータ大学）",
+      "date": "2022-03-11",
+      "url": "https://www.mdpi.com/2304-8158/11/6/809",
+      "lang": "en",
+      "authorType": "journal",
+      "biasNote": "表示が印象に与える影響を調べた実験で、食品そのものの安全性を調べたものではない。"
+    }
+  ],
+  "levels": {
+    "lv1": {
+      "paragraphs": [
+        {
+          "text": "In November 2023, Italy banned the making and selling of cultivated meat. Cultivated meat, also called lab-grown meat, is real meat grown from animal cells. It is not the same as 3D-printed food. Italy gave several reasons for the ban.",
+          "slash": "In November 2023, / Italy banned / the making and selling / of cultivated meat. Cultivated meat, / also called lab-grown meat, / is real meat grown from animal cells. It is not the same / as 3D-printed food. Italy gave several reasons / for the ban.",
+          "hints": [
+            "Italy, cultivated meat, ban",
+            "イタリアは2023年11月に培養肉の製造・販売を禁止した。培養肉は3Dプリント食品とは別のものである。",
+            "2023年11月、イタリアは培養肉の製造と販売を禁止しました。培養肉は、ラボ育ち肉とも呼ばれ、動物の細胞から育てた本物の肉です。これは3Dプリント食品と同じものではありません。イタリアは禁止にいくつかの理由を挙げました。"
+          ]
+        },
+        {
+          "text": "The government wanted to protect traditional food and farmers. It also wanted to protect people's health. It said cultivated meat had not been tested enough. This was a reason to be careful, not proof of danger. Some critics say the law is political. Meat-like names on these products can bring fines of 10,000 to 60,000 euros.",
+          "slash": "The government wanted to protect / traditional food and farmers. It also wanted to protect / people's health. It said / cultivated meat had not been tested enough. This was a reason to be careful, / not proof of danger. Some critics say / the law is political. Meat-like names / on these products / can bring fines of 10,000 to 60,000 euros.",
+          "hints": [
+            "traditional food, tested enough, critics",
+            "イタリアは食文化・畜産・健康を守るためとし、十分に試験されていないという予防的な理由を挙げたが、批判側は政治的だと言う。",
+            "政府は、伝統的な食べ物と農家を守りたいと考えました。また、人々の健康も守りたいと考えました。培養肉は十分に試験されていない、と政府は述べました。これは用心するための理由であり、危険が証明されたということではありません。この法律は政治的だと言う批判者もいます。これらの製品に肉を思わせる名前をつけると、1万〜6万ユーロの罰金になることがあります。"
+          ]
+        },
+        {
+          "text": "Some US states have also banned lab-grown meat. In June 2025, there were {{hidden:0}} such states. Texas made a ban that lasts two years. Its reason was to protect the real meat industry. In Indiana, which Texas followed as a model, the reason was time for research. But the US government has approved the sale of cultivated meat. No danger has been proven.",
+          "slash": "Some US states have also banned / lab-grown meat. In June 2025, / there were {{hidden:0}} such states. Texas made a ban / that lasts two years. Its reason was / to protect the real meat industry. In Indiana, / which Texas followed as a model, / the reason was time for research. But the US government / has approved the sale of cultivated meat. No danger / has been proven.",
+          "hints": [
+            "US states, Texas, approved sale",
+            "2025年6月時点で米国の7州が培養肉を禁止したが、連邦政府は販売を承認済みで、危険は証明されていない。",
+            "アメリカの一部の州も、ラボ育ち肉を禁止しています。2025年6月の時点で、そのような州は{{hidden:0}}州ありました。テキサス州は、2年間続く禁止を定めました。その理由は、本物の食肉産業を守ることでした。テキサス州が手本にしたインディアナ州では、研究の時間を取るためというのが理由でした。しかし、アメリカ政府は培養肉の販売を承認しています。危険は証明されていません。"
+          ]
+        },
+        {
+          "text": "How is this related to 3D printing? In 2023, a company called Steakholder Foods announced an ink for printing beef steaks. The company says the ink is plant-based, and cultivated cells are layered on it. So laws about cultivated meat may also affect some printed meat. Not all printed food uses cultivated cells.",
+          "slash": "How is this related / to 3D printing? In 2023, / a company called Steakholder Foods / announced an ink / for printing beef steaks. The company says / the ink is plant-based, / and cultivated cells are layered on it. So laws about cultivated meat / may also affect some printed meat. Not all printed food / uses cultivated cells.",
+          "hints": [
+            "Steakholder Foods, ink, cultivated cells",
+            "培養細胞を使う3Dプリント肉があり、培養肉の規制は一部の3Dプリント食品にも関わりうる。ただし全ての3Dプリント食品が培養細胞を使うわけではない。",
+            "これは3Dプリントとどう関係するのでしょうか。2023年、ステークホルダー・フーズという会社が、牛肉のステーキを印刷するためのインクを発表しました。会社によると、このインクは植物由来で、その上に培養細胞を重ねます。ですから、培養肉についての法律は、一部の3Dプリント肉にも影響するかもしれません。すべての3Dプリント食品が培養細胞を使うわけではありません。"
+          ]
+        },
+        {
+          "text": "Labels also affect choices. In a 2022 study, adding the label 3D printed changed which ordinary snacks people chose. Bans on cultivated meat are not proof that it is dangerous. How rules for printed meat will develop is still unclear.",
+          "slash": "Labels also affect choices. In a 2022 study, / adding the label 3D printed / changed which ordinary snacks / people chose. Bans on cultivated meat / are not proof / that it is dangerous. How rules for printed meat / will develop / is still unclear.",
+          "hints": [
+            "labels, bans, rules",
+            "表示ひとつで選択が変わることがあり、培養肉の禁止は危険の証明ではなく、3Dプリント肉の規制の行方はまだ不明である。",
+            "表示も選択に影響します。2022年の研究では、「3Dプリント」というラベルをつけるだけで、普通のお菓子の選ばれ方が変わりました。培養肉の禁止は、それが危険だという証明ではありません。3Dプリント肉のルールがこれからどうなるかは、まだはっきりしていません。"
+          ]
+        }
+      ]
+    },
+    "lv2": {
+      "paragraphs": [
+        {
+          "text": "In November 2023, Italy banned the making and selling of cultivated meat. Cultivated meat, also called lab-grown meat, is real meat made by growing animal cells in a factory. It is a different technology from 3D printing. The lower house of the Italian parliament approved the bill that month. The law covers cell-based foods in general.",
+          "slash": "In November 2023, / Italy banned / the making and selling / of cultivated meat. Cultivated meat, / also called lab-grown meat, / is real meat made / by growing animal cells in a factory. It is a different technology / from 3D printing. The lower house of the Italian parliament / approved the bill that month. / The law covers cell-based foods in general.",
+          "hints": [
+            "Italy, cultivated meat, lower house",
+            "イタリアは2023年11月に培養肉の製造・販売を禁止した。培養肉は3Dプリントとは別の技術である。",
+            "2023年11月、イタリアは培養肉の製造と販売を禁止しました。培養肉は、ラボ育ち肉とも呼ばれ、動物の細胞を工場で育てて作る本物の肉です。これは3Dプリントとは別の技術です。その月、イタリア議会の下院がこの法案を承認しました。この法律は、細胞性食品全般を対象にしています。"
+          ]
+        },
+        {
+          "text": "The Italian government gave several reasons. It wanted to protect traditional food and livestock farming. It also said it wanted to protect health, because cultivated meat had not been tested enough, and to protect people's right to know what they eat. This was a precaution, not proof that the meat is dangerous. Using meat-like names on such products can bring fines of 10,000 to 60,000 euros, according to The Local. Critics say the law is political.",
+          "slash": "The Italian government gave several reasons. It wanted to protect traditional food / and livestock farming. It also said / it wanted to protect health, / because cultivated meat / had not been tested enough, / and to protect people's right / to know what they eat. This was a precaution, / not proof that the meat is dangerous. Using meat-like names / on such products / can bring fines of 10,000 to 60,000 euros, / according to The Local. Critics say / the law is political.",
+          "hints": [
+            "reasons, precaution, fines",
+            "イタリアは食文化・畜産・健康・知る権利を理由にしたが、健康面は予防的な理由であり、批判側は政治的だと言う。",
+            "イタリア政府はいくつかの理由を挙げました。伝統的な食べ物と畜産を守りたいと考えました。また、培養肉は十分に試験されていないとして健康を守りたいこと、そして人々が食べるものについて知る権利を守りたいことも挙げました。これは用心のための措置であり、その肉が危険だという証明ではありません。The Localによると、こうした製品に肉を思わせる名前をつけると、1万〜6万ユーロの罰金になることがあります。批判する人たちは、この法律は政治的だと言っています。"
+          ]
+        },
+        {
+          "text": "Similar rules exist in the United States. In June 2025, there were {{hidden:0}} states with bans on lab-grown meat. Texas made a ban that lasts two years. Its reason was to protect the real meat industry. In Indiana, which Texas followed as a model, the reason given was time for research. The US government, however, has approved the sale of cultivated meat. No danger has been proven.",
+          "slash": "Similar rules exist in the United States. In June 2025, / there were {{hidden:0}} states / with bans on lab-grown meat. Texas made a ban / that lasts two years. Its reason was / to protect the real meat industry. In Indiana, / which Texas followed as a model, / the reason given / was time for research. The US government, / however, has approved the sale of cultivated meat. No danger / has been proven.",
+          "hints": [
+            "US states, Texas, federal approval",
+            "2025年6月時点で米国の7州が禁止していたが、理由は産業保護や研究時間で、連邦政府は販売を承認済みであり危険は証明されていない。",
+            "アメリカにも似たルールがあります。2025年6月の時点で、ラボ育ち肉を禁止している州は{{hidden:0}}州ありました。テキサス州は、2年間続く禁止を定めました。その理由は、本物の食肉産業を守ることでした。テキサス州が手本にしたインディアナ州では、研究の時間を取ることが理由として挙げられました。しかし、アメリカ政府は培養肉の販売をすでに承認しています。危険は証明されていません。"
+          ]
+        },
+        {
+          "text": "Where does 3D-printed food fit in? In 2023, a company called Steakholder Foods announced an ink for printing beef steaks. The company says the ink is plant-based, and cultivated cells are layered on it. A steak like this would be both 3D-printed and based on cultivated meat. This is the point where rules on cultivated meat could also affect printed food. Not all printed food uses cultivated cells.",
+          "slash": "Where does 3D-printed food fit in? In 2023, / a company called Steakholder Foods / announced an ink / for printing beef steaks. The company says / the ink is plant-based, / and cultivated cells are layered on it. A steak like this / would be both 3D-printed / and based on cultivated meat. This is the point / where rules on cultivated meat / could also affect printed food. Not all printed food / uses cultivated cells.",
+          "hints": [
+            "Steakholder Foods, 3D-printed beef, rules overlap",
+            "培養細胞を使う3Dプリント肉が、培養肉の規制と3Dプリント食品の接点であり、全ての3Dプリント食品が培養細胞を使うわけではない。",
+            "3Dプリント食品は、この話のどこに関わるのでしょうか。2023年、ステークホルダー・フーズという会社が、牛肉のステーキを印刷するためのインクを発表しました。会社によると、このインクは植物由来で、その上に培養細胞を重ねます。このようなステーキは、3Dプリントされたものであり、同時に培養肉でもあることになります。ここが、培養肉についてのルールが3Dプリント食品にも影響しうる接点です。すべての3Dプリント食品が培養細胞を使うわけではありません。"
+          ]
+        },
+        {
+          "text": "Names and labels also matter. In a 2022 study, ordinary chocolate and gummies were shown with the label 3D printed. Adding the label changed which snacks people chose. The study was carried out by researchers at the University of Alberta. This suggests that a label alone can affect how people see a food.",
+          "slash": "Names and labels also matter. In a 2022 study, / ordinary chocolate and gummies / were shown with the label 3D printed. Adding the label / changed which snacks / people chose. The study was carried out / by researchers / at the University of Alberta. This suggests / that a label alone can affect how people see a food.",
+          "hints": [
+            "labels, 2022 study, consumer choice",
+            "表示だけで人々の選ぶ食品が変わることがあり。",
+            "名前や表示も大切です。2022年の研究では、普通のチョコレートとグミに「3Dプリント」というラベルをつけて見せました。ラベルをつけるだけで、人々が選ぶお菓子が変わりました。この研究は、アルバータ大学の研究者たちが行ったものです。このことは、表示だけで人々の食品の見方が変わりうることを示しています。"
+          ]
+        },
+        {
+          "text": "Bans on cultivated meat target one technology, not 3D printers. The reasons include culture, farming, and caution about testing. No one has proven that cultivated meat is dangerous. How rules for printed meat will develop is still unclear.",
+          "slash": "Bans on cultivated meat / target one technology, / not 3D printers. The reasons include / culture, farming, / and caution about testing. No one has proven / that cultivated meat is dangerous. How rules for printed meat / will develop / is still unclear.",
+          "hints": [
+            "ban target, reasons, unclear rules",
+            "禁止の対象は培養肉であり、理由は文化・畜産・慎重さなどで、危険は証明されておらず、3Dプリント肉の規制の行方は不明である。",
+            "培養肉の禁止は、ひとつの技術を対象にしたもので、3Dプリンターを対象にしたものではありません。理由には、文化、畜産、そして試験についての慎重さが含まれます。培養肉が危険だと証明した人はいません。3Dプリント肉のルールがこれからどうなるかは、まだはっきりしていません。"
+          ]
+        }
+      ]
+    }
+  },
+  "glossary": [
+    {
+      "word": "ban",
+      "forms": [
+        "banned",
+        "bans"
+      ],
+      "easyEn": "to say that something is not allowed",
+      "ja": "禁止する・禁止"
+    },
+    {
+      "word": "cultivated meat",
+      "easyEn": "real meat grown from animal cells",
+      "ja": "培養肉"
+    },
+    {
+      "word": "cell",
+      "forms": [
+        "cells"
+      ],
+      "easyEn": "a very small part of a living thing",
+      "ja": "細胞"
+    },
+    {
+      "word": "traditional",
+      "easyEn": "done in the old way for many years",
+      "ja": "伝統的な"
+    },
+    {
+      "word": "protect",
+      "easyEn": "to keep something safe",
+      "ja": "守る"
+    },
+    {
+      "word": "tested",
+      "easyEn": "checked to see if it is safe or works well",
+      "ja": "試験された"
+    },
+    {
+      "word": "proof",
+      "easyEn": "facts that show something is true",
+      "ja": "証拠・証明"
+    },
+    {
+      "word": "critics",
+      "easyEn": "people who say what is wrong with something",
+      "ja": "批判する人たち"
+    },
+    {
+      "word": "political",
+      "easyEn": "connected with government and its power",
+      "ja": "政治的な"
+    },
+    {
+      "word": "fine",
+      "forms": [
+        "fines"
+      ],
+      "easyEn": "money you must pay for breaking a rule",
+      "ja": "罰金"
+    },
+    {
+      "word": "ink",
+      "easyEn": "a colored liquid used for printing",
+      "ja": "インク"
+    }
+  ],
+  "hiddenNumbers": [
+    {
+      "paragraph": 2,
+      "answer": 7,
+      "unit": "states",
+      "display": "seven",
+      "label": "US states with bans on lab-grown meat in June 2025",
+      "choices": [
+        2,
+        4,
+        7,
+        15
+      ]
+    }
+  ],
+  "factOpinion": [
+    {
+      "sentence": "In November 2023, Italy banned the making and selling of cultivated meat.",
+      "answer": "fact",
+      "explain": "いつ何が起きたかを述べた、確かめられる事実の文である。"
+    },
+    {
+      "sentence": "Bans on cultivated meat are not proof that it is dangerous.",
+      "answer": "opinion",
+      "explain": "「禁止は危険の証明ではない」という、書き手の評価や判断を述べた文である。"
+    },
+    {
+      "sentence": "But the US government has approved the sale of cultivated meat.",
+      "answer": "fact",
+      "explain": "政府が承認したかどうかは、記録で確かめられる事実である。"
+    }
+  ],
+  "cardPoints": [
+    "culture-trust",
+    "health-unknown",
+    "labeling"
+  ]
+}

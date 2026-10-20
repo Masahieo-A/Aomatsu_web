@@ -1,0 +1,112 @@
+"use client";
+// S6 Stance Check: 立場の再表明、前後の差、クラスの匿名分布
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import RequireStudent from "@/components/RequireStudent";
+import SideBadge from "@/components/SideBadge";
+import StanceChart from "@/components/StanceChart";
+import StanceMeter, { stanceText } from "@/components/StanceMeter";
+import { mySide } from "@/lib/progress";
+import { useStudent } from "@/lib/store";
+import type { ApiResult, ClassStats, StudentState } from "@/lib/types";
+
+export default function StancePage() {
+  return <RequireStudent>{(s) => <Stance s={s} />}</RequireStudent>;
+}
+
+function diffText(before: number | undefined, after: number | undefined): string {
+  if (before === undefined || after === undefined) return "";
+  const d = after - before;
+  if (d === 0) return "最初と同じ立場です。";
+  return `${Math.abs(d)}段階 ${d > 0 ? "制限側" : "広める側"}へ動きました。`;
+}
+
+function Stance({ s }: { s: StudentState }) {
+  const { update, sync } = useStudent();
+  const [value, setValue] = useState<number | undefined>(s.stanceAfter);
+  const [reason, setReason] = useState(s.stanceReason ?? "");
+  const [saved, setSaved] = useState(s.stanceAfter !== undefined);
+  const [stats, setStats] = useState<ClassStats | null>(null);
+  const [statsMsg, setStatsMsg] = useState("");
+
+  const sideBefore = mySide({ ...s, stanceAfter: undefined });
+  const sideAfter = mySide({ ...s, stanceAfter: value });
+
+  useEffect(() => {
+    if (!saved) return;
+    let alive = true;
+    fetch(`/api/class-stats?classId=${encodeURIComponent(s.classId)}`)
+      .then((r) => r.json())
+      .then((r: ApiResult<ClassStats>) => {
+        if (!alive) return;
+        if (r.ok && r.data) setStats(r.data);
+        else setStatsMsg(r.noDb ? "クラスの分布は、共有DBの設定後に表示されます。" : (r.error ?? "分布を読み込めませんでした。"));
+      })
+      .catch(() => alive && setStatsMsg("通信できないため、分布を表示できません。"));
+    return () => {
+      alive = false;
+    };
+  }, [saved, s.classId]);
+
+  const save = () => {
+    if (value === undefined) return;
+    const r = reason.trim().slice(0, 200);
+    update((cur) => ({ ...cur, stanceAfter: value, stanceReason: r }));
+    sync("stance", { stanceAfter: value, stanceReason: r });
+    setSaved(true);
+  };
+
+  return (
+    <div className="page space-y-6">
+      <h1 className="page-title">Stance Check</h1>
+
+      <section className="box space-y-3">
+        <p className="text-sm">最初の立場：{stanceText(s.stanceBefore)}</p>
+        <p className="muted">記事を読んだ今、どう考えますか。</p>
+        <StanceMeter
+          name="after"
+          value={value}
+          onChange={(v) => {
+            setValue(v);
+            setSaved(false);
+          }}
+        />
+        {value !== undefined && <p className="font-semibold">{diffText(s.stanceBefore, value)}</p>}
+        {sideAfter && sideBefore && sideAfter !== sideBefore && (
+          <p className="flex flex-wrap items-center gap-2 text-sm">
+            自分の側が <SideBadge side={sideAfter} /> に変わります。作成済みの Card は消えず、反対側の Card として数えます。
+          </p>
+        )}
+        <div>
+          <label className="field-label" htmlFor="reason">
+            立場が変わった／変わらなかった理由（任意・1文）
+          </label>
+          <input
+            id="reason"
+            className="field"
+            maxLength={200}
+            value={reason}
+            onChange={(e) => {
+              setReason(e.target.value);
+              setSaved(false);
+            }}
+          />
+        </div>
+        <button className="btn" disabled={value === undefined || saved} onClick={save}>
+          {saved ? "✓ 保存済み" : "保存する"}
+        </button>
+      </section>
+
+      {saved && (
+        <section className="box">
+          <h2 className="section-title">クラス {s.classId} の立場（匿名）</h2>
+          {stats ? <StanceChart before={stats.before} after={stats.after} /> : <p className="muted">{statsMsg || "読み込み中…"}</p>}
+        </section>
+      )}
+
+      <Link href="/map" className="btn-secondary">
+        Article Map に戻る
+      </Link>
+    </div>
+  );
+}

@@ -1,0 +1,45 @@
+[
+  {
+    "id": "t1",
+    "text": "Italy banned lab-grown meat, so it is dangerous.",
+    "answer": "trap",
+    "why": "禁止の対象は3Dプリント食品ではなく培養肉。理由の中心は食文化・畜産の保護で、健康面は「十分に試験されていない」という予防的な理由。危険が証明されたわけではない。",
+    "rewrite": "In 2023, Italy banned lab-grown meat to protect its food culture. This shows that governments sometimes limit new food technology."
+  },
+  {
+    "id": "t2",
+    "text": "Ultra-processed food is linked to 32 health problems, so printed food is bad.",
+    "answer": "trap",
+    "why": "3Dプリント食品を調べた研究ではない。しかも「関連がある」（相関）であって、原因だと示したものではない。",
+    "rewrite": "Some researchers say printed food may be ultra-processed food. Eating a lot of ultra-processed food is linked to health problems (The BMJ, 2024)."
+  },
+  {
+    "id": "t3",
+    "text": "The company says its printed meat produces 91% less greenhouse gas than beef.",
+    "answer": "treasure",
+    "conditional": true,
+    "why": "条件つきで使える。企業自身が計算した数字だと明記してあるので使ってよい。ただし第三者の調査ではないので、反論されると弱い。",
+    "rewrite": "The company Redefine Meat says its printed meat produces 91% less greenhouse gas than beef."
+  },
+  {
+    "id": "t4",
+    "text": "In 2023, there were no rules made especially for 3D food printing anywhere in the world (report for the UK Food Standards Agency).",
+    "answer": "treasure",
+    "why": "公的機関向けの報告で、年も書いてある。2023年時点の話なので、年を消さずに書くこと。",
+    "rewrite": "According to a 2023 report for the UK Food Standards Agency, there were no rules made especially for 3D food printing."
+  },
+  {
+    "id": "t5",
+    "text": "People hate 3D-printed food.",
+    "answer": "trap",
+    "why": "確かめていない思い込み。普通の食品に「3Dプリント」と表示しただけで、チョコは75%、グミは79%の人がそちらを選んだ実験がある（University of Alberta, 2022）。簡単に反論される。",
+    "rewrite": "In a survey in the Czech Republic, about one third of people worried that 3D-printed food could be contaminated."
+  },
+  {
+    "id": "t6",
+    "text": "About half of the people in care homes have trouble swallowing (CSIRO).",
+    "answer": "treasure",
+    "why": "政府系の研究機関の数字で、出典もある。このあとに「だから何？」を続けるとさらに強くなる。",
+    "rewrite": "About half of the people in care homes have trouble swallowing (CSIRO), so soft food in a real shape can help them enjoy meals."
+  }
+]

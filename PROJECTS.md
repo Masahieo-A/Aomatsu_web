@@ -19,6 +19,7 @@
 | APP006 | 育てるAI | `apps/app-sodateru-ai` | ✅ 本番稼働（Cloudflare Workers） | Next.js（vinext）/ Cloudflare Workers + D1 / Gemini API |
 | APP019 | Question Time 印刷 | `apps/app-qt-print` | ✅ 本番稼働（ポータル同一デプロイ） | 静的HTML / SheetJS（通信なし） |
 | APP020 | L5 Ig Nobel Prize 本文解説 | `apps/app-l5-ignobel-kaisetsu` | ✅ 本番稼働（ポータル同一デプロイ・リンク非掲載） | 静的HTML / JS |
+| APP022 | PRINT or NOT?（3Dプリント食品 Writing準備） | `apps/app-print-or-not` | 🛠 実装完了・未デプロイ（Supabase設定待ち） | Next.js / React / Supabase |
 | — | ポータル本体 | `/`（リポジトリルート） | ✅ 本番稼働 | 静的HTML / CSS / JS |
 
 > **APP002 / APP003 は APP004「Cloze + 整序メーカー」に統合され廃止。** モノレポからフォルダを削除し、ポータルからもカードを除外済み。App ID は使い回さず欠番として保持する。旧GitHubリポジトリ `Masahieo-A/seijo-maker` / `Masahieo-A/cloze-maker` と旧Vercelプロジェクト `seijo-maker` / `cloze-maker` はオーナーが削除（またはアーカイブ）する。
@@ -87,3 +88,10 @@
 - **Vercel Production URL**: https://aomatsu-english-portal.vercel.app
 - **Main Tech Stack**: 静的HTML / CSS / JS
 - **Notes**: カード追加方法は [docs/coding-rules.md](docs/coding-rules.md) を参照。
+
+### APP022 — PRINT or NOT?（3Dプリント食品 Writing準備）
+- **Description**: Writing課題「Should 3D-printed food become more widespread, or should it be restricted?」の準備用。英検準2級レベルに書き直した賛成4・反対4の記事（Lv1/Lv2）を読み、Evidence Card を作り、感情論の仕分け・立場の再表明を経て Writing Builder でアウトラインと本文を作る。生徒用・期間限定。
+- **URL**: 未デプロイ（Vercel の Root Directory を `apps/app-print-or-not` にした別プロジェクトを想定）
+- **Main Tech Stack**: Next.js 16 (App Router) / React / TypeScript / Tailwind / Supabase（service role でサーバー API 経由のみ）
+- **Env**: `SUPABASE_URL` / `SUPABASE_SERVICE_ROLE_KEY` / `TEACHER_PASSCODE`（`.env.example` あり）。Supabase 未設定でも端末内保存で動く（教員画面の集計は不可）。
+- **Notes**: 要件定義の正本は `apps/app-print-or-not/docs/3Dfood_site_requirements.md`、記事資料は `docs/3Dfood_articles.md`。記事データは `src/data/articles/*.json`、検査は `npm run check:articles`。課題終了後のデータ削除は教員画面または `supabase/purge.sql`（2026-10-20 作成）。

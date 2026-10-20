@@ -1,0 +1,83 @@
+[
+  {
+    "category": "意見を述べる",
+    "items": [
+      "I think (that) 3D-printed food should become more widespread.",
+      "I believe 3D-printed food should be restricted until clear rules are made.",
+      "In my opinion, ...",
+      "I have two reasons."
+    ]
+  },
+  {
+    "category": "理由を並べる",
+    "items": [
+      "First, ...  / Second, ...",
+      "One reason is that ...  / Another reason is that ..."
+    ]
+  },
+  {
+    "category": "根拠を示す",
+    "items": [
+      "According to a report by the UK Food Standards Agency, ...",
+      "A study by Osaka University shows that ...",
+      "According to the Japanese government, about 4.6 million tons of food was thrown away in 2024.",
+      "For example, ...",
+      "About half of the people in care homes ..."
+    ]
+  },
+  {
+    "category": "だから何？",
+    "items": [
+      "This means that ...",
+      "As a result, ...",
+      "Because of this, ...",
+      "This is important because ..."
+    ]
+  },
+  {
+    "category": "反対意見と反論",
+    "items": [
+      "Some people say that ... . However, ...",
+      "It is true that ... , but ...",
+      "I understand that ... . Even so, ..."
+    ]
+  },
+  {
+    "category": "言い切りすぎない",
+    "items": [
+      "... may cause problems.",
+      "... can help people who ...",
+      "There is not enough research about ... yet."
+    ]
+  },
+  {
+    "category": "まとめる",
+    "items": [
+      "For these reasons, I believe ...",
+      "In conclusion, ..."
+    ]
+  },
+  {
+    "category": "テーマ語彙",
+    "items": [
+      "swallow 飲み込む",
+      "elderly people 高齢者",
+      "care home 介護施設",
+      "nutrient 栄養素",
+      "food waste 食品廃棄",
+      "leftover 残り物",
+      "bacteria 細菌",
+      "nozzle ノズル（吹き出し口）",
+      "rule / regulation 規則",
+      "safe / safety 安全な/安全",
+      "expensive 高価な",
+      "practical 実用的な",
+      "plant-based 植物由来の",
+      "lab-grown meat 培養肉",
+      "environment 環境",
+      "ban 禁止する",
+      "restrict 制限する",
+      "widespread 広く普及した"
+    ]
+  }
+]
