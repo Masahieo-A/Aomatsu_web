@@ -50,7 +50,6 @@
       "paragraphs": [
         {
           "text": "Food loss means food that is thrown away even though people could eat it. Japan's agriculture ministry estimates that food loss in fiscal 2024 was 4.61 million tons. Of this, 2.37 million tons came from businesses. Around the world, about one third of food is lost or thrown away. That is about {{hidden:1}} each year.",
-          "slash": "Food loss means food / that is thrown away / even though people could eat it. / Japan's agriculture ministry estimates / that food loss in fiscal 2024 / was 4.61 million tons. / Of this, 2.37 million tons / came from businesses. / Around the world, / about one third of food / is lost or thrown away. / That is about {{hidden:1}} each year.",
           "hints": [
             "food loss, ministry, one third",
             "日本の食品ロスは年間461万トンで、世界でも食べ物の約3分の1が失われている。",
@@ -59,7 +58,6 @@
         },
         {
           "text": "Some vegetables are not sold because of their size or shape. They are called non-standard vegetables. In Japan, they are said to total {{hidden:0}} a year. A professor at Yamagata University has an idea to turn them into powder. Powder can be stored for a long time.",
-          "slash": "Some vegetables are not sold / because of their size or shape. / They are called non-standard vegetables. / In Japan, / they are said to total {{hidden:0}} a year. / A professor at Yamagata University / has an idea / to turn them into powder. / Powder can be stored / for a long time.",
           "hints": [
             "non-standard vegetables, powder, store",
             "大きさや形が規格に合わない野菜は年に何百万トンもあり、山形大学の教授は粉末にして使う案をもつ。",
@@ -68,7 +66,6 @@
         },
         {
           "text": "The professor's team has printed sushi with a 3D printer. The printer makes the topping from fish paste. It takes 6 to 7 minutes to print one piece. The team's goal is a low-price home printer around the year 2030.",
-          "slash": "The professor's team has printed sushi / with a 3D printer. / The printer makes the topping / from fish paste. / It takes 6 to 7 minutes / to print one piece. / The team's goal is a low-price home printer / around the year 2030.",
           "hints": [
             "sushi, topping, 6 to 7 minutes",
             "教授のチームは魚のすり身から寿司を印刷し、1個に6〜7分かかる。目標は2030年ごろの安価な家庭用機である。",
@@ -77,7 +74,6 @@
         },
         {
           "text": "Other groups use leftovers. A project called Upprinting Food ground leftover bread into flour. It mixed the flour with vegetable or fruit paste and printed new food. The project ran from 2018 to 2021, and it has stopped now. A review paper says fruit skins and vegetable stems can also become ink.",
-          "slash": "Other groups use leftovers. / A project called Upprinting Food / ground leftover bread into flour. / It mixed the flour / with vegetable or fruit paste / and printed new food. / The project ran from 2018 to 2021, / and it has stopped now. / A review paper says / fruit skins and vegetable stems / can also become ink.",
           "hints": [
             "leftover bread, flour, stems",
             "余ったパンの粉を野菜や果物のペーストと混ぜて印刷した計画があり、果物の皮や野菜の茎も材料になりうる。",
@@ -86,7 +82,6 @@
         },
         {
           "text": "This idea is still at an early stage. Some visitors said the sushi has a texture like fish cake and still needs work. The professor himself admits that his printed octopus is not good enough yet. The authors of one review say more study is needed. They name environmental effects and safety from germs.",
-          "slash": "This idea is still / at an early stage. / Some visitors said / the sushi has a texture like fish cake / and still needs work. / The professor himself admits / that his printed octopus / is not good enough yet. / The authors of one review / say more study is needed. / They name environmental effects / and safety from germs.",
           "hints": [
             "early stage, fish cake, more study",
             "この構想はまだ初期段階で、味の評価は厳しく、環境への効果や衛生面の研究も足りない。",
@@ -99,7 +94,6 @@
       "paragraphs": [
         {
           "text": "Food loss means food that is thrown away even though people could still eat it. Japan's Ministry of Agriculture, Forestry and Fisheries estimates that food loss in fiscal 2024 was 4.61 million tons, which is 30,000 tons less than the year before. Of this total, 2.37 million tons came from businesses. The problem is not only in Japan. A review paper reports that about one third of the world's food is lost or thrown away, which is about {{hidden:1}} each year.",
-          "slash": "Food loss means food / that is thrown away / even though people could still eat it. / Japan's Ministry of Agriculture, Forestry and Fisheries estimates / that food loss in fiscal 2024 / was 4.61 million tons, / which is 30,000 tons less / than the year before. / Of this total, / 2.37 million tons came from businesses. / The problem is not only in Japan. / A review paper reports / that about one third of the world's food / is lost or thrown away, / which is about {{hidden:1}} each year.",
           "hints": [
             "food loss, fiscal year, review paper",
             "日本の食品ロスは前年度より3万トン減って461万トンだが、世界では食べ物の約3分の1が失われている。",
@@ -108,7 +102,6 @@
         },
         {
           "text": "One source of waste is vegetables that do not meet standards for size or shape. These non-standard vegetables are often not shipped to stores, and they are said to total {{hidden:0}} a year in Japan. A professor at Yamagata University has an idea to use them as material for a 3D printer. His plan is to turn the vegetables into powder, because powder can be stored for a long time. The review paper adds that fruit skins and vegetable stems can also be made into powder and used as ink.",
-          "slash": "One source of waste / is vegetables / that do not meet standards / for size or shape. / These non-standard vegetables / are often not shipped to stores, / and they are said to total {{hidden:0}} a year in Japan. / A professor at Yamagata University / has an idea / to use them as material for a 3D printer. / His plan is to turn the vegetables into powder, / because powder can be stored / for a long time. / The review paper adds / that fruit skins and vegetable stems / can also be made into powder / and used as ink.",
           "hints": [
             "non-standard vegetables, powder, ink",
             "規格外野菜は年に何百万トンもあり、粉末にして長期保存し、3Dプリンターの材料にする構想がある。",
@@ -117,7 +110,6 @@
         },
         {
           "text": "The professor's team has already printed sushi with this technology. The printer makes the topping from fish paste, and it takes 6 to 7 minutes to print one piece. The team's goal is to offer a low-price machine for home use around the year 2030. The powder made from vegetables would be one of the materials for such a machine.",
-          "slash": "The professor's team has already printed sushi / with this technology. / The printer makes the topping / from fish paste, / and it takes 6 to 7 minutes / to print one piece. / The team's goal is to offer a low-price machine / for home use / around the year 2030. / The powder made from vegetables / would be one of the materials / for such a machine.",
           "hints": [
             "sushi, fish paste, home use",
             "チームはすり身で寿司を印刷し、1個に6〜7分かかる。2030年ごろに安価な家庭用機を目指し、野菜の粉も材料にする構想である。",
@@ -126,7 +118,6 @@
         },
         {
           "text": "Other groups have tried to reduce waste in restaurants. A project called Upprinting Food ground leftover bread into flour and mixed it with vegetable or fruit paste. The mixture was then printed into new food. The project aimed to let restaurants reuse food that would otherwise be thrown away. The project was active from 2018 to 2021, and it has stopped now.",
-          "slash": "Other groups have tried / to reduce waste in restaurants. / A project called Upprinting Food / ground leftover bread into flour / and mixed it / with vegetable or fruit paste. / The mixture was then printed / into new food. / The project aimed to let restaurants reuse food / that would otherwise be thrown away. / The project was active from 2018 to 2021, / and it has stopped now.",
           "hints": [
             "restaurants, leftover bread, mixture",
             "レストランの食品ロスを減らすため、余ったパンを粉にして野菜・果物のペーストと混ぜて印刷した計画があったが、今は休止している。",
@@ -135,11 +126,62 @@
         },
         {
           "text": "However, this idea is still at an early stage. Some visitors who tried the printed sushi said it has a texture like fish cake and still needs work. The professor himself admits that his printed octopus is not yet good enough. The authors of the review paper also say that more study is needed on environmental effects and on safety from germs. The low-price home machine is a goal for around 2030, not yet a product.",
-          "slash": "However, this idea is still at an early stage. / Some visitors who tried the printed sushi / said it has a texture like fish cake / and still needs work. / The professor himself admits / that his printed octopus / is not yet good enough. / The authors of the review paper also say / that more study is needed / on environmental effects / and on safety from germs. / The low-price home machine / is a goal for around 2030, / not yet a product.",
           "hints": [
             "early stage, visitors, safety",
             "構想はまだ初期段階で、味の評価は厳しく、環境への効果や衛生面の研究も足りないと著者は認めている。",
             "しかし、この考えはまだ初期の段階にある。印刷された寿司を食べた来場者の中には、かまぼこのような食感で、まだ改良が必要だと言う人もいた。教授自身も、印刷したタコはまだ十分な出来ではないと認めている。総説論文の著者たちも、環境への影響と、細菌に対する安全性について、さらなる研究が必要だと述べている。低価格の家庭用機は2030年ごろの目標であり、まだ製品ではない。"
+          ]
+        }
+      ]
+    },
+    "lv3": {
+      "paragraphs": [
+        {
+          "text": "Food loss refers to food that is thrown away even though people could still eat it. Japan's Ministry of Agriculture, Forestry and Fisheries estimates that food loss in fiscal 2024 was 4.61 million tons, which is 30,000 tons less than the year before, and 2.37 million tons of this total came from businesses. The problem is not limited to Japan, however. A review paper reports that about one third of the world's food is lost or thrown away, which amounts to about {{hidden:1}} each year.",
+          "hints": [
+            "food loss, fiscal year, review paper",
+            "日本の食品ロスは前年度より3万トン減って461万トンだが、世界では食べ物の約3分の1が失われている。",
+            "食品ロスとは、人がまだ食べられるのに捨てられてしまう食べ物を指す。日本の農林水産省は、2024年度の食品ロスは461万トンで、前年度より3万トン少なく、この合計のうち237万トンは事業者から出たものだと推計している。しかし、この問題は日本に限られない。ある総説論文は、世界の食べ物の約3分の1が失われるか捨てられており、それは毎年約{{hidden:1}}にあたると報告している。"
+          ]
+        },
+        {
+          "text": "One cause of waste is vegetables that do not meet standards for size or shape. Because such non-standard vegetables are often not shipped to stores, they are said to total {{hidden:0}} a year in Japan. A professor at Yamagata University has proposed using them as material for a 3D printer. His plan is to turn the vegetables into powder, which can be stored for a long time. The review paper adds that fruit skins and vegetable stems, which remain after food is processed, can also be made into powder and used as ink.",
+          "hints": [
+            "non-standard vegetables, powder, ink",
+            "規格外野菜は年に何百万トンもあり、粉末にして長期保存し、3Dプリンターの材料にする構想がある。",
+            "ごみの原因の一つは、大きさや形が基準に合わない野菜である。こうした規格外野菜は店に出荷されないことが多いため、日本では年に合計{{hidden:0}}になるといわれる。山形大学のある教授は、それらを3Dプリンターの材料として使うことを提案している。彼の計画は野菜を粉末にすることで、粉末は長い間保存できる。この総説論文は、食品の加工後に残る果物の皮や野菜の茎も粉末にしてインクとして使えると付け加えている。"
+          ]
+        },
+        {
+          "text": "The professor's team has already printed sushi with this technology. The printer makes the topping from fish paste, and it takes 6 to 7 minutes to print one piece. The team's goal is to offer a low-price machine for home use around the year 2030, and the powder made from vegetables would be one of the materials for such a machine. In this way, the research connects the problem of unused vegetables with the development of a new kind of cooking device.",
+          "hints": [
+            "sushi, fish paste, home use",
+            "チームはすり身で寿司を印刷し、1個に6〜7分かかる。2030年ごろに安価な家庭用機を目指し、野菜の粉も材料にする構想である。",
+            "その教授のチームは、この技術でもう寿司を印刷している。プリンターは魚のすり身から寿司のネタを作り、1個を印刷するのに6〜7分かかる。チームの目標は、2030年ごろに家庭用の低価格な機械を提供することであり、野菜から作った粉末はそのような機械の材料の一つになるだろう。このように、この研究は、使われない野菜という問題と、新しい種類の調理機器の開発を結びつけている。"
+          ]
+        },
+        {
+          "text": "Other groups have tried to reduce waste in restaurants. A project called Upprinting Food ground leftover bread into flour and mixed it with vegetable or fruit paste, and the mixture was then printed into new food. The project aimed to let restaurants reuse food that would otherwise be thrown away. It was active from 2018 to 2021, but it has stopped now, so it cannot be regarded as a method that restaurants are using today.",
+          "hints": [
+            "restaurants, leftover bread, mixture",
+            "レストランの食品ロスを減らすため、余ったパンを粉にして野菜・果物のペーストと混ぜて印刷した計画があったが、今は休止している。",
+            "ほかのグループは、レストランでの食品ごみを減らそうと試みてきた。Upprinting Foodというプロジェクトは、余ったパンをひいて粉にし、野菜や果物のペーストと混ぜ、その混ぜたものを新しい食べ物として印刷した。このプロジェクトは、レストランが、そのままでは捨てられる食べ物を再利用できるようにすることを目指した。それは2018年から2021年まで活動したが、今は止まっているので、レストランが今日使っている方法とみなすことはできない。"
+          ]
+        },
+        {
+          "text": "However, these ideas are still at an early stage. Some visitors who tried the printed sushi said that it has a texture like fish cake and still needs work, and the professor himself admits that his printed octopus is not yet good enough. In addition, the authors of the review paper acknowledge that more study is needed on environmental effects and on safety from germs. Therefore, although the plan sounds attractive, its benefits for reducing food loss remain to be confirmed.",
+          "hints": [
+            "early stage, texture, safety",
+            "構想はまだ初期段階で、味の評価は厳しく、環境への効果や衛生面の研究も足りないと著者は認めている。",
+            "しかし、これらの考えはまだ初期の段階にある。印刷された寿司を食べた来場者の中には、かまぼこのような食感で、まだ改良が必要だと言う人もおり、教授自身も、印刷したタコはまだ十分な出来ではないと認めている。さらに、総説論文の著者たちも、環境への影響と、細菌に対する安全性について、さらなる研究が必要だと認めている。したがって、この計画は魅力的に聞こえるものの、食品ロスを減らす効果はまだ確かめられていない。"
+          ]
+        },
+        {
+          "text": "It is also important to consider who wrote each source. The articles about the professor's work introduce the researchers' plans, so they may focus on the good side of the idea, although they also include honest comments about the taste. The statistics from the government are estimates, and the definition of food loss should be checked. Finally, the low-price home machine is a goal for around 2030, not yet a product.",
+          "hints": [
+            "source, estimates, goal",
+            "資料の書き手や統計の定義に注意する必要があり、家庭用の安価な機械は2030年ごろの目標で、まだ製品ではない。",
+            "それぞれの資料を誰が書いたかを考えることも重要である。教授の研究に関する記事は研究者の計画を紹介しているので、構想の良い面を中心に書いている可能性があるが、味についての率直な感想も載せている。政府の統計は推計値であり、食品ロスの定義も確認する必要がある。最後に、低価格の家庭用機は2030年ごろの目標であり、まだ製品ではない。"
           ]
         }
       ]

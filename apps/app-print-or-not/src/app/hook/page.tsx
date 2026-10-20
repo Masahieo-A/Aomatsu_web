@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import RequireStudent from "@/components/RequireStudent";
-import JaToggle from "@/components/card/JaToggle";
+import JaToggle from "@/components/JaToggle";
 import StanceMeter, { stanceText } from "@/components/StanceMeter";
 import { useStudent } from "@/lib/store";
 import type { StudentState } from "@/lib/types";

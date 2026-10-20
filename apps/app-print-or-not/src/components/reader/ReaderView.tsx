@@ -1,31 +1,23 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { getArticle } from "@/lib/content";
-import { guessKey, useStudent } from "@/lib/store";
-import { fillHidden, hiddenIndexesIn } from "@/lib/text";
-import type { Article, StudentState } from "@/lib/types";
+import { guessKey } from "@/lib/store";
+import { hiddenIndexesIn } from "@/lib/text";
+import type { Article, LevelKey, StudentState } from "@/lib/types";
 import ArticleHeader, { SourcesBox } from "./ArticleHeader";
 import FactOpinionBox from "./FactOpinionBox";
 import GuessBox from "./GuessBox";
 import HookCheck from "./HookCheck";
 import ParagraphView from "./ParagraphView";
-import ReadAloud from "./ReadAloud";
 import SectionCard from "./SectionCard";
 
-type Lv = "lv1" | "lv2";
-
 // 伏せ数字ごとに「その数を含む最初の段落」を探す。Lv1 は見つからなければ指定の段落にする。
-function guessSlots(article: Article, lv: Lv): Map<number, number[]> {
+function guessSlots(article: Article, lv: LevelKey): Map<number, number[]> {
   const slots = new Map<number, number[]>();
   article.hiddenNumbers.forEach((h, i) => {
     const paras = article.levels[lv].paragraphs;
-    let p = paras.findIndex(
-      (x) =>
-        hiddenIndexesIn(x.text).includes(i) ||
-        hiddenIndexesIn(x.slash).includes(i),
-    );
+    let p = paras.findIndex((x) => hiddenIndexesIn(x.text).includes(i));
     if (p < 0 && lv === "lv1" && h.paragraph < paras.length) p = h.paragraph;
     if (p < 0) return;
     slots.set(p, [...(slots.get(p) ?? []), i]);
@@ -50,40 +42,23 @@ export default function ReaderView({ id, s }: { id: string; s: StudentState }) {
   return <Reader article={article} s={s} />;
 }
 
+// 英語のレベルは3段階（簡単＝英検準2級、普通＝英検2級、難しい＝大学入学共通テスト）
+const LEVELS: { key: LevelKey; label: string }[] = [
+  { key: "lv1", label: "簡単" },
+  { key: "lv2", label: "普通" },
+  { key: "lv3", label: "難しい" },
+];
+
 function Reader({ article, s }: { article: Article; s: StudentState }) {
-  const { update } = useStudent();
-  const router = useRouter();
-  const [lv, setLv] = useState<Lv>("lv1");
-  const [slash, setSlash] = useState(false);
+  const [lv, setLv] = useState<LevelKey>("lv1");
   const [taps, setTaps] = useState<Record<string, number>>({});
 
   const revealed = (i: number) => guessKey(article.id, i) in s.guesses;
   const paras = article.levels[lv].paragraphs;
   const slots = guessSlots(article, lv);
-  const isRead = s.readArticles.includes(article.id);
-  const hasCard = !!s.cards[article.id];
 
   const tap = (word: string) =>
     setTaps((t) => ({ ...t, [word]: ((t[word] ?? 0) + 1) % 3 }));
-
-  const finish = () => {
-    update((cur) => ({
-      ...cur,
-      readArticles: cur.readArticles.includes(article.id)
-        ? cur.readArticles
-        : [...cur.readArticles, article.id],
-      lv2Read:
-        lv === "lv2" && !cur.lv2Read.includes(article.id)
-          ? [...cur.lv2Read, article.id]
-          : cur.lv2Read,
-    }));
-    router.push(`/card/${article.id}`);
-  };
-
-  // 音声：伏せ数字は未公開なら読み飛ばす
-  const speakTexts = article.levels.lv1.paragraphs.map((p) =>
-    fillHidden(p.text, article, revealed).replace(/？？？/g, ""),
-  );
 
   // 本文カードは数字当てクイズの位置で分割し、クイズを別カードとして挟む
   const segments: { from: number; to: number; quiz: number[] }[] = [];
@@ -97,72 +72,44 @@ function Reader({ article, s }: { article: Article; s: StudentState }) {
   });
 
   const toggleCls = (on: boolean) =>
-    `min-h-11 rounded-lg border px-4 py-2 text-[15px] ${on ? "border-accent bg-accent-dim font-semibold" : "border-line bg-white"}`;
+    `min-h-11 min-w-20 rounded-lg border px-4 py-2 text-[15px] ${on ? "border-accent bg-accent-dim font-semibold" : "border-line bg-white"}`;
 
   return (
     <div className="page">
-      <ArticleHeader
-        article={article}
-        challenge={s.lv2Read.includes(article.id)}
-      />
+      <ArticleHeader article={article} />
 
-      <SectionCard ja="読み方の設定" en="Reading settings" className="mb-4">
-        <div className="flex flex-wrap items-center gap-2">
-          <div
-            className="flex flex-wrap gap-2"
-            role="group"
-            aria-label="レベル"
-          >
-            {(["lv1", "lv2"] as const).map((l) => (
-              <button
-                key={l}
-                type="button"
-                aria-pressed={lv === l}
-                onClick={() => setLv(l)}
-                className={toggleCls(lv === l)}
-              >
-                {lv === l ? "✓ " : ""}
-                {l === "lv1" ? "Lv1 やさしい英語" : "Lv2 少し難しい英語"}
-              </button>
-            ))}
-          </div>
-          <button
-            type="button"
-            aria-pressed={slash}
-            onClick={() => setSlash((v) => !v)}
-            className={toggleCls(slash)}
-          >
-            {slash ? "✓ " : ""}スラッシュ表示
-          </button>
-          <ReadAloud paragraphs={speakTexts} />
+      <SectionCard ja="英語のレベル" en="Level" className="mb-4">
+        <div className="flex flex-wrap gap-2" role="group" aria-label="英語のレベル">
+          {LEVELS.map((l) => (
+            <button
+              key={l.key}
+              type="button"
+              aria-pressed={lv === l.key}
+              onClick={() => setLv(l.key)}
+              className={toggleCls(lv === l.key)}
+            >
+              {lv === l.key ? "✓ " : ""}
+              {l.label}
+            </button>
+          ))}
         </div>
         <p className="muted mt-3">
-          スラッシュ表示は、意味のかたまりごとに /
-          で区切ります。点線の下線の語はタップで英語の説明（もう一度で日本語）。
-          段落ごとのヒントは3段階（キーワード、要旨、全訳）で、少しずつ見られます。
+          点線の下線の語はタップで英語の説明（もう一度で日本語）。段落ごとのヒントは3段階（キーワード、要旨、全訳）で、少しずつ見られます。
         </p>
       </SectionCard>
 
       {segments.map((seg, si) => (
         <div key={`${lv}-seg-${seg.from}`}>
-          <SectionCard
-            ja={si === 0 ? "本文" : "本文のつづき"}
-            en="Article"
-            className="mb-4"
-          >
+          <SectionCard ja={si === 0 ? "本文" : "本文のつづき"} en="Article" className="mb-4">
             {paras.slice(seg.from, seg.to + 1).map((p, k) => {
               const i = seg.from + k;
               return (
-                <div
-                  key={`${lv}-${i}`}
-                  className={k > 0 ? "mt-4 border-t border-line pt-4" : ""}
-                >
+                <div key={`${lv}-${i}`} className={k > 0 ? "mt-4 border-t border-line pt-4" : ""}>
                   <ParagraphView
                     article={article}
                     level={lv}
                     index={i}
                     paragraph={p}
-                    slash={slash}
                     revealed={revealed}
                     taps={taps}
                     onTap={tap}
@@ -172,33 +119,20 @@ function Reader({ article, s }: { article: Article; s: StudentState }) {
             })}
           </SectionCard>
           {seg.quiz.map((hi) => (
-            <GuessBox
-              key={hi}
-              article={article}
-              index={hi}
-              h={article.hiddenNumbers[hi]}
-            />
+            <GuessBox key={hi} article={article} index={hi} h={article.hiddenNumbers[hi]} />
           ))}
         </div>
       ))}
 
-      <SourcesBox article={article} />
       <FactOpinionBox article={article} />
-      {isRead && <HookCheck articleId={article.id} />}
+      <HookCheck articleId={article.id} />
+      <SourcesBox article={article} />
 
-      <SectionCard ja="次にやること" en="Next" className="mt-4">
-        <p className="mb-3 text-base">
-          読み終えたら Evidence Card を作ります。
-        </p>
-        <div className="flex flex-wrap gap-2">
-          <button type="button" className="btn" onClick={finish}>
-            {hasCard ? "読み終えた・Card を見直す" : "読み終えた・Card を作る"}
-          </button>
-          <Link href="/" className="btn-secondary">
-            記事一覧に戻る
-          </Link>
-        </div>
-      </SectionCard>
+      <div className="mt-6">
+        <Link href="/" className="btn-secondary">
+          記事一覧に戻る
+        </Link>
+      </div>
     </div>
   );
 }

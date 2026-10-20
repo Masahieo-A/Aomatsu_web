@@ -59,7 +59,6 @@
       "paragraphs": [
         {
           "text": "In November 2023, Italy banned the making and selling of cultivated meat. Cultivated meat, also called lab-grown meat, is real meat grown from animal cells. It is not the same as 3D-printed food. Italy gave several reasons for the ban.",
-          "slash": "In November 2023, / Italy banned / the making and selling / of cultivated meat. Cultivated meat, / also called lab-grown meat, / is real meat grown from animal cells. It is not the same / as 3D-printed food. Italy gave several reasons / for the ban.",
           "hints": [
             "Italy, cultivated meat, ban",
             "イタリアは2023年11月に培養肉の製造・販売を禁止した。培養肉は3Dプリント食品とは別のものである。",
@@ -68,7 +67,6 @@
         },
         {
           "text": "The government wanted to protect traditional food and farmers. It also wanted to protect people's health. It said cultivated meat had not been tested enough. This was a reason to be careful, not proof of danger. Some critics say the law is political. Meat-like names on these products can bring fines of 10,000 to 60,000 euros.",
-          "slash": "The government wanted to protect / traditional food and farmers. It also wanted to protect / people's health. It said / cultivated meat had not been tested enough. This was a reason to be careful, / not proof of danger. Some critics say / the law is political. Meat-like names / on these products / can bring fines of 10,000 to 60,000 euros.",
           "hints": [
             "traditional food, tested enough, critics",
             "イタリアは食文化・畜産・健康を守るためとし、十分に試験されていないという予防的な理由を挙げたが、批判側は政治的だと言う。",
@@ -77,7 +75,6 @@
         },
         {
           "text": "Some US states have also banned lab-grown meat. In June 2025, there were {{hidden:0}} such states. Texas made a ban that lasts two years. Its reason was to protect the real meat industry. In Indiana, which Texas followed as a model, the reason was time for research. But the US government has approved the sale of cultivated meat. No danger has been proven.",
-          "slash": "Some US states have also banned / lab-grown meat. In June 2025, / there were {{hidden:0}} such states. Texas made a ban / that lasts two years. Its reason was / to protect the real meat industry. In Indiana, / which Texas followed as a model, / the reason was time for research. But the US government / has approved the sale of cultivated meat. No danger / has been proven.",
           "hints": [
             "US states, Texas, approved sale",
             "2025年6月時点で米国の7州が培養肉を禁止したが、連邦政府は販売を承認済みで、危険は証明されていない。",
@@ -86,7 +83,6 @@
         },
         {
           "text": "How is this related to 3D printing? In 2023, a company called Steakholder Foods announced an ink for printing beef steaks. The company says the ink is plant-based, and cultivated cells are layered on it. So laws about cultivated meat may also affect some printed meat. Not all printed food uses cultivated cells.",
-          "slash": "How is this related / to 3D printing? In 2023, / a company called Steakholder Foods / announced an ink / for printing beef steaks. The company says / the ink is plant-based, / and cultivated cells are layered on it. So laws about cultivated meat / may also affect some printed meat. Not all printed food / uses cultivated cells.",
           "hints": [
             "Steakholder Foods, ink, cultivated cells",
             "培養細胞を使う3Dプリント肉があり、培養肉の規制は一部の3Dプリント食品にも関わりうる。ただし全ての3Dプリント食品が培養細胞を使うわけではない。",
@@ -95,7 +91,6 @@
         },
         {
           "text": "Labels also affect choices. In a 2022 study, adding the label 3D printed changed which ordinary snacks people chose. Bans on cultivated meat are not proof that it is dangerous. How rules for printed meat will develop is still unclear.",
-          "slash": "Labels also affect choices. In a 2022 study, / adding the label 3D printed / changed which ordinary snacks / people chose. Bans on cultivated meat / are not proof / that it is dangerous. How rules for printed meat / will develop / is still unclear.",
           "hints": [
             "labels, bans, rules",
             "表示ひとつで選択が変わることがあり、培養肉の禁止は危険の証明ではなく、3Dプリント肉の規制の行方はまだ不明である。",
@@ -108,7 +103,6 @@
       "paragraphs": [
         {
           "text": "In November 2023, Italy banned the making and selling of cultivated meat. Cultivated meat, also called lab-grown meat, is real meat made by growing animal cells in a factory. It is a different technology from 3D printing. The lower house of the Italian parliament approved the bill that month. The law covers cell-based foods in general.",
-          "slash": "In November 2023, / Italy banned / the making and selling / of cultivated meat. Cultivated meat, / also called lab-grown meat, / is real meat made / by growing animal cells in a factory. It is a different technology / from 3D printing. The lower house of the Italian parliament / approved the bill that month. / The law covers cell-based foods in general.",
           "hints": [
             "Italy, cultivated meat, lower house",
             "イタリアは2023年11月に培養肉の製造・販売を禁止した。培養肉は3Dプリントとは別の技術である。",
@@ -117,7 +111,6 @@
         },
         {
           "text": "The Italian government gave several reasons. It wanted to protect traditional food and livestock farming. It also said it wanted to protect health, because cultivated meat had not been tested enough, and to protect people's right to know what they eat. This was a precaution, not proof that the meat is dangerous. Using meat-like names on such products can bring fines of 10,000 to 60,000 euros, according to The Local. Critics say the law is political.",
-          "slash": "The Italian government gave several reasons. It wanted to protect traditional food / and livestock farming. It also said / it wanted to protect health, / because cultivated meat / had not been tested enough, / and to protect people's right / to know what they eat. This was a precaution, / not proof that the meat is dangerous. Using meat-like names / on such products / can bring fines of 10,000 to 60,000 euros, / according to The Local. Critics say / the law is political.",
           "hints": [
             "reasons, precaution, fines",
             "イタリアは食文化・畜産・健康・知る権利を理由にしたが、健康面は予防的な理由であり、批判側は政治的だと言う。",
@@ -126,7 +119,6 @@
         },
         {
           "text": "Similar rules exist in the United States. In June 2025, there were {{hidden:0}} states with bans on lab-grown meat. Texas made a ban that lasts two years. Its reason was to protect the real meat industry. In Indiana, which Texas followed as a model, the reason given was time for research. The US government, however, has approved the sale of cultivated meat. No danger has been proven.",
-          "slash": "Similar rules exist in the United States. In June 2025, / there were {{hidden:0}} states / with bans on lab-grown meat. Texas made a ban / that lasts two years. Its reason was / to protect the real meat industry. In Indiana, / which Texas followed as a model, / the reason given / was time for research. The US government, / however, has approved the sale of cultivated meat. No danger / has been proven.",
           "hints": [
             "US states, Texas, federal approval",
             "2025年6月時点で米国の7州が禁止していたが、理由は産業保護や研究時間で、連邦政府は販売を承認済みであり危険は証明されていない。",
@@ -135,7 +127,6 @@
         },
         {
           "text": "Where does 3D-printed food fit in? In 2023, a company called Steakholder Foods announced an ink for printing beef steaks. The company says the ink is plant-based, and cultivated cells are layered on it. A steak like this would be both 3D-printed and based on cultivated meat. This is the point where rules on cultivated meat could also affect printed food. Not all printed food uses cultivated cells.",
-          "slash": "Where does 3D-printed food fit in? In 2023, / a company called Steakholder Foods / announced an ink / for printing beef steaks. The company says / the ink is plant-based, / and cultivated cells are layered on it. A steak like this / would be both 3D-printed / and based on cultivated meat. This is the point / where rules on cultivated meat / could also affect printed food. Not all printed food / uses cultivated cells.",
           "hints": [
             "Steakholder Foods, 3D-printed beef, rules overlap",
             "培養細胞を使う3Dプリント肉が、培養肉の規制と3Dプリント食品の接点であり、全ての3Dプリント食品が培養細胞を使うわけではない。",
@@ -144,7 +135,6 @@
         },
         {
           "text": "Names and labels also matter. In a 2022 study, ordinary chocolate and gummies were shown with the label 3D printed. Adding the label changed which snacks people chose. The study was carried out by researchers at the University of Alberta. This suggests that a label alone can affect how people see a food.",
-          "slash": "Names and labels also matter. In a 2022 study, / ordinary chocolate and gummies / were shown with the label 3D printed. Adding the label / changed which snacks / people chose. The study was carried out / by researchers / at the University of Alberta. This suggests / that a label alone can affect how people see a food.",
           "hints": [
             "labels, 2022 study, consumer choice",
             "表示だけで人々の選ぶ食品が変わることがあり。",
@@ -153,11 +143,62 @@
         },
         {
           "text": "Bans on cultivated meat target one technology, not 3D printers. The reasons include culture, farming, and caution about testing. No one has proven that cultivated meat is dangerous. How rules for printed meat will develop is still unclear.",
-          "slash": "Bans on cultivated meat / target one technology, / not 3D printers. The reasons include / culture, farming, / and caution about testing. No one has proven / that cultivated meat is dangerous. How rules for printed meat / will develop / is still unclear.",
           "hints": [
             "ban target, reasons, unclear rules",
             "禁止の対象は培養肉であり、理由は文化・畜産・慎重さなどで、危険は証明されておらず、3Dプリント肉の規制の行方は不明である。",
             "培養肉の禁止は、ひとつの技術を対象にしたもので、3Dプリンターを対象にしたものではありません。理由には、文化、畜産、そして試験についての慎重さが含まれます。培養肉が危険だと証明した人はいません。3Dプリント肉のルールがこれからどうなるかは、まだはっきりしていません。"
+          ]
+        }
+      ]
+    },
+    "lv3": {
+      "paragraphs": [
+        {
+          "text": "In November 2023, Italy banned the making and selling of cultivated meat. Cultivated meat, also called lab-grown meat, is real meat produced by growing animal cells in a factory, and it is a different technology from 3D printing. The lower house of the Italian parliament approved the bill that month, and the law covers cell-based foods in general. The ban therefore concerns a food made from cells, not a printer or a printing method.",
+          "hints": [
+            "Italy, cultivated meat, ban",
+            "2023年11月、イタリアは培養肉の製造と販売を禁止した。培養肉は動物の細胞を育てて作る肉で、3Dプリントとは別の技術である。",
+            "2023年11月、イタリアは培養肉の製造と販売を禁止しました。培養肉は、ラボミートとも呼ばれ、工場で動物の細胞を育てて作られる本物の肉であり、3Dプリントとは異なる技術です。イタリア議会の下院はその月に法案を承認し、この法律は細胞性食品全般を対象としています。したがって、この禁止が対象とするのは細胞から作られる食品であり、プリンターや印刷の方法ではありません。"
+          ]
+        },
+        {
+          "text": "The Italian government gave several reasons for the ban. It wanted to protect traditional food and livestock farming. It also said that it wanted to protect health, because cultivated meat had not been tested enough, and to protect people's right to know what they eat. However, this was a precaution, not proof that the meat is dangerous. According to The Local, using meat-like names on such products can bring fines of 10,000 to 60,000 euros. Critics, in contrast, claim that the law is political.",
+          "hints": [
+            "Italian government, precaution, critics",
+            "イタリア政府は伝統食と畜産の保護、健康の保護、知る権利を理由に挙げたが、これは予防的な措置で危険の証明ではなく、批判する人々はこの法律を政治的だと主張している。",
+            "イタリア政府は禁止の理由をいくつか挙げました。伝統的な食べ物と畜産業を守りたかったのです。また、培養肉は十分に試験されていないという理由で健康を守りたいこと、そして人々が何を食べるのかを知る権利を守りたいことも述べました。しかし、これは予防的な措置であって、その肉が危険であるという証拠ではありません。The Localによると、そのような製品に肉を思わせる名前を使うと、1万から6万ユーロの罰金が科されることがあります。これに対して、批判する人々は、この法律は政治的だと主張しています。"
+          ]
+        },
+        {
+          "text": "Similar rules exist in the United States. In June 2025, there were {{hidden:0}} states with bans on lab-grown meat. Texas passed a ban that lasts two years, and its stated reason was to protect the real meat industry. In Indiana, which Texas followed as a model, the reason given was to gain time for research. Although these states have restricted cultivated meat, the US government has approved its sale, and no danger has been proven. These examples show that different places gave different reasons for similar rules.",
+          "hints": [
+            "US states, bans, approved sale",
+            "2025年6月に米国の7つの州が培養肉を禁止し、理由は産業保護や研究の時間だったが、連邦政府は販売を承認済みで、危険は証明されていない。",
+            "米国にも似た規則があります。2025年6月時点で、培養肉の禁止を定めた州は{{hidden:0}}つありました。テキサス州は2年間続く禁止を成立させ、挙げられた理由は本物の食肉産業を守ることでした。テキサス州が手本としたインディアナ州では、挙げられた理由は研究のための時間を確保することでした。これらの州は培養肉を制限しましたが、米国政府はその販売を承認しており、危険は何も証明されていません。これらの例は、似た規則に対して、場所ごとに異なる理由が挙げられたことを示しています。"
+          ]
+        },
+        {
+          "text": "Where does 3D-printed food fit in? In 2023, a company called Steakholder Foods announced an ink for printing beef steaks. The company says the ink is plant-based, and cultivated cells are layered on top of it. A steak made this way would be both 3D-printed and based on cultivated meat. This is the point where rules on cultivated meat could also affect printed food, but it is important to remember that not all printed food uses cultivated cells. This means that a rule for cultivated meat might also apply to some printed foods in the future.",
+          "hints": [
+            "Steakholder Foods, plant-based ink, cultivated cells",
+            "企業が植物性インクに培養細胞を重ねるステーキ用インクを発表しており、ここが培養肉の規則が3Dプリント食品にも関わる接点だが、すべてのプリント食品が培養細胞を使うわけではない。",
+            "3Dプリント食品はどこに関わってくるのでしょうか。2023年、ステークホルダー・フーズという企業が、牛肉のステーキを印刷するためのインクを発表しました。同社は、このインクは植物性で、その上に培養細胞を重ねるのだと述べています。このようにして作られたステーキは、3Dプリントされたものであると同時に、培養肉に基づくものになります。ここが、培養肉についての規則が3Dプリント食品にも影響しうる点ですが、すべての3Dプリント食品が培養細胞を使うわけではないことを覚えておくことが重要です。これは、培養肉についての規則が、将来、一部の3Dプリント食品にも当てはまる可能性があることを意味します。"
+          ]
+        },
+        {
+          "text": "Names and labels also matter. In a 2022 study carried out by researchers at the University of Alberta, ordinary chocolate and gummies were shown with the label 3D printed. Adding this label changed which snacks people chose, even though the foods themselves were ordinary. This suggests that a label alone can affect how people see a food, and therefore that clear rules for labelling are needed. For this reason, the way a food is described may influence people's opinion of it.",
+          "hints": [
+            "labels, University of Alberta, perception",
+            "2022年の研究では、普通の菓子に「3Dプリント」と表示するだけで人々の選択が変わり、表示だけで食品の見え方が左右されることを示唆している。",
+            "名前や表示も重要です。アルバータ大学の研究者たちが行った2022年の研究では、普通のチョコレートとグミが「3Dプリント」という表示つきで示されました。この表示を加えると、食品そのものは普通のものであったにもかかわらず、人々が選ぶお菓子が変わりました。これは、表示だけで人々の食品の見方が左右されうることを示唆しており、したがって表示についての明確なルールが必要だということです。このため、食品がどう表現されるかが、人々のその食品への見方に影響するかもしれません。"
+          ]
+        },
+        {
+          "text": "In summary, the bans target one technology, cultivated meat, and not 3D printers. The reasons given include culture, farming, and caution about testing, but no one has proven that cultivated meat is dangerous. How rules for printed meat will develop is still unclear.",
+          "hints": [
+            "bans, cultivated meat, unclear",
+            "禁止の対象は3Dプリンターではなく培養肉という一つの技術で、理由は文化・農業・試験への慎重さだが危険は証明されておらず、プリント肉の規則の行方はまだ不明である。",
+            "要するに、禁止の対象は3Dプリンターではなく、培養肉という一つの技術です。挙げられた理由には文化、農業、試験についての慎重さが含まれますが、培養肉が危険だと証明した人はいません。プリント肉についての規則がどのように発展するかは、まだ不明です。"
           ]
         }
       ]

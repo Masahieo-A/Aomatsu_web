@@ -62,7 +62,7 @@ function Stance({ s }: { s: StudentState }) {
         {value !== undefined && <p className="font-semibold">{diffText(s.stanceBefore, value)}</p>}
         {sideAfter && sideBefore && sideAfter !== sideBefore && (
           <p className="flex flex-wrap items-center gap-2 text-sm">
-            自分の側が <SideBadge side={sideAfter} /> に変わります。作成済みの Evidence Card は消えず、反対側の Card として数えます。
+            自分の側が <SideBadge side={sideAfter} /> に変わります。
           </p>
         )}
         <div>

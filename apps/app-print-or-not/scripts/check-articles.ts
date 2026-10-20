@@ -30,16 +30,18 @@ for (const id of ids) {
   if (!pointIds.has(a.point)) errors.push(`point が未定義: ${a.point}`);
   for (const p of a.cardPoints) if (!pointIds.has(p)) errors.push(`cardPoints に未定義: ${p}`);
 
-  for (const lv of ["lv1", "lv2"] as const) {
+  for (const lv of ["lv1", "lv2", "lv3"] as const) {
+    if (!a.levels[lv]) {
+      errors.push(`${lv} がない`);
+      continue;
+    }
     const paras = a.levels[lv].paragraphs;
     const all = paras.map((p) => plain(p.text)).join(" ");
     const wc = countWords(all);
-    const [min, max] = lv === "lv1" ? [200, 300] : [350, 450];
+    const [min, max] = lv === "lv1" ? [200, 300] : lv === "lv2" ? [350, 450] : [450, 600];
     if (wc < min || wc > max) errors.push(`${lv} 語数 ${wc}（目標 ${min}〜${max}）`);
     paras.forEach((p, i) => {
       if (!Array.isArray(p.hints) || p.hints.length !== 3) errors.push(`${lv} 段落${i} hints が3つでない`);
-      const slashPlain = p.slash.replace(/\s*\/\s*/g, " ").replace(/\s+/g, " ").trim();
-      if (slashPlain !== p.text.replace(/\s+/g, " ").trim()) errors.push(`${lv} 段落${i} slash から / を除くと本文と一致しない`);
       if (/\b(Dr|Mr|Mrs|Ms|U\.S|U\.K|e\.g|i\.e|etc)\./.test(p.text)) errors.push(`${lv} 段落${i} ピリオド付き略語がある（文分割が壊れる）`);
       if (lv === "lv1") {
         for (const s of splitSentences(plain(p.text))) {

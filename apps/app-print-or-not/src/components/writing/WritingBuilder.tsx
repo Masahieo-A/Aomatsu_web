@@ -1,18 +1,17 @@
 "use client";
 // S7 Writing Builder 本体。下書きは入力のたびに端末内（localStorage）へ保存し、サーバーには送らない。
-import Link from "next/link";
 import { useRef, useState } from "react";
 import { useStudent } from "@/lib/store";
-import { gateItems, isWritingUnlocked, mySide, otherSide } from "@/lib/progress";
+import { mySide } from "@/lib/progress";
 import { countWords } from "@/lib/text";
-import type { EvidenceCard, Settings, StudentState, WritingDraft } from "@/lib/types";
+import type { Settings, StudentState, WritingDraft } from "@/lib/types";
 import SideBadge from "@/components/SideBadge";
 import OutlineField from "./OutlineField";
 import ExpressionPanel from "./ExpressionPanel";
 import SelfCheck, { MANUAL_CHECKS } from "./SelfCheck";
 
 const EMPTY_DRAFT: WritingDraft = {
-  outline: { opinion: "", reason1Card: "", reason1: "", reason2Card: "", reason2: "", counterCard: "", counter: "", conclusion: "" },
+  outline: { opinion: "", reason1: "", reason2: "", counter: "", conclusion: "" },
   body: "",
   checks: MANUAL_CHECKS.map(() => false),
 };
@@ -21,50 +20,7 @@ type Outline = WritingDraft["outline"];
 
 export default function WritingBuilder({ s }: { s: StudentState }) {
   const { settings } = useStudent();
-  if (!isWritingUnlocked(s, settings)) return <Locked s={s} settings={settings} />;
   return <Builder s={s} settings={settings} />;
-}
-
-// ロック解除の条件ごとに「何をすればよいか」を日本語で添える
-const GATE_HELP: Record<string, string> = {
-  mine: "記事一覧で、自分の側の記事を読み、Evidence Card（根拠カード）を作ります。",
-  other: "記事一覧で、反対側の記事を読み、Evidence Card（根拠カード）を作ります。",
-  sort: "8つの英文を「感情論」と「根拠あり」に仕分け、全問正解にします。",
-  stance: "記事を読んだ後の立場を選んで、保存します。",
-  trap: "6つの根拠を「使える」「危ない」に判定し、最後まで終わらせます。",
-};
-
-function Locked({ s, settings }: { s: StudentState; settings: Settings }) {
-  return (
-    <div className="page">
-      <header>
-        <h1 className="page-title">Writing Builder（英作文の組み立て）</h1>
-        <p className="muted mb-4">アウトラインを作り、英作文を書く画面です。下の条件がすべて ✓ になると使えます。</p>
-      </header>
-      <div className="box">
-        <p className="section-title">
-          <span aria-hidden>🔒</span> ロック中：次の活動を終えると開きます
-        </p>
-        <ul className="divide-y divide-line">
-          {gateItems(s, settings).map((g) => (
-            <li key={g.key}>
-              <Link
-                // 記事一覧はトップ「/」に統合済み
-                href={g.href}
-                className="flex min-h-11 items-start gap-2 py-2 text-base text-ink no-underline"
-              >
-                <span className={`shrink-0 font-semibold ${g.done ? "text-accent" : "text-muted"}`}>{g.done ? "✓ 済" : "未"}</span>
-                <span>
-                  <span className="underline">{g.label}</span>
-                  {GATE_HELP[g.key] && <span className="muted block">{GATE_HELP[g.key]}</span>}
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  );
 }
 
 function Builder({ s, settings }: { s: StudentState; settings: Settings }) {
@@ -95,9 +51,6 @@ function Builder({ s, settings }: { s: StudentState; settings: Settings }) {
   const setBody = (body: string) => patch(() => ({ body, completedAt: undefined }));
 
   const side = mySide(s);
-  const allCards: EvidenceCard[] = Object.values(s.cards);
-  const myCards = side ? allCards.filter((c) => c.side === side) : allCards;
-  const otherCards = side ? allCards.filter((c) => c.side === otherSide(side)) : allCards;
 
   const n = countWords(draft.body);
   const { wordMin, wordMax } = settings;
@@ -191,9 +144,6 @@ function Builder({ s, settings }: { s: StudentState; settings: Settings }) {
               hint="自分のメモ"
               memo={draft.outline.reason1}
               onMemo={(v) => setOutline("reason1", v)}
-              cards={myCards}
-              cardId={draft.outline.reason1Card}
-              onCard={(v) => setOutline("reason1Card", v)}
             />
             <OutlineField
               label="Reason 2"
@@ -202,9 +152,6 @@ function Builder({ s, settings }: { s: StudentState; settings: Settings }) {
               hint="自分のメモ"
               memo={draft.outline.reason2}
               onMemo={(v) => setOutline("reason2", v)}
-              cards={myCards}
-              cardId={draft.outline.reason2Card}
-              onCard={(v) => setOutline("reason2Card", v)}
             />
             <OutlineField
               label="Counterargument & Rebuttal"
@@ -213,9 +160,6 @@ function Builder({ s, settings }: { s: StudentState; settings: Settings }) {
               hint="反対意見と、それへの答え（認める＋でも…）"
               memo={draft.outline.counter}
               onMemo={(v) => setOutline("counter", v)}
-              cards={otherCards}
-              cardId={draft.outline.counterCard}
-              onCard={(v) => setOutline("counterCard", v)}
             />
             <OutlineField
               label="Conclusion"
@@ -237,7 +181,7 @@ function Builder({ s, settings }: { s: StudentState; settings: Settings }) {
               </div>
             </details>
             <label className="field-label" htmlFor="write-body">
-              英語で書く（Evidence Card の下敷きは、自分の言葉で書き直す）
+              英語で書く
             </label>
             <textarea
               id="write-body"

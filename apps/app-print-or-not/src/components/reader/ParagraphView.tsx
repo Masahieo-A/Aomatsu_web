@@ -1,17 +1,16 @@
 "use client";
-// 1段落分の表示：語注ボタン、スラッシュ表示、ヒント梯子。
+// 1段落分の表示：語注ボタン、ヒント梯子。
 import { Fragment, useState } from "react";
 import { hintKey, useStudent } from "@/lib/store";
 import { fillHidden } from "@/lib/text";
-import type { Article, GlossaryItem, Paragraph } from "@/lib/types";
+import type { Article, GlossaryItem, LevelKey, Paragraph } from "@/lib/types";
 import { tokenizeGloss } from "./gloss";
 
 interface Props {
   article: Article;
-  level: "lv1" | "lv2";
+  level: LevelKey;
   index: number;
   paragraph: Paragraph;
-  slash: boolean;
   revealed: (i: number) => boolean;
   taps: Record<string, number>;
   onTap: (word: string) => void;
@@ -24,7 +23,6 @@ export default function ParagraphView({
   level,
   index,
   paragraph,
-  slash,
   revealed,
   taps,
   onTap,
@@ -32,18 +30,11 @@ export default function ParagraphView({
   const { update } = useStudent();
   const [opened, setOpened] = useState(0); // 開いた最大のヒント番号（0〜3）
 
-  const shown = fillHidden(
-    slash ? paragraph.slash : paragraph.text,
-    article,
-    revealed,
-  );
-  const chunks = slash ? shown.split(" / ") : [shown];
+  const shown = fillHidden(paragraph.text, article, revealed);
+  const tokens = tokenizeGloss(shown, article.glossary);
 
   const seen = new Map<string, GlossaryItem>();
-  for (const c of chunks) {
-    for (const t of tokenizeGloss(c, article.glossary))
-      if (t.item) seen.set(t.item.word, t.item);
-  }
+  for (const t of tokens) if (t.item) seen.set(t.item.word, t.item);
   const usedGloss = [...seen.values()];
   const tapped = usedGloss.filter((g) => (taps[g.word] ?? 0) > 0);
 
@@ -62,14 +53,7 @@ export default function ParagraphView({
     <section aria-label={`第${index + 1}段落`}>
       <p className="muted mb-1">段落{index + 1}</p>
       <p className="text-base leading-[1.7]">
-        {chunks.map((c, ci) => (
-          <Fragment key={ci}>
-            {ci > 0 && (
-              <span aria-hidden className="mx-1 font-bold text-accent">
-                /
-              </span>
-            )}
-            {tokenizeGloss(c, article.glossary).map((t, ti) =>
+        {tokens.map((t, ti) =>
               t.item ? (
                 <button
                   key={ti}
@@ -87,9 +71,7 @@ export default function ParagraphView({
               ) : (
                 <Fragment key={ti}>{t.text}</Fragment>
               ),
-            )}
-          </Fragment>
-        ))}
+        )}
       </p>
 
       {tapped.length > 0 && (

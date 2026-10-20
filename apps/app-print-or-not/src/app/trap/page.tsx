@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import RequireStudent from "@/components/RequireStudent";
-import JaToggle from "@/components/card/JaToggle";
+import JaToggle from "@/components/JaToggle";
 import { useStudent } from "@/lib/store";
 import type { StudentState } from "@/lib/types";
 import cards from "@/data/trap.json";
@@ -15,7 +15,7 @@ export default function TrapPage() {
 }
 
 function Trap({ s }: { s: StudentState }) {
-  const { update, settings } = useStudent();
+  const { update } = useStudent();
   const [picks, setPicks] = useState<Record<string, Verdict>>(() =>
     s.trapDone ? Object.fromEntries(cards.map((c) => [c.id, c.answer as Verdict])) : {},
   );
@@ -36,7 +36,7 @@ function Trap({ s }: { s: StudentState }) {
         <h1 className="page-title">Trap or Treasure?（使える根拠か、危ない根拠か）</h1>
         <p className="muted">
           Writing Builder（英作文の組み立て）で使えそうな根拠が6つあります。そのまま使える（Treasure）か、危ない（Trap）かを判定します。判定すると、理由と「こう書けば使える」例が出ます。
-          {settings.trapRequired ? "" : "この活動は任意です。"}
+          この活動は任意です。
         </p>
       </header>
       <ol className="space-y-3">

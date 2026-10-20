@@ -1,14 +1,17 @@
 "use client";
-// 進め方（Steps）。今どこまで進んだかと、Writing Builder が開く条件をまとめて見せる
+// 進め方（Steps）。記録が残る活動（立場・仕分け・立場の確認・英作文）だけ完了の印を付ける
 import Link from "next/link";
 import SideBadge from "@/components/SideBadge";
 import StanceMeter, { stanceText } from "@/components/StanceMeter";
 import { SIDE_LABEL } from "@/lib/content";
-import { cardCounts, cardsRemaining, isWritingUnlocked, mySide, NEED_MINE, NEED_OTHER } from "@/lib/progress";
+import { mySide } from "@/lib/progress";
 import { useStudent } from "@/lib/store";
 import type { Side, StudentState } from "@/lib/types";
 
-function Mark({ done }: { done: boolean }) {
+function Mark({ done }: { done?: boolean }) {
+  if (done === undefined) {
+    return <span aria-hidden className="mt-0.5 h-6 w-6 shrink-0" />;
+  }
   return (
     <span
       aria-label={done ? "完了" : "未完了"}
@@ -22,12 +25,8 @@ function Mark({ done }: { done: boolean }) {
 }
 
 export default function StepsPanel({ s }: { s: StudentState }) {
-  const { settings, update } = useStudent();
+  const { update } = useStudent();
   const side = mySide(s);
-  const { mine, other } = cardCounts(s);
-  const remaining = cardsRemaining(s);
-  const unlocked = isWritingUnlocked(s, settings);
-  const cardsDone = mine >= NEED_MINE && other >= NEED_OTHER;
 
   return (
     <section className="box" aria-labelledby="steps-title">
@@ -66,18 +65,13 @@ export default function StepsPanel({ s }: { s: StudentState }) {
         </li>
 
         <li className="flex gap-3">
-          <Mark done={cardsDone} />
+          <Mark />
           <div className="min-w-0 flex-1">
-            <p className="font-semibold">2. 記事を読んで Evidence Card（根拠カード）を作る</p>
-            <p className="muted mt-1">
-              自分の側の記事を{NEED_MINE}本、反対側の記事を{NEED_OTHER}本。読み終えると Card を作る画面に進みます。
-            </p>
+            <p className="font-semibold">2. 記事を読む</p>
+            <p className="muted mt-1">自分の側の記事だけでなく、反対側の記事も読みます。上の「記事を探す」から選んでください。</p>
             {side && (
               <p className="mt-1 flex flex-wrap items-center gap-2 text-sm">
                 自分の側：<SideBadge side={side} lang="ja" />
-                <span>
-                  自分の側 {Math.min(mine, NEED_MINE)}/{NEED_MINE}・反対側 {Math.min(other, NEED_OTHER)}/{NEED_OTHER}
-                </span>
               </p>
             )}
           </div>
@@ -89,7 +83,7 @@ export default function StepsPanel({ s }: { s: StudentState }) {
             <p className="font-semibold">
               3. <Link href="/sort">Emotion or Evidence?</Link>（感情論か、根拠ありか）
             </p>
-            <p className="muted mt-1">8つの文を仕分けます。記事を2本読んだあとがおすすめです。</p>
+            <p className="muted mt-1">8つの文を「感情論」と「根拠あり」に仕分けます。</p>
           </div>
         </li>
 
@@ -106,18 +100,10 @@ export default function StepsPanel({ s }: { s: StudentState }) {
         <li className="flex gap-3">
           <Mark done={!!s.draft?.completedAt} />
           <div className="min-w-0 flex-1">
-            <p className="font-semibold">5. Writing Builder（英作文の組み立て）</p>
-            {unlocked ? (
-              <Link href="/write" className="btn mt-2">
-                Writing Builder を開く
-              </Link>
-            ) : (
-              <p className="muted mt-1">
-                🔒 1〜4 が終わると開きます。
-                {remaining > 0 && `（Card はあと${remaining}本）`}
-                {settings.trapRequired && !s.trapDone && "（Trap or Treasure? も必要）"}
-              </p>
-            )}
+            <p className="font-semibold">
+              5. <Link href="/write">Writing Builder</Link>（英作文の組み立て）
+            </p>
+            <p className="muted mt-1">アウトラインを作り、本文を書いて、Google Classroom に提出します。</p>
           </div>
         </li>
       </ol>
@@ -130,7 +116,6 @@ export default function StepsPanel({ s }: { s: StudentState }) {
           </li>
           <li>
             <Link href="/trap">Trap or Treasure?</Link>（使える根拠か、危ない根拠か）{s.trapDone && " ✓"}
-            {settings.trapRequired && "　※この授業では必須"}
           </li>
         </ul>
       </div>

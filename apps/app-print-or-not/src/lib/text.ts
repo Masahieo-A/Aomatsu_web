@@ -1,4 +1,4 @@
-// 英文処理の共通関数（文分割・語数・コピペ判定・伏せ数字の置換）。
+// 英文処理の共通関数（文分割・語数・伏せ数字の置換）。
 import type { Article } from "./types";
 
 const HIDDEN_RE = /\{\{hidden:(\d+)\}\}/g;
@@ -36,25 +36,6 @@ export function words(text: string): string[] {
 export function countWords(text: string): number {
   return text.trim() ? text.trim().split(/\s+/).filter((w) => /[A-Za-z0-9]/.test(w)).length : 0;
 }
-
-// 入力の単語のうち、元の文にも同じ順で現れる割合（LCS ベース、0〜1）
-export function copyRatio(input: string, original: string): number {
-  const a = words(input);
-  const b = words(original);
-  if (a.length === 0 || b.length === 0) return 0;
-  const dp: number[] = new Array(b.length + 1).fill(0);
-  for (let i = 1; i <= a.length; i++) {
-    let prev = 0;
-    for (let j = 1; j <= b.length; j++) {
-      const tmp = dp[j];
-      dp[j] = a[i - 1] === b[j - 1] ? prev + 1 : Math.max(dp[j], dp[j - 1]);
-      prev = tmp;
-    }
-  }
-  return dp[b.length] / a.length;
-}
-
-export const COPY_WARN_RATIO = 0.8;
 
 export function hasJapanese(text: string): boolean {
   return /[぀-ヿ一-龯]/.test(text);

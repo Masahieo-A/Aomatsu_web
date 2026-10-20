@@ -68,7 +68,6 @@
       "paragraphs": [
         {
           "text": "A 3D food printer makes food layer by layer from a soft paste. Many people ask who checks that these machines are safe and clean. A report for the UK Food Standards Agency looked at this question. In 2023, the report said there was no rule made only for 3D food printing. It found none anywhere in the world.",
-          "slash": "A 3D food printer / makes food layer by layer / from a soft paste. Many people ask / who checks / that these machines are safe and clean. A report / for the UK Food Standards Agency / looked at this question. In 2023, / the report said / there was no rule / made only for 3D food printing. It found none / anywhere in the world.",
           "hints": [
             "layer, paste, rule",
             "3Dフードプリンターが安全で清潔かを誰が確かめるのかを調べた2023年の報告は、専用のルールは世界のどこにもなかったと述べた。",
@@ -77,7 +76,6 @@
         },
         {
           "text": "The report also counted food printers sold to consumers. In 2023, there were {{hidden:0}} models in the world. So the market was still small. In the UK, 3D food printing was not regulated at that time.",
-          "slash": "The report also counted / food printers sold to consumers. In 2023, / there were {{hidden:0}} models / in the world. So the market / was still small. In the UK, / 3D food printing / was not regulated / at that time.",
           "hints": [
             "counted, consumers, regulated",
             "消費者向けに売られていたフードプリンターの機種数は{{hidden:0}}で、市場はまだ小さく、英国でも当時は規制されていなかった。",
@@ -86,7 +84,6 @@
         },
         {
           "text": "Cleaning is another problem. Some parts of a printer cannot be taken apart and washed fully. Nozzles and tubes also have places that normal cleaning does not reach. If a printer changes foods, bits of the first may mix with the next. This is called cross-contamination.",
-          "slash": "Cleaning is another problem. Some parts / of a printer / cannot be taken apart / and washed fully. Nozzles and tubes / also have places / that normal cleaning does not reach. If a printer changes foods, / bits of the first / may mix / with the next. This is called cross-contamination.",
           "hints": [
             "cleaning, nozzles, cross-contamination",
             "プリンターには完全に分解して洗えない部品や、通常の洗浄が届かない場所があり、食材を替えると前の食材が混ざることがある。",
@@ -95,7 +92,6 @@
         },
         {
           "text": "Printed food often has a lot of water. If bacteria get into it, they can grow easily. A review in 2023 said that heating, cooling, and reheating may bring in microbes. Researchers at the University of Alberta used a computer simulation. Their main result was that a heater can kill Salmonella bacteria. It also found some cooler spots inside the syringe, which holds the food.",
-          "slash": "Printed food often has a lot of water. If bacteria get into it, / they can grow easily. A review in 2023 / said that heating, cooling, and reheating / may bring in microbes. Researchers / at the University of Alberta / used a computer simulation. Their main result was / that a heater can kill Salmonella bacteria. It also found / some cooler spots / inside the syringe, / which holds the food.",
           "hints": [
             "water, bacteria, heater",
             "印刷した食品は水分が多く菌が増えやすい。アルバータ大の研究の主な結果はヒーターでサルモネラ菌を殺せることだが、中に温度の低い場所もあった。",
@@ -104,7 +100,6 @@
         },
         {
           "text": "A 2023 review also said few studies had measured the health effects of printed food. The UK researchers advised making rules for labels, cleaning, and ingredients. They think rules should come first.",
-          "slash": "A 2023 review / also said / few studies had measured / the health effects of printed food. The UK researchers advised / making rules / for labels, cleaning, and ingredients. They think / rules should come first.",
           "hints": [
             "advised, rules, health effects",
             "印刷食品の健康影響を測った研究はまだ少ないと2023年の総説は述べ、英国の研究者は表示・洗浄・材料のルールづくりを勧め、まずルールが先だと考えている。",
@@ -117,7 +112,6 @@
       "paragraphs": [
         {
           "text": "A 3D food printer builds food layer by layer, usually from a soft paste that is pushed out through a nozzle. As this technology spreads, a basic question is who checks that the machines are safe and clean. In 2023, a research report for the UK Food Standards Agency looked at this question. It said that no rule written only for 3D food printing existed anywhere in the world, and that 3D food printing was not regulated in the UK at that time.",
-          "slash": "A 3D food printer / builds food layer by layer, / usually from a soft paste / that is pushed out through a nozzle. As this technology spreads, / a basic question is / who checks / that the machines are safe and clean. In 2023, / a research report / for the UK Food Standards Agency / looked at this question. It said / that no rule written only for 3D food printing / existed anywhere in the world, / and that 3D food printing / was not regulated in the UK / at that time.",
           "hints": [
             "nozzle, safe and clean, no rule",
             "3Dフードプリンターの安全と清潔を誰が確かめるのかを調べた2023年の報告は、専用ルールは世界のどこにもなく、英国でも規制されていなかったと述べた。",
@@ -126,7 +120,6 @@
         },
         {
           "text": "The same report counted the food printers sold to consumers. In 2023, there were {{hidden:0}} models of such printers on the market worldwide, so the market was still very small. A review published in September 2023 by researchers at McGill University added that no mandatory safety standard for 3D-printed food existed at any level. The UK researchers advised creating standards for labels, hygiene, and ingredients. They think rules should come first.",
-          "slash": "The same report counted / the food printers sold to consumers. In 2023, / there were {{hidden:0}} models of such printers / on the market worldwide, / so the market was still very small. A review published in September 2023 / by researchers at McGill University / added that no mandatory safety standard / for 3D-printed food / existed at any level. The UK researchers advised / creating standards / for labels, hygiene, and ingredients. They think / rules should come first.",
           "hints": [
             "consumers, safety standard, hygiene",
             "消費者向けの機種数は世界で{{hidden:0}}と少なく、3Dプリント食品の義務的な安全基準はどの段階にも存在せず、英国の研究者は基準づくりを勧め、まずルールが先だと考えている。",
@@ -135,7 +128,6 @@
         },
         {
           "text": "Cleaning is one of the practical concerns. A review of printer equipment published in 2025 explained that nozzles and tubes have places that normal cleaning does not reach. When a printer switches from one material to another, small amounts of the first material may remain and mix with the next one, which is called cross-contamination. Some parts of a printer also cannot be fully taken apart and washed, according to researchers at the University of Alberta.",
-          "slash": "Cleaning is one of the practical concerns. A review of printer equipment / published in 2025 / explained that nozzles and tubes / have places / that normal cleaning does not reach. When a printer switches / from one material to another, / small amounts of the first material / may remain / and mix with the next one, / which is called cross-contamination. Some parts of a printer / also cannot be fully taken apart and washed, / according to researchers at the University of Alberta.",
           "hints": [
             "cleaning, nozzles, cross-contamination",
             "ノズルやチューブには通常の洗浄が届かない場所があり、材料を替えると前の材料が混ざる交差汚染が起こりうる。完全に分解して洗えない部品もある。",
@@ -144,7 +136,6 @@
         },
         {
           "text": "Food safety rules for printers were also unclear in other regions. According to a news summary of the 2025 review, the US Food and Drug Administration had no separate category for food printers. In the EU, new kinds of food must pass a safety check before they are sold under the Novel Food rules, although whether a printed food counts as new depends on its ingredients.",
-          "slash": "Food safety rules for printers / were also unclear in other regions. According to a news summary of the 2025 review, / the US Food and Drug Administration / had no separate category for food printers. In the EU, / new kinds of food must pass a safety check / before they are sold / under the Novel Food rules, / although whether a printed food counts as new / depends on its ingredients.",
           "hints": [
             "US FDA, EU, Novel Food",
             "2025年の総説の要約では、米FDAにフードプリンター専用の区分はなく、EUでは新しい食品は販売前の安全審査が必要だが、印刷食品が当てはまるかは原料しだい。",
@@ -153,7 +144,6 @@
         },
         {
           "text": "Printed food often contains a lot of water, so bacteria can grow easily if it becomes contaminated. The McGill review warned that heating, cooling, and reheating the food, and contact with machine parts, may bring in microbes. The Alberta team studied the food inside a syringe, the part of the printer that holds the paste, with a computer simulation. The simulation found some cooler spots inside it. However, the main conclusion of the study was that a heater can kill Salmonella bacteria, so the study also points to a possible way to make printing safer.",
-          "slash": "Printed food often contains a lot of water, / so bacteria can grow easily / if it becomes contaminated. The McGill review warned / that heating, cooling, and reheating the food, / and contact with machine parts, / may bring in microbes. The Alberta team studied the food / inside a syringe, / the part of the printer / that holds the paste, / with a computer simulation. The simulation found / some cooler spots inside it. However, / the main conclusion of the study / was that a heater can kill Salmonella bacteria, / so the study also points to a possible way / to make printing safer.",
           "hints": [
             "bacteria, syringe, heater",
             "印刷食品は水分が多く菌が増えやすい。アルバータ大の研究は温度の低い場所を見つけたが、主な結論はヒーターでサルモネラ菌を殺せること。",
@@ -162,11 +152,62 @@
         },
         {
           "text": "The 2023 McGill review also said that few studies had directly measured the health effects of 3D-printed food. In 2023, then, both the rules and the evidence on health were still limited.",
-          "slash": "The 2023 McGill review also said / that few studies had directly measured / the health effects of 3D-printed food. In 2023, then, / both the rules and the evidence on health / were still limited.",
           "hints": [
             "health effects, studies, limited",
             "マギル大学の2023年の総説は健康影響を直接測った研究は少ないと述べ、2023年時点ではルールも証拠もまだ限られていた。",
             "2023年のマギル大学の総説は、3Dプリント食品の健康への影響を直接測った研究は少ないとも述べました。つまり2023年には、ルールも、健康についての証拠も、まだ限られていたのです。"
+          ]
+        }
+      ]
+    },
+    "lv3": {
+      "paragraphs": [
+        {
+          "text": "A 3D food printer builds food layer by layer, usually by pushing a soft paste out through a nozzle. As this technology spreads, a basic question arises: who is responsible for making sure that these machines are safe and clean? In 2023, a research report prepared for the UK Food Standards Agency examined this question. According to the report, no rule written only for 3D food printing existed anywhere in the world at that time, and 3D food printing was not regulated in the UK either.",
+          "hints": [
+            "layer, nozzle, regulated",
+            "2023年の英国食品基準庁向けの報告は、3Dフードプリント専用のルールが世界のどこにもなく、英国でも規制されていなかったと述べた。",
+            "3Dフードプリンターは、やわらかいペーストをノズルから押し出して、食べ物を一層ずつ作ります。この技術が広まるにつれて、基本的な問いが生まれます。この機械が安全で清潔であることを確かめる責任は誰にあるのか、という問いです。2023年に、英国食品基準庁のために作成された研究報告書がこの問いを検討しました。報告書によれば、当時、3Dフードプリント専用に書かれたルールは世界のどこにもなく、英国でも3Dフードプリントは規制されていませんでした。"
+          ]
+        },
+        {
+          "text": "The same report also counted the food printers sold to consumers. In 2023, there were {{hidden:0}} models of such printers on the market worldwide, which means that the market was still very small. A review published in September 2023 by researchers at McGill University added that no mandatory safety standard for 3D-printed food existed at any level. In response to this situation, the UK researchers advised creating standards for labels, hygiene, and ingredients, and they think that rules should come first.",
+          "hints": [
+            "consumers, mandatory, standards",
+            "同じ報告は消費者向け機種が{{hidden:0}}で市場が小さいと示し、マギル大の総説は義務的な安全基準がないと述べ、英国の研究者は先にルールを作るべきだと考えている。",
+            "同じ報告書は、消費者向けに売られているフードプリンターの数も数えました。2023年、世界の市場にあったそのようなプリンターの機種数は{{hidden:0}}で、市場はまだ非常に小さかったということです。2023年9月に発表されたマギル大学の研究者たちによる総説は、3Dプリント食品について義務的な安全基準はどのレベルにも存在しないと付け加えました。この状況を受けて、英国の研究者たちは、表示、衛生、原料についての基準を作ることを勧め、ルールが先に来るべきだと考えています。"
+          ]
+        },
+        {
+          "text": "Cleaning is one of the practical concerns. A review of printer equipment published in 2025 explained that nozzles and tubes have places that normal cleaning does not reach. When a printer switches from one material to another, small amounts of the first material may remain and mix with the next one, a problem known as cross-contamination. In addition, according to researchers at the University of Alberta, some parts of a printer cannot be fully taken apart and washed, so thorough cleaning is not always easy.",
+          "hints": [
+            "cleaning, nozzles, cross-contamination",
+            "ノズルやチューブには通常の洗浄が届かない場所があり、材料を替えると前の材料が混ざる交差汚染が起こりうる上、完全に分解して洗えない部品もある。",
+            "洗浄は実際的な懸念の一つです。2025年に発表された機器についての総説は、ノズルやチューブには通常の洗浄が届かない場所があると説明しました。プリンターがある材料から別の材料に切り替わるとき、前の材料が少し残って次の材料に混ざることがあり、これは交差汚染として知られています。さらに、アルバータ大学の研究者たちによれば、プリンターの部品の中には完全に分解して洗えないものもあるため、徹底的な洗浄がいつも簡単とは限りません。"
+          ]
+        },
+        {
+          "text": "Rules for printers were also unclear in other regions. According to a news summary of the 2025 review, the US Food and Drug Administration had no separate category for food printers. In the EU, by contrast, new kinds of food must pass a safety check under the Novel Food rules before they are sold, although whether a printed food counts as new depends on its ingredients.",
+          "hints": [
+            "US FDA, EU, Novel Food",
+            "2025年の総説の要約では、米FDAにフードプリンター専用の区分はなく、EUでは新しい食品は販売前に審査されるが、印刷食品が新しいかどうかは原料しだい。",
+            "プリンターについてのルールは、ほかの地域でもはっきりしていませんでした。2025年の総説についてのニュースによる要約では、米国食品医薬品局にはフードプリンター専用の区分がありませんでした。一方EUでは、新しい種類の食品は、新規食品規則のもとで販売前に安全審査を通らなければなりませんが、印刷された食品が新しいものにあたるかどうかは、その原料しだいです。"
+          ]
+        },
+        {
+          "text": "Printed food often contains a lot of water, so bacteria can grow easily if it becomes contaminated. The McGill review warned that heating, cooling, and reheating the food, as well as contact with machine parts, may bring in microbes. The University of Alberta team studied the food inside a syringe, the part of the printer that holds the paste, using a computer simulation. The simulation found some cooler spots inside it. However, the main conclusion of the study was that a heater can kill Salmonella bacteria, so the study also points to a possible way to make printing safer.",
+          "hints": [
+            "bacteria, syringe, heater",
+            "印刷食品は水分が多く菌が増えやすい。アルバータ大の研究は温度の低い場所を見つけたが、主な結論はヒーターでサルモネラ菌を殺せることだった。",
+            "印刷された食品には水分が多いことがよくあり、汚染されると細菌が増えやすくなります。マギル大学の総説は、食べ物の加熱、冷却、再加熱や、機械の部品との接触によって、微生物が入りこむかもしれないと警告しました。アルバータ大学のチームは、プリンターのうちペーストを入れる部分であるシリンジの中の食べ物を、コンピューターのシミュレーションを使って調べました。シミュレーションは、その中に温度の低い場所があることを見つけました。しかし、この研究の主な結論は、ヒーターでサルモネラ菌を殺せるということでした。そのため、この研究は印刷をより安全にする方法の可能性も示しています。"
+          ]
+        },
+        {
+          "text": "The 2023 McGill review also said that few studies had directly measured the health effects of 3D-printed food. In 2023, then, both the rules and the evidence on health were still limited, while the Alberta study suggests that heating may be one way to reduce a bacterial risk.",
+          "hints": [
+            "health effects, evidence, limited",
+            "マギル大の2023年の総説は健康影響を直接測った研究は少ないと述べ、ルールも証拠も限られていたが、アルバータ大の研究は加熱が菌のリスクを減らす一つの方法かもしれないと示す。",
+            "2023年のマギル大学の総説は、3Dプリント食品の健康への影響を直接測った研究は少ないとも述べました。つまり2023年には、ルールも、健康についての証拠も、まだ限られていました。一方、アルバータ大学の研究は、加熱が細菌によるリスクを減らす一つの方法かもしれないことを示しています。"
           ]
         }
       ]

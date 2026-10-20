@@ -1,6 +1,4 @@
 {
-  "soWhatJaAllowed": false,
   "wordMin": 130,
-  "wordMax": 170,
-  "trapRequired": false
+  "wordMax": 170
 }

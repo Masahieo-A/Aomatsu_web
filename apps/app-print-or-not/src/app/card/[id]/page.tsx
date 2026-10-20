@@ -1,9 +1,6 @@
-"use client";
-import { useParams } from "next/navigation";
-import RequireStudent from "@/components/RequireStudent";
-import CardForm from "@/components/card/CardForm";
+import { redirect } from "next/navigation";
 
+// Evidence Card は廃止した。古いリンク用にトップへ転送だけ残す
 export default function CardPage() {
-  const params = useParams<{ id: string }>();
-  return <RequireStudent>{(s) => <CardForm id={params.id} s={s} />}</RequireStudent>;
+  redirect("/");
 }

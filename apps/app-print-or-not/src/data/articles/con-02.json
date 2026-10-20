@@ -41,7 +41,6 @@
       "paragraphs": [
         {
           "text": "Some food printers are made for businesses. In January 2026, a Japanese technology site wrote about one of them. Its price started at 4,221 euros, or about 770,000 yen. It was made for events like weddings and for high-end restaurants. It could use only pastes that keep their shape. The headline said that printed rice tasted surprisingly ordinary.",
-          "slash": "Some food printers are made for businesses. In January 2026, / a Japanese technology site / wrote about one of them. Its price started / at 4,221 euros, / or about 770,000 yen. It was made / for events like weddings / and for high-end restaurants. It could use only pastes / that keep their shape. The headline said / that printed rice / tasted surprisingly ordinary.",
           "hints": [
             "businesses, price, weddings",
             "2026年1月に紹介された業務用フードプリンターは、価格が4,221ユーロ（約77万円）から。結婚式や高級店向けで、形を保つペーストしか使えなかった。",
@@ -50,7 +49,6 @@
         },
         {
           "text": "Printers do not all cost this much. A review in 2023 said printers cost from about 300 dollars to {{hidden:0}}. The review came from McGill University. The cheapest cost far less than the business printer. The same review said they did not suit mass production.",
-          "slash": "Printers do not all cost this much. A review in 2023 / said printers cost / from about 300 dollars / to {{hidden:0}}. The review came / from McGill University. The cheapest cost / far less / than the business printer. The same review said / they did not suit / mass production.",
           "hints": [
             "printers, cost, mass production",
             "2023年の総説では、プリンターの価格はおよそ300ドルから{{hidden:0}}まで幅があり、大量生産には向かないと述べられた（マギル大学の総説）。",
@@ -59,7 +57,6 @@
         },
         {
           "text": "In 2022, a professor at Oregon State University spoke about the cost of food printers. The professor said they were too expensive for mass production. Their slow speed was also a barrier. The article was about cost and a lack of ingredients.",
-          "slash": "In 2022, / a professor at Oregon State University / spoke about the cost of food printers. The professor said / they were too expensive / for mass production. Their slow speed / was also a barrier. The article was about / cost and a lack of ingredients.",
           "hints": [
             "professor, expensive, slow speed",
             "2022年にオレゴン州立大の教授は、フードプリンターは大量生産には高すぎ、遅さも壁になっていると述べた。",
@@ -68,7 +65,6 @@
         },
         {
           "text": "The professor also said what homes would need. To reach homes in the next {{hidden:1}}, printers would need two things. One was a printhead that even beginners can wash. The other was special ingredients. Without these, home use would be hard.",
-          "slash": "The professor also said / what homes would need. To reach homes / in the next {{hidden:1}}, / printers would need two things. One was a printhead / that even beginners can wash. The other was / special ingredients. Without these, / home use would be hard.",
           "hints": [
             "homes, printhead, ingredients",
             "教授は、今後{{hidden:1}}で家庭に届くには、初心者でも洗えるプリントヘッドと専用の食材が必要だと述べた。",
@@ -77,7 +73,6 @@
         },
         {
           "text": "For now, price, speed, and ingredients seem to be big problems for daily meals.",
-          "slash": "For now, / price, speed, and ingredients seem / to be big problems / for daily meals.",
           "hints": [
             "price, speed, daily meals",
             "今のところ、価格、速度、食材は日常の食事にとって大きな課題に見え。",
@@ -90,7 +85,6 @@
       "paragraphs": [
         {
           "text": "In January 2026, a Japanese technology site wrote about a food printer made for businesses. The price started at 4,221 euros, which was about 770,000 yen. The printer was aimed at events such as weddings and at high-end restaurants. The headline said that printed rice tasted surprisingly ordinary. The article was mostly positive about the machine.",
-          "slash": "In January 2026, / a Japanese technology site / wrote about a food printer / made for businesses. The price started / at 4,221 euros, / which was about 770,000 yen. The printer was aimed / at events such as weddings / and at high-end restaurants. The headline said / that printed rice / tasted surprisingly ordinary. The article was mostly positive about the machine.",
           "hints": [
             "technology site, 4,221 euros, high-end",
             "2026年1月の記事で紹介された業務用フードプリンターは4,221ユーロ（約77万円）からで、結婚式や高級店向け。味は意外と普通と見出しにある。",
@@ -99,7 +93,6 @@
         },
         {
           "text": "The machine could not use every kind of food. It worked only with pastes that keep their shape after printing. The article described this as a limit on the ingredients that could be used.",
-          "slash": "The machine could not use every kind of food. / It worked only with pastes / that keep their shape after printing. The article described this as / a limit on the ingredients / that could be used.",
           "hints": [
             "every kind of food, pastes, shape",
             "この機械は印刷後も形を保つペーストしか使えず。",
@@ -108,7 +101,6 @@
         },
         {
           "text": "Printers do not all cost this much. A review published in 2023 by researchers at McGill University said that food printers cost from about 300 dollars to {{hidden:0}}. However, the same review said that they did not suit mass production. The cheapest printers cost far less than the business printer in the first article. The wide range of prices shows that a cheap printer and an expensive one can be very different machines.",
-          "slash": "Printers do not all cost this much. / A review published in 2023 / by researchers at McGill University / said that food printers cost / from about 300 dollars / to {{hidden:0}}. However, / the same review said / that they did not suit mass production. / The cheapest printers cost far less / than the business printer in the first article. / The wide range of prices / shows that a cheap printer and an expensive one / can be very different machines.",
           "hints": [
             "review, price range, mass production",
             "2023年の総説によると、プリンターの価格は約300ドルから{{hidden:0}}まで幅広いが、どれも大量生産には向かない。",
@@ -117,7 +109,6 @@
         },
         {
           "text": "A professor at Oregon State University gave a similar view in an article published by Nutrition Insight in February 2022. The professor said that 3D printing was too expensive for mass production, and that its slow speed was another barrier. The article was about home use, where people want food that fits their own needs. It said that cost and a lack of ingredients hold back this idea.",
-          "slash": "A professor at Oregon State University / gave a similar view / in an article / published by Nutrition Insight / in February 2022. The professor said / that 3D printing was too expensive / for mass production, / and that its slow speed / was another barrier. The article was about home use, / where people want food / that fits their own needs. It said / that cost and a lack of ingredients / hold back this idea.",
           "hints": [
             "professor, too expensive, slow speed",
             "2022年の記事で、オレゴン州立大の教授は、大量生産には高すぎ、遅さも壁になっていると述べた。",
@@ -126,7 +117,6 @@
         },
         {
           "text": "The professor also described what home use would need. To bring food printers into homes in the next {{hidden:1}}, the professor said printers would need a printhead that even beginners can wash, together with special ingredients. In other words, a printer for homes needs easier cleaning and its own kinds of food. The professor described these as conditions to be met, not as things that were already true.",
-          "slash": "The professor also described / what home use would need. To bring food printers into homes / in the next {{hidden:1}}, / the professor said / printers would need a printhead / that even beginners can wash, / together with special ingredients. In other words, / a printer for homes needs / easier cleaning and its own kinds of food. The professor described / these as conditions to be met, / not as things / that were already true.",
           "hints": [
             "home use, printhead, special ingredients",
             "教授は、今後{{hidden:1}}でフードプリンターを家庭に入れるには、初心者でも洗えるプリントヘッドと専用の食材が必要だと述べた。",
@@ -135,11 +125,62 @@
         },
         {
           "text": "Together, these reports suggest that price, speed, and the limited choice of ingredients are still barriers for daily meals. The 2022 and 2026 articles were written four years apart, but they point to similar limits: cost and ingredients. The 2023 review and the professor also both named mass production as a weak point.",
-          "slash": "Together, / these reports suggest / that price, speed, and the limited choice of ingredients / are still barriers / for daily meals. The 2022 and 2026 articles / were written four years apart, / but they point to similar limits: / cost and ingredients. The 2023 review and the professor / also both named mass production / as a weak point.",
           "hints": [
             "barriers, daily meals, solved",
             "これらの報告は、価格、速度、食材の少なさが日常の食事への壁だと示しており。",
             "これらの報告を合わせると、価格、速度、選べる食材の少なさが、日々の食事にとってまだ壁であることがわかります。2022年と2026年の記事は4年の間をあけて書かれましたが、費用と食材という似た限界を指しています。2023年の総説と教授も、大量生産を弱点として挙げました。"
+          ]
+        }
+      ]
+    },
+    "lv3": {
+      "paragraphs": [
+        {
+          "text": "In January 2026, a Japanese technology site wrote about a food printer made for businesses. Its price started at 4,221 euros, which was about 770,000 yen, and the printer was aimed at events such as weddings and at high-end restaurants. It was therefore made for professional users rather than for ordinary households. The headline said that printed rice tasted surprisingly ordinary, but the article was mostly positive about the machine.",
+          "hints": [
+            "price, businesses, headline",
+            "2026年1月の日本の技術系サイトは、約77万円からの業務用フードプリンターを紹介し、ごはんの味は意外と普通と見出しにしたが、記事は全体として好意的だった。",
+            "2026年1月、日本の技術系サイトが、業務用に作られたフードプリンターについて書きました。その価格は4,221ユーロ、約77万円からで、結婚式などのイベントや高級レストランを対象としていました。そのため、一般の家庭向けというより、専門的な利用者向けに作られていました。見出しは、印刷されたごはんの味が意外と普通だったと伝えていましたが、記事はその機械について全体として好意的でした。"
+          ]
+        },
+        {
+          "text": "Even so, the machine could not use every kind of food. It worked only with pastes that keep their shape after printing, and the article described this as a limit on the ingredients that could be used. In other words, a high price did not mean that the printer could handle a wide variety of food, and this limit matters for anyone who hopes to use such a machine for everyday cooking.",
+          "hints": [
+            "pastes, shape, limit",
+            "この機械は形を保つペーストしか使えず、記事はこれを使える材料の限界と述べた。高価でも幅広い食べ物を扱えるわけではない。",
+            "それでも、その機械はあらゆる種類の食べ物を使えるわけではありませんでした。印刷後に形を保つペーストにしか対応しておらず、記事はこれを使える材料の限界として説明していました。言い換えれば、価格が高いからといって、そのプリンターが幅広い食べ物を扱えるということにはなりませんでした。この限界は、そのような機械を毎日の料理に使いたいと望む人にとって重要です。"
+          ]
+        },
+        {
+          "text": "Printers do not all cost this much. A review published in 2023 by researchers at McGill University said that food printers cost from about 300 dollars to {{hidden:0}}. The cheapest printers therefore cost far less than the business printer in the first article, which suggests that a cheap printer and an expensive one can be very different machines. While this wide range gives buyers some choice, the same review said that the printers did not suit mass production, so a low price alone does not solve the problem.",
+          "hints": [
+            "review, range, mass production",
+            "2023年のマギル大の総説では、プリンターは約300ドルから{{hidden:0}}までと幅があり、最も安いものは業務用よりずっと安いが、大量生産には向かないとされた。",
+            "プリンターのすべてがこれほど高いわけではありません。マギル大学の研究者たちが2023年に発表した総説は、フードプリンターの価格は約300ドルから{{hidden:0}}までだと述べました。したがって、最も安いプリンターは最初の記事の業務用プリンターよりはるかに安く、安いプリンターと高いプリンターはまったく違う機械でありうることがうかがえます。この幅広い価格帯は買い手にある程度の選択肢を与えますが、同じ総説は、それらのプリンターは大量生産には向かないと述べており、安い価格だけでは問題は解決しません。"
+          ]
+        },
+        {
+          "text": "A professor at Oregon State University gave a similar view in an article published by Nutrition Insight in February 2022. The professor said that 3D printing was too expensive for mass production, and that its slow speed was another barrier. The article was about home use, where people want food that fits their own needs, and it said that cost and a lack of ingredients hold back this idea. Both points are practical ones, because a machine that is slow and expensive is difficult to use for a large number of meals.",
+          "hints": [
+            "professor, expensive, slow speed",
+            "2022年、オレゴン州立大の教授は、3Dプリントは大量生産には高価すぎ、遅さも壁だと述べ、家庭向けの個別化にも費用と材料不足が壁だとされた。",
+            "オレゴン州立大学の教授が、2022年2月にニュートリション・インサイトが掲載した記事で、同様の見方を示しました。教授は、3Dプリントは大量生産には高価すぎ、速度の遅さももう一つの障壁だと述べました。その記事は、人々が自分のニーズに合った食べ物を求める家庭での利用についてのもので、費用と材料の不足がこの考えを妨げていると述べていました。どちらも実際的な問題です。遅くて高価な機械は、大量の食事を作るのに使いにくいからです。"
+          ]
+        },
+        {
+          "text": "The professor also described what home use would need. To bring food printers into homes in the next {{hidden:1}}, the professor said, printers would need a printhead that even beginners can wash, together with special ingredients. These were presented as conditions to be met, not as things that were already true. In other words, easier washing and suitable ingredients were still goals for the future.",
+          "hints": [
+            "printhead, beginners, conditions",
+            "教授は、今後{{hidden:1}}で家庭に普及するには、初心者でも洗える印刷ヘッドと専用の材料が必要だと述べ、これらを満たすべき条件として示した。",
+            "教授は、家庭での利用に何が必要かも説明しました。今後{{hidden:1}}でフードプリンターを家庭に広めるには、初心者でも洗える印刷ヘッドと、専用の材料が必要になると教授は述べました。これらは、すでに実現していることではなく、満たされるべき条件として示されたのです。言い換えれば、洗いやすさと適した材料は、まだ将来の目標だったということです。"
+          ]
+        },
+        {
+          "text": "Together, these reports suggest that price, speed, and the limited choice of ingredients are still barriers for daily meals. Although the 2022 and 2026 articles were written four years apart, they point to similar limits, namely cost and ingredients, which suggests that these problems had not been fully solved during that period. In addition, the 2023 review and the professor both named mass production as a weak point.",
+          "hints": [
+            "barriers, daily meals, mass production",
+            "これらの報告は、価格、速度、材料の少なさが日常の食事への壁であることを示す。2022年と2026年の記事は似た限界を指し、総説と教授は大量生産を弱点とした。",
+            "これらの報告を合わせると、価格、速度、そして材料の選択肢の少なさが、日常の食事にとってはまだ障壁であることがうかがえます。2022年と2026年の記事は4年離れて書かれましたが、費用と材料という似た限界を指しており、この間にこれらの問題が十分には解決されていなかったことがうかがえます。さらに、2023年の総説と教授は、どちらも大量生産を弱点として挙げました。"
           ]
         }
       ]

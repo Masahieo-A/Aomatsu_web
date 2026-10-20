@@ -4,7 +4,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import RequireStudent from "@/components/RequireStudent";
-import JaToggle from "@/components/card/JaToggle";
+import JaToggle from "@/components/JaToggle";
 import { useStudent } from "@/lib/store";
 import type { StudentState } from "@/lib/types";
 import items from "@/data/sort.json";

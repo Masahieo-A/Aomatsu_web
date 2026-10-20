@@ -15,9 +15,10 @@ export interface Source {
 
 export interface Paragraph {
   text: string; // 本文。伏せ数字は {{hidden:0}} の形で埋め込む
-  slash: string; // 意味のかたまりごとに " / " を入れた同じ本文
   hints: [string, string, string]; // [キーワード3つ, 要旨（日本語1文）, 全訳]
 }
+
+export type LevelKey = "lv1" | "lv2" | "lv3";
 
 export interface Level {
   paragraphs: Paragraph[];
@@ -57,11 +58,12 @@ export interface Article {
   difficulty: 1 | 2 | 3;
   minutes: number;
   sources: Source[];
-  levels: { lv1: Level; lv2: Level };
+  // lv1=簡単（英検準2級）、lv2=普通（英検2級）、lv3=難しい（大学入学共通テスト）
+  levels: { lv1: Level; lv2: Level; lv3: Level };
   glossary: GlossaryItem[];
   hiddenNumbers: HiddenNumber[];
   factOpinion: FactOpinionItem[];
-  cardPoints: string[]; // Evidence Card の Point 選択肢（points.json の ID）
+  cardPoints: string[]; // 記事が扱う論点（points.json の ID。検索に使う）
 }
 
 export interface PointDef {
@@ -73,22 +75,9 @@ export interface PointDef {
 
 // ---- 生徒データ ----
 
-export interface EvidenceCard {
-  articleId: string;
-  side: Side;
-  point: string;
-  sourceSentence: string; // タップで選んだ本文の文
-  fact: string; // 自分の英語で書き直した事実
-  numberExample: string;
-  soWhat: string;
-  weakPoint: string;
-  createdAt: string;
-  updatedAt: string;
-}
-
 export interface HintEvent {
   articleId: string;
-  level: "lv1" | "lv2";
+  level: LevelKey;
   paragraph: number;
   hint: 1 | 2 | 3;
   at: string;
@@ -97,11 +86,8 @@ export interface HintEvent {
 export interface WritingDraft {
   outline: {
     opinion: string;
-    reason1Card: string; // 差し込んだ Card の articleId（未選択は ""）
     reason1: string;
-    reason2Card: string;
     reason2: string;
-    counterCard: string;
     counter: string;
     conclusion: string;
   };
@@ -118,11 +104,8 @@ export interface StudentState {
   firstSide?: Side; // stance=3 の生徒が S2 で選んだ「まず読む側」
   hookDone: boolean;
   hookAnswers: Record<string, string>; // 問題ID → 生徒の答え
-  readArticles: string[]; // 最後まで読んだ記事
-  lv2Read: string[]; // Lv2 で読み切った記事（Challenge）
   guesses: Record<string, number>; // "articleId:index" → 予想値
   factOpinionAnswers: Record<string, ("fact" | "opinion")[]>;
-  cards: Record<string, EvidenceCard>;
   sortDone: boolean;
   trapDone: boolean;
   hintCounts: Record<string, number>; // "articleId:level:paragraph:hint" → 回数
@@ -130,9 +113,7 @@ export interface StudentState {
 }
 
 export interface Settings {
-  soWhatJaAllowed: boolean; // So what を日本語でも可にするか
   wordMin: number;
   wordMax: number;
-  trapRequired: boolean; // S5-2 を Writing Builder の必須条件にするか
 }
 
