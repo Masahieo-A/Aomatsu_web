@@ -1,7 +1,11 @@
 {
+  "rewrites": [
+    { "source": "/print-or-not", "destination": "https://print-or-not.vercel.app/print-or-not" },
+    { "source": "/print-or-not/:path*", "destination": "https://print-or-not.vercel.app/print-or-not/:path*" }
+  ],
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/((?!print-or-not).*)",
       "headers": [
         { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
         { "key": "X-Content-Type-Options", "value": "nosniff" },
