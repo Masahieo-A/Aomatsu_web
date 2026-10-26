@@ -43,7 +43,12 @@
 
   // ---------------- 状態 ----------------
   const state = {
-    essays: new Map(), // ID → {id, cls, num, name, essay（編集後）, orig（読み込んだ原文）, dup}
+    essays: new Map(), // 手順3〜5の対象（モードに応じて下の3つから組み立てる）ID → {id, cls, num, name, essay（編集後）, orig（読み込んだ原文）, dup, manual, absent}
+    batchEssays: new Map(), // 一斉作成：フォームの回答シートから読み込んだ生徒
+    manual: [], // 個別作成：手で入力した生徒（localStorage に保存）
+    absent: null, // 未提出者用：sample essay（ID は SAMPLE。localStorage に保存）
+    mode: "batch", // batch | absent | manual
+    mix: true, // 個別作成の生徒を一斉作成の生徒に混ぜるか
     fileQuestions: new Map(), // ID → row（スプレッドシートの「質問」シート）
     pastedQuestions: new Map(), // ID → row（画面に直接貼った分。こちらを優先）
     idAlias: new Map(), // 旧ID → 新ID（クラス表記をまとめたときの読み替え。例 1組-37 → 301組-37）
@@ -148,6 +153,8 @@
       essay: findCol(h, [/essay|エッセイ|英作文|本文/]),
       // 再編集用データの「元のessay」列（essay を編集していた場合の原文）
       orig: findCol(h, [/^元のessay/]),
+      // 再編集用データの「区分」列（一斉／個別／未提出）
+      kind: findCol(h, ["区分"]),
     };
     if (col.essay === col.orig) col.essay = findCol(h.map((x, i) => (i === col.orig ? "" : x)), [/essay|エッセイ|英作文|本文/]);
     if (col.essay < 0 || (col.id < 0 && (col.cls < 0 || col.num < 0))) return null;
@@ -160,7 +167,7 @@
       const fromCls = !(col.id >= 0 && nfkc(r[col.id]));
       const id = fromCls ? essayId(cls, num) : normId(r[col.id]);
       const orig = col.orig >= 0 ? String(r[col.orig] || "").replace(/\r\n/g, "\n").trim() : "";
-      list.push({ id, fromCls, cls, num: Number.isFinite(num) ? num : 0, name: col.name >= 0 ? nfkc(r[col.name]) : "", essay, orig: orig || essay, order: i });
+      list.push({ id, fromCls, cls, num: Number.isFinite(num) ? num : 0, name: col.name >= 0 ? nfkc(r[col.name]) : "", essay, orig: orig || essay, order: i, kind: col.kind >= 0 ? nfkc(r[col.kind]) : "" });
     });
     return list;
   }
@@ -184,6 +191,8 @@
     const notes = [];
     let essayList = null;
     let qMap = null;
+    let modeFromFile = "";
+    let mixFromFile = null;
     for (const file of files) {
       try {
         // CSV は UTF-8 の文字列として読む（BOMのないGoogleスプレッドシートのCSVが文字化けして列を判定できないため）
@@ -195,7 +204,11 @@
           // 再編集用データの「設定」シート（課題名・トピックなど）を復元する
           if (name === "設定" && hkey(rows[0]?.[0]) === "キー") {
             let n = 0;
-            rows.slice(1).forEach(([k, v]) => { if (SETTINGS.includes(nfkc(k))) { $(nfkc(k)).value = v ?? ""; n++; } });
+            rows.slice(1).forEach(([k, v]) => {
+              if (SETTINGS.includes(nfkc(k))) { $(nfkc(k)).value = v ?? ""; n++; }
+              if (nfkc(k) === "qt-mode" && MODES[nfkc(v)]) modeFromFile = nfkc(v);
+              if (nfkc(k) === "qt-mix") mixFromFile = nfkc(v) !== "0";
+            });
             if (n) { saveSettings(); notes.push(["ok", `「設定」シートから課題情報（課題名・トピックなど）を復元しました。`]); }
             continue;
           }
@@ -216,26 +229,142 @@
         notes.push(["error", `${file.name} を読み込めませんでした（${err.message || err}）`]);
       }
     }
-    if (essayList) {
+    // 再編集用データの「区分」列で、一斉作成・個別作成・未提出者用に振り分ける（フォームの回答シートはすべて一斉作成）
+    const batchList = (essayList || []).filter((e) => !["個別", "未提出"].includes(e.kind));
+    const manualRows = (essayList || []).filter((e) => e.kind === "個別");
+    const absentRow = (essayList || []).find((e) => e.kind === "未提出");
+    if (batchList.length) {
       state.idAlias = new Map();
-      const { merged, unresolved } = unifyClasses(essayList);
+      const { merged, unresolved } = unifyClasses(batchList);
       merged.forEach((m, from) => notes.push(["warn", `クラス「${from}」の ${m.count} 件を「${m.to}」と同じクラスにまとめました。`]));
       if (unresolved.size) notes.push(["warn", `クラス「${[...unresolved].join("」「")}」は、どの3桁クラスにまとめるか決められないため、そのままにしました。`]);
       // 同じIDの重複提出は最後の回答を採用（§2.9）
       const map = new Map();
       const dups = new Set();
-      essayList.forEach((e) => { if (map.has(e.id)) dups.add(e.id); map.set(e.id, e); });
+      batchList.forEach((e) => { if (map.has(e.id)) dups.add(e.id); map.set(e.id, e); });
       dups.forEach((id) => (map.get(id).dup = true));
-      state.essays = map;
-      applyEssayEdits();
+      state.batchEssays = map;
       if (dups.size) notes.push(["warn", `同じ番号の提出が複数ありました（${[...dups].join(", ")}）。最後の回答を使います。`]);
     }
-    if (qMap) state.fileQuestions = qMap;
+    if (manualRows.length) {
+      state.manual = manualRows.map((e) => ({ ...e, manual: true }));
+      notes.push(["ok", `個別作成の生徒 ${manualRows.length} 人を読み込みました（「個別作成」モードで入力内容を確認できます）。`]);
+    }
+    if (absentRow) {
+      state.absent = { ...absentRow, id: ABSENT_ID, absent: true };
+      notes.push(["ok", "未提出者用の sample essay を読み込みました（「未提出者用」モードで印刷できます）。"]);
+    }
+    // 読み込み直した「質問」シートで同じIDを上書きする（別のファイルで読み込んだ生徒の質問は残す）
+    if (qMap) state.fileQuestions = new Map([...state.fileQuestions, ...qMap]);
+    if (manualRows.length) saveManual();
     if (!essayList && !qMap) notes.push(["error", "フォームの回答シート（クラス・番号・essay の列）も「質問」シート（ID・Q1_質問 の列）も見つかりませんでした。"]);
-    const orphan = [...questionsMap().keys()].filter((id) => !state.essays.has(id));
-    if (state.essays.size && orphan.length) notes.push(["warn", `質問はあるが essay が見つからないID: ${orphan.join(", ")}（IDの書き方を確認してください）`]);
-    $("load-summary").innerHTML = notes.map(([t, m]) => `<p class="notice ${t === "ok" ? "" : t}">${esc(m)}</p>`).join("");
+    if (mixFromFile !== null) state.mix = mixFromFile;
+    applyEssayEdits();
+    if (absentRow) saveAbsent();
+    if (modeFromFile && modeFromFile !== state.mode) setMode(modeFromFile, true);
+    else { saveMode(); rebuildEssays(); }
+    const known = new Set(allStudents().map((s) => s.id));
+    const orphan = [...(qMap || new Map()).keys()].filter((id) => !known.has(state.idAlias.get(id) || id));
+    if (orphan.length) notes.push(["warn", `質問はあるが essay が見つからないID: ${orphan.join(", ")}（IDの書き方を確認してください）`]);
+    const html = notes.map(([t, m]) => `<p class="notice ${t === "ok" ? "" : t}">${esc(m)}</p>`).join("");
+    $("load-summary").innerHTML = html;
+    if ($("manual-summary")) $("manual-summary").innerHTML = state.mode === "manual" ? html : "";
+    if (state.mode === "manual") renderManual();
     refreshAll();
+  }
+
+  // ---------------- モード（一斉作成・未提出者用・個別作成） ----------------
+  const ABSENT_ID = "SAMPLE";
+  const MODES = {
+    batch: "Googleフォームの回答をまとめて読み込み、全員分の用紙を作ります。",
+    absent: "essay を出していない生徒用に、トピックから sample essay を作り、その essay で用紙を作ります（氏名欄は空欄・同じ用紙を必要な枚数だけ印刷）。",
+    manual: "フォームを出し忘れた生徒の essay を手で入力して用紙を作ります。手順3からは一斉作成と同じ流れです。",
+  };
+  /** 読み込んだすべての生徒（モードに関係なく） */
+  const allStudents = () => [...state.batchEssays.values(), ...state.manual, ...(state.absent ? [state.absent] : [])];
+  /** 手順3〜5の対象（state.essays）をモードに応じて組み立てる */
+  function rebuildEssays() {
+    const map = new Map();
+    if (state.mode === "absent") {
+      if (state.absent) map.set(state.absent.id, state.absent);
+    } else {
+      if (state.mode === "batch" || state.mix) state.batchEssays.forEach((s, id) => map.set(id, s));
+      // 個別作成の生徒（同じIDがフォームにもあれば手入力の方を使う）
+      if (state.mode === "manual" || state.mix) state.manual.filter((s) => s.orig).forEach((s) => map.set(s.id, s));
+    }
+    state.essays = map;
+  }
+  function saveMode() {
+    try { localStorage.setItem("qt-print-mode", JSON.stringify({ mode: state.mode, mix: state.mix })); } catch (_) { /* noop */ }
+  }
+  function setMode(mode, quiet) {
+    state.mode = mode;
+    saveMode();
+    [...$("mode-bar").children].forEach((b) => { b.classList.toggle("on", b.dataset.mode === mode); b.setAttribute("aria-selected", String(b.dataset.mode === mode)); });
+    document.querySelectorAll("[data-only]").forEach((el) => (el.hidden = el.dataset.only !== mode));
+    document.querySelectorAll("[data-hide]").forEach((el) => (el.hidden = el.dataset.hide === mode));
+    $("mode-note").textContent = MODES[mode];
+    rebuildEssays();
+    state.editId = "";
+    if (mode === "manual") renderManual();
+    if (!quiet) refreshAll();
+  }
+
+  // ---- 個別作成 ----
+  /** 手入力の1人分。クラスと番号がそろっていればフォームと同じIDにする */
+  function manualId(s, i) {
+    const num = parseInt(nfkc(s.num), 10);
+    return s.cls && num > 0 ? essayId(s.cls, num) : normId(`個別-${pad2(i + 1)}`);
+  }
+  function saveManual() {
+    try { localStorage.setItem("qt-print-manual", JSON.stringify(state.manual.map((s) => ({ cls: s.cls, num: s.num, name: s.name, essay: s.orig })))); } catch (_) { toast("入力をこのブラウザに保存できませんでした（プライベートウィンドウなど）", true); }
+  }
+  function loadManual() {
+    try {
+      state.manual = JSON.parse(localStorage.getItem("qt-print-manual") || "[]").map((x, i) => {
+        const s = { cls: x.cls || "", num: x.num || 0, name: x.name || "", essay: x.essay || "", orig: x.essay || "", manual: true, order: i };
+        s.id = manualId(s, i);
+        return s;
+      });
+    } catch (_) { state.manual = []; }
+  }
+  function renderManual() {
+    if (!state.manual.length) state.manual.push({ cls: "", num: 0, name: "", essay: "", orig: "", manual: true, id: manualId({}, 0) });
+    $("manual-list").innerHTML = state.manual.map((s, i) => `<div class="manual-item" data-i="${i}">
+        <div class="manual-head"><b>${i + 1}人目</b>
+          <input class="input narrow" data-f="cls" placeholder="クラス 例: 205" value="${esc(s.cls)}" aria-label="クラス" />
+          <input class="input narrow" data-f="num" type="number" min="1" max="45" placeholder="番号" value="${s.num || ""}" aria-label="番号" />
+          <input class="input" data-f="name" placeholder="氏名" value="${esc(s.name)}" aria-label="氏名" />
+          <span class="muted small" data-id-label>ID: ${esc(s.id)}</span>
+          <button type="button" class="ed-undo manual-del">削除</button></div>
+        <textarea class="input" data-f="essay" rows="5" lang="en" placeholder="essay の本文（紙に書かれたとおりに入力）" aria-label="essay">${esc(s.orig)}</textarea>
+      </div>`).join("");
+    renderMixNote();
+  }
+  function renderMixNote() {
+    [...$("manual-mix").children].forEach((b) => b.classList.toggle("on", (b.dataset.mix === "1") === state.mix));
+    const n = state.batchEssays.size;
+    const clash = state.mix ? state.manual.filter((s) => s.orig && state.batchEssays.has(s.id)).map((s) => s.id) : [];
+    $("manual-mix-note").textContent = (state.mix
+      ? `フォームで読み込んだ生徒（${n}人）と一緒に、点検・印刷・再編集用データの保存をします。一斉作成モードにも、この生徒たちが入ります。`
+      : "個別作成の生徒だけで点検・印刷し、再編集用データも個別作成の生徒だけで保存します。") +
+      (clash.length ? `　⚠ ${clash.join("・")} はフォームの回答にもあります。手入力の方を使います。` : "");
+  }
+
+  // ---- 未提出者用 ----
+  function saveAbsent() {
+    try {
+      if (state.absent) localStorage.setItem("qt-print-absent", JSON.stringify({ essay: state.absent.orig, row: baseQuestionsMap().get(ABSENT_ID) || null }));
+      else localStorage.removeItem("qt-print-absent");
+    } catch (_) { /* noop */ }
+  }
+  function loadAbsent() {
+    try {
+      const a = JSON.parse(localStorage.getItem("qt-print-absent") || "null");
+      if (!a || !a.essay) return;
+      state.absent = { id: ABSENT_ID, cls: "", num: 0, name: "", essay: a.essay, orig: a.essay, absent: true };
+      if (a.row) state.pastedQuestions.set(ABSENT_ID, a.row);
+    } catch (_) { /* noop */ }
   }
 
   /** 質問（ファイル＋貼り付け）。クラスをまとめる前の旧ID（例 1組-37）で作った質問も新IDで引けるようにする */
@@ -286,7 +415,7 @@
   }
   /** 保存してある essay の修正を、読み込んだ essay に重ねる（再編集用データに修正後の本文が入っていれば、そちらを優先） */
   function applyEssayEdits() {
-    state.essays.forEach((s) => {
+    allStudents().forEach((s) => {
       const e = editEntry(s);
       if (essayEdited(s)) storeEntry(s, { ...(e?.fields || {}) });
       else if (e && typeof e.essay === "string") s.essay = e.essay;
@@ -509,6 +638,9 @@
     return { backup: true, level: r.level, items: BACKUP.map(([t, ja]) => ({ 質問: t, 和訳: ja, 引用: "", 意図: "汎用予備問題", 論点: "", A例: "", B例: "", 等価構造: "" })), claim: q?.["主張"] || "", reasons: "" };
   }
 
+  // 用紙の下に出す識別（未提出者用は ID の代わりに「未提出者用」）
+  const footId = (s) => (s.absent ? "未提出者用" : s.id);
+
   function studentSheet(s, qd, st) {
     const quotes = qd.items.map((x) => x["引用"]);
     return `<section class="sheet student" data-id="${esc(s.id)}"><div class="sheet-inner">
@@ -521,7 +653,7 @@
         <div class="lines" data-q="${i}"></div>
       </div>`).join("")}
     </div>
-    <div class="sheet-foot"><span>${esc(s.id)}${qd.backup ? "　予備問題" : ""}</span></div>
+    <div class="sheet-foot"><span>${esc(footId(s))}${qd.backup ? "　予備問題" : ""}</span></div>
     </section>`;
   }
 
@@ -561,7 +693,7 @@
         <b>PL-3：</b>指定と違う構造でも同じ働きなら英語2点。解答の「真偽」ではなく「essayの論理との接続」を見る。
       </div>
     </div>
-    <div class="sheet-foot"><span>${esc(s.id)}</span><span>essayの内容は引用で確認できます（essayを読み返さずに採点できる設計）</span></div>
+    <div class="sheet-foot"><span>${esc(footId(s))}</span><span>essayの内容は引用で確認できます（essayを読み返さずに採点できる設計）</span></div>
     </section>`;
   }
 
@@ -587,7 +719,7 @@
         <div class="f-row"><b>それへの答え</b><span class="lines"><div class="line"></div><div class="line"></div><div class="line"></div></span></div>
       </div>
     </div>
-    <div class="sheet-foot"><span>${esc(s.id)}</span></div>
+    <div class="sheet-foot"><span>${esc(footId(s))}</span></div>
     </section>`;
   }
 
@@ -649,8 +781,13 @@
     const box = $("sheets");
     box.innerHTML = html.join("");
     box.querySelectorAll(".sheet").forEach(fitSheet);
+    // 未提出者用は、収まりを計算した1枚を指定枚数まで複製する（採点シートは1枚）
+    if (state.mode === "absent" && state.kind !== "teacher") {
+      const n = Math.max(1, Math.min(60, parseInt($("absent-copies").value, 10) || 1));
+      box.querySelectorAll(".sheet:not([data-excluded])").forEach((sh) => { for (let i = 1; i < n; i++) sh.after(sh.cloneNode(true)); });
+    }
     const over = box.querySelectorAll('.sheet[data-overflow="1"]').length;
-    const printable = html.length - box.querySelectorAll(".sheet[data-excluded]").length;
+    const printable = box.querySelectorAll(".sheet:not([data-excluded])").length;
     $("print-count").textContent = `印刷対象 ${printable}枚${skipped ? `（対象外 ${skipped}人：質問なし・✗・異常essay。下のチェックで含められます）` : ""}${over ? `　⚠ ${over}枚は1ページに収まりきっていません` : ""}`;
     $("print").disabled = printable === 0;
     applyScale();
@@ -660,8 +797,8 @@
     const s = state.essays.get(id);
     const el = [...$("sheets").querySelectorAll(".sheet")].find((x) => x.dataset.id === id);
     const h = s && sheetHtmlFor(s);
-    // 印刷対象かどうかが変わったら、枚数表示も変わるので全体を描き直す
-    if (!el || !h || el.hasAttribute("data-excluded") !== h.includes('data-excluded="1"')) return doRenderSheets();
+    // 印刷対象かどうかが変わったら、枚数表示も変わるので全体を描き直す（未提出者用は複製があるので常に全体）
+    if (state.mode === "absent" || !el || !h || el.hasAttribute("data-excluded") !== h.includes('data-excluded="1"')) return doRenderSheets();
     const tmp = document.createElement("div");
     tmp.innerHTML = h;
     const ne = tmp.firstElementChild;
@@ -809,10 +946,13 @@
     if (!list.length) return toast("まだ essay を読み込んでいません", true);
     const qs = questionsMap();
     // essay は編集後の本文。「元のessay」は編集した生徒だけ原文を入れる（読み込み直しても「元に戻す」ができるように）
-    const essays = [["ID", "クラス", "番号", "氏名", "essay", "元のessay"], ...list.map((s) => [s.id, s.cls, s.num || "", s.name, s.essay, essayEdited(s) ? s.orig : ""])];
+    // 「区分」は読み込み直したときに一斉作成・個別作成・未提出者用へ振り分けるための目印
+    const kind = (s) => (s.absent ? "未提出" : s.manual ? "個別" : "一斉");
+    const essays = [["ID", "クラス", "番号", "氏名", "essay", "元のessay", "区分"], ...list.map((s) => [s.id, s.cls, s.num || "", s.name, s.essay, essayEdited(s) ? s.orig : "", kind(s)])];
     const withQ = list.filter((s) => qs.has(s.id));
     const questions = [HEADER, ...withQ.map((s) => HEADER.map((h) => (h === "ID" ? s.id : String(qs.get(s.id)[h] ?? ""))))];
-    const conf = [["キー", "値", "説明"], ...SETTINGS.map((k) => [k, $(k).value, SETTING_LABELS[k] || ""])];
+    const conf = [["キー", "値", "説明"], ...SETTINGS.map((k) => [k, $(k).value, SETTING_LABELS[k] || ""]),
+      ["qt-mode", state.mode, "作成モード（batch=一斉作成 / absent=未提出者用 / manual=個別作成）"], ["qt-mix", state.mix ? "1" : "0", "個別作成の生徒を一斉作成に混ぜるか（1=混ぜる）"]];
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(essays), "essay");
     XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(questions), "質問");
@@ -820,7 +960,8 @@
     const d = new Date();
     const stamp = `${d.getFullYear()}${pad2(d.getMonth() + 1)}${pad2(d.getDate())}_${pad2(d.getHours())}${pad2(d.getMinutes())}`;
     const title = (settings().title || "QuestionTime").replace(/[\\/:*?"<>|\s]+/g, "_").slice(0, 40);
-    XLSX.writeFile(wb, `QT再編集用_${title}_${stamp}.xlsx`);
+    const part = state.mode === "absent" ? "_未提出者用" : state.mode === "manual" && !state.mix ? "_個別作成" : "";
+    XLSX.writeFile(wb, `QT再編集用_${title}${part}_${stamp}.xlsx`);
     toast(`保存しました（essay ${list.length}人・質問 ${withQ.length}人分・課題情報）。次回は手順2でこのファイルを読み込めば続きから編集できます。`);
   }
 
@@ -869,7 +1010,7 @@
     $("copy-kickoff").addEventListener("click", () => {
       const st = settings();
       if (!st.topic) return toast("手順1でessayトピックを入力してください", true);
-      copy(`【課題情報】\nトピック: ${st.topic}\n学年目標CEFR: ${st.cefr}\nこのあと、この課題のessayを数人分ずつ「ID<TAB>essay本文」の形で送ります。システムプロンプトの形式（見出し行つきのTSV）で出力してください。準備ができたら「了解」とだけ答えてください。`, "課題開始メッセージをコピーしました");
+      copy(`一斉作成用\n【課題情報】\nトピック: ${st.topic}\n学年目標CEFR: ${st.cefr}\nこのあと、この課題のessayを数人分ずつ「ID<TAB>essay本文」の形で送ります。システムプロンプトの形式（見出し行つきのTSV）で出力してください。準備ができたら「了解」とだけ答えてください。`, "課題開始メッセージをコピーしました");
     });
     SETTINGS.forEach((k) => $(k).addEventListener("input", () => { saveSettings(); renderSheets(); }));
 
@@ -912,7 +1053,131 @@
     });
     // 古いHTMLがキャッシュに残っていて編集タブがない場合は、編集機能だけ無効にして動かす
     if ($("editor")) initEditor();
+    if ($("mode-bar")) initModes();
     initRest();
+  }
+
+  function initModes() {
+    loadManual();
+    loadAbsent();
+    applyEssayEdits();
+    try {
+      const m = JSON.parse(localStorage.getItem("qt-print-mode") || "{}");
+      if (typeof m.mix === "boolean") state.mix = m.mix;
+      if (MODES[m.mode]) state.mode = m.mode;
+    } catch (_) { /* noop */ }
+    setMode(state.mode, true);
+    [...$("mode-bar").children].forEach((b) => b.addEventListener("click", () => setMode(b.dataset.mode)));
+
+    // ---- 個別作成 ----
+    let manualTimer = null;
+    const manualChanged = () => {
+      saveManual();
+      rebuildEssays();
+      clearTimeout(manualTimer);
+      manualTimer = setTimeout(() => { renderMixNote(); refreshAll(); }, 400);
+    };
+    $("manual-list").addEventListener("input", (e) => {
+      const box = e.target.closest(".manual-item");
+      const f = e.target.dataset.f;
+      if (!box || !f) return;
+      const i = Number(box.dataset.i);
+      const s = state.manual[i];
+      if (f === "essay") s.essay = s.orig = e.target.value.replace(/\r\n/g, "\n").trim();
+      else if (f === "cls") s.cls = nfkc(e.target.value).toUpperCase();
+      else if (f === "num") s.num = parseInt(nfkc(e.target.value), 10) || 0;
+      else s.name = nfkc(e.target.value);
+      s.id = manualId(s, i);
+      box.querySelector("[data-id-label]").textContent = `ID: ${s.id}`;
+      manualChanged();
+    });
+    $("manual-list").addEventListener("click", (e) => {
+      if (!e.target.classList.contains("manual-del")) return;
+      const i = Number(e.target.closest(".manual-item").dataset.i);
+      const s = state.manual[i];
+      if ((s.orig || s.name) && !window.confirm(`${i + 1}人目（${s.name || s.id}）の入力を削除します。よろしいですか？`)) return;
+      state.manual.splice(i, 1);
+      state.manual.forEach((x, j) => (x.id = manualId(x, j)));
+      renderManual();
+      manualChanged();
+    });
+    $("manual-add").addEventListener("click", () => {
+      state.manual.push({ cls: state.manual.at(-1)?.cls || "", num: 0, name: "", essay: "", orig: "", manual: true, id: manualId({}, state.manual.length) });
+      renderManual();
+      saveManual();
+      $("manual-list").lastElementChild?.querySelector('[data-f="num"]')?.focus();
+    });
+    $("manual-mix").addEventListener("click", (e) => {
+      const b = e.target.closest("button");
+      if (!b) return;
+      state.mix = b.dataset.mix === "1";
+      saveMode();
+      rebuildEssays();
+      renderMixNote();
+      refreshAll();
+    });
+    $("manual-copy").addEventListener("click", () => {
+      const st = settings();
+      if (!st.topic) return toast("手順1でessayトピックを入力してください", true);
+      const list = state.manual.filter((s) => s.orig);
+      if (!list.length) return toast("essay が入力されていません", true);
+      const ids = list.map((s) => s.id);
+      const dup = ids.filter((id, i) => ids.indexOf(id) !== i);
+      if (dup.length) return toast(`同じID（${[...new Set(dup)].join("・")}）が2人います。クラス・番号を確かめてください`, true);
+      copy(`一斉作成用\n【課題情報】\nトピック: ${st.topic}\n学年目標CEFR: ${st.cefr}\n次の${list.length}人分を作成してください。システムプロンプトの形式（見出し行つきのTSV）で出力してください。\n` +
+        list.map((s) => `${s.id}\t${s.essay.replace(/\s+/g, " ")}`).join("\n"), `${list.length}人分をコピーしました。ChatGPTで @Question Time を付けて貼り付けてください。`);
+    });
+    $("manual-load").addEventListener("click", () => $("file").click());
+    $("manual-clear").addEventListener("click", () => {
+      if (!state.manual.some((s) => s.orig || s.name)) return toast("入力はありません");
+      if (!window.confirm("個別作成で入力した全員分を消します。元に戻せません（必要なら先に手順5で再編集用データを保存してください）。よろしいですか？")) return;
+      state.manual = [];
+      saveManual();
+      renderManual();
+      manualChanged();
+    });
+
+    // ---- 未提出者用 ----
+    $("absent-copy").addEventListener("click", () => {
+      const st = settings();
+      if (!st.topic) return toast("手順1でessayトピックを入力してください", true);
+      const words = parseInt($("absent-words").value, 10) || 120;
+      const note = $("absent-note").value.trim();
+      copy(`欠席者用\n【課題情報】\nトピック: ${st.topic}\n学年目標CEFR: ${st.cefr}\n語数の目安: ${words}語\n${note ? `希望: ${note}\n` : ""}essay を提出していない生徒用の sample essay を作ってください。`,
+        "依頼文をコピーしました。ChatGPTで @Question Time を付けて貼り付けてください。");
+    });
+    $("absent-apply").addEventListener("click", () => {
+      const rows = $("absent-tsv").value.replace(/^```.*$/gm, "").split(/\r?\n/).filter((l) => l.trim()).map((l) => l.split("\t"));
+      const map = parseQuestionRows(rows);
+      const row = map.get(ABSENT_ID) || (map.size === 1 ? [...map.values()][0] : null);
+      if (!row) return toast(map.size ? "SAMPLE の行が見つかりません" : "見出し行（ID, 主張, … Q1_質問 … essay）つきで貼り付けてください", true);
+      const essay = (row.essay || "").trim();
+      if (!essay) return toast("最後の列（essay）に sample essay の本文がありません。Question Time に「最後の列に essay を入れて出し直して」と頼んでください", true);
+      const { essay: _drop, ...q } = row;
+      q.ID = ABSENT_ID;
+      state.pastedQuestions.set(ABSENT_ID, q);
+      state.absent = { id: ABSENT_ID, cls: "", num: 0, name: "", essay, orig: essay, absent: true };
+      if (state.edits.delete(ABSENT_ID)) saveEdits();
+      saveAbsent();
+      $("absent-tsv").value = "";
+      $("absent-summary").innerHTML = `<p class="notice">sample essay（${wordCount(essay)}語）と質問を取り込みました。下の点検・プレビューで確かめてから印刷してください。</p>`;
+      rebuildEssays();
+      refreshAll();
+    });
+    $("absent-clear").addEventListener("click", () => {
+      if (!state.absent) return toast("sample essay はありません");
+      if (!window.confirm("sample essay と質問を消します。よろしいですか？")) return;
+      state.absent = null;
+      state.pastedQuestions.delete(ABSENT_ID);
+      state.fileQuestions.delete(ABSENT_ID);
+      if (state.edits.delete(ABSENT_ID)) saveEdits();
+      saveAbsent();
+      $("absent-summary").innerHTML = "";
+      rebuildEssays();
+      refreshAll();
+    });
+    $("absent-copies").addEventListener("input", renderSheets);
+    if (state.absent) $("absent-summary").innerHTML = `<p class="notice">前回の sample essay（${wordCount(state.absent.essay)}語）を表示しています。</p>`;
   }
 
   function initEditor() {
@@ -1047,7 +1312,7 @@
       if (!editedCount()) return toast("修正はありません");
       if (!window.confirm(`すべての生徒の修正（essay の本文を含む・${editedCount()}人分）を消します。元に戻せません。よろしいですか？`)) return;
       state.edits = new Map();
-      state.essays.forEach((s) => (s.essay = s.orig));
+      allStudents().forEach((s) => (s.essay = s.orig));
       saveEdits();
       renderEditor();
       renderCheck();

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex" />
   <title>Question Time 印刷</title>
-  <link rel="stylesheet" href="style.css?v=10" />
+  <link rel="stylesheet" href="style.css?v=11" />
 </head>
 <body>
   <header class="app-header no-print">
@@ -18,6 +18,14 @@
 
   <main class="wrap no-print">
     <h1 class="page-title">Question Time</h1>
+
+    <!-- モード切替（画面は移らず、手順2の中身と手順3〜5の対象が切り替わる） -->
+    <div class="mode-bar" id="mode-bar" role="tablist" aria-label="作成モード">
+      <button type="button" role="tab" data-mode="batch" class="on">一斉作成</button>
+      <button type="button" role="tab" data-mode="absent">未提出者用</button>
+      <button type="button" role="tab" data-mode="manual">個別作成</button>
+    </div>
+    <p class="muted small mode-note" id="mode-note"></p>
 
     <!-- STEP 0 -->
     <details class="card step" id="step-setup">
@@ -59,8 +67,51 @@
       <p class="muted small">この欄はこのブラウザに保存されます。</p>
     </section>
 
+    <!-- STEP 2（個別作成） -->
+    <section class="card step" data-only="manual" hidden>
+      <h2><span class="step-no">2</span>essayを手で入力する（フォームを出し忘れた生徒）</h2>
+      <p>紙のessayを、スペルや文法を直さずにそのまま打ち込みます。「次を追加」で何人でも入力できます。入力はこのブラウザに自動で保存されます。</p>
+      <div class="filters mix-switch" id="manual-mix">
+        <button type="button" data-mix="1" class="on">一斉作成の生徒に混ぜる</button>
+        <button type="button" data-mix="0">個別作成の生徒だけで扱う</button>
+      </div>
+      <p class="muted small" id="manual-mix-note"></p>
+      <div id="manual-list" class="manual-list"></div>
+      <div class="row">
+        <button type="button" class="btn btn-secondary" id="manual-add">＋ 次を追加</button>
+        <button type="button" class="btn btn-primary" id="manual-copy">コピー（Gemに渡す形）</button>
+      </div>
+      <p class="muted small">「コピー」は、課題情報と入力した全員分（ID と本文だけ。氏名は含みません）を1つの依頼文にします。ChatGPTで @Question Time を付けて貼り付け、出力（TSV）は手順3の「Gemの出力をここに直接貼る」に貼ります。</p>
+      <div class="row">
+        <button type="button" class="btn btn-secondary btn-sm" id="manual-load">保存した再編集用データ（.xlsx）を読み込む</button>
+        <button type="button" class="btn btn-secondary btn-sm" id="manual-clear">入力をすべて消す</button>
+      </div>
+      <div id="manual-summary" class="summary"></div>
+    </section>
+
+    <!-- STEP 2（未提出者用） -->
+    <section class="card step" data-only="absent" hidden>
+      <h2><span class="step-no">2</span>sample essay と質問を作る（未提出者用）</h2>
+      <p>手順1のトピックで sample essay を作り、その essay で Question Time の用紙を作ります。用紙の氏名欄は空欄になり、同じ用紙を必要な枚数だけ印刷できます。</p>
+      <div class="grid-form">
+        <label class="field"><span>sample essay の語数の目安</span><input class="input narrow" id="absent-words" type="number" min="50" max="300" value="120" /></label>
+        <label class="field wide"><span>sample essay への希望（任意・日本語可）</span><input class="input" id="absent-note" placeholder="例: 地元の祭りについて、主張は「若者がもっと参加すべき」" /></label>
+      </div>
+      <ol class="howto">
+        <li><button type="button" class="btn btn-primary btn-sm" id="absent-copy">依頼文をコピー（未提出者用）</button> → ChatGPTで @Question Time を付けて貼り付け、送信します。</li>
+        <li>sample essay が表示されます。内容を確かめ、直してほしい所があればチャットで頼みます。よければ「OK」と送ります。</li>
+        <li>出てきた表（TSV。最後の列に sample essay の本文が入っています）をコピーして、下に貼り付けます。</li>
+      </ol>
+      <textarea class="input tsv" id="absent-tsv" placeholder="Question Time の出力（見出し行つきTSV）をここに貼り付け"></textarea>
+      <div class="row">
+        <button type="button" class="btn btn-primary" id="absent-apply">取り込む</button>
+        <button type="button" class="btn btn-secondary btn-sm" id="absent-clear">sample essay を消す</button>
+      </div>
+      <div id="absent-summary" class="summary"></div>
+    </section>
+
     <!-- STEP 2 -->
-    <section class="card step">
+    <section class="card step" data-only="batch">
       <h2><span class="step-no">2</span>スプレッドシートを読み込む</h2>
       <p>Googleスプレッドシートで「ファイル › ダウンロード › Microsoft Excel（.xlsx）」を選んで保存したファイルを選びます。
         フォームの回答シートと「質問」シートの両方が入っていれば、IDで自動的に結び付けます。
@@ -74,7 +125,7 @@
     </section>
 
     <!-- STEP 3 -->
-    <section class="card step">
+    <section class="card step" data-hide="absent">
       <h2><span class="step-no">3</span>Gemに渡す（質問がまだない生徒）</h2>
       <p>最初に「課題開始メッセージ」を送り、続けて5人分ずつ貼り付けます。まとめて送りすぎると、後半の質問が一般論に寄りやすくなります。
         渡すのは <strong>ID と本文だけ</strong>です（氏名は含みません）。</p>
@@ -123,6 +174,7 @@
       <div class="row">
         <label class="check"><input type="checkbox" id="use-backup" />質問がない生徒・要確認の生徒は予備問題で印刷する</label>
         <label class="check"><input type="checkbox" id="include-ng" />点検で✗の生徒も印刷する</label>
+        <label class="field inline" data-only="absent" hidden><span>印刷枚数（解答用紙・返却シート）</span><input class="input narrow" id="absent-copies" type="number" min="1" max="60" value="5" /></label>
       </div>
       <p class="muted small" id="print-count"></p>
       <div class="row">
@@ -197,7 +249,7 @@
   <div id="toast" class="toast no-print" hidden></div>
 
   <script src="xlsx.full.min.js"></script>
-  <script src="prompt.js?v=4"></script>
-  <script src="app.js?v=17"></script>
+  <script src="prompt.js?v=5"></script>
+  <script src="app.js?v=18"></script>
 </body>
 </html>
