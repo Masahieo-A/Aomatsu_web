@@ -129,7 +129,7 @@
         <button type="button" class="btn btn-primary btn-lg" id="print">印刷する（A4縦・余白なし）</button>
         <button type="button" class="btn btn-secondary btn-lg" id="export-xlsx">再編集用データを保存（.xlsx）</button>
       </div>
-      <p class="muted small">「再編集用データを保存」は、essay（氏名つき）・修正込みの質問・課題情報を1つのExcelにまとめてこのPCに保存します（ブラウザの中で作るだけで、外部には送りません）。ページを再読み込みすると読み込んだ内容は消えるので、作業の区切りで保存してください。</p>
+      <p class="muted small">「再編集用データを保存」は、essay（氏名つき・本文の修正込み）・修正込みの質問・課題情報を1つのExcelにまとめてこのPCに保存します（ブラウザの中で作るだけで、外部には送りません）。ページを再読み込みすると読み込んだ内容は消えるので、作業の区切りで保存してください。続きを編集するときは、このファイルを<strong>手順2</strong>で読み込みます（スプレッドシートやTSVの貼り付けは不要）。</p>
       <p class="muted small">Chromeの印刷画面で「用紙サイズ: A4」「余白: なし」「倍率: 100」「背景のグラフィック: オン」にしてください。PDFに保存して印刷しても同じです。</p>
     </section>
 
@@ -173,8 +173,17 @@
         <button type="button" class="btn btn-primary btn-sm" id="ed-paste-apply">この生徒に取り込む</button>
       </div>
       <div class="ed-essay">
-        <div class="ed-label">essay（下線は各問の引用）</div>
+        <div class="ed-label">essay（下線は各問の引用） <span class="badge warn" id="ed-essay-badge" hidden>本文を修正済み</span></div>
         <div id="ed-essay" lang="en"></div>
+        <details class="ed-essay-edit">
+          <summary>essay の本文を編集する（余分な改行・「よろしくお願いします」などを消す）</summary>
+          <textarea class="input" id="ed-essay-input" rows="7" lang="en" aria-label="essay の本文"></textarea>
+          <div class="row">
+            <button type="button" class="btn btn-secondary btn-sm" id="ed-essay-join">改行をすべて消す</button>
+            <button type="button" class="btn btn-secondary btn-sm" id="ed-essay-undo" hidden>元のessayに戻す</button>
+          </div>
+          <p class="muted small">解答用紙・返却シートの essay に反映されます。下線の部分（各問の引用）の単語を変えると、その問は ✗ になります（改行や記号だけの違いは大丈夫です）。</p>
+        </details>
       </div>
       <div id="ed-form"></div>
       <div class="row ed-actions">
@@ -182,13 +191,13 @@
         <button type="button" class="btn btn-secondary btn-sm" id="ed-copy-tsv">修正を反映したTSVをコピー</button>
         <button type="button" class="btn btn-secondary btn-sm" id="ed-reset-all">すべての修正を消す</button>
       </div>
-      <p class="muted small">修正はこのブラウザに自動で保存され、プレビュー・点検・印刷に反映されます。スプレッドシートの「質問」シートにも残したいときは「修正を反映したTSVをコピー」して貼り直してください。essayの本文が変わった生徒には、前の修正を使いません。</p>
+      <p class="muted small">修正はこのブラウザに自動で保存され、プレビュー・点検・印刷に反映されます。スプレッドシートの「質問」シートにも残したいときは「修正を反映したTSVをコピー」して貼り直してください。読み込み直した essay の原文が前と違う生徒には、前の修正を使いません（この画面での essay の編集は大丈夫です）。</p>
     </aside>
   </div>
   <div id="toast" class="toast no-print" hidden></div>
 
   <script src="xlsx.full.min.js"></script>
   <script src="prompt.js?v=4"></script>
-  <script src="app.js?v=16"></script>
+  <script src="app.js?v=17"></script>
 </body>
 </html>

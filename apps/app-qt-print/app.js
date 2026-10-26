@@ -43,7 +43,7 @@
 
   // ---------------- 状態 ----------------
   const state = {
-    essays: new Map(), // ID → {id, cls, num, name, essay, dup}
+    essays: new Map(), // ID → {id, cls, num, name, essay（編集後）, orig（読み込んだ原文）, dup}
     fileQuestions: new Map(), // ID → row（スプレッドシートの「質問」シート）
     pastedQuestions: new Map(), // ID → row（画面に直接貼った分。こちらを優先）
     idAlias: new Map(), // 旧ID → 新ID（クラス表記をまとめたときの読み替え。例 1組-37 → 301組-37）
@@ -146,7 +146,10 @@
       num: findCol(h, [/番号|^no\.?$|^number/]),
       name: findCol(h, [/氏名|名前|^name/]),
       essay: findCol(h, [/essay|エッセイ|英作文|本文/]),
+      // 再編集用データの「元のessay」列（essay を編集していた場合の原文）
+      orig: findCol(h, [/^元のessay/]),
     };
+    if (col.essay === col.orig) col.essay = findCol(h.map((x, i) => (i === col.orig ? "" : x)), [/essay|エッセイ|英作文|本文/]);
     if (col.essay < 0 || (col.id < 0 && (col.cls < 0 || col.num < 0))) return null;
     const list = [];
     rows.slice(1).forEach((r, i) => {
@@ -156,7 +159,8 @@
       const num = col.num >= 0 ? parseInt(nfkc(r[col.num]), 10) : NaN;
       const fromCls = !(col.id >= 0 && nfkc(r[col.id]));
       const id = fromCls ? essayId(cls, num) : normId(r[col.id]);
-      list.push({ id, fromCls, cls, num: Number.isFinite(num) ? num : 0, name: col.name >= 0 ? nfkc(r[col.name]) : "", essay, order: i });
+      const orig = col.orig >= 0 ? String(r[col.orig] || "").replace(/\r\n/g, "\n").trim() : "";
+      list.push({ id, fromCls, cls, num: Number.isFinite(num) ? num : 0, name: col.name >= 0 ? nfkc(r[col.name]) : "", essay, orig: orig || essay, order: i });
     });
     return list;
   }
@@ -223,6 +227,7 @@
       essayList.forEach((e) => { if (map.has(e.id)) dups.add(e.id); map.set(e.id, e); });
       dups.forEach((id) => (map.get(id).dup = true));
       state.essays = map;
+      applyEssayEdits();
       if (dups.size) notes.push(["warn", `同じ番号の提出が複数ありました（${[...dups].join(", ")}）。最後の回答を使います。`]);
     }
     if (qMap) state.fileQuestions = qMap;
@@ -262,11 +267,35 @@
     等価構造: "採点シート・返却シート", 意図: "採点シート",
   };
   const ED_Q_FIELDS = ["質問", "和訳", "引用", "論点", "A例", "B例", "等価構造", "意図"];
-  // essay の本文が変わったら前の修正を使わないための目印
+  // 読み込んだ essay の原文が変わったら前の修正を使わないための目印（編集画面での essay 修正では変わらない）
   const essayHash = (t) => { let h = 5381; for (const c of String(t)) h = ((h * 33) ^ c.codePointAt(0)) >>> 0; return h.toString(36); };
-  function editsFor(s) {
+  function editEntry(s) {
     const e = state.edits.get(s.id);
-    return e && e.hash === essayHash(s.essay) ? e.fields : null;
+    return e && e.hash === essayHash(s.orig) ? e : null;
+  }
+  function editsFor(s) {
+    return editEntry(s)?.fields || null;
+  }
+  const essayEdited = (s) => s.essay !== s.orig;
+  const isEdited = (s) => essayEdited(s) || Object.keys(editsFor(s) || {}).length > 0;
+  /** 質問の修正と essay の修正を1人分の記録として保存する（どちらもなければ消す） */
+  function storeEntry(s, fields) {
+    if (Object.keys(fields).length || essayEdited(s)) state.edits.set(s.id, { hash: essayHash(s.orig), fields, ...(essayEdited(s) ? { essay: s.essay } : {}) });
+    else state.edits.delete(s.id);
+    saveEdits();
+  }
+  /** 保存してある essay の修正を、読み込んだ essay に重ねる（再編集用データに修正後の本文が入っていれば、そちらを優先） */
+  function applyEssayEdits() {
+    state.essays.forEach((s) => {
+      const e = editEntry(s);
+      if (essayEdited(s)) storeEntry(s, { ...(e?.fields || {}) });
+      else if (e && typeof e.essay === "string") s.essay = e.essay;
+    });
+  }
+  /** essay の本文を書き換える（余分な改行・「よろしくお願いします」などを消す用）。原文と同じなら修正なしに戻る */
+  function setEssay(s, text) {
+    s.essay = text.trim() === s.orig ? s.orig : text;
+    storeEntry(s, { ...(editsFor(s) || {}) });
   }
   function loadEdits() {
     try { state.edits = new Map(Object.entries(JSON.parse(localStorage.getItem(EDIT_KEY) || "{}"))); } catch (_) { state.edits = new Map(); }
@@ -283,11 +312,9 @@
     const cur = editsFor(s) || {};
     const fields = { ...cur };
     if (value === base) delete fields[key]; else fields[key] = value;
-    if (Object.keys(fields).length) state.edits.set(s.id, { hash: essayHash(s.essay), fields });
-    else state.edits.delete(s.id);
-    saveEdits();
+    storeEntry(s, fields);
   }
-  const editedCount = () => [...state.essays.values()].filter((s) => Object.keys(editsFor(s) || {}).length).length;
+  const editedCount = () => [...state.essays.values()].filter(isEdited).length;
 
   // ---------------- 点検（V-1〜V-6 相当） ----------------
   /**
@@ -703,10 +730,11 @@
     sel.innerHTML = list.map((x) => {
       const r = check(x, qs.get(x.id));
       const mark = { ok: "", warn: "（注意）", ng: "（✗要修正）", missing: "（質問なし）", flag: "（異常essay）" }[r.level];
-      const ed = Object.keys(editsFor(x) || {}).length ? "【修正あり】" : "";
+      const ed = isEdited(x) ? "【修正あり】" : "";
       return `<option value="${esc(x.id)}" ${x.id === state.editId ? "selected" : ""}>${esc(x.id)}　${esc(x.name)}${mark}${ed}</option>`;
     }).join("") || `<option value="">まだ読み込んでいません</option>`;
-    if (!s) { $("ed-form").innerHTML = ""; $("ed-essay").textContent = ""; $("ed-check").textContent = ""; return; }
+    if (!s) { $("ed-form").innerHTML = ""; $("ed-essay").textContent = ""; $("ed-check").textContent = ""; $("ed-essay-input").value = ""; return; }
+    $("ed-essay-input").value = s.essay;
     const q = qs.get(s.id) || {};
     const base = baseQuestionsMap().get(s.id) || {};
     const f = editsFor(s) || {};
@@ -732,6 +760,8 @@
       (fixable.length ? `<p class="small">赤い欄に修正案が出ます（「この案を反映」で反映）。案が出ないものは、下の手順でGemに作り直してもらえます。</p>` : "");
     $("ed-regen-box").hidden = !fixable.length;
     $("ed-essay").innerHTML = markQuotes(s.essay, [1, 2, 3].map((i) => (q || {})[`Q${i}_引用`] || ""));
+    $("ed-essay-badge").hidden = !essayEdited(s);
+    $("ed-essay-undo").hidden = !essayEdited(s);
     // 欄ごとの赤字・修正案（入力中のテキスト欄は作り直さない）
     state.suggestions = {};
     document.querySelectorAll("#ed-form .ed-field").forEach((box) => {
@@ -778,7 +808,8 @@
     const list = sortedStudents();
     if (!list.length) return toast("まだ essay を読み込んでいません", true);
     const qs = questionsMap();
-    const essays = [["ID", "クラス", "番号", "氏名", "essay"], ...list.map((s) => [s.id, s.cls, s.num || "", s.name, s.essay])];
+    // essay は編集後の本文。「元のessay」は編集した生徒だけ原文を入れる（読み込み直しても「元に戻す」ができるように）
+    const essays = [["ID", "クラス", "番号", "氏名", "essay", "元のessay"], ...list.map((s) => [s.id, s.cls, s.num || "", s.name, s.essay, essayEdited(s) ? s.orig : ""])];
     const withQ = list.filter((s) => qs.has(s.id));
     const questions = [HEADER, ...withQ.map((s) => HEADER.map((h) => (h === "ID" ? s.id : String(qs.get(s.id)[h] ?? ""))))];
     const conf = [["キー", "値", "説明"], ...SETTINGS.map((k) => [k, $(k).value, SETTING_LABELS[k] || ""])];
@@ -943,6 +974,32 @@
       renderCheck();
       rerenderSheet(s.id);
     });
+    // essay の本文の編集
+    const essayChanged = (s) => {
+      updateEditorStatus(s);
+      clearTimeout(edCheckTimer);
+      edCheckTimer = setTimeout(() => { renderCheck(); rerenderSheet(s.id); }, 350);
+    };
+    $("ed-essay-input").addEventListener("input", (e) => {
+      const s = currentEditStudent();
+      if (!s) return;
+      setEssay(s, e.target.value);
+      essayChanged(s);
+    });
+    $("ed-essay-join").addEventListener("click", () => {
+      const s = currentEditStudent();
+      if (!s) return;
+      setEssay(s, s.essay.replace(/[ \t]*\n\s*/g, " ").trim());
+      $("ed-essay-input").value = s.essay;
+      essayChanged(s);
+    });
+    $("ed-essay-undo").addEventListener("click", () => {
+      const s = currentEditStudent();
+      if (!s) return;
+      setEssay(s, s.orig);
+      $("ed-essay-input").value = s.essay;
+      essayChanged(s);
+    });
     $("ed-regen").addEventListener("click", () => {
       const s = currentEditStudent();
       if (!s) return;
@@ -977,18 +1034,20 @@
     });
     $("ed-reset-one").addEventListener("click", () => {
       const s = currentEditStudent();
-      if (!s || !editsFor(s)) return toast("この生徒には修正がありません");
-      if (!window.confirm(`${s.id} の修正をすべて元に戻します。よろしいですか？`)) return;
+      if (!s || !isEdited(s)) return toast("この生徒には修正がありません");
+      if (!window.confirm(`${s.id} の修正（essay の本文を含む）をすべて元に戻します。よろしいですか？`)) return;
       state.edits.delete(s.id);
+      s.essay = s.orig;
       saveEdits();
       renderEditor();
       renderCheck();
       rerenderSheet(s.id);
     });
     $("ed-reset-all").addEventListener("click", () => {
-      if (!state.edits.size) return toast("修正はありません");
-      if (!window.confirm(`すべての生徒の修正（${editedCount()}人分）を消します。元に戻せません。よろしいですか？`)) return;
+      if (!editedCount()) return toast("修正はありません");
+      if (!window.confirm(`すべての生徒の修正（essay の本文を含む・${editedCount()}人分）を消します。元に戻せません。よろしいですか？`)) return;
       state.edits = new Map();
+      state.essays.forEach((s) => (s.essay = s.orig));
       saveEdits();
       renderEditor();
       renderCheck();
